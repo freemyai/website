@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Freemy AI Website
 
-## Getting Started
+Official website for https://freemy.ai.
 
-First, run the development server:
+> The AI you own.
+
+This repository contains the public Freemy marketing website.
+It is not the Freemy AI runtime.
+
+## Development
+
+Requires Node.js 24 and pnpm.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Useful scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm lint          # eslint
+pnpm typecheck     # next typegen + tsc --noEmit
+pnpm format        # prettier --write
+pnpm format:check  # prettier --check
+pnpm build         # production build
+pnpm test:e2e      # Playwright smoke tests
+pnpm db:migrate    # apply db/migrations/*.sql (requires DATABASE_URL)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Architecture
 
-## Learn More
+See [docs/architecture.md](docs/architecture.md). In short: Next.js App
+Router, Server Components by default, Tailwind CSS 4, shadcn/ui on Base UI,
+and a single Server Action for the alpha waitlist backed by Neon Postgres.
 
-To learn more about Next.js, take a look at the following resources:
+## Environment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copy `.env.example` to `.env.local`. Only `DATABASE_URL` is sensitive; the
+`NEXT_PUBLIC_*` values are build-time public configuration. The site builds
+and runs without `DATABASE_URL` — waitlist signup then reports itself as
+temporarily unavailable instead of failing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Database
 
-## Deploy on Vercel
+The waitlist uses Neon Postgres. Schema lives in `db/migrations/`. Apply it
+manually with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm db:migrate
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Migrations never run during build, so concurrent preview deployments cannot
+race.
+
+## Deployment
+
+See [docs/deployment.md](docs/deployment.md). The site deploys to Vercel
+(Node 24, `pnpm build`), with Neon connected through the Vercel Marketplace.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Code is [MIT](LICENSE). The Freemy name and brand are not — see
+[TRADEMARKS.md](TRADEMARKS.md).
