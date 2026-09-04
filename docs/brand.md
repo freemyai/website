@@ -25,7 +25,7 @@ model freedom separated from owner-controlled action authority.
 | Ink           | `#11110F`             | Main text                             |
 | Night         | `#0B0C0B`             | Dark sections                         |
 | Card          | `#EAE7DF`             | Card surface                          |
-| Muted         | `#716E66`             | Secondary text                        |
+| Muted         | `#605D56`             | Secondary text                        |
 | Border        | `rgb(17 17 15 / 14%)` | Hairlines                             |
 | Signal Green  | `#B7F34A`             | Status, primary CTA, small highlights |
 | Signal Bright | `#C7FF61`             | Accent text on dark                   |

@@ -55,7 +55,7 @@
   --color-ink: #11110f;
   --color-night: #0b0c0b;
   --color-card-warm: #eae7df;
-  --color-muted-warm: #716e66;
+  --color-muted-warm: #605d56;
   --color-signal: #b7f34a;
   --color-signal-bright: #c7ff61;
 }
@@ -72,7 +72,7 @@
   --secondary: #eae7df;
   --secondary-foreground: #11110f;
   --muted: #eae7df;
-  --muted-foreground: #716e66;
+  --muted-foreground: #605d56;
   --accent: #b7f34a;
   --accent-foreground: #11110f;
   --destructive: #b3261e;

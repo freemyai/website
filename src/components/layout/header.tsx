@@ -29,7 +29,7 @@ export function Header() {
       }`}
     >
       <div className="container-site flex h-16 items-center justify-between">
-        <Link href="/" aria-label="Freemy AI home" className="rounded-sm">
+        <Link href="/" className="rounded-sm">
           <Wordmark />
         </Link>
 
