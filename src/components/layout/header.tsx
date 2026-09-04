@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand/wordmark";
+import { GithubIcon } from "@/components/brand/github-icon";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { buttonVariants } from "@/components/ui/button";
 import { mainNav } from "@/content/navigation";
 import { site } from "@/content/site";
 import { analyticsEvents, track } from "@/lib/analytics";
-import { GithubIcon } from "lucide-react";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);

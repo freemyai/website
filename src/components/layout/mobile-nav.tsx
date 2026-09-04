@@ -12,7 +12,8 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { mainNav } from "@/content/navigation";
 import { site } from "@/content/site";
 import { analyticsEvents, track } from "@/lib/analytics";
-import { GithubIcon, MenuIcon } from "lucide-react";
+import { GithubIcon } from "@/components/brand/github-icon";
+import { MenuIcon } from "lucide-react";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
