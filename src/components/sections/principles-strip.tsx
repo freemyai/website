@@ -8,7 +8,7 @@ const principles = [
 
 export function PrinciplesStrip() {
   return (
-    <section id="principles" className="scroll-mt-24 border-y border-border">
+    <section id="principles" className="border-border scroll-mt-24 border-y">
       <div className="container-site grid grid-cols-2 gap-x-6 gap-y-4 py-8 md:grid-cols-5">
         {principles.map((principle) => (
           <p

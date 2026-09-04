@@ -16,7 +16,8 @@ export async function joinWaitlist(input: unknown): Promise<WaitlistResult> {
     return {
       status: "invalid",
       message:
-        parsed.error.issues[0]?.message ?? "Please enter a valid email address.",
+        parsed.error.issues[0]?.message ??
+        "Please enter a valid email address.",
     };
   }
 
@@ -63,7 +64,10 @@ export async function joinWaitlist(input: unknown): Promise<WaitlistResult> {
     return { status: "success" };
   } catch (error) {
     // Race-safe: unique index on LOWER(email) may still trigger.
-    if (error instanceof Error && error.message.includes("waitlist_signups_email_unique")) {
+    if (
+      error instanceof Error &&
+      error.message.includes("waitlist_signups_email_unique")
+    ) {
       return { status: "duplicate" };
     }
     console.error("Waitlist signup failed:", error);

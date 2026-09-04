@@ -34,7 +34,7 @@ export function MobileNav() {
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-3 text-base font-medium hover:bg-muted"
+              className="hover:bg-muted rounded-md px-3 py-3 text-base font-medium"
             >
               {item.label}
             </Link>
@@ -47,7 +47,7 @@ export function MobileNav() {
               track(analyticsEvents.githubOpen, { location: "mobile_nav" });
               setOpen(false);
             }}
-            className="flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium hover:bg-muted"
+            className="hover:bg-muted flex items-center gap-2 rounded-md px-3 py-3 text-base font-medium"
           >
             <GithubIcon className="size-4" />
             GitHub
@@ -55,7 +55,9 @@ export function MobileNav() {
           <Link
             href="/#waitlist"
             onClick={() => {
-              track(analyticsEvents.headerJoinAlpha, { location: "mobile_nav" });
+              track(analyticsEvents.headerJoinAlpha, {
+                location: "mobile_nav",
+              });
               setOpen(false);
             }}
             className={`${buttonVariants({ variant: "default" })} mt-2 h-11`}

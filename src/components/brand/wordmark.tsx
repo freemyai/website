@@ -6,7 +6,7 @@ export function Wordmark({ className = "" }: { className?: string }) {
       <LogoMark />
       <span className="text-lg font-semibold tracking-tight">
         freemy
-        <span className="ml-1.5 align-middle font-mono text-[10px] font-medium tracking-[0.2em] text-muted-foreground">
+        <span className="text-muted-foreground ml-1.5 align-middle font-mono text-[10px] font-medium tracking-[0.2em]">
           AI
         </span>
       </span>

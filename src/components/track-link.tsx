@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import type { ComponentProps } from "react";
-import { analyticsEvents, track, type AnalyticsEventName } from "@/lib/analytics";
+import {
+  analyticsEvents,
+  track,
+  type AnalyticsEventName,
+} from "@/lib/analytics";
 
 type TrackedLinkProps = ComponentProps<typeof Link> & {
   event: AnalyticsEventName;
@@ -10,7 +14,12 @@ type TrackedLinkProps = ComponentProps<typeof Link> & {
 };
 
 /** Internal link that fires a registered analytics event on click. */
-export function TrackedLink({ event, eventProps, onClick, ...props }: TrackedLinkProps) {
+export function TrackedLink({
+  event,
+  eventProps,
+  onClick,
+  ...props
+}: TrackedLinkProps) {
   return (
     <Link
       {...props}
@@ -28,7 +37,12 @@ type TrackedAnchorProps = ComponentProps<"a"> & {
 };
 
 /** External link that fires a registered analytics event on click. */
-export function TrackedAnchor({ event, eventProps, onClick, ...props }: TrackedAnchorProps) {
+export function TrackedAnchor({
+  event,
+  eventProps,
+  onClick,
+  ...props
+}: TrackedAnchorProps) {
   return (
     <a
       {...props}

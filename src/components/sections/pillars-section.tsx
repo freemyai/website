@@ -23,22 +23,22 @@ const pillars = [
 
 export function PillarsSection() {
   return (
-    <section className="section-block border-t border-border">
+    <section className="section-block border-border border-t">
       <div className="container-site container-content">
         <p className="eyebrow">WHAT FREEMY IS BUILT AROUND</p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {pillars.map((pillar) => (
             <article
               key={pillar.title}
-              className="flex flex-col rounded-xl border border-border bg-card-warm p-7"
+              className="border-border bg-card-warm flex flex-col rounded-xl border p-7"
             >
               <h3 className="text-xl font-semibold tracking-tight text-balance">
                 {pillar.title}
               </h3>
-              <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">
+              <p className="text-muted-foreground mt-3 flex-1 leading-relaxed">
                 {pillar.body}
               </p>
-              <p className="mt-6 border-t border-border pt-4 font-mono text-xs font-medium tracking-[0.14em] text-muted-foreground">
+              <p className="border-border text-muted-foreground mt-6 border-t pt-4 font-mono text-xs font-medium tracking-[0.14em]">
                 {pillar.footer}
               </p>
             </article>

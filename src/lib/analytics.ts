@@ -13,7 +13,8 @@ export const analyticsEvents = {
   githubOpen: "github_open",
 } as const;
 
-export type AnalyticsEventName = (typeof analyticsEvents)[keyof typeof analyticsEvents];
+export type AnalyticsEventName =
+  (typeof analyticsEvents)[keyof typeof analyticsEvents];
 
 type TrackProps = Record<string, string | number | boolean>;
 

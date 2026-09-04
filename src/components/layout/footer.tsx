@@ -5,17 +5,17 @@ import { site } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border">
+    <footer className="border-border border-t">
       <div className="container-site py-14">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Wordmark />
-            <p className="mt-4 text-sm text-muted-foreground">{site.tagline}</p>
+            <p className="text-muted-foreground mt-4 text-sm">{site.tagline}</p>
             {site.contactEmail ? (
               <p className="mt-3 text-sm">
                 <a
                   href={`mailto:${site.contactEmail}`}
-                  className="text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+                  className="text-muted-foreground hover:text-foreground underline-offset-4 hover:underline"
                 >
                   {site.contactEmail}
                 </a>
@@ -34,14 +34,14 @@ export function Footer() {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        className="text-muted-foreground hover:text-foreground text-sm transition-colors"
                       >
                         {item.label}
                       </a>
                     ) : (
                       <Link
                         href={item.href}
-                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        className="text-muted-foreground hover:text-foreground text-sm transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -53,7 +53,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="border-border text-muted-foreground mt-12 flex flex-col gap-2 border-t pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Freemy AI</p>
           <p className="inline-flex items-center gap-2">
             <span className="status-dot" aria-hidden="true" />

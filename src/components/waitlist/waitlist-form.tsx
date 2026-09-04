@@ -13,13 +13,18 @@ type WaitlistFormProps = {
   dark?: boolean;
 };
 
-export function WaitlistForm({ interest = "alpha", dark = false }: WaitlistFormProps) {
+export function WaitlistForm({
+  interest = "alpha",
+  dark = false,
+}: WaitlistFormProps) {
   const searchParams = useSearchParams();
   const [result, setResult] = useState<WaitlistResult | null>(null);
   const [pending, startTransition] = useTransition();
 
   if (result?.status === "success" || result?.status === "duplicate") {
-    return <WaitlistSuccess duplicate={result.status === "duplicate"} dark={dark} />;
+    return (
+      <WaitlistSuccess duplicate={result.status === "duplicate"} dark={dark} />
+    );
   }
 
   function onSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -72,7 +77,10 @@ export function WaitlistForm({ interest = "alpha", dark = false }: WaitlistFormP
           />
         </div>
         {/* Honeypot: hidden from humans, tempting for bots */}
-        <div aria-hidden="true" className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute top-auto -left-[9999px] h-px w-px overflow-hidden"
+        >
           <label htmlFor={`${inputId}-website`}>Website</label>
           <input
             id={`${inputId}-website`}
@@ -85,25 +93,38 @@ export function WaitlistForm({ interest = "alpha", dark = false }: WaitlistFormP
         <Button
           type="submit"
           disabled={pending}
-          className="h-12 rounded-lg bg-signal px-6 text-base font-semibold text-ink hover:bg-signal-bright"
+          className="bg-signal text-ink hover:bg-signal-bright h-12 rounded-lg px-6 text-base font-semibold"
         >
           {pending ? "Joining…" : "Join the Alpha"}
         </Button>
       </div>
 
-      <div id={`${inputId}-status`} aria-live="polite" className="mt-3 min-h-5 text-sm">
+      <div
+        id={`${inputId}-status`}
+        aria-live="polite"
+        className="mt-3 min-h-5 text-sm"
+      >
         {result?.status === "invalid" && (
-          <p className={dark ? "text-signal-bright" : "text-destructive"} role="alert">
+          <p
+            className={dark ? "text-signal-bright" : "text-destructive"}
+            role="alert"
+          >
             {result.message}
           </p>
         )}
         {result?.status === "unavailable" && (
-          <p className={dark ? "text-signal-bright" : "text-destructive"} role="alert">
+          <p
+            className={dark ? "text-signal-bright" : "text-destructive"}
+            role="alert"
+          >
             Alpha signup is temporarily unavailable.
           </p>
         )}
         {result?.status === "error" && (
-          <p className={dark ? "text-signal-bright" : "text-destructive"} role="alert">
+          <p
+            className={dark ? "text-signal-bright" : "text-destructive"}
+            role="alert"
+          >
             Something went wrong. Please try again.
           </p>
         )}

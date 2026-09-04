@@ -13,7 +13,8 @@ function Node({
     default: "border-border bg-background",
     core: "border-ink bg-ink text-bone",
     local: "border-signal bg-signal/15",
-    cloud: "border-dashed border-muted-foreground/50 bg-background text-muted-foreground",
+    cloud:
+      "border-dashed border-muted-foreground/50 bg-background text-muted-foreground",
   } as const;
   return (
     <div
@@ -28,7 +29,7 @@ function Line({ dashed = false }: { dashed?: boolean }) {
   return (
     <div
       aria-hidden="true"
-      className={`mx-auto h-6 w-px ${dashed ? "border-l border-dashed border-muted-foreground/50" : "bg-ink/40"}`}
+      className={`mx-auto h-6 w-px ${dashed ? "border-muted-foreground/50 border-l border-dashed" : "bg-ink/40"}`}
     />
   );
 }
@@ -39,19 +40,19 @@ function Line({ dashed = false }: { dashed?: boolean }) {
  */
 export function ArchitectureSection() {
   return (
-    <section className="section-block border-t border-border">
+    <section className="section-block border-border border-t">
       <div className="container-site container-content grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
         <div className="self-center">
           <p className="eyebrow">LOCAL-FIRST ARCHITECTURE</p>
           <h2 className="headline mt-4 text-4xl md:text-5xl">
             Your AI should have a home.
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          <p className="text-muted-foreground mt-6 text-lg leading-relaxed">
             Freemy&apos;s architecture is being built around a simple idea: your
             memory, rules and agent live with you — and models plug in
             underneath.
           </p>
-          <p className="mt-4 text-lg font-medium leading-relaxed">
+          <p className="mt-4 text-lg leading-relaxed font-medium">
             Private data can stay local. Cloud intelligence can remain optional
             rather than mandatory.
           </p>
@@ -87,7 +88,7 @@ export function ArchitectureSection() {
                 <Line dashed />
                 <Node tone="cloud">OPTIONAL CLOUD</Node>
                 <div className="mx-auto h-6" aria-hidden="true" />
-                <p className="text-center font-mono text-[10px] tracking-[0.12em] text-muted-foreground">
+                <p className="text-muted-foreground text-center font-mono text-[10px] tracking-[0.12em]">
                   NEVER REQUIRED
                 </p>
               </div>

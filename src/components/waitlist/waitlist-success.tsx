@@ -16,7 +16,7 @@ export function WaitlistSuccess({
     >
       <div className="flex items-center gap-3">
         <span
-          className="flex size-9 items-center justify-center rounded-full bg-signal text-ink"
+          className="bg-signal text-ink flex size-9 items-center justify-center rounded-full"
           aria-hidden="true"
         >
           <CheckIcon className="size-5" strokeWidth={2.5} />
@@ -25,17 +25,19 @@ export function WaitlistSuccess({
           {duplicate ? "You're already on the list." : "You're early."}
         </p>
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-        You&apos;re on the Freemy alpha list. We&apos;ll only email when there is
-        something worth trying.
+      <p className="text-muted-foreground mt-3 text-sm leading-relaxed">
+        You&apos;re on the Freemy alpha list. We&apos;ll only email when there
+        is something worth trying.
       </p>
-      <div className="mt-5 border-t border-border pt-4">
-        <p className="text-sm text-muted-foreground">Want to help shape Freemy?</p>
+      <div className="border-border mt-5 border-t pt-4">
+        <p className="text-muted-foreground text-sm">
+          Want to help shape Freemy?
+        </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <span className="rounded-md border border-border px-3 py-1.5 font-mono text-xs text-muted-foreground">
+          <span className="border-border text-muted-foreground rounded-md border px-3 py-1.5 font-mono text-xs">
             I&apos;m a builder
           </span>
-          <span className="rounded-md border border-border px-3 py-1.5 font-mono text-xs text-muted-foreground">
+          <span className="border-border text-muted-foreground rounded-md border px-3 py-1.5 font-mono text-xs">
             I&apos;m a local AI user
           </span>
         </div>

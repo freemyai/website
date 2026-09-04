@@ -22,7 +22,9 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
   },
   {
     title: "Build",
-    items: [{ label: "GitHub", href: "https://github.com/freemyai", external: true }],
+    items: [
+      { label: "GitHub", href: "https://github.com/freemyai", external: true },
+    ],
   },
   {
     title: "Legal",

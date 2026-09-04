@@ -11,7 +11,7 @@ const statusStyles: Record<string, string> = {
 
 export function RoadmapSection() {
   return (
-    <section className="section-block border-t border-border">
+    <section className="section-block border-border border-t">
       <div className="container-site container-content">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -33,10 +33,10 @@ export function RoadmapSection() {
           {roadmapSummary.map((stage) => (
             <li
               key={stage.index}
-              className="flex flex-col rounded-xl border border-border bg-background p-6"
+              className="border-border bg-background flex flex-col rounded-xl border p-6"
             >
               <div className="flex items-center justify-between">
-                <span className="font-mono text-xs text-muted-foreground">
+                <span className="text-muted-foreground font-mono text-xs">
                   {stage.index}
                 </span>
                 <span
@@ -50,7 +50,7 @@ export function RoadmapSection() {
               </h3>
               <ul className="mt-4 flex-1 space-y-2">
                 {stage.items.map((item) => (
-                  <li key={item} className="text-sm text-muted-foreground">
+                  <li key={item} className="text-muted-foreground text-sm">
                     {item}
                   </li>
                 ))}

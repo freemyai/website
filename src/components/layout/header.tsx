@@ -24,7 +24,7 @@ export function Header() {
     <header
       className={`sticky top-0 z-40 w-full transition-colors duration-200 ${
         scrolled
-          ? "border-b border-border bg-background/95"
+          ? "border-border bg-background/95 border-b"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -38,7 +38,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="rounded-sm text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground rounded-sm text-sm transition-colors"
             >
               {item.label}
             </Link>
@@ -50,7 +50,9 @@ export function Header() {
             href={site.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => track(analyticsEvents.githubOpen, { location: "header" })}
+            onClick={() =>
+              track(analyticsEvents.githubOpen, { location: "header" })
+            }
             className={buttonVariants({ variant: "ghost", size: "sm" })}
             aria-label="Freemy AI on GitHub"
           >

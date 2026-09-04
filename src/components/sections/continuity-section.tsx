@@ -59,7 +59,7 @@ export function ContinuitySection() {
           <br />
           Keep the relationship.
         </h2>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+        <p className="text-muted-foreground mt-6 max-w-xl text-lg leading-relaxed">
           Models will come and go. Your AI memory shouldn&apos;t.
         </p>
 
@@ -67,15 +67,15 @@ export function ContinuitySection() {
           {days.map((entry) => (
             <li
               key={entry.day}
-              className="rounded-xl border border-border bg-card p-6"
+              className="border-border bg-card rounded-xl border p-6"
             >
-              <p className="font-mono text-xs font-medium tracking-[0.16em] text-signal-bright">
+              <p className="text-signal-bright font-mono text-xs font-medium tracking-[0.16em]">
                 {entry.day.toUpperCase()}
               </p>
               <div className="mt-5 space-y-5">
                 {entry.blocks.map((block) => (
                   <div key={block.label}>
-                    <p className="font-mono text-[10px] font-medium tracking-[0.18em] text-muted-foreground">
+                    <p className="text-muted-foreground font-mono text-[10px] font-medium tracking-[0.18em]">
                       {block.label}
                     </p>
                     <div className="mt-1.5 space-y-1">
@@ -84,9 +84,9 @@ export function ContinuitySection() {
                           key={line}
                           className={
                             block.mono
-                              ? "font-mono text-xs leading-relaxed text-muted-foreground"
+                              ? "text-muted-foreground font-mono text-xs leading-relaxed"
                               : block.unchanged
-                                ? "text-sm text-signal-bright"
+                                ? "text-signal-bright text-sm"
                                 : "text-sm leading-relaxed"
                           }
                         >
@@ -96,7 +96,7 @@ export function ContinuitySection() {
                     </div>
                     {block.action ? (
                       <p className="mt-3">
-                        <span className="inline-flex rounded-md bg-signal px-3 py-1.5 text-xs font-semibold text-ink">
+                        <span className="bg-signal text-ink inline-flex rounded-md px-3 py-1.5 text-xs font-semibold">
                           {block.action}
                         </span>
                       </p>
