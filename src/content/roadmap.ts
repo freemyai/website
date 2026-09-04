@@ -1,4 +1,5 @@
-export type RoadmapStatus = "IN PROGRESS" | "NEXT" | "PLANNED" | "RESEARCH" | "LAB";
+export type RoadmapStatus =
+  "IN PROGRESS" | "NEXT" | "PLANNED" | "RESEARCH" | "LAB";
 
 export type RoadmapStage = {
   id: string;
@@ -61,7 +62,12 @@ export const roadmapStages: RoadmapStage[] = [
     index: "03",
     name: "Freemy Cloud",
     status: "PLANNED",
-    items: ["Optional inference", "Private workloads", "Hybrid routing", "Developer API"],
+    items: [
+      "Optional inference",
+      "Private workloads",
+      "Hybrid routing",
+      "Developer API",
+    ],
     note: "Local remains first-class.",
   },
   {
@@ -80,24 +86,44 @@ export const roadmapSummary = [
     index: "01",
     name: "LAB",
     status: "IN PROGRESS" as const,
-    items: ["Local model", "Persistent memory", "Agent sandbox", "FreedomBench"],
+    items: [
+      "Local model",
+      "Persistent memory",
+      "Agent sandbox",
+      "FreedomBench",
+    ],
   },
   {
     index: "02",
     name: "ALPHA",
     status: "NEXT" as const,
-    items: ["Desktop experience", "Memory control", "Project workspaces", "Owner permissions"],
+    items: [
+      "Desktop experience",
+      "Memory control",
+      "Project workspaces",
+      "Owner permissions",
+    ],
   },
   {
     index: "03",
     name: "PRO",
     status: "PLANNED" as const,
-    items: ["Multi-device", "Encrypted backup", "Remote access", "Advanced memory"],
+    items: [
+      "Multi-device",
+      "Encrypted backup",
+      "Remote access",
+      "Advanced memory",
+    ],
   },
   {
     index: "04",
     name: "NODE",
     status: "RESEARCH" as const,
-    items: ["Always-on personal AI", "Local inference", "Personal storage", "Dedicated hardware"],
+    items: [
+      "Always-on personal AI",
+      "Local inference",
+      "Personal storage",
+      "Dedicated hardware",
+    ],
   },
 ];
