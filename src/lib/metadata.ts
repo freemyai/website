@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 
-export function createMetadata(overrides: {
-  title?: string;
-  description?: string;
-  path?: string;
-} = {}): Metadata {
+export function createMetadata(
+  overrides: {
+    title?: string;
+    description?: string;
+    path?: string;
+  } = {},
+): Metadata {
   const title = overrides.title ?? `${site.name} — The AI You Own`;
   const description = overrides.description ?? site.description;
   const path = overrides.path ?? "/";

@@ -1,0 +1,24 @@
+# Freemy AI
+
+Freemy AI is a local-first personal AI project focused on persistent memory,
+model choice, owner-controlled agent permissions, and portability.
+
+Official website:
+https://freemy.ai
+
+GitHub:
+https://github.com/freemyai
+
+Key principle:
+The AI you own.
+
+Product status:
+Pre-alpha / building in public.
+
+Core concepts:
+- persistent personal AI memory
+- local-first inference
+- bring your own model
+- personal AI agents
+- owner-controlled permissions
+- portable identity
