@@ -1,0 +1,60 @@
+[
+  {
+    "id": "motion-lab",
+    "zh": {
+      "title": "让想象动起来",
+      "summary": "水流、摆杆和机器：在变化中发现有趣的规律。"
+    },
+    "en": {
+      "title": "Ideas in motion",
+      "summary": "Water, pendulums and machines: explore what happens when things move."
+    },
+    "works": [
+      "hydraulics",
+      "wave-tank",
+      "triple-pendulum"
+    ],
+    "cover": "hydraulics"
+  },
+  {
+    "id": "playful-worlds",
+    "zh": {
+      "title": "走进另一种世界",
+      "summary": "在星空、海边小镇和无限房间里，换一种方式探索。"
+    },
+    "en": {
+      "title": "Other worlds to explore",
+      "summary": "Visit a starfield, a seaside village and a room that never ends."
+    },
+    "works": [
+      "star-hop",
+      "hearthlight",
+      "infinite-room"
+    ],
+    "cover": "hearthlight"
+  },
+  {
+    "id": "inspiration",
+    "zh": {
+      "title": "灵感参考",
+      "summary": "值得探索的互动作品；它们的 AI 创作方式尚未确认。"
+    },
+    "en": {
+      "title": "Creative references",
+      "summary": "Interactive works worth exploring, with AI creation status unconfirmed."
+    },
+    "works": [
+      "wave-tank",
+      "electric-motor",
+      "gears",
+      "airfoil",
+      "circuitjs",
+      "multimeter",
+      "sonar-robot",
+      "pendulum-lab",
+      "bending-light",
+      "robot-arm"
+    ],
+    "cover": "wave-tank"
+  }
+]

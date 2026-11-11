@@ -1,0 +1,60 @@
+[
+  {
+    "id": "wave-tank",
+    "slug": "wave-tank",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-fluids",
+    "title_original": "Wave Tank / Dalga Tankı",
+    "demo_url": "https://dalgatanki.sezlab.dev/",
+    "creator": {
+      "name": "Sezer Kuşku",
+      "profile_url": "https://sezlab.dev/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Wave Tank：波浪水箱",
+        "summary": "在三维水箱里制造波浪，看水流与沙滩球一起运动。",
+        "action": "选择水流场景，拖动水或调整重力、黏度等参数。",
+        "why": "轻盈的交互让流体模拟像一个可以随手试验的小玩具。",
+        "limit": "画面表现依赖设备的图形能力，模拟结果仅供探索。"
+      },
+      "en": {
+        "title": "Wave Tank",
+        "summary": "Make waves in a 3D tank and watch the water and beach ball move.",
+        "action": "Choose a scene, drag the water, or adjust gravity and viscosity.",
+        "why": "A playful interface makes fluid simulation inviting to explore.",
+        "limit": "Performance depends on graphics hardware; the simulation is for exploration."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": "https://x.com/sezerkusku/status/2105791822530285609"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/wave-tank-960.webp",
+        "base": "wave-tank",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://dalgatanki.sezlab.dev/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok Bot 报告在桌面浏览器观察到水体流动与球体运动；手机未核验。",
+      "note_en": "Grok Bot reported observing the water and ball move in a desktop browser; mobile was not tested."
+    },
+    "editorial": {
+      "status": "published"
+    },
+    "added_at": "2026-11-11"
+  }
+]

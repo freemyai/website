@@ -1,0 +1,8 @@
+[
+  {"id":"games","zh":"游戏","en":"Games"},
+  {"id":"experiments","zh":"互动实验","en":"Experiments"},
+  {"id":"learning","zh":"互动教程","en":"Learning"},
+  {"id":"art","zh":"艺术与声音","en":"Art & Sound"},
+  {"id":"apps","zh":"小应用","en":"Mini Apps"},
+  {"id":"worlds","zh":"3D 与空间","en":"3D & Spaces"}
+]

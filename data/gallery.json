@@ -1,0 +1,550 @@
+[
+  {
+    "id": "hydraulics",
+    "slug": "hydraulics",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-fluids",
+    "title_original": "How Hydraulics Work",
+    "demo_url": "https://hydraulics.wasmer.app/",
+    "creator": {
+      "name": "The Bugged Dev",
+      "profile_url": "https://x.com/thebuggeddev"
+    },
+    "locales": {
+      "zh": {
+        "title": "液压原理互动演示",
+        "summary": "调整活塞和输入力，看一台小挖掘机如何举起重物。",
+        "action": "拖动泵柄或调整输入力，观察输出力与挖掘机的变化。",
+        "why": "手绘风格的三维装置把液压传力变成可以动手探索的场景。",
+        "limit": "这是帮助理解原理的简化演示。"
+      },
+      "en": {
+        "title": "How Hydraulics Work",
+        "summary": "Adjust the pistons and input force to lift a tiny excavator arm.",
+        "action": "Drag the pump or adjust the input force and watch the output and excavator respond.",
+        "why": "A hand-drawn 3D machine turns hydraulic force into something you can explore.",
+        "limit": "This is a simplified demonstration of the underlying principles."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/thebuggeddev/status/2119075448449581197"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/hydraulics-960.webp",
+        "base": "hydraulics",
+        "width": 1440,
+        "height": 900
+      },
+      "video": {
+        "src": "/media/hydraulics-preview.mp4",
+        "duration_seconds": 8,
+        "captured_at": "2026-11-11"
+      },
+      "provenance": {
+        "source_url": "https://hydraulics.wasmer.app/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 1
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "hearthlight",
+    "slug": "hearthlight",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Hearthlight",
+    "demo_url": "https://hearthlight.github.io/",
+    "creator": {
+      "name": "poookee / Hearthlight",
+      "profile_url": "https://github.com/Hearthlight"
+    },
+    "locales": {
+      "zh": {
+        "title": "Hearthlight：海边小镇冒险",
+        "summary": "走进像素海边小镇，在温暖的世界里开启一段冒险。",
+        "action": "在原站选择 Play，按游戏提示开始探索。",
+        "why": "从海岸、灯塔到人物，像素世界充满细节。",
+        "limit": "作者说明游戏仍可能有问题，完整流程尚未由 Freemy 试玩。"
+      },
+      "en": {
+        "title": "Hearthlight",
+        "summary": "Step into a cozy pixel-art seaside village and begin an adventure.",
+        "action": "Choose Play on the original site and follow the game’s prompts.",
+        "why": "A detailed pixel world brings its coast, lighthouse and characters to life.",
+        "limit": "The creator notes that the game may contain bugs; Freemy has not played through it."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://www.reddit.com/r/aigamedev/comments/1wtakg5/i_opensourced_the_cozy_pixelart_game_opus_55_made/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/hearthlight-960.webp",
+        "base": "hearthlight",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://hearthlight.github.io/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器看到游戏标题画面；未完成游戏流程。",
+      "note_en": "The title screen was rendered in a desktop browser; the full game was not played through."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "star-hop",
+    "slug": "star-hop",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Star Hop: Endless Galaxy",
+    "demo_url": "https://www.star-hop.app/",
+    "creator": {
+      "name": "jaboos91",
+      "profile_url": "https://www.reddit.com/user/jaboos91/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Star Hop：星际跳跃",
+        "summary": "驾驶小飞船在行星之间跳跃，看看你能飞多远。",
+        "action": "点击开始，然后把握时机从一颗行星跃向下一颗。",
+        "why": "一个容易上手的动作，搭配漂亮的星空与行星轨道。",
+        "limit": "作者表示游戏仍在测试中；具体使用条件以原站为准。"
+      },
+      "en": {
+        "title": "Star Hop: Endless Galaxy",
+        "summary": "Hop a little spaceship between planets and see how far you can fly.",
+        "action": "Start the game, then time each jump from one planet to the next.",
+        "why": "A simple action is paired with a vivid starfield and planetary orbits.",
+        "limit": "The creator says the game is still in testing; see the original site for current conditions."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://www.reddit.com/r/ClaudeAI/comments/1woji4v/a_few_months_ago_i_vibecoded_a_little_space_game/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/star-hop-960.webp",
+        "base": "star-hop",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://www.star-hop.app/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "桌面浏览器已显示游戏画面，完整玩法尚未核验。",
+      "note_en": "The game screen rendered in a desktop browser; the full gameplay was not tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "harmonograph",
+    "slug": "harmonograph",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Harmonograph — A Drawing Machine",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/097-harmonograph.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Harmonograph：摆动绘图机",
+        "summary": "调节摆的节奏和墨色，让一台复古绘图机画出精细曲线。",
+        "action": "尝试切换频率比例或墨色，再按 Release pendulums 重新绘制。",
+        "why": "把物理运动、音乐比例和生成艺术放进同一张纸上。",
+        "limit": "作品来自作者的 AI 生成网页实验系列。"
+      },
+      "en": {
+        "title": "Harmonograph — A Drawing Machine",
+        "summary": "Tune swinging pendulums and ink to draw intricate curves.",
+        "action": "Change a frequency ratio or ink, then release the pendulums to draw again.",
+        "why": "Physics, musical ratios and generative art meet on one sheet of paper.",
+        "limit": "This piece is part of the creator’s AI-generated web experiments."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/harmonograph-960.webp",
+        "base": "harmonograph",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/097-harmonograph.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "桌面浏览器已渲染绘图界面；尚未完成全部控件测试。",
+      "note_en": "The drawing interface rendered in a desktop browser; not every control was tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "triple-pendulum",
+    "slug": "triple-pendulum",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-mechanics",
+    "title_original": "Triple Pendulum Lab",
+    "demo_url": "https://aksamustu.itch.io/triple-pendulum-lab",
+    "creator": {
+      "name": "Aksamustu",
+      "profile_url": "https://aksamustu.itch.io/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Triple Pendulum Lab：三摆实验室",
+        "summary": "拨动三节摆杆，看一条简单的轨迹如何变得不可预测。",
+        "action": "抓住任意关节或摆锤，拖动后松手，观察轨迹与速度。",
+        "why": "像坐进一间小小的物理实验室，亲手感受混沌运动。",
+        "limit": "这是交互模拟，运动和性能取决于浏览器与设备。"
+      },
+      "en": {
+        "title": "Triple Pendulum Lab",
+        "summary": "Give a three-link pendulum a push and watch its path become unpredictable.",
+        "action": "Grab a joint or weight, move it and release to watch the trail and speed.",
+        "why": "A small virtual physics lab makes chaotic motion tangible.",
+        "limit": "This is an interactive simulation; performance varies by device and browser."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/dozgurozdemir/status/2118450610324251090"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/triple-pendulum-960.webp",
+        "base": "triple-pendulum",
+        "width": 960,
+        "height": 600
+      },
+      "provenance": {
+        "source_url": "https://aksamustu.itch.io/triple-pendulum-lab",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok Bot 报告拖动关节后观察到速度、能量和轨迹变化。",
+      "note_en": "Grok Bot reported changes in speed, energy and trail after dragging a joint."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "infinite-room",
+    "slug": "infinite-room",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Droste — The Infinite Room",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/099-droste-infinite-zoom.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Droste：无限房间",
+        "summary": "走进画中画，体验一个不断向内延伸的彩色房间。",
+        "action": "滚动改变缩放速度，或切换场景与递归效果。",
+        "why": "一幅画里藏着另一间房，越看越远。",
+        "limit": "这是视觉艺术实验，不是三维空间的真实漫游。"
+      },
+      "en": {
+        "title": "Droste — The Infinite Room",
+        "summary": "Enter a picture within a picture in a room that keeps unfolding.",
+        "action": "Scroll to change the zoom, or switch scenes and recursive effects.",
+        "why": "A room inside a painting invites you to look further and further in.",
+        "limit": "This is a visual art experiment, not a walkable 3D environment."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/infinite-room-960.webp",
+        "base": "infinite-room",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/099-droste-infinite-zoom.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "桌面浏览器已显示递归房间画面；尚未测试全部控制。",
+      "note_en": "The recursive room rendered in a desktop browser; not every control was tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 7
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "light-and-optics",
+    "slug": "light-and-optics",
+    "type": "learning",
+    "primary_category": "physics",
+    "subcategory": "physics-optics",
+    "title_original": "Light and Optics",
+    "demo_url": "https://iamtechartist.com/light-and-optics/",
+    "creator": {
+      "name": "Techartist",
+      "profile_url": "https://iamtechartist.com/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Light and Optics：光与光学",
+        "summary": "走进三维放映室，跟随互动课程探索光的世界。",
+        "action": "进入作品并选择一节课，跟随画面逐步探索。",
+        "why": "将光学课程变成一场可以亲手参与的三维放映。",
+        "limit": "作品需要图形加速，性能会随设备变化。"
+      },
+      "en": {
+        "title": "Light and Optics",
+        "summary": "Step into a 3D projection room for an interactive journey through light.",
+        "action": "Enter the experience, choose a lesson and follow it step by step.",
+        "why": "Optics lessons become a 3D presentation you can explore yourself.",
+        "limit": "The experience needs graphics acceleration and performance varies by device."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/techartist_/status/2119120307458097260"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/light-and-optics-960.webp",
+        "base": "light-and-optics",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://iamtechartist.com/light-and-optics/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok Bot 报告进入第一课并前进到下一步；设备图形性能会影响体验。",
+      "note_en": "Grok Bot reported entering the first lesson and advancing one step; graphics performance varies by device."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 8
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "chroma",
+    "slug": "chroma",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-design",
+    "title_original": "Chroma — Colour Palette Studio",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/071-palette-studio.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Chroma：配色灵感工作室",
+        "summary": "生成、调整和组合色彩，为下一个设计寻找灵感。",
+        "action": "切换配色规则或点击 Generate，探索新的颜色组合。",
+        "why": "把配色、色轮和预览放在一个清爽的工作台里。",
+        "limit": "色彩与对比度结果请结合实际项目需求复核。"
+      },
+      "en": {
+        "title": "Chroma — Colour Palette Studio",
+        "summary": "Generate, adjust and combine colors for your next design.",
+        "action": "Switch the harmony rule or select Generate to explore another palette.",
+        "why": "A clean workspace brings palettes, a color wheel and previews together.",
+        "limit": "Check color and contrast results against your project’s needs."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/chroma-960.webp",
+        "base": "chroma",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/071-palette-studio.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "桌面浏览器已显示配色工作台；尚未测试全部控件。",
+      "note_en": "The palette workspace rendered in a desktop browser; not every control was tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 10
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "windtunnel",
+    "slug": "windtunnel",
+    "type": "experiments",
+    "primary_category": "engineering",
+    "subcategory": "engineering-transport",
+    "title_original": "Windtunnel",
+    "demo_url": "https://windtunnel-vis.vercel.app/",
+    "creator": {
+      "name": "Om anand",
+      "profile_url": "https://x.com/om_anand_"
+    },
+    "locales": {
+      "zh": {
+        "title": "Windtunnel：浏览器风洞",
+        "summary": "把汽车放进虚拟风洞，观察气流绕过车身。",
+        "action": "调整视角与风速，观察车辆周围的流场。",
+        "why": "将空气动力学仪表和可视化风洞放进浏览器。",
+        "limit": "图形负载较高；Grok Bot 的测试环境帧率较低。"
+      },
+      "en": {
+        "title": "Windtunnel",
+        "summary": "Place a car in a virtual wind tunnel and observe airflow around it.",
+        "action": "Adjust the view and wind speed to explore the flow around the vehicle.",
+        "why": "A browser-based wind tunnel pairs aerodynamic controls with a live visualization.",
+        "limit": "Graphics demands are high; Grok Bot reported a low frame rate in its test environment."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/om_anand_/status/2104355836118380848"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/windtunnel-960.webp",
+        "base": "windtunnel",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://windtunnel-vis.vercel.app/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok Bot 报告成功拖动相机，但测试环境约 1 FPS。",
+      "note_en": "Grok Bot reported moving the camera, at around 1 FPS in its test environment."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 8
+    },
+    "added_at": "2026-11-11"
+  }
+]

@@ -1,0 +1,85 @@
+import { chromium } from 'playwright-core';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const out=process.env.FREEMY_QA_DIR||path.resolve('..','freemy-preview-checks');
+fs.mkdirSync(out,{recursive:true});
+const executablePath=process.env.FREEMY_BROWSER_PATH||'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const browser=await chromium.launch({executablePath,headless:true});
+try{
+  for(const [width,height] of [[1440,900],[768,1024],[390,844]]) for(const lang of ['zh','en']){
+    const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
+    const route=lang==='en'?'/en/':'/';
+    await page.goto(`http://127.0.0.1:4177${route}`,{waitUntil:'networkidle'});
+    await page.locator('.creation-card img').first().waitFor();
+    await page.waitForFunction(()=>[...document.querySelectorAll('.creation-card img')].slice(0,3).every(i=>i.complete&&i.naturalWidth>0));
+    const size=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,firstImage:document.querySelector('.creation-card img').getBoundingClientRect().top,firstTitle:document.querySelector('.creation-card h3').getBoundingClientRect().bottom}));
+    assert.ok(size.scroll<=size.width,`${lang} ${width}: horizontal page overflow`);
+    assert.ok(size.firstImage<height&&size.firstTitle<height,`${lang} ${width}: first work not visible on first screen (${JSON.stringify(size)})`);
+    await page.screenshot({path:path.join(out,`home-${lang}-${width}.png`)});
+    await page.close();
+  }
+  const page=await browser.newPage({viewport:{width:1440,height:900}});
+  await page.goto('http://127.0.0.1:4177/',{waitUntil:'networkidle'});
+  let videoRequests=0;page.on('request',r=>{if(r.url().endsWith('/hydraulics-preview.mp4'))videoRequests++;});
+  const first=page.locator('.creation-card [data-preview]').first(); await first.focus(); await first.click();
+  assert.equal(await page.locator('#preview-dialog').evaluate(d=>d.open),true,'preview opens');
+  assert.equal(videoRequests,0,'video is not fetched when the gallery or preview opens');
+  await page.locator('#preview-play').click();
+  await page.waitForFunction(()=>document.querySelector('#preview-video').readyState>=2);
+  assert.equal(await page.locator('#preview-video').isVisible(),true,'demo clip plays on request');
+  assert.equal(videoRequests,1,'video is fetched only after the visitor requests it');
+  await page.screenshot({path:path.join(out,'preview-zh-1440.png')});
+  await page.keyboard.press('Escape'); assert.equal(await page.locator('#preview-dialog').evaluate(d=>d.open),false,'Escape closes preview');
+  assert.equal(await page.locator('#preview-video').getAttribute('src'),null,'video is unloaded after closing');
+  assert.equal(await first.evaluate(el=>document.activeElement===el),true,'focus returns to preview');
+  for (const term of ['Science & Physics','科学与物理','Experiments','互动实验']) {
+    await page.locator('#gallery-search').fill(term);
+    assert.ok(await page.locator('.creation-card:visible').count()>0,`search finds ${term}`);
+    assert.equal(await page.locator('.creation-card:visible').first().locator('h3').innerText(),'液压原理互动演示',`search uses topic metadata for ${term}`);
+  }
+  await page.locator('#gallery-search').fill('no-such-creation-xyz');
+  assert.equal(await page.locator('.creation-card:visible').count(),0);
+  assert.equal(await page.locator('[data-surprise]').getAttribute('aria-disabled'),'true','random discovery is unavailable with no matches');
+  const emptyUrl=page.url();await page.locator('[data-surprise]').focus();await page.keyboard.press('Enter');
+  assert.equal(page.url(),emptyUrl,'random discovery does not navigate away from an empty result');
+  await page.locator('#gallery-search').fill('');
+  const featuredFirst=await page.locator('.creation-card').first().locator('h3').innerText();
+  await page.locator('#gallery-sort').selectOption('recent');
+  const newestFirst=await page.locator('.creation-card').first().locator('h3').innerText();
+  assert.notEqual(newestFirst,featuredFirst,'same-day additions are ordered by insertion for latest-first sorting');
+  await page.locator('#gallery-sort').selectOption('featured');
+  await page.locator('#gallery-search').fill('Hearthlight');
+  assert.equal(await page.locator('.creation-card:visible').count(),1,'search filters gallery');
+  assert.ok((await page.locator('.creation-card:visible h3').innerText()).includes('Hearthlight'));
+  await page.locator('[data-surprise]').click();await page.waitForURL('**/works/hearthlight/');
+  await page.goto('http://127.0.0.1:4177/types/games/',{waitUntil:'networkidle'});
+  assert.equal(await page.locator('.creation-card').count(),2,'game type shows game entries');
+  await page.locator('#gallery-search').fill('no-such-creation-xyz');
+  assert.equal(await page.locator('[data-surprise]').getAttribute('aria-disabled'),'true');
+  const emptyTypeUrl=page.url();await page.locator('[data-surprise]').focus();await page.keyboard.press('Enter');
+  assert.equal(page.url(),emptyTypeUrl,'random discovery stays in an empty filtered type');
+  await page.goto('http://127.0.0.1:4177/en/explore/',{waitUntil:'networkidle'});
+  await page.locator('#gallery-search').fill('Science & Physics');
+  assert.ok(await page.locator('.creation-card:visible').count()>0,'English topic search works');
+  await page.goto('http://127.0.0.1:4177/works/hydraulics/?q=robot',{waitUntil:'networkidle'});
+  await page.locator('[data-language-switch]').last().click();
+  assert.match(page.url(),/\/en\/works\/hydraulics\/\?q=robot$/,'language switch preserves work and query');
+  assert.equal(await page.locator('html').getAttribute('lang'),'en');
+  assert.equal(await page.locator('.detail-open').getAttribute('href'),'https://hydraulics.wasmer.app/');
+  await page.goto('http://127.0.0.1:4177/');await page.waitForURL('**/en/');
+  await page.locator('[data-language-switch]').first().click();await page.waitForURL('http://127.0.0.1:4177/');
+  await page.goto('http://127.0.0.1:4177/submit/',{waitUntil:'networkidle'});
+  assert.match(await page.locator('.prose-page a').getAttribute('href'),/^https:\/\/github\.com\/freemyai\/website\/issues\/new\?/);
+  const nojs=await browser.newPage({javaScriptEnabled:false});await nojs.goto('http://127.0.0.1:4177/');
+  assert.match(await nojs.locator('.creation-card [data-preview]').first().getAttribute('href'),/^\/works\//);
+  assert.equal(await nojs.locator('.creation-card .open-link').first().getAttribute('href'),'https://hydraulics.wasmer.app/');
+  await nojs.goto('http://127.0.0.1:4177/types/games/');
+  assert.equal(await nojs.locator('[data-surprise]').getAttribute('href'),'/works/hearthlight/','no-JavaScript fallback stays in the selected type');
+  await nojs.close();
+  const broken=await browser.newPage();await broken.route('**/media/hydraulics-*.webp',route=>route.abort());await broken.goto('http://127.0.0.1:4177/',{waitUntil:'networkidle'});
+  assert.equal(await broken.locator('.creation-card').first().locator('.image-error').isVisible(),true,'missing media has a clear fallback');
+  await broken.close();await page.close();
+  console.log(`Browser checks passed; screenshots saved to ${out}`);
+}finally{await browser.close();}

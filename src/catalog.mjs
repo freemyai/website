@@ -5,14 +5,32 @@ export function publishedWorks(works) {
 export function filterWorks(works, filters = {}) {
   const q = (filters.q || '').trim().toLocaleLowerCase();
   return works.filter(work => {
-    const searchable = [work.title_zh, work.title_original, work.summary_zh, work.category_name, work.subcategory_name, ...(work.tags || [])].filter(Boolean).join(' ').toLocaleLowerCase();
+    const searchable = [work.title_zh, work.title_original, work.summary_zh, work.category_name, work.subcategory_name, work.creator?.name, work.locales?.zh?.title, work.locales?.zh?.summary, work.locales?.en?.title, work.locales?.en?.summary, ...(work.tags || []), ...(work.search_terms || [])].filter(Boolean).join(' ').toLocaleLowerCase();
     return (!q || searchable.includes(q))
       && (!filters.category || work.primary_category === filters.category)
+      && (!filters.type || work.type === filters.type)
       && (!filters.format || work.formats?.includes(filters.format))
       && (!filters.login || work.access?.login === filters.login)
       && (!filters.language || work.access?.language_codes?.includes(filters.language))
       && (!filters.mobile || ['tested_supported', 'reported_supported'].includes(work.device_support?.mobile));
   });
+}
+
+export function hasAiEvidence(work) {
+  const ai = work.ai_provenance;
+  return ['author_claimed','documented'].includes(ai?.status) && ['coding','assets','mixed'].includes(ai?.usage) && !!safeExternalUrl(ai?.evidence_url);
+}
+
+export function eligibleForGallery(work) {
+  const translated = ['zh','en'].every(lang => work.locales?.[lang]?.title && work.locales?.[lang]?.summary);
+  return work.editorial?.status === 'published' && work.verification?.availability !== 'unavailable' && !!work.media?.poster?.src &&
+    hasAiEvidence(work) && translated;
+}
+
+export function localizedPath(current, lang, search = '') {
+  let base = current.replace(/^\/en(?=\/|$)/, '') || '/';
+  if (!base.startsWith('/')) base = `/${base}`;
+  return `${lang === 'en' ? '/en' : ''}${base}${search}`;
 }
 
 export function safeExternalUrl(value) {

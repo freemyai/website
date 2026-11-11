@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "node src/build.mjs",
     "test": "node --test tests/*.test.mjs",
-    "lint": "node --check src/build.mjs && node --check src/catalog.mjs && node --check assets/app.mjs",
+    "test:browser": "node tests/browser-check.mjs",
+    "lint": "node --check src/build.mjs && node --check src/catalog.mjs && node --check src/pages.mjs && node --check src/components.mjs && node --check assets/app.mjs && node --check scripts/capture-previews.mjs",
     "typecheck": "node src/validate.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
   }
 }
