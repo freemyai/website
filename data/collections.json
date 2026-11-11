@@ -1,16 +1,46 @@
 [
   {
     "id": "creative-studio",
-    "zh": {"title": "画画、弹琴、创造", "summary": "打开色彩、音符和图案，让灵感自由流动。"},
-    "en": {"title": "Make something delightful", "summary": "Play with color, sound and patterns in these creative studios."},
-    "works": ["rosette", "soft-machine", "pulse", "luminote", "chak-chak-mage", "aquarelle", "harmonograph", "chroma"],
+    "zh": {
+      "title": "画画、弹琴、创造",
+      "summary": "打开色彩、音符和图案，让灵感自由流动。"
+    },
+    "en": {
+      "title": "Make something delightful",
+      "summary": "Play with color, sound and patterns in these creative studios."
+    },
+    "works": [
+      "rosette",
+      "soft-machine",
+      "pulse",
+      "luminote",
+      "chak-chak-mage",
+      "aquarelle",
+      "harmonograph",
+      "chroma"
+    ],
     "cover": "rosette"
   },
   {
     "id": "little-games",
-    "zh": {"title": "玩一会儿", "summary": "找不同、闯迷宫，或来一局霓虹街机。"},
-    "en": {"title": "A little time to play", "summary": "Spot the differences, explore a maze or step into a neon arcade."},
-    "works": ["tree-appreciator", "labyrinthos", "hyperbrick", "hearthlight", "star-hop"],
+    "zh": {
+      "title": "玩一会儿",
+      "summary": "找不同、闯迷宫，或来一局霓虹街机。"
+    },
+    "en": {
+      "title": "A little time to play",
+      "summary": "Spot the differences, explore a maze or step into a neon arcade."
+    },
+    "works": [
+      "tree-appreciator",
+      "labyrinthos",
+      "hyperbrick",
+      "hearthlight",
+      "star-hop",
+      "battle-drones",
+      "knockbots",
+      "lili-last-door"
+    ],
     "cover": "hyperbrick"
   },
   {

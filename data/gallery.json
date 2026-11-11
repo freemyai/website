@@ -1552,5 +1552,222 @@
       "featured_order": 6.2
     },
     "added_at": "2026-11-11"
+  },
+  {
+    "id": "battle-drones",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-strategy",
+    "title_original": "Battle Drones",
+    "demo_url": "https://simonw.github.io/battledrones/",
+    "creator": {
+      "name": "Simon Willison",
+      "profile_url": "https://simonwillison.net/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Battle Drones：无人机之战",
+        "summary": "收集资源、建造机群，在三维战场展开即时战略对决。",
+        "action": "选择地图和难度后开始对局，也可以先观看 AI 对战。",
+        "why": "浏览器中的小型即时战略游戏，包含多张地图和不同对战方式。",
+        "limit": "本机仅观察了一次 AI 对战开局，未完成完整对局或手机测试。"
+      },
+      "en": {
+        "title": "Battle Drones",
+        "summary": "Gather resources, build a drone swarm and command a real-time battle.",
+        "action": "Choose a map and difficulty to start, or watch an AI-versus-AI match first.",
+        "why": "A browser-based real-time strategy game with multiple maps and ways to play.",
+        "limit": "We observed the beginning of an AI match, but did not complete a full game or test mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://simonwillison.net/2026/Oct/20/battledrones/"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "本机进入 AI 对战并观察地图与单位；完整对局及手机未测。",
+      "note_en": "A desktop browser entered an AI match and displayed the map and units; a full match and mobile remain untested."
+    },
+    "slug": "battle-drones",
+    "media": {
+      "poster": {
+        "src": "/media/battle-drones-960.webp",
+        "base": "battle-drones",
+        "width": 960,
+        "height": 600
+      },
+      "provenance": {
+        "source_url": "https://simonw.github.io/battledrones/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 8.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "knockbots",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Knockbots",
+    "demo_url": "https://knockbots.com/",
+    "creator": {
+      "name": "Fabian Wesner",
+      "profile_url": "https://www.linkedin.com/posts/fabian-wesner_i-published-a-3d-fighting-game-knockbots-activity-7489232709035245568--YDx"
+    },
+    "locales": {
+      "zh": {
+        "title": "Knockbots：机器人格斗",
+        "summary": "操纵机器人进入三维竞技场，练习拳脚与格挡。",
+        "action": "等待竞技场加载，选择 Training 或 Arcade，然后按页面提示操作。",
+        "why": "金属机体和工业场景为浏览器格斗增添了鲜明的视觉风格。",
+        "limit": "加载可能需要时间；本机只核验了游戏菜单，完整对战和手机未测。"
+      },
+      "en": {
+        "title": "Knockbots",
+        "summary": "Step into a 3D robot arena and practice punches, kicks and blocks.",
+        "action": "Allow the arena to load, choose Training or Arcade, and follow the controls.",
+        "why": "Metal fighters and an industrial arena give this browser brawler a distinct look.",
+        "limit": "Loading can take time; we verified the game menu, not a complete match or mobile support."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus",
+        "Codex"
+      ],
+      "evidence_url": "https://www.linkedin.com/posts/fabian-wesner_i-published-a-3d-fighting-game-knockbots-activity-7489232709035245568--YDx"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "本机加载出三维角色与游戏菜单；Grok 报告曾在其浏览器进入训练回合。",
+      "note_en": "The 3D fighters and game menu loaded locally; Grok reported entering a training round in its browser."
+    },
+    "slug": "knockbots",
+    "media": {
+      "poster": {
+        "src": "/media/knockbots-960.webp",
+        "base": "knockbots",
+        "width": 960,
+        "height": 600
+      },
+      "provenance": {
+        "source_url": "https://knockbots.com/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 7.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "lili-last-door",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Lili and the Last Door",
+    "demo_url": "https://gamesforlili.xyz/",
+    "creator": {
+      "name": "Viktor",
+      "profile_url": "https://x.com/slopshipper"
+    },
+    "locales": {
+      "zh": {
+        "title": "Lili and the Last Door：莉莉与最后一扇门",
+        "summary": "跟随戴着女巫帽的莉莉，走进一个停在午夜的像素冒险。",
+        "action": "等待游戏加载，按键开始并选择 New Game；可按 Esc 跳过开场。",
+        "why": "像素场景、角色对话和万圣节氛围组成了一段叙事旅程。",
+        "limit": "本机进入序章对话；未完成完整故事或手机测试。"
+      },
+      "en": {
+        "title": "Lili and the Last Door",
+        "summary": "Follow a young witch through a pixel-art adventure on a night stuck at midnight.",
+        "action": "Wait for the game to load, press a key and choose New Game; Esc skips the opening.",
+        "why": "Pixel scenes, character dialogue and a Halloween setting shape a story-led adventure.",
+        "limit": "We reached the opening dialogue but did not complete the story or test mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus"
+      ],
+      "evidence_url": "https://x.com/slopshipper/status/2103471134461112639"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "本机进入序章并看到角色对话；完整故事及手机未测。",
+      "note_en": "A desktop browser reached the opening chapter and character dialogue; the full story and mobile remain untested."
+    },
+    "slug": "lili-last-door",
+    "media": {
+      "poster": {
+        "src": "/media/lili-last-door-960.webp",
+        "base": "lili-last-door",
+        "width": 960,
+        "height": 600
+      },
+      "provenance": {
+        "source_url": "https://gamesforlili.xyz/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.4
+    },
+    "added_at": "2026-11-11"
   }
 ]
