@@ -20,7 +20,10 @@
       "chroma",
       "kanso",
       "web-bayan",
-      "bottle-studio"
+      "bottle-studio",
+      "type-sound",
+      "modfont",
+      "mpump"
     ],
     "cover": "rosette"
   },
@@ -62,7 +65,8 @@
     "works": [
       "hydraulics",
       "wave-tank",
-      "triple-pendulum"
+      "triple-pendulum",
+      "clearwater"
     ],
     "cover": "hydraulics"
   },
@@ -127,5 +131,25 @@
       "hydraulics"
     ],
     "cover": "learn-arduino"
+  },
+  {
+    "id": "sound-lab",
+    "zh": {
+      "title": "声音实验室",
+      "summary": "从手风琴到鼓机，用声音和节奏自由探索。"
+    },
+    "en": {
+      "title": "Sounds to play",
+      "summary": "Explore instruments, beats and sound-driven visuals."
+    },
+    "works": [
+      "type-sound",
+      "mpump",
+      "web-bayan",
+      "soft-machine",
+      "pulse",
+      "luminote"
+    ],
+    "cover": "mpump"
   }
 ]

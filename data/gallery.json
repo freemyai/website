@@ -2463,5 +2463,372 @@
         "url": "https://learn-arduino-red.vercel.app/zh/"
       }
     ]
+  },
+  {
+    "id": "type-sound",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-synthesis",
+    "title_original": "Type Sound",
+    "demo_url": "https://type-sound.vercel.app/",
+    "creator": {
+      "name": "Jessica Jiang",
+      "profile_url": "https://jessicajiang.design/projects/type-sound"
+    },
+    "locales": {
+      "zh": {
+        "title": "Type Sound：打字通感",
+        "summary": "在黑色画布上打字，让彩色字母和音符随按键出现。",
+        "action": "点击画布取得焦点，再用键盘打字，看看字母如何浮现。",
+        "why": "打字变成一段轻盈的色彩与声音实验。",
+        "limit": "声音尚未实际听测；建议使用键盘，手机体验未知。"
+      },
+      "en": {
+        "title": "Type Sound",
+        "summary": "Type on a dark canvas and turn keystrokes into colored letters and notes.",
+        "action": "Click the canvas to focus, then type on your keyboard and watch the letters appear.",
+        "why": "A keyboard becomes a small experiment in color and sound.",
+        "limit": "Audio has not been audibly verified; a keyboard is recommended and mobile support is unknown."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://jessicajiang.design/projects/type-sound"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面打字并观察彩色字母；未能听测声音。本机确认原站响应，手机未测。",
+      "note_en": "Grok typed and observed colored letters in a desktop browser; audio was not audibly verified. The site responded locally; mobile was not tested."
+    },
+    "slug": "type-sound",
+    "media": {
+      "poster": {
+        "src": "/media/type-sound-960.webp",
+        "base": "type-sound",
+        "width": 1600,
+        "height": 893
+      },
+      "provenance": {
+        "source_url": "https://type-sound.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.7
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "modfont",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-design",
+    "title_original": "ModFont",
+    "demo_url": "https://modfont.app/editor",
+    "creator": {
+      "name": "Patrick Cusack",
+      "profile_url": "https://www.patrickcusack.com/modfont/"
+    },
+    "locales": {
+      "zh": {
+        "title": "ModFont：模块化字体设计",
+        "summary": "在网格里摆放形状，组合字母并预览自己的字体。",
+        "action": "关掉起始对话框，在现有字体的网格中摆放模块，再修改底部预览文字。",
+        "why": "用简单的形状和网格，直观探索字母设计。",
+        "limit": "编辑无需登录；导出和分享功能、手机体验尚未核验。"
+      },
+      "en": {
+        "title": "ModFont",
+        "summary": "Arrange shapes on a grid to build letters and preview a modular typeface.",
+        "action": "Dismiss the starting dialogs, place modules in the existing font grid and change the preview text.",
+        "why": "Simple shapes and a grid make type design a hands-on experiment.",
+        "limit": "Editing works without signing in; export, sharing and mobile have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://www.patrickcusack.com/modfont/"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面编辑字母网格并更改预览文字；本机确认原站响应，导出和手机未测。",
+      "note_en": "Grok edited a letter grid and changed the preview text in a desktop browser; the site responded locally. Export and mobile were not tested."
+    },
+    "slug": "modfont",
+    "media": {
+      "poster": {
+        "src": "/media/modfont-960.webp",
+        "base": "modfont",
+        "width": 1600,
+        "height": 893
+      },
+      "provenance": {
+        "source_url": "https://modfont.app/editor",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.4
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "mpump",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "mpump",
+    "demo_url": "https://mpump.live/",
+    "creator": {
+      "name": "gdamdam",
+      "profile_url": "https://github.com/gdamdam"
+    },
+    "locales": {
+      "zh": {
+        "title": "mpump：浏览器鼓机",
+        "summary": "打开鼓机与合成器，组合节奏、音色和效果。",
+        "action": "打开网站并进入 mpump，跳过欢迎提示后点击 MIX，再试试效果开关。",
+        "why": "鼓组、贝斯、合成器和效果组合在一个可探索的界面里。",
+        "limit": "声音尚未实际听测；分享、在线合奏和手机体验未核验。"
+      },
+      "en": {
+        "title": "mpump",
+        "summary": "Explore a browser groovebox with drums, synths and effects.",
+        "action": "Open mpump, dismiss the welcome screen, choose MIX and experiment with the effects.",
+        "why": "Drums, bass, synths and effects come together in one playful instrument.",
+        "limit": "Audio has not been audibly verified; sharing, live jam and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/gdamdam/mpump"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面使用 MIX 并打开延迟效果；未能听测声音。本机确认原站响应，手机未测。",
+      "note_en": "Grok used MIX and enabled delay in a desktop browser; audio was not audibly verified. The site responded locally; mobile was not tested."
+    },
+    "slug": "mpump",
+    "media": {
+      "poster": {
+        "src": "/media/mpump-960.webp",
+        "base": "mpump",
+        "width": 1600,
+        "height": 893
+      },
+      "provenance": {
+        "source_url": "https://mpump.live/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.4
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "jamily",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "Jamily",
+    "demo_url": "https://jamily-flame.vercel.app/",
+    "creator": {
+      "name": "Evan Reisberg",
+      "profile_url": "https://evanreisberg.com/projects/jamily"
+    },
+    "locales": {
+      "zh": {
+        "title": "Jamily：即兴摇滚谱系",
+        "summary": "在星云般的互动地图中探索即兴乐队之间的联系。",
+        "action": "关闭说明后，在搜索框输入 Grateful Dead 等乐队名，查看详情和相连的乐队。",
+        "why": "把音乐史中的影响与传承变成可以探索的星图。",
+        "limit": "密集节点会移动，搜索比直接点击更容易；手机体验未知。"
+      },
+      "en": {
+        "title": "Jamily",
+        "summary": "Explore connections between jam bands in an interactive musical constellation.",
+        "action": "Close the introduction and search for a band such as Grateful Dead to explore its connections.",
+        "why": "Musical influences and lineages become a map you can explore.",
+        "limit": "Dense nodes move, so search can be easier than clicking; mobile support is unknown."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude",
+        "Claude Code"
+      ],
+      "evidence_url": "https://evanreisberg.com/projects/jamily"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面搜索乐队并查看详情；本机确认原站响应，手机未测。",
+      "note_en": "Grok searched for a band and viewed its details in a desktop browser; the site responded locally, and mobile was not tested."
+    },
+    "slug": "jamily",
+    "media": {
+      "poster": {
+        "src": "/media/jamily-960.webp",
+        "base": "jamily",
+        "width": 1600,
+        "height": 893
+      },
+      "provenance": {
+        "source_url": "https://jamily-flame.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.4
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "clearwater",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-shaders",
+    "title_original": "Clearwater",
+    "demo_url": "https://aureliengmz.github.io/clearwater/",
+    "creator": {
+      "name": "Aurélien",
+      "profile_url": "https://github.com/Aureliengmz"
+    },
+    "locales": {
+      "zh": {
+        "title": "Clearwater：实时浅水",
+        "summary": "环顾清澈的水面，欣赏水下卵石与流动的光影。",
+        "action": "等待场景加载，拖动鼠标环顾，再点击水面尝试激起涟漪。",
+        "why": "细密的波光和水下焦散，让一小片水景有了真实感。",
+        "limit": "场景较重，点击涟漪较细微；手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Clearwater",
+        "summary": "Look around a clear water surface and watch light move across the pebbles below.",
+        "action": "Wait for the scene to load, drag to look around and tap the water to try making ripples.",
+        "why": "Reflections and underwater caustics bring a small water scene to life.",
+        "limit": "The 3D scene can be demanding and ripples are subtle; mobile has not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/Aurelien_Gz/status/2102479887495758076"
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Aureliengmz/clearwater"
+      },
+      {
+        "url": "https://www.bestxbuilds.com/builds/clearwater"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面拖动视角并点击水面；水波较细微。本机确认原站响应，手机未测。",
+      "note_en": "Grok dragged the camera and clicked the water in a desktop browser; ripples were subtle. The site responded locally; mobile was not tested."
+    },
+    "slug": "clearwater",
+    "media": {
+      "poster": {
+        "src": "/media/clearwater-960.webp",
+        "base": "clearwater",
+        "width": 1600,
+        "height": 891
+      },
+      "provenance": {
+        "source_url": "https://aureliengmz.github.io/clearwater/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6.4
+    },
+    "added_at": "2026-11-12"
   }
 ]
