@@ -1,0 +1,590 @@
+{
+  "version": "1.0",
+  "prepared_on": "2026-11-11",
+  "locale": "zh-CN",
+  "positioning": "精选、可体验的网页作品发现站；首版介绍作品并跳转原站，不托管第三方应用。",
+  "rules": [
+    "一条记录对应一个可独立体验的作品；网站首页或作者目录另作合集。",
+    "一个作品只选一个主类目和一个主子类目；使用标签与专题实现交叉发现。",
+    "主题、作品形态、技术、设备与AI来源分开记录。",
+    "AI辅助创作不是强制条件；未经来源证明不得标记为AI作品。",
+    "十二类是完整词表，不要求首日全部展示；空类目隐藏。",
+    "优先收录physics、engineering、electronics、robotics，再补games与creative。"
+  ],
+  "categories": [
+    {
+      "id": "physics",
+      "name_zh": "科学与物理",
+      "priority": "core",
+      "description_zh": "理解自然现象与基础物理规律；以实验和原理探索为主。",
+      "subcategories": [
+        {
+          "id": "physics-mechanics",
+          "name_zh": "力学与运动"
+        },
+        {
+          "id": "physics-fluids",
+          "name_zh": "流体与液压"
+        },
+        {
+          "id": "physics-thermal",
+          "name_zh": "热学与能量"
+        },
+        {
+          "id": "physics-waves",
+          "name_zh": "声学与振动"
+        },
+        {
+          "id": "physics-optics",
+          "name_zh": "光学与波动"
+        },
+        {
+          "id": "physics-electromagnetism",
+          "name_zh": "电磁现象"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive physics",
+        "fluid simulation",
+        "hydraulics simulator",
+        "optics simulation",
+        "wave simulation",
+        "explorable explanation"
+      ],
+      "boundary_zh": "讲物理规律归本类；完整机器结构归工程，电路连接与驱动归电子。"
+    },
+    {
+      "id": "engineering",
+      "name_zh": "工程与机械",
+      "priority": "core",
+      "description_zh": "拆解机器、结构、制造流程，理解真实系统怎样工作。",
+      "subcategories": [
+        {
+          "id": "engineering-mechanisms",
+          "name_zh": "机构与传动"
+        },
+        {
+          "id": "engineering-engines",
+          "name_zh": "发动机与动力"
+        },
+        {
+          "id": "engineering-transport",
+          "name_zh": "交通与航空航天"
+        },
+        {
+          "id": "engineering-manufacturing",
+          "name_zh": "制造与3D打印"
+        },
+        {
+          "id": "engineering-industrial",
+          "name_zh": "工厂与工业流程"
+        },
+        {
+          "id": "engineering-structures",
+          "name_zh": "建筑与结构原理"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive engine",
+        "mechanical simulation",
+        "exploded view",
+        "gear mechanism",
+        "3D printing simulation",
+        "factory simulation"
+      ],
+      "boundary_zh": "以工作原理为主的三维拆解归本类；只看外观或空间漫游归空间与展览。"
+    },
+    {
+      "id": "electronics",
+      "name_zh": "电子与电路",
+      "priority": "core",
+      "description_zh": "认识电子元件，搭建电路，理解嵌入式系统和测量工具。",
+      "subcategories": [
+        {
+          "id": "electronics-basics",
+          "name_zh": "电路基础"
+        },
+        {
+          "id": "electronics-analog",
+          "name_zh": "模拟电子"
+        },
+        {
+          "id": "electronics-digital",
+          "name_zh": "数字逻辑"
+        },
+        {
+          "id": "electronics-embedded",
+          "name_zh": "Arduino与ESP32"
+        },
+        {
+          "id": "electronics-sensors",
+          "name_zh": "传感器与测量"
+        },
+        {
+          "id": "electronics-drives",
+          "name_zh": "电机驱动与电源"
+        }
+      ],
+      "search_keywords_en": [
+        "circuit simulator",
+        "interactive electronics",
+        "Arduino simulator",
+        "ESP32 simulation",
+        "logic gate simulator",
+        "multimeter interactive"
+      ],
+      "boundary_zh": "电机驱动电路归本类；机械结构归工程；闭环运动控制归机器人。"
+    },
+    {
+      "id": "robotics",
+      "name_zh": "机器人与控制",
+      "priority": "core",
+      "description_zh": "探索机器人运动、感知、规划与反馈控制。",
+      "subcategories": [
+        {
+          "id": "robotics-kinematics",
+          "name_zh": "机械臂与运动学"
+        },
+        {
+          "id": "robotics-planning",
+          "name_zh": "轨迹与路径规划"
+        },
+        {
+          "id": "robotics-navigation",
+          "name_zh": "移动机器人与导航"
+        },
+        {
+          "id": "robotics-control",
+          "name_zh": "PID与自动控制"
+        },
+        {
+          "id": "robotics-perception",
+          "name_zh": "感知与传感融合"
+        },
+        {
+          "id": "robotics-systems",
+          "name_zh": "机器人工作站与多机协作"
+        }
+      ],
+      "search_keywords_en": [
+        "robot arm simulator",
+        "inverse kinematics interactive",
+        "PID playground",
+        "path planning demo",
+        "robotics browser",
+        "robot workcell simulation"
+      ],
+      "boundary_zh": "机器人动作、规划、控制为主归本类；普通生产线吞吐与制造流程归工程。"
+    },
+    {
+      "id": "mathematics",
+      "name_zh": "数学与统计",
+      "priority": "expand",
+      "description_zh": "通过操作理解数学对象、统计规律与优化问题。",
+      "subcategories": [
+        {
+          "id": "mathematics-geometry",
+          "name_zh": "几何与空间"
+        },
+        {
+          "id": "mathematics-calculus",
+          "name_zh": "微积分"
+        },
+        {
+          "id": "mathematics-linear-algebra",
+          "name_zh": "线性代数"
+        },
+        {
+          "id": "mathematics-probability",
+          "name_zh": "概率与统计"
+        },
+        {
+          "id": "mathematics-dynamics",
+          "name_zh": "动力系统与混沌"
+        },
+        {
+          "id": "mathematics-optimization",
+          "name_zh": "优化与运筹"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive math",
+        "linear algebra visualization",
+        "probability simulator",
+        "calculus interactive",
+        "geometry playground",
+        "optimization visualization"
+      ],
+      "boundary_zh": "解释数学概念归本类；以过关或得分为主要目的的数学谜题归游戏。"
+    },
+    {
+      "id": "computing",
+      "name_zh": "计算机与AI",
+      "priority": "expand",
+      "description_zh": "理解算法、编程、计算机系统、图形技术和人工智能原理。",
+      "subcategories": [
+        {
+          "id": "computing-algorithms",
+          "name_zh": "算法与数据结构"
+        },
+        {
+          "id": "computing-programming",
+          "name_zh": "交互编程教程"
+        },
+        {
+          "id": "computing-systems",
+          "name_zh": "计算机组成与网络"
+        },
+        {
+          "id": "computing-graphics",
+          "name_zh": "图形学与渲染原理"
+        },
+        {
+          "id": "computing-machine-learning",
+          "name_zh": "机器学习与神经网络"
+        },
+        {
+          "id": "computing-language-models",
+          "name_zh": "大语言模型与智能体原理"
+        }
+      ],
+      "search_keywords_en": [
+        "algorithm visualization",
+        "interactive coding tutorial",
+        "computer architecture visualization",
+        "neural network playground",
+        "transformer visualization",
+        "rendering explainer"
+      ],
+      "boundary_zh": "这里收讲解AI原理的作品；是否用AI制作属于来源标签，不是本类的判断条件。"
+    },
+    {
+      "id": "nature",
+      "name_zh": "自然与生命",
+      "priority": "expand",
+      "description_zh": "探索宇宙、地球、分子、生命与人体结构。",
+      "subcategories": [
+        {
+          "id": "nature-astronomy",
+          "name_zh": "天文与宇宙"
+        },
+        {
+          "id": "nature-earth",
+          "name_zh": "地球与气候"
+        },
+        {
+          "id": "nature-geography",
+          "name_zh": "地理与地图探索"
+        },
+        {
+          "id": "nature-chemistry",
+          "name_zh": "化学与分子"
+        },
+        {
+          "id": "nature-biology",
+          "name_zh": "生物与演化"
+        },
+        {
+          "id": "nature-anatomy",
+          "name_zh": "人体结构科普"
+        }
+      ],
+      "search_keywords_en": [
+        "solar system interactive",
+        "climate simulation",
+        "interactive globe",
+        "molecule viewer",
+        "evolution simulation",
+        "anatomy interactive"
+      ],
+      "boundary_zh": "限知识探索；不把未审查的演示包装成医疗判断或工程结论。"
+    },
+    {
+      "id": "humanities",
+      "name_zh": "人文与语言",
+      "priority": "expand",
+      "description_zh": "通过可探索的叙事、文本和模型理解语言、人文与社会。",
+      "subcategories": [
+        {
+          "id": "humanities-history",
+          "name_zh": "历史与时间线"
+        },
+        {
+          "id": "humanities-culture",
+          "name_zh": "文明与文化"
+        },
+        {
+          "id": "humanities-literature",
+          "name_zh": "文学与交互阅读"
+        },
+        {
+          "id": "humanities-languages",
+          "name_zh": "语言学习"
+        },
+        {
+          "id": "humanities-society",
+          "name_zh": "社会与经济机制"
+        },
+        {
+          "id": "humanities-reasoning",
+          "name_zh": "逻辑与思辨"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive history",
+        "explorable essay",
+        "language learning game",
+        "interactive literature",
+        "social simulation",
+        "economic simulation"
+      ],
+      "boundary_zh": "以知识理解为主归本类；以剧情选择、任务与胜负为主归游戏。"
+    },
+    {
+      "id": "games",
+      "name_zh": "游戏与解谜",
+      "priority": "launch",
+      "description_zh": "可在浏览器中直接游玩的成品小游戏与互动挑战。",
+      "subcategories": [
+        {
+          "id": "games-puzzle",
+          "name_zh": "益智与逻辑"
+        },
+        {
+          "id": "games-arcade",
+          "name_zh": "街机与动作"
+        },
+        {
+          "id": "games-strategy",
+          "name_zh": "策略与经营"
+        },
+        {
+          "id": "games-sandbox",
+          "name_zh": "沙盒与创造"
+        },
+        {
+          "id": "games-adventure",
+          "name_zh": "叙事与冒险"
+        },
+        {
+          "id": "games-rhythm",
+          "name_zh": "音乐与节奏游戏"
+        }
+      ],
+      "search_keywords_en": [
+        "browser game",
+        "playable demo",
+        "HTML5 game",
+        "puzzle game browser",
+        "vibe coded game",
+        "play in browser"
+      ],
+      "boundary_zh": "玩法目标优先于题材；教学型游戏可用教育标签交叉筛选。不收博彩、仅下载或仅视频宣传。"
+    },
+    {
+      "id": "creative",
+      "name_zh": "艺术与声音",
+      "priority": "launch",
+      "description_zh": "以视觉、听觉和创意表达为主要价值的可操作作品。",
+      "subcategories": [
+        {
+          "id": "creative-generative",
+          "name_zh": "生成艺术"
+        },
+        {
+          "id": "creative-particles",
+          "name_zh": "粒子与视觉效果"
+        },
+        {
+          "id": "creative-shaders",
+          "name_zh": "着色器艺术"
+        },
+        {
+          "id": "creative-synthesis",
+          "name_zh": "声音合成"
+        },
+        {
+          "id": "creative-music",
+          "name_zh": "音乐与作曲"
+        },
+        {
+          "id": "creative-creative-coding",
+          "name_zh": "创意编程实验"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive generative art",
+        "shader playground",
+        "particle playground",
+        "audio visualizer interactive",
+        "browser synthesizer",
+        "creative coding demo"
+      ],
+      "boundary_zh": "以创作与审美为主归本类；解释渲染算法归计算机；节奏过关归游戏。"
+    },
+    {
+      "id": "spatial",
+      "name_zh": "空间与展览",
+      "priority": "expand",
+      "description_zh": "以观看、漫游、探索场景和展品为主要目标的在线展示。",
+      "subcategories": [
+        {
+          "id": "spatial-products",
+          "name_zh": "交互产品展示"
+        },
+        {
+          "id": "spatial-architecture",
+          "name_zh": "建筑与空间漫游"
+        },
+        {
+          "id": "spatial-exhibitions",
+          "name_zh": "虚拟展馆"
+        },
+        {
+          "id": "spatial-worlds",
+          "name_zh": "数字场景与微缩世界"
+        },
+        {
+          "id": "spatial-stories",
+          "name_zh": "空间叙事"
+        },
+        {
+          "id": "spatial-web-xr",
+          "name_zh": "浏览器AR与VR体验"
+        }
+      ],
+      "search_keywords_en": [
+        "interactive 3D showcase",
+        "virtual exhibition",
+        "web architectural walkthrough",
+        "interactive diorama",
+        "3D web experience",
+        "WebXR experience"
+      ],
+      "boundary_zh": "不能因为作品是3D就归本类；主要在讲知识、做实验或玩游戏时，应按其核心目的分类。"
+    },
+    {
+      "id": "tools",
+      "name_zh": "轻量工具与创作",
+      "priority": "expand",
+      "description_zh": "打开就能完成一个明确小任务的成品网页工具。",
+      "subcategories": [
+        {
+          "id": "tools-editing",
+          "name_zh": "可视化编辑"
+        },
+        {
+          "id": "tools-drawing",
+          "name_zh": "绘图与像素创作"
+        },
+        {
+          "id": "tools-charts",
+          "name_zh": "图表与地图制作"
+        },
+        {
+          "id": "tools-design",
+          "name_zh": "小型设计生成器"
+        },
+        {
+          "id": "tools-calculators",
+          "name_zh": "计算与规划"
+        },
+        {
+          "id": "tools-media",
+          "name_zh": "轻量多媒体工具"
+        }
+      ],
+      "search_keywords_en": [
+        "tiny web tool",
+        "interactive generator",
+        "browser pixel editor",
+        "visual calculator",
+        "single purpose web app",
+        "browser creative tool"
+      ],
+      "boundary_zh": "只收具体、可立即使用的小作品；不把通用AI平台、营销页和付费SaaS目录混进主作品流。"
+    }
+  ],
+  "formats": [
+    {
+      "id": "simulation",
+      "name_zh": "可调参数的模拟实验"
+    },
+    {
+      "id": "explainer",
+      "name_zh": "互动原理讲解"
+    },
+    {
+      "id": "tutorial",
+      "name_zh": "引导式在线教程"
+    },
+    {
+      "id": "game",
+      "name_zh": "浏览器游戏"
+    },
+    {
+      "id": "creative",
+      "name_zh": "可操作的艺术创作"
+    },
+    {
+      "id": "showcase",
+      "name_zh": "可探索的互动展示"
+    },
+    {
+      "id": "utility",
+      "name_zh": "可直接使用的小工具"
+    }
+  ],
+  "interaction_tags": [
+    "parameter-control",
+    "drag",
+    "step-through",
+    "disassemble",
+    "rotate-3d",
+    "draw",
+    "run-code",
+    "audio",
+    "keyboard-control"
+  ],
+  "verification_levels": [
+    "unverified",
+    "link_found",
+    "page_fetched",
+    "page_rendered",
+    "interaction_tested"
+  ],
+  "editorial_statuses": [
+    "candidate",
+    "needs_review",
+    "published",
+    "unavailable",
+    "rejected"
+  ],
+  "access_values": {
+    "login": [
+      "none",
+      "optional",
+      "required",
+      "unknown"
+    ],
+    "pricing": [
+      "free",
+      "freemium",
+      "paid",
+      "unknown"
+    ]
+  },
+  "device_statuses": [
+    "unknown",
+    "reported_supported",
+    "tested_supported",
+    "tested_unsupported"
+  ],
+  "ai_provenance_statuses": [
+    "unknown",
+    "author_claimed",
+    "documented",
+    "not_ai"
+  ],
+  "ai_provenance_note": "documented表示有可查证的创作记录，不表示平台能够独立还原整个制作过程；not_ai也必须有证据。"
+}

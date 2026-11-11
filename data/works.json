@@ -1,0 +1,72 @@
+[
+  {
+    "id":"hydraulics", "slug":"hydraulics", "title_original":"How Hydraulics Work", "title_zh":"小力气，怎样举起重物？",
+    "summary_zh":"跟着液压装置的工作过程，观察力如何通过液体传递。", "primary_category":"physics", "subcategory":"physics-fluids", "formats":["simulation","explainer"], "tags":["液压","力的传递","互动演示"], "art":"hydraulic",
+    "first_action_zh":"进入原站后，先找到泵柄和活塞的演示，从输入力与输出力的变化开始看。", "expected_result_zh":"观察液体压力如何传递，以及不同活塞面积与力之间的关系。", "reason_zh":"把抽象的压力传递放进可以观察的装置里，很适合从一个直观问题开始。",
+    "demo_url":"https://hydraulics.wasmer.app/", "creator":{"name":null,"profile_url":null}, "sources":[{"label":"作品原站","url":"https://hydraulics.wasmer.app/"}], "access":{"login":"none","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"tested_supported","mobile":"unknown"},
+    "verification":{"level":"interaction_tested","last_checked_at":"2026-11-11","note":"桌面浏览器将输入力由 100 N 调至 200 N，输出由 500 N 变为 1,000 N；手机未测试。"}, "quality":{"limitations_zh":"示意模型用于理解原理，不能替代实际液压系统的设计计算。"}, "editorial":{"status":"published","reviewed_by":"Codex（浏览器交互检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"electric-motor", "slug":"electric-motor", "title_original":"How an Electric Motor Works", "title_zh":"电机为什么会转起来？",
+    "summary_zh":"从结构与运动入手，探索电动机把电能变成转动的过程。", "primary_category":"engineering", "subcategory":"engineering-engines", "formats":["explainer","showcase"], "tags":["电机","机械结构","运动"], "art":"motor",
+    "first_action_zh":"打开作品，先观察电机结构与运动，再按页面提示探索。", "expected_result_zh":"认识电机中参与转动的主要结构，以及它们之间的关系。", "reason_zh":"用可视化的方式靠近一个常见却不容易看见内部结构的机器。",
+    "demo_url":"https://electric-motor.wasmer.app/", "creator":{"name":null,"profile_url":null}, "sources":[{"label":"作品原站","url":"https://electric-motor.wasmer.app/"}], "access":{"login":"none","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"tested_supported","mobile":"unknown"},
+    "verification":{"level":"interaction_tested","last_checked_at":"2026-11-11","note":"桌面浏览器关闭 Current 开关后，线圈电流与转动力状态变为 none；手机未测试。"}, "quality":{"limitations_zh":"不同设备上的体验有待进一步核验。"}, "editorial":{"status":"published","reviewed_by":"Codex（浏览器交互检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"gears", "slug":"gears", "title_original":"Gears", "title_zh":"齿轮如何改变转速？",
+    "summary_zh":"从转动的圆盘到啮合的齿轮，一步步看懂传动。", "primary_category":"engineering", "subcategory":"engineering-mechanisms", "formats":["explainer","simulation"], "tags":["齿轮","传动","可调参数"], "art":"gears",
+    "first_action_zh":"向下阅读到第一个风扇演示，拖动滑块改变转速。", "expected_result_zh":"继续探索不同大小的轮子接触时，转向与角速度如何变化。", "reason_zh":"图文叙事和可调动画结合，把机械传动拆成容易跟随的小问题。",
+    "demo_url":"https://ciechanow.ski/gears/", "creator":{"name":"Bartosz Ciechanowski","profile_url":"https://ciechanow.ski/"}, "sources":[{"label":"作者与作品","url":"https://ciechanow.ski/gears/"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已读取原站关于滑块与动画的说明；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"文章为英文；动画和绘图是对传动原理的简化说明。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"airfoil", "slug":"airfoil", "title_original":"Airfoil", "title_zh":"机翼怎样与空气相遇？",
+    "summary_zh":"沿着气流、翼型与方向的线索，探索飞行背后的现象。", "primary_category":"engineering", "subcategory":"engineering-transport", "formats":["explainer","simulation"], "tags":["航空","流体","可调参数"], "art":"airfoil",
+    "first_action_zh":"打开文章，找到最初的流体演示，尝试拖动旁边的滑块。", "expected_result_zh":"比较物体周围的流动如何变化，再继续阅读翼型与气流的关系。", "reason_zh":"把看不见的气流变成可探索的图形，适合有耐心深入阅读的人。",
+    "demo_url":"https://ciechanow.ski/airfoil/", "creator":{"name":"Bartosz Ciechanowski","profile_url":"https://ciechanow.ski/"}, "sources":[{"label":"作者与作品","url":"https://ciechanow.ski/airfoil/"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已读取原站对演示及滑块的说明；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"英文长文，使用了简化的二维流动说明，不是专业设计仿真。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"circuitjs", "slug":"circuitjs", "title_original":"CircuitJS", "title_zh":"搭一条会动的电路",
+    "summary_zh":"在电路画布上观察电压与电流，并从示例电路开始探索。", "primary_category":"electronics", "subcategory":"electronics-basics", "formats":["simulation","utility"], "tags":["电路","电压","模拟器"], "art":"circuit",
+    "first_action_zh":"打开模拟器，先观察默认电路；再从 Circuits 菜单选择一个示例。", "expected_result_zh":"查看线路上的动态电流和电压表现，尝试切换示例或操作开关。", "reason_zh":"把电路图和动态模拟放到同一张画布，适合边看边改。",
+    "demo_url":"https://www.falstad.com/circuit/circuitjs.html", "creator":{"name":"Paul Falstad / CircuitJS","profile_url":"https://www.falstad.com/circuit/"}, "sources":[{"label":"模拟器说明","url":"https://www.falstad.com/circuit/"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已检查模拟器页面响应并阅读官方操作说明；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"仿真结果是模型计算，实际电路还要考虑元件参数与安全。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"multimeter", "slug":"multimeter", "title_original":"Multímetro: sus 10 funciones", "title_zh":"认识万用表的十种功能",
+    "summary_zh":"围绕万用表的功能和使用场景，探索电子测量的基础。", "primary_category":"electronics", "subcategory":"electronics-sensors", "formats":["explainer","simulation"], "tags":["万用表","测量","电子入门"], "art":"meter",
+    "first_action_zh":"进入实验页面，先查看万用表的功能说明，再按页面中的提示探索。", "expected_result_zh":"认识不同测量功能及其对应的使用场景。", "reason_zh":"从一件常见工具出发，让电路测量不再只是抽象符号。",
+    "demo_url":"https://robotips.app/laboratorios/multimetro", "creator":{"name":"robotips","profile_url":"https://robotips.app/"}, "sources":[{"label":"实验原站","url":"https://robotips.app/laboratorios/multimetro"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["es"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已检查实验页面响应；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"页面标题为西班牙语；操作体验与设备支持有待进一步核验。实际测量请遵守设备安全规范。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"sonar-robot", "slug":"sonar-robot", "title_original":"Sonar: un robot que escucha paredes", "title_zh":"让机器人听见墙壁",
+    "summary_zh":"探索声呐传感与避障，让机器人通过回声感知周围环境。", "primary_category":"robotics", "subcategory":"robotics-perception", "formats":["simulation","explainer"], "tags":["声呐","避障","机器人"], "art":"robot",
+    "first_action_zh":"打开实验，先阅读声呐与避障说明，再寻找页面里的参数设置。", "expected_result_zh":"观察传感器、障碍物和机器人行为之间的关系。", "reason_zh":"把传感器读数和移动机器人的行为连接起来，是进入机器人感知的好入口。",
+    "demo_url":"https://robotips.app/laboratorios/sonar", "creator":{"name":"robotips","profile_url":"https://robotips.app/"}, "sources":[{"label":"实验原站","url":"https://robotips.app/laboratorios/sonar"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["es"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_rendered","last_checked_at":"2026-11-11","note":"桌面浏览器已打开页面并加载实验；尚未完成核心参数交互核验。"}, "quality":{"limitations_zh":"这是教学用的简化模型；设备与实际交互表现尚待核验。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"pendulum-lab", "slug":"pendulum-lab", "title_original":"Pendulum Lab", "title_zh":"摆动一次，发现什么？",
+    "summary_zh":"改变摆长、质量等条件，观察摆动与能量的变化。", "primary_category":"physics", "subcategory":"physics-mechanics", "formats":["simulation"], "tags":["单摆","运动","参数实验"], "art":"pendulum",
+    "first_action_zh":"进入实验后，先拉开摆球并释放，再比较不同摆长下的运动。", "expected_result_zh":"观察摆动周期、运动和能量随条件变化的表现。", "reason_zh":"一个熟悉的摆球，就能引出关于运动和能量的一连串问题。",
+    "demo_url":"https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_all.html?locale=zh_CN", "creator":{"name":"PhET · 科罗拉多大学博尔德分校","profile_url":"https://phet.colorado.edu/"}, "sources":[{"label":"PhET 作品介绍","url":"https://phet.colorado.edu/en/simulations/pendulum-lab"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["zh-CN"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已检查中文模拟器地址的页面响应；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"模拟器用于学习和观察，实际条件可能更加复杂。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"bending-light", "slug":"bending-light", "title_original":"Bending Light", "title_zh":"光为什么会拐弯？",
+    "summary_zh":"让一束光穿过不同介质，观察反射与折射。", "primary_category":"physics", "subcategory":"physics-optics", "formats":["simulation"], "tags":["光学","折射","参数实验"], "art":"light",
+    "first_action_zh":"进入模拟器，打开光源并调整入射方向或介质。", "expected_result_zh":"观察光线经过介质界面时方向的变化。", "reason_zh":"把光的路径直接画出来，便于对比不同条件下的现象。",
+    "demo_url":"https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_all.html?locale=zh_CN", "creator":{"name":"PhET · 科罗拉多大学博尔德分校","profile_url":"https://phet.colorado.edu/"}, "sources":[{"label":"PhET 作品介绍","url":"https://phet.colorado.edu/en/simulations/bending-light"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["zh-CN"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已检查中文模拟器地址的页面响应；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"模拟器中的光线是教学示意，具体实验条件请参考原站。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  },
+  {
+    "id":"robot-arm", "slug":"robot-arm", "title_original":"Free Robot Arm Simulator", "title_zh":"给机械臂一个目标",
+    "summary_zh":"移动机械臂末端，观察关节如何配合抵达目标。", "primary_category":"robotics", "subcategory":"robotics-kinematics", "formats":["simulation","game"], "tags":["机械臂","逆运动学","拖动操作"], "art":"arm",
+    "first_action_zh":"在原站尝试拖动机械臂的手部目标，让它靠近绿色标记。", "expected_result_zh":"观察肩部和肘部角度如何随目标位置变化。", "reason_zh":"通过拖动和小挑战，把逆运动学变成能直观尝试的问题。",
+    "demo_url":"https://www.aiagentslibrary.com/robots/free-robot-arm-simulator/", "creator":{"name":null,"profile_url":null}, "sources":[{"label":"作品原站与说明","url":"https://www.aiagentslibrary.com/robots/free-robot-arm-simulator/"}], "access":{"login":"unknown","pricing":"unknown","language_codes":["en"]}, "device_support":{"desktop":"unknown","mobile":"unknown"},
+    "verification":{"level":"page_fetched","last_checked_at":"2026-11-11","note":"已读取原站对拖动和挑战的说明；尚未完成浏览器交互核验。"}, "quality":{"limitations_zh":"示意模型用于学习运动关系，不是实际机器人的控制器。"}, "editorial":{"status":"published","reviewed_by":"Codex（页面资料检查）"}, "added_at":"2026-11-11"
+  }
+]
