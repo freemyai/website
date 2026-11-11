@@ -41,6 +41,14 @@ test('AI gallery requires a real preview, bilingual descriptions, and evidence o
   assert.equal(eligibleForGallery({...work, verification:{availability:'unavailable'}}), false);
 });
 
+test('an AI-authored explanation needs a source to qualify for the gallery', () => {
+  const work = { editorial:{status:'published'}, media:{poster:{src:'/media/example.jpg'}}, ai_provenance:{status:'author_claimed',usage:'text',evidence_url:'https://example.com/evidence'}, locales:{zh:{title:'天线',summary:'介绍'},en:{title:'Antenna',summary:'Description'}} };
+  assert.equal(eligibleForGallery(work), true);
+  assert.equal(eligibleForGallery({...work, ai_provenance:{...work.ai_provenance,evidence_url:null}}), false);
+  assert.equal(eligibleForGallery({...work, ai_provenance:{...work.ai_provenance,status:'unknown'}}), false);
+  assert.equal(eligibleForGallery({...work, editorial:{status:'candidate'}}), false);
+});
+
 test('language switch preserves the current work and query', () => {
   assert.equal(localizedPath('/works/hydraulics/', 'en', '?q=gear'), '/en/works/hydraulics/?q=gear');
   assert.equal(localizedPath('/en/works/hydraulics/', 'zh', ''), '/works/hydraulics/');

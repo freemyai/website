@@ -88,7 +88,8 @@
       "felt-world",
       "wrong-physics",
       "sakura-river-valley",
-      "estheet"
+      "estheet",
+      "koi-pond"
     ],
     "cover": "hearthlight"
   },
@@ -130,7 +131,9 @@
       "learn-arduino",
       "senbazuru",
       "light-and-optics",
-      "hydraulics"
+      "hydraulics",
+      "plane-of-focus",
+      "earth-antenna"
     ],
     "cover": "learn-arduino"
   },
@@ -169,7 +172,8 @@
       "estheet",
       "bosphore-1819",
       "galerie-nocturne",
-      "wrong-physics"
+      "wrong-physics",
+      "genesis"
     ],
     "cover": "estheet"
   }

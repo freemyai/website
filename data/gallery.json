@@ -3159,5 +3159,329 @@
       "featured_order": 5.1
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "plane-of-focus",
+    "type": "learning",
+    "primary_category": "physics",
+    "subcategory": "physics-optics",
+    "title_original": "The Plane of Focus",
+    "demo_url": "https://sael.net/plane-of-focus/",
+    "creator": {
+      "name": "Ryan Sael",
+      "profile_url": "https://sael.net/"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Plane of Focus：镜头对焦实验",
+        "summary": "拆开相机镜头，观察焦平面如何在一座微缩山谷中移动。",
+        "action": "转动对焦环，或选择 Foreground、Middle、Background，观察画面和对焦距离的变化。",
+        "why": "镜片、光线和场景放在同一个实验台上，让对焦与景深变得直观。",
+        "limit": "三维场景可能加载较慢；手机体验尚未核验。"
+      },
+      "en": {
+        "title": "The Plane of Focus",
+        "summary": "Open up a camera lens and watch its plane of focus move through a miniature valley.",
+        "action": "Turn the focus ring or choose Foreground, Middle or Background to see the scene and focus distance change.",
+        "why": "Lens elements, light and a small landscape share one workbench to make focus and depth of field visible.",
+        "limit": "The 3D scene may take time to load; mobile has not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/RyanSael/status/2102591147927654847",
+      "description": {
+        "zh": "作者表示使用 Claude Opus 5.5 创建了互动镜头实验。",
+        "en": "The creator says Claude Opus 5.5 built the interactive lens experiment."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://postcutoff.com/p/x-ryansael-2102591147927654847/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面选择背景对焦，观察焦平面和读数变化；本机确认原站响应，手机未测。",
+      "note_en": "Grok selected background focus and observed the focus plane and readouts change in a desktop browser; the site responded locally, and mobile was not tested."
+    },
+    "slug": "plane-of-focus",
+    "media": {
+      "poster": {
+        "src": "/media/plane-of-focus-960.webp",
+        "base": "plane-of-focus",
+        "width": 1600,
+        "height": 892
+      },
+      "provenance": {
+        "source_url": "https://sael.net/plane-of-focus/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.5
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "genesis",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-history",
+    "title_original": "Genesis",
+    "demo_url": "https://genesis-tau-two.vercel.app/",
+    "creator": {
+      "name": "DjuricX",
+      "profile_url": "https://github.com/Djuricx01"
+    },
+    "locales": {
+      "zh": {
+        "title": "Genesis：文明与叙事地图",
+        "summary": "在互动世界地图上切换考古视角与《创世记》叙事，沿时间轴探索地理。",
+        "action": "选择 Scientific 或 Scriptural，再拖动底部时间轴，观察地图标注和区域变化。",
+        "why": "一张古风地图把不同来源的地理叙事放在可探索的时间轴上。",
+        "limit": "考古年代是历史重建，《创世记》模式呈现宗教叙事；地名和年代未逐条独立核验。手机未测。"
+      },
+      "en": {
+        "title": "Genesis",
+        "summary": "Explore an interactive world map with archaeological and Genesis narrative views along a timeline.",
+        "action": "Choose Scientific or Scriptural, then move the timeline to see map labels and regions change.",
+        "why": "An antique-style map places different geographic narratives on a timeline you can explore.",
+        "limit": "Archaeological dates are reconstructions; the Genesis view presents a religious narrative. Place names and dates were not independently verified entry by entry. Mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://www.reddit.com/r/ClaudeAI/comments/1u5r9h2/i_built_vibecoded_an_interactive_antique_style/",
+      "description": {
+        "zh": "作者称自己提供构思、历史数据和方向，Claude 协助实现地图筛选及前端。",
+        "en": "The creator says they supplied the concept, historical data and direction, while Claude helped implement the map and frontend."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Djuricx01/Genesis"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面切换两个视角并调整时间轴；本机确认原站响应，历史数据未逐项独立核验，手机未测。",
+      "note_en": "Grok switched views and changed the timeline in a desktop browser; the site responded locally. Historical data were not independently checked entry by entry, and mobile was not tested."
+    },
+    "slug": "genesis",
+    "media": {
+      "poster": {
+        "src": "/media/genesis-960.webp",
+        "base": "genesis",
+        "width": 1600,
+        "height": 892
+      },
+      "provenance": {
+        "source_url": "https://genesis-tau-two.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.1
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "koi-pond",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Koi Pond Garden",
+    "demo_url": "https://souranyp-stack.github.io/koi-pond-garden/koi-pond.html",
+    "creator": {
+      "name": "Sourany Phomhome",
+      "profile_url": "https://github.com/souranyp-stack"
+    },
+    "locales": {
+      "zh": {
+        "title": "Koi Pond Garden：锦鲤庭园",
+        "summary": "走进一座三维庭园，看看锦鲤、池水和四周的树木。",
+        "action": "等待画面加载；如果停在 Ready 遮罩上，可按 Escape。点击池水看涟漪，或选择 Feed the koi 投喂。",
+        "why": "水池、锦鲤和庭园组成一处可以慢慢探索的小天地。",
+        "limit": "场景较重，Ready 遮罩在测试中需要按 Escape 关闭；声音和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Koi Pond Garden",
+        "summary": "Visit a 3D garden with koi, rippling water and trees around the pond.",
+        "action": "Wait for the scene to load; if the Ready overlay stays up, press Escape. Click the water or choose Feed the koi.",
+        "why": "Koi, water and a garden come together in a small world to explore at your own pace.",
+        "limit": "The scene can be demanding; the Ready overlay needed Escape in testing. Audio and mobile have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/souranyp-stack/koi-pond-garden",
+      "description": {
+        "zh": "作者说明通过多轮指导 Claude、运行和修改，完成了这座庭园。",
+        "en": "The creator describes building the garden through repeated rounds of directing Claude, running and refining it."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://souranyp-stack.github.io/koi-pond-garden/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面关闭遮罩、点击水面并使用投喂按钮；未能听测声音。本机确认原站响应，手机未测。",
+      "note_en": "Grok dismissed the overlay, clicked the water and used the feed button in a desktop browser; audio was not audibly verified. The site responded locally, and mobile was not tested."
+    },
+    "slug": "koi-pond",
+    "media": {
+      "poster": {
+        "src": "/media/koi-pond-960.webp",
+        "base": "koi-pond",
+        "width": 1400,
+        "height": 780
+      },
+      "provenance": {
+        "source_url": "https://souranyp-stack.github.io/koi-pond-garden/koi-pond.html",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.3
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "earth-antenna",
+    "slug": "earth-antenna",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "An antenna the size of the Earth",
+    "demo_url": "https://www.llmphysics.com/vlbi/",
+    "creator": {
+      "name": "Mihkel Kree",
+      "profile_url": "https://www.llmphysics.com/"
+    },
+    "locales": {
+      "zh": {
+        "title": "一座地球大小的天线",
+        "summary": "摆放射电望远镜、选择天空图案，探索全球阵列如何重建图像。",
+        "action": "选择 Crescent 天空图案，切换天线阵列，再点击 Observe 开始观测。",
+        "why": "通过改变望远镜的位置，探索多台望远镜如何协作观察遥远天体。",
+        "limit": "作者说明物理讲解由 AI 撰写，未经射电天文学家人工审阅；手机体验未测。"
+      },
+      "en": {
+        "title": "An antenna the size of the Earth",
+        "summary": "Arrange radio telescopes and choose a sky to explore how a global array reconstructs an image.",
+        "action": "Choose the Crescent sky preset, switch antenna arrays and press Observe.",
+        "why": "Change telescope positions to explore how an array works together to observe distant objects.",
+        "limit": "The creator says the AI-written physics explainer has not been reviewed by a radio astronomer; mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "text",
+      "tools": [
+        "Claude Fable 5"
+      ],
+      "evidence_url": "https://www.llmphysics.com/vlbi/",
+      "description": {
+        "zh": "作者表示使用 Claude 创作页面，物理讲解由 Claude Fable 5 撰写。",
+        "en": "The creator says the page was made using Claude and its physics explainer was written by Claude Fable 5."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.llmphysics.com/"
+      }
+    ],
+    "media": {
+      "poster": {
+        "src": "/media/earth-antenna-960.webp",
+        "base": "earth-antenna",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://www.llmphysics.com/vlbi/",
+        "captured_at": "2026-11-12",
+        "method": "local_playwright_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "本机桌面切换天空图案和天线阵列，并点击 Observe；截图来自实际体验，手机未测。",
+      "note_en": "On a local desktop browser, the sky and antenna presets were changed and Observe was clicked; the screenshot records the interaction. Mobile was not tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.4
+    },
+    "added_at": "2026-11-12"
   }
 ]

@@ -18,7 +18,7 @@ export function filterWorks(works, filters = {}) {
 
 export function hasAiEvidence(work) {
   const ai = work.ai_provenance;
-  return ['author_claimed','documented'].includes(ai?.status) && ['coding','assets','mixed'].includes(ai?.usage) && !!safeExternalUrl(ai?.evidence_url);
+  return ['author_claimed','documented'].includes(ai?.status) && ['coding','assets','text','mixed'].includes(ai?.usage) && !!safeExternalUrl(ai?.evidence_url);
 }
 
 export function eligibleForGallery(work) {
