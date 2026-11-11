@@ -17,7 +17,26 @@ const targets = [
   ['hearthlight','https://hearthlight.github.io/'],
   ['harmonograph','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/097-harmonograph.html'],
   ['infinite-room','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/099-droste-infinite-zoom.html'],
-  ['chroma','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/071-palette-studio.html']
+  ['chroma','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/071-palette-studio.html'],
+  ['soft-machine','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/007-neumorphic-synth.html'],
+  ['rosette','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/023-symmetry-painter.html'],
+  ['pulse','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/026-pulse-visualizer.html'],
+  ['senbazuru','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/027-origami-crane.html'],
+  ['orbital','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/030-gravity-sandbox.html'],
+  ['labyrinthos','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/033-stone-labyrinth.html'],
+  ['hyperbrick','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/038-neon-breakout.html'],
+  ['galerie-nocturne','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/039-virtual-gallery.html'],
+  ['dune-engine','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/055-falling-sand.html'],
+  ['planet-forge','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/066-planet-forge.html'],
+  ['luminote','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/080-falling-notes-piano.html'],
+  ['aquarelle','https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/094-watercolor-landscapes.html'],
+  ['tree-appreciator','https://tools.simonwillison.net/tree-appreciator'],
+  ['battle-drones','https://simonw.github.io/battledrones/'],
+  ['emberwick','https://simonw.github.io/emberwick/v11/emberwick.html'],
+  ['spaghettify','https://www.playkuul.com/spaghettify/'],
+  ['knockbots','https://knockbots.com/'],
+  ['lili-last-door','https://gamesforlili.xyz/'],
+  ['chak-chak-mage','https://az-dev-me.github.io/chak-chak-mage/']
 ];
 const output = path.resolve('assets/media');
 fs.mkdirSync(output,{recursive:true});
@@ -56,6 +75,37 @@ for (const [slug,url] of targets.filter(([slug]) => !process.argv[2] || process.
     if (slug === 'windtunnel') {
       const skip=page.getByRole('button',{name:'Skip'});
       if (await skip.count()) { await skip.click(); await page.waitForTimeout(4000); }
+    }
+    if (slug === 'tree-appreciator') {
+      await page.getByRole('button',{name:/^begin$/i}).click({timeout:10000}).catch(()=>{});
+      await page.waitForTimeout(3000);
+      await page.getByRole('button',{name:/got it/i}).click({timeout:3000}).catch(()=>{});
+      await page.waitForTimeout(4000);
+    }
+    if (slug === 'battle-drones') {
+      await page.getByRole('button',{name:/watch ai vs ai/i}).click({timeout:10000}).catch(()=>{});
+      await page.waitForTimeout(8000);
+    }
+    if (slug === 'emberwick' || slug === 'spaghettify') {
+      const button=page.getByRole('button',{name:slug==='emberwick'?/^begin$/i:/^play$/i});
+      await button.click({timeout:35000}).catch(()=>{});
+      await page.waitForTimeout(6000);
+    }
+    if (slug === 'knockbots') {
+      await page.getByText('TRAINING',{exact:false}).first().click({timeout:35000}).catch(()=>{});
+      await page.waitForTimeout(6000);
+    }
+    if (slug === 'lili-last-door') {
+      await page.keyboard.press('Enter');
+      await page.waitForTimeout(3000);
+      await page.keyboard.press('Enter');
+      await page.waitForTimeout(6000);
+    }
+    if (slug === 'chak-chak-mage') {
+      await page.getByRole('button',{name:'English'}).click({timeout:10000}).catch(()=>{});
+      await page.getByRole('button',{name:'Enter Experience'}).click({timeout:10000}).catch(()=>{});
+      await page.locator('#btn-play').click({timeout:10000}).catch(()=>{});
+      await page.waitForTimeout(12000);
     }
     const clip=slug==='triple-pendulum'?await page.locator('iframe').first().boundingBox().catch(()=>null):null;
     await page.screenshot({path:path.join(output,`${slug}.jpg`),type:'jpeg',quality:82,...(clip?{clip}: {})});

@@ -46,6 +46,13 @@ test('language switch preserves the current work and query', () => {
   assert.equal(localizedPath('/en/works/hydraulics/', 'zh', ''), '/works/hydraulics/');
 });
 
+test('English is the default home while Chinese has an explicit home route', () => {
+  assert.equal(localizedPath('/', 'en'), '/');
+  assert.equal(localizedPath('/', 'zh', '?q=art'), '/zh/?q=art');
+  assert.equal(localizedPath('/zh/', 'en', '?q=art'), '/?q=art');
+  assert.equal(localizedPath('/en/', 'zh'), '/zh/');
+});
+
 test('gallery search understands bilingual topics, subtopics and creation types', () => {
   const {gallery} = loadCatalog();
   for (const term of ['科学与物理', 'Science & Physics', '流体', 'fluids', '互动实验', 'Experiments']) {

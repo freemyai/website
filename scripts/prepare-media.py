@@ -4,7 +4,10 @@ from PIL import Image
 
 root = Path(__file__).resolve().parents[1] / 'assets' / 'media'
 names = ['hydraulics', 'hearthlight', 'wave-tank', 'star-hop', 'harmonograph',
-         'triple-pendulum', 'infinite-room', 'light-and-optics', 'windtunnel', 'chroma']
+         'triple-pendulum', 'infinite-room', 'light-and-optics', 'windtunnel', 'chroma',
+         'soft-machine', 'rosette', 'pulse', 'senbazuru', 'orbital', 'labyrinthos',
+         'hyperbrick', 'galerie-nocturne', 'dune-engine', 'planet-forge', 'luminote', 'aquarelle',
+         'tree-appreciator', 'chak-chak-mage']
 for name in names:
     source = root / f'{name}.jpg'
     if not source.exists():

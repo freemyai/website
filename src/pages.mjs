@@ -54,7 +54,7 @@ export function topicPage(lang,c,topic){
 
 export function about(lang){const m=messages[lang];return layout({lang,path:'/about/',title:m.about,body:`<section class="wrap prose-page"><p class="eyebrow">ABOUT FREEMY</p><h1>${e(m.aboutIntro)}</h1><p>${e(m.aboutText)}</p><p>${e(m.footerNote)}</p><a class="button button-dark" href="${e(urlFor(lang,'/explore/'))}">${e(m.explore)} ↗</a></section>`});}
 export function privacy(lang){
-  const m=messages[lang], text=lang==='zh'?'Freemy 不要求注册，也没有主动加入访问分析脚本。语言选择会保存在浏览器本地。网站由 Vercel 提供服务，访问可能产生基本服务日志。点击作品或提交入口后，你会进入第三方网站；这些网站的隐私做法以其自身说明为准。':'Freemy does not require an account or add analytics scripts. Your language choice is stored locally in your browser. The site is hosted by Vercel, which may create basic service logs. Creation and submission links open third-party websites, whose own privacy practices apply.';
+  const m=messages[lang], text=lang==='zh'?'Freemy 不要求注册。我们使用 Vercel Web Analytics 和 Speed Insights 了解网站访问与性能；语言选择会保存在浏览器本地。网站由 Vercel 提供服务，访问可能产生基本服务日志。点击作品或提交入口后，你会进入第三方网站；这些网站的隐私做法以其自身说明为准。':'Freemy does not require an account. We use Vercel Web Analytics and Speed Insights to understand site visits and performance; your language choice is stored locally in your browser. Vercel hosts the site and may create basic service logs. Creation and submission links open third-party websites, whose own privacy practices apply.';
   return layout({lang,path:'/privacy/',title:m.privacy,body:`<section class="wrap prose-page"><p class="eyebrow">FREEMY / PRIVACY</p><h1>${e(m.privacy)}</h1><p>${e(text)}</p></section>`});
 }
 export function submit(lang){

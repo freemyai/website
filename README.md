@@ -1,6 +1,6 @@
 # Freemy
 
-Freemy 是一个双语 AI 创意作品画廊。访客可以先看真实作品画面，再直接前往创作者的原站体验。中文使用根路径，英文使用 `/en/`，旧的作品和主题地址继续保留。
+Freemy 是一个双语 AI 创意作品画廊。访客可以先看真实作品画面，再直接前往创作者的原站体验。根路径默认显示英文，中文首页为 `/zh/`，旧的作品和主题地址及英文 `/en/` 地址继续保留。
 
 ## 本地运行与验证
 
@@ -30,3 +30,5 @@ npm run test:browser
 截图脚本只处理代码中列出的公开网址，使用独立浏览器上下文，不作为生产环境的任意网址抓取服务。运行 `node scripts/capture-previews.mjs` 后，可用安装了 Pillow 的 Python 运行 `python scripts/prepare-media.py` 生成图片变体；发布前检查画面是否完成加载。
 
 投稿入口会打开本仓库的公开 GitHub issue，访客可以填写作品资料；网站本身不保存投稿数据。`vercel.json` 将 `dist` 配置为 Vercel 构建输出。
+
+页面接入 Vercel Web Analytics 与 Speed Insights；访问和性能数据由 Vercel 收集，相关说明见网站隐私页。

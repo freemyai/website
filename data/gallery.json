@@ -546,5 +546,1011 @@
       "featured_order": 8
     },
     "added_at": "2026-11-11"
+  },
+  {
+    "id": "soft-machine",
+    "slug": "soft-machine",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-synthesis",
+    "title_original": "Soft Machine",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/007-neumorphic-synth.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Soft Machine：桌面合成器",
+        "summary": "用柔和的虚拟合成器演奏旋律，调整音色并编排节奏。",
+        "action": "点击琴键或使用键盘演奏；调整旋钮并尝试步进音序器。",
+        "why": "把旋钮、波形和键盘做成了一台可以随手演奏的乐器。",
+        "limit": "声音需要先与页面交互；请留意设备音量。"
+      },
+      "en": {
+        "title": "Soft Machine",
+        "summary": "Play a soft-touch synthesizer, shape its sound and program a sequence.",
+        "action": "Click the keys or use your keyboard, then adjust the knobs and try the step sequencer.",
+        "why": "Knobs, waveforms and keys come together as a playful instrument.",
+        "limit": "Audio starts after a gesture; check your device volume."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/soft-machine-960.webp",
+        "base": "soft-machine",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/007-neumorphic-synth.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "rosette",
+    "slug": "rosette",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Rosette — Symmetry Painter",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/023-symmetry-painter.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Rosette：对称绘画",
+        "summary": "画一笔，变成层层展开的彩色对称图案。",
+        "action": "在画布上拖动画笔，切换配色或调整对称数量。",
+        "why": "镜像与旋转让简单线条变成复杂的花窗图案。",
+        "limit": "作品使用图形动画；体验效果取决于设备性能。"
+      },
+      "en": {
+        "title": "Rosette — Symmetry Painter",
+        "summary": "Draw a stroke and watch it bloom into a colorful symmetrical pattern.",
+        "action": "Drag on the canvas, change palettes or adjust the number of symmetries.",
+        "why": "Mirroring and rotation turn simple lines into intricate rosettes.",
+        "limit": "The experience uses animated graphics; performance depends on your device."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/rosette-960.webp",
+        "base": "rosette",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/023-symmetry-painter.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "pulse",
+    "slug": "pulse",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "PULSE — Generative Audio Visualizer",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/026-pulse-visualizer.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "PULSE：音乐可视化",
+        "summary": "让生成音乐与光芒四射的视觉图案一起律动。",
+        "action": "点击画面启动声音，在下方控制栏调整播放。",
+        "why": "音乐结构和色彩图形会一起变化。",
+        "limit": "声音需主动启动；画面包含闪动效果。"
+      },
+      "en": {
+        "title": "PULSE — Generative Audio Visualizer",
+        "summary": "Explore generative music paired with a radiant audio visualization.",
+        "action": "Click the experience to start sound and use the control dock to adjust playback.",
+        "why": "Evolving musical sections drive a colorful, animated visual.",
+        "limit": "Audio starts on interaction and the visuals include flashing effects."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/pulse-960.webp",
+        "base": "pulse",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/026-pulse-visualizer.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "senbazuru",
+    "slug": "senbazuru",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-culture",
+    "title_original": "Senbazuru — Fold a Paper Crane",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/027-origami-crane.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Senbazuru：折纸鹤",
+        "summary": "跟随八个动态步骤，看一张纸变成纸鹤。",
+        "action": "使用页面中的步骤控制，逐步观看折叠和展开。",
+        "why": "清晰的三维折叠让纸张的正反面和折痕更容易观察。",
+        "limit": "这是折纸演示，实际操作请参考纸张与折法。"
+      },
+      "en": {
+        "title": "Senbazuru — Fold a Paper Crane",
+        "summary": "Follow eight animated steps as a sheet of paper becomes a crane.",
+        "action": "Use the step controls to follow each fold and unfold.",
+        "why": "Animated folds make the paper’s faces and creases easier to see.",
+        "limit": "This is a visual demonstration; real paper may behave differently."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/senbazuru-960.webp",
+        "base": "senbazuru",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/027-origami-crane.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 7.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "orbital",
+    "slug": "orbital",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-mechanics",
+    "title_original": "Orbital — N-Body Gravity Playground",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/030-gravity-sandbox.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Orbital：引力沙盒",
+        "summary": "在星云中观察天体相互吸引、碰撞和留下轨迹。",
+        "action": "选择场景并使用控制栏改变模拟或添加天体。",
+        "why": "把引力运动和星系碰撞变成可探索的动态画面。",
+        "limit": "这是简化模拟，大量粒子可能影响设备性能。"
+      },
+      "en": {
+        "title": "Orbital — N-Body Gravity Playground",
+        "summary": "Watch bodies attract, collide and leave glowing trails in a gravity sandbox.",
+        "action": "Choose a scene and use the controls to adjust the simulation or add bodies.",
+        "why": "Gravity and galaxy collisions become an interactive visual playground.",
+        "limit": "This is a simplified simulation; many particles may affect performance."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/orbital-960.webp",
+        "base": "orbital",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/030-gravity-sandbox.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 8.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "labyrinthos",
+    "slug": "labyrinthos",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Labyrinthos",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/033-stone-labyrinth.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Labyrinthos：火光迷宫",
+        "summary": "带着一簇微光，在古石迷宫里寻找出口。",
+        "action": "选择难度并开始，用方向键或页面提示探索迷宫。",
+        "why": "生成迷宫、火光与已走过的路径共同构成探索感。",
+        "limit": "完整关卡尚未由 Freemy 通关。"
+      },
+      "en": {
+        "title": "Labyrinthos",
+        "summary": "Carry a small flame through an ancient stone maze and find the exit.",
+        "action": "Choose a difficulty and follow the on-screen controls through the maze.",
+        "why": "A generated maze, torchlight and a trail of your path create a sense of discovery.",
+        "limit": "Freemy has not completed the full game."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/labyrinthos-960.webp",
+        "base": "labyrinthos",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/033-stone-labyrinth.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 10.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "hyperbrick",
+    "slug": "hyperbrick",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "HYPERBRICK",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/038-neon-breakout.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "HYPERBRICK：霓虹打砖块",
+        "summary": "在霓虹街机里击碎砖块，收集道具并挑战关卡。",
+        "action": "选择 Arcade 或 Endless，按页面提示移动挡板并发射球。",
+        "why": "复古街机外观搭配粒子、连击和弹跳反馈。",
+        "limit": "画面有闪光与动态效果；完整关卡尚未通关。"
+      },
+      "en": {
+        "title": "HYPERBRICK",
+        "summary": "Break glowing bricks, collect power-ups and tackle arcade levels.",
+        "action": "Choose Arcade or Endless and follow the on-screen controls to launch and move the paddle.",
+        "why": "A retro cabinet combines glowing bricks, combos and lively feedback.",
+        "limit": "The game contains flashing effects; Freemy has not completed every level."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/hyperbrick-960.webp",
+        "base": "hyperbrick",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/038-neon-breakout.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "galerie-nocturne",
+    "slug": "galerie-nocturne",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-exhibitions",
+    "title_original": "Galerie Nocturne",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/039-virtual-gallery.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Galerie Nocturne：夜间画廊",
+        "summary": "漫步于安静的虚拟画廊，靠近观看八幅生成画作。",
+        "action": "使用页面中的方向或移动控制，在画廊中靠近画作。",
+        "why": "灯光、地面和画框营造出夜间展馆的氛围。",
+        "limit": "画廊中的艺术家与画作身份为虚构设定。"
+      },
+      "en": {
+        "title": "Galerie Nocturne",
+        "summary": "Wander a quiet virtual gallery and explore eight generative paintings.",
+        "action": "Use the movement controls to walk through the gallery and approach a painting.",
+        "why": "Lighting, floors and frames evoke a museum after hours.",
+        "limit": "The artists and identities presented inside the gallery are fictional."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/galerie-nocturne-960.webp",
+        "base": "galerie-nocturne",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/039-virtual-gallery.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 9.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "dune-engine",
+    "slug": "dune-engine",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-thermal",
+    "title_original": "Dune Engine — Falling Sand Sandbox",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/055-falling-sand.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Dune Engine：落沙沙盒",
+        "summary": "把沙、水、火和熔岩放进画布，观察它们如何相互作用。",
+        "action": "选择一种材料，在画布上绘制，或切换预设场景。",
+        "why": "像素沙盒把变化与连锁反应变成可以动手玩的实验。",
+        "limit": "这是娱乐性模拟，不代表真实材料的精确行为。"
+      },
+      "en": {
+        "title": "Dune Engine — Falling Sand Sandbox",
+        "summary": "Place sand, water, fire and lava on a canvas and watch them interact.",
+        "action": "Choose a material and draw on the canvas, or switch to a preset scene.",
+        "why": "A pixel sandbox turns changing materials into a hands-on experiment.",
+        "limit": "This playful simulation is not a precise model of real materials."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/dune-engine-960.webp",
+        "base": "dune-engine",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/055-falling-sand.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 10.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "planet-forge",
+    "slug": "planet-forge",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Planet Forge — Procedural World Generator",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/066-planet-forge.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Planet Forge：生成一颗星球",
+        "summary": "调整地貌和云层，创造并观察一颗虚构星球。",
+        "action": "使用预设与控制面板调整星球参数，拖动查看。",
+        "why": "地貌、云层与昼夜光线共同构成不断旋转的世界。",
+        "limit": "星球与数据为虚构生成内容，并非科学观测结果。"
+      },
+      "en": {
+        "title": "Planet Forge — Procedural World Generator",
+        "summary": "Shape terrain and clouds to create and observe a fictional planet.",
+        "action": "Use presets and controls to change the planet, then drag to explore it.",
+        "why": "Terrain, clouds and day-night lighting form a rotating imagined world.",
+        "limit": "The planet and its data are fictional, not scientific observations."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/planet-forge-960.webp",
+        "base": "planet-forge",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/066-planet-forge.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 11
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "luminote",
+    "slug": "luminote",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "Luminote — Piano with Falling Lights",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/080-falling-notes-piano.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Luminote：流光钢琴",
+        "summary": "弹奏琴键，或听旋律化作下落的彩色光条。",
+        "action": "点击页面启动声音，使用琴键或选择内置旋律。",
+        "why": "音符、琴键与光束同步，把音乐变成可看的节奏。",
+        "limit": "声音需要先与页面交互；请留意音量。"
+      },
+      "en": {
+        "title": "Luminote — Piano with Falling Lights",
+        "summary": "Play a keyboard or watch melodies become falling colored lights.",
+        "action": "Click to enable sound, then play the keys or choose a built-in melody.",
+        "why": "Notes, keys and beams of light make a melody visible.",
+        "limit": "Audio requires interaction first; check your volume."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/luminote-960.webp",
+        "base": "luminote",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/080-falling-notes-piano.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 12
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "aquarelle",
+    "slug": "aquarelle",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Aquarelle — Generative Watercolour Landscapes",
+    "demo_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/094-watercolor-landscapes.html",
+    "creator": {
+      "name": "MIAAI Lab",
+      "profile_url": "https://github.com/miaai-lab"
+    },
+    "locales": {
+      "zh": {
+        "title": "Aquarelle：水彩风景",
+        "summary": "看一幅水彩风景逐层展开，并尝试不同的季节配色。",
+        "action": "选择配色并点击 Paint another，观察新的风景生成。",
+        "why": "从天空、山丘到倒影，生成过程像一场安静的绘画。",
+        "limit": "画面由程序生成；生成过程需要几秒。"
+      },
+      "en": {
+        "title": "Aquarelle — Generative Watercolour Landscapes",
+        "summary": "Watch a watercolor landscape appear in layers and try seasonal palettes.",
+        "action": "Choose a palette and select Paint another to watch a new scene appear.",
+        "why": "Sky, hills and reflections appear in a quiet, layered painting process.",
+        "limit": "Landscapes are procedurally generated and take a few seconds to paint."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/aquarelle-960.webp",
+        "base": "aquarelle",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://miaai-lab.github.io/Claude-Opus-5.5-100-HTML-Files/094-watercolor-landscapes.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "已在桌面浏览器打开作品并捕获实际画面；完整交互及手机尚未核验。",
+      "note_en": "The original experience was rendered and captured in a desktop browser; the full interaction and mobile have not been verified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 13
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "tree-appreciator",
+    "slug": "tree-appreciator",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Tree Appreciator",
+    "demo_url": "https://tools.simonwillison.net/tree-appreciator",
+    "creator": {
+      "name": "Simon Willison",
+      "profile_url": "https://simonwillison.net/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Tree Appreciator：赏树找不同",
+        "summary": "慢下来观察两棵三维树，找出枝叶间的小小差别。",
+        "action": "点击 Begin，拖动旋转树木，找出并点击不一样的细节。",
+        "why": "每一对树都从同一粒种子生长，让找不同变成安静的自然观察。",
+        "limit": "本机截图展示原站开始画面；完整游戏与手机尚未由 Freemy 测试。"
+      },
+      "en": {
+        "title": "Tree Appreciator",
+        "summary": "Slow down and spot the small differences between two 3D trees.",
+        "action": "Choose Begin, rotate the trees and tap the details that differ.",
+        "why": "Each pair grows from the same seed, turning a spot-the-difference puzzle into a quiet nature walk.",
+        "limit": "Our capture shows the opening screen; Freemy has not completed the game or tested mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5 Max"
+      ],
+      "evidence_url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/tree-appreciator-960.webp",
+        "base": "tree-appreciator",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://tools.simonwillison.net/tree-appreciator",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "page_rendered",
+      "last_checked_at": "2026-11-11",
+      "note": "本机已打开原站并截取开始画面；Grok 报告在其环境进入过找不同关卡。",
+      "note_en": "The opening screen was captured locally; Grok reported entering a puzzle in its own browser."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.5
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "chak-chak-mage",
+    "slug": "chak-chak-mage",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "The Chak Chak Mage",
+    "demo_url": "https://az-dev-me.github.io/chak-chak-mage/",
+    "creator": {
+      "name": "AZ (az-dev-me)",
+      "profile_url": "https://github.com/az-dev-me"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Chak Chak Mage：互动音乐专辑",
+        "summary": "在音乐、动态歌词和影像中探索一张叙事专辑。",
+        "action": "选择语言并进入体验，再选择曲目和播放按钮。",
+        "why": "歌曲、同步文字和影像共同讲述带有双层含义的故事。",
+        "limit": "声音和画面需要加载；本机未核验完整专辑及手机体验。"
+      },
+      "en": {
+        "title": "The Chak Chak Mage",
+        "summary": "Explore a narrative album through music, animated lyrics and visual scenes.",
+        "action": "Choose a language, enter the experience and select a track to play.",
+        "why": "Songs, synchronized text and imagery tell a story with two narrative layers.",
+        "limit": "Audio and images need time to load; the full album and mobile have not been verified locally."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "assets",
+      "tools": [],
+      "evidence_url": "https://github.com/az-dev-me/chak-chak-mage"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/chak-chak-mage-960.webp",
+        "base": "chak-chak-mage",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://az-dev-me.github.io/chak-chak-mage/",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "unknown",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "unknown",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "本机选择英文、进入播放器并触发画面变化；未核验完整音乐播放或手机体验。",
+      "note_en": "In a desktop browser we selected English, entered the player and triggered a visual change; full audio playback and mobile remain unverified."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6.2
+    },
+    "added_at": "2026-11-11"
   }
 ]

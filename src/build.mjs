@@ -39,6 +39,8 @@ for(const lang of ['zh','en']){
   for(const w of c.works.filter(w=>w.editorial.status==='published')) write(lang,`/works/${w.slug}/`,detail(lang,c,w));
   for(const topic of c.taxonomy.categories) write(lang,`/categories/${topic.id}/`,topicPage(lang,c,topic));
 }
+fs.mkdirSync(path.join(out,'en'),{recursive:true});
+fs.writeFileSync(path.join(out,'en','index.html'),home('en',c));
 fs.writeFileSync(path.join(out,'404.html'),fallbackNotFound());
 fs.mkdirSync(path.join(out,'404'),{recursive:true});
 fs.writeFileSync(path.join(out,'404','index.html'),notFound('zh'));

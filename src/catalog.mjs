@@ -29,7 +29,9 @@ export function eligibleForGallery(work) {
 
 export function localizedPath(current, lang, search = '') {
   let base = current.replace(/^\/en(?=\/|$)/, '') || '/';
+  if (/^\/zh\/?$/.test(base)) base = '/';
   if (!base.startsWith('/')) base = `/${base}`;
+  if (base === '/') return `${lang === 'zh' ? '/zh/' : '/'}${search}`;
   return `${lang === 'en' ? '/en' : ''}${base}${search}`;
 }
 
