@@ -23,7 +23,8 @@
       "bottle-studio",
       "type-sound",
       "modfont",
-      "mpump"
+      "mpump",
+      "stave"
     ],
     "cover": "rosette"
   },
@@ -86,7 +87,8 @@
       "infinite-room",
       "felt-world",
       "wrong-physics",
-      "sakura-river-valley"
+      "sakura-river-valley",
+      "estheet"
     ],
     "cover": "hearthlight"
   },
@@ -148,8 +150,27 @@
       "web-bayan",
       "soft-machine",
       "pulse",
-      "luminote"
+      "luminote",
+      "stave"
     ],
     "cover": "mpump"
+  },
+  {
+    "id": "art-and-history",
+    "zh": {
+      "title": "走进艺术与历史",
+      "summary": "从画馆到古地图，探索艺术和过去的故事。"
+    },
+    "en": {
+      "title": "Art and history to explore",
+      "summary": "Discover galleries, imagined museums and an old map."
+    },
+    "works": [
+      "estheet",
+      "bosphore-1819",
+      "galerie-nocturne",
+      "wrong-physics"
+    ],
+    "cover": "estheet"
   }
 ]

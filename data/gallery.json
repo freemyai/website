@@ -2830,5 +2830,334 @@
       "featured_order": 6.4
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "stave",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-synthesis",
+    "title_original": "Stave",
+    "demo_url": "https://dogum.github.io/artifact-shelf/a/stave/stave.html",
+    "creator": {
+      "name": "Greg Dogum",
+      "profile_url": "https://github.com/dogum"
+    },
+    "locales": {
+      "zh": {
+        "title": "Stave：可以演奏的字体",
+        "summary": "在十二根琴弦上打字，让字母变成一段可播放的乐谱。",
+        "action": "点击谱面输入几个字母，再按 Play line 播放。",
+        "why": "字形的笔画与琴弦相遇，把排版变成一种乐器。",
+        "limit": "声音尚未实际听测；建议使用键盘，手机体验未知。"
+      },
+      "en": {
+        "title": "Stave",
+        "summary": "Type across twelve strings and turn letters into a playable score.",
+        "action": "Click the ruled stage, type a few letters and press Play line.",
+        "why": "Letterforms meet strings in an instrument made from typography.",
+        "limit": "Audio has not been audibly verified; a keyboard is recommended and mobile support is unknown."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://dogum.github.io/artifact-shelf/a/stave/",
+      "description": {
+        "zh": "作者说明这件作品在与 Claude 的对话中完成。",
+        "en": "The creator says this work was made in conversation with Claude."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://dogum.github.io/artifact-shelf/about/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面输入字母并按下播放；未能听测声音。本机确认原站响应，手机未测。",
+      "note_en": "Grok typed letters and pressed play in a desktop browser; audio was not audibly verified. The site responded locally; mobile was not tested."
+    },
+    "slug": "stave",
+    "media": {
+      "poster": {
+        "src": "/media/stave-960.webp",
+        "base": "stave",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://dogum.github.io/artifact-shelf/a/stave/stave.html",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.6
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "bosphore-1819",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-history",
+    "title_original": "Bosphore 1819",
+    "demo_url": "https://bosphore-1819.vercel.app/",
+    "creator": {
+      "name": "Cahid Arda Öz",
+      "profile_url": "https://cahidarda.com/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Bosphore 1819：博斯普鲁斯古地图",
+        "summary": "搜索一幅 1819 年地图上的地名，对照旧称与今天的名称。",
+        "action": "等待地图加载，搜索地名并点击结果；如果放得太近，可再缩小地图。",
+        "why": "在古地图上探索法文原名、奥斯曼土耳其语与现代地名的联系。",
+        "limit": "387 条地名中有 164 条标为不确定；识读和对应关系未经逐条独立核实。地图跳转可能放大过度，手机未测。"
+      },
+      "en": {
+        "title": "Bosphore 1819",
+        "summary": "Search place names on an 1819 map and compare historic and modern names.",
+        "action": "Wait for the map to load, search for a place and select a result; zoom out if it goes too close.",
+        "why": "Explore connections between engraved French, Ottoman Turkish and present-day place names.",
+        "limit": "164 of the 387 entries are marked uncertain; readings and identifications were not independently verified entry by entry. Map navigation may zoom in too far; mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://cahidarda.com/articles/bosphore-1819",
+      "description": {
+        "zh": "作者说明使用 Claude 子代理识读、整理地图地名，并构建了互动应用。",
+        "en": "The creator describes using Claude subagents to read and organize map labels and build the interactive app."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/CahidArda/bosphore-1819"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面搜索地名并查看地图标注；自动跳转曾放大过度。本机确认原站响应，手机未测。",
+      "note_en": "Grok searched place names and viewed a map label in a desktop browser; automatic navigation zoomed in too far. The site responded locally; mobile was not tested."
+    },
+    "slug": "bosphore-1819",
+    "media": {
+      "poster": {
+        "src": "/media/bosphore-1819-960.webp",
+        "base": "bosphore-1819",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://bosphore-1819.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en",
+        "fr",
+        "tr"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.1
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "cd-case",
+    "type": "art",
+    "primary_category": "spatial",
+    "subcategory": "spatial-products",
+    "title_original": "CD Case",
+    "demo_url": "https://www.bubbbly.com/cd-case",
+    "creator": {
+      "name": "Ann Nguyen",
+      "profile_url": "https://x.com/ann_nnng"
+    },
+    "locales": {
+      "zh": {
+        "title": "CD Case：透明光盘盒",
+        "summary": "打开一只透明光盘盒，看看盘面与塑料材质的细节。",
+        "action": "等待光盘盒出现，点击盒盖将它打开；还可以尝试拖动旋转。",
+        "why": "熟悉的塑料盒、铰链与光盘变成精致的三维互动。",
+        "limit": "拖动旋转在测试时不够稳定；其他盘面与手机体验尚未核验。"
+      },
+      "en": {
+        "title": "CD Case",
+        "summary": "Open a transparent jewel case and inspect the disc and plastic details.",
+        "action": "Wait for the case to appear, tap to open the lid and try dragging to turn it.",
+        "why": "A familiar disc case and its hinge become a detailed 3D interaction.",
+        "limit": "Dragging was not consistently observed; other disc designs and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/ann_nnng/status/2109257723246501895",
+      "description": {
+        "zh": "作者表示使用 Claude Opus 5.5 创作光盘盒及开盖效果。",
+        "en": "The creator says Claude Opus 5.5 helped create the case and opening effect."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://artifacthof.com/a/cd-case"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面点击开盖并尝试拖动；拖动不够稳定。本机确认原站响应，手机未测。",
+      "note_en": "Grok opened the lid and tried dragging in a desktop browser; dragging was not consistent. The site responded locally; mobile was not tested."
+    },
+    "slug": "cd-case",
+    "media": {
+      "poster": {
+        "src": "/media/cd-case-960.webp",
+        "base": "cd-case",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://www.bubbbly.com/cd-case",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.1
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "estheet",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-exhibitions",
+    "title_original": "Estheet",
+    "demo_url": "https://museum.estheet.com/",
+    "creator": {
+      "name": "Akash Soti",
+      "profile_url": "https://x.com/akashsoti"
+    },
+    "locales": {
+      "zh": {
+        "title": "Estheet：走进绘画馆",
+        "summary": "走进浏览器里的绘画馆，近距离欣赏按真实尺寸悬挂的画作。",
+        "action": "等待展厅出现，点击第一幅画走近，查看画作与旁边的说明。",
+        "why": "在安静的三维展厅里，感受作品的尺寸和细节。",
+        "limit": "展厅加载较慢；其他画作、语音讲解和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Estheet",
+        "summary": "Step into a browser museum and explore paintings displayed at their true sizes.",
+        "action": "Wait for the gallery to load, then click the first painting to approach and read its label.",
+        "why": "A quiet 3D gallery gives you a sense of each work’s scale and detail.",
+        "limit": "The gallery can take time to load; other paintings, narrated stories and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://x.com/akashsoti/status/2118255520096325973",
+      "description": {
+        "zh": "作者表示由自己决定展馆体验，并使用 Claude Code 实现。",
+        "en": "The creator says they shaped the museum experience and used Claude Code to build it."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://estheet.com/"
+      },
+      {
+        "url": "https://artifacthof.com/a/estheet"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面进入展厅并点击第一幅画走近；本机确认原站响应，手机未测。",
+      "note_en": "Grok entered the gallery and clicked the first painting to approach in a desktop browser; the site responded locally, and mobile was not tested."
+    },
+    "slug": "estheet",
+    "media": {
+      "poster": {
+        "src": "/media/estheet-960.webp",
+        "base": "estheet",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://museum.estheet.com/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.1
+    },
+    "added_at": "2026-11-12"
   }
 ]
