@@ -17,7 +17,9 @@
       "chak-chak-mage",
       "aquarelle",
       "harmonograph",
-      "chroma"
+      "chroma",
+      "kanso",
+      "web-bayan"
     ],
     "cover": "rosette"
   },
@@ -39,7 +41,10 @@
       "star-hop",
       "battle-drones",
       "knockbots",
-      "lili-last-door"
+      "lili-last-door",
+      "afterlight",
+      "felt-world",
+      "null-range"
     ],
     "cover": "hyperbrick"
   },
@@ -73,7 +78,8 @@
     "works": [
       "star-hop",
       "hearthlight",
-      "infinite-room"
+      "infinite-room",
+      "felt-world"
     ],
     "cover": "hearthlight"
   },

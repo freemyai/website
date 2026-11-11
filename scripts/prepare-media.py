@@ -8,7 +8,8 @@ names = ['hydraulics', 'hearthlight', 'wave-tank', 'star-hop', 'harmonograph',
          'triple-pendulum', 'infinite-room', 'light-and-optics', 'windtunnel', 'chroma',
          'soft-machine', 'rosette', 'pulse', 'senbazuru', 'orbital', 'labyrinthos',
          'hyperbrick', 'galerie-nocturne', 'dune-engine', 'planet-forge', 'luminote', 'aquarelle',
-         'tree-appreciator', 'chak-chak-mage', 'battle-drones', 'knockbots', 'lili-last-door']
+         'tree-appreciator', 'chak-chak-mage', 'battle-drones', 'knockbots', 'lili-last-door',
+         'afterlight', 'felt-world', 'null-range', 'kanso', 'web-bayan']
 selected = sys.argv[1:] or names
 unknown = set(selected) - set(names)
 if unknown:

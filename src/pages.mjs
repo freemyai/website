@@ -38,7 +38,8 @@ export function detail(lang,c,w){
   const status=w.verification?.level==='interaction_tested'?m.statusTested:w.verification?.level==='page_rendered'?m.statusRendered:m.statusFetched;
   const note=lang==='zh'?(w.verification?.note||status):(w.verification?.note_en||status);
   const tools=(w.ai_provenance?.tools||[]).join(', ');
-  const aiText=ai ? `${m.aiClaim}${tools?(lang==='zh'?` 使用工具：${tools}。`:` Tools: ${tools}.`):''}` : m.aiUnknown;
+  const aiDescription=w.ai_provenance?.description?.[lang]||m.aiClaim;
+  const aiText=ai ? `${aiDescription}${tools?(lang==='zh'?` 使用工具：${tools}。`:` Tools: ${tools}.`):''}` : m.aiUnknown;
   const languages=(w.access?.language_codes||[]).map(code=>langName(code,lang)).join(' / ')||m.unknownValue;
   const original=safeExternalUrl(w.demo_url), evidence=safeExternalUrl(w.ai_provenance?.evidence_url);
   const sourceLinks=(w.sources||[]).filter(x=>safeExternalUrl(x.url)).map(x=>`<a href="${e(safeExternalUrl(x.url))}" target="_blank" rel="noopener noreferrer">${lang==='zh'?'作品来源':'Original source'} ↗</a>`).join('');

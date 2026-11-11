@@ -27,6 +27,11 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(english,/How Hydraulics Work/);
   assert.match(english,/hreflang="zh-Hans" href="https:\/\/freemy\.ai\/works\/hydraulics\/"/);
   assert.match(english,/hreflang="x-default" href="https:\/\/freemy\.ai\/en\/works\/hydraulics\/"/);
+  const reportedEn=fs.readFileSync(path.join(root,'dist/en/works/null-range/index.html'),'utf8');
+  const reportedZh=fs.readFileSync(path.join(root,'dist/works/kanso/index.html'),'utf8');
+  assert.match(reportedEn,/The organizer lists this as a Vibe Jam winner/);
+  assert.doesNotMatch(reportedEn,/The creator or project documentation says AI was used/);
+  assert.match(reportedZh,/具体工具来自对公开参赛资料的报道/);
   assert.ok(fs.existsSync(path.join(root,'dist/works/gears/index.html')));
   assert.ok(fs.existsSync(path.join(root,'dist/en/works/gears/index.html')));
   const missing=fs.readFileSync(path.join(root,'dist/404.html'),'utf8');

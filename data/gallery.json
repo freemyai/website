@@ -1769,5 +1769,395 @@
       "featured_order": 5.4
     },
     "added_at": "2026-11-11"
+  },
+  {
+    "id": "afterlight",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Afterlight",
+    "demo_url": "https://friendlyuser.github.io/afterlight/",
+    "creator": {
+      "name": "FriendlyUser",
+      "profile_url": "https://friendlyuser.github.io/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Afterlight：余晖",
+        "summary": "在有光影的三维场景里，跟随像素角色开启一段世界末日后的冒险。",
+        "action": "等待标题画面，使用键盘选择 New Game 和难度，再按提示推进对话。",
+        "why": "像素角色与立体场景结合，一段成长故事从灯塔小镇展开。",
+        "limit": "首次加载可能较慢；完整故事及手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Afterlight",
+        "summary": "Follow pixel-art characters through a lit 3D world in a post-apocalyptic adventure.",
+        "action": "Wait for the title screen, use the keyboard to choose New Game and a difficulty, then follow the dialogue.",
+        "why": "Pixel characters and 3D dioramas bring to life a coming-of-age story that begins in a lighthouse town.",
+        "limit": "Initial loading can be slow; the full story and mobile experience have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://friendlyuser.github.io/posts/tech/2026/building_afterlight_jrpg_with_claude_code/"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面进入序章并截取游戏画面；本机确认原站响应，手机未测。",
+      "note_en": "Grok entered and captured the prologue in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "afterlight",
+    "media": {
+      "poster": {
+        "src": "/media/afterlight-960.webp",
+        "base": "afterlight",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://friendlyuser.github.io/afterlight/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.6
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "felt-world",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-sandbox",
+    "title_original": "Felt World",
+    "demo_url": "https://az9713.github.io/opus-5.5-open-world-game/feltworld/",
+    "creator": {
+      "name": "az9713",
+      "profile_url": "https://github.com/az9713"
+    },
+    "locales": {
+      "zh": {
+        "title": "Felt World：针毡世界",
+        "summary": "在像毛线和针毡做成的世界里开车、步行、飞行或潜水。",
+        "action": "选择 Start 进入世界，使用 W 开车；按 H 查看操作说明。",
+        "why": "拼布道路、毡质树木和海底场景组成一座可以自由探索的手作世界。",
+        "limit": "图形表现依赖设备与外部资源；手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Felt World",
+        "summary": "Drive, walk, fly or dive through a world that looks stitched from felt and yarn.",
+        "action": "Choose Start to enter, use W to drive and press H for controls.",
+        "why": "Patchwork roads, felt trees and underwater scenes form a playful world to explore.",
+        "limit": "Graphics depend on device performance and external resources; mobile has not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/az9713/opus-5.5-open-world-game"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面进入世界并开车；本机确认原站响应，手机未测。",
+      "note_en": "Grok entered the world and drove in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "felt-world",
+    "media": {
+      "poster": {
+        "src": "/media/felt-world-960.webp",
+        "base": "felt-world",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://az9713.github.io/opus-5.5-open-world-game/feltworld/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6.8
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "null-range",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Null Range",
+    "demo_url": "https://nullrange.com/",
+    "creator": {
+      "name": "Taylor",
+      "profile_url": "https://x.com/taylor_sntx"
+    },
+    "locales": {
+      "zh": {
+        "title": "Null Range：太空缠斗",
+        "summary": "驾驶飞船进入共享星区，用声呐发现目标并在太空中机动。",
+        "action": "填写显示名并选择 Deploy，按页面提示使用声呐、方向键和油门。",
+        "why": "线框地形与第一人称座舱让太空对战呈现出鲜明的视觉风格。",
+        "limit": "这是在线多人体验；完整对战和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Null Range",
+        "summary": "Pilot a ship into a shared sector, use sonar and maneuver through space.",
+        "action": "Enter a callsign, choose Deploy and follow the on-screen sonar and flight controls.",
+        "why": "Wireframe terrain and a first-person cockpit give the space combat a distinctive look.",
+        "limit": "This is an online multiplayer experience; full combat and mobile have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Cursor"
+      ],
+      "evidence_url": "https://vibegamedb.com/en/games/null-range",
+      "description": {
+        "zh": "赛事主办方公布了该作品的获奖信息，赛事当时要求参赛作品至少 90% 的代码由 AI 编写；具体工具来自对公开参赛资料的报道，我们尚未独立核对原始提交。",
+        "en": "The organizer lists this as a Vibe Jam winner; the jam required at least 90% of each entry’s code to be AI-written. The tools listed here are reported from the public entry, which we have not independently inspected."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://levels.io/vibe-jam-2026-winners-quality"
+      },
+      {
+        "url": "https://vibejam.com/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面进入星区并操作飞船；本机确认原站响应。AI 工具信息依据公开赛事提交资料的转述。",
+      "note_en": "Grok entered a sector and operated the ship in a desktop browser; the site responded locally. AI tool attribution is based on a published account of the jam submission."
+    },
+    "slug": "null-range",
+    "media": {
+      "poster": {
+        "src": "/media/null-range-960.webp",
+        "base": "null-range",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://nullrange.com/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 8.8
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "kanso",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Kansō",
+    "demo_url": "https://www.kansogame.com/",
+    "creator": {
+      "name": "skelly",
+      "profile_url": "https://x.com/mrsukeruton"
+    },
+    "locales": {
+      "zh": {
+        "title": "Kansō：盆栽庭园",
+        "summary": "在安静的三维庭园里照料盆栽，观察树木随季节生长。",
+        "action": "选择 Play，进入庭园后尝试浇水、修剪或调整树形。",
+        "why": "把园艺中的细小动作和季节变化做成了一段舒缓的互动。",
+        "limit": "本机尚未核验手机体验；作品可能使用浏览器本地存档。"
+      },
+      "en": {
+        "title": "Kansō",
+        "summary": "Care for a bonsai in a quiet 3D garden and watch it grow with the seasons.",
+        "action": "Choose Play, enter the garden and try watering, pruning or shaping the tree.",
+        "why": "Small acts of gardening and changing seasons become a calm interactive experience.",
+        "limit": "Mobile has not been verified locally; the game may use browser storage for saves."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [
+        "Codex",
+        "GPT 5.5",
+        "Opus 4.7",
+        "Suno"
+      ],
+      "evidence_url": "https://vibegamedb.com/en/games/kanso-bonsai",
+      "description": {
+        "zh": "赛事主办方公布了该作品的获奖信息，赛事当时要求参赛作品至少 90% 的代码由 AI 编写；具体工具来自对公开参赛资料的报道，我们尚未独立核对原始提交。",
+        "en": "The organizer lists this as a Vibe Jam winner; the jam required at least 90% of each entry’s code to be AI-written. The tools listed here are reported from the public entry, which we have not independently inspected."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://levels.io/vibe-jam-2026-winners-quality"
+      },
+      {
+        "url": "https://vibejam.com/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面进入庭园并开始照料盆栽；本机确认原站响应。工具列表依据公开赛事提交资料的转述。",
+      "note_en": "Grok entered the garden and began caring for a bonsai in a desktop browser; the site responded locally. The tool list comes from a published account of the jam submission."
+    },
+    "slug": "kanso",
+    "media": {
+      "poster": {
+        "src": "/media/kanso-960.webp",
+        "base": "kanso",
+        "width": 1280,
+        "height": 714
+      },
+      "provenance": {
+        "source_url": "https://www.kansogame.com/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.7
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "web-bayan",
+    "slug": "web-bayan",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-synthesis",
+    "title_original": "Web-Bayan",
+    "demo_url": "https://gbkorr.github.io/gbkorr/bayan/bayan.html",
+    "creator": {
+      "name": "Gabriel Broussard Korr",
+      "profile_url": "https://github.com/gbkorr"
+    },
+    "locales": {
+      "zh": {
+        "title": "Web-Bayan：网页巴扬手风琴",
+        "summary": "用键盘演奏一台浏览器里的巴扬手风琴，探索按钮、音栓和音色。",
+        "action": "点击页面或按任意键进入，再使用电脑键盘或鼠标演奏圆形按钮。",
+        "why": "左右键盘、音栓和八度控制将真实乐器的操作组织到同一个面板。",
+        "limit": "声音需要一次交互才能启用；本机确认按键高亮，未实际听测音频或测试手机。"
+      },
+      "en": {
+        "title": "Web-Bayan",
+        "summary": "Play a browser-based bayan accordion and explore its buttons, registers and sounds.",
+        "action": "Click or press a key to begin, then use your computer keyboard or mouse to play the buttons.",
+        "why": "Two keyboard clusters, registers and octave controls bring the instrument into one interface.",
+        "limit": "Sound requires an initial gesture; key highlights were checked, but audio was not audibly verified and mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5",
+        "Claude Opus 5"
+      ],
+      "evidence_url": "https://gbkorr.github.io/r-bites/bayan/bayan.html"
+    },
+    "media": {
+      "poster": {
+        "src": "/media/web-bayan-960.webp",
+        "base": "web-bayan",
+        "width": 1280,
+        "height": 720
+      },
+      "provenance": {
+        "source_url": "https://gbkorr.github.io/gbkorr/bayan/bayan.html",
+        "captured_at": "2026-11-11",
+        "method": "desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "本机打开乐器并按键，确认按钮高亮；音频未实际听测，手机未测。",
+      "note_en": "A desktop browser opened the instrument and confirmed key highlights; audio was not audibly verified and mobile was not tested."
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 6.3
+    },
+    "added_at": "2026-11-11"
   }
 ]

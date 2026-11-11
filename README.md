@@ -29,6 +29,8 @@ npm run test:browser
 
 截图脚本只处理代码中列出的公开网址，使用独立浏览器上下文，不作为生产环境的任意网址抓取服务。运行 `node scripts/capture-previews.mjs` 后，可用安装了 Pillow 的 Python 运行 `python scripts/prepare-media.py` 生成图片变体；发布前检查画面是否完成加载。
 
+Grok 已核验的截图可从本机 outbox 放到 `assets/media/<slug>.jpg`；使用 `python scripts/prepare-media.py <slug>` 可以只生成该作品的变体，避免重写其他预览。记录捕获方、日期与作品来源，并在发布前检查截图与作品是否一致。
+
 投稿入口会打开本仓库的公开 GitHub issue，访客可以填写作品资料；网站本身不保存投稿数据。`vercel.json` 将 `dist` 配置为 Vercel 构建输出。
 
 页面接入 Vercel Web Analytics 与 Speed Insights；访问和性能数据由 Vercel 收集，相关说明见网站隐私页。

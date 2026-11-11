@@ -27,6 +27,7 @@ export function loadCatalog() {
     if(!category||!category.subcategories.some(s=>s.id===w.subcategory)) throw new Error(`Invalid topic: ${w.id}`);
     if(!types.some(t=>t.id===w.type)||!safeExternalUrl(w.demo_url)) throw new Error(`Invalid type or experience URL: ${w.id}`);
     if(!/^\d{4}-\d{2}-\d{2}$/.test(w.added_at||'')) throw new Error(`Missing or invalid added date: ${w.id}`);
+    if(w.ai_provenance?.description&&!['zh','en'].every(lang=>typeof w.ai_provenance.description[lang]==='string'&&w.ai_provenance.description[lang].trim())) throw new Error(`Incomplete AI description: ${w.id}`);
     for(const lang of ['zh','en']) for(const key of ['title','summary','action','why','limit']) if(!w.locales?.[lang]?.[key]) throw new Error(`Missing ${lang}.${key}: ${w.id}`);
     if(!['candidate','needs_review','published','unavailable','rejected'].includes(w.editorial?.status)) throw new Error(`Invalid editorial status: ${w.id}`);
     const type=types.find(t=>t.id===w.type), subcategory=category.subcategories.find(s=>s.id===w.subcategory);
