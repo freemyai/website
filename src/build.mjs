@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root, loadCatalog } from './validate.mjs';
 import { urlFor } from './i18n.mjs';
-import { home, explore, collectionsPage, collectionPage, detail, topicPage, about, privacy, submit, notFound } from './pages.mjs';
+import { home, explore, collectionsPage, collectionPage, detail, topicPage, about, privacy, submit, notFound, fallbackNotFound } from './pages.mjs';
 
 const out=path.resolve(root,'dist');
 if(out!==path.join(root,'dist')) throw new Error('Unexpected output directory');
@@ -39,7 +39,7 @@ for(const lang of ['zh','en']){
   for(const w of c.works.filter(w=>w.editorial.status==='published')) write(lang,`/works/${w.slug}/`,detail(lang,c,w));
   for(const topic of c.taxonomy.categories) write(lang,`/categories/${topic.id}/`,topicPage(lang,c,topic));
 }
-fs.writeFileSync(path.join(out,'404.html'),notFound('zh'));
+fs.writeFileSync(path.join(out,'404.html'),fallbackNotFound());
 fs.mkdirSync(path.join(out,'404'),{recursive:true});
 fs.writeFileSync(path.join(out,'404','index.html'),notFound('zh'));
 fs.mkdirSync(path.join(out,'en','404'),{recursive:true});

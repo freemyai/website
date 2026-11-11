@@ -19,4 +19,8 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(english,/hreflang="zh-Hans" href="https:\/\/freemy\.ai\/works\/hydraulics\/"/);
   assert.ok(fs.existsSync(path.join(root,'dist/works/gears/index.html')));
   assert.ok(fs.existsSync(path.join(root,'dist/en/works/gears/index.html')));
+  const missing=fs.readFileSync(path.join(root,'dist/404.html'),'utf8');
+  assert.match(missing,/没有找到这个页面/);
+  assert.match(missing,/This page could not be found/);
+  assert.match(missing,/href="\/en\/explore\/"/);
 });
