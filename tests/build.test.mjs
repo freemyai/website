@@ -14,6 +14,7 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(home,/<html lang="en">/);
   assert.match(chineseHome,/<html lang="zh-CN">/);
   assert.match(home,/href="https:\/\/freemy\.ai\/"/);
+  assert.match(home,/hreflang="x-default" href="https:\/\/freemy\.ai\/"/);
   assert.match(home,/href="\/zh\/" data-language-switch/);
   assert.match(home,/_vercel\/insights\/script\.js/);
   assert.match(home,/_vercel\/speed-insights\/script\.js/);
@@ -25,6 +26,7 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(english,/<html lang="en">/);
   assert.match(english,/How Hydraulics Work/);
   assert.match(english,/hreflang="zh-Hans" href="https:\/\/freemy\.ai\/works\/hydraulics\/"/);
+  assert.match(english,/hreflang="x-default" href="https:\/\/freemy\.ai\/en\/works\/hydraulics\/"/);
   assert.ok(fs.existsSync(path.join(root,'dist/works/gears/index.html')));
   assert.ok(fs.existsSync(path.join(root,'dist/en/works/gears/index.html')));
   const missing=fs.readFileSync(path.join(root,'dist/404.html'),'utf8');
