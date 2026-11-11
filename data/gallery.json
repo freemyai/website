@@ -2159,5 +2159,303 @@
       "featured_order": 6.3
     },
     "added_at": "2026-11-11"
+  },
+  {
+    "id": "bottle-studio",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-design",
+    "title_original": "Bottle Studio",
+    "demo_url": "https://amirmushichge.github.io/bottle-studio/",
+    "creator": {
+      "name": "Amir Mushich",
+      "profile_url": "https://github.com/amirmushichge"
+    },
+    "locales": {
+      "zh": {
+        "title": "Bottle Studio：三维酒瓶设计",
+        "summary": "调整瓶型、玻璃颜色和灯光，在浏览器里组合一支产品瓶。",
+        "action": "在右侧面板更换形状或颜色，再使用底部按钮切换观察角度。",
+        "why": "三维玻璃、液体与灯光让小小的产品设计工具像一座摄影棚。",
+        "limit": "三维画面可能加载较慢；手机体验和导出功能尚未核验。"
+      },
+      "en": {
+        "title": "Bottle Studio",
+        "summary": "Shape a product bottle in the browser by changing the glass, color and light.",
+        "action": "Change the form or glass color in the side panel, then switch camera angles below.",
+        "why": "Glass, liquid and studio lighting turn a small design tool into a virtual photo shoot.",
+        "limit": "The 3D scene can take time to load; mobile and export have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/AmirMushich/status/2118800755595292961"
+    },
+    "sources": [
+      {
+        "url": "https://github.com/amirmushichge/bottle-studio"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面调整瓶型、玻璃颜色与机位；本机确认原站响应，手机未测。",
+      "note_en": "Grok changed the bottle shape, glass color and camera in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "bottle-studio",
+    "media": {
+      "poster": {
+        "src": "/media/bottle-studio-960.webp",
+        "base": "bottle-studio",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://amirmushichge.github.io/bottle-studio/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.9
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "wrong-physics",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-exhibitions",
+    "title_original": "The Museum of Wrong Physics",
+    "demo_url": "https://wrongphysics.vercel.app/",
+    "creator": {
+      "name": "Leon Lin",
+      "profile_url": "https://x.com/LexnLin"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Museum of Wrong Physics：错误物理博物馆",
+        "summary": "走进一座违反常识的三维博物馆，看水向上流动等奇妙展览。",
+        "action": "等待场景加载，选择 Play，再从 Directory 进入展厅或使用方向键探索。",
+        "why": "熟悉的物理现象被重新想象成可以走进的创意空间。",
+        "limit": "这是虚构艺术体验，场景加载和操作可能较慢；手机尚未核验。"
+      },
+      "en": {
+        "title": "The Museum of Wrong Physics",
+        "summary": "Explore a 3D museum where familiar rules are reimagined, including water flowing upward.",
+        "action": "Wait for the scene to load, choose Play, then use Directory or movement controls to explore.",
+        "why": "Everyday physical phenomena become surprising rooms you can walk into.",
+        "limit": "This is a fictional art experience; loading and controls can be slow, and mobile has not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/LexnLin/status/2103153535252582792"
+    },
+    "sources": [
+      {
+        "url": "https://leonlin.de/demos"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面进入大厅和向上流水的展厅；本机确认原站响应，手机未测。",
+      "note_en": "Grok entered the rotunda and the ascending-water gallery in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "wrong-physics",
+    "media": {
+      "poster": {
+        "src": "/media/wrong-physics-960.webp",
+        "base": "wrong-physics",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://wrongphysics.vercel.app/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "sakura-river-valley",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Sakura River Valley",
+    "demo_url": "https://valley.mengto.here.now/",
+    "creator": {
+      "name": "Meng To",
+      "profile_url": "https://x.com/MengTo"
+    },
+    "locales": {
+      "zh": {
+        "title": "Sakura River Valley：樱花河谷",
+        "summary": "乘一艘小船穿过薄雾河谷，欣赏樱花、红桥和水面倒影。",
+        "action": "等待场景加载，点击画面取得焦点，再用 W 或方向键操纵小船。",
+        "why": "河流、建筑和光影构成一段可以亲自航行的安静旅程。",
+        "limit": "大型三维场景可能加载较慢；天气控制和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "Sakura River Valley",
+        "summary": "Steer a small boat through a misty valley of blossoms, bridges and reflections.",
+        "action": "Wait for the scene to load, click to focus, then use W or the arrow keys to steer.",
+        "why": "Water, architecture and soft light make this a quiet journey you can navigate yourself.",
+        "limit": "The large 3D scene can load slowly; weather controls and mobile have not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/MengTo/status/2102760783344189761"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面驾驶小船并观察尾迹；本机确认原站响应，手机未测。",
+      "note_en": "Grok steered the boat and observed its wake in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "sakura-river-valley",
+    "media": {
+      "poster": {
+        "src": "/media/sakura-river-valley-960.webp",
+        "base": "sakura-river-valley",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://valley.mengto.here.now/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 4.2
+    },
+    "added_at": "2026-11-11"
+  },
+  {
+    "id": "learn-arduino",
+    "type": "learning",
+    "primary_category": "electronics",
+    "subcategory": "electronics-embedded",
+    "title_original": "Learn Arduino",
+    "demo_url": "https://learn-arduino-red.vercel.app/",
+    "creator": {
+      "name": "Dilum Sanjaya",
+      "profile_url": "https://x.com/DilumSanjaya"
+    },
+    "locales": {
+      "zh": {
+        "title": "Learn Arduino：三维互动入门",
+        "summary": "转动 Arduino 开发板、运行示例，观察电路中的 LED 闪烁。",
+        "action": "打开 Blink an LED 课程，拖动场景查看电路，再点击 Run 运行示例。",
+        "why": "电路、代码和串口输出在同一页面里，让初学者可以边看边试。",
+        "limit": "这是浏览器中的学习模拟；实际接线需按硬件说明核对，手机尚未核验。"
+      },
+      "en": {
+        "title": "Learn Arduino",
+        "summary": "Rotate a 3D Arduino board, run an example and watch a circuit’s LED blink.",
+        "action": "Open Blink an LED, drag to inspect the circuit and choose Run to start the example.",
+        "why": "The circuit, code and serial output appear together for hands-on exploration.",
+        "limit": "This is a browser learning simulation; check hardware instructions before wiring a real circuit. Mobile has not been verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/DilumSanjaya/status/2112587730542854263"
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-11",
+      "note": "Grok 在云端桌面运行 Blink 示例并观察 LED 与串口输出；本机确认原站响应，手机未测。",
+      "note_en": "Grok ran the Blink example and observed the LED and serial output in a desktop browser; the original site responded locally, and mobile was not tested."
+    },
+    "slug": "learn-arduino",
+    "media": {
+      "poster": {
+        "src": "/media/learn-arduino-960.webp",
+        "base": "learn-arduino",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://learn-arduino-red.vercel.app/",
+        "captured_at": "2026-11-11",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 5.3
+    },
+    "added_at": "2026-11-11"
   }
 ]

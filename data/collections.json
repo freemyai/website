@@ -19,7 +19,8 @@
       "harmonograph",
       "chroma",
       "kanso",
-      "web-bayan"
+      "web-bayan",
+      "bottle-studio"
     ],
     "cover": "rosette"
   },
@@ -79,7 +80,9 @@
       "star-hop",
       "hearthlight",
       "infinite-room",
-      "felt-world"
+      "felt-world",
+      "wrong-physics",
+      "sakura-river-valley"
     ],
     "cover": "hearthlight"
   },
@@ -106,5 +109,23 @@
       "robot-arm"
     ],
     "cover": "wave-tank"
+  },
+  {
+    "id": "make-and-learn",
+    "zh": {
+      "title": "动手学一点",
+      "summary": "转动、折叠、运行，在互动里理解新的东西。"
+    },
+    "en": {
+      "title": "Learn by making",
+      "summary": "Rotate, fold and run experiments to discover something new."
+    },
+    "works": [
+      "learn-arduino",
+      "senbazuru",
+      "light-and-optics",
+      "hydraulics"
+    ],
+    "cover": "learn-arduino"
   }
 ]
