@@ -2401,7 +2401,7 @@
       "zh": {
         "title": "Learn Arduino：三维互动入门",
         "summary": "转动 Arduino 开发板、运行示例，观察电路中的 LED 闪烁。",
-        "action": "打开 Blink an LED 课程，拖动场景查看电路，再点击 Run 运行示例。",
+        "action": "原站可切换中文；打开 Blink an LED（让 LED 闪烁）课程，拖动场景查看电路，再点击运行示例。",
         "why": "电路、代码和串口输出在同一页面里，让初学者可以边看边试。",
         "limit": "这是浏览器中的学习模拟；实际接线需按硬件说明核对，手机尚未核验。"
       },
@@ -2445,7 +2445,8 @@
       "login": "none",
       "pricing": "unknown",
       "language_codes": [
-        "en"
+        "en",
+        "zh-CN"
       ]
     },
     "device_support": {
@@ -2456,6 +2457,11 @@
       "status": "published",
       "featured_order": 5.3
     },
-    "added_at": "2026-11-11"
+    "added_at": "2026-11-11",
+    "sources": [
+      {
+        "url": "https://learn-arduino-red.vercel.app/zh/"
+      }
+    ]
   }
 ]
