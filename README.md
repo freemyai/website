@@ -31,6 +31,8 @@ npm run test:browser
 
 Grok 已核验的截图可从本机 outbox 放到 `assets/media/<slug>.jpg`；使用 `python scripts/prepare-media.py <slug>` 可以只生成该作品的变体，避免重写其他预览。记录捕获方、日期与作品来源，并在发布前检查截图与作品是否一致。
 
+Quantum Eraser、Ocean Currents、SVT 3D、BEE-X9 和 The Last Hexagon 的截图会自动补齐至 16:10，避免展示时裁掉两侧内容；Ocean Currents 的原始截图还会去掉边缘留白。更换截图时，应重新核对画面及记录的尺寸。
+
 投稿入口会打开本仓库的公开 GitHub issue，访客可以填写作品资料；网站本身不保存投稿数据。`vercel.json` 将 `dist` 配置为 Vercel 构建输出。
 
 页面接入 Vercel Web Analytics 与 Speed Insights；访问和性能数据由 Vercel 收集，相关说明见网站隐私页。

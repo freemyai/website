@@ -67,7 +67,9 @@
       "hydraulics",
       "wave-tank",
       "triple-pendulum",
-      "clearwater"
+      "clearwater",
+      "ocean-currents",
+      "last-hexagon"
     ],
     "cover": "hydraulics"
   },
@@ -142,7 +144,9 @@
       "form-01",
       "drone-lab",
       "project-wednesday",
-      "blackhole-lab"
+      "blackhole-lab",
+      "quantum-eraser",
+      "svt-3d"
     ],
     "cover": "learn-arduino"
   },
@@ -206,7 +210,8 @@
       "robolabs",
       "roadster-explorer",
       "wind-tide",
-      "spacex-vehicles"
+      "spacex-vehicles",
+      "bee-x9"
     ],
     "cover": "v8-engine"
   },

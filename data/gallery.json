@@ -4360,5 +4360,391 @@
       "featured_order": 3.2
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "quantum-eraser",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-optics",
+    "title_original": "Quantum Eraser Lab",
+    "demo_url": "https://dannylabsx.com/quantum-eraser/",
+    "creator": {
+      "name": "Dan",
+      "profile_url": "https://x.com/DannyLabsX"
+    },
+    "locales": {
+      "zh": {
+        "title": "Quantum Eraser Lab：量子擦除模拟",
+        "summary": "在三维虚拟光具座上模拟光子对，调整分析器并观察屏幕上的条纹累积。",
+        "action": "等待实验室载入并进入互动模式，将 Analyser 从 45° 调至 0°，再点击 +1000。",
+        "why": "用光路、可调分析器和计数图，把量子擦除实验的设置呈现出来。",
+        "limit": "这是教学模拟。仅测试标记关闭时的分析器；路径标记、擦除预设和手机未测。首次载入约需一分钟。"
+      },
+      "en": {
+        "title": "Quantum Eraser Lab",
+        "summary": "Simulate photon pairs on a 3D optical bench, adjust the analyser and watch fringes build on a screen.",
+        "action": "Wait for the lab, enter interactive mode, change Analyser from 45° to 0° and select +1000.",
+        "why": "Light paths, an adjustable analyser and a count chart make the experimental setup explorable.",
+        "limit": "This is an educational simulation. Only the analyser with marking off was tested; path marking, eraser presets and mobile were not. First load took about a minute."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/DannyLabsX/status/2111289162062258642",
+      "description": {
+        "zh": "作者表示使用 Claude Opus 5.5 制作了这个量子擦除实验室。",
+        "en": "The creator says the quantum eraser lab was built with Claude Opus 5.5."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面进入实验室，在标记关闭时调整分析器并点击 +1000；本机确认原站响应，手机及擦除预设未测。",
+      "note_en": "Grok entered the lab, changed the analyser with marking off and selected +1000 in a desktop browser. The site responded locally; mobile and eraser presets were not tested."
+    },
+    "slug": "quantum-eraser",
+    "media": {
+      "poster": {
+        "src": "/media/quantum-eraser-960.webp",
+        "base": "quantum-eraser",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://dannylabsx.com/quantum-eraser/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.05
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "ocean-currents",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-earth",
+    "title_original": "Ocean Currents",
+    "demo_url": "https://zkevinbai.com/apps/ocean-currents",
+    "creator": {
+      "name": "Kevin Bai",
+      "profile_url": "https://x.com/zkevinbai"
+    },
+    "locales": {
+      "zh": {
+        "title": "Ocean Currents：探索表层洋流",
+        "summary": "在三维地球上探索根据卫星测高数据推算的表层地转流，并投下虚拟染料。",
+        "action": "等待地球与流场载入，在海面点击投下染料，观察模拟尾迹的移动。",
+        "why": "可视化的流线和染料，让全球洋流的方向与尺度更容易理解。",
+        "limit": "染料与漂流粒子是模拟；本次数据为 2026 年 10 月 22 日的快照，并非实时。其他图层与手机未测。"
+      },
+      "en": {
+        "title": "Ocean Currents",
+        "summary": "Explore surface geostrophic currents inferred from satellite altimetry on a 3D globe, and drop virtual dye.",
+        "action": "Wait for the globe and currents, then click the sea to release dye and watch its simulated trail.",
+        "why": "Flow lines and dye make the direction and scale of ocean currents easier to explore.",
+        "limit": "Dye and drifters are simulated; the data inspected was a 22 October 2026 snapshot, not live. Other layers and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/zkevinbai/status/2114421665811882310",
+      "description": {
+        "zh": "作者表示用 Opus 5.5 和 NOAA 数据制作了这一洋流地球。",
+        "en": "The creator says the currents globe was built with Opus 5.5 and NOAA data."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面点击北大西洋释放虚拟染料并观察尾迹；本机确认原站响应，其他图层与手机未测。",
+      "note_en": "Grok clicked the North Atlantic to release virtual dye and watched its trail in a desktop browser. The site responded locally; other layers and mobile were not tested."
+    },
+    "slug": "ocean-currents",
+    "media": {
+      "poster": {
+        "src": "/media/ocean-currents-960.webp",
+        "base": "ocean-currents",
+        "width": 1270,
+        "height": 794
+      },
+      "provenance": {
+        "source_url": "https://zkevinbai.com/apps/ocean-currents",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped_padded"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.1
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "svt-3d",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-anatomy",
+    "title_original": "Schémas de SVT en 3D",
+    "demo_url": "https://svt-3d-ts2.pages.dev/",
+    "creator": {
+      "name": "Dethie_Racine_Kaïre",
+      "profile_url": "https://x.com/Maxleboss261"
+    },
+    "locales": {
+      "zh": {
+        "title": "Schémas de SVT en 3D：生物三维示意图",
+        "summary": "将塞内加尔高中生命科学课程的示意图做成可旋转的三维模型与图例。",
+        "action": "选择 Organisation anatomique，拖动人体模型，观察神经系统和标签随视角变化。",
+        "why": "把平面的课程示意图变成可以转动观察的空间结构。",
+        "limit": "原站为法语；神经系统模型经过简化。本轮只测试第一张图，教师模式和手机未测。"
+      },
+      "en": {
+        "title": "Schémas de SVT en 3D",
+        "summary": "Explore rotatable 3D diagrams and labels based on a Senegalese high-school life-science curriculum.",
+        "action": "Open Organisation anatomique and drag the body model to see the nervous system and labels from another angle.",
+        "why": "Classroom diagrams become spatial structures you can turn and inspect.",
+        "limit": "The site is in French and the nervous system model is simplified. Only the first diagram was tested; teacher mode and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/Maxleboss261/status/2113010966833111335",
+      "description": {
+        "zh": "作者表示借助 Opus 5.5 将高中生物示意图变为互动三维图。",
+        "en": "The creator says Opus 5.5 helped turn high-school biology diagrams into interactive 3D diagrams."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 与独立复核均在桌面进入第一张人体神经系统图并拖动模型；其余课程、教师模式和手机未测。",
+      "note_en": "Grok and an independent reviewer opened and rotated the first nervous-system diagram in desktop browsers. Other diagrams, teacher mode and mobile were not tested."
+    },
+    "slug": "svt-3d",
+    "media": {
+      "poster": {
+        "src": "/media/svt-3d-960.webp",
+        "base": "svt-3d",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://svt-3d-ts2.pages.dev/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "fr"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.15
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "bee-x9",
+    "type": "experiments",
+    "primary_category": "robotics",
+    "subcategory": "robotics-systems",
+    "title_original": "BEE-X9",
+    "demo_url": "https://bee-x9.vercel.app/",
+    "creator": {
+      "name": "Arti manputra",
+      "profile_url": "https://x.com/ArtiManputra"
+    },
+    "locales": {
+      "zh": {
+        "title": "BEE-X9：驾驶机械蜂",
+        "summary": "在植物实验室接管一只三维机械蜂的自动导览，观察振翅和虚拟仪表。",
+        "action": "点击画面接管自动导览，再点击 FWD，观察机械蜂飞行与仪表读数变化。",
+        "why": "飞行控制和可视化数据把一只想象中的微型机器人变成互动场景。",
+        "limit": "仪表为模拟读数。透视、拆解、声音和手机体验未逐项测试。"
+      },
+      "en": {
+        "title": "BEE-X9",
+        "summary": "Take over a 3D robotic bee’s auto tour in a botanical lab and watch its wings and simulated readouts.",
+        "action": "Click the scene to take over, then select FWD and watch the bee fly as the dashboard changes.",
+        "why": "Flight controls and visual readouts make an imagined miniature robot interactive.",
+        "limit": "Dashboard values are simulated. X-ray, cutaway, sound and mobile were not individually tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://x.com/ArtiManputra/status/2117323353811984666",
+      "description": {
+        "zh": "作者表示使用 Claude Code 制作了 BEE-X9。",
+        "en": "The creator says BEE-X9 was built with Claude Code."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面接管导览并点击 FWD，观察飞行与仪表变化；本机确认原站响应，其他模式和手机未测。",
+      "note_en": "Grok took over the tour and selected FWD in a desktop browser, observing flight and dashboard changes. The site responded locally; other modes and mobile were not tested."
+    },
+    "slug": "bee-x9",
+    "media": {
+      "poster": {
+        "src": "/media/bee-x9-960.webp",
+        "base": "bee-x9",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://bee-x9.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.2
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "last-hexagon",
+    "type": "experiments",
+    "primary_category": "physics",
+    "subcategory": "physics-fluids",
+    "title_original": "The Last Hexagon",
+    "demo_url": "https://last-hexagon.vercel.app/",
+    "creator": {
+      "name": "Reemy",
+      "profile_url": "https://x.com/DejiBasho"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Last Hexagon：旋转的流体实验",
+        "summary": "在玻璃六棱柱里观察水和不同材质的球，再切换到旋转水桶场景。",
+        "action": "打开后按 3，切换到 Newton’s bucket，观察旋转时水面如何变化。",
+        "why": "流体、物体和可见的自检读数，让模拟现象可以被观察和质疑。",
+        "limit": "模拟仅供探索：本次冰球浸没比例的自检有偏差，水桶曲线仍在测量；高负载时帧率下降，手机未测。"
+      },
+      "en": {
+        "title": "The Last Hexagon",
+        "summary": "Watch water and balls of different materials in a glass hexagonal prism, then switch to a rotating bucket scene.",
+        "action": "Press 3 for Newton’s bucket and observe how the water surface changes as it rotates.",
+        "why": "Fluid, objects and visible self-checks make the simulated behaviour something to inspect and question.",
+        "limit": "This is an exploratory simulation: the ice-submersion check deviated and the bucket curve was still measuring. Frame rate fell under load; mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Claude Code"
+      ],
+      "evidence_url": "https://x.com/DejiBasho/status/2112506063350071662",
+      "description": {
+        "zh": "作者表示使用 Opus 5.5 扩展了旋转六边形，并在后续介绍中提到 Claude Code。",
+        "en": "The creator says Opus 5.5 extended the spinning hexagon and mentions Claude Code in a follow-up."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/DejiBasho/status/2112506303386148933"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面从默认场景切换至 Newton’s bucket；页面的冰球浸没自检有偏差，曲线仍在测量。手机与 /up 版本未测。",
+      "note_en": "Grok switched from the default scene to Newton’s bucket in a desktop browser. The ice-submersion check deviated and the curve was still measuring; mobile and the /up version were not tested."
+    },
+    "slug": "last-hexagon",
+    "media": {
+      "poster": {
+        "src": "/media/last-hexagon-960.webp",
+        "base": "last-hexagon",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://last-hexagon.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.25
+    },
+    "added_at": "2026-11-12"
   }
 ]
