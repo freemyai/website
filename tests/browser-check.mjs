@@ -70,7 +70,7 @@ try{
   assert.equal(await page.locator('.detail-open').getAttribute('href'),'https://hydraulics.wasmer.app/');
   await page.goto('http://127.0.0.1:4177/');assert.equal(await page.locator('html').getAttribute('lang'),'en');
   await page.locator('[data-language-switch]').first().click();await page.waitForURL('**/zh/');
-  await page.goto('http://127.0.0.1:4177/');await page.waitForURL('**/zh/');
+  await page.goto('http://127.0.0.1:4177/');assert.equal(await page.locator('html').getAttribute('lang'),'en');
   await page.locator('[data-language-switch]').last().click();await page.waitForURL('http://127.0.0.1:4177/');
   await page.goto('http://127.0.0.1:4177/submit/',{waitUntil:'networkidle'});
   assert.match(await page.locator('.prose-page a').getAttribute('href'),/^https:\/\/github\.com\/freemyai\/website\/issues\/new\?/);

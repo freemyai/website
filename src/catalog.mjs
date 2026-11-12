@@ -28,11 +28,15 @@ export function eligibleForGallery(work) {
 }
 
 export function localizedPath(current, lang, search = '') {
-  let base = current.replace(/^\/en(?=\/|$)/, '') || '/';
+  const input = String(current || '/');
+  const suffixAt = input.search(/[?#]/);
+  let base = (suffixAt < 0 ? input : input.slice(0, suffixAt)).replace(/^\/en(?=\/|$)/, '') || '/';
+  const suffix = search || (suffixAt < 0 ? '' : input.slice(suffixAt));
   if (/^\/zh\/?$/.test(base)) base = '/';
   if (!base.startsWith('/')) base = `/${base}`;
-  if (base === '/') return `${lang === 'zh' ? '/zh/' : '/'}${search}`;
-  return `${lang === 'en' ? '/en' : ''}${base}${search}`;
+  if (base === '/') return `${lang === 'zh' ? '/zh/' : '/'}${suffix}`;
+  if (!base.endsWith('/')) base += '/';
+  return `${lang === 'en' ? '/en' : ''}${base}${suffix}`;
 }
 
 export function safeExternalUrl(value) {

@@ -1,9 +1,6 @@
 import { filterWorks } from './catalog.mjs';
 
 const lang=document.body.dataset.lang||'en';
-try {
-  if(location.pathname==='/'&&localStorage.getItem('freemy-language')==='zh') location.replace(`/zh/${location.search}${location.hash}`);
-} catch {}
 const grid=document.querySelector('#gallery-grid');
 const form=document.querySelector('#gallery-filter');
 const sort=document.querySelector('#gallery-sort');
@@ -31,6 +28,7 @@ if(form&&grid){
 }
 document.querySelectorAll('[data-language-switch]').forEach(link=>link.addEventListener('click',()=>{
   link.search=location.search;
+  link.hash=location.hash;
   try {localStorage.setItem('freemy-language',link.dataset.languageSwitch);} catch {}
 }));
 document.querySelectorAll('[data-surprise]').forEach(link=>link.addEventListener('click',event=>{
