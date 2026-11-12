@@ -56,5 +56,141 @@
       "status": "published"
     },
     "added_at": "2026-11-11"
+  },
+  {
+    "id": "heart-and-blood",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-anatomy",
+    "title_original": "Heart and Blood",
+    "demo_url": "https://iamtechartist.com/heart-and-circulatory-system/",
+    "creator": {
+      "name": "Techartist",
+      "profile_url": "https://x.com/techartist_"
+    },
+    "locales": {
+      "zh": {
+        "title": "Heart and Blood：心脏与循环",
+        "summary": "观察三维心脏剖面，跟随课程了解心脏和血液循环。",
+        "action": "进入第一课，选择 Look inside 查看剖面，再点 Next 浏览下一部分。",
+        "why": "课程把三维模型、文字和互动练习放在一起。",
+        "limit": "AI 创作方式尚未确认；仅测试第一课部分操作，其他课程和手机体验未测。"
+      },
+      "en": {
+        "title": "Heart and Blood",
+        "summary": "Inspect a 3D heart cross-section and follow lessons on the heart and circulation.",
+        "action": "Enter the first lesson, choose Look inside, then select Next to continue.",
+        "why": "A 3D model, text and interactive exercises come together in one lesson.",
+        "limit": "AI creation has not been confirmed; only part of the first lesson was tested. Other lessons and mobile are unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://x.com/techartist_/status/2120573572389515423"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "本机桌面审核进入第一课、查看剖面并打开练习；其余课程、声音和手机未测。",
+      "note_en": "In a local desktop browser, the reviewer entered the first lesson, opened the cross-section and opened the exercise; other lessons, audio and mobile were not tested."
+    },
+    "slug": "heart-and-blood",
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published"
+    },
+    "added_at": "2026-11-12",
+    "media": {
+      "poster": {
+        "src": "/media/heart-and-blood-960.webp",
+        "base": "heart-and-blood",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://iamtechartist.com/heart-and-circulatory-system/",
+        "captured_at": "2026-11-12",
+        "method": "independent_desktop_browser_capture"
+      }
+    }
+  },
+  {
+    "id": "wedulab-voltlab",
+    "type": "experiments",
+    "primary_category": "electronics",
+    "subcategory": "electronics-basics",
+    "title_original": "VoltLab Circuit Lab",
+    "demo_url": "https://wedulab.com/labs/volt?lang=en",
+    "creator": {
+      "name": "WY · WeduLab",
+      "profile_url": "https://wedulab.com/"
+    },
+    "locales": {
+      "zh": {
+        "title": "WeduLab：VoltLab 电路实验台",
+        "summary": "在 WeduLab 的电路实验台上连接元件，观察电压和电流。",
+        "action": "打开实验后选择示例，点击 S1 开关，观察示波器读数变化。",
+        "why": "电路与测量仪器放在同一工作台上，便于边动手边理解。",
+        "limit": "这个具体实验的 AI 创作方式尚未确认；仅测试一个电路，手机体验未测。"
+      },
+      "en": {
+        "title": "WeduLab: VoltLab Circuit Lab",
+        "summary": "Connect components and observe voltage and current at WeduLab’s circuit workbench.",
+        "action": "Open an example and toggle switch S1 to observe the oscilloscope readings.",
+        "why": "A circuit and its measuring instruments share one workbench for hands-on learning.",
+        "limit": "AI creation of this specific lab has not been confirmed; one circuit was tested and mobile is unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://wedulab.com/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "本机桌面审核在中文界面闭合 S1 并观察电流变化；英文入口可访问，手机未测。",
+      "note_en": "In a local desktop browser, the reviewer closed S1 in the Chinese interface and observed the current change; the English entry responded and mobile was not tested."
+    },
+    "slug": "wedulab-voltlab",
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published"
+    },
+    "added_at": "2026-11-12"
   }
 ]

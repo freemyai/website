@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
-import { eligibleForGallery, safeExternalUrl } from './catalog.mjs';
+import { eligibleForGallery, safeExternalUrl, assertUniqueExperienceUrls } from './catalog.mjs';
 import { topicNames } from './i18n.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -20,6 +20,7 @@ export function loadCatalog() {
     return overrides.has(w.id) ? {...base,...overrides.get(w.id)} : base;
   });
   for(const w of imported) if(!oldWorks.some(old=>old.id===w.id)) works.push(w);
+  assertUniqueExperienceUrls(works);
   const ids=new Set(), slugs=new Set();
   for(const [index,w] of works.entries()){
     const category=taxonomy.categories.find(c=>c.id===w.primary_category);

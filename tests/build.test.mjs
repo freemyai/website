@@ -25,6 +25,10 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   }
   assert.match(english,/<html lang="en">/);
   assert.match(english,/How Hydraulics Work/);
+  assert.match(english,/<meta property="og:image" content="https:\/\/freemy\.ai\/media\/hydraulics-960\.webp">/);
+  const noPreview=fs.readFileSync(path.join(root,'dist/en/works/wedulab-voltlab/index.html'),'utf8');
+  assert.doesNotMatch(noPreview,/<meta property="og:image"/);
+  assert.match(noPreview,/<meta name="twitter:card" content="summary">/);
   assert.match(english,/hreflang="zh-Hans" href="https:\/\/freemy\.ai\/works\/hydraulics\/"/);
   assert.match(english,/hreflang="x-default" href="https:\/\/freemy\.ai\/en\/works\/hydraulics\/"/);
   const reportedEn=fs.readFileSync(path.join(root,'dist/en/works/null-range/index.html'),'utf8');

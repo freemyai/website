@@ -42,6 +42,23 @@ export function safeExternalUrl(value) {
   } catch { return null; }
 }
 
+export function assertUniqueExperienceUrls(works) {
+  const seen = new Map();
+  for (const work of works) {
+    const valid = safeExternalUrl(work.demo_url);
+    if (!valid) continue;
+    const url = new URL(valid);
+    const trackingKeys = new Set(['utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_id','fbclid','gclid','msclkid','dclid','gbraid','wbraid']);
+    for (const key of [...url.searchParams.keys()]) {
+      if (trackingKeys.has(key.toLowerCase())) url.searchParams.delete(key);
+    }
+    url.searchParams.sort();
+    const canonical = url.href;
+    if (seen.has(canonical)) throw new Error(`Duplicate experience URL: ${seen.get(canonical)} and ${work.id}`);
+    seen.set(canonical, work.id);
+  }
+}
+
 export function accessLabel(access = {}) {
   const login = { none:'无需登录', optional:'可选登录', required:'需要登录', unknown:'未知' };
   const pricing = { free:'免费', freemium:'部分免费', paid:'付费', unknown:'未知' };

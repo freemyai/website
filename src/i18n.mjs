@@ -8,5 +8,5 @@ messages.zh.privacy='隐私说明';
 messages.en.privacy='Privacy';
 export const topicNames={physics:['科学与物理','Science & Physics'],engineering:['工程与机械','Engineering & Mechanics'],electronics:['电子与电路','Electronics'],robotics:['机器人与控制','Robotics & Control'],mathematics:['数学与统计','Mathematics'],computing:['计算机与 AI','Computing & AI'],nature:['自然与生命','Nature & Life'],humanities:['人文与语言','Humanities'],games:['游戏与解谜','Games & Puzzles'],creative:['艺术与声音','Art & Sound'],spatial:['空间与展览','Spaces'],tools:['轻量工具与创作','Creative Tools']};
 export function urlFor(lang, route='/'){return localizedPath(route,lang);}
-export function langName(code, lang){const map={en:['英语','English'],'zh-CN':['中文','Chinese'],es:['西班牙语','Spanish'],fr:['法语','French'],tr:['土耳其语','Turkish']};return map[code]?.[lang==='zh'?0:1]||code;}
+export function langName(code, lang){const map={en:['英语','English'],'zh-CN':['中文','Chinese'],es:['西班牙语','Spanish'],fr:['法语','French'],ja:['日语','Japanese'],tr:['土耳其语','Turkish']};return map[code]?.[lang==='zh'?0:1]||code;}
 export function creatorName(work,lang){const name=work.creator?.name||'';return lang==='en'&&name==='PhET · 科罗拉多大学博尔德分校'?'PhET · University of Colorado Boulder':name;}

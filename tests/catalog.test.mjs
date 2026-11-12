@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { publishedWorks, filterWorks, safeExternalUrl, escapeHtml, accessLabel, deviceLabel, eligibleForGallery, localizedPath } from '../src/catalog.mjs';
 import { loadCatalog } from '../src/validate.mjs';
+import * as catalog from '../src/catalog.mjs';
 
 const works = [
   { id: 'open', editorial: { status: 'published' }, primary_category: 'physics', formats: ['simulation'], access: { login: 'none', language_codes: ['zh-CN'] }, device_support: { mobile: 'tested_supported' } },
@@ -11,6 +12,17 @@ const works = [
 
 test('only published entries can reach the public catalogue', () => {
   assert.deepEqual(publishedWorks(works).map(x => x.id), ['open', 'unknown']);
+});
+
+test('duplicate experience links are caught without merging distinct experiences', () => {
+  const original={id:'original',demo_url:'https://example.com/lab'};
+  const tracked={id:'duplicate',demo_url:'https://example.com/lab?utm_source=share&msclkid=ad'};
+  assert.throws(()=>catalog.assertUniqueExperienceUrls([original,tracked]), /Duplicate experience URL.*original.*duplicate/);
+  assert.doesNotThrow(()=>catalog.assertUniqueExperienceUrls([original,{id:'other',demo_url:'https://example.com/lab?lesson=2'}]));
+  assert.doesNotThrow(()=>catalog.assertUniqueExperienceUrls([original,{id:'same-author',demo_url:'https://example.com/other-lab'}]));
+  assert.doesNotThrow(()=>catalog.assertUniqueExperienceUrls([{id:'one',demo_url:'https://example.com/lab#/one'},{id:'two',demo_url:'https://example.com/lab#/two'}]));
+  assert.doesNotThrow(()=>catalog.assertUniqueExperienceUrls([{id:'east',demo_url:'https://example.com/map?utm_zone=31'},{id:'west',demo_url:'https://example.com/map?utm_zone=32'}]));
+  assert.doesNotThrow(()=>catalog.assertUniqueExperienceUrls([original,{id:'www',demo_url:'https://www.example.com/lab'},{id:'slash',demo_url:'https://example.com/lab/'}]));
 });
 
 test('unknown conditions do not pass positive filters', () => {

@@ -3483,5 +3483,478 @@
       "featured_order": 2.4
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "orbital-elements",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "軌道6要素ビューア",
+    "demo_url": "https://ki-math.github.io/orbital-elements-viewer/",
+    "creator": {
+      "name": "getBack1969",
+      "profile_url": "https://x.com/getBack_1969_"
+    },
+    "locales": {
+      "zh": {
+        "title": "Orbital Elements Viewer：轨道六要素",
+        "summary": "旋转三维地球，调节轨道参数，观察卫星轨道如何改变。",
+        "action": "拖动画面环视，调整离心率或倾角；还可以打开 J2 摄动开关。",
+        "why": "将抽象的轨道要素放进一个可以旋转和调整的空间模型。",
+        "limit": "参数可能产生穿过地球的轨道；这是教学模拟，手机体验未测。"
+      },
+      "en": {
+        "title": "Orbital Elements Viewer",
+        "summary": "Rotate a 3D Earth and change orbital parameters to see a satellite orbit reshape.",
+        "action": "Drag to look around, change eccentricity or inclination, and try the J2 perturbation switch.",
+        "why": "An adjustable 3D model makes orbital elements easier to visualize.",
+        "limit": "Some settings produce an orbit that intersects Earth. This is a teaching simulation; mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/getBack_1969_/status/2105200070446751750",
+      "description": {
+        "zh": "作者表示使用 Opus 5.5 制作了轨道六要素交互工具。",
+        "en": "The creator says they used Opus 5.5 to build the orbital elements viewer."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Ki-math/orbital-elements-viewer"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面旋转视图、调整离心率和倾角并打开 J2；本机确认原站响应，手机未测。",
+      "note_en": "Grok rotated the view, changed eccentricity and inclination, and enabled J2 in a desktop browser; the site responded locally, and mobile was not tested."
+    },
+    "slug": "orbital-elements",
+    "media": {
+      "poster": {
+        "src": "/media/orbital-elements-960.webp",
+        "base": "orbital-elements",
+        "width": 1400,
+        "height": 781
+      },
+      "provenance": {
+        "source_url": "https://ki-math.github.io/orbital-elements-viewer/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en",
+        "ja"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.1
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "v8-engine",
+    "type": "learning",
+    "primary_category": "engineering",
+    "subcategory": "engineering-engines",
+    "title_original": "V8 engine simulator",
+    "demo_url": "https://visual-learning.app/v8-engine",
+    "creator": {
+      "name": "Elvar",
+      "profile_url": "https://x.com/elvar_official"
+    },
+    "locales": {
+      "zh": {
+        "title": "V8 Engine：拆开发动机",
+        "summary": "调整一台四冲程 V8 的转速，单独观察气缸、活塞和气门。",
+        "action": "等待模型加载，点击接管后调整转速，再按 5 切到气缸视图。",
+        "why": "运动中的零件和同步图表把发动机的工作过程放在一起。",
+        "limit": "场景较重；单独的 SECTION 剖视和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "V8 Engine Simulator",
+        "summary": "Change a four-stroke V8’s speed and inspect an isolated cylinder, piston and valves.",
+        "action": "Wait for the model, click to take over, adjust engine speed and press 5 for the cylinder view.",
+        "why": "Moving parts and synchronized charts bring the engine cycle together.",
+        "limit": "The 3D scene can be demanding; the separate SECTION view and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/elvar_official/article/2116174609355571402",
+      "description": {
+        "zh": "作者介绍了用 Claude 与 Opus 5.5 构建可拆解机械模拟的过程。",
+        "en": "The creator describes using Claude and Opus 5.5 to build interactive machine simulations."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/elvarofficial/teardown"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面改变转速、切到气缸视图并暂停；本机确认原站响应，SECTION 和手机未测。",
+      "note_en": "Grok changed engine speed, selected the cylinder view and paused in a desktop browser; the site responded locally. SECTION and mobile were not tested."
+    },
+    "slug": "v8-engine",
+    "media": {
+      "poster": {
+        "src": "/media/v8-engine-960.webp",
+        "base": "v8-engine",
+        "width": 1400,
+        "height": 781
+      },
+      "provenance": {
+        "source_url": "https://visual-learning.app/v8-engine",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.3
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "form-01",
+    "type": "experiments",
+    "primary_category": "robotics",
+    "subcategory": "robotics-kinematics",
+    "title_original": "FORM / 01 — Dexterous Robotic Arm",
+    "demo_url": "https://form-01-score.ok.kimi.link/",
+    "creator": {
+      "name": "Crystal",
+      "profile_url": "https://x.com/crystalsssup"
+    },
+    "locales": {
+      "zh": {
+        "title": "FORM / 01：拆解机械臂",
+        "summary": "切换透明和爆炸视图，环视一条带灵巧手的三维机械臂。",
+        "action": "等待模型出现，选择 Explode 并拖动环视，再打开 Engineering 面板。",
+        "why": "齿轮、关节和走线在可旋转的爆炸视图中逐渐显露。",
+        "limit": "场景较重；手势动画、关节滑杆和手机体验尚未核验。"
+      },
+      "en": {
+        "title": "FORM / 01",
+        "summary": "Explore a 3D robotic arm and hand using transparent and exploded views.",
+        "action": "Wait for the model, select Explode and drag to look around, then open the Engineering panel.",
+        "why": "Gears, joints and wiring become visible in a rotatable exploded view.",
+        "limit": "The 3D scene can be demanding; gestures, joint sliders and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Kimi K3.1"
+      ],
+      "evidence_url": "https://x.com/crystalsssup/status/2113684128734625948",
+      "description": {
+        "zh": "作者表示使用 Kimi K3.1 制作了可拆解的三维机械手网站。",
+        "en": "The creator says they used Kimi K3.1 to make the interactive 3D robotic hand."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面打开爆炸视图、拖动环视并查看工程面板；本机确认原站响应，滑杆和手机未测。",
+      "note_en": "Grok opened the exploded view, dragged to orbit and viewed the Engineering panel in a desktop browser; the site responded locally. Sliders and mobile were not tested."
+    },
+    "slug": "form-01",
+    "media": {
+      "poster": {
+        "src": "/media/form-01-960.webp",
+        "base": "form-01",
+        "width": 1400,
+        "height": 781
+      },
+      "provenance": {
+        "source_url": "https://form-01-score.ok.kimi.link/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.6
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "drone-lab",
+    "type": "learning",
+    "primary_category": "engineering",
+    "subcategory": "engineering-transport",
+    "title_original": "Drone Lab — Build & Fly",
+    "demo_url": "https://ruocco.it/ai-demos/opus-5-5-room-planner-drone-lab-wall-panel/drone-lab/",
+    "creator": {
+      "name": "Vito Ruocco",
+      "profile_url": "https://ruocco.it/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Drone Lab：组装与飞行",
+        "summary": "给四轴无人机选择零件，观察重量与推力，再进入飞行场。",
+        "action": "选择 Nimble racer 预设，进入飞行场，再按 P 观看自动驾驶。",
+        "why": "零件选择、推重比和飞行画面连接成一个动手实验。",
+        "limit": "这是简化的教学模拟；手动驾驶和手机体验未测，初次访问可能出现 Cookie 提示。"
+      },
+      "en": {
+        "title": "Drone Lab — Build & Fly",
+        "summary": "Choose quadcopter parts, watch weight and thrust change, then enter a flight course.",
+        "action": "Choose the Nimble racer preset, enter the field and press P to watch the autopilot.",
+        "why": "Part choices, thrust-to-weight and flight come together in a hands-on experiment.",
+        "limit": "This is a simplified teaching simulation; manual flight and mobile were not tested. A cookie notice may appear."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://ruocco.it/ai-demos/opus-5-5-room-planner-drone-lab-wall-panel/",
+      "description": {
+        "zh": "作者说明这件无人机实验由 Claude Opus 5.5 根据提示生成。",
+        "en": "The creator says Claude Opus 5.5 generated the drone experiment from a prompt."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面加载预设、进入飞行场并启动自动驾驶；本机确认原站响应，手动驾驶和手机未测。",
+      "note_en": "Grok loaded a preset, entered the field and started autopilot in a desktop browser; the site responded locally. Manual flight and mobile were not tested."
+    },
+    "slug": "drone-lab",
+    "media": {
+      "poster": {
+        "src": "/media/drone-lab-960.webp",
+        "base": "drone-lab",
+        "width": 1400,
+        "height": 781
+      },
+      "provenance": {
+        "source_url": "https://ruocco.it/ai-demos/opus-5-5-room-planner-drone-lab-wall-panel/drone-lab/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.8
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "terrain-rover",
+    "type": "experiments",
+    "primary_category": "robotics",
+    "subcategory": "robotics-navigation",
+    "title_original": "ER-6 Terrain Explorer",
+    "demo_url": "https://fable-rover.vercel.app/",
+    "creator": {
+      "name": "Dilum Sanjaya",
+      "profile_url": "https://x.com/DilumSanjaya"
+    },
+    "locales": {
+      "zh": {
+        "title": "ER-6：火星车地形探索",
+        "summary": "切换地形并驾驶六轮探测车，观察轮组和行驶状态的变化。",
+        "action": "选择 Dunes 试试沙丘，打开 X-Ray 查看结构；关闭 Autonomous 后可用 W 驾驶。",
+        "why": "把探测车的行走机构和不同地表放在同一个可操作的模型中。",
+        "limit": "仅测试了沙丘、透视和短距离手动驾驶；其他地形与手机体验未知。"
+      },
+      "en": {
+        "title": "ER-6 Terrain Explorer",
+        "summary": "Switch terrain and drive a six-wheeled rover while observing its wheels and motion.",
+        "action": "Choose Dunes, try X-Ray to inspect the structure, then turn off Autonomous and drive with W.",
+        "why": "A rover’s suspension and different surfaces come together in one interactive model.",
+        "limit": "Only dunes, X-Ray and a short manual drive were tested; other terrain and mobile are unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/DilumSanjaya/status/2120561077385867663",
+      "description": {
+        "zh": "作者表示使用 Fable 5.2 设计探测车并模拟地形驾驶。",
+        "en": "The creator says they used Fable 5.2 to design the rover and simulate terrain driving."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.promptshipped.com/app/er-6-terrain-explorer-mars-rover-simulator-built-with-claude"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "本机桌面审核切换沙丘与透视视图，并短距离手动驾驶；手机未测。",
+      "note_en": "In a local desktop browser, the reviewer switched to dunes and X-Ray and drove a short distance; mobile was not tested."
+    },
+    "slug": "terrain-rover",
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 1.9
+    },
+    "added_at": "2026-11-12",
+    "media": {
+      "poster": {
+        "src": "/media/terrain-rover-960.webp",
+        "base": "terrain-rover",
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://fable-rover.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "independent_desktop_browser_capture"
+      }
+    }
+  },
+  {
+    "id": "robolabs",
+    "type": "learning",
+    "primary_category": "robotics",
+    "subcategory": "robotics-systems",
+    "title_original": "RoboLabs",
+    "demo_url": "https://robolabs-app.vercel.app/",
+    "creator": {
+      "name": "Movez",
+      "profile_url": "https://x.com/0xMovez"
+    },
+    "locales": {
+      "zh": {
+        "title": "RoboLabs：组装机器人",
+        "summary": "在三维工作台上逐步组装机器人，再到场地试着移动。",
+        "action": "选择 BUILD IT，点击 DO THIS STEP 安装零件；也可进入 TEST DRIVE 并用 W 前进。",
+        "why": "把机器人结构、装配步骤和运动放进可亲手尝试的场景。",
+        "limit": "仅验证了第一步装配和短距离前进；其他机器人、完整装配和手机体验未测。"
+      },
+      "en": {
+        "title": "RoboLabs",
+        "summary": "Assemble a robot step by step at a 3D workbench, then try moving it in a test area.",
+        "action": "Choose BUILD IT and DO THIS STEP to install a part, or enter TEST DRIVE and press W to move.",
+        "why": "Robot structure, assembly and movement become a hands-on experience.",
+        "limit": "Only the first assembly step and a short drive were tested; other robots, complete assembly and mobile are unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "assets",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/0xMovez/status/2120526918621515872",
+      "description": {
+        "zh": "作者表示使用 Fable 5.2 生成了作品中的三维机器人模型。",
+        "en": "The creator says Fable 5.2 generated the 3D robot models in this work."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "本机桌面审核完成第一步装配，并在试驾场按 W 短距离前进；手机未测。",
+      "note_en": "In a local desktop browser, the reviewer completed the first assembly step and moved a short distance in the test area; mobile was not tested."
+    },
+    "slug": "robolabs",
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.0
+    },
+    "added_at": "2026-11-12",
+    "media": {
+      "poster": {
+        "src": "/media/robolabs-960.webp",
+        "base": "robolabs",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://robolabs-app.vercel.app/",
+        "captured_at": "2026-11-12",
+        "method": "independent_desktop_browser_capture"
+      }
+    }
   }
 ]

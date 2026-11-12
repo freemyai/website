@@ -104,6 +104,8 @@
       "summary": "Interactive works worth exploring, with AI creation status unconfirmed."
     },
     "works": [
+      "wedulab-voltlab",
+      "heart-and-blood",
       "wave-tank",
       "electric-motor",
       "gears",
@@ -133,7 +135,11 @@
       "light-and-optics",
       "hydraulics",
       "plane-of-focus",
-      "earth-antenna"
+      "earth-antenna",
+      "orbital-elements",
+      "v8-engine",
+      "form-01",
+      "drone-lab"
     ],
     "cover": "learn-arduino"
   },
@@ -176,5 +182,26 @@
       "genesis"
     ],
     "cover": "estheet"
+  },
+  {
+    "id": "machines-in-motion",
+    "zh": {
+      "title": "拆开机器看看",
+      "summary": "从发动机到机械臂，动手探索机器与运动。"
+    },
+    "en": {
+      "title": "Machines in motion",
+      "summary": "Explore engines, robotic arms and flight through interaction."
+    },
+    "works": [
+      "v8-engine",
+      "form-01",
+      "drone-lab",
+      "learn-arduino",
+      "hydraulics",
+      "terrain-rover",
+      "robolabs"
+    ],
+    "cover": "v8-engine"
   }
 ]
