@@ -1,5 +1,8 @@
 node_modules/
 dist/
+reports/seo/
+__pycache__/
+*.pyc
 .env*
 !.env.example
 .vercel/
