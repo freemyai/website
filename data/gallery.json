@@ -39,6 +39,7 @@
       "poster": {
         "src": "/media/hydraulics-960.webp",
         "base": "hydraulics",
+        "alt": {"zh": "液压挖掘机与活塞示意图，下方有调节滑块。", "en": "A diagram of a hydraulic excavator and pistons, with controls below."},
         "width": 1440,
         "height": 900
       },
@@ -99,6 +100,7 @@
       "poster": {
         "src": "/media/hearthlight-960.webp",
         "base": "hearthlight",
+        "alt": {"zh": "像素风格海边小镇和灯塔上的 Hearthlight 开始菜单。", "en": "The Hearthlight start menu over a pixel-art seaside town and lighthouse."},
         "width": 1440,
         "height": 900
       },
@@ -160,6 +162,7 @@
       "poster": {
         "src": "/media/star-hop-960.webp",
         "base": "star-hop",
+        "alt": {"zh": "星空中发光的行星与 Star Hop 的开始按钮。", "en": "Glowing planets in a star field above the Star Hop start button."},
         "width": 1440,
         "height": 900
       },
@@ -221,6 +224,7 @@
       "poster": {
         "src": "/media/harmonograph-960.webp",
         "base": "harmonograph",
+        "alt": {"zh": "摆动绘图机画出的交织曲线，旁边是机械示意图和旋钮。", "en": "Interwoven curves beside a harmonograph diagram and tuning knobs."},
         "width": 1440,
         "height": 900
       },
@@ -282,6 +286,7 @@
       "poster": {
         "src": "/media/triple-pendulum-960.webp",
         "base": "triple-pendulum",
+        "alt": {"zh": "教室黑板前的三摆模型及实验控制面板。", "en": "A three-link pendulum in front of a classroom blackboard with experiment controls."},
         "width": 960,
         "height": 600
       },
@@ -343,6 +348,7 @@
       "poster": {
         "src": "/media/infinite-room-960.webp",
         "base": "infinite-room",
+        "alt": {"zh": "一间有绿扶手椅的房间，墙上的画重复显示同一房间。", "en": "A room with a green chair repeats inside a picture on the wall."},
         "width": 1440,
         "height": 900
       },
@@ -404,6 +410,7 @@
       "poster": {
         "src": "/media/light-and-optics-960.webp",
         "base": "light-and-optics",
+        "alt": {"zh": "暗室中的放映机照亮写有 Light and Optics 的屏幕。", "en": "A projector illuminates a Light and Optics screen in a dark room."},
         "width": 1440,
         "height": 900
       },
@@ -465,6 +472,7 @@
       "poster": {
         "src": "/media/chroma-960.webp",
         "base": "chroma",
+        "alt": {"zh": "五条彩色配色卡和右侧的色轮与配色工具。", "en": "Five vertical colour swatches beside a colour wheel and palette controls."},
         "width": 1440,
         "height": 900
       },
@@ -526,6 +534,7 @@
       "poster": {
         "src": "/media/windtunnel-960.webp",
         "base": "windtunnel",
+        "alt": {"zh": "虚拟风洞界面中，气流颜色包围一辆汽车的侧面。", "en": "A virtual wind tunnel shows coloured airflow around a car profile."},
         "width": 1440,
         "height": 900
       },
@@ -587,6 +596,7 @@
       "poster": {
         "src": "/media/soft-machine-960.webp",
         "base": "soft-machine",
+        "alt": {"zh": "浅色合成器界面，包含波形、旋钮和键盘。", "en": "A pale synthesizer interface with a waveform, knobs and keyboard."},
         "width": 1440,
         "height": 900
       },
@@ -659,6 +669,7 @@
       "poster": {
         "src": "/media/rosette-960.webp",
         "base": "rosette",
+        "alt": {"zh": "黑色画布上由彩色线条组成的对称花形图案。", "en": "A symmetrical flower pattern made of coloured lines on a black canvas."},
         "width": 1440,
         "height": 900
       },
@@ -731,6 +742,7 @@
       "poster": {
         "src": "/media/pulse-960.webp",
         "base": "pulse",
+        "alt": {"zh": "深色背景中央是彩色光环状音乐可视化图形。", "en": "A radiant multicoloured circular audio visualisation on a dark background."},
         "width": 1440,
         "height": 900
       },
@@ -803,6 +815,7 @@
       "poster": {
         "src": "/media/senbazuru-960.webp",
         "base": "senbazuru",
+        "alt": {"zh": "折纸教学页面显示网格纸和第二步折叠说明。", "en": "An origami tutorial shows patterned paper and the second folding step."},
         "width": 1440,
         "height": 900
       },
@@ -875,6 +888,7 @@
       "poster": {
         "src": "/media/orbital-960.webp",
         "base": "orbital",
+        "alt": {"zh": "深色太空中发光的旋涡与轨道模拟控制栏。", "en": "A glowing swirl in dark space above orbital simulation controls."},
         "width": 1440,
         "height": 900
       },
@@ -947,6 +961,7 @@
       "poster": {
         "src": "/media/labyrinthos-960.webp",
         "base": "labyrinthos",
+        "alt": {"zh": "古铜色游戏界面中央是一座方形迷宫。", "en": "A square maze sits at the centre of a bronze-toned game interface."},
         "width": 1440,
         "height": 900
       },
@@ -1019,6 +1034,7 @@
       "poster": {
         "src": "/media/hyperbrick-960.webp",
         "base": "hyperbrick",
+        "alt": {"zh": "霓虹街机界面中排列着彩色砖块和游戏菜单。", "en": "Colourful bricks and a game menu in a neon arcade interface."},
         "width": 1440,
         "height": 900
       },
@@ -1091,6 +1107,7 @@
       "poster": {
         "src": "/media/galerie-nocturne-960.webp",
         "base": "galerie-nocturne",
+        "alt": {"zh": "黑白棋盘地面的虚拟画廊，墙上挂着多幅画。", "en": "A virtual gallery with a black-and-white floor and paintings on the walls."},
         "width": 1440,
         "height": 900
       },
@@ -1163,6 +1180,7 @@
       "poster": {
         "src": "/media/dune-engine-960.webp",
         "base": "dune-engine",
+        "alt": {"zh": "沙盒画布中的山形沙堆、熔岩和水，右侧有材料工具。", "en": "A mountain of sand, lava and water in a sandbox, with material controls at right."},
         "width": 1440,
         "height": 900
       },
@@ -1235,6 +1253,7 @@
       "poster": {
         "src": "/media/planet-forge-960.webp",
         "base": "planet-forge",
+        "alt": {"zh": "深色太空中的蓝绿色虚构行星，旁边是生成参数。", "en": "A blue-green fictional planet in space beside generation controls."},
         "width": 1440,
         "height": 900
       },
@@ -1307,6 +1326,7 @@
       "poster": {
         "src": "/media/luminote-960.webp",
         "base": "luminote",
+        "alt": {"zh": "彩色光点落向屏幕底部的钢琴键盘。", "en": "Coloured lights fall towards a piano keyboard at the bottom of the screen."},
         "width": 1440,
         "height": 900
       },
@@ -1379,6 +1399,7 @@
       "poster": {
         "src": "/media/aquarelle-960.webp",
         "base": "aquarelle",
+        "alt": {"zh": "木桌上铺着一幅蓝灰色水彩天空，旁边是调色选项。", "en": "A blue-grey watercolour sky rests on a wooden table beside palette controls."},
         "width": 1440,
         "height": 900
       },
@@ -1451,6 +1472,7 @@
       "poster": {
         "src": "/media/tree-appreciator-960.webp",
         "base": "tree-appreciator",
+        "alt": {"zh": "草地上的一棵树与远方山峦，前方是游戏标题。", "en": "A tree in a grassy landscape with distant hills behind the game title."},
         "width": 1440,
         "height": 900
       },
@@ -1521,6 +1543,7 @@
       "poster": {
         "src": "/media/chak-chak-mage-960.webp",
         "base": "chak-chak-mage",
+        "alt": {"zh": "深色房间中的绿色森林画面与音乐播放控件。", "en": "A green forest scene and music controls framed by a dark room."},
         "width": 1440,
         "height": 900
       },
@@ -1599,6 +1622,7 @@
       "poster": {
         "src": "/media/battle-drones-960.webp",
         "base": "battle-drones",
+        "alt": {"zh": "俯视草地地图上的无人机、岩石和道路。", "en": "Drones, rocks and a road on a top-down grassy game map."},
         "width": 960,
         "height": 600
       },
@@ -1672,6 +1696,7 @@
       "poster": {
         "src": "/media/knockbots-960.webp",
         "base": "knockbots",
+        "alt": {"zh": "两个机器人站在竞技场两侧，中间是游戏菜单。", "en": "Two robots flank the game menu in an arena."},
         "width": 960,
         "height": 600
       },
@@ -1744,6 +1769,7 @@
       "poster": {
         "src": "/media/lili-last-door-960.webp",
         "base": "lili-last-door",
+        "alt": {"zh": "像素风房间里的角色与顶部的对话框。", "en": "Characters in a pixel-art room beneath a dialogue box."},
         "width": 960,
         "height": 600
       },
@@ -1817,6 +1843,7 @@
       "poster": {
         "src": "/media/afterlight-960.webp",
         "base": "afterlight",
+        "alt": {"zh": "俯视木地板房间里的像素角色、桌椅和书架。", "en": "A pixel character in a top-down wooden room with a table and bookshelves."},
         "width": 1280,
         "height": 714
       },
@@ -1890,6 +1917,7 @@
       "poster": {
         "src": "/media/felt-world-960.webp",
         "base": "felt-world",
+        "alt": {"zh": "一辆黄色小车行驶在粉色的针毡风格道路上。", "en": "A yellow car on a pink road in a felt-like landscape."},
         "width": 1280,
         "height": 714
       },
@@ -1974,6 +2002,7 @@
       "poster": {
         "src": "/media/null-range-960.webp",
         "base": "null-range",
+        "alt": {"zh": "飞行仪表与准星前方，是黑暗地形和明亮的天体。", "en": "Flight instruments and a crosshair face a dark landscape and a bright celestial body."},
         "width": 1280,
         "height": 714
       },
@@ -2061,6 +2090,7 @@
       "poster": {
         "src": "/media/kanso-960.webp",
         "base": "kanso",
+        "alt": {"zh": "浅色庭院里的盆景模型和养护工具栏。", "en": "A bonsai model in a light-coloured garden with care controls."},
         "width": 1280,
         "height": 714
       },
@@ -2128,6 +2158,7 @@
       "poster": {
         "src": "/media/web-bayan-960.webp",
         "base": "web-bayan",
+        "alt": {"zh": "深色手风琴界面上排列着白色圆形按钮。", "en": "Rows of white circular buttons on a dark virtual accordion."},
         "width": 1280,
         "height": 720
       },
@@ -2211,6 +2242,7 @@
       "poster": {
         "src": "/media/bottle-studio-960.webp",
         "base": "bottle-studio",
+        "alt": {"zh": "红黑色背景前的一只深色瓶子，旁边是编辑参数。", "en": "A dark bottle against a red-and-black background beside editing controls."},
         "width": 1280,
         "height": 715
       },
@@ -2288,6 +2320,7 @@
       "poster": {
         "src": "/media/wrong-physics-960.webp",
         "base": "wrong-physics",
+        "alt": {"zh": "虚拟博物馆大厅里，一个蓝色展品悬在拱廊中央。", "en": "A blue exhibit floats in the centre of a virtual museum hall."},
         "width": 1280,
         "height": 715
       },
@@ -2360,6 +2393,7 @@
       "poster": {
         "src": "/media/sakura-river-valley-960.webp",
         "base": "sakura-river-valley",
+        "alt": {"zh": "一艘小船行驶在薄雾笼罩、两岸有花树的河谷中。", "en": "A small boat travels through a misty river valley lined with flowering trees."},
         "width": 1280,
         "height": 715
       },
@@ -2432,6 +2466,7 @@
       "poster": {
         "src": "/media/learn-arduino-960.webp",
         "base": "learn-arduino",
+        "alt": {"zh": "Arduino 电路板连接面包板和 LED 的三维教学界面。", "en": "A 3D Arduino lesson shows a board connected to a breadboard and LED."},
         "width": 1280,
         "height": 715
       },
@@ -2510,6 +2545,7 @@
       "poster": {
         "src": "/media/type-sound-960.webp",
         "base": "type-sound",
+        "alt": {"zh": "黑色画布上排列着几个发光的彩色字母。", "en": "Several glowing coloured letters on a black canvas."},
         "width": 1600,
         "height": 893
       },
@@ -2580,6 +2616,7 @@
       "poster": {
         "src": "/media/modfont-960.webp",
         "base": "modfont",
+        "alt": {"zh": "字体编辑器画布上用黑色方块排列出字形。", "en": "Black geometric blocks form a glyph on a typeface editor canvas."},
         "width": 1600,
         "height": 893
       },
@@ -2652,6 +2689,7 @@
       "poster": {
         "src": "/media/mpump-960.webp",
         "base": "mpump",
+        "alt": {"zh": "深绿色音乐制作界面，包含音序区和多组控制面板。", "en": "A dark green music-making interface with a sequencer and control panels."},
         "width": 1600,
         "height": 893
       },
@@ -2725,6 +2763,7 @@
       "poster": {
         "src": "/media/jamily-960.webp",
         "base": "jamily",
+        "alt": {"zh": "深色画面中的彩色光点连成音乐关系网络。", "en": "Coloured points of light form a music connection network on a dark screen."},
         "width": 1600,
         "height": 893
       },
@@ -2805,6 +2844,7 @@
       "poster": {
         "src": "/media/clearwater-960.webp",
         "base": "clearwater",
+        "alt": {"zh": "透过清澈水面可见水底纹理与交错的光纹。", "en": "Crossing patterns of light ripple over the texture below clear water."},
         "width": 1600,
         "height": 891
       },
@@ -2886,6 +2926,7 @@
       "poster": {
         "src": "/media/stave-960.webp",
         "base": "stave",
+        "alt": {"zh": "简洁的文字音乐界面，输入框中显示 stave 和多条横线。", "en": "A minimalist text-music interface shows the word stave across horizontal lines."},
         "width": 1280,
         "height": 714
       },
@@ -2967,6 +3008,7 @@
       "poster": {
         "src": "/media/bosphore-1819-960.webp",
         "base": "bosphore-1819",
+        "alt": {"zh": "一张历史地图与侧边的地名检索面板。", "en": "A historical map beside a place-name search panel."},
         "width": 1280,
         "height": 714
       },
@@ -3050,6 +3092,7 @@
       "poster": {
         "src": "/media/cd-case-960.webp",
         "base": "cd-case",
+        "alt": {"zh": "打开的透明 CD 盒中放着印有彩色图案的光盘。", "en": "An open transparent CD case holds a disc with a colourful design."},
         "width": 1280,
         "height": 714
       },
@@ -3134,6 +3177,7 @@
       "poster": {
         "src": "/media/estheet-960.webp",
         "base": "estheet",
+        "alt": {"zh": "浅色展墙上挂着金色画框中的少女肖像。", "en": "A portrait of a young woman in a gold frame on a pale gallery wall."},
         "width": 1280,
         "height": 714
       },
@@ -3215,6 +3259,7 @@
       "poster": {
         "src": "/media/plane-of-focus-960.webp",
         "base": "plane-of-focus",
+        "alt": {"zh": "相机镜头模型对准微型山谷，透明平面穿过场景。", "en": "A camera lens points at a miniature valley crossed by a translucent plane."},
         "width": 1600,
         "height": 892
       },
@@ -3296,6 +3341,7 @@
       "poster": {
         "src": "/media/genesis-960.webp",
         "base": "genesis",
+        "alt": {"zh": "米色地图上显示中东地区、线条和时间轴。", "en": "A beige map shows the Middle East with lines and a timeline."},
         "width": 1600,
         "height": 892
       },
@@ -3377,6 +3423,7 @@
       "poster": {
         "src": "/media/koi-pond-960.webp",
         "base": "koi-pond",
+        "alt": {"zh": "从上方俯瞰花树环绕的池塘与小桥。", "en": "An overhead view of a pond and small bridge surrounded by flowering trees."},
         "width": 1400,
         "height": 780
       },
@@ -3452,6 +3499,7 @@
       "poster": {
         "src": "/media/earth-antenna-960.webp",
         "base": "earth-antenna",
+        "alt": {"zh": "世界地图上的观测站点，旁边显示环形天体图像。", "en": "Observatory points on a world map beside a ring-shaped astronomical image."},
         "width": 1440,
         "height": 900
       },
@@ -3539,6 +3587,7 @@
       "poster": {
         "src": "/media/orbital-elements-960.webp",
         "base": "orbital-elements",
+        "alt": {"zh": "蓝色地球周围的卫星轨道与右侧参数面板。", "en": "Satellite orbits around a blue Earth beside a parameter panel."},
         "width": 1400,
         "height": 781
       },
@@ -3622,6 +3671,7 @@
       "poster": {
         "src": "/media/v8-engine-960.webp",
         "base": "v8-engine",
+        "alt": {"zh": "发动机曲轴与活塞的黑色模型，旁边显示转速和曲线。", "en": "A black crankshaft and piston model with engine speed and graphs alongside."},
         "width": 1400,
         "height": 781
       },
@@ -3698,6 +3748,7 @@
       "poster": {
         "src": "/media/form-01-960.webp",
         "base": "form-01",
+        "alt": {"zh": "机械手的零件以爆炸图形式分散，右侧是关节控制。", "en": "An exploded view of robotic hand components beside joint controls."},
         "width": 1400,
         "height": 781
       },
@@ -3774,6 +3825,7 @@
       "poster": {
         "src": "/media/drone-lab-960.webp",
         "base": "drone-lab",
+        "alt": {"zh": "低多边形草地与松树林中的无人机飞行场景。", "en": "A drone flight scene over low-poly grass and pine trees."},
         "width": 1400,
         "height": 781
       },
@@ -3871,6 +3923,7 @@
       "poster": {
         "src": "/media/terrain-rover-960.webp",
         "base": "terrain-rover",
+        "alt": {"zh": "工程界面中一辆六轮巡视车的三维模型。", "en": "A 3D model of a six-wheel rover in an engineering interface."},
         "width": 1440,
         "height": 900
       },
@@ -3947,6 +4000,7 @@
       "poster": {
         "src": "/media/robolabs-960.webp",
         "base": "robolabs",
+        "alt": {"zh": "三维实验室工作台上摆放着机器人部件和工具。", "en": "Robot parts and tools arranged on workbenches in a 3D lab."},
         "width": 1280,
         "height": 800
       },
@@ -4007,6 +4061,7 @@
       "poster": {
         "src": "/media/project-wednesday-960.webp",
         "base": "project-wednesday",
+        "alt": {"zh": "卫星轨道模拟界面中的地球、轨道线与参数表。", "en": "A globe with orbital paths and settings in a satellite simulation interface."},
         "width": 1280,
         "height": 713
       },
@@ -4088,6 +4143,7 @@
       "poster": {
         "src": "/media/blackhole-lab-960.webp",
         "base": "blackhole-lab",
+        "alt": {"zh": "暗色实验台上排列着光学装置和发光透镜。", "en": "Optical instruments and a glowing lens arranged on a dark virtual bench."},
         "width": 1280,
         "height": 715
       },
@@ -4170,6 +4226,7 @@
       "poster": {
         "src": "/media/roadster-explorer-960.webp",
         "base": "roadster-explorer",
+        "alt": {"zh": "从上方查看白色跑车的透明车顶与车身结构。", "en": "A top view of a white roadster with its roof and body structure visible."},
         "width": 1280,
         "height": 715
       },
@@ -4253,6 +4310,7 @@
       "poster": {
         "src": "/media/wind-tide-960.webp",
         "base": "wind-tide",
+        "alt": {"zh": "海面上的风机阵列示意图及右侧风速数据。", "en": "An offshore wind-turbine array on a dark sea with wind readings at right."},
         "width": 1280,
         "height": 715
       },
@@ -4335,6 +4393,7 @@
       "poster": {
         "src": "/media/spacex-vehicles-960.webp",
         "base": "spacex-vehicles",
+        "alt": {"zh": "从下方近看火箭底部密集排列的发动机喷口。", "en": "A close underside view of clustered rocket-engine nozzles."},
         "width": 1280,
         "height": 715
       },
@@ -4411,6 +4470,7 @@
       "poster": {
         "src": "/media/quantum-eraser-960.webp",
         "base": "quantum-eraser",
+        "alt": {"zh": "虚拟光学实验台上的激光、透镜和探测屏幕。", "en": "Lasers, lenses and a detector screen on a virtual optical bench."},
         "width": 1280,
         "height": 800
       },
@@ -4487,6 +4547,7 @@
       "poster": {
         "src": "/media/ocean-currents-960.webp",
         "base": "ocean-currents",
+        "alt": {"zh": "深色背景中的地球表面覆盖着海流线条。", "en": "Ocean-current lines trace the surface of a globe against a dark background."},
         "width": 1270,
         "height": 794
       },
@@ -4563,6 +4624,7 @@
       "poster": {
         "src": "/media/svt-3d-960.webp",
         "base": "svt-3d",
+        "alt": {"zh": "人体神经系统的侧视三维图与法语标注。", "en": "A side-view 3D diagram of the human nervous system with French labels."},
         "width": 1280,
         "height": 800
       },
@@ -4639,6 +4701,7 @@
       "poster": {
         "src": "/media/bee-x9-960.webp",
         "base": "bee-x9",
+        "alt": {"zh": "草丛上方飞行的金色机械蜜蜂与两侧读数面板。", "en": "A golden robotic bee flies above grass between readout panels."},
         "width": 1280,
         "height": 800
       },
@@ -4721,6 +4784,7 @@
       "poster": {
         "src": "/media/last-hexagon-960.webp",
         "base": "last-hexagon",
+        "alt": {"zh": "发光的透明六棱柱容器中有水和几个球体。", "en": "A glowing transparent hexagonal container holds water and several balls."},
         "width": 1280,
         "height": 800
       },
@@ -4799,6 +4863,7 @@
       "poster": {
         "src": "/media/huolong-960.webp",
         "base": "huolong",
+        "alt": {"zh": "彩色火龙盘旋在毛笔诗句上，纸面留有烧痕。", "en": "A colourful dragon curls over brush-written verses beside a burn in the paper."},
         "width": 1280,
         "height": 800
       },
@@ -4865,6 +4930,7 @@
       "poster": {
         "src": "/media/regolith-960.webp",
         "base": "regolith",
+        "alt": {"zh": "月面巡视车停在灰色地形上，四周显示任务仪表。", "en": "A lunar rover on grey terrain surrounded by mission readouts."},
         "width": 1280,
         "height": 800
       },
@@ -4928,6 +4994,7 @@
       "poster": {
         "src": "/media/fall-line-960.webp",
         "base": "fall-line",
+        "alt": {"zh": "单板滑雪者在雪山间下坡，画面显示速度与得分。", "en": "A snowboarder descends a snowy mountain with speed and score readouts."},
         "width": 1280,
         "height": 800
       },
@@ -4991,6 +5058,7 @@
       "poster": {
         "src": "/media/glasswood-960.webp",
         "base": "glasswood",
+        "alt": {"zh": "紫色夜空下，一片玻璃般的树木间闪着点点光芒。", "en": "Points of light glimmer among glass-like trees beneath a purple night sky."},
         "width": 1280,
         "height": 800
       },

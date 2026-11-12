@@ -37,6 +37,7 @@
       "poster": {
         "src": "/media/wave-tank-960.webp",
         "base": "wave-tank",
+        "alt": {"zh": "透明水槽里有蓝色水流和沙滩球，右侧是模拟参数。", "en": "Blue water and a beach ball in a transparent tank beside simulation controls."},
         "width": 1440,
         "height": 900
       },
@@ -121,6 +122,7 @@
       "poster": {
         "src": "/media/heart-and-blood-960.webp",
         "base": "heart-and-blood",
+        "alt": {"zh": "心脏三维模型悬在血液循环示意图上方，右侧是课程说明。", "en": "A 3D heart above a circulation diagram with a lesson panel alongside."},
         "width": 1440,
         "height": 900
       },

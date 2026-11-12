@@ -305,6 +305,25 @@ test('labels access-protected responses blocked instead of passing', async () =>
   }
 });
 
+test('classifies Vercel preview sign-in redirects as blocked without following or recording the login URL', async () => {
+  const calls = [];
+  const fetchImpl = async value => {
+    calls.push(value);
+    return new Response(null, { status: 302, headers: { location: 'https://vercel.com/sso-api?nonce=private-value' } });
+  };
+  const report = await runAudit({ base: 'https://example-preview.vercel.app', limit: 20, fetchImpl });
+  assert.equal(report.status, 'blocked');
+  assert.ok(report.checks.every(check => check.status === 'blocked'));
+  assert.ok(calls.every(value => new URL(value).hostname === 'example-preview.vercel.app'));
+  assert.ok(!JSON.stringify(report).includes('private-value'));
+});
+
+test('gives a useful reason when a network error has an empty message', async () => {
+  const report = await runAudit({ base: origin, limit: 1, fetchImpl: async () => { throw new AggregateError([], ''); } });
+  assert.equal(report.checks[0].status, 'fail');
+  assert.ok(report.checks[0].issues[0].length > 0);
+});
+
 test('marks a protected OG image blocked', async () => {
   const fake = goodFetch({ change: url => url.pathname === '/og/home.jpg' ? new Response(null, { status: 403 }) : null });
   const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });

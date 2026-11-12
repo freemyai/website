@@ -54,7 +54,9 @@
         "lili-last-door": "跟随莉莉进入午夜像素故事；目前已核验到序章对话。",
         "afterlight": "像素角色与三维场景结合的末日后冒险，从灯塔小镇展开。",
         "felt-world": "在针毡风格世界里探索；已观察到进入场景并开车。",
-        "null-range": "在多人共享星区驾驶飞船并使用声呐；完整对战尚未核验。"
+        "null-range": "在多人共享星区驾驶飞船并使用声呐；完整对战尚未核验。",
+        "regolith": "驾驶月面巡视车、展开太阳翼并扫描地面；仅核验了首项任务的一部分。",
+        "fall-line": "接管单板选手，在雪山滑行并尝试空中动作；云端测试帧率偏低。"
       }
     },
     "en": {
@@ -79,7 +81,9 @@
         "lili-last-door": "Follow Lili into a midnight pixel story; the opening dialogue has been checked.",
         "afterlight": "A post-apocalyptic adventure pairs pixel characters with 3D scenes, beginning in a lighthouse town.",
         "felt-world": "Explore a felt-like world; entering the scene and driving have been observed.",
-        "null-range": "Pilot a ship and use sonar in a shared multiplayer sector; full combat has not been verified."
+        "null-range": "Pilot a ship and use sonar in a shared multiplayer sector; full combat has not been verified.",
+        "regolith": "Drive a lunar rover, deploy its solar array and scan the ground; only part of the first mission was checked.",
+        "fall-line": "Take over a snowboarder and try aerial moves on a mountain; the cloud test ran at a low frame rate."
       }
     },
     "seo": {

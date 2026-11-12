@@ -101,6 +101,7 @@ function secureFetch(url, { signal, headers }) {
 }
 
 class BudgetExhausted extends Error {}
+class AccessProtected extends Error {}
 
 async function readText(response) {
   const length = Number(response.headers.get('content-length'));
@@ -278,9 +279,15 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
       }
       const location = response.headers.get('location');
       if (!location) throw new Error(`Redirect ${response.status} has no Location`);
+      const next = new URL(location, current);
+      // Vercel Authentication can return a redirect instead of 401/403. Do
+      // not follow it or write its potentially sensitive query to the report.
+      if (preview && next.origin === 'https://vercel.com' && next.pathname === '/sso-api') {
+        throw new AccessProtected('Vercel sign-in prevented an audit of this preview resource');
+      }
       redirects.push({ status: response.status, url: current.href, location, xRobotsTag: response.headers.get('x-robots-tag') || '' });
       if (redirects.length > MAX_REDIRECTS) throw new Error('Too many redirects');
-      current = checkedUrl(new URL(location, current));
+      current = checkedUrl(next);
     }
   };
 
@@ -376,8 +383,8 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
       }
       if (result.issues.length) result.status = 'fail';
     } catch (error) {
-      result.status = error instanceof BudgetExhausted ? 'skipped' : 'fail';
-      result.issues.push(error.message);
+      result.status = error instanceof BudgetExhausted ? 'skipped' : error instanceof AccessProtected ? 'blocked' : 'fail';
+      result.issues.push(error?.message || (error?.name ? `Request failed (${error.name})` : 'Request failed'));
     }
     return result;
   }
