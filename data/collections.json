@@ -32,12 +32,65 @@
     "id": "little-games",
     "zh": {
       "title": "玩一会儿",
-      "summary": "找不同、闯迷宫，或来一局霓虹街机。"
+      "summary": "找不同、闯迷宫，或来一局霓虹街机。",
+      "intro": [
+        "从树木找不同和火光迷宫，到霓虹街机与像素冒险，这里收集了风格各异的网页游戏。",
+        "先看看作品画面和简短介绍，再前往创作者原站开始探索。"
+      ],
+      "selection_notes": [
+        "喜欢安静观察，可以试试找不同或迷宫；想要动作与策略，可以看看街机、机器人和无人机作品。",
+        "像素故事、手作世界和太空探索提供了不同的冒险体验；作品详情记录了已知限制和检查情况。"
+      ],
+      "work_notes": {
+        "tree-appreciator": "对照两棵树的枝叶找不同，适合喜欢安静观察的人。",
+        "labyrinthos": "带着一簇火光寻找迷宫出口，重点是路线探索。",
+        "hyperbrick": "霓虹街机打砖块与关卡挑战；画面包含闪光效果。",
+        "hearthlight": "在像素海边小镇开启冒险；创作者提示游戏仍可能有问题。",
+        "star-hop": "把握时机在行星间跳跃；创作者称游戏仍在测试中。",
+        "battle-drones": "收集资源、建造无人机并展开即时策略对战；已检查到 AI 对局开局。",
+        "knockbots": "三维机器人竞技场提供训练和街机选项；完整对战尚未核验。",
+        "lili-last-door": "跟随莉莉进入午夜像素故事；目前已核验到序章对话。",
+        "afterlight": "像素角色与三维场景结合的末日后冒险，从灯塔小镇展开。",
+        "felt-world": "在针毡风格世界里探索；已观察到进入场景并开车。",
+        "null-range": "在多人共享星区驾驶飞船并使用声呐；完整对战尚未核验。"
+      }
     },
     "en": {
       "title": "A little time to play",
-      "summary": "Spot the differences, explore a maze or step into a neon arcade."
+      "summary": "Spot the differences, explore a maze or step into a neon arcade.",
+      "intro": [
+        "From spotting differences in trees and navigating a torchlit maze to neon arcade action and pixel adventures, these browser games offer different ways to play.",
+        "Preview each creation and its short introduction, then visit the creator's original site to explore."
+      ],
+      "selection_notes": [
+        "For quiet observation, try the tree puzzle or maze; for action and strategy, explore the arcade, robot and drone games.",
+        "Pixel stories, a handmade-looking world and space journeys offer different kinds of adventure. Each detail page records known limitations and checks."
+      ],
+      "work_notes": {
+        "tree-appreciator": "Compare the branches and leaves of two trees in a quiet spot-the-difference puzzle.",
+        "labyrinthos": "Carry a small flame through a maze and search for the exit.",
+        "hyperbrick": "Break bricks and tackle arcade levels amid neon visuals; the game contains flashing effects.",
+        "hearthlight": "Begin an adventure in a pixel-art seaside village; the creator notes that the game may contain bugs.",
+        "star-hop": "Time jumps between planets; the creator says the game is still in testing.",
+        "battle-drones": "Gather resources and build a drone swarm for real-time strategy; the start of an AI match was checked.",
+        "knockbots": "A 3D robot arena offers Training and Arcade options; a complete match has not been verified.",
+        "lili-last-door": "Follow Lili into a midnight pixel story; the opening dialogue has been checked.",
+        "afterlight": "A post-apocalyptic adventure pairs pixel characters with 3D scenes, beginning in a lighthouse town.",
+        "felt-world": "Explore a felt-like world; entering the scene and driving have been observed.",
+        "null-range": "Pilot a ship and use sonar in a shared multiplayer sector; full combat has not been verified."
+      }
     },
+    "seo": {
+      "zh": {
+        "title": "网页游戏精选：街机、解谜与冒险｜Freemy",
+        "description": "看作品预览，按找不同、霓虹街机、像素故事和太空冒险挑选网页游戏，再前往创作者原站。"
+      },
+      "en": {
+        "title": "Browser Game Picks: Arcade, Puzzles & Adventures — Freemy",
+        "description": "Preview browser games, from tree puzzles and neon arcade action to pixel stories and space adventures."
+      }
+    },
+    "related_collections": ["playful-worlds", "machines-in-motion"],
     "works": [
       "tree-appreciator",
       "labyrinthos",
@@ -154,12 +207,57 @@
     "id": "sound-lab",
     "zh": {
       "title": "声音实验室",
-      "summary": "从手风琴到鼓机，用声音和节奏自由探索。"
+      "summary": "从手风琴到鼓机，用声音和节奏自由探索。",
+      "intro": [
+        "这组作品把乐器、节奏、文字和视觉放在一起：可以看看网页手风琴、合成器、鼓机与声音画面。",
+        "每件作品的操作和核验情况不同，打开详情可了解更多。"
+      ],
+      "selection_notes": [
+        "想尝试乐器或节奏，可以从 Web-Bayan、Soft Machine 和 mpump 开始。",
+        "想从视觉入手，可以看看 Type Sound 的文字与色彩、PULSE 的动态画面，或 Luminote 的光条；部分作品的音频尚未实际听测。"
+      ],
+      "work_notes": {
+        "type-sound": "键盘输入让彩色字母出现；声音尚未实际听测。",
+        "mpump": "鼓组、合成器与效果控制集中在一个界面；音频尚未实际听测。",
+        "web-bayan": "用键盘或鼠标探索巴扬手风琴的按钮与音栓；按键高亮已检查，音频未听测。",
+        "soft-machine": "合成器提供琴键、旋钮和步进音序器；完整交互尚未核验。",
+        "pulse": "生成音乐与动态视觉组合；画面包含闪动效果。",
+        "luminote": "钢琴键盘与下落光条将旋律呈现为画面。",
+        "stave": "把字母排在琴弦上并尝试播放；音频尚未实际听测。"
+      }
     },
     "en": {
       "title": "Sounds to play",
-      "summary": "Explore instruments, beats and sound-driven visuals."
+      "summary": "Explore instruments, beats and sound-driven visuals.",
+      "intro": [
+        "These works bring together instruments, rhythm, text and visuals, from a browser accordion to synthesizers, a drum machine and sound-driven images.",
+        "Interactions and checks vary by work; open a detail page to learn more."
+      ],
+      "selection_notes": [
+        "For instruments or beats, start with Web-Bayan, Soft Machine or mpump.",
+        "For visuals, look at Type Sound's colored letters, PULSE's animation or Luminote's falling lights. Audio has not been audibly verified for some works."
+      ],
+      "work_notes": {
+        "type-sound": "Typing brings colored letters onto the canvas; audio has not been audibly verified.",
+        "mpump": "Drums, synthesizers and effects share one interface; audio has not been audibly verified.",
+        "web-bayan": "Explore a bayan accordion's buttons and registers with a keyboard or mouse; key highlights were checked, but audio was not heard.",
+        "soft-machine": "A synthesizer with keys, knobs and a step sequencer; its full interaction has not been verified.",
+        "pulse": "Generative music is paired with animated visuals that include flashing effects.",
+        "luminote": "A piano keyboard and falling lights turn melodies into a visual display.",
+        "stave": "Arrange letters across strings and try playback; audio has not been audibly verified."
+      }
     },
+    "seo": {
+      "zh": {
+        "title": "在线音乐与声音实验：乐器、节奏与视觉创作｜Freemy",
+        "description": "探索网页手风琴、合成器、鼓机和音乐可视化作品，查看真实预览及各自的核验情况。"
+      },
+      "en": {
+        "title": "Interactive Music & Browser Sound Experiments — Freemy",
+        "description": "Preview a browser accordion, synthesizers, a drum machine and sound-driven visuals, with notes on what was checked."
+      }
+    },
+    "related_collections": ["creative-studio"],
     "works": [
       "type-sound",
       "mpump",
@@ -194,12 +292,65 @@
     "id": "machines-in-motion",
     "zh": {
       "title": "拆开机器看看",
-      "summary": "从发动机到机械臂，动手探索机器与运动。"
+      "summary": "从发动机到机械臂，动手探索机器与运动。",
+      "intro": [
+        "从发动机、液压到机器人和航天器，这些作品呈现机器的结构、运动或制造过程。",
+        "它们既有简化的原理演示，也有装配场景和三维展馆；模拟程度与已检查操作因作品而异。"
+      ],
+      "selection_notes": [
+        "想看零件和传力，可以从 V8 Engine、FORM / 01 或液压演示开始。",
+        "想探索装配或移动，可以看看 RoboLabs、Drone Lab 和火星车；各作品详情记录了已知的使用限制。"
+      ],
+      "work_notes": {
+        "v8-engine": "调整四冲程 V8 转速并切换至气缸视图，观察活塞和气门。",
+        "form-01": "在爆炸视图中环视机械臂的齿轮、关节和走线。",
+        "drone-lab": "选择无人机预设，观察重量与推力，再在飞行场观看自动驾驶；手动飞行未测。",
+        "learn-arduino": "转动开发板并运行 Blink 示例，观察电路中的 LED 闪烁。",
+        "hydraulics": "调整输入力，观察活塞传力和挖掘机动作；这是简化演示。",
+        "terrain-rover": "切换沙丘与透视视图，并短距离驾驶六轮探测车。",
+        "robolabs": "在工作台试装零件，再到试驾场移动；仅核验首步装配和短距离行驶。",
+        "roadster-explorer": "从材料到轮组浏览想象中的汽车装配；部分细节为估算。",
+        "wind-tide": "选择离岸风场并拖动时间轴，观察场景与读数变化。",
+        "spacex-vehicles": "浏览 Starship 等航天器模型，并从下方查看发动机。",
+        "bee-x9": "接管机械蜂导览，观察飞行和模拟仪表。"
+      }
     },
     "en": {
       "title": "Machines in motion",
-      "summary": "Explore engines, robotic arms and flight through interaction."
+      "summary": "Explore engines, robotic arms and flight through interaction.",
+      "intro": [
+        "From engines and hydraulics to robots and spacecraft, these works present the structure, movement or making of machines.",
+        "They include simplified demonstrations, assembly scenes and 3D exhibits; simulations and verified interactions vary by work."
+      ],
+      "selection_notes": [
+        "To inspect parts and force, begin with V8 Engine, FORM / 01 or the hydraulics demonstration.",
+        "For assembly or movement, explore RoboLabs, Drone Lab and the terrain rover. Each detail page records known limitations."
+      ],
+      "work_notes": {
+        "v8-engine": "Change a four-stroke V8's speed and switch to a cylinder view to inspect the piston and valves.",
+        "form-01": "Look around the robotic arm's gears, joints and wiring in an exploded view.",
+        "drone-lab": "Choose a drone preset, observe weight and thrust, then watch autopilot in the flight field; manual flight was not tested.",
+        "learn-arduino": "Rotate the board and run the Blink example to see a circuit's LED flash.",
+        "hydraulics": "Adjust input force and watch the pistons and excavator respond in a simplified demonstration.",
+        "terrain-rover": "Switch to dunes and X-Ray views, then drive the six-wheeled rover a short distance.",
+        "robolabs": "Try fitting a part at the workbench and moving in the test area; only the first assembly step and a short drive were checked.",
+        "roadster-explorer": "Follow an imagined car build from materials to wheels; some details are estimates.",
+        "wind-tide": "Choose an offshore wind farm and move the timeline to observe changes in the scene and readings.",
+        "spacex-vehicles": "Explore models including Starship and view its engines from below.",
+        "bee-x9": "Take over a robotic bee's tour and observe its flight and simulated readouts."
+      }
     },
+    "seo": {
+      "zh": {
+        "title": "机械原理互动演示：发动机、机器人与液压｜Freemy",
+        "description": "预览发动机、机械臂、机器人、液压和航天器作品，比较各自的观察与操作方式。"
+      },
+      "en": {
+        "title": "Interactive Engine, Robotics & Hydraulics Demos — Freemy",
+        "description": "Preview engines, robotic arms, hydraulics and spacecraft, with notes on what each work lets you explore."
+      }
+    },
+    "related_collections": ["make-and-learn", "motion-lab"],
     "works": [
       "v8-engine",
       "form-01",

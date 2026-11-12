@@ -1,8 +1,116 @@
 [
-  {"id":"games","zh":"游戏","en":"Games"},
-  {"id":"experiments","zh":"互动实验","en":"Experiments"},
-  {"id":"learning","zh":"互动教程","en":"Learning"},
-  {"id":"art","zh":"艺术与声音","en":"Art & Sound"},
-  {"id":"apps","zh":"小应用","en":"Mini Apps"},
-  {"id":"worlds","zh":"3D 与空间","en":"3D & Spaces"}
+  {
+    "id": "games",
+    "zh": "游戏",
+    "en": "Games",
+    "intro": {
+      "zh": "从找不同、街机到像素冒险，看看这些各具风格的游戏。",
+      "en": "From spot-the-difference puzzles to arcade action and pixel adventures, find a game to explore."
+    },
+    "seo": {
+      "zh": {
+        "title": "网页游戏：街机、解谜与冒险｜Freemy",
+        "description": "浏览真实作品预览，发现找不同、街机、像素冒险和太空探索游戏，并前往创作者原站。"
+      },
+      "en": {
+        "title": "Browser Games: Arcade, Puzzles & Adventures | Freemy",
+        "description": "Preview browser games ranging from spot-the-difference puzzles and arcade action to pixel and space adventures."
+      }
+    }
+  },
+  {
+    "id": "experiments",
+    "zh": "互动实验",
+    "en": "Experiments",
+    "intro": {
+      "zh": "从流体、光学到引力沙盒，这些互动实验邀请你观察变化。",
+      "en": "Explore changing systems through interactive experiments with fluids, optics, gravity and more."
+    },
+    "seo": {
+      "zh": {
+        "title": "互动实验：流体、光学与引力｜Freemy",
+        "description": "预览液压、摆动、光学和轨道等互动实验，观察模型如何变化，再前往作品原站探索。"
+      },
+      "en": {
+        "title": "Interactive Experiments: Fluids, Optics & Gravity | Freemy",
+        "description": "Preview interactive experiments with hydraulics, pendulums, optics and orbits, then explore the original works."
+      }
+    }
+  },
+  {
+    "id": "learning",
+    "zh": "互动教程",
+    "en": "Learning",
+    "intro": {
+      "zh": "从折纸到发动机，在可探索的模型和步骤中认识新事物。",
+      "en": "Explore ideas step by step, from folding paper to examining engines and satellite orbits."
+    },
+    "seo": {
+      "zh": {
+        "title": "互动教程与模型：从折纸到发动机｜Freemy",
+        "description": "探索折纸步骤、发动机模型、卫星轨道和更多互动学习作品，先看预览再访问创作者原站。"
+      },
+      "en": {
+        "title": "Interactive Learning: Models, Science & Making | Freemy",
+        "description": "Discover interactive learning works about paper folding, engines, satellite orbits and other ideas worth exploring."
+      }
+    }
+  },
+  {
+    "id": "art",
+    "zh": "艺术与声音",
+    "en": "Art & Sound",
+    "intro": {
+      "zh": "声音、文字、画面与图案，在这里交汇成可探索的创意作品。",
+      "en": "Explore creative works where sound, typography, images and patterns meet."
+    },
+    "seo": {
+      "zh": {
+        "title": "互动艺术与声音：音乐、绘画和视觉实验｜Freemy",
+        "description": "发现网页乐器、声音可视化、绘图机与水彩风景等创意作品，查看预览并访问原站。"
+      },
+      "en": {
+        "title": "Interactive Art & Sound: Music and Visual Experiments | Freemy",
+        "description": "Discover browser instruments, sound visualizations, drawing machines and other creative works."
+      }
+    }
+  },
+  {
+    "id": "apps",
+    "zh": "小应用",
+    "en": "Mini Apps",
+    "intro": {
+      "zh": "用颜色、图形和字体创作，试试从配色到对称绘画的轻量工具。",
+      "en": "Make something with color, shapes and type using small creative tools."
+    },
+    "seo": {
+      "zh": {
+        "title": "创意小应用：配色、绘画与字体设计｜Freemy",
+        "description": "预览配色、对称绘画、模块字体与三维瓶型设计工具，找到下一次创作的灵感。"
+      },
+      "en": {
+        "title": "Creative Mini Apps: Color, Drawing & Type | Freemy",
+        "description": "Explore small tools for color palettes, symmetrical drawing, modular type and 3D bottle design."
+      }
+    }
+  },
+  {
+    "id": "worlds",
+    "zh": "3D 与空间",
+    "en": "3D & Spaces",
+    "intro": {
+      "zh": "走进画廊、庭园、虚构星球和三维场景，换个视角探索。",
+      "en": "Step into galleries, gardens, fictional planets and other spaces to explore from a new perspective."
+    },
+    "seo": {
+      "zh": {
+        "title": "三维空间与虚拟世界：画廊、庭园和星球｜Freemy",
+        "description": "浏览三维画廊、庭园、海上风场与虚构星球的真实预览，进入创作者的空间作品。"
+      },
+      "en": {
+        "title": "3D Spaces & Virtual Worlds: Galleries, Gardens & Planets | Freemy",
+        "description": "Preview 3D galleries, gardens, offshore wind farms and fictional planets before visiting the original works."
+      }
+    }
+  }
 ]
