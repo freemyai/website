@@ -47,9 +47,11 @@ export async function getEventCounts({fetchImpl=fetch,token,name,since,until,fil
   if(!Array.isArray(result.data))throw new Error('Invalid analytics response');
   const rows=new Map();
   for(const row of result.data){
-    if(row.eventData==='Others')throw new Error('Analytics result is incomplete');
-    if(typeof row.eventData!=='string'||!Number.isSafeInteger(row.count)||row.count<0||!Number.isSafeInteger(row.visitors)||row.visitors<0)throw new Error('Invalid analytics row');
-    rows.set(row.eventData,{count:row.count,visitors:row.visitors});
+    // The live API returns the qualified key; older examples use `eventData`.
+    const id=row['eventData/work_id']??row.eventData;
+    if(id==='Others')throw new Error('Analytics result is incomplete');
+    if(typeof id!=='string'||rows.has(id)||!Number.isSafeInteger(row.count)||row.count<0||!Number.isSafeInteger(row.visitors)||row.visitors<0)throw new Error('Invalid analytics row');
+    rows.set(id,{count:row.count,visitors:row.visitors});
   }
   return rows;
 }

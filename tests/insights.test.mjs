@@ -35,7 +35,7 @@ test('uncollected intervals and provider errors cannot masquerade as zero',()=>{
 
 test('reporting uses one grouped query for deduplicated visitors and surfaces API errors',async()=>{
   let request;
-  const fake=async(url,options)=>{request={url:new URL(url),options};return {ok:true,json:async()=>({data:[{eventData:'hydraulics',count:3,visitors:1}]})};};
+  const fake=async(url,options)=>{request={url:new URL(url),options};return {ok:true,json:async()=>({data:[{'eventData/work_id':'hydraulics',count:3,visitors:1}]})};};
   const data=await getEventCounts({fetchImpl:fake,token:'not-public',name:'experience_open',since:'2026-11-11T00:00:00Z',until:'2026-11-12T00:00:00Z',filters:{}});
   assert.equal(data.get('hydraulics').visitors,1);
   assert.equal(data.get('hydraulics').count,3);
