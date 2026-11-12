@@ -18,6 +18,7 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(home,/href="\/zh\/" data-language-switch/);
   assert.match(home,/_vercel\/insights\/script\.js/);
   assert.match(home,/_vercel\/speed-insights\/script\.js/);
+  assert.ok(fs.existsSync(path.join(root,'dist/assets/analytics.mjs')),'client analytics adapter is copied to the build');
   assert.match(fs.readFileSync(path.join(root,'dist/en/privacy/index.html'),'utf8'),/Vercel Web Analytics/);
   for(const work of catalog.gallery){
     assert.ok(home.includes(work.media.poster.src),`Missing home preview for ${work.id}`);
@@ -25,10 +26,10 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   }
   assert.match(english,/<html lang="en">/);
   assert.match(english,/How Hydraulics Work/);
-  assert.match(english,/<meta property="og:image" content="https:\/\/freemy\.ai\/media\/hydraulics-960\.webp">/);
+  assert.match(english,/<meta property="og:image" content="https:\/\/freemy\.ai\/og\/work-hydraulics\.jpg">/);
   const noPreview=fs.readFileSync(path.join(root,'dist/en/works/wedulab-voltlab/index.html'),'utf8');
-  assert.doesNotMatch(noPreview,/<meta property="og:image"/);
-  assert.match(noPreview,/<meta name="twitter:card" content="summary">/);
+  assert.match(noPreview,/<meta property="og:image" content="https:\/\/freemy\.ai\/og\/fallback\.jpg">/);
+  assert.match(noPreview,/<meta name="twitter:card" content="summary_large_image">/);
   assert.match(english,/hreflang="zh-Hans" href="https:\/\/freemy\.ai\/works\/hydraulics\/"/);
   assert.match(english,/hreflang="x-default" href="https:\/\/freemy\.ai\/en\/works\/hydraulics\/"/);
   const reportedEn=fs.readFileSync(path.join(root,'dist/en/works/null-range/index.html'),'utf8');
@@ -42,4 +43,6 @@ test('build publishes real gallery media and preserves bilingual work routes', (
   assert.match(missing,/没有找到这个页面/);
   assert.match(missing,/This page could not be found/);
   assert.match(missing,/href="\/en\/explore\/"/);
+  assert.match(fs.readFileSync(path.join(root,'dist/en/privacy/index.html'),'utf8'),/name="robots" content="noindex,follow"/);
+  assert.ok(!fs.existsSync(path.join(root,'dist/en/index.html')),'English home alias is served by the hosting redirect');
 });

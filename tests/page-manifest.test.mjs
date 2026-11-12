@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildPageManifest } from '../src/page-manifest.mjs';
+import { loadCatalog, root } from '../src/validate.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const text = { title:'Title', summary:'Summary', action:'Start', why:'Why', limit:'Limits' };
 const published = { id:'sample', slug:'sample', type:'experiments', primary_category:'physics', editorial:{status:'published'}, locales:{zh:text,en:text} };
@@ -42,4 +45,17 @@ test('last modification is retained only when an explicit content date exists', 
   const pages=buildPageManifest(c);
   assert.equal(pages.find(p=>p.key==='work:sample:en').contentUpdatedAt,'2026-11-10');
   assert.equal(pages.find(p=>p.key==='work:sample:zh').contentUpdatedAt,undefined);
+  c.works[0].seo.en.updated_at='2026-02-30';
+  assert.equal(buildPageManifest(c).find(p=>p.key==='work:sample:en').contentUpdatedAt,undefined);
+});
+
+test('an incomplete candidate can remain unpublished without breaking the catalog', () => {
+  const names=['taxonomy.json','works.json','gallery.json','references.json','legacy-locales.json','types.json','collections.json'];
+  const data=Object.fromEntries(names.map(name=>[name,JSON.parse(fs.readFileSync(path.join(root,'data',name),'utf8'))]));
+  const original=data['gallery.json'][0];
+  data['gallery.json'].push({...original,id:'draft-locale-test',slug:'draft-locale-test',demo_url:'https://example.org/draft-locale-test',added_at:null,editorial:{status:'candidate'},locales:{zh:original.locales.zh},ai_provenance:{...original.ai_provenance,description:{zh:'待补充'}},media:{poster:{src:'/media/draft-960.webp',base:'draft',width:1280,height:800}}});
+  const result=loadCatalog({readData:name=>structuredClone(data[name])});
+  assert.ok(result.works.some(w=>w.id==='draft-locale-test'));
+  assert.ok(!result.gallery.some(w=>w.id==='draft-locale-test'));
+  assert.ok(!buildPageManifest(result).some(p=>p.entityId==='draft-locale-test'));
 });

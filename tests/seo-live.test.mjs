@@ -33,6 +33,9 @@ function goodFetch({ change, delay = 0 } = {}) {
       if (delay) await new Promise(resolve => setTimeout(resolve, delay));
       const override = change?.(url, options);
       if (override) return override;
+      if (url.hostname === 'www.freemy.ai') {
+        return new Response(null, { status: 308, headers: { location: `${origin}${url.pathname}${url.search}` } });
+      }
       if (url.pathname === '/en' || url.pathname === '/en/') {
         return new Response(null, { status: 308, headers: { location: `/${url.search}` } });
       }
@@ -154,6 +157,96 @@ test('passes a healthy representative audit and checks redirect destinations and
   assert.ok(report.checks.some(check => check.id === 'not-found' && check.httpStatus === 404));
 });
 
+test('checks that the www homepage permanently redirects to the production apex', async () => {
+  const fake = goodFetch();
+  const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
+  const check = report.checks.find(item => item.id === 'www-normalization');
+  assert.equal(check.status, 'pass');
+  assert.equal(check.url, 'https://www.freemy.ai/');
+  assert.equal(check.finalUrl, 'https://freemy.ai/');
+  assert.deepEqual(check.redirects.map(item => item.status), [308]);
+  assert.ok(fake.calls.includes('https://www.freemy.ai/'));
+});
+
+test('fails when www responds directly instead of redirecting to the apex', async () => {
+  for (const base of [origin, 'https://www.freemy.ai']) {
+    const fake = goodFetch({ change: url => url.origin === 'https://www.freemy.ai' && url.pathname === '/' ?
+      new Response(html(`${origin}/`, `${origin}/zh/`, `${origin}/`), { headers: { 'content-type': 'text/html' } }) : null });
+    const report = await runAudit({ base, limit: 20, fetchImpl: fake.fetchImpl });
+    assert.equal(report.status, 'fail');
+    assert.equal(report.checks.find(item => item.id === 'www-normalization').status, 'fail');
+  }
+});
+
+test('fails when www uses a temporary redirect to the apex', async () => {
+  const fake = goodFetch({ change: url => url.origin === 'https://www.freemy.ai' && url.pathname === '/' ?
+    new Response(null, { status: 302, headers: { location: `${origin}/` } }) : null });
+  const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
+  assert.equal(report.checks.find(item => item.id === 'www-normalization').status, 'fail');
+});
+
+test('marks the www check incomplete if the budget runs out during its redirect', async () => {
+  const fake = goodFetch();
+  const report = await runAudit({ base: origin, limit: 3, concurrency: 1, fetchImpl: fake.fetchImpl });
+  assert.equal(report.requestsMade, 3);
+  assert.equal(fake.calls.length, 3);
+  assert.equal(report.checks.find(item => item.id === 'www-normalization').status, 'skipped');
+  assert.equal(report.status, 'incomplete');
+});
+
+test('reports an access-protected www homepage as blocked', async () => {
+  const fake = goodFetch({ change: url => url.origin === 'https://www.freemy.ai' && url.pathname === '/' ?
+    new Response(null, { status: 403 }) : null });
+  const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
+  assert.equal(report.checks.find(item => item.id === 'www-normalization').status, 'blocked');
+  assert.equal(report.status, 'blocked');
+});
+
+test('audits apex canonical pages directly when the requested base is www', async () => {
+  const fake = goodFetch();
+  const report = await runAudit({ base: 'https://www.freemy.ai', limit: 20, fetchImpl: fake.fetchImpl });
+  assert.equal(report.status, 'pass', JSON.stringify(report.checks, null, 2));
+  assert.equal(report.base, 'https://www.freemy.ai');
+  assert.equal(report.checks.find(item => item.id === 'www-normalization').finalUrl, 'https://freemy.ai/');
+  for (const id of ['home-en', 'home-zh', 'english-deep', 'noindex-page']) {
+    const check = report.checks.find(item => item.id === id);
+    assert.equal(new URL(check.url).origin, origin);
+    assert.equal(new URL(check.finalUrl).origin, origin);
+    assert.deepEqual(check.redirects, []);
+  }
+});
+
+test('fails when a production canonical page redirects, even to the same path or www', async () => {
+  const redirects = [
+    url => url.origin === origin && url.pathname === '/zh/' && !url.search ?
+      new Response(null, { status: 308, headers: { location: '/zh/?through=redirect' } }) : null,
+    url => {
+      if (url.origin === origin && url.pathname === '/zh/') return new Response(null, { status: 308, headers: { location: 'https://www.freemy.ai/zh/' } });
+      if (url.origin === 'https://www.freemy.ai' && url.pathname === '/zh/') return new Response(
+        html(`${origin}/zh/`, `${origin}/zh/`, `${origin}/`), { headers: { 'content-type': 'text/html' } });
+      return null;
+    }
+  ];
+  for (const change of redirects) {
+    const report = await runAudit({ base: origin, limit: 20, fetchImpl: goodFetch({ change }).fetchImpl });
+    assert.equal(report.checks.find(item => item.id === 'home-zh').status, 'fail');
+    assert.equal(report.status, 'fail');
+  }
+});
+
+test('detects www-to-apex redirect loops within the request budget', async () => {
+  const fake = goodFetch({ change: url => {
+    if (url.origin === 'https://www.freemy.ai' && url.pathname === '/') return new Response(null, { status: 308, headers: { location: `${origin}/` } });
+    if (url.origin === origin && url.pathname === '/') return new Response(null, { status: 308, headers: { location: 'https://www.freemy.ai/' } });
+    return null;
+  } });
+  const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
+  const check = report.checks.find(item => item.id === 'www-normalization');
+  assert.equal(check.status, 'fail');
+  assert.match(check.issues.join(' '), /loop|cycle/i);
+  assert.ok(report.requestsMade <= 20);
+});
+
 test('never follows an unsafe redirect or an unrelated Vercel deployment', async () => {
   for (const target of ['https://127.0.0.1/private', 'http://freemy.ai/', 'https://other-project.vercel.app/']) {
     const fake = goodFetch({ change: url => url.pathname === '/en' ? new Response(null, { status: 308, headers: { location: target } }) : null });
@@ -176,6 +269,17 @@ test('requires every alias redirect in a chain to be permanent', async () => {
 
 test('detects redirects that lose the original query string', async () => {
   const fake = goodFetch({ change: url => url.pathname === '/en' ? new Response(null, { status: 308, headers: { location: '/' } }) : null });
+  const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
+  assert.equal(report.checks.find(check => check.id === 'en-alias').status, 'fail');
+});
+
+test('fails an alias whose final page remains on www even if the path is correct', async () => {
+  const fake = goodFetch({ change: url => {
+    if (url.origin === origin && url.pathname === '/en') return new Response(null, { status: 308, headers: { location: `https://www.freemy.ai/${url.search}` } });
+    if (url.origin === 'https://www.freemy.ai' && url.pathname === '/' && url.search) return new Response(
+      html(`${origin}/`, `${origin}/zh/`, `${origin}/`), { headers: { 'content-type': 'text/html' } });
+    return null;
+  } });
   const report = await runAudit({ base: origin, limit: 20, fetchImpl: fake.fetchImpl });
   assert.equal(report.checks.find(check => check.id === 'en-alias').status, 'fail');
 });
@@ -272,6 +376,18 @@ test('audits preview assets on the preview host while expecting production canon
   assert.ok(fake.calls.includes(`${base}/og/home.jpg`));
 });
 
+test('requires preview canonical pages to return directly and never follows a preview redirect to production', async () => {
+  const base = 'https://freemy-git-preview.vercel.app';
+  for (const target of ['/zh/?redirect=1', `${origin}/zh/`]) {
+    const fake = goodFetch({ change: url => url.pathname === '/zh/' && !url.search ?
+      new Response(null, { status: 308, headers: { location: target } }) : null });
+    const report = await runAudit({ base, limit: 20, fetchImpl: fake.fetchImpl });
+    assert.equal(report.checks.find(item => item.id === 'home-zh').status, 'fail');
+    assert.ok(fake.calls.every(value => new URL(value).origin === base));
+    assert.ok(!report.checks.some(item => item.id === 'www-normalization'));
+  }
+});
+
 test('times out a stalled request and reports it as a failure', async () => {
   const report = await runAudit({ base: origin, limit: 1, timeoutMs: 20, fetchImpl: () => new Promise(() => {}) });
   assert.equal(report.status, 'fail');
@@ -285,6 +401,106 @@ test('writes the audit as JSON beneath reports/seo', async () => {
     const destination = await writeAuditReport(report, root);
     assert.equal(destination, path.join(root, 'reports', 'seo', 'live-audit.json'));
     assert.deepEqual(JSON.parse(await fs.readFile(destination, 'utf8')), report);
+    const replacement = { status: 'fail' };
+    assert.equal(await writeAuditReport(replacement, root), destination);
+    assert.deepEqual(JSON.parse(await fs.readFile(destination, 'utf8')), replacement);
+    assert.deepEqual(await fs.readdir(path.dirname(destination)), ['live-audit.json']);
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+  }
+});
+
+test('refuses a report directory junction that leaves the project', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-project-'));
+  const outside = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-outside-'));
+  try {
+    await fs.symlink(outside, path.join(root, 'reports'), process.platform === 'win32' ? 'junction' : 'dir');
+    await assert.rejects(writeAuditReport({ status: 'pass' }, root), /report|outside|unsafe/i);
+    assert.deepEqual(await fs.readdir(outside), []);
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+    await fs.rm(outside, { recursive: true, force: true });
+  }
+});
+
+test('refuses a reports directory junction into dist without creating files there', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-junction-'));
+  try {
+    const dist = path.join(root, 'dist');
+    await fs.mkdir(dist);
+    await fs.symlink(dist, path.join(root, 'reports'), process.platform === 'win32' ? 'junction' : 'dir');
+    await assert.rejects(writeAuditReport({ status: 'pass' }, root), /report|outside|unsafe/i);
+    await assert.rejects(fs.stat(path.join(dist, 'seo')), { code: 'ENOENT' });
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+  }
+});
+
+test('refuses a reports/seo junction into dist without changing built files', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-seo-junction-'));
+  try {
+    const dist = path.join(root, 'dist'), reports = path.join(root, 'reports');
+    await fs.mkdir(dist);
+    await fs.mkdir(reports);
+    await fs.writeFile(path.join(dist, 'live-audit.json'), 'keep');
+    await fs.symlink(dist, path.join(reports, 'seo'), process.platform === 'win32' ? 'junction' : 'dir');
+    await assert.rejects(writeAuditReport({ status: 'pass' }, root), /report|outside|unsafe/i);
+    assert.equal(await fs.readFile(path.join(dist, 'live-audit.json'), 'utf8'), 'keep');
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+  }
+});
+
+test('does not overwrite a built file through a report file link', async t => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-file-link-'));
+  try {
+    const dist = path.join(root, 'dist'), reportDir = path.join(root, 'reports', 'seo');
+    await fs.mkdir(dist);
+    await fs.mkdir(reportDir, { recursive: true });
+    const target = path.join(dist, 'published.json');
+    await fs.writeFile(target, 'keep');
+    try { await fs.symlink(target, path.join(reportDir, 'live-audit.json'), 'file'); }
+    catch (error) {
+      if (['EPERM', 'EACCES', 'ENOSYS'].includes(error.code)) { t.skip('Creating file symlinks is unavailable'); return; }
+      throw error;
+    }
+    await assert.rejects(writeAuditReport({ status: 'pass' }, root), /report|outside|unsafe/i);
+    assert.equal(await fs.readFile(target, 'utf8'), 'keep');
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+  }
+});
+
+test('does not write into dist through a dangling report file link', async t => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-dangling-link-'));
+  try {
+    const dist = path.join(root, 'dist'), reportDir = path.join(root, 'reports', 'seo');
+    await fs.mkdir(dist);
+    await fs.mkdir(reportDir, { recursive: true });
+    const target = path.join(dist, 'not-yet-created.json');
+    try { await fs.symlink(target, path.join(reportDir, 'live-audit.json'), 'file'); }
+    catch (error) {
+      if (['EPERM', 'EACCES', 'ENOSYS'].includes(error.code)) { t.skip('Creating file symlinks is unavailable'); return; }
+      throw error;
+    }
+    await assert.rejects(writeAuditReport({ status: 'pass' }, root), /report|outside|unsafe/i);
+    await assert.rejects(fs.stat(target), { code: 'ENOENT' });
+  } finally {
+    await fs.rm(root, { recursive: true, force: true });
+  }
+});
+
+test('does not overwrite a built file through a hard-linked report', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'freemy-live-hard-link-'));
+  try {
+    const dist = path.join(root, 'dist'), reportDir = path.join(root, 'reports', 'seo');
+    await fs.mkdir(dist);
+    await fs.mkdir(reportDir, { recursive: true });
+    const target = path.join(dist, 'published.json');
+    await fs.writeFile(target, 'keep');
+    await fs.link(target, path.join(reportDir, 'live-audit.json'));
+    try { await writeAuditReport({ status: 'pass' }, root); } catch { /* Refusing the link is also safe. */ }
+    assert.equal(await fs.readFile(target, 'utf8'), 'keep');
   } finally {
     await fs.rm(root, { recursive: true, force: true });
   }

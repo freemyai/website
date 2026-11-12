@@ -9,6 +9,7 @@ const asArray = value => value == null ? [] : Array.isArray(value) ? value : [va
 const normalizedText = value => value.trim().replace(/\s+/gu, ' ').normalize('NFKC').toLowerCase();
 const attr = (node, name) => node.attrs?.find(item => item.name === name)?.value;
 const hasAttr = (node, name) => node.attrs?.some(item => item.name === name) ?? false;
+const hasClass = (node, name) => (attr(node, 'class') || '').split(/\s+/).includes(name);
 const tokens = value => (value || '').toLowerCase().split(/[\s,]+/).filter(Boolean);
 const relHas = (node, token) => tokens(attr(node, 'rel')).includes(token);
 const textOf = node => node.nodeName === '#text' ? node.value : (node.childNodes || []).map(textOf).join('');
@@ -50,6 +51,22 @@ function schemaNodes(value) {
 
 function nodesUnder(node) {
   return [node, ...(node.childNodes || []).flatMap(nodesUnder)];
+}
+
+function hiddenWithin(node, root) {
+  for (let current = node; current; current = current.parentNode) {
+    if (hasAttr(current, 'hidden')) return true;
+    if (current === root) break;
+  }
+  return false;
+}
+
+function normalizedListingUrl(value, base) {
+  if (typeof value !== 'string' || !value.trim()) return null;
+  try {
+    const url = new URL(value.trim(), base);
+    return ['http:','https:'].includes(url.protocol) ? `${url.origin}${url.pathname}` : null;
+  } catch { return null; }
 }
 
 // URLs in a srcset can themselves contain commas (for example data: URLs).
@@ -137,7 +154,12 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(page);
   }
-  const titles = new Map(), descriptions = new Map(), canonicals = new Map();
+  const titles = new Map(), descriptions = new Map(), canonicals = new Map(), linksByPage = new Map();
+  const builtPages = new Map(pages.map(page => {
+    const file = path.resolve(outDir, `.${page.path}`, 'index.html');
+    try { return [page.path, within(outDir, file) && fs.statSync(file).isFile()]; }
+    catch { return [page.path, false]; }
+  }));
   const recordUnique = (map, value, page, code) => {
     if (!value) return;
     const previous = map.get(value);
@@ -167,6 +189,7 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
   };
 
   for (const page of pages) {
+    linksByPage.set(page.path,new Set());
     const file = path.resolve(outDir, `.${page.path}`, 'index.html');
     let html;
     try {
@@ -181,6 +204,13 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
     const nodes = nodesUnder(tree);
     const head = nodes.find(node => node.tagName === 'head');
     const headNodes = head ? nodesUnder(head) : [];
+    const body = nodes.find(node => node.tagName === 'body');
+    const bodyNodes = body ? nodesUnder(body) : [];
+    const expectedCanonical = `${canonicalOrigin}${page.path}`;
+    const baseTag = headNodes.find(node => node.tagName === 'base' && hasAttr(node, 'href'));
+    let baseUrl = expectedCanonical;
+    try { if (baseTag) baseUrl = new URL(attr(baseTag, 'href'), expectedCanonical).href; }
+    catch { /* Browsers use the document URL for an invalid base. */ }
     const htmlNode = nodes.find(node => node.tagName === 'html');
     const lang = (attr(htmlNode || {}, 'lang') || '').toLowerCase();
     let languageMatches = false;
@@ -189,6 +219,18 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
       languageMatches = page.locale === 'en' ? actual.language === 'en' : actual.language === 'zh' && actual.maximize().script === 'Hans';
     } catch { /* Missing or malformed language tag. */ }
     if (!languageMatches) error('html-language', page.path, `HTML language does not match ${page.locale}: ${lang || '(missing)'}`);
+
+    for (const node of bodyNodes) {
+      if (node.tagName !== 'a' || !hasAttr(node, 'href')) continue;
+      const href = attr(node, 'href').trim();
+      if (href.startsWith('#')) continue;
+      let target;
+      try { target = new URL(href, baseUrl); }
+      catch { continue; }
+      if (!['http:','https:'].includes(target.protocol) || target.origin !== canonicalOrigin) continue;
+      if (!paths.has(target.pathname) || !builtPages.get(target.pathname)) error('internal-link-missing', page.path, `Internal link ${href || '(empty)'} resolves to a missing page: ${target.pathname}`);
+      else linksByPage.get(page.path).add(target.pathname);
+    }
 
     const titleTags = headNodes.filter(node => node.tagName === 'title');
     const title = titleTags.length === 1 ? textOf(titleTags[0]).trim() : '';
@@ -204,7 +246,6 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
       recordUnique(descriptions, normalizedText(description), page, 'description-duplicate');
       if ([...description].length > 160) warn('description-length', page.path, `Description has ${[...description].length} characters (recommended maximum: 160)`);
     }
-    const expectedCanonical = `${canonicalOrigin}${page.path}`;
     const canonicalTags = headNodes.filter(node => node.tagName === 'link' && relHas(node, 'canonical'));
     if (canonicalTags.length !== 1 || !attr(canonicalTags[0] || {}, 'href')?.trim()) error('canonical-count', page.path, 'Expected exactly one non-empty canonical link');
     for (const tag of canonicalTags) {
@@ -279,13 +320,46 @@ export function auditSite({dir = 'dist', manifestPath = 'reports/seo/page-manife
         }
       }
     }
-    if (['type','topic','collection'].includes(page.kind) && jsonldDocuments.length) {
+    if (['explore','type','topic','collection','collectionIndex'].includes(page.kind)) {
+      const main = bodyNodes.find(node => node.tagName === 'main');
+      if (!main) error('listing-main-missing', page.path, 'Expected a main content area containing the listing cards');
       const collections = jsonldDocuments.flatMap(schemaNodes).filter(value => asArray(value['@type']).includes('CollectionPage'));
       const lists = collections.flatMap(value => asArray(value.mainEntity)).filter(value => value && typeof value === 'object' && asArray(value['@type']).includes('ItemList') && Array.isArray(value.itemListElement));
-      if (!lists.length) error('structured-list-invalid', page.path, 'Expected a CollectionPage with an ItemList of the visible works');
-      else if (page.indexable && lists.every(value => value.itemListElement.length === 0)) error('empty-list-indexable', page.path, 'An empty category or collection must not be indexable');
+      if (jsonldDocuments.length && lists.length !== 1) error('structured-list-invalid', page.path, 'Expected exactly one CollectionPage ItemList of the visible cards');
+      if (page.indexable && lists.length && lists.every(value => value.itemListElement.length === 0)) error('empty-list-indexable', page.path, 'An empty listing must not be indexable');
+      if (main && lists.length === 1) {
+        const cardClass = page.kind === 'collectionIndex' ? 'collection-card' : 'creation-card';
+        const cards = nodesUnder(main).filter(node => hasClass(node, cardClass) && !hiddenWithin(node, main));
+        const visible = cards.map(card => {
+          const cardNodes = nodesUnder(card);
+          const heading = cardNodes.find(node => /^h[1-6]$/.test(node.tagName || ''));
+          const links = heading ? nodesUnder(heading).filter(node => node.tagName === 'a' && hasAttr(node, 'href')) : [];
+          const link = page.kind === 'collectionIndex' && card.tagName === 'a' ? card : links.length === 1 ? links[0] : null;
+          const titleNode = page.kind === 'collectionIndex' ? heading : link;
+          return {name:titleNode ? textOf(titleNode).trim().replace(/\s+/gu, ' ') : '', url:link ? normalizedListingUrl(attr(link, 'href'), baseUrl) : null};
+        });
+        const items = lists[0].itemListElement;
+        let mismatch = items.length !== visible.length;
+        for (let index = 0; index < Math.min(items.length, visible.length); index++) {
+          const item = items[index];
+          const itemValue = item && typeof item === 'object' ? item.item ?? item.url : null;
+          const itemUrl = itemValue && typeof itemValue === 'object' ? itemValue['@id'] ?? itemValue.url : itemValue;
+          const name = typeof item?.name === 'string' ? item.name.trim().replace(/\s+/gu, ' ') : '';
+          if (!name || !visible[index].name || name !== visible[index].name || !visible[index].url || normalizedListingUrl(itemUrl, baseUrl) !== visible[index].url || Number(item?.position) !== index + 1) mismatch = true;
+        }
+        if (mismatch) error('structured-list-mismatch', page.path, `ItemList does not match the order, titles or links of the ${visible.length} visible ${cardClass} cards (${items.length} structured entries)`);
+      }
     }
   }
+
+  const reachable=new Set(), queue=['/','/zh/'].filter(pathname=>paths.has(pathname));
+  for(let i=0;i<queue.length;i++){
+    const pathname=queue[i];
+    if(reachable.has(pathname))continue;
+    reachable.add(pathname);
+    for(const target of linksByPage.get(pathname)||[])if(!reachable.has(target))queue.push(target);
+  }
+  for(const page of pages)if(page.indexable&&!reachable.has(page.path))warn('indexable-unreachable',page.path,'No ordinary internal link path from either home was found');
 
   const sitemapPath = path.join(outDir, 'sitemap.xml');
   try {

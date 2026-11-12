@@ -1,10 +1,10 @@
 # Freemy
 
-Freemy 是一个双语 AI 创意作品画廊。访客可以先看真实作品画面，再直接前往创作者的原站体验。根路径默认显示英文，中文首页为 `/zh/`，旧的作品和主题地址及英文 `/en/` 地址继续保留。
+Freemy 是一个双语 AI 创意作品画廊。访客可以先看真实作品画面，再直接前往创作者的原站体验。根路径显示英文，中文首页为 `/zh/`；英文内容路径仍以 `/en/` 开头，英文首页别名 `/en/` 在部署时重定向至根路径。
 
 ## 本地运行与验证
 
-需要 Node.js 20 或更新版本。网站运行时不需要第三方依赖；Playwright Core 仅用于本地媒体采集和浏览器验收。
+需要 Node.js 20 或更新版本。网站运行时不需要第三方依赖；Playwright Core 用于本地媒体采集和浏览器验收，HTML/XML 解析器用于构建产物审计。
 
 ```sh
 npm ci
@@ -12,11 +12,14 @@ npm run lint
 npm run typecheck
 npm test
 npm run build
+npm run seo:audit
 python -m http.server 4177 --directory dist
 npm run test:browser
 ```
 
-浏览 `http://localhost:4177`。`typecheck` 为兼容旧命令而保留，实际执行的是内容数据校验，并非 TypeScript 类型检查。浏览器验收使用本机 Edge；可用 `FREEMY_BROWSER_PATH` 指定其他 Chromium 可执行文件。截图默认保存到仓库旁的 `freemy-preview-checks` 目录，可通过 `FREEMY_QA_DIR` 改位置。
+浏览 `http://localhost:4177`。`typecheck` 为兼容旧命令而保留，实际执行的是内容数据校验，并非 TypeScript 类型检查。浏览器验收使用本机 Edge；可用 `FREEMY_BROWSER_PATH` 指定其他 Chromium 可执行文件。截图默认保存到仓库旁的 `freemy-preview-checks/seo` 目录，可通过 `FREEMY_QA_DIR` 改位置。静态审计报告保存在 `reports/seo/`；部署后可用 `npm run seo:live -- --base https://freemy.ai --limit 20 --concurrency 2` 抽查公开页面。
+
+Windows PowerShell 若通过 `npm.ps1` 丢失传给脚本的选项，请改用 `npm.cmd run seo:live -- --base https://freemy.ai --limit 20 --concurrency 2`，或直接运行 `node scripts/check-seo-live.mjs` 并传入相同选项。
 
 ## 内容与媒体
 
@@ -36,3 +39,5 @@ Quantum Eraser、Ocean Currents、SVT 3D、BEE-X9 和 The Last Hexagon 的截图
 投稿入口会打开本仓库的公开 GitHub issue，访客可以填写作品资料；网站本身不保存投稿数据。`vercel.json` 将 `dist` 配置为 Vercel 构建输出。
 
 页面接入 Vercel Web Analytics 与 Speed Insights；访问和性能数据由 Vercel 收集，相关说明见网站隐私页。
+
+分享图从已核验预览离线生成：安装 Python 和 Pillow 后运行 `node scripts/generate-og.mjs`。网站构建使用仓库中已有的图片，不依赖 Pillow；新作品暂时没有专属分享图时，会使用该作品自己的预览。语言路由、统计配置及站长平台交接分别见 `docs/seo/`。

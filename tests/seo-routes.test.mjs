@@ -26,5 +26,8 @@ test('hosting configuration redirects only the English home alias', () => {
   assert.equal(config.trailingSlash, true);
   const redirects = config.redirects || [];
   assert.ok(redirects.some(r => r.source === '/en' && r.destination === '/' && r.permanent));
+  assert.ok(redirects.some(r => r.source === '/en/' && r.destination === '/' && r.permanent));
   assert.ok(redirects.every(r => !r.source.includes(':path')));
+  const headers=config.headers.flatMap(rule=>rule.headers||[]);
+  assert.ok(headers.some(h=>h.key.toLowerCase()==='referrer-policy'&&h.value==='strict-origin'));
 });

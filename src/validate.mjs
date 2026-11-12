@@ -7,9 +7,9 @@ import { topicNames } from './i18n.mjs';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data', name), 'utf8'));
 
-export function loadCatalog() {
-  const taxonomy=read('taxonomy.json'), oldWorks=read('works.json'), featured=read('gallery.json'), references=read('references.json');
-  const translations=read('legacy-locales.json'), types=read('types.json'), collections=read('collections.json');
+export function loadCatalog({readData=read}={}) {
+  const taxonomy=readData('taxonomy.json'), oldWorks=readData('works.json'), featured=readData('gallery.json'), references=readData('references.json');
+  const translations=readData('legacy-locales.json'), types=readData('types.json'), collections=readData('collections.json');
   for(const item of [...types,...collections,...taxonomy.categories]) if(!/^[a-z0-9-]+$/.test(item.id)) throw new Error(`Invalid route id: ${item.id}`);
   const imported=[...featured,...references], overrides=new Map(imported.map(w=>[w.id,w]));
   const works=oldWorks.map(w=>{
@@ -27,9 +27,9 @@ export function loadCatalog() {
     if(!w.id||ids.has(w.id)||!/^[a-z0-9-]+$/.test(w.slug)||slugs.has(w.slug)) throw new Error(`Invalid or duplicate id/slug: ${w.id}`);
     if(!category||!category.subcategories.some(s=>s.id===w.subcategory)) throw new Error(`Invalid topic: ${w.id}`);
     if(!types.some(t=>t.id===w.type)||!safeExternalUrl(w.demo_url)) throw new Error(`Invalid type or experience URL: ${w.id}`);
-    if(!/^\d{4}-\d{2}-\d{2}$/.test(w.added_at||'')) throw new Error(`Missing or invalid added date: ${w.id}`);
-    if(w.ai_provenance?.description&&!['zh','en'].every(lang=>typeof w.ai_provenance.description[lang]==='string'&&w.ai_provenance.description[lang].trim())) throw new Error(`Incomplete AI description: ${w.id}`);
-    for(const lang of ['zh','en']) for(const key of ['title','summary','action','why','limit']) if(!w.locales?.[lang]?.[key]) throw new Error(`Missing ${lang}.${key}: ${w.id}`);
+    if(w.editorial?.status==='published'&&!/^\d{4}-\d{2}-\d{2}$/.test(w.added_at||'')) throw new Error(`Missing or invalid added date: ${w.id}`);
+    if(w.editorial?.status==='published'&&w.ai_provenance?.description&&!['zh','en'].every(lang=>typeof w.ai_provenance.description[lang]==='string'&&w.ai_provenance.description[lang].trim())) throw new Error(`Incomplete AI description: ${w.id}`);
+    if(w.editorial?.status==='published') for(const lang of ['zh','en']) for(const key of ['title','summary','action','why','limit']) if(!w.locales?.[lang]?.[key]) throw new Error(`Missing ${lang}.${key}: ${w.id}`);
     if(!['candidate','needs_review','published','unavailable','rejected'].includes(w.editorial?.status)) throw new Error(`Invalid editorial status: ${w.id}`);
     const type=types.find(t=>t.id===w.type), subcategory=category.subcategories.find(s=>s.id===w.subcategory);
     w.search_terms=[...(topicNames[category.id]||[]),subcategory.name_zh,subcategory.id.replaceAll('-',' '),type.zh,type.en];
@@ -38,6 +38,7 @@ export function loadCatalog() {
   }
   for(const item of imported){
     const w=works.find(x=>x.id===item.id);
+    if(w.editorial?.status!=='published') continue;
     const unavailable=w.verification?.availability==='unavailable';
     if(unavailable&&!w.media?.poster) continue;
     if(featured.some(f=>f.id===item.id)&&!unavailable&&!eligibleForGallery(w)) throw new Error(`Featured work lacks AI evidence, preview or translations: ${item.id}`);

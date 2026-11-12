@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const out=process.env.FREEMY_QA_DIR||path.resolve('..','freemy-preview-checks');
+const out=process.env.FREEMY_QA_DIR||path.resolve('..','freemy-preview-checks','seo');
 fs.mkdirSync(out,{recursive:true});
 const executablePath=process.env.FREEMY_BROWSER_PATH||'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
 const browser=await chromium.launch({executablePath,headless:true});
@@ -19,6 +19,27 @@ try{
     assert.ok(size.firstImage<height&&size.firstTitle<height,`${lang} ${width}: first work not visible on first screen (${JSON.stringify(size)})`);
     await page.screenshot({path:path.join(out,`home-${lang}-${width}.png`)});
     await page.close();
+  }
+  for(const [width,height] of [[1440,900],[768,1024],[390,844]]) for(const lang of ['zh','en']){
+    for(const collection of ['little-games','sound-lab','machines-in-motion']){
+      const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
+      await page.goto(`http://127.0.0.1:4177/${lang==='en'?'en/':''}collections/${collection}/`,{waitUntil:'domcontentloaded'});
+      await page.locator('.creation-card img').first().waitFor();
+      const size=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,firstImage:document.querySelector('.creation-card img').getBoundingClientRect().top}));
+      assert.ok(size.scroll<=size.width,`${collection} ${lang} ${width}: horizontal overflow`);
+      assert.ok(size.firstImage<height,`${collection} ${lang} ${width}: no creation image on the first screen`);
+      assert.ok(await page.locator('.collection-notes a[href*="/works/"]').count()>0,`${collection}: no useful work links`);
+      await page.screenshot({path:path.join(out,`collection-${collection}-${lang}-${width}.png`)});await page.close();
+    }
+    const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1});
+    await page.goto(`http://127.0.0.1:4177/${lang==='en'?'en/':''}works/hydraulics/`,{waitUntil:'domcontentloaded'});
+    await page.locator('.detail-visual img').waitFor();
+    const size=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,firstImage:document.querySelector('.detail-visual img').getBoundingClientRect().top}));
+    assert.ok(size.scroll<=size.width&&size.firstImage<height,`detail ${lang} ${width}: image or layout problem`);
+    assert.equal(await page.locator('.detail-open').getAttribute('href'),'https://hydraulics.wasmer.app/');
+    assert.ok(await page.locator('.related-section a[href*="/works/"]').count()>0);
+    assert.equal(await page.locator('.related-section img[fetchpriority="high"]').count(),0);
+    await page.screenshot({path:path.join(out,`detail-hydraulics-${lang}-${width}.png`)});await page.close();
   }
   const page=await browser.newPage({viewport:{width:1440,height:900}});
   await page.goto('http://127.0.0.1:4177/zh/',{waitUntil:'networkidle'});
@@ -63,9 +84,9 @@ try{
   await page.goto('http://127.0.0.1:4177/en/explore/',{waitUntil:'networkidle'});
   await page.locator('#gallery-search').fill('Science & Physics');
   assert.ok(await page.locator('.creation-card:visible').count()>0,'English topic search works');
-  await page.goto('http://127.0.0.1:4177/works/hydraulics/?q=robot',{waitUntil:'networkidle'});
+  await page.goto('http://127.0.0.1:4177/works/hydraulics/?q=robot#main',{waitUntil:'networkidle'});
   await page.locator('[data-language-switch]').last().click();
-  assert.match(page.url(),/\/en\/works\/hydraulics\/\?q=robot$/,'language switch preserves work and query');
+  assert.match(page.url(),/\/en\/works\/hydraulics\/\?q=robot#main$/,'language switch preserves work, query and fragment');
   assert.equal(await page.locator('html').getAttribute('lang'),'en');
   assert.equal(await page.locator('.detail-open').getAttribute('href'),'https://hydraulics.wasmer.app/');
   await page.goto('http://127.0.0.1:4177/');assert.equal(await page.locator('html').getAttribute('lang'),'en');
@@ -79,9 +100,44 @@ try{
   assert.equal(await nojs.locator('.creation-card .open-link').first().getAttribute('href'),'https://hydraulics.wasmer.app/');
   await nojs.goto('http://127.0.0.1:4177/types/games/');
   assert.equal(await nojs.locator('[data-surprise]').getAttribute('href'),'/works/hearthlight/','no-JavaScript fallback stays in the selected type');
+  await nojs.goto('http://127.0.0.1:4177/en/works/hydraulics/');
+  assert.equal(await nojs.locator('.detail-open').getAttribute('href'),'https://hydraulics.wasmer.app/');
+  assert.ok(await nojs.locator('a[href="/en/categories/physics/"]').count()>0,'topic is reachable without JavaScript');
+  await nojs.goto('http://127.0.0.1:4177/en/collections/machines-in-motion/');
+  assert.ok(await nojs.locator('.creation-card h3 a[href^="/en/works/"]').count()>0,'collection details remain linked without JavaScript');
   await nojs.close();
   const broken=await browser.newPage();await broken.route('**/media/hydraulics-*.webp',route=>route.abort());await broken.goto('http://127.0.0.1:4177/',{waitUntil:'networkidle'});
   assert.equal(await broken.locator('.creation-card').first().locator('.image-error').isVisible(),true,'missing media has a clear fallback');
-  await broken.close();await page.close();
+  await broken.close();
+  // Test actual click wiring under an isolated mock production origin; no event leaves this browser.
+  const measured=await browser.newPage();
+  await measured.addInitScript(()=>{window.__freemyTestEvents=[];window.va=(kind,payload)=>{if(kind==='event')window.__freemyTestEvents.push(payload);if(kind==='beforeSend')window.__freemyBeforeSend=payload;};window.si=(kind,payload)=>{if(kind==='beforeSend')window.__freemySpeedBeforeSend=payload;};});
+  await measured.route('https://freemy.ai/**',async route=>{
+    const url=new URL(route.request().url());
+    if(url.pathname.startsWith('/_vercel/'))return route.fulfill({status:204,body:''});
+    if(url.pathname.startsWith('/media/')||url.pathname.startsWith('/og/'))return route.fulfill({status:204,body:''});
+    const relative=url.pathname.endsWith('/')?`${url.pathname}index.html`:url.pathname;
+    const file=path.resolve('dist',`.${relative}`), root=path.resolve('dist');
+    if(!file.startsWith(root+path.sep)||!fs.existsSync(file))return route.fulfill({status:404,body:''});
+    const contentType=file.endsWith('.html')?'text/html':file.endsWith('.mjs')?'text/javascript':file.endsWith('.css')?'text/css':'application/octet-stream';
+    let body=fs.readFileSync(file);
+    if(contentType==='text/html')body=Buffer.from(body.toString('utf8').replace('data-analytics-enabled="false"','data-analytics-enabled="true"'));
+    return route.fulfill({status:200,contentType,body});
+  });
+  await measured.goto('https://freemy.ai/',{waitUntil:'domcontentloaded'});
+  assert.equal(await measured.evaluate(()=>window.__freemyBeforeSend({url:'https://freemy.ai/?q=private#section'}).url),'https://freemy.ai/');
+  assert.equal(await measured.evaluate(()=>window.__freemySpeedBeforeSend({url:'https://freemy.ai/?q=private#section'}).url),'https://freemy.ai/');
+  await measured.locator('.creation-card [data-preview]').first().click();
+  await measured.locator('#preview-open').evaluate(el=>{el.addEventListener('click',event=>event.preventDefault(),{once:true});el.click();});
+  await measured.keyboard.press('Escape');
+  await measured.locator('.collection-card').first().evaluate(el=>{el.addEventListener('click',event=>event.preventDefault(),{once:true});el.click();});
+  let events=await measured.evaluate(()=>window.__freemyTestEvents);
+  assert.deepEqual(events.map(event=>event.name),['preview_open','experience_open','collection_open']);
+  assert.ok(events.every(event=>Object.keys(event.data).length<=2),'events use at most two safe properties');
+  await measured.goto('https://freemy.ai/en/works/hydraulics/',{waitUntil:'domcontentloaded'});
+  await measured.locator('.related-section h3 a').first().evaluate(el=>{el.addEventListener('click',event=>event.preventDefault(),{once:true});el.click();});
+  events=await measured.evaluate(()=>window.__freemyTestEvents);
+  assert.deepEqual(events.map(event=>event.name),['related_click']);
+  await measured.close();await page.close();
   console.log(`Browser checks passed; screenshots saved to ${out}`);
 }finally{await browser.close();}

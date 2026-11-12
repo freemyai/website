@@ -16,3 +16,5 @@ body:has(dialog[open]){overflow:hidden}.dialog-media{aspect-ratio:16/10;overflow
 @media(max-width:650px){.header-submit::before{content:'投稿';font-size:11px}.header-submit{gap:7px}.header-submit span{font-size:13px}body[data-lang="en"] .header-submit::before{content:'Submit'}}
 .reference-badge{display:inline-block;margin-left:8px;padding:3px 6px;background:#edf1e8;border-radius:4px;color:#667f5f;font-size:10px}
 .surprise[aria-disabled="true"]{opacity:.45;cursor:not-allowed}
+
+.collection-notes{padding-top:28px;padding-bottom:28px;max-width:1180px}.collection-notes h2{font-size:22px;letter-spacing:-.02em}.collection-notes ul{padding-left:20px;line-height:1.8;color:var(--muted)}.collection-notes li{margin:5px 0}.collection-notes a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}.breadcrumbs{flex-wrap:wrap}

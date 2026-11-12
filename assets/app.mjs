@@ -1,6 +1,14 @@
 import { filterWorks } from './catalog.mjs';
+import { createTracker } from './analytics.mjs';
 
 const lang=document.body.dataset.lang||'en';
+const pageType=document.body.dataset.pageType||'unknown';
+const track=createTracker({enabled:document.body.dataset.analyticsEnabled==='true',origin:location.origin,send:(...args)=>window.va?.(...args)});
+document.addEventListener('click',event=>{
+  const link=event.target.closest('[data-track-event]');
+  if(!link)return;
+  track(link.dataset.trackEvent,{work_id:link.dataset.trackWork,locale:lang,page_type:pageType,placement:link.dataset.trackPlacement});
+});
 const grid=document.querySelector('#gallery-grid');
 const form=document.querySelector('#gallery-filter');
 const sort=document.querySelector('#gallery-sort');
@@ -54,8 +62,10 @@ document.addEventListener('click',event=>{
   dialog.querySelector('#preview-summary').textContent=text.summary;
   dialog.querySelector('#preview-creator').textContent=work.creator.name||(lang==='zh'?'未确认':'Unconfirmed');
   dialog.querySelector('#preview-open').href=work.demo_url;
+  dialog.querySelector('#preview-open').dataset.trackWork=work.id;
   dialog.querySelector('#preview-details').href=work.detail;
   dialog.showModal();dialog.querySelector('.dialog-close').focus();
+  track('preview_open',{work_id:work.id,locale:lang,page_type:pageType,placement:trigger.closest('.related-section')?'related':'card'});
 });
 dialog?.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());
 dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});

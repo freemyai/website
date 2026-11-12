@@ -1,4 +1,5 @@
 import dns from 'node:dns';
+import { randomUUID } from 'node:crypto';
 import fs from 'node:fs/promises';
 import https from 'node:https';
 import net from 'node:net';
@@ -252,6 +253,8 @@ async function mapLimit(items, concurrency, operation) {
 
 export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concurrency = 2, timeoutMs = DEFAULT_TIMEOUT_MS, fetchImpl = secureFetch } = {}) {
   const baseUrl = checkedBase(base);
+  const preview = baseUrl.hostname.endsWith('.vercel.app');
+  const siteBase = preview ? baseUrl : new URL(PRODUCTION);
   if (!Number.isInteger(limit) || limit < 1 || limit > MAX_LIMIT) throw new Error(`Limit must be an integer from 1 to ${MAX_LIMIT}`);
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 2) throw new Error('Concurrency must be 1 or 2');
   if (!Number.isInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 30_000) throw new Error('Timeout must be 1–30000 ms');
@@ -262,8 +265,11 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
   const follow = async (initial, image = false) => {
     let current = checkedUrl(initial);
     const redirects = [];
+    const visited = new Set();
     for (;;) {
       if (!sameDeployment(current, baseUrl)) throw new Error(`Redirect or request outside the audited deployment: ${current.origin}`);
+      if (visited.has(current.href)) throw new Error(`Redirect loop detected at ${current.href}`);
+      visited.add(current.href);
       if (requestsMade >= limit) throw new BudgetExhausted('Request limit reached');
       requestsMade++;
       const response = await getResponse(current, { fetchImpl, timeoutMs, image });
@@ -281,6 +287,7 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
   const tasks = [
     { id: 'robots', path: '/robots.txt', type: 'robots' },
     { id: 'sitemap', path: '/sitemap.xml', type: 'sitemap' },
+    ...(!preview ? [{ id: 'www-normalization', path: 'https://www.freemy.ai/', type: 'redirect', target: '/' }] : []),
     { id: 'home-en', path: '/', type: 'page', canonical: '/', zh: '/zh/', en: '/' },
     { id: 'home-zh', path: '/zh/', type: 'page', canonical: '/zh/', zh: '/zh/', en: '/' },
     { id: 'en-alias', path: '/en?seo-audit=1', type: 'redirect', target: '/?seo-audit=1' },
@@ -292,7 +299,7 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
   ];
 
   async function check(task) {
-    const requestUrl = new URL(task.path, baseUrl);
+    const requestUrl = new URL(task.path, siteBase);
     const result = { id: task.id, type: task.type, url: requestUrl.href, status: 'pass', issues: [] };
     try {
       const response = await follow(requestUrl, task.type === 'image');
@@ -314,6 +321,7 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
       } else if (task.type === 'redirect') {
         const final = new URL(response.url);
         if (!response.redirects.length || response.redirects.some(item => ![301, 308].includes(item.status))) result.issues.push('Expected permanent redirects throughout the chain');
+        if (final.origin !== siteBase.origin) result.issues.push(`Expected final origin ${siteBase.origin}`);
         if (`${final.pathname}${final.search}` !== task.target) result.issues.push(`Expected final path and query ${task.target}`);
       } else if (task.type === 'robots') {
         const rules = robotsRules(response.text);
@@ -336,6 +344,8 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
         const meta = metadata(response.text);
         result.metadata = meta;
         const expectedCanonical = `${PRODUCTION}${task.canonical}`;
+        if (response.redirects.length) result.issues.push('Canonical page must return HTTP 200 directly without a redirect');
+        if (new URL(response.url).origin !== siteBase.origin) result.issues.push(`Expected final origin ${siteBase.origin}`);
         if (new URL(response.url).pathname !== task.canonical) result.issues.push(`Expected final page path: ${task.canonical}`);
         if (!/^text\/html(?:;|$)/i.test(response.headers.get('content-type') || '')) result.issues.push('Expected an HTML response');
         if (meta.canonical.length !== 1 || meta.canonical[0] !== expectedCanonical) result.issues.push(`Expected one canonical URL: ${expectedCanonical}`);
@@ -357,7 +367,7 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
             }
             // Preview pages name the production image in metadata; check the
             // corresponding asset on the preview rather than production.
-            const localImage = new URL(`${image.pathname}${image.search}`, baseUrl).href;
+            const localImage = new URL(`${image.pathname}${image.search}`, siteBase).href;
             const sources = images.get(localImage) || new Set();
             sources.add(meta.images[0]);
             images.set(localImage, sources);
@@ -377,7 +387,7 @@ export async function runAudit({ base = PRODUCTION, limit = DEFAULT_LIMIT, concu
   checks.push(...await mapLimit(imageTasks, concurrency, check));
   const summary = Object.fromEntries(['pass', 'fail', 'blocked', 'skipped'].map(status => [status, checks.filter(item => item.status === status).length]));
   const status = summary.fail ? 'fail' : summary.blocked ? 'blocked' : summary.skipped ? 'incomplete' : 'pass';
-  return { generatedAt: new Date().toISOString(), base: baseUrl.origin, environment: baseUrl.hostname.endsWith('.vercel.app') ? 'preview' : 'production', status, limit, requestsMade, concurrency, timeoutMs, summary, checks };
+  return { generatedAt: new Date().toISOString(), base: baseUrl.origin, environment: preview ? 'preview' : 'production', status, limit, requestsMade, concurrency, timeoutMs, summary, checks };
 }
 
 function parseArgs(args) {
@@ -392,10 +402,72 @@ function parseArgs(args) {
   return values;
 }
 
+function within(root, target) {
+  const relative = path.relative(root, target);
+  return relative === '' || (!relative.startsWith(`..${path.sep}`) && relative !== '..' && !path.isAbsolute(relative));
+}
+
+// Resolve the existing prefix and any dangling final symlink as the static
+// audit does, so a link cannot hide a destination inside the built site.
+async function resolvedPath(target, visited = new Set()) {
+  let current = path.resolve(target);
+  const missing = [];
+  for (;;) {
+    try { return path.resolve(await fs.realpath(current), ...missing.reverse()); }
+    catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+      try {
+        if ((await fs.lstat(current)).isSymbolicLink()) {
+          if (visited.has(current)) throw new Error('Cyclic report path link');
+          visited.add(current);
+          const link = await fs.readlink(current);
+          return resolvedPath(path.resolve(path.dirname(current), link, ...missing.reverse()), visited);
+        }
+      } catch (linkError) {
+        if (linkError.code !== 'ENOENT') throw linkError;
+      }
+      const parent = path.dirname(current);
+      if (parent === current) throw error;
+      missing.push(path.basename(current));
+      current = parent;
+    }
+  }
+}
+
+async function safeReportPaths(root) {
+  const realRoot = await fs.realpath(root);
+  const directory = path.resolve(root, 'reports', 'seo');
+  const file = path.join(directory, 'live-audit.json');
+  const expectedDirectory = path.join(realRoot, 'reports', 'seo');
+  const expectedFile = path.join(expectedDirectory, 'live-audit.json');
+  const site = await resolvedPath(path.join(root, 'dist'));
+  const realDirectory = await resolvedPath(directory);
+  const realFile = await resolvedPath(file);
+  if (within(site, realDirectory) || within(site, realFile) ||
+      path.relative(expectedDirectory, realDirectory) !== '' || path.relative(expectedFile, realFile) !== '') {
+    throw new Error('Audit report must remain in the report directory outside the built site');
+  }
+  try {
+    const existing = await fs.lstat(file);
+    if (existing.isSymbolicLink() || !existing.isFile() || existing.nlink > 1) throw new Error('Unsafe report file link');
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
+  return { directory, file };
+}
+
 export async function writeAuditReport(report, root = ROOT) {
-  const file = path.join(root, 'reports', 'seo', 'live-audit.json');
-  await fs.mkdir(path.dirname(file), { recursive: true });
-  await fs.writeFile(file, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
+  let { directory, file } = await safeReportPaths(root);
+  await fs.mkdir(directory, { recursive: true });
+  ({ directory, file } = await safeReportPaths(root));
+  const temporary = path.join(directory, `.live-audit-${randomUUID()}.tmp`);
+  try {
+    await fs.writeFile(temporary, `${JSON.stringify(report, null, 2)}\n`, { encoding: 'utf8', flag: 'wx' });
+    await safeReportPaths(root);
+    await fs.rename(temporary, file);
+  } finally {
+    await fs.unlink(temporary).catch(error => { if (error.code !== 'ENOENT') throw error; });
+  }
   return file;
 }
 
