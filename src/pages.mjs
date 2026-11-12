@@ -27,7 +27,7 @@ function access(w,lang){
   const n=lang==='zh'?0:1;return `${(login[w.access?.login]||login.unknown)[n]} / ${(pricing[w.access?.pricing]||pricing.unknown)[n]}`;
 }
 function devices(w,lang){
-  const values={tested_supported:['已测试','Tested'],reported_supported:['原站称支持','Creator reports support'],tested_unsupported:['测试不支持','Not supported in test'],unknown:['未知','Unknown']}, n=lang==='zh'?0:1;
+  const values={tested_supported:['已测试','Tested'],reported_supported:['原站称支持','Creator reports support'],reported_unsupported:['原站称不支持','Creator reports unsupported'],tested_unsupported:['测试不支持','Not supported in test'],unknown:['未知','Unknown']}, n=lang==='zh'?0:1;
   const desktop=(values[w.device_support?.desktop]||values.unknown)[n], mobile=(values[w.device_support?.mobile]||values.unknown)[n];
   return lang==='zh'?`桌面：${desktop}；手机：${mobile}`:`Desktop: ${desktop}; mobile: ${mobile}`;
 }

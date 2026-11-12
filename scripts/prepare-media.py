@@ -15,7 +15,8 @@ names = ['hydraulics', 'hearthlight', 'wave-tank', 'star-hop', 'harmonograph',
          'stave', 'bosphore-1819', 'cd-case', 'estheet',
          'plane-of-focus', 'genesis', 'koi-pond', 'earth-antenna',
          'orbital-elements', 'v8-engine', 'form-01', 'drone-lab',
-         'terrain-rover', 'robolabs', 'heart-and-blood']
+         'terrain-rover', 'robolabs', 'heart-and-blood',
+         'project-wednesday', 'blackhole-lab', 'roadster-explorer', 'wind-tide', 'spacex-vehicles']
 selected = sys.argv[1:] or names
 unknown = set(selected) - set(names)
 if unknown:

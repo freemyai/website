@@ -3956,5 +3956,409 @@
         "method": "independent_desktop_browser_capture"
       }
     }
+  },
+  {
+    "id": "project-wednesday",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "Project Wednesday",
+    "demo_url": "https://khandelwalkshitij.github.io/project-wednesday/",
+    "creator": {
+      "name": "Kshitij Khandelwal",
+      "profile_url": "https://kshitijkhandelwal.com/project-wednesday/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Project Wednesday：卫星轨道实验",
+        "summary": "设置卫星星座并运行轨道预报，在三维地球上回放轨迹。",
+        "action": "在 Trial 中选择 Walker constellation 示例，点击 Run simulation 查看卫星轨迹。",
+        "why": "从一组参数到多颗卫星的运动，把轨道预报变成可以探索的实验。",
+        "limit": "仅测试了 Walker 示例和三维回放；地图、曲线与手机体验未测。"
+      },
+      "en": {
+        "title": "Project Wednesday",
+        "summary": "Set up a satellite constellation, run an orbital simulation and replay it on a 3D globe.",
+        "action": "Choose the Walker constellation example under Trial and select Run simulation.",
+        "why": "Turn a set of orbital parameters into a constellation you can explore in motion.",
+        "limit": "Only the Walker example and 3D replay were tested; map, charts and mobile are unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/khandelwalkshitij/project-wednesday",
+      "description": {
+        "zh": "作者说明在 Claude Opus 5.5 的协助下制作了该项目。",
+        "en": "The creator says the project was made with help from Claude Opus 5.5."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面运行 12 颗卫星的 Walker 示例并观察三维回放；本机确认原站响应，手机未测。",
+      "note_en": "Grok ran the 12-satellite Walker example and observed its 3D replay in a desktop browser; the site responded locally, and mobile was not tested."
+    },
+    "slug": "project-wednesday",
+    "media": {
+      "poster": {
+        "src": "/media/project-wednesday-960.webp",
+        "base": "project-wednesday",
+        "width": 1280,
+        "height": 713
+      },
+      "provenance": {
+        "source_url": "https://khandelwalkshitij.github.io/project-wednesday/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.2
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "blackhole-lab",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "Black Hole Lensing Lab",
+    "demo_url": "https://blackhole.voxyz.ai/",
+    "creator": {
+      "name": "Vox",
+      "profile_url": "https://x.com/Voxyz_ai"
+    },
+    "locales": {
+      "zh": {
+        "title": "Black Hole Lensing Lab：引力透镜",
+        "summary": "在三维实验台上调整对齐方式，观察背景星系的光如何弯曲。",
+        "action": "等待实验台载入，在 Align 中选择 Ring，观察爱因斯坦环和光线路径。",
+        "why": "用可切换的视角和光线路径，把引力透镜呈现为直观的互动实验。",
+        "limit": "页面需要 WebGL 2；本轮使用预设对齐，未单独测试拖动和手机。"
+      },
+      "en": {
+        "title": "Black Hole Lensing Lab",
+        "summary": "Change the alignment on a 3D bench and watch light from a background galaxy bend.",
+        "action": "Wait for the bench to load, then choose Ring under Align to see the Einstein ring and light paths.",
+        "why": "Switchable views and visible light paths make gravitational lensing tangible.",
+        "limit": "The page requires WebGL 2; preset alignment was tested, but dragging and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/Voxyz_ai/status/2103117246860345550",
+      "description": {
+        "zh": "作者表示使用 Opus 5.5 制作并迭代了引力透镜实验。",
+        "en": "The creator says Opus 5.5 built and iterated on the gravitational-lensing lab."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.whatpeoplemade.com/i/a-black-hole-lab-that-shows-gravitational-lensing-as-you-345550.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面选择 Ring 预设并观察光路和环像；本机确认原站响应，拖动和手机未测。",
+      "note_en": "Grok selected the Ring preset and observed the light paths and ring in a desktop browser; the site responded locally. Dragging and mobile were not tested."
+    },
+    "slug": "blackhole-lab",
+    "media": {
+      "poster": {
+        "src": "/media/blackhole-lab-960.webp",
+        "base": "blackhole-lab",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://blackhole.voxyz.ai/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 1.8
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "roadster-explorer",
+    "type": "learning",
+    "primary_category": "engineering",
+    "subcategory": "engineering-manufacturing",
+    "title_original": "Roadster Build Explorer",
+    "demo_url": "https://roadster-build-explorer.pages.dev/",
+    "creator": {
+      "name": "Sebastian Bennis",
+      "profile_url": "https://x.com/sebastianbennis"
+    },
+    "locales": {
+      "zh": {
+        "title": "Roadster Build Explorer：汽车制造过程",
+        "summary": "沿三维步骤浏览一辆 Roadster 的制造想象，从原料走到车身与轮组。",
+        "action": "从左侧 Build sheet 选择不同阶段，例如 Wheels on，观察模型变化。",
+        "why": "材料、车身和装配被组织成一段可逐步探索的制造故事。",
+        "limit": "这是非官方教学可视化，部分细节为估算；飞行阶段测试时黑屏，手机未测。"
+      },
+      "en": {
+        "title": "Roadster Build Explorer",
+        "summary": "Explore an imagined Roadster build in 3D, from raw materials to body and wheels.",
+        "action": "Choose stages in the Build sheet, such as Wheels on, to see the model change.",
+        "why": "Materials, bodywork and assembly form a manufacturing story you can explore step by step.",
+        "limit": "This is an independent educational visualization with estimated details; the flight scene stayed black in testing, and mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/sebastianbennis/status/2118769036615926058",
+      "description": {
+        "zh": "作者表示使用 Claude Code 和 Claude Opus 5.5 制作该可视化。",
+        "en": "The creator says the visualization was built with Claude Code and Claude Opus 5.5."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://artifacthof.com/a/roadster-build-explorer"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面从原料阶段切换到 Wheels on；飞行阶段画面保持黑色。本机确认原站响应，手机未测。",
+      "note_en": "Grok switched from materials to Wheels on in a desktop browser; the flight-stage scene stayed black. The site responded locally, and mobile was not tested."
+    },
+    "slug": "roadster-explorer",
+    "media": {
+      "poster": {
+        "src": "/media/roadster-explorer-960.webp",
+        "base": "roadster-explorer",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://roadster-build-explorer.pages.dev/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.8
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "wind-tide",
+    "type": "worlds",
+    "primary_category": "engineering",
+    "subcategory": "engineering-industrial",
+    "title_original": "風與潮 Wind & Tide",
+    "demo_url": "https://m24927605.github.io/taiwan-wind-power/app/",
+    "creator": {
+      "name": "Michael Chen",
+      "profile_url": "https://x.com/Michael02049487"
+    },
+    "locales": {
+      "zh": {
+        "title": "風與潮：探索离岸风场",
+        "summary": "从台湾海峡全景飞向离岸风场，探索风机、海面与天气变化。",
+        "action": "等待数据载入，选择一座风场放大，再拖动时间轴观察画面和读数变化。",
+        "why": "三维地图、风机和时间轴把海上风电放进可以探索的场景。",
+        "limit": "依赖外部天气数据，读数可能为预报或缓存；风机剖面、声音和手机未测。"
+      },
+      "en": {
+        "title": "Wind & Tide",
+        "summary": "Fly from a Taiwan Strait overview to an offshore wind farm and explore wind, sea and weather.",
+        "action": "Wait for data to load, zoom to a wind farm and move the timeline to see the scene and readings change.",
+        "why": "A 3D map, turbines and timeline make offshore wind power explorable.",
+        "limit": "External weather data may be forecast or cached; turbine interiors, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5",
+        "Gemini TTS"
+      ],
+      "evidence_url": "https://x.com/Michael02049487/status/2112113627956412521",
+      "description": {
+        "zh": "作者表示用 Claude Code 和 Opus 5.5 制作互动场景，并使用 Gemini TTS 制作旁白。",
+        "en": "The creator says the interactive scene was built with Claude Code and Opus 5.5, with narration using Gemini TTS."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/m24927605/taiwan-wind-power"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面进入云能风场并拖动时间轴，观察画面和读数变化；本机确认原站响应，风机剖面和手机未测。",
+      "note_en": "Grok entered the Yunneng wind farm and moved the timeline in a desktop browser, observing the scene and readings change; the site responded locally. Turbine interiors and mobile were not tested."
+    },
+    "slug": "wind-tide",
+    "media": {
+      "poster": {
+        "src": "/media/wind-tide-960.webp",
+        "base": "wind-tide",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://m24927605.github.io/taiwan-wind-power/app/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en",
+        "zh-TW"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.0
+    },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "spacex-vehicles",
+    "type": "learning",
+    "primary_category": "engineering",
+    "subcategory": "engineering-transport",
+    "title_original": "SpaceX Vehicle Center",
+    "demo_url": "https://alvarodesigns34.github.io/spacex/",
+    "creator": {
+      "name": "alvarodesigns34",
+      "profile_url": "https://github.com/alvarodesigns34"
+    },
+    "locales": {
+      "zh": {
+        "title": "SpaceX Vehicle Center：航天器展馆",
+        "summary": "在三维展馆中浏览 Starship、Falcon 和 Dragon 等航天器模型。",
+        "action": "等待场景载入，选择 Starship，再点 33 Raptors 从底部查看发动机。",
+        "why": "通过尺度参照和可移动视角，探索大型航天器的外形。",
+        "limit": "原站提示不支持手机和平板，首次加载可能需要数分钟；数据面板未稳定打开。"
+      },
+      "en": {
+        "title": "SpaceX Vehicle Center",
+        "summary": "Explore 3D models of Starship, Falcon, Dragon and other vehicles in a virtual hall.",
+        "action": "Wait for the scene to load, select Starship and choose 33 Raptors to view the engines from below.",
+        "why": "Scale references and movable viewpoints make large spacecraft easier to explore.",
+        "limit": "The creator says phones and tablets are unsupported; first load can take minutes, and the data panel did not open reliably."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/alvarodesigns34/spacex/commit/afb98f9b747158060b65168c87add989fa033703",
+      "description": {
+        "zh": "项目仓库的提交记录显示 Claude Opus 5.5 参与开发。",
+        "en": "The project’s commit history credits Claude Opus 5.5 as a contributor."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/alvarodesigns34/spacex"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面选择 Starship 并进入 33 Raptors 视角；原站表示不支持手机和平板。本机确认原站响应。",
+      "note_en": "Grok selected Starship and the 33 Raptors view in a desktop browser; the original site reports no phone or tablet support. The site responded locally."
+    },
+    "slug": "spacex-vehicles",
+    "media": {
+      "poster": {
+        "src": "/media/spacex-vehicles-960.webp",
+        "base": "spacex-vehicles",
+        "width": 1280,
+        "height": 715
+      },
+      "provenance": {
+        "source_url": "https://alvarodesigns34.github.io/spacex/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_cropped"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "reported_unsupported"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 3.2
+    },
+    "added_at": "2026-11-12"
   }
 ]

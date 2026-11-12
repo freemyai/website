@@ -67,7 +67,7 @@ export function accessLabel(access = {}) {
 
 export function deviceLabel(devices = {}) {
   if ((!devices.desktop || devices.desktop === 'unknown') && (!devices.mobile || devices.mobile === 'unknown')) return '未知';
-  const names = { tested_supported:'已测试', reported_supported:'原站称支持', tested_unsupported:'测试不支持', unknown:'未知' };
+  const names = { tested_supported:'已测试', reported_supported:'原站称支持', reported_unsupported:'原站称不支持', tested_unsupported:'测试不支持', unknown:'未知' };
   return `桌面${names[devices.desktop] || '未知'} / 手机${names[devices.mobile] || '未知'}`;
 }
 

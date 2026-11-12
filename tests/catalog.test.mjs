@@ -42,6 +42,7 @@ test('work detail labels reflect known and unknown conditions', () => {
   assert.equal(accessLabel({ login: 'none', pricing: 'free' }), '无需登录 / 免费');
   assert.equal(accessLabel({ login: 'unknown', pricing: 'unknown' }), '未知 / 未知');
   assert.equal(deviceLabel({ desktop: 'tested_supported', mobile: 'unknown' }), '桌面已测试 / 手机未知');
+  assert.equal(deviceLabel({ desktop: 'tested_supported', mobile: 'reported_unsupported' }), '桌面已测试 / 手机原站称不支持');
 });
 
 test('AI gallery requires a real preview, bilingual descriptions, and evidence of AI creation', () => {
