@@ -4746,5 +4746,263 @@
       "featured_order": 2.25
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "huolong",
+    "slug": "huolong",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Huolong — Ink and Colour",
+    "demo_url": "https://madebysourasith-sudo.github.io/huolong-dragon/",
+    "creator": {
+      "name": "Sourasith",
+      "profile_url": "https://x.com/titepommee"
+    },
+    "locales": {
+      "zh": {
+        "title": "Huolong：火龙吟",
+        "summary": "引导三维火龙走过书法诗句，让墨迹晕成水彩；按住画面让它喷火，烧穿纸面。",
+        "action": "移动鼠标引导火龙走过墨字，再在画面上按住鼠标喷火。",
+        "why": "龙的行走、彩墨与烧痕让水彩纸上的诗句变成一幅可互动的画面。",
+        "limit": "仅测试桌面浏览器，画面需要 WebGL，云端操作曾有些卡顿。声音、手机及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "Huolong — Ink and Colour",
+        "summary": "Guide a 3D dragon across a brush-ink poem to bloom it into watercolour; hold to make it breathe fire and burn the paper.",
+        "action": "Move the pointer to guide the dragon over the ink, then hold the mouse button to breathe fire.",
+        "why": "A dragon, spreading colour and burn marks turn a poem on watercolour paper into an interactive scene.",
+        "limit": "Tested on desktop only. The scene needs WebGL and pointer movement was slow in the cloud browser. Sound, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude Code"],
+      "evidence_url": "https://github.com/madebysourasith-sudo/huolong-dragon",
+      "description": {
+        "zh": "作者在作品仓库中表示与 Claude Code 一起制作了 Huolong。",
+        "en": "The creator says Huolong was made with Claude Code in the project's repository."
+      }
+    },
+    "sources": [
+      { "url": "https://x.com/titepommee/status/2118342724076392845" }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 与独立复核均在桌面浏览器引导火龙移动并看到墨迹着色；Grok 的截图可见烧穿的纸面。声音和手机未测。",
+      "note_en": "Grok and an independent desktop check guided the dragon over the poem and saw colour appear; Grok's capture shows a burn hole. Sound and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/huolong-960.webp",
+        "base": "huolong",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://madebysourasith-sudo.github.io/huolong-dragon/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": { "login": "none", "pricing": "unknown", "language_codes": ["zh-CN", "en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.26 },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "regolith",
+    "slug": "regolith",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "REGOLITH — The Silence at Anaxagoras",
+    "demo_url": "https://winchxyz.github.io/moon-rover/",
+    "creator": {
+      "name": "winch",
+      "profile_url": "https://x.com/winchxyz"
+    },
+    "locales": {
+      "zh": {
+        "title": "REGOLITH：月面巡视车",
+        "summary": "在游戏设定中的阿纳克萨戈拉斯月面驾驶六轮巡视车，展开太阳翼并用模拟雷达扫描地面。",
+        "action": "点击 BEGIN DESCENT 和 ACKNOWLEDGE，按 T 展开太阳翼、按 G 扫描；聚焦窗口后按住 W 行驶。",
+        "why": "任务、仪表与地形把一场虚构的月面探索变成可以驾驶的旅程。",
+        "limit": "场景与雷达读数是游戏模拟，并非对实际月面地理和探测数据的复刻。仅测试桌面首项任务的一部分；手机、声音及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "REGOLITH — The Silence at Anaxagoras",
+        "summary": "Drive a six-wheel rover through the game's lunar setting, deploy the solar array and scan the ground with simulated radar.",
+        "action": "Choose BEGIN DESCENT and ACKNOWLEDGE, press T to deploy the array and G to scan, then focus the window and hold W to drive.",
+        "why": "Missions, instruments and terrain turn a fictional lunar survey into a journey you can drive.",
+        "limit": "The landscape and radar readings are game simulations, not a reproduction of actual lunar geography or survey data. Only part of the first mission was tested on desktop; mobile, sound and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude Code", "Claude Opus 5"],
+      "evidence_url": "https://www.reddit.com/r/ClaudeCode/comments/1vlw3r1/i_created_a_3d_lunar_rover_survey_game_with_opus_5/",
+      "description": {
+        "zh": "作者表示游戏最初来自使用 Opus 5 的 Claude Code 提示，之后经过多轮修正。",
+        "en": "The creator says the game began with a Claude Code prompt using Opus 5, followed by rounds of fixes."
+      }
+    },
+    "sources": [
+      { "url": "https://github.com/winchxyz/moon-rover" }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面驾驶巡视车，并完成展开太阳翼和雷达扫描两项；独立桌面复核重现了这两项，但未完成驶离 120 米的目标。",
+      "note_en": "Grok drove the rover and completed the solar-array and radar steps on a cloud desktop. An independent desktop check reproduced those two steps, but did not complete the 120-metre objective."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/regolith-960.webp",
+        "base": "regolith",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://winchxyz.github.io/moon-rover/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": { "login": "none", "pricing": "unknown", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.27 },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "fall-line",
+    "slug": "fall-line",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "FALL LINE",
+    "demo_url": "https://nipale-ai.github.io/opus-5-5-overnight-builds/fall-line/",
+    "creator": {
+      "name": "Niklas Lenz",
+      "profile_url": "https://github.com/Nipale-ai"
+    },
+    "locales": {
+      "zh": {
+        "title": "FALL LINE：维罗山自由滑行",
+        "summary": "在雪山上接管自动演示中的单板选手，转向、腾空并尝试翻转和旋转。",
+        "action": "按任意键接管演示；离地时用 W / S 翻转、A / D 旋转。",
+        "why": "开阔的雪山和实时变化的速度、空中时间与得分，让每条下山路线都有不同体验。",
+        "limit": "仅测试桌面单板体验，云端测试帧率偏低，流畅度取决于设备。声音、手机及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "FALL LINE",
+        "summary": "Take over the demo snowboarder on a mountain, steer into the air and try flips and spins.",
+        "action": "Press any key to take over the demo; while airborne, use W / S to flip and A / D to spin.",
+        "why": "An open mountain and changing speed, air time and scores make each route down feel different.",
+        "limit": "Only the desktop snowboard experience was tested. The cloud browser ran at a low frame rate, and performance depends on the device. Sound, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude Code", "Claude Opus 5.5"],
+      "evidence_url": "https://github.com/Nipale-ai/opus-5-5-overnight-builds",
+      "description": {
+        "zh": "作者表示 FALL LINE 是由 Claude Opus 5.5 在 Claude Code 中根据一份任务说明完成的。",
+        "en": "The creator says FALL LINE was built by Claude Opus 5.5 in Claude Code from a detailed brief."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面接管演示并完成空中动作，截图显示悬崖落下的得分；独立桌面复核重现了接管演示。手机和声音未测。",
+      "note_en": "Grok took over the demo and performed aerial moves on a cloud desktop; the capture shows a cliff-drop score. An independent desktop check reproduced taking over the demo. Mobile and sound were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/fall-line-960.webp",
+        "base": "fall-line",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://nipale-ai.github.io/opus-5-5-overnight-builds/fall-line/",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": { "login": "none", "pricing": "unknown", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.28 },
+    "added_at": "2026-11-12"
+  },
+  {
+    "id": "glasswood",
+    "slug": "glasswood",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Glasswood",
+    "demo_url": "https://superlative-selkie-28ad54.netlify.app/glasswood",
+    "creator": {
+      "name": "Dad Who Builds",
+      "profile_url": "https://x.com/DadWhoBuilds"
+    },
+    "locales": {
+      "zh": {
+        "title": "Glasswood：呼吸的玻璃森林",
+        "summary": "按住画面与玻璃树一起吸气，松开后让一波光穿过树林。",
+        "action": "在树林画面上按住鼠标并尽量保持静止，再松开，观察玻璃树的光波。",
+        "why": "呼吸节奏、玻璃树与流动的光共同构成一片可以互动的森林。",
+        "limit": "呼吸效果由按住和松开手动触发；云端桌面操作曾较慢。声音、手机及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "Glasswood",
+        "summary": "Press and hold to cue an inhale with a forest of glass trees, then release a wave of light.",
+        "action": "Hold the mouse still on the forest, then release and watch light travel through the trees.",
+        "why": "A breathing rhythm, glass trees and moving light create an interactive forest.",
+        "limit": "Breathing is triggered manually by holding and releasing; interaction was slow in the cloud desktop browser. Sound, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude Opus 5.5"],
+      "evidence_url": "https://x.com/DadWhoBuilds/status/2120720293417431310",
+      "description": {
+        "zh": "作者表示用 Claude Opus 5.5 通过一次提示制作了 Glasswood。",
+        "en": "The creator says Glasswood was made with Claude Opus 5.5 from a single prompt."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-12",
+      "note": "Grok 在云端桌面按住并松开画面，观察到光波；独立桌面复核确认按住和松开时呼吸提示变化。声音和手机未测。",
+      "note_en": "Grok held and released the scene on a cloud desktop and observed a light wave. An independent desktop check confirmed the breathing prompt changed on hold and release. Sound and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/glasswood-960.webp",
+        "base": "glasswood",
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://superlative-selkie-28ad54.netlify.app/glasswood",
+        "captured_at": "2026-11-12",
+        "method": "grok_desktop_browser_capture_padded"
+      }
+    },
+    "access": { "login": "none", "pricing": "unknown", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.29 },
+    "added_at": "2026-11-12"
   }
 ]

@@ -24,7 +24,9 @@
       "type-sound",
       "modfont",
       "mpump",
-      "stave"
+      "stave",
+      "huolong",
+      "glasswood"
     ],
     "cover": "rosette"
   },
@@ -102,7 +104,9 @@
       "lili-last-door",
       "afterlight",
       "felt-world",
-      "null-range"
+      "null-range",
+      "regolith",
+      "fall-line"
     ],
     "cover": "hyperbrick"
   },
@@ -145,7 +149,9 @@
       "sakura-river-valley",
       "estheet",
       "koi-pond",
-      "wind-tide"
+      "wind-tide",
+      "glasswood",
+      "fall-line"
     ],
     "cover": "hearthlight"
   },
@@ -284,7 +290,8 @@
       "bosphore-1819",
       "galerie-nocturne",
       "wrong-physics",
-      "genesis"
+      "genesis",
+      "huolong"
     ],
     "cover": "estheet"
   },
@@ -381,7 +388,8 @@
       "orbital-elements",
       "blackhole-lab",
       "earth-antenna",
-      "spacex-vehicles"
+      "spacex-vehicles",
+      "regolith"
     ],
     "cover": "blackhole-lab"
   }
