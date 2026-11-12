@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { escapeHtml as e } from './catalog.mjs';
 import { messages, topicNames } from './i18n.mjs';
-import { siteUrl, CUSTOM_EVENTS_ENABLED } from './site-config.mjs';
+import { siteUrl, CUSTOM_EVENTS_ENABLED, IMPRESSIONS_ENABLED } from './site-config.mjs';
 import { buildStructuredData, serializeJsonLd } from './structured-data.mjs';
 
 const assets = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../assets');
@@ -60,7 +60,7 @@ export function buildSeo(page, manifest, catalog) {
     if(zh) alternates['zh-Hans']=siteUrl(zh.path);
     if(en) { alternates.en=siteUrl(en.path); alternates['x-default']=siteUrl(en.path); }
   }
-  return {...content,canonical,alternates,robots:page.indexable?null:'noindex,follow',pageType:page.kind,analyticsEnabled:CUSTOM_EVENTS_ENABLED,og:{image:shareImage(page,catalog),locale:page.locale==='zh'?'zh_CN':'en_US',alternateLocale:page.locale==='zh'?'en_US':'zh_CN'},jsonLd:buildStructuredData(page,manifest,catalog).map(serializeJsonLd)};
+  return {...content,canonical,alternates,robots:page.indexable?null:'noindex,follow',pageType:page.kind,analyticsEnabled:CUSTOM_EVENTS_ENABLED,impressionsEnabled:IMPRESSIONS_ENABLED,og:{image:shareImage(page,catalog),locale:page.locale==='zh'?'zh_CN':'en_US',alternateLocale:page.locale==='zh'?'en_US':'zh_CN'},jsonLd:buildStructuredData(page,manifest,catalog).map(serializeJsonLd)};
 }
 
 export function renderSeoHead(meta) {

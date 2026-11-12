@@ -137,7 +137,18 @@ try{
   await measured.goto('https://freemy.ai/en/works/hydraulics/',{waitUntil:'domcontentloaded'});
   await measured.locator('.related-section h3 a').first().evaluate(el=>{el.addEventListener('click',event=>event.preventDefault(),{once:true});el.click();});
   events=await measured.evaluate(()=>window.__freemyTestEvents);
-  assert.deepEqual(events.map(event=>event.name),['related_click']);
+  assert.deepEqual(events.map(event=>event.name),['work_view','related_click']);
+  assert.deepEqual(events[0].data,{work_id:'hydraulics',placement:'en:work:detail'});
+  await measured.goto('https://freemy.ai/works/hydraulics/?freemy_analytics=qa',{waitUntil:'domcontentloaded'});
+  events=await measured.evaluate(()=>window.__freemyTestEvents);
+  assert.deepEqual(events[0].data,{work_id:'hydraulics',placement:'qa:zh:work:detail'});
+  assert.equal(await measured.evaluate(()=>window.__freemyBeforeSend({type:'pageview',url:location.href})),null,'QA page views are excluded');
+  assert.equal(await measured.evaluate(()=>window.__freemySpeedBeforeSend({url:location.href})),null,'QA speed metrics are excluded');
+  assert.ok(await measured.evaluate(()=>window.__freemyBeforeSend({type:'event',url:location.href,payload:{data:{placement:'qa:zh:work:detail'}}})),'tagged QA events can be verified separately');
+  assert.equal(await measured.evaluate(()=>window.__freemyBeforeSend({type:'event',url:location.href,payload:{data:{placement:'zh:work:detail'}}})),null,'QA events must carry a QA marker');
+  await measured.goto('https://freemy.ai/en/works/hydraulics/?freemy_analytics=off',{waitUntil:'domcontentloaded'});
+  assert.deepEqual(await measured.evaluate(()=>window.__freemyTestEvents),[],'internal off mode sends no work events');
+  assert.equal(await measured.evaluate(()=>window.__freemyBeforeSend({type:'pageview',url:location.href})),null);
   await measured.close();await page.close();
   console.log(`Browser checks passed; screenshots saved to ${out}`);
 }finally{await browser.close();}

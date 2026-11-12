@@ -2,6 +2,8 @@ export const SITE_ORIGIN = 'https://freemy.ai';
 
 // Opt in only after confirming the team's analytics plan supports custom events.
 export const CUSTOM_EVENTS_ENABLED = process.env.VERCEL_ENV === 'production' && process.env.FREEMY_CUSTOM_EVENTS === '1';
+// Impressions can be high-volume and are a separately controlled opt-in.
+export const IMPRESSIONS_ENABLED = CUSTOM_EVENTS_ENABLED && process.env.FREEMY_IMPRESSIONS === '1';
 
 export function siteUrl(path) {
   let valid=typeof path==='string'&&path.startsWith('/')&&!path.startsWith('//')&&!/[?#\\]/.test(path);
