@@ -32,6 +32,12 @@ node scripts/check-seo-live.mjs --base https://YOUR-PREVIEW.vercel.app --limit 2
 
 生产部署生效后，在生产地址重新运行并保存报告；确认 `pass`，或逐项解释并处理 `fail`、`blocked` 与 `incomplete`。其中 `/en` 和 `/en/` 的永久跳转、英文作品保留完整路径、查询参数及真实 404 必须以实际部署的响应为准。
 
+## 回滚准备
+
+这次 SEO 优化合入前，已上线的作品版本是 `9c5db5e00cf90f04fac8d14530cbd5bca882af78`，包含 Huolong、REGOLITH、FALL LINE 和 Glasswood。若上线后需要紧急恢复，可在 Vercel 部署记录中核对该提交对应的成功生产部署，再由有权限的人选择回滚或重新发布；随后检查正式域名、作品和跳转。回滚到旧部署会暂时失去该部署之后新增的内容，因此操作前应核对是否有需要保留的新作品。
+
+Vercel 回滚不会自动撤销 GitHub 中的 SEO 代码，后续 Git 推送仍可能触发新部署。若要持久撤销，应针对实际合入的 SEO 提交创建撤销提交，保留作品提交及其后的有效修改；先审阅差异并重新测试，再以普通方式推送，不使用强推或重置他人的历史。
+
 脚本只请求 HTTPS，不会验证未加密 HTTP 的跳转。上线后还需单独检查 `http://freemy.ai/` 和 `http://www.freemy.ai/` 的实际响应与后续跳转，确认最终通过永久重定向到达 HTTPS 主域名，并且没有循环。例如可分别查看第一跳：
 
 ```sh
