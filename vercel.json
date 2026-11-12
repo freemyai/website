@@ -3,6 +3,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install --ignore-scripts",
+  "functions": { "api/insights.mjs": { "includeFiles": "data/*.json" } },
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
