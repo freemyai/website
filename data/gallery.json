@@ -5072,5 +5072,134 @@
     "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
     "editorial": { "status": "published", "featured_order": 2.29 },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "haldane-4",
+    "slug": "haldane-4",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "HALDANE-4",
+    "demo_url": "https://haldane4.denisbondare.com/",
+    "creator": {
+      "name": "Denis Bondarev",
+      "profile_url": "https://github.com/denisbondare"
+    },
+    "locales": {
+      "zh": {
+        "title": "HALDANE-4：冰架下的潜航",
+        "summary": "驾驶字符画潜水器深入南极冰架下的黑暗海域，留意深度与压力。",
+        "action": "在桌面浏览器点击初始化终端，按提示推进简报，再按住 S 下潜；空格键切换灯光。",
+        "why": "复古终端、不断变化的深度读数和黑暗海底，为这段下潜营造出紧张的探索氛围。",
+        "limit": "作品含恐怖氛围，作者建议在桌面使用耳机。本次未听测声音，也未测试手机、完整结局或中国大陆网络。"
+      },
+      "en": {
+        "title": "HALDANE-4: Descent Beneath the Ice",
+        "summary": "Pilot an ASCII submersible into the dark waters beneath an Antarctic ice shelf, watching depth and pressure.",
+        "action": "On a desktop browser, click to initialize the terminal, advance through the briefing, then hold S to descend. Space toggles the light.",
+        "why": "A retro terminal, changing depth readouts and a dark seabed create a tense underwater exploration.",
+        "limit": "The game has a horror atmosphere; its creator recommends desktop and headphones. Audio, mobile, the full ending and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Cursor", "Claude Code"],
+      "evidence_url": "https://github.com/denisbondare/haldane-4",
+      "description": {
+        "zh": "作者在公开代码仓库中表示，这款游戏使用 Cursor 和 Claude Code 辅助编写。",
+        "en": "The creator describes the game in its public repository as built with Cursor and Claude Code."
+      }
+    },
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-15",
+      "note": "Grok 与独立桌面复核均进入潜航；独立复核按住 S 后，深度由 17 米增加至 59 米。声音和手机未测。",
+      "note_en": "Grok and an independent desktop check both entered the dive. In the independent check, holding S increased depth from 17 to 59 meters. Audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/haldane-4-960.webp",
+        "base": "haldane-4",
+        "alt": {"zh": "黑色终端中的字符画潜水器下潜，顶部显示深度与压力。", "en": "An ASCII submersible descends in a dark terminal, with depth and pressure readouts above."},
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://haldane4.denisbondare.com/",
+        "captured_at": "2026-11-15",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": { "login": "none", "pricing": "free", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.291 },
+    "added_at": "2026-11-15"
+  },
+  {
+    "id": "full-send",
+    "slug": "full-send",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "FULL SEND",
+    "demo_url": "https://fullsend.game/?play=true",
+    "creator": {
+      "name": "SULFUR CUBED, DIGIT LIFT & DVASSALLO",
+      "profile_url": "https://fullsend.game/"
+    },
+    "locales": {
+      "zh": {
+        "title": "FULL SEND：俯视赛车计时赛",
+        "summary": "俯视赛道驾驶赛车，练习转弯并挑战更快的单圈时间。",
+        "action": "进入赛道后按方向键上加速、左右转向，空格刹车；按 Esc 可打开菜单。",
+        "why": "小地图、速度与单圈计时一起呈现赛车状态，让你边驾驶边寻找更好的路线。",
+        "limit": "仅测试桌面单人计时赛的起步、加速和转向；完整赛道、多人模式、声音、手机及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "FULL SEND: Top-Down Time Trial",
+        "summary": "Drive a top-down racing circuit, practice your turns and chase a faster lap.",
+        "action": "On the track, press Up to accelerate, Left or Right to steer, and Space to brake. Esc opens the menu.",
+        "why": "A mini-map, speed display and lap timer make it easy to follow the car as you look for a better racing line.",
+        "limit": "Only the start, acceleration and steering in a desktop solo time trial were tested. A full lap, multiplayer, audio, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://levels.io/vibe-jam-2026-winners-quality",
+      "description": {
+        "zh": "赛事主办方将 FULL SEND 列为 Vibe Jam 2026 获奖作品；赛事规则要求至少 90% 的代码由 AI 编写，不能据此确定后续版本的 AI 参与比例。",
+        "en": "The organizer lists FULL SEND among the Vibe Jam 2026 winners. The rules required at least 90% AI-written code; the AI share of later updates is not established."
+      }
+    },
+    "sources": [{"url": "https://vibejam.com/"}],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-15",
+      "note": "Grok 与独立桌面复核均进入墨尔本赛道并测试加速、转向；独立复核观察到速度和计时变化。完整单圈与多人模式未测。",
+      "note_en": "Grok and an independent desktop check both entered the Melbourne circuit and tested acceleration and steering; the independent check observed speed and timer changes. A full lap and multiplayer were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/full-send-960.webp",
+        "base": "full-send",
+        "alt": {"zh": "俯视画面中的红色赛车停在弯曲的赛道上，旁边显示小地图与计时。", "en": "A red car on a winding track seen from above, alongside a mini-map and timer."},
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://fullsend.game/?play=true",
+        "captured_at": "2026-11-15",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": { "login": "none", "pricing": "free", "language_codes": ["en", "zh"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.292 },
+    "added_at": "2026-11-15"
   }
 ]

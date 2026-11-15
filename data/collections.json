@@ -56,7 +56,9 @@
         "felt-world": "在针毡风格世界里探索；已观察到进入场景并开车。",
         "null-range": "在多人共享星区驾驶飞船并使用声呐；完整对战尚未核验。",
         "regolith": "驾驶月面巡视车、展开太阳翼并扫描地面；仅核验了首项任务的一部分。",
-        "fall-line": "接管单板选手，在雪山滑行并尝试空中动作；云端测试帧率偏低。"
+        "fall-line": "接管单板选手，在雪山滑行并尝试空中动作；云端测试帧率偏低。",
+        "haldane-4": "驾驶字符画潜水器深入冰架下的黑暗海域；作品带有恐怖氛围。",
+        "full-send": "驾驶俯视赛车练习转向和计时；完整单圈及多人模式未测。"
       }
     },
     "en": {
@@ -83,7 +85,9 @@
         "felt-world": "Explore a felt-like world; entering the scene and driving have been observed.",
         "null-range": "Pilot a ship and use sonar in a shared multiplayer sector; full combat has not been verified.",
         "regolith": "Drive a lunar rover, deploy its solar array and scan the ground; only part of the first mission was checked.",
-        "fall-line": "Take over a snowboarder and try aerial moves on a mountain; the cloud test ran at a low frame rate."
+        "fall-line": "Take over a snowboarder and try aerial moves on a mountain; the cloud test ran at a low frame rate.",
+        "haldane-4": "Pilot an ASCII submersible beneath the ice; the game has a horror atmosphere.",
+        "full-send": "Steer a top-down race car in a time trial; a full lap and multiplayer were not tested."
       }
     },
     "seo": {
@@ -110,7 +114,9 @@
       "felt-world",
       "null-range",
       "regolith",
-      "fall-line"
+      "fall-line",
+      "haldane-4",
+      "full-send"
     ],
     "cover": "hyperbrick"
   },
