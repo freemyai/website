@@ -5201,5 +5201,70 @@
     "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
     "editorial": { "status": "published", "featured_order": 2.292 },
     "added_at": "2026-11-15"
+  },
+  {
+    "id": "wawa-school-of-magic",
+    "slug": "wawa-school-of-magic",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Wawa School of Magic",
+    "demo_url": "https://magic-school.wawasensei.dev/",
+    "creator": {
+      "name": "Wawa Sensei",
+      "profile_url": "https://github.com/wass08"
+    },
+    "locales": {
+      "zh": {
+        "title": "Wawa 魔法学校：生成你的城堡",
+        "summary": "设定随机种子，让花园、塔楼和走廊组合成一座立体魔法学校。",
+        "action": "在 Generate 模式关闭 Watch it collapse，再点击 Random，生成另一座城堡。",
+        "why": "作品使用波函数坍缩算法组合建筑模块，更换种子可以探索不同的布局。",
+        "limit": "桌面测试中首次生成较慢；Grok 的云端浏览器因缺少 WebGPU 或 WebGL 2 无法渲染。手机、声音及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "Wawa School of Magic",
+        "summary": "Set a random seed and watch gardens, towers and halls form a 3D school of magic.",
+        "action": "In Generate mode, turn off Watch it collapse, then select Random to create another castle.",
+        "why": "Wave function collapse combines architectural modules; changing the seed produces a different layout.",
+        "limit": "The initial generation was slow in desktop testing; Grok's cloud browser could not render without WebGPU or WebGL 2. Mobile, audio and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": ["Claude Opus 5.5"],
+      "evidence_url": "https://github.com/wass08/wfc-magic-school/commit/21b15de2ad7e266f6ccc20bcff0c7f3a67bd7b23",
+      "description": {
+        "zh": "作者的公开代码提交将 Claude Opus 5.5 列为共同作者；城堡布局由波函数坍缩算法生成。",
+        "en": "The creator's public code commit lists Claude Opus 5.5 as a co-author; castle layouts are generated with wave function collapse."
+      }
+    },
+    "sources": [{"url": "https://x.com/wawasensei/status/2121997847524766051"}],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "独立桌面浏览器实测生成城堡，关闭逐步演示后将随机种子从 7 改为 77893，页面显示新的生成结果；Grok 的云端环境无法启动图形渲染。手机和声音未测。",
+      "note_en": "An independent desktop browser generated a castle; after disabling the step-by-step animation, a random seed change from 7 to 77893 produced a new result. Grok's cloud environment could not start graphics rendering. Mobile and audio were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/wawa-school-of-magic-960.webp",
+        "base": "wawa-school-of-magic",
+        "alt": {"zh": "紫色夜空下的立体魔法城堡，左侧是生成参数。", "en": "A 3D magic castle beneath a purple sky, with generation settings on the left."},
+        "width": 1280,
+        "height": 800
+      },
+      "provenance": {
+        "source_url": "https://magic-school.wawasensei.dev/",
+        "captured_at": "2026-11-16",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": { "login": "none", "pricing": "free", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.293 },
+    "added_at": "2026-11-16"
   }
 ]
