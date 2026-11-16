@@ -27,7 +27,8 @@
       "stave",
       "huolong",
       "glasswood",
-      "wawa-school-of-magic"
+      "wawa-school-of-magic",
+      "bezier-type"
     ],
     "cover": "rosette"
   },
@@ -235,7 +236,9 @@
       "project-wednesday",
       "blackhole-lab",
       "quantum-eraser",
-      "svt-3d"
+      "svt-3d",
+      "inference-lab",
+      "argon-junior"
     ],
     "cover": "learn-arduino"
   },
@@ -259,7 +262,9 @@
         "soft-machine": "合成器提供琴键、旋钮和步进音序器；完整交互尚未核验。",
         "pulse": "生成音乐与动态视觉组合；画面包含闪动效果。",
         "luminote": "钢琴键盘与下落光条将旋律呈现为画面。",
-        "stave": "把字母排在琴弦上并尝试播放；音频尚未实际听测。"
+        "stave": "把字母排在琴弦上并尝试播放；音频尚未实际听测。",
+        "argon-junior": "通过波形、滤波与预设探索合成器；音频尚未听测。",
+        "contrib-suite": "把贡献方格变成音乐；播放状态已检查，音频尚未听测。"
       }
     },
     "en": {
@@ -280,7 +285,9 @@
         "soft-machine": "A synthesizer with keys, knobs and a step sequencer; its full interaction has not been verified.",
         "pulse": "Generative music is paired with animated visuals that include flashing effects.",
         "luminote": "A piano keyboard and falling lights turn melodies into a visual display.",
-        "stave": "Arrange letters across strings and try playback; audio has not been audibly verified."
+        "stave": "Arrange letters across strings and try playback; audio has not been audibly verified.",
+        "argon-junior": "Explore waveform, filter and preset controls; audio has not been audibly verified.",
+        "contrib-suite": "Turn a contribution grid into music; playback state was checked, but audio has not been audibly verified."
       }
     },
     "seo": {
@@ -301,7 +308,9 @@
       "soft-machine",
       "pulse",
       "luminote",
-      "stave"
+      "stave",
+      "argon-junior",
+      "contrib-suite"
     ],
     "cover": "mpump"
   },

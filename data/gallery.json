@@ -5619,5 +5619,343 @@
       "featured_order": 2.294
     },
     "added_at": "2026-11-17"
+  },
+  {
+    "id": "inference-lab",
+    "slug": "inference-lab",
+    "type": "learning",
+    "primary_category": "computing",
+    "subcategory": "computing-language-models",
+    "title_original": "Inference Lab · 推理与发现",
+    "demo_url": "https://sglang-learning.vercel.app/",
+    "creator": {
+      "name": "Yi-Yi",
+      "profile_url": "https://x.com/yiyibuilds"
+    },
+    "locales": {
+      "zh": {
+        "title": "Inference Lab：推理与发现",
+        "summary": "跟随互动课程，拆解一句话如何经过分词、模型计算并得到续写。",
+        "action": "选择中文或 English，点击“跟着例子试一次”，在实验区域让请求前进一步。",
+        "why": "课程把流程图、示例和同步高亮的伪代码放在一起，方便观察推理过程。",
+        "limit": "实验使用示意数据而非真实模型输出。访客可读课程；保存进度和使用 AI 助手需要填写邮箱。仅测试第一课部分交互，手机与 AI 助手未测。"
+      },
+      "en": {
+        "title": "Inference Lab",
+        "summary": "Follow an interactive lesson from text input through tokenization and model continuation.",
+        "action": "Choose 中文 or English, select “Try the example,” then advance the request in the lab.",
+        "why": "A flow diagram, a worked example and synchronized pseudocode make inference steps visible.",
+        "limit": "The lab uses illustrative data rather than real model output. Lessons are accessible as a guest; saving progress and using the AI tutor require an email address. Only part of the first lesson was tested; mobile and the AI tutor were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Teachable Figures",
+        "Teachable Code"
+      ],
+      "evidence_url": "https://x.com/yiyibuilds/status/2122121968837423373",
+      "description": {
+        "zh": "作者称使用 Teachable Figures 和 Teachable Code 两项技能制作，并将前者描述为面向 AI 智能体的互动课程技能。",
+        "en": "The creator says the site was made with the Teachable Figures and Teachable Code skills, and describes the former as a skill for AI agents."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/yiyibuilds/status/2116289366784168399"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 切换英文并进入第一课，在交互实验中点击推进请求，界面切至 Tokenize 并高亮相应伪代码；其他课程、AI 助手和手机未测。",
+      "note_en": "Local desktop Chrome switched to English, opened the first lesson and advanced the request to Tokenize, highlighting the corresponding pseudocode. Other lessons, the AI tutor and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/inference-lab-960.webp",
+        "base": "inference-lab",
+        "alt": {
+          "zh": "推理课程展示请求流程、分词状态和高亮的伪代码。",
+          "en": "An inference lesson shows a request flow, the tokenization step and highlighted pseudocode."
+        },
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://sglang-learning.vercel.app/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "optional",
+      "pricing": "unknown",
+      "language_codes": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.281
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "bezier-type",
+    "slug": "bezier-type",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-design",
+    "title_original": "Bezier Type",
+    "demo_url": "https://type-renderer.ai.studio/",
+    "creator": {
+      "name": "Soumya",
+      "profile_url": "https://x.com/soumyadesign"
+    },
+    "locales": {
+      "zh": {
+        "title": "Bezier Type：字形与曲线工作室",
+        "summary": "在现有字体上探索字形，并查看对应的贝塞尔曲线节点。",
+        "action": "在字母矩阵中选择 B，观察画布中的字形和节点随之变化。",
+        "why": "笔刷画布与矢量节点并排显示，适合观察字体轮廓和装饰笔画。",
+        "limit": "仅测试桌面字母切换；绘制、导出与手机体验未完整核验。使用导出字形时请留意所选字体的许可。"
+      },
+      "en": {
+        "title": "Bezier Type",
+        "summary": "Explore letterforms and inspect their Bézier curve nodes side by side.",
+        "action": "Select B in the letter grid and watch the glyph and node view update.",
+        "why": "A brush canvas and vector-node view sit together for exploring type outlines and flourishes.",
+        "limit": "Only letter switching was tested on desktop; drawing, export and mobile were not fully checked. Check the selected font’s license when using exported outlines."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Argon",
+        "Antigravity",
+        "AI Studio"
+      ],
+      "evidence_url": "https://x.com/soumyadesign/status/2114573028025913411",
+      "description": {
+        "zh": "作者在发布帖中称使用 Argon、Antigravity 和 AI Studio 制作。",
+        "en": "The creator says the tool was made with Argon, Antigravity and AI Studio."
+      }
+    },
+    "sources": [],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 点击字母 B，左右画布从 A 切换为 B，节点面板更新为 26 个节点；未测试导出、完整绘制或手机。",
+      "note_en": "In local desktop Chrome, selecting B changed both canvases from A to B and updated the panel to 26 nodes. Export, complete drawing and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/bezier-type-960.webp",
+        "base": "bezier-type",
+        "alt": {
+          "zh": "字体编辑器左右分别显示字母 B 和对应的曲线节点。",
+          "en": "A type editor displays the letter B beside its curve nodes."
+        },
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://type-renderer.ai.studio/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.282
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "argon-junior",
+    "slug": "argon-junior",
+    "type": "learning",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "ARGON JUNIOR // How Synthesizers Work!",
+    "demo_url": "https://argonsynth.si/junior/",
+    "creator": {
+      "name": "Alex Patrascu",
+      "profile_url": "https://x.com/maxescu"
+    },
+    "locales": {
+      "zh": {
+        "title": "ARGON JUNIOR：合成器声音实验室",
+        "summary": "通过波形、滤波和音色预设，探索合成器如何塑造声音。",
+        "action": "选择 Underwater Whale 预设，观察波形和滤波亮度变化，再尝试键盘。",
+        "why": "色彩鲜明的工作台把示波器、音色控制和小任务放在同一页面。",
+        "limit": "已在桌面测试预设与界面反馈，未实际听测音频；完整任务、录音和手机未测。"
+      },
+      "en": {
+        "title": "ARGON JUNIOR",
+        "summary": "Explore how a synthesizer shapes sound with waveforms, filters and presets.",
+        "action": "Select the Underwater Whale preset to see its waveform and filter setting change, then try the keyboard.",
+        "why": "A colorful workbench brings an oscilloscope, sound controls and small quests together.",
+        "limit": "Preset selection and visual feedback were tested on desktop, but audio was not audibly verified. The full quests, recording and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Antigravity"
+      ],
+      "evidence_url": "https://x.com/maxescu/status/2110493240000426182",
+      "description": {
+        "zh": "作者表示进入 Antigravity 制作了这款简化版合成器。",
+        "en": "The creator says they used Antigravity to make this simplified synthesizer."
+      }
+    },
+    "sources": [],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 选择 Underwater Whale 后，亮度显示从 2580 Hz 变为 315 Hz，波形和任务状态变化；未听测音频，手机未测。",
+      "note_en": "In local desktop Chrome, selecting Underwater Whale changed the brightness display from 2,580 Hz to 315 Hz and updated the waveform and quest state. Audio and mobile were not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/argon-junior-960.webp",
+        "base": "argon-junior",
+        "alt": {
+          "zh": "合成器工作台显示水下鲸鱼预设、波形和滤波等控制。",
+          "en": "A synthesizer workbench shows the Underwater Whale preset, waveform and filter controls."
+        },
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://argonsynth.si/junior/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "unknown",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.283
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "contrib-suite",
+    "slug": "contrib-suite",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "Contrib Suite",
+    "demo_url": "https://esquive.github.io/contrib-suite/",
+    "creator": {
+      "name": "Eric Falk",
+      "profile_url": "https://x.com/er_falk"
+    },
+    "locales": {
+      "zh": {
+        "title": "Contrib Suite：把贡献图谱变成音乐",
+        "summary": "把 GitHub 贡献方格或自己绘制的图案，转换成可播放的音乐。",
+        "action": "先用示例方格点击 Play the year，观察播放进度；也可以尝试绘制自己的图案。",
+        "why": "每周一小节、行对应音高，网格的深浅成为音乐的组织方式。",
+        "limit": "仅测试桌面示例的播放状态，未实际听测音频；GitHub 数据导入、录制与手机体验未测。"
+      },
+      "en": {
+        "title": "Contrib Suite",
+        "summary": "Turn a GitHub contribution grid or a pattern you draw into a playable piece.",
+        "action": "Press “Play the year” on the sample grid and follow its progress; you can also try drawing a pattern.",
+        "why": "Weeks become bars and rows become pitches, giving the grid a musical structure.",
+        "limit": "Only playback state on the desktop sample was checked; audio was not audibly verified. GitHub data import, recording and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/er_falk/status/2121337297035530506",
+      "description": {
+        "zh": "作者在介绍本作时称其为 vibe-coded 作品，未指明具体模型。",
+        "en": "The creator calls the work vibe-coded and does not name a specific model."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Esquive/contrib-suite/blob/2def8b30788633ab07a2e6973043491684b4b9a5/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 点击 Play the year 后按钮变为 Stop，进度前进至第 2 小节；未听测音频，数据导入、录制与手机未测。",
+      "note_en": "In local desktop Chrome, Play the year changed to Stop and progress reached bar 2. Audio, data import, recording and mobile were not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/contrib-suite-960.webp",
+        "base": "contrib-suite",
+        "alt": {
+          "zh": "绿色贡献方格正在逐周播放，下面显示节奏与调性控制。",
+          "en": "A green contribution grid playing week by week above tempo and key controls."
+        },
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://esquive.github.io/contrib-suite/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.284
+    },
+    "added_at": "2026-11-17"
   }
 ]

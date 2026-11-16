@@ -1038,6 +1038,131 @@
           "evidence_url": "https://github.com/acher249/codevember-2026/blob/ca8c67dfce11be5958f4a11e875516c63b40a190/README.md"
         }
       ]
+    },
+    {
+      "work_id": "inference-lab",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已检索公开仓库与作者资料，尚未找到能确认对应此网站的源码仓库；Teachable Figures 是相关技能，不等于本站源码。",
+          "en": "Public repositories and creator materials were searched; no repository was confirmed as this website’s source. Teachable Figures is a related skill, not this site’s source."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "bezier-type",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已检索公开仓库及作者资料，尚未找到能确认对应此工具的源码。",
+          "en": "Public repositories and creator materials were searched; no matching source repository for this tool was confirmed."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "argon-junior",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已检索公开仓库及作者资料，尚未找到能确认对应 Junior 版本的源码仓库。",
+          "en": "Public repositories and creator materials were searched; no repository was confirmed as the Junior edition’s source."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "contrib-suite",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "作者仓库 README 指向同一体验地址，根目录提供 MIT 许可证；第三方依赖和字体另有许可。",
+          "en": "The creator’s README links the same live site and the repository has a root MIT license; dependencies and fonts have separate terms."
+        }
+      },
+      "sources": [
+        {
+          "id": "contrib-suite-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Esquive/contrib-suite/blob/main/index.html",
+          "repository_url": "https://github.com/Esquive/contrib-suite",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Esquive/contrib-suite/blob/2def8b30788633ab07a2e6973043491684b4b9a5/LICENSE",
+            "scope_note": {
+              "zh": "仓库源码使用 MIT 许可；Tone.js、字体及其他第三方资源遵循各自许可。",
+              "en": "The repository source is MIT-licensed; Tone.js, fonts and other third-party assets retain their own terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Esquive/contrib-suite/blob/2def8b30788633ab07a2e6973043491684b4b9a5/README.md",
+              "summary": "The creator’s README identifies Contrib Suite and links the exact live experience."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/er_falk/status/2121337297035530506",
+              "summary": "The creator identifies the same live work in the launch post."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Esquive/contrib-suite/blob/2def8b30788633ab07a2e6973043491684b4b9a5/index.html",
+              "summary": "The repository contains the matching single-page front end."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "2def8b30788633ab07a2e6973043491684b4b9a5",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站、仓库和许可证；未在本机运行第三方仓库代码。",
+            "en": "The live site, repository and license were checked; third-party repository code was not executed locally."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
     }
   ]
 }
