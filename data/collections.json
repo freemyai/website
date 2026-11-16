@@ -149,7 +149,8 @@
       "triple-pendulum",
       "clearwater",
       "ocean-currents",
-      "last-hexagon"
+      "last-hexagon",
+      "codevember-tension"
     ],
     "cover": "hydraulics"
   },
@@ -206,8 +207,7 @@
       "sonar-robot",
       "pendulum-lab",
       "bending-light",
-      "robot-arm",
-      "codevember-tension"
+      "robot-arm"
     ],
     "cover": "wave-tank"
   },
