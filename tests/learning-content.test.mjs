@@ -46,6 +46,8 @@ test('notes escape text and implementation ideas identify themselves in both lan
 });
 
 test('source links in note references must be safe HTTPS URLs', () => {
-  const unsafeNote={...note(),references:[{id:'x',label:'Source',url:'javascript:alert(1)'}]};
-  assert.throws(()=>loadPublishedLearningNote(record,'en',{readText:reader({...bilingual,[record.learning_note.en_path]:unsafeNote})}),/reference|url/i);
+  for(const url of ['javascript:alert(1)','https://127.0.0.1/admin','https://localhost/admin','https://name:secret@example.org/']){
+    const unsafeNote={...note(),references:[{id:'x',label:'Source',url}]};
+    assert.throws(()=>loadPublishedLearningNote(record,'en',{readText:reader({...bilingual,[record.learning_note.en_path]:unsafeNote})}),/reference|url/i);
+  }
 });

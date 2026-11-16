@@ -45,6 +45,11 @@ function parts(url){
 }
 function sameSegment(a,b){return a?.toLowerCase()===b?.toLowerCase();}
 function isRepoPath(path){return path.length===2&&path.every(part=>part!=='.'&&part!=='..');}
+function inRepository(url,repo){
+  if(!repo||url.hostname!==repo.hostname||repo.search||repo.hash)return false;
+  const p=parts(url),r=parts(repo);
+  return r.length>=2&&p.length>=r.length&&r.every((part,index)=>sameSegment(part,p[index]));
+}
 function matchesGithub(resource,url,repo){
   const path=parts(url),r=repo?parts(repo):[];
   if(url.hostname!=='github.com'||path.length<2)return false;
@@ -81,6 +86,14 @@ function providerUrlValid(resource){
   if(known[resource.provider]&&url.hostname!==known[resource.provider])return false;
   if(known[resource.provider]&&parts(url).length<2)return false;
   if(repo&&url.hostname!==repo.hostname)return false;
+  if(resource.kind==='source_code'){
+    if(!inRepository(url,repo))return false;
+    const tail=parts(url).slice(parts(repo).length);
+    if(!tail.length)return true;
+    if(resource.provider==='gitlab')return tail[0]==='-'&&['blob','tree'].includes(tail[1])&&tail.length>=(tail[1]==='blob'?4:3);
+    if(resource.provider==='codeberg')return tail[0]==='src'&&['branch','commit','tag'].includes(tail[1])&&tail.length>=3;
+    if(resource.provider==='gitee')return ['blob','tree'].includes(tail[0])&&tail.length>=(tail[0]==='blob'?3:2);
+  }
   return true;
 }
 function evidenceValid(evidence){
@@ -94,17 +107,16 @@ function publishedMatch(resource){
 }
 function licenseEvidenceValid(resource){
   const evidence=safeLearningUrl(resource?.license?.evidence_url);
-  if(!evidence)return false;
-  const url=new URL(evidence);
-  // A GitHub license file in a different repository does not establish this
-  // project's license, even if it happens to use the same SPDX label.
-  if(resource.provider==='github'&&url.hostname==='github.com'){
-    const repoValue=safeLearningUrl(resource.repository_url);
-    if(!repoValue)return false;
-    const r=parts(new URL(repoValue)),p=parts(url);
-    return isRepoPath(r)&&p.length>=2&&sameSegment(r[0],p[0])&&sameSegment(r[1],p[1]);
-  }
-  return true;
+  const repoValue=safeLearningUrl(resource?.repository_url);
+  if(!evidence||!repoValue)return false;
+  const url=new URL(evidence),repo=new URL(repoValue);
+  if(!inRepository(url,repo))return false;
+  const tail=parts(url).slice(parts(repo).length);
+  // A generic license text does not show that this project adopted it.
+  if(resource.provider==='github'||resource.provider==='huggingface'||resource.provider==='gitee')return tail[0]==='blob'&&tail.length>=3;
+  if(resource.provider==='gitlab')return tail[0]==='-'&&tail[1]==='blob'&&tail.length>=4;
+  if(resource.provider==='codeberg')return tail[0]==='src'&&['branch','commit','tag'].includes(tail[1])&&tail.length>=4;
+  return tail.length>=1;
 }
 
 export function eligibleSourceLink(resource,{allowedLicenses}={}){

@@ -2,17 +2,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { escapeHtml as e } from './catalog.mjs';
+import { safeLearningUrl as safeReference } from './learning-resources.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const kinds = new Set(['source_walkthrough', 'author_summary', 'implementation_idea']);
 const text = value => typeof value === 'string' && value.trim().length > 0;
-
-function safeReference(value) {
-  try {
-    const url = new URL(value);
-    return url.protocol === 'https:' && !url.username && !url.password && !url.port ? url.href : null;
-  } catch { return null; }
-}
 
 function readNote(relative) {
   const base = fs.realpathSync(path.join(root, 'content', 'learning'));

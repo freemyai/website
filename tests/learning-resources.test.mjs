@@ -54,7 +54,7 @@ test('platform source URLs cannot be author profiles, mismatched repos or disgui
 });
 
 test('a Hugging Face demo or model is not an exposed Space code tree', () => {
-  const space = source({provider:'huggingface',kind:'space_code',url:'https://huggingface.co/spaces/owner/demo/tree/main',repository_url:'https://huggingface.co/spaces/owner/demo'});
+  const space = source({provider:'huggingface',kind:'space_code',url:'https://huggingface.co/spaces/owner/demo/tree/main',repository_url:'https://huggingface.co/spaces/owner/demo',license:{...source().license,evidence_url:'https://huggingface.co/spaces/owner/demo/blob/main/LICENSE'}});
   assert.equal(policy.eligibleSourceLink(space,options),true);
   assert.equal(policy.eligibleSourceLink({...space,url:'https://huggingface.co/spaces/owner/demo'},options),false);
   assert.equal(policy.eligibleSourceLink({...space,kind:'model',url:'https://huggingface.co/owner/model'},options),false);
@@ -68,6 +68,18 @@ test('a provider cannot be relabeled as other and a license alone does not estab
   assert.equal(policy.eligibleSourceLink(source({evidence:[{type:'license_file',url:'https://github.com/simonw/tools/blob/main/LICENSE',summary:'License.'}]}),options),false);
   assert.equal(policy.eligibleSourceLink(source({id:'bad id'}),options),false);
   assert.equal(policy.eligibleSourceLink(source({license:{...source().license,evidence_url:'https://github.com/unrelated/project/blob/main/LICENSE'}}),options),false);
+});
+
+test('a generic license text cannot establish that a GitHub repository adopted it', () => {
+  const unrelated=source({license:{...source().license,evidence_url:'https://opensource.org/license/mit'}});
+  assert.equal(policy.eligibleSourceLink(unrelated,options),false);
+});
+
+test('other repository providers bind the code and license evidence to the same project', () => {
+  const gitlab=source({provider:'gitlab',url:'https://gitlab.com/team/project/-/blob/main/src/index.js',repository_url:'https://gitlab.com/team/project',license:{...source().license,evidence_url:'https://gitlab.com/team/project/-/blob/main/LICENSE'}});
+  assert.equal(policy.eligibleSourceLink(gitlab,options),true);
+  assert.equal(policy.eligibleSourceLink({...gitlab,url:'https://gitlab.com/attacker/copy/-/blob/main/src/index.js'},options),false);
+  assert.equal(policy.eligibleSourceLink({...gitlab,license:{...gitlab.license,evidence_url:'https://gitlab.com/unrelated/repo/-/blob/main/LICENSE'}},options),false);
 });
 
 test('partial source labels are truthful and public payload contains no editorial evidence', () => {
