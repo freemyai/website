@@ -12,7 +12,9 @@ export function filterWorks(works, filters = {}) {
       && (!filters.format || work.formats?.includes(filters.format))
       && (!filters.login || work.access?.login === filters.login)
       && (!filters.language || work.access?.language_codes?.includes(filters.language))
-      && (!filters.mobile || ['tested_supported', 'reported_supported'].includes(work.device_support?.mobile));
+      && (!filters.mobile || ['tested_supported', 'reported_supported'].includes(work.device_support?.mobile))
+      && (!filters.open_source || work.hasOpenSource === true)
+      && (!filters.learning_note || work.hasLearningNote === true);
   });
 }
 

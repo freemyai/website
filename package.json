@@ -13,6 +13,7 @@
     "test:analytics-browser": "node --test tests/impressions-browser.mjs tests/analytics-interactions-browser.mjs",
     "lint": "node scripts/lint.mjs",
     "typecheck": "node src/validate.mjs",
+    "learning:audit": "node scripts/check-learning-resources.mjs",
     "seo:audit": "node scripts/check-seo.mjs --dir dist",
     "seo:live": "node scripts/check-seo-live.mjs"
   },

@@ -13,6 +13,7 @@ fs.rmSync(out,{recursive:true,force:true});
 fs.mkdirSync(path.join(out,'assets'),{recursive:true});
 fs.mkdirSync(path.join(out,'media'),{recursive:true});
 for(const name of ['style.css','app.mjs','analytics.mjs','favicon.svg']) fs.copyFileSync(path.join(root,'assets',name),path.join(out,'assets',name));
+fs.cpSync(path.join(root,'assets/icons'),path.join(out,'assets/icons'),{recursive:true,filter:src=>!src.endsWith('README.md')});
 fs.copyFileSync(path.join(root,'src/catalog.mjs'),path.join(out,'assets/catalog.mjs'));
 if(fs.existsSync(path.join(root,'assets/og'))) fs.cpSync(path.join(root,'assets/og'),path.join(out,'og'),{recursive:true});
 for(const work of c.works.filter(w=>w.editorial?.status==='published'&&w.media?.poster)){

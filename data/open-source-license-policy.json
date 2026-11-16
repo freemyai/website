@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "SPDX expressions that have been reviewed for the first source links. A listed license does not replace checking its scope and the individual source.",
+  "allowedLicenses": ["Apache-2.0", "MIT"]
+}

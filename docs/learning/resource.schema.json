@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Freemy source and learning resources v1",
+  "description": "Shape validation only. Project identity, license scope, host safety and editorial accuracy require independent verification. No field self-assertion is proof.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "base_commit",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "base_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "work_id",
+          "search",
+          "sources",
+          "learning_note"
+        ],
+        "properties": {
+          "work_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "search": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "checked_at",
+              "notes"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_searched",
+                  "searched",
+                  "blocked"
+                ]
+              },
+              "checked_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "notes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "zh",
+                  "en"
+                ],
+                "properties": {
+                  "zh": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "provider",
+                "kind",
+                "url",
+                "repository_url",
+                "relation",
+                "code_scope",
+                "match_status",
+                "availability",
+                "license",
+                "evidence",
+                "checked_at",
+                "revision",
+                "publication",
+                "notes"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]{1,80}$"
+                },
+                "provider": {
+                  "enum": [
+                    "github",
+                    "huggingface",
+                    "gitlab",
+                    "codeberg",
+                    "gitee",
+                    "other"
+                  ]
+                },
+                "kind": {
+                  "enum": [
+                    "source_code",
+                    "space_code",
+                    "model",
+                    "dataset",
+                    "author_guide"
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                },
+                "repository_url": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "relation": {
+                  "enum": [
+                    "exact_project",
+                    "upstream",
+                    "community_reference"
+                  ]
+                },
+                "code_scope": {
+                  "enum": [
+                    "full_project",
+                    "frontend",
+                    "module",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "match_status": {
+                  "enum": [
+                    "candidate",
+                    "verified",
+                    "rejected"
+                  ]
+                },
+                "availability": {
+                  "enum": [
+                    "available",
+                    "unknown",
+                    "restricted",
+                    "unavailable"
+                  ]
+                },
+                "license": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "status",
+                    "expression",
+                    "evidence_url",
+                    "scope_note"
+                  ],
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "open_source_verified",
+                        "source_visible",
+                        "restricted",
+                        "unknown",
+                        "not_applicable"
+                      ]
+                    },
+                    "expression": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "evidence_url": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "format": "uri",
+                          "pattern": "^https://"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "scope_note": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "zh",
+                        "en"
+                      ],
+                      "properties": {
+                        "zh": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "en": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "type",
+                      "url",
+                      "summary"
+                    ],
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "repository_homepage",
+                          "readme",
+                          "author_post",
+                          "demo_link",
+                          "source_file",
+                          "license_file",
+                          "source_card",
+                          "author_docs"
+                        ]
+                      },
+                      "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "pattern": "^https://"
+                      },
+                      "summary": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "checked_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "revision": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "publication": {
+                  "enum": [
+                    "candidate",
+                    "published",
+                    "hidden"
+                  ]
+                },
+                "notes": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "zh",
+                    "en"
+                  ],
+                  "properties": {
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "license": {
+                        "properties": {
+                          "status": {
+                            "const": "open_source_verified"
+                          }
+                        },
+                        "required": [
+                          "status"
+                        ]
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "source_code",
+                          "space_code"
+                        ]
+                      },
+                      "license": {
+                        "properties": {
+                          "expression": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "evidence_url": {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^https://"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "publication": {
+                        "const": "published"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "match_status": {
+                        "const": "verified"
+                      },
+                      "checked_at": {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      "evidence": {
+                        "minItems": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "learning_note": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "kind",
+              "zh_path",
+              "en_path",
+              "reviewed_at",
+              "evidence_urls"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "absent",
+                  "draft",
+                  "published"
+                ]
+              },
+              "kind": {
+                "enum": [
+                  "source_walkthrough",
+                  "author_summary",
+                  "implementation_idea",
+                  null
+                ]
+              },
+              "zh_path": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^content/learning/zh/[a-z0-9-]+\\.json$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "en_path": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^content/learning/en/[a-z0-9-]+\\.json$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reviewed_at": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidence_urls": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "published"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "source_walkthrough",
+                        "author_summary",
+                        "implementation_idea"
+                      ]
+                    },
+                    "zh_path": {
+                      "type": "string"
+                    },
+                    "en_path": {
+                      "type": "string"
+                    },
+                    "reviewed_at": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "evidence_urls": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "technical_tags": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "status",
+                "label",
+                "evidence_url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "status": {
+                  "const": "verified"
+                },
+                "label": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "zh",
+                    "en"
+                  ],
+                  "properties": {
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "evidence_url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

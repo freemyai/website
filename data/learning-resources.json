@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "base_commit": "81c20095eee287a39b2cbe1cc1ec61f1847367ef",
+  "records": [
+    {
+      "work_id": "tree-appreciator",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "tree-appreciator-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/simonw/tools/blob/main/tree-appreciator.html",
+          "repository_url": "https://github.com/simonw/tools",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "Apache-2.0",
+            "evidence_url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/LICENSE",
+            "scope_note": {
+              "zh": "已核验仓库根许可证与对应前端文件；Three.js、字体等外部资源可能另有许可。",
+              "en": "The repository license and matching front-end file were checked; Three.js, fonts and other external resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html",
+              "summary": "The matching Tree Appreciator file."
+            },
+            {
+              "type": "author_post",
+              "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+              "summary": "The creator describes the same game."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "a285d172df23d622f7cbafdcba978733de244bde",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "webgl",
+          "status": "verified",
+          "label": {
+            "zh": "WebGL",
+            "en": "WebGL"
+          },
+          "evidence_url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html"
+        }
+      ]
+    },
+    {
+      "work_id": "battle-drones",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "battle-drones-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/simonw/battledrones/blob/main/src/main.ts",
+          "repository_url": "https://github.com/simonw/battledrones",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "Apache-2.0",
+            "evidence_url": "https://github.com/simonw/battledrones/blob/ca4f13b36013e1980289046e731a295d2bf02a3e/LICENSE",
+            "scope_note": {
+              "zh": "入口指向前端代码；依赖及其他素材可能适用各自许可。",
+              "en": "The entry points to front-end code; dependencies and other assets may have their own terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/simonw/battledrones/blob/ca4f13b36013e1980289046e731a295d2bf02a3e/README.md",
+              "summary": "The author links to the live Battle Drones experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/simonw/battledrones/blob/ca4f13b36013e1980289046e731a295d2bf02a3e/src/main.ts",
+              "summary": "The game entry source is readable."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "ca4f13b36013e1980289046e731a295d2bf02a3e",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "regolith",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "regolith-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/winchxyz/moon-rover/blob/main/src/main.js",
+          "repository_url": "https://github.com/winchxyz/moon-rover",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/winchxyz/moon-rover/blob/f5f25ba6bf7477c612b408b265c9275a4fd1200d/LICENSE",
+            "scope_note": {
+              "zh": "入口指向前端代码；作者说明所含 three.js 等依赖有各自许可。",
+              "en": "The entry points to front-end code; the creator notes that dependencies such as three.js have their own licenses."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/winchxyz/moon-rover/blob/f5f25ba6bf7477c612b408b265c9275a4fd1200d/README.md",
+              "summary": "The repository links to the matching live rover game."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/winchxyz/moon-rover/blob/f5f25ba6bf7477c612b408b265c9275a4fd1200d/src/main.js",
+              "summary": "The matching entry source is readable."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "f5f25ba6bf7477c612b408b265c9275a4fd1200d",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "threejs",
+          "status": "verified",
+          "label": {
+            "zh": "Three.js",
+            "en": "Three.js"
+          },
+          "evidence_url": "https://github.com/winchxyz/moon-rover/blob/f5f25ba6bf7477c612b408b265c9275a4fd1200d/README.md"
+        }
+      ]
+    },
+    {
+      "work_id": "haldane-4",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "haldane-4-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/denisbondare/haldane-4",
+          "repository_url": "https://github.com/denisbondare/haldane-4",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "restricted",
+            "expression": "CC-BY-NC-4.0",
+            "evidence_url": "https://github.com/denisbondare/haldane-4/blob/85fc5903e310efd9dd452a87ef2e9fa62fcd5223/LICENSE",
+            "scope_note": {
+              "zh": "作者的许可证覆盖仓库代码与素材，包含非商业使用限制。",
+              "en": "The creator licenses the repository code and assets under terms including a noncommercial restriction."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/denisbondare/haldane-4/blob/85fc5903e310efd9dd452a87ef2e9fa62fcd5223/README.md",
+              "summary": "The author links to HALDANE-4 at the original domain."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/denisbondare/haldane-4/blob/85fc5903e310efd9dd452a87ef2e9fa62fcd5223/LICENSE",
+              "summary": "The published license includes a noncommercial restriction."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "85fc5903e310efd9dd452a87ef2e9fa62fcd5223",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "web-bayan",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "web-bayan-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/gbkorr/gbkorr/tree/main/bayan",
+          "repository_url": "https://github.com/gbkorr/gbkorr",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "代码可公开阅读；本次未确认适用于该目录的许可证。",
+              "en": "The code is publicly readable; an applicable license for this directory was not confirmed in this review."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/gbkorr/gbkorr/blob/fd251ca7cdd3f6cc9bd857779015d8d4cc6886e6/bayan/bayan.html",
+              "summary": "The file matches the live Web-Bayan HTML."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://gbkorr.github.io/gbkorr/bayan/bayan.html",
+              "summary": "The experience and reviewed file match."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "fd251ca7cdd3f6cc9bd857779015d8d4cc6886e6",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "harmonograph",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "harmonograph-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/097-harmonograph.html",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "对应 HTML 公开可读；本次未确认仓库许可。",
+              "en": "The matching HTML is publicly readable; a repository license was not confirmed in this review."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html",
+              "summary": "The file matches the live work."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/README.md",
+              "summary": "The creator describes the gallery and its numbered files."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        },
+        {
+          "id": "harmonograph-author-guide",
+          "provider": "github",
+          "kind": "author_guide",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/097-harmonograph.txt",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "链接作者公开的对应提示词和制作说明；不代表源码许可已获确认。",
+              "en": "Links the creator’s prompt and notes for this work; it does not establish a code license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.txt",
+              "summary": "The creator-provided notes for this numbered work."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/README.md",
+              "summary": "The author explains the numbered prompt files."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "canvas-2d",
+          "status": "verified",
+          "label": {
+            "zh": "Canvas 2D",
+            "en": "Canvas 2D"
+          },
+          "evidence_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html"
+        }
+      ]
+    },
+    {
+      "work_id": "rosette",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已核查对应关系及可见许可。",
+          "en": "The project match and visible license were reviewed."
+        }
+      },
+      "sources": [
+        {
+          "id": "rosette-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/023-symmetry-painter.html",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "对应 HTML 公开可读；本次未确认仓库许可。",
+              "en": "The matching HTML is publicly readable; a repository license was not confirmed in this review."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html",
+              "summary": "The file matches the live work."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/README.md",
+              "summary": "The creator describes the gallery and its numbered files."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        },
+        {
+          "id": "rosette-author-guide",
+          "provider": "github",
+          "kind": "author_guide",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/023-symmetry-painter.txt",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "链接作者公开的对应提示词和制作说明；不代表源码许可已获确认。",
+              "en": "Links the creator’s prompt and notes for this work; it does not establish a code license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.txt",
+              "summary": "The creator-provided notes for this numbered work."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/README.md",
+              "summary": "The author explains the numbered prompt files."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0",
+          "publication": "published",
+          "notes": {
+            "zh": "依据原站及公开资料人工复核；未执行第三方源码。",
+            "en": "Reviewed against the live work and public sources; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "canvas-2d",
+          "status": "verified",
+          "label": {
+            "zh": "Canvas 2D",
+            "en": "Canvas 2D"
+          },
+          "evidence_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html"
+        }
+      ]
+    },
+    {
+      "work_id": "wawa-school-of-magic",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已访问 wass08/wfc-magic-school 与线上演示。仓库 index.html 与 live 页标题均为 Wawa School of Magic；live 页是 Vite 构建产物，仓库含 TypeScript 源码。未找到 LICENSE/LICENSE.md，package.json 也无 license 字段。",
+          "en": "Accessed wass08/wfc-magic-school and the live demo. Both the repository index.html and the live page are titled Wawa School of Magic. The live page is a Vite build; the repository contains TypeScript source. No LICENSE or LICENSE.md was found, and package.json has no license field."
+        }
+      },
+      "sources": [
+        {
+          "id": "wawa-school-of-magic-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/wass08/wfc-magic-school/blob/main/src/main.ts",
+          "repository_url": "https://github.com/wass08/wfc-magic-school",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "仓库源码可读（Three.js + TypeScript + Vite，模块在 src/），但根目录未见许可文件，package.json 标注 private 且无 license 字段。不能展示已核验开源。线上站点引用 /assets/index-*.js，与仓库中指向 /src/style.css 的开发用 index.html 不是同一份字节，但标题与作者站点一致。",
+              "en": "Repository source is readable (Three.js + TypeScript + Vite, modules under src/), but no root license file was found and package.json is private with no license field. Do not show a verified-open-source badge. The live site references /assets/index-*.js and is not byte-identical to the repo index.html that links /src/style.css, but the title and author site match."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/wass08/wfc-magic-school/blob/47e35ff6503bb88641160e0115140502895b81b6/index.html",
+              "summary": "Repository index.html title is Wawa School of Magic · a wave-function-collapse cozy builder."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://magic-school.wawasensei.dev/",
+              "summary": "The live demo has the same title and links https://wawasensei.dev. This is the Freemy demo_url."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/wass08/wfc-magic-school/blob/47e35ff6503bb88641160e0115140502895b81b6/README.md",
+              "summary": "README is titled Arcanum: a WFC magic school and documents the WFC/Three.js source layout under src/."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/wawasensei/status/2121997847524766051",
+              "summary": "The creator's post names Wawa School of Magic, describes wave function collapse and Three.js, and links https://magic-school.wawasensei.dev."
+            },
+            {
+              "type": "source_card",
+              "url": "https://github.com/wass08/wfc-magic-school/commit/21b15de2ad7e266f6ccc20bcff0c7f3a67bd7b23",
+              "summary": "The initial commit message includes Co-Authored-By: Claude Opus 5.5, matching the work record's provenance note."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "47e35ff6503bb88641160e0115140502895b81b6",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作品关联；未执行第三方代码。",
+            "en": "The work association was reviewed; third-party code was not executed."
+          }
+        },
+        {
+          "id": "wawa-school-of-magic-author-guide",
+          "provider": "other",
+          "kind": "author_guide",
+          "url": "https://www.youtube.com/watch?v=dUgVoS1NYws",
+          "repository_url": null,
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "作者在同一条公开帖中把该视频标为 Learn how to build your own。本轮只核验了推文中的链接与标题，没有观看视频，不能转述片中内容。",
+              "en": "The creator's public post labels this video Learn how to build your own. This pass only verified the tweet link and title; the video was not watched, so its contents are not summarized."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_post",
+              "url": "https://x.com/wawasensei/status/2121997847524766051",
+              "summary": "The post links the live demo and a YouTube video titled The Algorithm That Generates Infinite Worlds as a learn-how-to-build resource."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": null,
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作品关联；未执行第三方代码。",
+            "en": "The work association was reviewed; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "threejs",
+          "status": "verified",
+          "label": {
+            "zh": "Three.js",
+            "en": "Three.js"
+          },
+          "evidence_url": "https://github.com/wass08/wfc-magic-school/blob/47e35ff6503bb88641160e0115140502895b81b6/README.md"
+        },
+        {
+          "id": "wave-function-collapse",
+          "status": "verified",
+          "label": {
+            "zh": "Wave function collapse",
+            "en": "Wave function collapse"
+          },
+          "evidence_url": "https://github.com/wass08/wfc-magic-school/blob/47e35ff6503bb88641160e0115140502895b81b6/README.md"
+        }
+      ]
+    },
+    {
+      "work_id": "fall-line",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "已确认仓库与 fall-line/ 目录、根 README、作者简报。fall-line/ 在检查时仅有一份约 1.1MB 的自包含 index.html（内联压缩脚本），未发现该子目录的 README、package.json 或 LICENSE，也未见预打包 TypeScript 源码。仓库根目录同样没有 LICENSE。",
+          "en": "Confirmed the repository, the fall-line/ directory, the root README, and the author's brief. At check time fall-line/ contained only a roughly 1.1MB self-contained index.html with inlined minified script. No subdirectory README, package.json or LICENSE, and no pre-bundle TypeScript source, were found there. The repository root also has no LICENSE."
+        }
+      },
+      "sources": [
+        {
+          "id": "fall-line-author-guide",
+          "provider": "github",
+          "kind": "author_guide",
+          "url": "https://github.com/Nipale-ai/opus-5-5-overnight-builds/blob/8d35d834bc3d62cb772ae9f75b95b89c9600ab82/briefs/fall-line-prompt-as-sent.md",
+          "repository_url": "https://github.com/Nipale-ai/opus-5-5-overnight-builds",
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "作者公开的原始任务说明，不是源码许可；未转载全文。仓库还提供 briefs/fall-line-model-readme.md，是模型为自己的构建写的说明。",
+              "en": "The author's published original brief, not a source license; the full text is not republished here. The repository also has briefs/fall-line-model-readme.md, the model-written description of its own build."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://github.com/Nipale-ai/opus-5-5-overnight-builds/blob/8d35d834bc3d62cb772ae9f75b95b89c9600ab82/briefs/fall-line-prompt-as-sent.md",
+              "summary": "Root README says briefs/<build>-prompt-as-sent.md is the full prompt each run received, word for word."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/Nipale-ai/opus-5-5-overnight-builds/blob/8d35d834bc3d62cb772ae9f75b95b89c9600ab82/briefs/fall-line-model-readme.md",
+              "summary": "This file describes FALL LINE as a freeride game on Mont Vireaux and states the shipped build is a single self-contained dist/index.html."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "8d35d834bc3d62cb772ae9f75b95b89c9600ab82",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作品关联；未执行第三方代码。",
+            "en": "The work association was reviewed; third-party code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    }
+  ]
+}

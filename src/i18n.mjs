@@ -6,6 +6,8 @@ export const messages={
 };
 messages.zh.privacy='隐私说明';
 messages.en.privacy='Privacy';
+Object.assign(messages.zh,{openSourceFilter:'有开源代码',learningFilter:'有学习笔记',learningFilters:'学习资源筛选',sourceResources:'源码与资源',creatorNotes:'作者说明',publicCode:'公开代码（许可未明确）',restrictedCode:'公开代码（许可受限）',license:'许可证',scope:'公开范围',resourceChecked:'核验日期',suggestCorrection:'建议更正'});
+Object.assign(messages.en,{openSourceFilter:'Open-source code',learningFilter:'Learning notes',learningFilters:'Learning resource filters',sourceResources:'Source & resources',creatorNotes:'Creator notes',publicCode:'Public code (license unconfirmed)',restrictedCode:'Public code (license restricted)',license:'License',scope:'Published scope',resourceChecked:'Checked',suggestCorrection:'Suggest a correction'});
 export const topicNames={physics:['科学与物理','Science & Physics'],engineering:['工程与机械','Engineering & Mechanics'],electronics:['电子与电路','Electronics'],robotics:['机器人与控制','Robotics & Control'],mathematics:['数学与统计','Mathematics'],computing:['计算机与 AI','Computing & AI'],nature:['自然与生命','Nature & Life'],humanities:['人文与语言','Humanities'],games:['游戏与解谜','Games & Puzzles'],creative:['艺术与声音','Art & Sound'],spatial:['空间与展览','Spaces'],tools:['轻量工具与创作','Creative Tools']};
 export function urlFor(lang, route='/'){return localizedPath(route,lang);}
 export function langName(code, lang){const map={en:['英语','English'],'zh-CN':['中文','Chinese'],'zh-TW':['繁体中文','Traditional Chinese'],es:['西班牙语','Spanish'],fr:['法语','French'],ja:['日语','Japanese'],tr:['土耳其语','Turkish']};return map[code]?.[lang==='zh'?0:1]||code;}

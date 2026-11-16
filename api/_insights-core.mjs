@@ -2,7 +2,7 @@ import { createHash, timingSafeEqual } from 'node:crypto';
 
 const projectId='prj_MNdw24GcYvvsiH3eZycYdENagguO';
 const teamId='team_Lp6fF6f7p6clgypmGqHddxK0';
-const names=new Set(['preview_open','experience_open','work_view','work_impression']);
+const names=new Set(['preview_open','experience_open','work_view','work_impression','source_open','learning_open']);
 const pages=new Set(['home','explore','type','topic','collection','work']);
 const entries=new Set(['card','related','dialog','detail']);
 
@@ -20,7 +20,10 @@ export function makeFilter(name,{lang='',page='',entry=''}={}){
   const parts=[`eventName eq '${name}'`,"not startswith(eventData/placement,'qa:')"];
   if(lang)parts.push(`startswith(eventData/placement,'${lang}:')`);
   if(page)parts.push(`contains(eventData/placement,':${page}:')`);
-  if(entry)parts.push(`endswith(eventData/placement,':${entry}')`);
+  if(entry){
+    const separator=name==='source_open'||name==='learning_open'?'-':':';
+    parts.push(`endswith(eventData/placement,'${separator}${entry}')`);
+  }
   return parts.join(' and ');
 }
 

@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "base_commit": "c68db3dff9e67c3957dad042ba725a42d66da266",
+  "records": [
+    {
+      "work_id": "tree-appreciator",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "本次完成代表性对应文件与仓库许可检查；未运行游戏源码。",
+          "en": "Representative file and repository-license checks completed; source was not executed."
+        }
+      },
+      "sources": [
+        {
+          "id": "tree-appreciator-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/simonw/tools/blob/main/tree-appreciator.html",
+          "repository_url": "https://github.com/simonw/tools",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "Apache-2.0",
+            "evidence_url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/LICENSE",
+            "scope_note": {
+              "zh": "已读取仓库根Apache-2.0许可和对应文件的开头；仅以可见前端文件为源码范围，发布前复核文件例外与外部素材范围。",
+              "en": "Root Apache-2.0 license and the corresponding file header were inspected. Scope is the visible front-end file; recheck file-specific exceptions and external assets before publishing."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://api.github.com/repos/simonw/tools",
+              "summary": "Repository metadata points to tools.simonwillison.net and identifies the public project."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html",
+              "summary": "The corresponding file exists and identifies the Tree Appreciator game."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://tools.simonwillison.net/tree-appreciator",
+              "summary": "The live page describes the same seeded-tree comparison game."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/LICENSE",
+              "summary": "Repository LICENSE is Apache License Version 2.0."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "a285d172df23d622f7cbafdcba978733de244bde",
+          "publication": "candidate",
+          "notes": {
+            "zh": "研究种子，不是生产发布记录；Work 需复核后再迁移。",
+            "en": "Research seed, not a production publication record. Recheck before publishing."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "web-bayan",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "发现对应目录，但许可与文件内容尚待进一步复核。",
+          "en": "Matching directory found; deeper file and license review remains."
+        }
+      },
+      "sources": [
+        {
+          "id": "web-bayan-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/gbkorr/gbkorr/tree/main/bayan",
+          "repository_url": "https://github.com/gbkorr/gbkorr",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "candidate",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "发现代码目录；API未识别许可不等于不存在许可。尚未完成根目录、子目录和文件声明复核，不能展示开源徽标。",
+              "en": "A code directory was found. A null API license is not proof that no license exists. Root, directory and file-level review is still required; do not show an open-source badge."
+            }
+          },
+          "evidence": [
+            {
+              "type": "demo_link",
+              "url": "https://gbkorr.github.io/gbkorr/bayan/bayan.html",
+              "summary": "The current demo lives under the matching account, repository and directory."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/gbkorr/gbkorr/tree/main/bayan",
+              "summary": "The directory contains bayan.html, JavaScript and a stylesheet."
+            },
+            {
+              "type": "repository_homepage",
+              "url": "https://api.github.com/repos/gbkorr/gbkorr",
+              "summary": "The repository points to the matching GitHub Pages site; the license metadata is null."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": null,
+          "publication": "candidate",
+          "notes": {
+            "zh": "研究种子，不是生产发布记录；Work 需复核后再迁移。",
+            "en": "Research seed, not a production publication record. Recheck before publishing."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    },
+    {
+      "work_id": "harmonograph",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "确认对应HTML与作者README；不自动推定其他同仓库作品都完成了核验。",
+          "en": "The matching HTML file and author README were checked; other works in the repository were not automatically verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "harmonograph-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/097-harmonograph.html",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "源码可读，README有制作结构说明；尚未确认适用许可，不进入已核验开源筛选。",
+              "en": "Readable source and creation-structure documentation exist; the applicable license has not been confirmed, so exclude from verified-open-source filtering."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/097-harmonograph.html",
+              "summary": "The file title and description identify Harmonograph — A Drawing Machine."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/README.md",
+              "summary": "README links the corresponding live gallery and explains its numbered HTML and prompt files."
+            },
+            {
+              "type": "repository_homepage",
+              "url": "https://api.github.com/repos/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+              "summary": "Repository is public; API license metadata is null. This is not a final license determination."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": null,
+          "publication": "candidate",
+          "notes": {
+            "zh": "研究种子，不是生产发布记录；Work 需复核后再迁移。",
+            "en": "Research seed, not a production publication record. Recheck before publishing."
+          }
+        },
+        {
+          "id": "harmonograph-author-guide",
+          "provider": "github",
+          "kind": "author_guide",
+          "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/README.md",
+          "repository_url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "这里只链接作者公开文档，不转载原始提示词或把文档链接当代码复用许可。具体提示词文件仍须另行定位。",
+              "en": "Link to the public author documentation only; this is not permission to redistribute prompts or code. Locate the specific prompt file separately."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/main/README.md",
+              "summary": "The author describes the gallery structure and the availability of per-page prompts."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": null,
+          "publication": "candidate",
+          "notes": {
+            "zh": "研究种子，不是生产发布记录；Work 需复核后再迁移。",
+            "en": "Research seed, not a production publication record. Recheck before publishing."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+`github.svg` and `huggingface.svg` are from [Simple Icons](https://github.com/simple-icons/simple-icons), distributed under [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md); brand trademarks remain with their respective owners. `code.svg` and `book.svg` are simple original Freemy icons.

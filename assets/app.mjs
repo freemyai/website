@@ -16,6 +16,8 @@ document.addEventListener('click',event=>{
 const grid=document.querySelector('#gallery-grid');
 const form=document.querySelector('#gallery-filter');
 const sort=document.querySelector('#gallery-sort');
+const sourceFilter=document.querySelector('#filter-open-source');
+const noteFilter=document.querySelector('#filter-learning-note');
 const empty=document.querySelector('#empty-results');
 const surprise=document.querySelector('[data-surprise]');
 const cards=grid?[...grid.querySelectorAll('.creation-card')].map(card=>({card,work:JSON.parse(card.dataset.work)})):[];
@@ -24,20 +26,26 @@ let refreshImpressions=()=>{};
 
 function update(){
   const q=form?.elements.namedItem('q')?.value||'';
-  const matches=new Set(filterWorks(cards.map(item=>item.work),{q}).map(w=>w.id));
+  const matches=new Set(filterWorks(cards.map(item=>item.work),{q,open_source:!!sourceFilter?.checked,learning_note:!!noteFilter?.checked}).map(w=>w.id));
   visible=cards.filter(item=>matches.has(item.work.id));
   const ordered=[...cards].sort((a,b)=>sort?.value==='recent'?(b.work.added_at||'').localeCompare(a.work.added_at||'')||b.work.sequence-a.work.sequence:a.work.order-b.work.order);
   for(const item of ordered){item.card.hidden=!matches.has(item.work.id);grid.append(item.card);}
   refreshImpressions();
   if(empty) empty.hidden=visible.length>0;
   if(surprise) surprise.setAttribute('aria-disabled',String(!visible.length));
-  if(form){const next=new URL(location.href);if(q)next.searchParams.set('q',q);else next.searchParams.delete('q');history.replaceState(null,'',next);}
+  if(form){const next=new URL(location.href);if(q)next.searchParams.set('q',q);else next.searchParams.delete('q');for(const [name,on] of [['open_source',sourceFilter?.checked],['learning_note',noteFilter?.checked]]){if(on)next.searchParams.set(name,'1');else next.searchParams.delete(name);}history.replaceState(null,'',next);}
 }
 if(form&&grid){
-  form.elements.namedItem('q').value=new URLSearchParams(location.search).get('q')||'';
+  document.querySelector('.resource-filters')?.removeAttribute('hidden');
+  const query=new URLSearchParams(location.search);
+  form.elements.namedItem('q').value=query.get('q')||'';
+  if(sourceFilter)sourceFilter.checked=query.get('open_source')==='1';
+  if(noteFilter)noteFilter.checked=query.get('learning_note')==='1';
   form.addEventListener('input',update);
   form.addEventListener('submit',event=>{event.preventDefault();update();});
   sort?.addEventListener('change',update);
+  sourceFilter?.addEventListener('change',update);
+  noteFilter?.addEventListener('change',update);
   update();
 }
 document.querySelectorAll('[data-language-switch]').forEach(link=>link.addEventListener('click',()=>{
@@ -89,12 +97,33 @@ if(analyticsEnabled&&document.body.dataset.impressionsEnabled==='true'&&'Interse
 }
 let opener=null;
 let selectedVideo='';
+function updatePreviewLearning(work,title){
+  const panel=dialog?.querySelector('#preview-learning-actions');
+  if(!panel)return;
+  panel.replaceChildren();panel.hidden=true;
+  for(const action of (Array.isArray(work.learningActions)?work.learningActions:[]).slice(0,2)){
+    if(!action||!['source','author_guide','learning_note'].includes(action.kind)||typeof action.label!=='string'||!action.label.trim())continue;
+    const source=action.kind==='source', external=action.kind!=='learning_note';
+    if(external){try{const url=new URL(action.href);if(url.protocol!=='https:'||url.username||url.password||url.port)continue;}catch{continue;}}
+    else if(action.href!==`${work.detail}#learning`)continue;
+    const provider=['github','huggingface'].includes(action.provider)?action.provider:'other';
+    const link=document.createElement('a'),icon=document.createElement('img');
+    link.className='resource-action';link.href=action.href;link.setAttribute('aria-label',`${action.ariaLabel||action.label}: ${title}`);
+    link.dataset.trackEvent=source?'source_open':'learning_open';link.dataset.trackWork=work.id;
+    link.dataset.trackPlacement=source?`source-${provider}-dialog`:`learning-${action.kind==='learning_note'?'note':'guide'}-dialog`;
+    if(external){link.target='_blank';link.rel='noopener noreferrer';}
+    icon.src=`/assets/icons/${source?(provider==='other'?'code':provider):'book'}.svg`;icon.alt='';icon.width=16;icon.height=16;
+    link.append(icon,document.createTextNode(action.label));panel.append(link);
+  }
+  panel.hidden=!panel.children.length;
+}
 document.addEventListener('click',event=>{
   const trigger=event.target.closest('[data-preview]');
   if(!trigger||!dialog||typeof dialog.showModal!=='function')return;
   const card=trigger.closest('.creation-card');
   if(!card)return;
   const work=JSON.parse(card.dataset.work);
+  updatePreviewLearning({learningActions:[]},'');
   if(!work.poster)return;
   event.preventDefault(); opener=trigger;
   const text=work.locales[lang], img=dialog.querySelector('#preview-image');
@@ -106,12 +135,13 @@ document.addEventListener('click',event=>{
   dialog.querySelector('#preview-open').href=work.demo_url;
   dialog.querySelector('#preview-open').dataset.trackWork=work.id;
   dialog.querySelector('#preview-details').href=work.detail;
+  updatePreviewLearning(work,text.title);
   dialog.showModal();refreshImpressions();dialog.querySelector('.dialog-close').focus();
   track('preview_open',{work_id:work.id,locale:lang,page_type:pageType,placement:trigger.closest('.related-section')?'related':'card'});
 });
 dialog?.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());
 dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
-dialog?.addEventListener('close',()=>{const video=dialog.querySelector('#preview-video');video.pause();video.removeAttribute('src');video.load();video.hidden=true;opener?.focus();opener=null;refreshImpressions();});
+dialog?.addEventListener('close',()=>{const video=dialog.querySelector('#preview-video');video.pause();video.removeAttribute('src');video.load();video.hidden=true;updatePreviewLearning({learningActions:[]},'');opener?.focus();opener=null;refreshImpressions();});
 dialog?.querySelector('#preview-play')?.addEventListener('click',()=>{if(!selectedVideo)return;const video=dialog.querySelector('#preview-video');dialog.querySelector('#preview-image').hidden=true;dialog.querySelector('#preview-unavailable').hidden=true;video.hidden=false;video.src=selectedVideo;video.play().catch(()=>{});});
 dialog?.querySelector('#preview-image')?.addEventListener('error',event=>{event.currentTarget.hidden=true;dialog.querySelector('#preview-unavailable').hidden=false;});
 function missingImage(img){

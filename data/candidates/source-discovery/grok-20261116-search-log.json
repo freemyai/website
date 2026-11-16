@@ -1,0 +1,134 @@
+{
+  "request_id": "freemy-source-discovery-20261116",
+  "checked_at": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "base_commit": "81c20095eee287a39b2cbe1cc1ec61f1847367ef",
+  "git_head_matches_base_commit": true,
+  "website_branch": "codex/interactive-discovery",
+  "methods_used": [
+    "Read gallery.json / works.json on disk at the named commit (working tree matched HEAD).",
+    "Fetched public GitHub API metadata until unauthenticated rate limit, then switched to raw.githubusercontent.com, commit atom feeds, and GitHub HTML.",
+    "Fetched live demo pages, author sites, README/LICENSE/prompt files, and selected X posts via public X read tools.",
+    "Did not clone repositories, install dependencies, execute project code, contact authors, or modify the Freemy website repository."
+  ],
+  "rate_limits_and_blocks": [
+    {
+      "when": "2026-11-16T02:41+08:00 approximately",
+      "resource": "api.github.com unauthenticated",
+      "effect": "HTTP 403 after the first batch (tools, MiaAI-Lab, battledrones, haldane-4 succeeded; later repo calls failed). Subsequent checks used raw files, HTML, and atom feeds."
+    },
+    {
+      "resource": "data.jsdelivr.com package listings",
+      "effect": "HTTP 400; ignored in favor of GitHub HTML directory pages."
+    }
+  ],
+  "queries_and_pages": [
+    {
+      "work_id": "tree-appreciator",
+      "actions": [
+        "GET https://api.github.com/repos/simonw/tools",
+        "GET raw LICENSE and tree-appreciator.html on main",
+        "GET https://github.com/simonw/tools/commits/main/tree-appreciator.html.atom and LICENSE.atom",
+        "GET https://tools.simonwillison.net/tree-appreciator",
+        "GET https://simonwillison.net/2026/Oct/14/tree-appreciator/"
+      ]
+    },
+    {
+      "work_id": "web-bayan",
+      "actions": [
+        "GET raw README, LICENSE, LICENSE.md, bayan/bayan.html, bayan/LICENSE",
+        "GET https://github.com/gbkorr/gbkorr/tree/main/bayan and bayan/js",
+        "GET bayan commit atom",
+        "GET https://gbkorr.github.io/r-bites/bayan/bayan.html"
+      ]
+    },
+    {
+      "work_id": "harmonograph",
+      "actions": [
+        "GET api.github.com/repos/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+        "GET raw README, LICENSE, LICENSE.md, COPYING, 097-harmonograph.html, 097-harmonograph.txt",
+        "GET commits/main.atom"
+      ]
+    },
+    {
+      "work_id": "rosette",
+      "actions": [
+        "GET raw 023-symmetry-painter.html and 023-symmetry-painter.txt in the same repository"
+      ]
+    },
+    {
+      "work_id": "battle-drones",
+      "actions": [
+        "GET api.github.com/repos/simonw/battledrones",
+        "GET raw README, LICENSE, package.json",
+        "GET commits/main.atom and LICENSE.atom",
+        "GET https://simonwillison.net/2026/Oct/20/battledrones/"
+      ]
+    },
+    {
+      "work_id": "haldane-4",
+      "actions": [
+        "GET api.github.com/repos/denisbondare/haldane-4",
+        "GET raw README, LICENSE, LICENSE.md, package.json, COPYING, UNLICENSE",
+        "GET commits/main.atom and LICENSE.atom"
+      ]
+    },
+    {
+      "work_id": "wawa-school-of-magic",
+      "actions": [
+        "GET https://github.com/wass08/wfc-magic-school and commit 21b15de2ad7e266f6ccc20bcff0c7f3a67bd7b23",
+        "GET raw README, LICENSE, LICENSE.md, package.json, index.html, CNAME, vercel.json",
+        "GET https://magic-school.wawasensei.dev/",
+        "GET X post 2121997847524766051 and search from:wawasensei (github OR wfc-magic-school)"
+      ]
+    },
+    {
+      "work_id": "regolith",
+      "actions": [
+        "GET https://github.com/winchxyz/moon-rover",
+        "GET raw README, LICENSE, LICENSE.md, index.html",
+        "GET commits/main.atom and LICENSE.atom"
+      ]
+    },
+    {
+      "work_id": "fall-line",
+      "actions": [
+        "GET https://github.com/Nipale-ai/opus-5-5-overnight-builds and tree/main/fall-line and tree/main/briefs",
+        "GET raw README, LICENSE, LICENSE.md, briefs/fall-line-prompt-as-sent.md, briefs/fall-line-model-readme.md, fall-line/index.html, fall-line/README.md, package.json, LICENSE"
+      ]
+    },
+    {
+      "work_id": "hydraulics",
+      "actions": [
+        "GET https://hydraulics.wasmer.app/",
+        "GET X post 2119075448449581197 and search from:thebuggeddev (github OR source OR repo) (hydraulics OR wasmer.app)",
+        "Web search for hydraulics.wasmer.app source github",
+        "GET https://github.com/thebuggeddev?tab=repositories&q=hydra",
+        "GET https://github.com/search?q=hydraulics+user:thebuggeddev&type=repositories (0 results)",
+        "GET https://github.com/thebuggeddev/hydraulics (404)",
+        "GET https://wasmer.io/search?q=hydraulics (no usable public source result in the returned page)"
+      ]
+    },
+    {
+      "work_id": "learn-arduino",
+      "actions": [
+        "GET https://learn-arduino-red.vercel.app/ and /zh/",
+        "GET https://dilum.dev/ and https://dilum.dev/primers",
+        "GET X post 2112587730542854263 and search from:DilumSanjaya (github OR source OR repo) (Arduino OR arduino)",
+        "GET https://github.com/dilums?tab=repositories&q=arduino",
+        "GET https://github.com/search?q=arduino+user:dilums&type=repositories (0 results)",
+        "Web search for Dilum Sanjaya Learn Arduino github"
+      ]
+    },
+    {
+      "work_id": "null-range",
+      "actions": [
+        "GET https://nullrange.com/",
+        "GET https://www.taylorallen.co/, https://sntx.co/, https://labs.sntx.co/",
+        "Search X from:taylor_sntx (github OR source code OR repo) (nullrange OR Null Range) (0 results)",
+        "Web search for Null Range source github",
+        "GET https://github.com/search?q=\"null range\" OR nullrange OR null-range&type=repositories (unrelated scientific/data projects only)"
+      ]
+    }
+  ]
+}

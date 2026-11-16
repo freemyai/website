@@ -2,12 +2,14 @@ import fs from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
 import { eligibleForGallery, safeExternalUrl, assertUniqueExperienceUrls } from './catalog.mjs';
-import { topicNames } from './i18n.mjs';
+import { topicNames, urlFor } from './i18n.mjs';
+import { validateLearningRecord, publicLearningPayload, safeLearningUrl } from './learning-resources.mjs';
+import { loadPublishedLearningNote } from './learning-content.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data', name), 'utf8'));
 
-export function loadCatalog({readData=read}={}) {
+export function loadCatalog({readData=read,readLearningText}={}) {
   const taxonomy=readData('taxonomy.json'), oldWorks=readData('works.json'), featured=readData('gallery.json'), references=readData('references.json');
   const translations=readData('legacy-locales.json'), types=readData('types.json'), collections=readData('collections.json');
   for(const item of [...types,...collections,...taxonomy.categories]) if(!/^[a-z0-9-]+$/.test(item.id)) throw new Error(`Invalid route id: ${item.id}`);
@@ -35,6 +37,37 @@ export function loadCatalog({readData=read}={}) {
     w.search_terms=[...(topicNames[category.id]||[]),subcategory.name_zh,subcategory.id.replaceAll('-',' '),type.zh,type.en];
     w.catalog_order=index;
     ids.add(w.id); slugs.add(w.slug);
+  }
+  const learningData=readData('learning-resources.json')??{schema_version:1,base_commit:'0000000000000000000000000000000000000000',records:[]};
+  const policy=readData('open-source-license-policy.json')??{allowedLicenses:[]};
+  if(learningData.schema_version!==1||!/^[a-f0-9]{40}$/.test(learningData.base_commit||'')||!Array.isArray(learningData.records)||!Array.isArray(policy.allowedLicenses)) throw new Error('Invalid learning resources or license policy');
+  const seenLearningWorks=new Set(),seenResources=new Set(),allowedLicenses=policy.allowedLicenses;
+  for(const record of learningData.records){
+    if(seenLearningWorks.has(record.work_id))throw new Error(`Duplicate learning work: ${record.work_id}`);
+    seenLearningWorks.add(record.work_id);
+    const errors=validateLearningRecord(record,{workIds:ids,allowedLicenses});
+    if(errors.length)throw new Error(errors.join('; '));
+    const tags=record.technical_tags??[];
+    if(!Array.isArray(tags))throw new Error(`Invalid technical tags: ${record.work_id}`);
+    const seenTags=new Set();
+    for(const tag of tags){
+      if(!tag||!/^[a-z0-9-]+$/.test(tag.id||'')||seenTags.has(tag.id)||tag.status!=='verified'||
+         !['zh','en'].every(lang=>typeof tag.label?.[lang]==='string'&&tag.label[lang].trim())||!safeLearningUrl(tag.evidence_url)) throw new Error(`Invalid technical tag: ${record.work_id}`);
+      seenTags.add(tag.id);
+    }
+    for(const resource of record.sources){
+      if(seenResources.has(resource.id))throw new Error(`Duplicate learning resource: ${resource.id}`);
+      seenResources.add(resource.id);
+    }
+    const work=works.find(item=>item.id===record.work_id);
+    const noteOptions=readLearningText?{readText:readLearningText}:{};
+    const notes={zh:loadPublishedLearningNote(record,'zh',noteOptions),en:loadPublishedLearningNote(record,'en',noteOptions)};
+    const payload=lang=>publicLearningPayload(record,lang,{allowedLicenses,noteHref:notes[lang]?`${urlFor(lang,`/works/${work.slug}/`)}#learning`:null});
+    work.learningPublic={zh:payload('zh'),en:payload('en')};
+    work.hasOpenSource=work.learningPublic.en.hasOpenSource;
+    work.hasLearningNote=work.learningPublic.en.hasLearningNote;
+    work.search_terms.push(...tags.flatMap(tag=>[tag.label.zh,tag.label.en]));
+    work.learning={sources:record.sources.filter(resource=>resource.publication==='published'),notes,allowedLicenses,technicalTags:tags};
   }
   for(const item of imported){
     const w=works.find(x=>x.id===item.id);

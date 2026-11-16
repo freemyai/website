@@ -29,6 +29,37 @@ test('work views share one stable ID between languages and QA is identifiable', 
   assert.equal(track('work_view',{work_id:'not a valid id',locale:'en'}),false);
 });
 
+test('source and learning clicks send only bounded work and location data', () => {
+  const sent=[], track=createTracker({enabled:true,origin:'https://freemy.ai',mode:'qa',send:(...args)=>sent.push(args)});
+  assert.equal(track('source_open',{work_id:'tree-appreciator',locale:'en',page_type:'home',placement:'source-github-card',url:'https://private.example/source'}),true);
+  assert.equal(track('learning_open',{work_id:'tree-appreciator',locale:'zh',page_type:'work',placement:'learning-note-detail',query:'private search'}),true);
+  assert.deepEqual(sent,[
+    ['event',{name:'source_open',data:{work_id:'tree-appreciator',placement:'qa:en:home:source-github-card'}}],
+    ['event',{name:'learning_open',data:{work_id:'tree-appreciator',placement:'qa:zh:work:learning-note-detail'}}]
+  ]);
+  assert.equal(track('source_open',{locale:'en',page_type:'home',placement:'source-github-card'}),false,'a work ID is required');
+  assert.equal(track('learning_open',{work_id:'tree-appreciator',locale:'zh',page_type:'work',placement:'user-supplied-text'}),false,'placement is a bounded value');
+  assert.equal(track('source_open',{work_id:'tree-appreciator',locale:'en',page_type:'user-supplied-text',placement:'source-github-card'}),false,'page type is a bounded value');
+  assert.equal(track('source_open',{work_id:'tree-appreciator',locale:'user-supplied-text',page_type:'home',placement:'source-github-card'}),false,'language is a bounded value');
+  assert.equal(track('source_open',{work_id:'tree-appreciator',locale:'en',page_type:'home',placement:'learning-note-card'}),false,'learning placement cannot be sent as a source click');
+  assert.equal(createTracker({enabled:true,origin:'https://freemy.ai',mode:'off',send:()=>assert.fail()})('source_open',{work_id:'tree-appreciator',page_type:'home',placement:'source-github-card'}),false);
+  assert.equal(createTracker({enabled:true,origin:'http://localhost:4177',send:()=>assert.fail()})('learning_open',{work_id:'tree-appreciator',page_type:'home',placement:'learning-guide-card'}),false);
+  assert.equal(createTracker({enabled:true,origin:'https://freemy.ai',send:()=>{throw new Error('blocked')}})('source_open',{work_id:'tree-appreciator',locale:'en',page_type:'home',placement:'source-github-card'}),false,'statistics failure does not throw');
+});
+
+test('supported source providers and learning types work in all interface locations', () => {
+  const track=createTracker({enabled:true,origin:'https://freemy.ai'});
+  const examples=[
+    ['source_open','source-github-card'],['source_open','source-huggingface-dialog'],
+    ['source_open','source-other-detail'],['source_open','source-github-related'],
+    ['learning_open','learning-note-card'],['learning_open','learning-guide-dialog'],
+    ['learning_open','learning-note-detail'],['learning_open','learning-guide-related']
+  ];
+  for(const [name,placement] of examples){
+    assert.equal(track(name,{work_id:'tree-appreciator',locale:'en',page_type:'work',placement}),true,placement);
+  }
+});
+
 test('impressions need continuous foreground visibility and deduplicate by work', () => {
   let nextId=0;
   const timers=new Map(), sent=[];
