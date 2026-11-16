@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "work_id": "knockbots",
+      "original_url": "https://knockbots.com/",
+      "previous_editorial_status": "published",
+      "status": "pending_verification",
+      "first_detected_at": "2026-11-16T09:44:56.394Z",
+      "last_checked_at": "2026-11-16T10:09:54+00:00",
+      "reason": "自动浏览器加载或截图超时，原站可响应；需在普通浏览器或独立环境复核，暂未确认原站失效。",
+      "evidence": [
+        {
+          "checked_at": "2026-11-16T09:44:56.394Z",
+          "method": "headless_browser",
+          "observation": "原站返回 HTTP 200，浏览器显示 BUILDING ARENA，自动截图超时。"
+        },
+        {
+          "checked_at": "2026-11-16T10:09:54+00:00",
+          "method": "headless_browser_individual_recheck",
+          "observation": "单独复查时，自动浏览器截图和后续读取页面超时；尚不能判断普通用户浏览器是否受影响。"
+        }
+      ],
+      "action": "保留上架并继续复查",
+      "independent_review_request_id": "freemy-availability-20261116-two"
+    },
+    {
+      "work_id": "koi-pond",
+      "original_url": "https://souranyp-stack.github.io/koi-pond-garden/koi-pond.html",
+      "previous_editorial_status": "published",
+      "status": "pending_verification",
+      "first_detected_at": "2026-11-16T09:50:14.962Z",
+      "last_checked_at": "2026-11-16T10:09:54+00:00",
+      "reason": "自动浏览器加载或截图超时，原站可响应；需在普通浏览器或独立环境复核，暂未确认原站失效。",
+      "evidence": [
+        {
+          "checked_at": "2026-11-16T09:50:14.962Z",
+          "method": "headless_browser",
+          "observation": "原站返回 HTTP 200，浏览器显示 Planting the garden，自动截图超时。"
+        },
+        {
+          "checked_at": "2026-11-16T10:00:14.845Z",
+          "method": "headless_browser_recheck",
+          "observation": "再次复查时显示 Compiling shaders，自动截图超时。"
+        },
+        {
+          "checked_at": "2026-11-16T10:09:54+00:00",
+          "method": "headless_browser_individual_recheck",
+          "observation": "单独复查时，自动浏览器截图和后续读取页面超时；尚不能判断普通用户浏览器是否受影响。"
+        }
+      ],
+      "action": "保留上架并继续复查",
+      "independent_review_request_id": "freemy-availability-20261116-two"
+    }
+  ]
+}
