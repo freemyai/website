@@ -194,5 +194,87 @@
       "status": "published"
     },
     "added_at": "2026-11-12"
+  },
+  {
+    "id": "kartboard",
+    "slug": "kartboard",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Kartboard",
+    "demo_url": "https://kartboard.makio.io/",
+    "creator": {
+      "name": "David Ronai (Makio64)",
+      "profile_url": "https://x.com/makio64"
+    },
+    "locales": {
+      "zh": {
+        "title": "Kartboard：纸板卡丁车",
+        "summary": "驾驶纸板小车，在手工模型般的桌面赛道上比赛。",
+        "action": "选择 Race、1 Player、Single Race 和赛道，再选择难度与赛车；用方向键或 WASD 驾驶。",
+        "why": "纸板场景、桌面道具和可选赛车，把迷你赛道做成了一场轻快的浏览器比赛。",
+        "limit": "AI 参与创作的情况尚未确认，作为灵感参考收录。原作并未开放源码；首次加载可能较慢，需要支持 WebGPU 或 WebGL2 的浏览器。仅测试桌面单人比赛开局与短距离驾驶，手机和双人模式未测。"
+      },
+      "en": {
+        "title": "Kartboard",
+        "summary": "Race a cardboard kart around a miniature tabletop track.",
+        "action": "Choose Race, 1 Player, Single Race and a track, then choose a difficulty and kart. Drive with the arrow keys or WASD.",
+        "why": "Cardboard scenery, desk props and a choice of karts turn a miniature course into a playful browser race.",
+        "limit": "AI involvement has not been confirmed, so this is listed as a creative reference. The game itself is not open source. Initial loading may take time; a WebGPU or WebGL2 browser is required. Only the start of a solo race and a short drive were tested on desktop; mobile and two-player modes were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://x.com/makio64/status/2122325418758098985"
+      },
+      {
+        "url": "https://kartboard.makio.io/licenses/site.txt"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "本机桌面浏览器进入单人比赛，选择 Desk GP、Easy 与赛车，比赛开始后按方向键短距离行驶；未完成单圈，手机、双人模式与声音未测。",
+      "note_en": "A local desktop browser entered a solo race, selected Desk GP, Easy and a kart, then drove briefly with the arrow keys. A full lap, mobile, two-player mode and audio were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/kartboard-960.webp",
+        "base": "kartboard",
+        "alt": {
+          "zh": "Kartboard 的纸板赛道与主菜单，署名 Makio64。",
+          "en": "The Kartboard main menu over a miniature cardboard track, credited to Makio64."
+        },
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://kartboard.makio.io/",
+        "captured_at": "2026-11-16",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published"
+    },
+    "added_at": "2026-11-16"
   }
 ]
