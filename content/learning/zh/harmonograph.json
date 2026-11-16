@@ -1,0 +1,17 @@
+{
+  "kind": "source_walkthrough",
+  "title": "摆动的参数如何画成一条线",
+  "summary": "沿着频率、相位和阻尼，观察公式怎样变成画布上的连续轨迹。",
+  "sections": [
+    {"heading":"先观察","paragraphs":["在原站切换频率比、调整相位或阻尼，再观察绘图轨迹怎样变化。"],"bullets":[]},
+    {"heading":"代码中已经确认的事","paragraphs":["参数对象保存频率比、相位和阻尼等值；machine 根据它们计算摆动参数，pos 在某个时间计算画笔位置。"],"bullets":[]},
+    {"heading":"从这里开始读","paragraphs":["先看参数和 machine、pos，再看 drawTo 如何连续取样并把相邻位置连成 Canvas 2D 轨迹。"],"bullets":[]},
+    {"heading":"试一个小练习","paragraphs":["在原站分别选择 1:1 和 2:3，尽量保持其他设置一致，比较两幅轨迹；再改变阻尼，观察线条收拢的速度。"],"bullets":[]},
+    {"heading":"范围与限制","paragraphs":["笔记基于固定版本的源码阅读；我们没有运行仓库代码。本次未确认仓库许可证，作者的原始提示词另有链接。"],"bullets":[]}
+  ],
+  "references": [
+    {"id":"model","label":"参数和位置计算","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L310-L343"},
+    {"id":"draw","label":"轨迹绘制","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L392-L423"},
+    {"id":"prompt","label":"作者的原始提示词","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.txt"}
+  ]
+}

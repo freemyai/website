@@ -1,0 +1,17 @@
+{
+  "kind": "source_walkthrough",
+  "title": "一笔如何变成放射状图案",
+  "summary": "从坐标、旋转和镜像三个步骤，理解对称绘画的基本结构。",
+  "sections": [
+    {"heading":"先观察","paragraphs":["在原站画一笔，改变折数并开关镜像，比较同一动作形成的图案。"],"bullets":[]},
+    {"heading":"代码中已经确认的事","paragraphs":["源码说明笔画以单位坐标保存，便于窗口缩放后重新绘制；eachCopy 按折数旋转画布，在开启镜像时再翻转一次。"],"bullets":[]},
+    {"heading":"从这里开始读","paragraphs":["先看关于单位坐标的注释和 Canvas 2D 画布，再看 eachCopy 中的旋转、绘制与可选镜像。"],"bullets":[]},
+    {"heading":"试一个小练习","paragraphs":["在原站先选 3 折画一条短线，再选 6 折并开关镜像，观察重复次数与方向的变化。"],"bullets":[]},
+    {"heading":"范围与限制","paragraphs":["笔记基于固定版本的源码阅读；我们没有运行仓库代码。本次未确认仓库许可证，作者的原始提示词另有链接。"],"bullets":[]}
+  ],
+  "references": [
+    {"id":"coordinates","label":"笔画坐标与画布","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L204-L215"},
+    {"id":"symmetry","label":"旋转与镜像","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L305-L315"},
+    {"id":"prompt","label":"作者的原始提示词","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.txt"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "source_walkthrough",
+  "title": "How one stroke becomes a radial pattern",
+  "summary": "Use coordinates, rotation and reflection to understand the structure of a symmetry painter.",
+  "sections": [
+    {"heading":"Observe first","paragraphs":["Draw a stroke on the original site, change the fold count and toggle the mirror option to compare the resulting patterns."],"bullets":[]},
+    {"heading":"What the code shows","paragraphs":["A source comment says strokes are stored in unit coordinates so they can be replayed after resizing. eachCopy rotates the canvas for each fold and reflects it again when mirroring is enabled."],"bullets":[]},
+    {"heading":"Where to start reading","paragraphs":["Begin with the unit-coordinate comment and Canvas 2D setup, then read the rotations, drawing callback and optional reflection in eachCopy."],"bullets":[]},
+    {"heading":"Try a small exercise","paragraphs":["On the original site, draw a short line with 3 folds, then use 6 folds and toggle mirroring. Compare the number and direction of the repeated marks."],"bullets":[]},
+    {"heading":"Scope and limits","paragraphs":["This note is based on reading a fixed source revision; we did not run the repository code. The repository license was not confirmed, and the creator’s original prompt is linked separately."],"bullets":[]}
+  ],
+  "references": [
+    {"id":"coordinates","label":"Stroke coordinates and canvas","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L204-L215"},
+    {"id":"symmetry","label":"Rotation and reflection","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L305-L315"},
+    {"id":"prompt","label":"Creator’s original prompt","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.txt"}
+  ]
+}

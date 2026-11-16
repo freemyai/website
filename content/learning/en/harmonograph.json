@@ -1,0 +1,17 @@
+{
+  "kind": "source_walkthrough",
+  "title": "How oscillation parameters become a line",
+  "summary": "Follow frequency, phase and damping from a formula to a continuous path on the canvas.",
+  "sections": [
+    {"heading":"Observe first","paragraphs":["On the original site, change the frequency ratio, phase or damping and watch how the drawing changes."],"bullets":[]},
+    {"heading":"What the code shows","paragraphs":["A parameter object stores values including frequency ratio, phase and damping. machine derives oscillation parameters, and pos calculates the pen position at a given time."],"bullets":[]},
+    {"heading":"Where to start reading","paragraphs":["Start with the parameters and machine and pos functions. Then follow drawTo as it samples successive positions and joins them into a Canvas 2D path."],"bullets":[]},
+    {"heading":"Try a small exercise","paragraphs":["On the original site, compare 1:1 and 2:3 while keeping the other settings as similar as possible. Then change damping and observe how quickly the line contracts."],"bullets":[]},
+    {"heading":"Scope and limits","paragraphs":["This note is based on reading a fixed source revision; we did not run the repository code. The repository license was not confirmed, and the creator’s original prompt is linked separately."],"bullets":[]}
+  ],
+  "references": [
+    {"id":"model","label":"Parameters and position","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L310-L343"},
+    {"id":"draw","label":"Drawing the path","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L392-L423"},
+    {"id":"prompt","label":"Creator’s original prompt","url":"https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.txt"}
+  ]
+}

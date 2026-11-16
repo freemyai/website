@@ -1,0 +1,18 @@
+{
+  "kind": "source_walkthrough",
+  "title": "同一颗种子，怎样长出两棵不同的树",
+  "summary": "从可重复的随机数、差异记录和点击判定，理解一局找不同怎样组织。",
+  "sections": [
+    {"heading":"先观察","paragraphs":["在原站拖动树木时，两边视角会一起转动；每一轮的两棵树大体相同，只有少数细节不同。"],"bullets":[]},
+    {"heading":"代码中已经确认的事","paragraphs":["RNG 使用种子生成随机数；makeLevelOnce 先生成一棵基树、克隆出另一棵，再选择并记录差异。"],"bullets":[]},
+    {"heading":"从这里开始读","paragraphs":["先看随机数部分，再看 makeLevelOnce 如何建立两棵树和 diffs，最后看 tap 如何把差异的位置投影到屏幕并判断点击。"],"bullets":[]},
+    {"heading":"试一个小练习","paragraphs":["先在原站观察一组树的共同枝干，再转动视角寻找一个差异；回到代码，找到用于记录差异位置与是否发现的字段。"],"bullets":[]},
+    {"heading":"范围与限制","paragraphs":["这份笔记基于固定版本的源码阅读；我们没有运行仓库代码。仓库根许可证为 Apache-2.0，Three.js、字体等外部资源可能有各自许可。"],"bullets":[]}
+  ],
+  "references": [
+    {"id":"random","label":"随机数与种子","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L453-L474"},
+    {"id":"level","label":"生成树与记录差异","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3026-L3065"},
+    {"id":"tap","label":"点击判断","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3877-L3899"},
+    {"id":"creator","label":"作者的创作说明","url":"https://simonwillison.net/2026/Oct/14/tree-appreciator/"}
+  ]
+}

@@ -54,12 +54,17 @@
         }
       ],
       "learning_note": {
-        "status": "absent",
-        "kind": null,
-        "zh_path": null,
-        "en_path": null,
-        "reviewed_at": null,
-        "evidence_urls": []
+        "status": "published",
+        "kind": "source_walkthrough",
+        "zh_path": "content/learning/zh/tree-appreciator.json",
+        "en_path": "content/learning/en/tree-appreciator.json",
+        "reviewed_at": "2026-11-16",
+        "evidence_urls": [
+          "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L453-L474",
+          "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3026-L3065",
+          "https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3877-L3899",
+          "https://simonwillison.net/2026/Oct/14/tree-appreciator/"
+        ]
       },
       "technical_tags": [
         {
@@ -415,12 +420,16 @@
         }
       ],
       "learning_note": {
-        "status": "absent",
-        "kind": null,
-        "zh_path": null,
-        "en_path": null,
-        "reviewed_at": null,
-        "evidence_urls": []
+        "status": "published",
+        "kind": "source_walkthrough",
+        "zh_path": "content/learning/zh/harmonograph.json",
+        "en_path": "content/learning/en/harmonograph.json",
+        "reviewed_at": "2026-11-16",
+        "evidence_urls": [
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L310-L343",
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.html#L392-L423",
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/097-harmonograph.txt"
+        ]
       },
       "technical_tags": [
         {
@@ -525,12 +534,16 @@
         }
       ],
       "learning_note": {
-        "status": "absent",
-        "kind": null,
-        "zh_path": null,
-        "en_path": null,
-        "reviewed_at": null,
-        "evidence_urls": []
+        "status": "published",
+        "kind": "source_walkthrough",
+        "zh_path": "content/learning/zh/rosette.json",
+        "en_path": "content/learning/en/rosette.json",
+        "reviewed_at": "2026-11-16",
+        "evidence_urls": [
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L204-L215",
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.html#L305-L315",
+          "https://github.com/MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files/blob/86ad33f7928bd6289b84ef9049c39a6d5bbc4fe0/023-symmetry-painter.txt"
+        ]
       },
       "technical_tags": [
         {

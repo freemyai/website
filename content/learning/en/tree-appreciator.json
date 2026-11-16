@@ -1,0 +1,18 @@
+{
+  "kind": "source_walkthrough",
+  "title": "How one seed grows two different trees",
+  "summary": "Follow reproducible randomness, recorded differences and hit testing through one round of a spot-the-difference game.",
+  "sections": [
+    {"heading":"Observe first","paragraphs":["On the original site, dragging turns both views together. Each pair is mostly alike, with a few small differences."],"bullets":[]},
+    {"heading":"What the code shows","paragraphs":["RNG produces random values from a seed. makeLevelOnce generates a base tree, clones it, then selects and records differences."],"bullets":[]},
+    {"heading":"Where to start reading","paragraphs":["Read the random-number helper, then follow how makeLevelOnce builds the pair and its diffs. Finally, see how tap projects difference locations to the screen and checks a click."],"bullets":[]},
+    {"heading":"Try a small exercise","paragraphs":["On the original site, compare the shared branches of a pair, rotate the view and find one difference. Then find the fields that record a difference’s position and whether it has been found."],"bullets":[]},
+    {"heading":"Scope and limits","paragraphs":["This note is based on reading a fixed source revision; we did not run the repository code. The root license is Apache-2.0; external resources such as Three.js and fonts may have separate terms."],"bullets":[]}
+  ],
+  "references": [
+    {"id":"random","label":"Randomness and seed","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L453-L474"},
+    {"id":"level","label":"Generating and recording differences","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3026-L3065"},
+    {"id":"tap","label":"Click testing","url":"https://github.com/simonw/tools/blob/a285d172df23d622f7cbafdcba978733de244bde/tree-appreciator.html#L3877-L3899"},
+    {"id":"creator","label":"Creator’s explanation","url":"https://simonwillison.net/2026/Oct/14/tree-appreciator/"}
+  ]
+}
