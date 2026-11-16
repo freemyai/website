@@ -5443,5 +5443,94 @@
     "device_support": {"desktop": "tested_supported", "mobile": "unknown"},
     "editorial": {"status": "published", "featured_order": 2.296},
     "added_at": "2026-11-16"
+  },
+  {
+    "id": "codevember-mirage",
+    "slug": "codevember-mirage",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-sandbox",
+    "title_original": "Codevember 2026 / 15 / Mirage",
+    "demo_url": "https://mrdoob.github.io/codevember-2026/15/",
+    "creator": {
+      "name": "mrdoob",
+      "profile_url": "https://x.com/mrdoob"
+    },
+    "locales": {
+      "zh": {
+        "title": "Mirage：沙漠海市蜃楼",
+        "summary": "驾驶探索车穿过砂岩沙漠，驶向热浪中倒映的神殿。",
+        "action": "等待场景加载后，用 W 或方向键驾驶，拖动鼠标环视，并可选择黎明、白天或日落。",
+        "why": "沙丘、车辙与远处的倒影让一场小小的沙漠驾驶充满探索感。",
+        "limit": "需要支持 WebGPU 的浏览器和较强的图形性能；本机首次加载约 70 秒。仅测试桌面场景与短距离驾驶，移动端及完整探索未测。"
+      },
+      "en": {
+        "title": "Mirage",
+        "summary": "Drive a rover across a sandstone desert toward a sanctuary reflected in the heat.",
+        "action": "After the scene loads, drive with W or the arrow keys, drag to orbit, and choose Dawn, Day or Sunset.",
+        "why": "Dunes, wheel tracks and a distant reflection turn a short drive into a desert exploration.",
+        "limit": "A WebGPU browser and capable graphics hardware are needed; initial loading took about 70 seconds on our desktop. Only the desktop scene and a short drive were tested, not mobile or a complete exploration."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Codex"
+      ],
+      "evidence_url": "https://x.com/mrdoob/status/2122281036684067202",
+      "description": {
+        "zh": "作者在本作发布帖中使用 #codex，并将 Codevember 系列描述为创意智能体编程实验；具体创作分工未披露。",
+        "en": "The creator tags the launch post #codex and describes the Codevember series as creative agentic coding experiments; the exact division of work is not specified."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/mrdoob/codevember-2026/blob/067ac5c3464b7e54fc4f0efb12d2eedd0af364f5/README.md"
+      },
+      {
+        "url": "https://github.com/mrdoob/codevember-2026/blob/067ac5c3464b7e54fc4f0efb12d2eedd0af364f5/15/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "本机桌面 Chrome 约 70 秒加载完成；按 W 短距离驾驶，画面速度从 0 增至 36 km/h。日夜切换、手机和完整探索未测。",
+      "note_en": "Local desktop Chrome finished loading in about 70 seconds. Holding W moved the rover; the display rose from 0 to 36 km/h. Time-of-day controls, mobile and full exploration were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/codevember-mirage-960.webp",
+        "base": "codevember-mirage",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "沙漠中的探索车面向远处砂岩神殿与海市蜃楼。",
+          "en": "A rover faces a distant sandstone sanctuary and mirage in the desert."
+        }
+      },
+      "provenance": {
+        "source_url": "https://mrdoob.github.io/codevember-2026/15/",
+        "captured_at": "2026-11-16",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.295
+    },
+    "added_at": "2026-11-17"
   }
 ]
