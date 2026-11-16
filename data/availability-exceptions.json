@@ -7,7 +7,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:44:56.394Z",
-      "last_checked_at": "2026-11-16T18:17:20+08:00",
+      "last_checked_at": "2026-11-16T10:32:26.148Z",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -24,6 +24,11 @@
           "checked_at": "2026-11-16T18:17:20+08:00",
           "method": "independent_linux_chrome",
           "observation": "独立环境可打开页面，但该环境的 WebGL 1/2 被屏蔽，无法创建图形上下文；页面体验未能启动，不能据此判断原站失效。"
+        },
+        {
+          "checked_at": "2026-11-16T10:32:26.148Z",
+          "method": "windows_chrome_headless",
+          "observation": "Chrome 无头浏览器收到 HTTP 200，但多次读取页面和截图超时；同一浏览器的独立 WebGL 探针可创建图形上下文。普通浏览器的实际表现仍待核验。"
         }
       ],
       "action": "保留上架并继续复查",
@@ -36,7 +41,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:50:14.962Z",
-      "last_checked_at": "2026-11-16T18:21:22+08:00",
+      "last_checked_at": "2026-11-16T10:32:26.148Z",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -58,6 +63,11 @@
           "checked_at": "2026-11-16T18:21:22+08:00",
           "method": "independent_linux_chrome",
           "observation": "独立环境可打开页面，但该环境的 WebGL 1/2 被屏蔽，无法创建图形上下文；页面体验未能启动，不能据此判断原站失效。"
+        },
+        {
+          "checked_at": "2026-11-16T10:32:26.148Z",
+          "method": "windows_chrome_headless",
+          "observation": "Chrome 无头浏览器收到 HTTP 200，但多次读取页面和截图超时；同一浏览器的独立 WebGL 探针可创建图形上下文。普通浏览器的实际表现仍待核验。"
         }
       ],
       "action": "保留上架并继续复查",
