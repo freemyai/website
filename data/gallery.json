@@ -5331,5 +5331,117 @@
     "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
     "editorial": { "status": "published", "featured_order": 2.294 },
     "added_at": "2026-11-16"
+  },
+  {
+    "id": "huamo",
+    "slug": "huamo",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "化墨 HUAMO",
+    "demo_url": "https://888wing.github.io/huamo/",
+    "creator": { "name": "Nelson Chui", "profile_url": "https://x.com/888wing" },
+    "locales": {
+      "zh": {
+        "title": "化墨 HUAMO：雾中的水墨对决",
+        "summary": "走进雾气流动的水墨山谷，挥剑迎战并尝试化身飞禽走兽。",
+        "action": "用桌面浏览器进入后，按空格跳过开场；用 WASD 移动、F 出招，按 Tab 查看完整操作。",
+        "why": "实时流体模拟让雾像墨一样在人物与山谷间流动，把动作场景画成一幅会变化的水墨画。",
+        "limit": "原作者推荐支持 WebGPU 的桌面 Chrome 或 Edge。本次仅测试开场及部分操作；完整战斗、声音、手机和中国大陆网络未测。"
+      },
+      "en": {
+        "title": "HUAMO: An Ink-Wash Duel in the Mist",
+        "summary": "Enter a mist-filled ink-wash valley, draw your sword and try changing into animal forms.",
+        "action": "On desktop, press Space to skip the opening, move with WASD, attack with F and press Tab for the controls.",
+        "why": "A real-time fluid simulation lets the fog flow like ink around the characters and landscape.",
+        "limit": "The creator recommends desktop Chrome or Edge with WebGPU. Only the opening and a few controls were tested; full combat, audio, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "coding",
+      "tools": ["Claude Fable 5.2"],
+      "evidence_url": "https://github.com/888wing/huamo/commit/e970a56000a831557b367bc974983563e3275667",
+      "description": {
+        "zh": "作者的公开开发提交将 Claude Fable 5.2 列为共同作者。",
+        "en": "The creator's public development commit lists Claude Fable 5.2 as a co-author."
+      }
+    },
+    "sources": [{"url": "https://x.com/888wing/status/2122124815620595865"}, {"url": "https://github.com/888wing/huamo"}],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "独立桌面浏览器加载原站并进入场景；在作者提供的 arena 入口测试移动、出招和 Tab 操作说明。测试使用软件 WebGPU，完整战斗和手机未测。",
+      "note_en": "An independent desktop browser loaded the original site and entered the scene. Movement, attack and the Tab help overlay were tried using the creator's arena entry. Testing used software WebGPU; full combat and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/huamo-960.webp", "base": "huamo",
+        "alt": {"zh": "戴斗笠的水墨人物走在雾中，两旁是金色芦苇。", "en": "An ink-wash figure in a broad hat walks through mist between golden reeds."},
+        "width": 1440, "height": 900
+      },
+      "provenance": {"source_url": "https://888wing.github.io/huamo/", "captured_at": "2026-11-16", "method": "independent_desktop_browser_capture"}
+    },
+    "access": {"login": "none", "pricing": "free", "language_codes": ["zh"]},
+    "device_support": {"desktop": "tested_supported", "mobile": "unknown"},
+    "editorial": {"status": "published", "featured_order": 2.295},
+    "added_at": "2026-11-16"
+  },
+  {
+    "id": "a-space-mining-game",
+    "slug": "a-space-mining-game",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-sandbox",
+    "title_original": "A Space Mining Game",
+    "demo_url": "https://spaceminer.squimballstudios.com/",
+    "creator": {"name": "c0deConstructor", "profile_url": "https://x.com/c0deConstructor"},
+    "locales": {
+      "zh": {
+        "title": "A Space Mining Game：星际采矿之旅",
+        "summary": "驾驶飞船探索程序生成的星系，寻找小行星并打开星图规划航程。",
+        "action": "选择节奏后点击 Launch，用 WASD 驾驶、鼠标调整方向，按 M 打开星图。",
+        "why": "飞船、空间站和星图将探索、采矿与升级串在同一片太空中。",
+        "limit": "作品需要支持 WebGL2 的浏览器。仅测试桌面开局、飞行和星图；采矿任务、存档、声音、手机和中国大陆网络未测。"
+      },
+      "en": {
+        "title": "A Space Mining Game",
+        "summary": "Pilot a ship through a procedurally generated star system and open the star map to plan a route.",
+        "action": "Choose a pace and select Launch. Fly with WASD, aim with the mouse and press M to open the star map.",
+        "why": "Ships, stations and a star map bring exploration, mining and upgrades together in one space sandbox.",
+        "limit": "A browser with WebGL2 support is required. Only the opening, flight and star map were tested on desktop. Mining missions, saves, audio, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude"],
+      "evidence_url": "https://x.com/c0deConstructor/status/2119519981985746994",
+      "description": {
+        "zh": "作者在首发帖中表示这款太空采矿游戏由 Claude 协助制作。",
+        "en": "In the launch post, the creator says Claude made this space mining game."
+      }
+    },
+    "sources": [{"url": "https://x.com/c0deConstructor/status/2122149695346672064"}, {"url": "https://x.com/c0deConstructor/status/2122150038885355630"}],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "独立桌面浏览器启动游戏并按 W 飞行，速度从 0 增至 126 m/s；按 M 打开星图。Grok 的云端浏览器无法创建 WebGL2 上下文；采矿、存档和手机未测。",
+      "note_en": "An independent desktop browser launched the game and flew with W; the speed display rose from 0 to 126 m/s. Pressing M opened the star map. Grok's cloud browser could not create a WebGL2 context; mining, saves and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/a-space-mining-game-960.webp", "base": "a-space-mining-game",
+        "alt": {"zh": "小飞船停在发着绿光的太空站旁，屏幕上显示航行与采矿控制。", "en": "A small spacecraft near a glowing green space station, with flight and mining controls on screen."},
+        "width": 1440, "height": 900
+      },
+      "provenance": {"source_url": "https://spaceminer.squimballstudios.com/", "captured_at": "2026-11-16", "method": "independent_desktop_browser_capture"}
+    },
+    "access": {"login": "none", "pricing": "free", "language_codes": ["en"]},
+    "device_support": {"desktop": "tested_supported", "mobile": "unknown"},
+    "editorial": {"status": "published", "featured_order": 2.296},
+    "added_at": "2026-11-16"
   }
 ]

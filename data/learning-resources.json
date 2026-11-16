@@ -3,6 +3,56 @@
   "base_commit": "81c20095eee287a39b2cbe1cc1ec61f1847367ef",
   "records": [
     {
+      "work_id": "huamo",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "原站 HTML 与作者仓库的 index.html 一致。package.json 标记 ISC，但根目录未见许可证文件，尚未确认其覆盖范围。",
+          "en": "The live HTML matches the creator's repository index.html. package.json declares ISC, but no root license file was found and its scope was not confirmed."
+        }
+      },
+      "sources": [
+        {
+          "id": "huamo-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/888wing/huamo/tree/main/src",
+          "repository_url": "https://github.com/888wing/huamo",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "代码公开可读；package.json 标记 ISC，但本次未确认该声明对全部代码和素材的适用范围。",
+              "en": "The code is publicly readable. package.json declares ISC, but this review did not confirm its scope for all code and assets."
+            }
+          },
+          "evidence": [
+            {"type": "source_file", "url": "https://github.com/888wing/huamo/blob/f42f16652326abc7ee9ad83bfee6c110d811780c/index.html", "summary": "The repository HTML matched the live page at the time of review."},
+            {"type": "readme", "url": "https://github.com/888wing/huamo/blob/f42f16652326abc7ee9ad83bfee6c110d811780c/README.md", "summary": "The creator documents the HUAMO game and its WebGPU front-end source."},
+            {"type": "source_file", "url": "https://github.com/888wing/huamo/blob/f42f16652326abc7ee9ad83bfee6c110d811780c/package.json", "summary": "The package declares ISC; its scope for all code and assets was not established."}
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "f42f16652326abc7ee9ad83bfee6c110d811780c",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站与仓库的对应关系；未安装或运行仓库代码。",
+            "en": "The live site and repository association were checked; repository code was not installed or run."
+          }
+        }
+      ],
+      "learning_note": {"status": "absent", "kind": null, "zh_path": null, "en_path": null, "reviewed_at": null, "evidence_urls": []},
+      "technical_tags": [
+        {"id": "webgpu", "status": "verified", "label": {"zh": "WebGPU", "en": "WebGPU"}, "evidence_url": "https://github.com/888wing/huamo/blob/f42f16652326abc7ee9ad83bfee6c110d811780c/README.md"},
+        {"id": "threejs", "status": "verified", "label": {"zh": "Three.js", "en": "Three.js"}, "evidence_url": "https://github.com/888wing/huamo/blob/f42f16652326abc7ee9ad83bfee6c110d811780c/package.json"}
+      ]
+    },
+    {
       "work_id": "palette-rider",
       "search": {
         "status": "searched",

@@ -60,7 +60,9 @@
         "fall-line": "接管单板选手，在雪山滑行并尝试空中动作；云端测试帧率偏低。",
         "haldane-4": "驾驶字符画潜水器深入冰架下的黑暗海域；作品带有恐怖氛围。",
         "full-send": "驾驶俯视赛车练习转向和计时；完整单圈及多人模式未测。",
-        "palette-rider": "骑进由克利画作构成的城市；已测试第一章的进入和骑行。"
+        "palette-rider": "骑进由克利画作构成的城市；已测试第一章的进入和骑行。",
+        "huamo": "在流动的水墨雾气中移动和挥剑；作品需要支持 WebGPU 的桌面浏览器。",
+        "a-space-mining-game": "驾驶飞船并打开星图；已测试开局和飞行，采矿与存档尚未核验。"
       }
     },
     "en": {
@@ -90,7 +92,9 @@
         "fall-line": "Take over a snowboarder and try aerial moves on a mountain; the cloud test ran at a low frame rate.",
         "haldane-4": "Pilot an ASCII submersible beneath the ice; the game has a horror atmosphere.",
         "full-send": "Steer a top-down race car in a time trial; a full lap and multiplayer were not tested.",
-        "palette-rider": "Cycle through a city inspired by Klee; entering and riding in the first chapter were tested."
+        "palette-rider": "Cycle through a city inspired by Klee; entering and riding in the first chapter were tested.",
+        "huamo": "Move and swing a sword through flowing ink-like fog; a desktop WebGPU browser is needed.",
+        "a-space-mining-game": "Pilot a ship and open the star map; the opening and flight were tested, but mining and saves were not."
       }
     },
     "seo": {
@@ -120,7 +124,9 @@
       "fall-line",
       "haldane-4",
       "full-send",
-      "palette-rider"
+      "palette-rider",
+      "huamo",
+      "a-space-mining-game"
     ],
     "cover": "hyperbrick"
   },
@@ -167,7 +173,9 @@
       "glasswood",
       "fall-line",
       "wawa-school-of-magic",
-      "palette-rider"
+      "palette-rider",
+      "huamo",
+      "a-space-mining-game"
     ],
     "cover": "hearthlight"
   },
@@ -406,7 +414,8 @@
       "blackhole-lab",
       "earth-antenna",
       "spacex-vehicles",
-      "regolith"
+      "regolith",
+      "a-space-mining-game"
     ],
     "cover": "blackhole-lab"
   }
