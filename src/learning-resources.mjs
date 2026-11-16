@@ -30,8 +30,8 @@ function allowedSet(values){
 export function safeLearningUrl(value){
   if(typeof value!=='string'||value!==value.trim()||/[\u0000-\u0020\u007f\\]/.test(value))return null;
   try{
-    const url=new URL(value), host=url.hostname.toLowerCase().replace(/\.$/,'');
-    if(url.protocol!=='https:'||url.username||url.password||url.port||!host.includes('.')||
+    const url=new URL(value), host=url.hostname.toLowerCase();
+    if(url.protocol!=='https:'||url.username||url.password||url.port||host.endsWith('.')||!host.includes('.')||
        host.startsWith('[')||/^(?:\d{1,3}\.){3}\d{1,3}$/.test(host)||
        host==='localhost'||host.endsWith('.localhost')||host.endsWith('.local')||host.endsWith('.internal'))return null;
     return url.href;

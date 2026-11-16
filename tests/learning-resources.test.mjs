@@ -65,6 +65,7 @@ test('a Hugging Face demo or model is not an exposed Space code tree', () => {
 
 test('a provider cannot be relabeled as other and a license alone does not establish project identity', () => {
   assert.equal(policy.eligibleSourceLink(source({provider:'other',url:'https://github.com/simonw',repository_url:null}),options),false);
+  assert.equal(policy.eligibleSourceLink(source({provider:'other',url:'https://github.com./users/simonw',repository_url:'https://github.com./users/simonw',license:{...source().license,evidence_url:'https://github.com./users/simonw/LICENSE'}}),options),false);
   assert.equal(policy.eligibleSourceLink(source({evidence:[{type:'license_file',url:'https://github.com/simonw/tools/blob/main/LICENSE',summary:'License.'}]}),options),false);
   assert.equal(policy.eligibleSourceLink(source({id:'bad id'}),options),false);
   assert.equal(policy.eligibleSourceLink(source({license:{...source().license,evidence_url:'https://github.com/unrelated/project/blob/main/LICENSE'}}),options),false);
@@ -138,5 +139,5 @@ test('distinct works may reference different files in the same repository', () =
 test('external learning URLs reject local networks, credentials and non-HTTPS protocols', () => {
   assert.equal(typeof policy.safeLearningUrl,'function');
   assert.equal(policy.safeLearningUrl('https://example.org/path'),'https://example.org/path');
-  for(const url of ['http://example.org/', 'javascript:alert(1)','data:text/html,x','https://name:secret@example.org/', 'https://example.org:444/', 'https://localhost/a', 'https://127.0.0.1/a', 'https://192.168.1.1/a', 'https://[::1]/a']) assert.equal(policy.safeLearningUrl(url),null,url);
+  for(const url of ['http://example.org/', 'javascript:alert(1)','data:text/html,x','https://name:secret@example.org/', 'https://example.org:444/', 'https://github.com./users/simonw','https://localhost/a', 'https://127.0.0.1/a', 'https://192.168.1.1/a', 'https://[::1]/a']) assert.equal(policy.safeLearningUrl(url),null,url);
 });
