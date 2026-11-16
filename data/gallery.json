@@ -5266,5 +5266,70 @@
     "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
     "editorial": { "status": "published", "featured_order": 2.293 },
     "added_at": "2026-11-16"
+  },
+  {
+    "id": "palette-rider",
+    "slug": "palette-rider",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "PaletteRider",
+    "demo_url": "https://aashishgtbit.github.io/PaletteRider/",
+    "creator": {
+      "name": "Aashish Tiwari",
+      "profile_url": "https://github.com/Aashishgtbit"
+    },
+    "locales": {
+      "zh": {
+        "title": "PaletteRider：骑进名画的世界",
+        "summary": "骑着自行车穿行于由名画构成的立体城市，收集散落的太阳。",
+        "action": "选择第一章并开始骑行，按 W 加速、A 和 D 转向，寻找小太阳并把它们送回城堡。",
+        "why": "保罗·克利《城堡与太阳》的色块变成立体街道，让画作成为可以骑行探索的空间。",
+        "limit": "仅测试桌面端第一章的进入和骑行；其他章节、声音、手机及中国大陆网络未测。"
+      },
+      "en": {
+        "title": "PaletteRider: Ride Into a Painting",
+        "summary": "Cycle through a 3D city inspired by a famous painting and gather fallen suns.",
+        "action": "Choose the first chapter and start riding. Press W to go faster and A or D to steer, then look for suns to carry back to the castle.",
+        "why": "The colored shapes of Paul Klee's Castle and Sun become streets you can explore by bicycle.",
+        "limit": "Only entering and riding in the first chapter were tested on desktop. Other chapters, audio, mobile and connectivity from mainland China were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": ["Claude Fable 5.2"],
+      "evidence_url": "https://x.com/Aashish_Tiwari_/status/2120963463610880150",
+      "description": {
+        "zh": "作者在作品发布帖中表示使用 Claude Fable 5.2 制作，从三维城市到音乐均有涉及。",
+        "en": "In the launch post, the creator says Claude Fable 5.2 was used for the 3D cities and music."
+      }
+    },
+    "sources": [{"url": "https://github.com/Aashishgtbit/PaletteRider"}],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-16",
+      "note": "上轮 Grok 的浏览器无法运行三维画面；本次独立桌面浏览器进入第一章并按 W 骑行，画面和距城堡的距离发生变化。其他章节和手机未测。",
+      "note_en": "Grok's previous browser could not render the 3D scene. An independent desktop browser entered the first chapter and rode with W; the view and distance to the castle changed. Other chapters and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/palette-rider-960.webp",
+        "base": "palette-rider",
+        "alt": {"zh": "一名骑车人驶向由红黄色块构成的城堡，街道上有汽车。", "en": "A cyclist rides toward a castle made of red and yellow shapes, with a car on the street."},
+        "width": 1440,
+        "height": 900
+      },
+      "provenance": {
+        "source_url": "https://aashishgtbit.github.io/PaletteRider/",
+        "captured_at": "2026-11-16",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": { "login": "none", "pricing": "free", "language_codes": ["en"] },
+    "device_support": { "desktop": "tested_supported", "mobile": "unknown" },
+    "editorial": { "status": "published", "featured_order": 2.294 },
+    "added_at": "2026-11-16"
   }
 ]

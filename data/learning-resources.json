@@ -3,6 +3,79 @@
   "base_commit": "81c20095eee287a39b2cbe1cc1ec61f1847367ef",
   "records": [
     {
+      "work_id": "palette-rider",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-16",
+        "notes": {
+          "zh": "作者仓库的 README 链接到同一原站；检查时仓库根目录及 package.json 未发现许可证。",
+          "en": "The creator's README links the same live site; no license was found in the repository root or package.json at review time."
+        }
+      },
+      "sources": [
+        {
+          "id": "palette-rider-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Aashishgtbit/PaletteRider/tree/main/src",
+          "repository_url": "https://github.com/Aashishgtbit/PaletteRider",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "对应的前端代码公开可读；本次未确认适用的源码许可证。",
+              "en": "The matching front-end code is publicly readable; an applicable source license was not confirmed in this review."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Aashishgtbit/PaletteRider/blob/60350bd9b76ba85a40734035ff71743426f402f7/README.md",
+              "summary": "The README names PaletteRider and links the matching live game."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://aashishgtbit.github.io/PaletteRider/",
+              "summary": "The linked live game has the same title and first chapter."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Aashishgtbit/PaletteRider/blob/60350bd9b76ba85a40734035ff71743426f402f7/package.json",
+              "summary": "The package identifies the project and lists Three.js; no license field is present."
+            }
+          ],
+          "checked_at": "2026-11-16",
+          "revision": "60350bd9b76ba85a40734035ff71743426f402f7",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作品与仓库的对应关系；未执行仓库代码。",
+            "en": "The work and repository association was reviewed; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "threejs",
+          "status": "verified",
+          "label": {"zh": "Three.js", "en": "Three.js"},
+          "evidence_url": "https://github.com/Aashishgtbit/PaletteRider/blob/60350bd9b76ba85a40734035ff71743426f402f7/package.json"
+        }
+      ]
+    },
+    {
       "work_id": "tree-appreciator",
       "search": {
         "status": "searched",

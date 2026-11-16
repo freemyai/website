@@ -59,7 +59,8 @@
         "regolith": "驾驶月面巡视车、展开太阳翼并扫描地面；仅核验了首项任务的一部分。",
         "fall-line": "接管单板选手，在雪山滑行并尝试空中动作；云端测试帧率偏低。",
         "haldane-4": "驾驶字符画潜水器深入冰架下的黑暗海域；作品带有恐怖氛围。",
-        "full-send": "驾驶俯视赛车练习转向和计时；完整单圈及多人模式未测。"
+        "full-send": "驾驶俯视赛车练习转向和计时；完整单圈及多人模式未测。",
+        "palette-rider": "骑进由克利画作构成的城市；已测试第一章的进入和骑行。"
       }
     },
     "en": {
@@ -88,7 +89,8 @@
         "regolith": "Drive a lunar rover, deploy its solar array and scan the ground; only part of the first mission was checked.",
         "fall-line": "Take over a snowboarder and try aerial moves on a mountain; the cloud test ran at a low frame rate.",
         "haldane-4": "Pilot an ASCII submersible beneath the ice; the game has a horror atmosphere.",
-        "full-send": "Steer a top-down race car in a time trial; a full lap and multiplayer were not tested."
+        "full-send": "Steer a top-down race car in a time trial; a full lap and multiplayer were not tested.",
+        "palette-rider": "Cycle through a city inspired by Klee; entering and riding in the first chapter were tested."
       }
     },
     "seo": {
@@ -117,7 +119,8 @@
       "regolith",
       "fall-line",
       "haldane-4",
-      "full-send"
+      "full-send",
+      "palette-rider"
     ],
     "cover": "hyperbrick"
   },
@@ -163,7 +166,8 @@
       "wind-tide",
       "glasswood",
       "fall-line",
-      "wawa-school-of-magic"
+      "wawa-school-of-magic",
+      "palette-rider"
     ],
     "cover": "hearthlight"
   },
@@ -303,7 +307,8 @@
       "galerie-nocturne",
       "wrong-physics",
       "genesis",
-      "huolong"
+      "huolong",
+      "palette-rider"
     ],
     "cover": "estheet"
   },
