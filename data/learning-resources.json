@@ -1163,6 +1163,168 @@
         "reviewed_at": null,
         "evidence_urls": []
       }
+    },
+    {
+      "work_id": "magic-english-buddy",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已核对原站与作者仓库对应关系及仓库许可证。",
+          "en": "The live site, creator repository and repository license were checked."
+        }
+      },
+      "sources": [
+        {
+          "id": "magic-english-buddy-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/xckevin/magic-english-buddy",
+          "repository_url": "https://github.com/xckevin/magic-english-buddy",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "restricted",
+            "expression": "CC-BY-NC-SA-4.0",
+            "evidence_url": "https://github.com/xckevin/magic-english-buddy/blob/aa96398bbc87c8c38f8300b390caf0dc89aa6801/LICENSE",
+            "scope_note": {
+              "zh": "作者仓库的许可证限制商业使用，并要求署名及相同方式共享；第三方词典和模型另有许可。",
+              "en": "The repository license restricts commercial use and requires attribution and share-alike; third-party dictionary data and models have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://github.com/xckevin/magic-english-buddy",
+              "summary": "The repository homepage links directly to this deployed learning application."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/xckevin/magic-english-buddy/blob/aa96398bbc87c8c38f8300b390caf0dc89aa6801/README.md",
+              "summary": "The creator README names the project and describes the experience."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "aa96398bbc87c8c38f8300b390caf0dc89aa6801",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者仓库和原站；未运行第三方仓库代码。",
+            "en": "The creator repository and live site were checked; third-party repository code was not run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "elon-musk-interview-archive",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已核对原站与作者仓库对应关系及仓库许可证。",
+          "en": "The live site, creator repository and repository license were checked."
+        }
+      },
+      "sources": [
+        {
+          "id": "elon-musk-interview-archive-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/joeseesun/elon-musk-cn",
+          "repository_url": "https://github.com/joeseesun/elon-musk-cn",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/joeseesun/elon-musk-cn/blob/e928680e872639bbdedbb2bec4defb0bd3b02dbc/LICENSE",
+            "scope_note": {
+              "zh": "仓库代码采用 MIT；视频、文稿及中文精读另有来源和署名要求。",
+              "en": "The repository code is MIT licensed; videos, transcripts and Chinese reading guides have separate sources and attribution terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://github.com/joeseesun/elon-musk-cn",
+              "summary": "The repository homepage and live site footer link to each other."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/joeseesun/elon-musk-cn/blob/e928680e872639bbdedbb2bec4defb0bd3b02dbc/README.md",
+              "summary": "The creator README names the project and describes the experience."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "e928680e872639bbdedbb2bec4defb0bd3b02dbc",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者仓库和原站；未运行第三方仓库代码。",
+            "en": "The creator repository and live site were checked; third-party repository code was not run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "chrono-breach-the-ring-ark",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "已搜索作者帖、原站和 GitHub；原站可读入口脚本，但未找到可核验许可的完整项目仓库。",
+          "en": "The author post, live site and GitHub were searched; an entry script is publicly readable, but no full repository with a verifiable license was found."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": [
+        {
+          "id": "threejs",
+          "status": "verified",
+          "label": {
+            "zh": "Three.js",
+            "en": "Three.js"
+          },
+          "evidence_url": "https://ark.stardino.dev/src/main.js"
+        },
+        {
+          "id": "webgl2",
+          "status": "verified",
+          "label": {
+            "zh": "WebGL2",
+            "en": "WebGL2"
+          },
+          "evidence_url": "https://x.com/dinosaurbtuq/status/2121602646838812739"
+        }
+      ]
     }
   ]
 }

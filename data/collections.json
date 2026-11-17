@@ -64,7 +64,8 @@
         "palette-rider": "骑进由克利画作构成的城市；已测试第一章的进入和骑行。",
         "huamo": "在流动的水墨雾气中移动和挥剑；作品需要支持 WebGPU 的桌面浏览器。",
         "a-space-mining-game": "驾驶飞船并打开星图；已测试开局和飞行，采矿与存档尚未核验。",
-        "kartboard": "驾驶纸板卡丁车进入桌面赛道；AI 创作方式尚未确认。"
+        "kartboard": "驾驶纸板卡丁车进入桌面赛道；AI 创作方式尚未确认。",
+        "chrono-breach-the-ring-ark": "在科幻空间站切换过去与现在；已测试开局安全区，完整战斗未测。"
       }
     },
     "en": {
@@ -97,7 +98,8 @@
         "palette-rider": "Cycle through a city inspired by Klee; entering and riding in the first chapter were tested.",
         "huamo": "Move and swing a sword through flowing ink-like fog; a desktop WebGPU browser is needed.",
         "a-space-mining-game": "Pilot a ship and open the star map; the opening and flight were tested, but mining and saves were not.",
-        "kartboard": "Race a cardboard kart on a tabletop track; AI involvement is unconfirmed."
+        "kartboard": "Race a cardboard kart on a tabletop track; AI involvement is unconfirmed.",
+        "chrono-breach-the-ring-ark": "Shift between past and present on a sci-fi station; the opening safe room was tested, but combat was not."
       }
     },
     "seo": {
@@ -130,7 +132,8 @@
       "palette-rider",
       "huamo",
       "a-space-mining-game",
-      "kartboard"
+      "kartboard",
+      "chrono-breach-the-ring-ark"
     ],
     "cover": "hyperbrick"
   },
@@ -238,7 +241,8 @@
       "quantum-eraser",
       "svt-3d",
       "inference-lab",
-      "argon-junior"
+      "argon-junior",
+      "magic-english-buddy"
     ],
     "cover": "learn-arduino"
   },

@@ -5957,5 +5957,276 @@
       "featured_order": 2.284
     },
     "added_at": "2026-11-17"
+  },
+  {
+    "id": "magic-english-buddy",
+    "slug": "magic-english-buddy",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-languages",
+    "title_original": "Magic English Buddy",
+    "demo_url": "https://xckevin.github.io/magic-english-buddy/",
+    "creator": {
+      "name": "xckevin",
+      "profile_url": "https://github.com/xckevin"
+    },
+    "locales": {
+      "zh": {
+        "title": "Magic English Buddy：魔法英语伙伴",
+        "summary": "跟着魔法伙伴读分级英语故事，在学习地图上逐步探索。",
+        "action": "选择“直接开始，一起学英语”，再点击“开始第一个故事”，进入《魔法苹果》阅读页。",
+        "why": "故事、学习地图与练习被组织成适合循序探索的英语启蒙旅程。",
+        "limit": "原站界面以中文为主；本次只测试进入学习地图和第一篇故事，朗读声音、跟读录音、练习及移动端未测。"
+      },
+      "en": {
+        "title": "Magic English Buddy",
+        "summary": "Read graded English stories with a magical companion and explore a learning map.",
+        "action": "Choose “直接开始，一起学英语”, then “开始第一个故事” to open The Magic Apple.",
+        "why": "Stories, a learning map and exercises make a playful introduction to English.",
+        "limit": "The original interface is primarily Chinese. We opened the learning map and first story on desktop; audio, recording, exercises and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "assets",
+      "tools": [
+        "Kokoro"
+      ],
+      "evidence_url": "https://github.com/xckevin/magic-english-buddy/blob/aa96398bbc87c8c38f8300b390caf0dc89aa6801/public/audio/README.md",
+      "description": {
+        "zh": "项目文档说明课程朗读音频由 Kokoro 模型预生成；这不代表整个应用由 AI 编写。",
+        "en": "The project documents that its narration clips were pre-generated with the Kokoro model; this does not establish that AI wrote the entire app."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/xckevin/magic-english-buddy/blob/aa96398bbc87c8c38f8300b390caf0dc89aa6801/README.md"
+      },
+      {
+        "url": "https://x.com/fhwofjow51260/status/2122311598673125496"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 无账号直接进入学习地图，并打开第一篇《魔法苹果》；未听测声音，录音、练习和手机未测。",
+      "note_en": "Local desktop Chrome entered the learning map without an account and opened The Magic Apple. Audio, recording, exercises and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/magic-english-buddy-960.webp",
+        "base": "magic-english-buddy",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "英语学习地图展示魔法伙伴、第一篇故事和七个等级。",
+          "en": "An English learning map shows a magical companion, a first story and seven levels."
+        }
+      },
+      "provenance": {
+        "source_url": "https://xckevin.github.io/magic-english-buddy/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.278
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "chrono-breach-the-ring-ark",
+    "slug": "chrono-breach-the-ring-ark",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "CHRONO BREACH: THE RING ARK",
+    "demo_url": "https://ark.stardino.dev/",
+    "creator": {
+      "name": "星星恐龙 / dinosaur",
+      "profile_url": "https://x.com/dinosaurbtuq"
+    },
+    "locales": {
+      "zh": {
+        "title": "Chrono Breach：环形方舟",
+        "summary": "进入科幻空间站，以第一人称探索并切换过去与现在。",
+        "action": "在桌面浏览器点击 Deploy 开始，在安全区按 F 切换时态；WASD 移动，E 与设施互动。",
+        "why": "同一处空间会在完整的过去与破损的现在之间变化，让时间切换成为探索的一部分。",
+        "limit": "作者建议使用电脑键鼠和独立显卡。仅测试进入开局安全区及一次时态切换；战斗、完整关卡、声音和手机未测。"
+      },
+      "en": {
+        "title": "Chrono Breach: The Ring Ark",
+        "summary": "Explore a sci-fi station in first person and shift between past and present.",
+        "action": "On desktop, select Deploy and press F in the safe room to shift time; use WASD to move and E to interact.",
+        "why": "The same space changes between an intact past and a ruined present, making time shifting part of exploration.",
+        "limit": "The creator recommends desktop keyboard and mouse with a dedicated GPU. Only the opening safe room and one time shift were tested; combat, the full game, audio and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Gemini 4 Carbon"
+      ],
+      "evidence_url": "https://x.com/dinosaurbtuq/status/2121602646838812739",
+      "description": {
+        "zh": "作者在发布帖中称游戏经过 Gemini 4 Carbon 的多轮迭代；具体创作过程和模型名称未独立核实。",
+        "en": "The creator says the game was made through multiple iterations with Gemini 4 Carbon; the process and model name were not independently verified."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/dinosaurbtuq/status/2121602646838812739"
+      },
+      {
+        "url": "https://ark.stardino.dev/src/main.js"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 点击 Deploy 进入开局安全区；按 F 后状态从 PAST · INTACT 变为 PRESENT · RUINED。未测试战斗、完整关卡、声音和手机。",
+      "note_en": "Local desktop Chrome entered the opening safe room via Deploy; F changed the state from PAST · INTACT to PRESENT · RUINED. Combat, the full game, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/chrono-breach-the-ring-ark-960.webp",
+        "base": "chrono-breach-the-ring-ark",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "科幻空间站中的 Chrono Breach 开始画面。",
+          "en": "The Chrono Breach start screen inside a sci-fi space station."
+        }
+      },
+      "provenance": {
+        "source_url": "https://ark.stardino.dev/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "zh-CN"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.279
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "elon-musk-interview-archive",
+    "slug": "elon-musk-interview-archive",
+    "type": "apps",
+    "primary_category": "humanities",
+    "subcategory": "humanities-society",
+    "title_original": "Elon Musk 全访谈",
+    "demo_url": "https://elon.qiaomu.ai/",
+    "creator": {
+      "name": "向阳乔木 / Joe",
+      "profile_url": "https://x.com/vista8"
+    },
+    "locales": {
+      "zh": {
+        "title": "Elon Musk 全访谈：可搜索的访谈档案",
+        "summary": "按话题浏览马斯克公开访谈、中文精读和数据图表。",
+        "action": "在首页选择 SpaceX 等话题筛选访谈，或使用搜索框查找公司与关键词。",
+        "why": "把视频、访谈文稿与主题趋势放在同一个可探索的索引中。",
+        "limit": "中文精读由 AI 改写，并非官方翻译；引用观点时请核对原始视频和文稿。仅测试桌面话题筛选，视频播放及移动端未测。"
+      },
+      "en": {
+        "title": "Elon Musk Interview Archive",
+        "summary": "Explore public Elon Musk interviews, Chinese reading guides and topic charts.",
+        "action": "Select a topic such as SpaceX on the home page, or search for a company or keyword.",
+        "why": "Videos, transcripts and topic trends are brought together in one browsable index.",
+        "limit": "The Chinese reading guides are AI rewrites, not official translations; check original video and transcripts before quoting. Only desktop topic filtering was tested; video playback and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "documented",
+      "usage": "text",
+      "tools": [],
+      "evidence_url": "https://github.com/joeseesun/elon-musk-cn/blob/e928680e872639bbdedbb2bec4defb0bd3b02dbc/README.md",
+      "description": {
+        "zh": "作者说明中文精读由 AI 改写，非官方翻译；原始视频与文稿有各自来源。",
+        "en": "The creator says the Chinese reading guides are AI rewrites, not official translations; original videos and transcripts have separate sources."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/joeseesun/elon-musk-cn/blob/e928680e872639bbdedbb2bec4defb0bd3b02dbc/README.md"
+      },
+      {
+        "url": "https://x.com/vista8/status/2122269630232510904"
+      },
+      {
+        "url": "https://x.com/kano955/status/2122318356330303941"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 点击 SpaceX 话题后，按钮显示选中，页面显示 SpaceX 筛选结果；未测试视频播放及手机。",
+      "note_en": "Local desktop Chrome selected the SpaceX topic and the page displayed filtered SpaceX results. Video playback and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/elon-musk-interview-archive-960.webp",
+        "base": "elon-musk-interview-archive",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "马斯克访谈档案首页展示话题筛选和最新中文精读。",
+          "en": "The Elon Musk interview archive shows topic filters and a featured Chinese reading guide."
+        }
+      },
+      "provenance": {
+        "source_url": "https://elon.qiaomu.ai/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.28
+    },
+    "added_at": "2026-11-17"
   }
 ]
