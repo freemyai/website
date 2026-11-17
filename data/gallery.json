@@ -6228,5 +6228,429 @@
       "featured_order": 2.28
     },
     "added_at": "2026-11-17"
+  },
+  {
+    "id": "meander-river",
+    "slug": "meander-river",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-geography",
+    "title_original": "Meander",
+    "demo_url": "https://r4maa.github.io/claude-workshop/meander/",
+    "creator": {
+      "name": "Amar Razzaq / Claude’s Workshop",
+      "profile_url": "https://github.com/R4maa"
+    },
+    "locales": {
+      "zh": {
+        "title": "Meander：会演化的河流",
+        "summary": "观察一条河道蜿蜒、生长并留下彩色的河谷轨迹。",
+        "action": "等待河道演化，点击 Pause 暂停，再用 Survey 和 Satellite 切换视图；也可以尝试拖动河道。",
+        "why": "河弯的生长与截弯取直被变成一幅不断变化的地图。",
+        "limit": "这是简化的交互模型，并非真实河流预测；仅测试桌面暂停和视图切换，手机及拖动效果未独立完成核验。"
+      },
+      "en": {
+        "title": "Meander",
+        "summary": "Watch a river wind across its valley and leave colorful traces as it evolves.",
+        "action": "Let the river evolve, press Pause, and switch between Survey and Satellite; you can also try dragging the channel.",
+        "why": "Growing bends and cutoffs become a constantly changing map.",
+        "limit": "This is a simplified interactive model, not a prediction of a real river. Desktop pause and view switching were tested; dragging and mobile were not independently verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
+      "description": {
+        "zh": "作者仓库称工坊实验由 Claude 在 Claude Code 中制作，Meander 由其中一个模型完成；未独立还原完整创作过程。",
+        "en": "The creator’s repository says the workshop toys were made by Claude in Claude Code, with Meander made by one of the models; the full process was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/R4maa/claude-workshop/tree/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/meander"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 中河道和年份持续变化；点击 Pause 后按钮变为 Play，再切换 Satellite，画面由彩色轨迹变为卫星样式。拖动及手机未测。",
+      "note_en": "In local desktop Chrome the river and year changed; Pause became Play, and Satellite changed the view. Dragging and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/meander-river-960.webp",
+        "base": "meander-river",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "彩色曲线记录一条河流在河谷中的演化。",
+          "en": "Colored curves trace the changing course of a river across its valley."
+        }
+      },
+      "provenance": {
+        "source_url": "https://r4maa.github.io/claude-workshop/meander/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.271
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "owl-pellet-lab",
+    "slug": "owl-pellet-lab",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-biology",
+    "title_original": "Owl Pellet Lab",
+    "demo_url": "https://owlpellet.apphive.us/",
+    "creator": {
+      "name": "Kyle Niemis",
+      "profile_url": "https://x.com/KyleNiemis"
+    },
+    "locales": {
+      "zh": {
+        "title": "Owl Pellet Lab：猫头鹰食茧实验",
+        "summary": "在虚拟生物实验中观察猫头鹰形成食茧，再探索食茧和骨骼。",
+        "action": "阅读引导并选择 Next、Start the lab，等夜晚过去后选择 Probe 探查食茧。",
+        "why": "工具、放大视图和骨骼图表把生物观察分成可探索的步骤。",
+        "limit": "仅测试桌面引导和进入第二步；探针操作、骨骼辨认与手机体验未完整核验。"
+      },
+      "en": {
+        "title": "Owl Pellet Lab",
+        "summary": "Observe an owl form a pellet, then explore its contents in a virtual biology lab.",
+        "action": "Read the introduction, choose Next and Start the lab, then select Probe after the night passes.",
+        "why": "Tools, close-ups and a bone chart break biological observation into explorable steps.",
+        "limit": "Only the desktop introduction and arrival at step two were tested; probing, bone identification and mobile were not fully verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/KyleNiemis/status/2119609516215935270",
+      "description": {
+        "zh": "作者称这项实验为 vibe-coded 作品；未披露完整创作分工。",
+        "en": "The creator calls the lab vibe-coded; the full division of work was not disclosed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://teacherhive.app/info/owlpellet"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 完成引导并进入实验，等待后出现第二步 Probe the pellet；未完成探针与骨骼辨认，手机未测。",
+      "note_en": "Local desktop Chrome completed the introduction and reached step two, Probe the pellet. Probing, bone identification and mobile were not completed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/owl-pellet-lab-960.webp",
+        "base": "owl-pellet-lab",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "虚拟解剖盘上的食茧与右侧骨骼分类图表。",
+          "en": "A pellet on a virtual dissection tray beside a bone chart."
+        }
+      },
+      "provenance": {
+        "source_url": "https://owlpellet.apphive.us/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.272
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "stars-visualizer",
+    "slug": "stars-visualizer",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-charts",
+    "title_original": "Stars Visualizer",
+    "demo_url": "https://nyg.github.io/stars-visualizer/",
+    "creator": {
+      "name": "nyg",
+      "profile_url": "https://x.com/nyg_dev"
+    },
+    "locales": {
+      "zh": {
+        "title": "Stars Visualizer：星标仓库词云",
+        "summary": "输入 GitHub 用户名，把公开星标仓库的主题画成动态词云。",
+        "action": "输入示例用户名 addyosmani 并点击 Visualize，浏览主题词云。",
+        "why": "仓库主题与语言统计为浏览收藏提供了另一种视角。",
+        "limit": "需要读取 GitHub 公共数据，匿名请求可能受速率限制；仅测试桌面示例，登录和手机未测。"
+      },
+      "en": {
+        "title": "Stars Visualizer",
+        "summary": "Turn a GitHub user’s public starred repositories into an animated topic cloud.",
+        "action": "Enter the example username addyosmani and select Visualize to explore the cloud.",
+        "why": "Topics and language totals offer another way to browse a collection of stars.",
+        "limit": "The tool reads public GitHub data and anonymous requests may be rate-limited. Only a desktop example was tested; sign-in and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/nyg_dev/status/2120679025093881972",
+      "description": {
+        "zh": "作者在发布帖中称该工具由 Fable 5.2 以 vibe coding 方式制作；具体过程未独立还原。",
+        "en": "The creator says the tool was vibe-coded with Fable 5.2; the detailed process was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/nyg/stars-visualizer"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 输入 addyosmani 并点击 Visualize，页面显示公开仓库主题词云和语言统计；未登录，手机未测。",
+      "note_en": "Local desktop Chrome visualized addyosmani’s public stars as a topic cloud with language totals; sign-in and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/stars-visualizer-960.webp",
+        "base": "stars-visualizer",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "GitHub 星标仓库被绘制成深色背景上的彩色主题词云。",
+          "en": "A colorful cloud of GitHub star topics on a dark background."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nyg.github.io/stars-visualizer/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.273
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "spikesheet",
+    "slug": "spikesheet",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-calculators",
+    "title_original": "SpikeSheet",
+    "demo_url": "https://watermenon09.github.io/VolleyballReferee/",
+    "creator": {
+      "name": "Menon Pranto",
+      "profile_url": "https://x.com/MenonPranto"
+    },
+    "locales": {
+      "zh": {
+        "title": "SpikeSheet：排球比赛记分表",
+        "summary": "在浏览器里设置队伍并记录排球比赛。",
+        "action": "点击 Start Scoring，在 Match Setup 中填写队名与球衣号码并选择赛制。",
+        "why": "记分、轮转与比赛设置集中在一个面向赛场的界面。",
+        "limit": "仅测试桌面设置页和修改队名，未开始完整比赛；计分规则、离线使用和手机未核验。"
+      },
+      "en": {
+        "title": "SpikeSheet",
+        "summary": "Set up teams and keep a volleyball scoresheet in the browser.",
+        "action": "Choose Start Scoring, then enter team names and jersey numbers and choose a match format.",
+        "why": "Scoring, rotations and match setup share a courtside-oriented interface.",
+        "limit": "Only desktop setup and changing a team name were tested. Full scoring rules, offline use and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/MenonPranto/status/2122336929870197042",
+      "description": {
+        "zh": "作者在发布帖中称该应用为 vibe-coded，未指明模型。",
+        "en": "The creator says the app was vibe-coded and does not name a model."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/WaterMenon09/VolleyballReferee"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 进入 Match Setup，将第一支队伍的名称改为 Freemy Foxes；未开始比赛，离线和手机未测。",
+      "note_en": "Local desktop Chrome opened Match Setup and changed the first team’s name to Freemy Foxes. A match, offline use and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/spikesheet-960.webp",
+        "base": "spikesheet",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "排球记分工具首页展示赛场记分牌示例。",
+          "en": "The volleyball scoresheet home page displays a sample scoreboard."
+        }
+      },
+      "provenance": {
+        "source_url": "https://watermenon09.github.io/VolleyballReferee/",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.274
+    },
+    "added_at": "2026-11-17"
+  },
+  {
+    "id": "interactive-christmas-cards",
+    "slug": "interactive-christmas-cards",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Interactive Christmas Cards",
+    "demo_url": "https://www.bubbbly.com/christmas-cards",
+    "creator": {
+      "name": "Ann Nguyen",
+      "profile_url": "https://x.com/ann_nnng"
+    },
+    "locales": {
+      "zh": {
+        "title": "Interactive Christmas Cards：互动圣诞卡",
+        "summary": "选择一张小小的圣诞卡，打开后查看卡片里的祝福。",
+        "action": "点击底部的卡片缩略图切换款式，再点击卡片打开。",
+        "why": "纸张、手绘插画和翻开的动作组成一组安静的节日小场景。",
+        "limit": "需要能运行 WebGL 的浏览器；仅在桌面测试切换并打开卡片，声音和手机未测。"
+      },
+      "en": {
+        "title": "Interactive Christmas Cards",
+        "summary": "Choose a small Christmas card and open it to reveal a message.",
+        "action": "Select a thumbnail along the bottom, then click the card to open it.",
+        "why": "Paper textures, hand-drawn illustrations and a folding motion create small festive scenes.",
+        "limit": "A browser capable of WebGL is needed. Only switching and opening a card on desktop were tested; audio and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://x.com/ann_nnng/status/2122283549000712249",
+      "description": {
+        "zh": "作者在发布帖中说这些互动卡片使用 Claude Fable 5.2 制作；具体创作分工未披露。",
+        "en": "The creator says these interactive cards were made with Claude Fable 5.2; the precise division of work was not disclosed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/ann_nnng/status/2122283549000712249"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-17",
+      "note": "本机桌面 Chrome 成功渲染卡片，选择第二个缩略图后点击卡片，画面显示其内部祝福；声音和手机未测。",
+      "note_en": "Local desktop Chrome rendered the cards; selecting the second thumbnail and clicking the card revealed its inside message. Audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/interactive-christmas-cards-960.webp",
+        "base": "interactive-christmas-cards",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "打开的圣诞卡内有花环与手写风格的祝福。",
+          "en": "An open Christmas card shows a wreath and a handwritten-style message."
+        }
+      },
+      "provenance": {
+        "source_url": "https://www.bubbbly.com/christmas-cards",
+        "captured_at": "2026-11-17",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.275
+    },
+    "added_at": "2026-11-17"
   }
 ]

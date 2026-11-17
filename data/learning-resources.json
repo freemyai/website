@@ -1325,6 +1325,231 @@
           "evidence_url": "https://x.com/dinosaurbtuq/status/2121602646838812739"
         }
       ]
+    },
+    {
+      "work_id": "meander-river",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "作者仓库包含对应河流实验目录，根目录采用 MIT 许可证。",
+          "en": "The creator repository contains the river experiment module and a root MIT license."
+        }
+      },
+      "sources": [
+        {
+          "id": "meander-river-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/R4maa/claude-workshop/tree/main/meander",
+          "repository_url": "https://github.com/R4maa/claude-workshop",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/LICENSE",
+            "scope_note": {
+              "zh": "仓库根目录 MIT 许可覆盖源码；相关共享脚本和第三方素材可能另有说明。",
+              "en": "The root MIT license covers repository source; shared scripts and third-party assets may have separate notices."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://github.com/R4maa/claude-workshop",
+              "summary": "The creator repository links the matching live experience."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
+              "summary": "The repository README identifies and describes this exact experience."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站和作者仓库，未安装或运行第三方代码。",
+            "en": "The live site and creator repository were checked; third-party code was not installed or run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "owl-pellet-lab",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "检索了作者帖、作品页和 GitHub，未找到可确认对应的源码仓库或许可。",
+          "en": "The author post, work page and GitHub were searched; no matching source repository or license was confirmed."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "stars-visualizer",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "作者仓库与演示对应，但本次未找到许可证文件或明确许可声明。",
+          "en": "The creator repository matches the demo, but no license file or explicit license statement was found."
+        }
+      },
+      "sources": [
+        {
+          "id": "stars-visualizer-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/nyg/stars-visualizer",
+          "repository_url": "https://github.com/nyg/stars-visualizer",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "代码公开可读；本次未找到明确的仓库许可证。",
+              "en": "The code is publicly readable; no explicit repository license was found."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://github.com/nyg/stars-visualizer",
+              "summary": "The creator repository links the matching live experience."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/nyg/stars-visualizer/blob/4e4977baab13f1bfb850f894e1e2038173902b8e/README.md",
+              "summary": "The repository README identifies and describes this exact experience."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "4e4977baab13f1bfb850f894e1e2038173902b8e",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站和作者仓库，未安装或运行第三方代码。",
+            "en": "The live site and creator repository were checked; third-party code was not installed or run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "spikesheet",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "作者仓库与演示对应，根目录采用 MIT 许可证。",
+          "en": "The creator repository matches the demo and has a root MIT license."
+        }
+      },
+      "sources": [
+        {
+          "id": "spikesheet-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/WaterMenon09/VolleyballReferee",
+          "repository_url": "https://github.com/WaterMenon09/VolleyballReferee",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/WaterMenon09/VolleyballReferee/blob/48e29770a977fceff29a254d11a3d1e742a16936/LICENSE",
+            "scope_note": {
+              "zh": "仓库根目录源码采用 MIT；字体等第三方素材可能另有许可。",
+              "en": "Repository source is MIT licensed; third-party assets such as fonts may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "repository_homepage",
+              "url": "https://github.com/WaterMenon09/VolleyballReferee",
+              "summary": "The creator repository links the matching live experience."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/WaterMenon09/VolleyballReferee/blob/48e29770a977fceff29a254d11a3d1e742a16936/README.md",
+              "summary": "The repository README identifies and describes this exact experience."
+            }
+          ],
+          "checked_at": "2026-11-17",
+          "revision": "48e29770a977fceff29a254d11a3d1e742a16936",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站和作者仓库，未安装或运行第三方代码。",
+            "en": "The live site and creator repository were checked; third-party code was not installed or run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "interactive-christmas-cards",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-17",
+        "notes": {
+          "zh": "检索了作者帖、原站和 GitHub，未找到可确认对应的源码仓库或许可。",
+          "en": "The author post, live site and GitHub were searched; no matching source repository or license was confirmed."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

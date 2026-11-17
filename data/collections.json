@@ -154,7 +154,8 @@
       "clearwater",
       "ocean-currents",
       "last-hexagon",
-      "codevember-tension"
+      "codevember-tension",
+      "meander-river"
     ],
     "cover": "hydraulics"
   },
@@ -242,7 +243,8 @@
       "svt-3d",
       "inference-lab",
       "argon-junior",
-      "magic-english-buddy"
+      "magic-english-buddy",
+      "owl-pellet-lab"
     ],
     "cover": "learn-arduino"
   },
@@ -335,7 +337,8 @@
       "wrong-physics",
       "genesis",
       "huolong",
-      "palette-rider"
+      "palette-rider",
+      "interactive-christmas-cards"
     ],
     "cover": "estheet"
   },
