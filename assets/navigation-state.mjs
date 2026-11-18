@@ -20,18 +20,17 @@ function scrollKey(href,origin){
   }catch{return null;}
 }
 
-export function saveListScroll(storage,href,origin,y,now=Date.now()){
+export function withListScroll(state,href,origin,y,now=Date.now()){
   const key=scrollKey(href,origin);
-  if(!key||!Number.isFinite(y)||y<0||!Number.isFinite(now))return false;
-  try{storage.setItem(key,JSON.stringify({y,at:now}));return true;}catch{return false;}
+  if(!key||!Number.isFinite(y)||y<0||!Number.isFinite(now))return null;
+  if(state!==null&&(typeof state!=='object'||Array.isArray(state)||Object.getPrototypeOf(state)!==Object.prototype))return null;
+  return {...state,__freemyListScroll:{key,y,at:now}};
 }
 
-export function takeListScroll(storage,href,origin,now=Date.now()){
+export function readListScroll(state,href,origin,now=Date.now()){
   const key=scrollKey(href,origin);if(!key)return null;
   try{
-    const raw=storage.getItem(key);if(raw===null)return null;
-    storage.removeItem(key);
-    const saved=JSON.parse(raw);
-    return Number.isFinite(saved.y)&&saved.y>=0&&Number.isFinite(saved.at)&&now>=saved.at&&now-saved.at<=30*60*1000?saved.y:null;
+    const saved=state?.__freemyListScroll;
+    return saved?.key===key&&Number.isFinite(saved.y)&&saved.y>=0&&Number.isFinite(saved.at)&&now>=saved.at&&now-saved.at<=30*60*1000?saved.y:null;
   }catch{return null;}
 }

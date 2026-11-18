@@ -9,9 +9,6 @@ const mod=await import('../assets/navigation-state.mjs').catch(error=>{
   if(error.code==='ERR_MODULE_NOT_FOUND')return {};
   throw error;
 });
-const storage=()=>{
-  const map=new Map();return {getItem:key=>map.get(key)??null,setItem:(key,value)=>map.set(key,value),removeItem:key=>map.delete(key)};
-};
 
 test('filter URL preserves unrelated parameters and stores only a valid recent sort',()=>{
   assert.equal(typeof mod.filterUrl,'function','filter URL helper must exist');
@@ -23,20 +20,19 @@ test('filter URL preserves unrelated parameters and stores only a valid recent s
   assert.equal(mod.sortFromSearch('?sort=recent'),'recent');assert.equal(mod.sortFromSearch('?sort=invalid'),'featured');
 });
 
-test('list position is temporary, scoped to the same listing and tolerant of disabled storage',()=>{
-  assert.equal(typeof mod.saveListScroll,'function');
-  const store=storage(),url='https://freemy.ai/en/explore/?q=robot&sort=recent';
-  mod.saveListScroll(store,url,'https://freemy.ai',420,1000);
-  assert.equal(mod.takeListScroll(store,'https://freemy.ai/en/explore/?q=other','https://freemy.ai',1100),null);
-  assert.equal(mod.takeListScroll(store,url,'https://freemy.ai',1100),420);
-  assert.equal(mod.takeListScroll(store,url,'https://freemy.ai',1101),null,'restore is consumed');
-  mod.saveListScroll(store,url,'https://freemy.ai',420,1000);
-  assert.equal(mod.takeListScroll(store,url,'https://freemy.ai',1000+31*60*1000),null);
-  assert.equal(mod.saveListScroll(store,'https://evil.example/en/explore/','https://freemy.ai',10,1000),false);
-  assert.equal(mod.saveListScroll(store,'https://freemy.ai/api/insights/','https://freemy.ai',10,1000),false);
-  const disabled={getItem(){throw Error('disabled');},setItem(){throw Error('disabled');}};
-  assert.equal(mod.saveListScroll(disabled,url,'https://freemy.ai',10,1000),false);
-  assert.equal(mod.takeListScroll(disabled,url,'https://freemy.ai',1000),null);
+test('each history entry retains its own temporary position and existing state',()=>{
+  assert.equal(typeof mod.withListScroll,'function');
+  const url='https://freemy.ai/en/explore/?q=robot&sort=recent',original={existing:'keep'};
+  const a=mod.withListScroll(original,url,'https://freemy.ai',420,1000);
+  const b=mod.withListScroll(original,url,'https://freemy.ai',840,1000);
+  assert.equal(a.existing,'keep');assert.deepEqual(original,{existing:'keep'});
+  assert.equal(mod.readListScroll(a,'https://freemy.ai/en/explore/?q=other','https://freemy.ai',1100),null);
+  assert.equal(mod.readListScroll(a,url,'https://freemy.ai',1100),420);
+  assert.equal(mod.readListScroll(b,url,'https://freemy.ai',1100),840);
+  assert.equal(mod.readListScroll(a,url,'https://freemy.ai',1000+31*60*1000),null);
+  assert.equal(mod.withListScroll(null,'https://evil.example/en/explore/','https://freemy.ai',10,1000),null);
+  assert.equal(mod.withListScroll(null,'https://freemy.ai/api/insights/','https://freemy.ai',10,1000),null);
+  assert.equal(mod.withListScroll('foreign-state',url,'https://freemy.ai',10,1000),null,'non-object state remains untouched');
 });
 
 test('homepage uses an explicit, validated selection of varied featured collections',()=>{

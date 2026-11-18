@@ -1,7 +1,7 @@
 import { filterWorks } from './catalog.mjs';
 import { createTracker, createImpressionMonitor } from './analytics.mjs';
 import { createShareController, sharePayloadForWork, xIntentUrl, copyValue } from './share.mjs';
-import { filterUrl, sortFromSearch, saveListScroll, takeListScroll } from './navigation-state.mjs';
+import { filterUrl, sortFromSearch, withListScroll, readListScroll } from './navigation-state.mjs';
 
 const lang=document.body.dataset.lang||'en';
 const pageType=document.body.dataset.pageType||'unknown';
@@ -15,6 +15,7 @@ function closeShare(control,{focus=false}={}){
   panel.hidden=true;button.setAttribute('aria-expanded','false');
   control.querySelector('[data-share-manual]').hidden=true;control.querySelector('[data-share-status]').textContent='';
   control.querySelector('[data-share-qr-view]').hidden=true;control._qrRequest=(control._qrRequest||0)+1;
+  control._shareRequest=(control._shareRequest||0)+1;
   if(focus)button.focus();
 }
 async function showShareQr(control,payload,locale,report){
@@ -57,11 +58,13 @@ document.addEventListener('click',event=>{
   if(x){report('share_x_open');return;}
   if(qr||qrLocale){showShareQr(control,payload,qrLocale?.dataset.qrLocale||lang,report);return;}
   if(!copy&&!native)return;
+  const request=control._shareRequest=(control._shareRequest||0)+1, currentPayload=control.dataset.sharePayload;
   const controller=createShareController({
     copyText:typeof navigator.clipboard?.writeText==='function'?navigator.clipboard.writeText.bind(navigator.clipboard):undefined,
     nativeShare:typeof navigator.share==='function'?navigator.share.bind(navigator):undefined,
     track:report,
     notify:(state,url)=>{
+      if(control.hidden||panel.hidden||control._shareRequest!==request||control.dataset.sharePayload!==currentPayload)return;
       const status=control.querySelector('[data-share-status]'), manual=control.querySelector('[data-share-manual]');
       manual.hidden=state!=='manual';
       status.textContent=state==='copied'?(lang==='zh'?'已复制链接':'Link copied'):state==='native_failed'?(lang==='zh'?'无法打开系统分享，请复制链接。':'Could not open device sharing. Please copy the link.'):(lang==='zh'?'请手动复制链接。':'Please copy the link manually.');
@@ -129,12 +132,12 @@ if(form&&grid){
   sourceFilter?.addEventListener('change',update);
   noteFilter?.addEventListener('change',update);
   update();
-  window.addEventListener('pagehide',()=>{try{saveListScroll(sessionStorage,location.href,location.origin,scrollY);}catch{}});
+  window.addEventListener('pagehide',()=>{try{const state=withListScroll(history.state,location.href,location.origin,scrollY);if(state)history.replaceState(state,'',location.href);}catch{}});
   window.addEventListener('pageshow',event=>{
     const back=event.persisted||performance.getEntriesByType('navigation')[0]?.type==='back_forward';
     if(!back)return;
-    let y=null;try{y=takeListScroll(sessionStorage,location.href,location.origin);}catch{}
-    if(y!==null)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,y)));
+    let y=null;try{y=readListScroll(history.state,location.href,location.origin);}catch{}
+    if(y!==null)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo({top:y,behavior:'instant'})));
   });
 }
 document.querySelectorAll('[data-language-switch]').forEach(link=>link.addEventListener('click',()=>{
