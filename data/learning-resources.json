@@ -1341,8 +1341,8 @@
           "id": "meander-river-github",
           "provider": "github",
           "kind": "source_code",
-          "url": "https://github.com/R4maa/claude-workshop/tree/main/meander",
-          "repository_url": "https://github.com/R4maa/claude-workshop",
+          "url": "https://github.com/R4maa/archimedes-workshop/tree/main/meander",
+          "repository_url": "https://github.com/R4maa/archimedes-workshop",
           "relation": "exact_project",
           "code_scope": "module",
           "match_status": "verified",
@@ -1350,7 +1350,7 @@
           "license": {
             "status": "open_source_verified",
             "expression": "MIT",
-            "evidence_url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/LICENSE",
+            "evidence_url": "https://github.com/R4maa/archimedes-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/LICENSE",
             "scope_note": {
               "zh": "仓库根目录 MIT 许可覆盖源码；相关共享脚本和第三方素材可能另有说明。",
               "en": "The root MIT license covers repository source; shared scripts and third-party assets may have separate notices."
@@ -1359,12 +1359,12 @@
           "evidence": [
             {
               "type": "repository_homepage",
-              "url": "https://github.com/R4maa/claude-workshop",
+              "url": "https://github.com/R4maa/archimedes-workshop",
               "summary": "The creator repository links the matching live experience."
             },
             {
               "type": "readme",
-              "url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
+              "url": "https://github.com/R4maa/archimedes-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
               "summary": "The repository README identifies and describes this exact experience."
             }
           ],
@@ -1695,6 +1695,125 @@
           }
         }
       ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "nakaya-snow-crystals",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者工坊仓库与体验地址对应；作品所在仓库声明 MIT 许可。",
+          "en": "The creator’s workshop repository matches the experience and declares an MIT license."
+        }
+      },
+      "sources": [
+        {
+          "id": "nakaya-snow-crystals-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/R4maa/archimedes-workshop/tree/main/nakaya",
+          "repository_url": "https://github.com/R4maa/archimedes-workshop",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/R4maa/archimedes-workshop/blob/ec0113cd7e9bf2a09ed91e09a67da1020dc9be54/LICENSE",
+            "scope_note": {
+              "zh": "工坊仓库源码采用 MIT，第三方素材可能另有许可。",
+              "en": "The workshop source is MIT licensed; third-party material may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/R4maa/archimedes-workshop/blob/ec0113cd7e9bf2a09ed91e09a67da1020dc9be54/README.md",
+              "summary": "The creator README describes the exact work and links its live experience."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "ec0113cd7e9bf2a09ed91e09a67da1020dc9be54",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站、作者仓库与公开许可说明；未运行第三方仓库代码。",
+            "en": "The live site, creator repository and public license information were reviewed; third-party repository code was not run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "stave-room",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者原站及公开 GitHub，未找到可核验的对应源码仓库或许可。",
+          "en": "The creator’s site and public GitHub were searched; no matching source repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "live-solar-system",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者案例页和公开 GitHub，未找到可核验的作品源码或许可；第三方依赖的许可不能代表作品源码许可。",
+          "en": "The creator’s case study and public GitHub were searched; no matching project source or license was verified. Dependency licenses do not establish the work’s license."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "sky-lab",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者帖子、原站和公开 GitHub，未找到可核验的对应源码仓库或许可。",
+          "en": "The author post, original site and public GitHub were searched; no matching project source or license was verified."
+        }
+      },
+      "sources": [],
       "learning_note": {
         "status": "absent",
         "kind": null,

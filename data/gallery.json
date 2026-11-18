@@ -6236,9 +6236,9 @@
     "primary_category": "nature",
     "subcategory": "nature-geography",
     "title_original": "Meander",
-    "demo_url": "https://r4maa.github.io/claude-workshop/meander/",
+    "demo_url": "https://r4maa.github.io/archimedes-workshop/meander/",
     "creator": {
-      "name": "Amar Razzaq / Claude’s Workshop",
+      "name": "Amar Razzaq / Archimedes Workshop",
       "profile_url": "https://github.com/R4maa"
     },
     "locales": {
@@ -6261,25 +6261,26 @@
       "status": "author_claimed",
       "usage": "coding",
       "tools": [
-        "Claude"
+        "Fable 5.2",
+        "Claude Code"
       ],
-      "evidence_url": "https://github.com/R4maa/claude-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
+      "evidence_url": "https://github.com/R4maa/archimedes-workshop/blob/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/README.md",
       "description": {
-        "zh": "作者仓库称工坊实验由 Claude 在 Claude Code 中制作，Meander 由其中一个模型完成；未独立还原完整创作过程。",
-        "en": "The creator’s repository says the workshop toys were made by Claude in Claude Code, with Meander made by one of the models; the full process was not independently reconstructed."
+        "zh": "作者仓库称 Meander 由 Fable 5.2 在 Claude Code 中制作；未独立还原完整创作过程。",
+        "en": "The creator’s repository says Meander was made by Fable 5.2 in Claude Code; the full creative process was not independently reconstructed."
       }
     },
     "sources": [
       {
-        "url": "https://github.com/R4maa/claude-workshop/tree/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/meander"
+        "url": "https://github.com/R4maa/archimedes-workshop/tree/0eeaeba639ccb6b2cc6b1a97096b01a3c4fb2471/meander"
       }
     ],
     "verification": {
       "level": "interaction_tested",
       "availability": "available",
-      "last_checked_at": "2026-11-17",
-      "note": "本机桌面 Chrome 中河道和年份持续变化；点击 Pause 后按钮变为 Play，再切换 Satellite，画面由彩色轨迹变为卫星样式。拖动及手机未测。",
-      "note_en": "In local desktop Chrome the river and year changed; Pause became Play, and Satellite changed the view. Dragging and mobile were not tested."
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 中河道和年份持续变化；点击 Pause 后按钮变为 Play，再切换 Satellite，画面由彩色轨迹变为卫星样式。2026-11-18 原地址失效，已核验作者迁移后的新地址；新地址桌面暂停和视图切换可用。拖动及手机未测。",
+      "note_en": "In local desktop Chrome the river and year changed; Pause became Play, and Satellite changed the view. The old address stopped working; on 18 November 2026 the creator’s migrated address was checked, including desktop pause and view switching. Dragging and mobile were not tested."
     },
     "media": {
       "poster": {
@@ -6993,6 +6994,353 @@
     "editorial": {
       "status": "published",
       "featured_order": 2.264
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "nakaya-snow-crystals",
+    "slug": "nakaya-snow-crystals",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-earth",
+    "title_original": "Nakaya",
+    "demo_url": "https://r4maa.github.io/archimedes-workshop/nakaya/",
+    "creator": {
+      "name": "Amar Razzaq",
+      "profile_url": "https://github.com/R4maa"
+    },
+    "locales": {
+      "zh": {
+        "title": "Nakaya：让雪晶在天空中生长",
+        "summary": "改变天气条件，观察一枚模拟雪晶生长出不同的形状。",
+        "action": "在右侧选择 Hexagonal plate，观察天气图中的条件与雪晶形状变化。",
+        "why": "可视化天气图把温度、过饱和度与雪晶生长联系在一起。",
+        "limit": "这是交互模拟，不是对实际降雪的预测；仅测试桌面形状预设，其他功能及手机未测。"
+      },
+      "en": {
+        "title": "Nakaya: Grow a Snow Crystal",
+        "summary": "Change weather conditions and watch a simulated snow crystal grow into different shapes.",
+        "action": "Choose Hexagonal plate on the right and watch the diagram and crystal change.",
+        "why": "A visual weather diagram connects temperature and supersaturation with the crystal’s growth.",
+        "limit": "This is an interactive simulation, not a prediction of real snowfall. Only a desktop shape preset was tested; other features and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/R4maa/archimedes-workshop/blob/ec0113cd7e9bf2a09ed91e09a67da1020dc9be54/README.md",
+      "description": {
+        "zh": "作者的工坊说明称这件作品由 Claude Opus 5.5 制作；完整创作过程未独立还原。",
+        "en": "The creator’s workshop README says this work was made by Claude Opus 5.5; the full creative process was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/R4maa/archimedes-workshop/blob/ec0113cd7e9bf2a09ed91e09a67da1020dc9be54/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 点击 Hexagonal plate 后，天气条件由 −15.0°C、过饱和度 0.30 变为 −2.0°C、0.05，雪晶变成六角片；其他功能及手机未测。",
+      "note_en": "In local desktop Chrome, choosing Hexagonal plate changed the displayed conditions from −15.0°C and 0.30 supersaturation to −2.0°C and 0.05, and the crystal became a hexagonal plate. Other features and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/nakaya-snow-crystals-960.webp",
+        "base": "nakaya-snow-crystals",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "一枚六枝雪晶在深色背景上生长，旁边是天气图与形状预设。",
+          "en": "A six-armed snow crystal grows beside a weather diagram and shape presets."
+        }
+      },
+      "provenance": {
+        "source_url": "https://r4maa.github.io/archimedes-workshop/nakaya/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.251
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "stave-room",
+    "slug": "stave-room",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "Stave Room",
+    "demo_url": "https://stephendwolff.com/experiments/stave-room/",
+    "creator": {
+      "name": "Stephen Wolff",
+      "profile_url": "https://stephendwolff.com/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Stave Room：空间里的五线谱",
+        "summary": "在一个立体房间里探索谱表、音符与左右声像的关系。",
+        "action": "点击 Play，观察谱表上移动的播放头；也可以试着拖动音符。",
+        "why": "作者把谱表放进空间，让音符的位置成为探索声音布局的方式。",
+        "limit": "仅测试桌面 Play 按钮和画面变化；声音、拖动交互及手机未独立核验。"
+      },
+      "en": {
+        "title": "Stave Room",
+        "summary": "Explore a stave, notes and stereo position in a three-dimensional room.",
+        "action": "Choose Play to watch the playhead move across the stave; you can also try dragging a note.",
+        "why": "The creator places a stave in space so the position of a note becomes a way to explore sound placement.",
+        "limit": "Only the desktop Play button and visual response were tested; audio, dragging and mobile were not independently verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://stephendwolff.com/experiments/stave-room/",
+      "description": {
+        "zh": "作者在原站标注这件实验使用 Claude 制作。",
+        "en": "The creator’s page states that the experiment was built with Claude."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://stephendwolff.com/experiments/stave-room/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 点击 Play 后按钮变为 Stop，谱表中出现蓝色播放头；声音、拖动及手机未独立核验。",
+      "note_en": "In local desktop Chrome, Play changed to Stop and a blue playhead appeared on the stave. Audio, dragging and mobile were not independently verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/stave-room-960.webp",
+        "base": "stave-room",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "房间里的谱表、音符和红色空间线条。",
+          "en": "A stave with notes and red spatial lines stands inside a room."
+        }
+      },
+      "provenance": {
+        "source_url": "https://stephendwolff.com/experiments/stave-room/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.252
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "live-solar-system",
+    "slug": "live-solar-system",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "The Live Solar System",
+    "demo_url": "https://space.prtotype.com/",
+    "creator": {
+      "name": "Jason Ensor / PRTOTYPE.COM",
+      "profile_url": "https://prtotype.com/work/solar-system"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Live Solar System：探索太阳系",
+        "summary": "在可调整时间的三维太阳系中查看行星及其轨道。",
+        "action": "等模型出现后按数字键 3 聚焦地球，查看右侧信息面板。",
+        "why": "从整体轨道移动到单颗行星，探索空间中的尺度与位置。",
+        "limit": "天体位置与数值由原站模型提供，准确性未独立验证；仅测试桌面地球聚焦，讲解和手机未测。"
+      },
+      "en": {
+        "title": "The Live Solar System",
+        "summary": "Explore planets and their orbits in a three-dimensional Solar System with adjustable time.",
+        "action": "After the model loads, press 3 to focus on Earth and inspect the information panel.",
+        "why": "Move from a view of the orbits to one planet and explore positions and scales in space.",
+        "limit": "The positions and values come from the original model and were not independently validated. Only focusing on Earth on desktop was tested; the tour and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://prtotype.com/work/solar-system",
+      "description": {
+        "zh": "作者工作室说明 Jason Ensor 指导 Claude Code 制作了这个模型；完整创作过程未独立还原。",
+        "en": "The creator’s studio says Jason Ensor directed Claude Code to build the model; the full creative process was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://prtotype.com/work/solar-system"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 按数字键 3 后，画面聚焦地球并显示距离和轨道速度；数值未独立验证，讲解及手机未测。",
+      "note_en": "In local desktop Chrome, pressing 3 focused Earth and displayed distance and orbital-speed values. The numbers were not independently validated; the tour and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/live-solar-system-960.webp",
+        "base": "live-solar-system",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "三维地球位于轨道图中央，侧边显示距离及其他数据。",
+          "en": "A three-dimensional Earth sits in an orbital view beside a panel of distances and other values."
+        }
+      },
+      "provenance": {
+        "source_url": "https://space.prtotype.com/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.253
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "sky-lab",
+    "slug": "sky-lab",
+    "type": "experiments",
+    "primary_category": "nature",
+    "subcategory": "nature-earth",
+    "title_original": "Sky Lab",
+    "demo_url": "https://sky-lab.nekena-rayane.com/",
+    "creator": {
+      "name": "Nekena Rayane",
+      "profile_url": "https://x.com/NekenaRayane"
+    },
+    "locales": {
+      "zh": {
+        "title": "Sky Lab：浏览器里的天空",
+        "summary": "拨动时间，观察云层、阳光和天空颜色随之变化。",
+        "action": "拖动底部时间轴，从白天移到傍晚，观察天空颜色的变化。",
+        "why": "一片实时绘制的天空把时间与天气变成可以动手调整的场景。",
+        "limit": "仅测试桌面时间轴；其他天气控件、保存和手机未测。天空是视觉模拟，不用于天气预报。"
+      },
+      "en": {
+        "title": "Sky Lab",
+        "summary": "Move through the day and watch the clouds, sunlight and sky colors change.",
+        "action": "Drag the time bar at the bottom from daytime toward evening and observe the colors change.",
+        "why": "A rendered sky makes time and weather into a scene you can adjust.",
+        "limit": "Only the desktop time bar was tested; other weather controls, saving and mobile were not. The sky is a visual simulation, not a weather forecast."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://x.com/NekenaRayane/status/2121438069526298725",
+      "description": {
+        "zh": "作者称这件浏览器天空实验使用 Claude Code 制作。",
+        "en": "The creator says this browser sky experiment was built with Claude Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/NekenaRayane/status/2121438069526298725"
+      },
+      {
+        "url": "https://nekena-rayane.com/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 拖动时间轴，时间从 12:36 变为 19:36，天空由蓝色变为傍晚色调；其余控件及手机未测。",
+      "note_en": "In local desktop Chrome, dragging the time bar changed the display from 12:36 to 19:36 and the sky from blue to evening colors. Other controls and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/sky-lab-960.webp",
+        "base": "sky-lab",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "有云和细雨的蓝色天空，下方显示可拖动的时间轴。",
+          "en": "A blue sky with clouds and rain above a draggable time bar."
+        }
+      },
+      "provenance": {
+        "source_url": "https://sky-lab.nekena-rayane.com/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.254
     },
     "added_at": "2026-11-18"
   }

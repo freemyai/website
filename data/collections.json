@@ -155,7 +155,9 @@
       "ocean-currents",
       "last-hexagon",
       "codevember-tension",
-      "meander-river"
+      "meander-river",
+      "nakaya-snow-crystals",
+      "sky-lab"
     ],
     "cover": "hydraulics"
   },
@@ -271,7 +273,8 @@
         "luminote": "钢琴键盘与下落光条将旋律呈现为画面。",
         "stave": "把字母排在琴弦上并尝试播放；音频尚未实际听测。",
         "argon-junior": "通过波形、滤波与预设探索合成器；音频尚未听测。",
-        "contrib-suite": "把贡献方格变成音乐；播放状态已检查，音频尚未听测。"
+        "contrib-suite": "把贡献方格变成音乐；播放状态已检查，音频尚未听测。",
+        "stave-room": "点击播放，观察房间里的谱表和播放头；声音未独立核验。"
       }
     },
     "en": {
@@ -294,7 +297,8 @@
         "luminote": "A piano keyboard and falling lights turn melodies into a visual display.",
         "stave": "Arrange letters across strings and try playback; audio has not been audibly verified.",
         "argon-junior": "Explore waveform, filter and preset controls; audio has not been audibly verified.",
-        "contrib-suite": "Turn a contribution grid into music; playback state was checked, but audio has not been audibly verified."
+        "contrib-suite": "Turn a contribution grid into music; playback state was checked, but audio has not been audibly verified.",
+        "stave-room": "Start the playhead on a stave in a room; audio was not independently verified."
       }
     },
     "seo": {
@@ -317,7 +321,8 @@
       "luminote",
       "stave",
       "argon-junior",
-      "contrib-suite"
+      "contrib-suite",
+      "stave-room"
     ],
     "cover": "mpump"
   },
@@ -444,7 +449,8 @@
       "earth-antenna",
       "spacex-vehicles",
       "regolith",
-      "a-space-mining-game"
+      "a-space-mining-game",
+      "live-solar-system"
     ],
     "cover": "blackhole-lab"
   }
