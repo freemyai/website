@@ -672,6 +672,24 @@
       "share_slug": "human-md",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "frank-kelp",
+      "share_slug": "frank-kelp",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "free-will-gardens",
+      "share_slug": "free-will-gardens",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "getting-there",
+      "share_slug": "getting-there",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

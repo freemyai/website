@@ -200,14 +200,16 @@
       "title": "灵感参考",
       "summary": "值得探索的互动作品；它们的 AI 创作方式尚未确认。",
       "work_notes": {
-        "adam-kelp": "海藻与鱼群构成的水下场景；AI 参与尚未确认。"
+        "adam-kelp": "海藻与鱼群构成的水下场景；AI 参与尚未确认。",
+        "frank-kelp": "纸船与海藻的水面场景；AI 参与尚未确认。"
       }
     },
     "en": {
       "title": "Creative references",
       "summary": "Interactive works worth exploring, with AI creation status unconfirmed.",
       "work_notes": {
-        "adam-kelp": "An underwater kelp and fish scene; AI involvement has not been verified."
+        "adam-kelp": "An underwater kelp and fish scene; AI involvement has not been verified.",
+        "frank-kelp": "Paper boats and kelp in a water scene; AI involvement has not been verified."
       }
     },
     "works": [
@@ -224,7 +226,8 @@
       "pendulum-lab",
       "bending-light",
       "robot-arm",
-      "adam-kelp"
+      "adam-kelp",
+      "frank-kelp"
     ],
     "cover": "wave-tank"
   },

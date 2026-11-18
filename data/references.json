@@ -362,5 +362,86 @@
       "featured_order": 2.272
     },
     "added_at": "2026-11-18"
+  },
+  {
+    "id": "frank-kelp",
+    "slug": "frank-kelp",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-shaders",
+    "title_original": "Kelp",
+    "demo_url": "https://dasprinzip.com/codevember2026/17-kelp.html",
+    "creator": {
+      "name": "Frank Reitberger",
+      "profile_url": "https://x.com/_pwd_"
+    },
+    "locales": {
+      "zh": {
+        "title": "Kelp：纸船与海藻",
+        "summary": "漂浮在光影流动的海面，观察纸船和水下海藻。",
+        "action": "拖动视角，再点击水面放出纸船。",
+        "why": "波光、海藻和纸船构成一幅可以轻轻改变视角的实时画面。",
+        "limit": "AI 参与未确认，列为灵感参考。Grok Bot 测试了桌面拖动与放纸船；声音及手机未测试。"
+      },
+      "en": {
+        "title": "Kelp: Paper Boats and Seaweed",
+        "summary": "Float above a sea of shifting light, paper boats and underwater kelp.",
+        "action": "Drag to look around, then click the water to launch a paper boat.",
+        "why": "Ripples, kelp and paper boats form a real-time scene that responds to your view.",
+        "limit": "AI involvement has not been verified, so this is an inspiration reference. Grok Bot tested dragging and launching boats on desktop; audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://x.com/_pwd_/status/2122691983680635088"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "Grok Bot 在桌面浏览器拖动后视角变化，点击后出现更多纸船；声音与手机未测。此作品与 Adam Chernick 的同名作品为不同项目。 预览图取自作者公开视频缩略图，2026-11-18 收集，原始画面拍摄日期未知。",
+      "note_en": "Grok Bot changed the desktop view by dragging and launched more paper boats by clicking; audio and mobile were not tested. This is distinct from Adam Chernick’s work of the same name. The preview is a thumbnail from the creator’s public video, retrieved on 18 November 2026; its original capture date is unknown."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/frank-kelp-960.webp",
+        "base": "frank-kelp",
+        "width": 1200,
+        "height": 750,
+        "alt": {
+          "zh": "锦鲤游过绿色的水面与海藻。",
+          "en": "Koi swim across green water and kelp."
+        }
+      },
+      "provenance": {
+        "source_url": "https://pbs.twimg.com/amplify_video_thumb/2122691637402820608/img/GEoomv9J71Zko3G8.jpg",
+        "captured_at": "2026-11-18",
+        "method": "creator_published_video_thumbnail_retrieved",
+        "note": "Retrieved from the creator’s public video on 2026-11-18; the original frame capture date is unknown."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.275
+    },
+    "added_at": "2026-11-18"
   }
 ]

@@ -1966,6 +1966,109 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "getting-there",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "核对作者帖子、原站及公开 GitHub 搜索，未找到可核验的对应源码仓库或许可。",
+          "en": "The creator’s post, original site and public GitHub search were reviewed; no matching source repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "free-will-gardens",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者仓库链接原站并声明仅包含构建文件；未发现许可证。",
+          "en": "The creator’s repository links the experience and states it contains only the build; no license was found."
+        }
+      },
+      "sources": [
+        {
+          "id": "free-will-gardens-build",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/gokayfem/free-will-gardens",
+          "repository_url": "https://github.com/gokayfem/free-will-gardens",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "仓库仅发布构建后的游戏文件；未找到明确许可，不能视为已验证开源源码。",
+              "en": "The repository contains built game files only; no explicit license was found, so the source is not verified as open source."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/gokayfem/free-will-gardens/blob/536dacf5a9ccd430c2d5b78a06216c80a49f541a/README.md",
+              "summary": "The creator’s repository links the game and states it contains the built game only."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://gokayfem.github.io/free-will-gardens/",
+              "summary": "The README links the same browser experience."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "536dacf5a9ccd430c2d5b78a06216c80a49f541a",
+          "publication": "published",
+          "notes": {
+            "zh": "仅核对公开构建文件和 README，未发现许可证，未运行仓库代码。",
+            "en": "Only the public build files and README were reviewed; no license was found, and repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "frank-kelp",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "原站 HTML 内含可见的前端代码；公开 GitHub 搜索未找到对应仓库，也未发现明确许可。",
+          "en": "The original HTML contains visible front-end code; no matching repository or explicit license was found in public GitHub searches."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

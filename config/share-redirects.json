@@ -310,6 +310,26 @@
     "permanent": true
   },
   {
+    "source": "/frank-kelp",
+    "destination": "/en/works/frank-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/frank-kelp/",
+    "destination": "/en/works/frank-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/free-will-gardens",
+    "destination": "/en/works/free-will-gardens/",
+    "permanent": true
+  },
+  {
+    "source": "/free-will-gardens/",
+    "destination": "/en/works/free-will-gardens/",
+    "permanent": true
+  },
+  {
     "source": "/full-send",
     "destination": "/en/works/full-send/",
     "permanent": true
@@ -347,6 +367,16 @@
   {
     "source": "/genesis/",
     "destination": "/en/works/genesis/",
+    "permanent": true
+  },
+  {
+    "source": "/getting-there",
+    "destination": "/en/works/getting-there/",
+    "permanent": true
+  },
+  {
+    "source": "/getting-there/",
+    "destination": "/en/works/getting-there/",
     "permanent": true
   },
   {
@@ -1430,6 +1460,26 @@
     "permanent": true
   },
   {
+    "source": "/zh/frank-kelp",
+    "destination": "/works/frank-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/frank-kelp/",
+    "destination": "/works/frank-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/free-will-gardens",
+    "destination": "/works/free-will-gardens/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/free-will-gardens/",
+    "destination": "/works/free-will-gardens/",
+    "permanent": true
+  },
+  {
     "source": "/zh/full-send",
     "destination": "/works/full-send/",
     "permanent": true
@@ -1467,6 +1517,16 @@
   {
     "source": "/zh/genesis/",
     "destination": "/works/genesis/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/getting-there",
+    "destination": "/works/getting-there/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/getting-there/",
+    "destination": "/works/getting-there/",
     "permanent": true
   },
   {
