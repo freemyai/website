@@ -7543,14 +7543,14 @@
         "summary": "和小狗 Moss 一起走进绘本风格的旅程，穿过宁静的松树林。",
         "action": "在原站点击 Play，进入游戏后使用方向键向右走。",
         "why": "孩子、小狗和沿途的故事组成一段温柔的浏览器冒险。",
-        "limit": "Grok Bot 测试了桌面开场及向右行走；后续章节、音频和手机未测试。原站会显示可选注册提示。 预览图来自作者视频的后续章节，该章节未实测。"
+        "limit": "Grok Bot 测试了桌面开场及向右行走；后续章节、音频和手机未测试。原站会显示可选注册提示。"
       },
       "en": {
         "title": "Getting There",
         "summary": "Join Moss the dog on a storybook journey, beginning in a quiet pine forest.",
         "action": "Select Play on the original site, start the game and use the right arrow key to walk.",
         "why": "A child, a dog and the stories they encounter make for a gentle browser adventure.",
-        "limit": "Grok Bot tested the desktop opening and walking right; later chapters, audio and mobile were not tested. The original site displays an optional sign-up banner. The preview is from a later chapter in the creator’s video, which was not tested."
+        "limit": "Grok Bot tested the desktop opening and walking right; later chapters, audio and mobile were not tested. The original site displays an optional sign-up banner."
       }
     },
     "ai_provenance": {
@@ -7580,25 +7580,25 @@
       "level": "interaction_tested",
       "availability": "available",
       "last_checked_at": "2026-11-18",
-      "note": "Grok Bot 在桌面浏览器进入 Hollow Pines 开场，按右方向键让人物与小狗前进；其余章节、声音与手机未测。原站列出的作者账号为 @jonesiller，作者本人在帖子中给出了该试玩链接。 预览图取自作者公开视频缩略图，2026-11-18 收集，原始画面拍摄日期未知。",
-      "note_en": "Grok Bot entered the Hollow Pines opening on desktop and walked the character and dog right with the arrow key; later chapters, sound and mobile were not tested. The original site lists @jonesiller, and the creator linked to this game from their post. The preview is a thumbnail from the creator’s public video, retrieved on 18 November 2026; its original capture date is unknown."
+      "note": "Grok Bot 在桌面浏览器进入 Hollow Pines 开场，按右方向键让人物与小狗前进；其余章节、声音与手机未测。原站列出的作者账号为 @jonesiller，作者本人在帖子中给出了该试玩链接。 预览图为 Grok Bot 于 2026-11-18 的桌面实测截图。",
+      "note_en": "Grok Bot entered the Hollow Pines opening on desktop and walked the character and dog right with the arrow key; later chapters, sound and mobile were not tested. The original site lists @jonesiller, and the creator linked to this game from their post. The preview is from Grok Bot’s desktop test on 18 November 2026."
     },
     "media": {
       "poster": {
         "src": "/media/getting-there-960.webp",
         "base": "getting-there",
-        "width": 1200,
-        "height": 675,
+        "width": 1920,
+        "height": 1042,
         "alt": {
-          "zh": "雪景中的孩子和小狗，画面来自作者发布的视频。",
-          "en": "A child and a dog in a snowy scene from the creator’s video."
+          "zh": "孩子和小狗站在松树林中的橙色帐篷旁。",
+          "en": "A child and a dog stand beside an orange tent in a pine forest."
         }
       },
       "provenance": {
-        "source_url": "https://pbs.twimg.com/amplify_video_thumb/2122012845512744960/img/bkZQfV-qoBFjDMzz.jpg",
+        "source_url": "https://tesana.com/game/getting-there",
         "captured_at": "2026-11-18",
-        "method": "creator_published_video_thumbnail_retrieved",
-        "note": "Retrieved from the creator’s public video on 2026-11-18; the original frame capture date is unknown."
+        "method": "grok_bot_desktop_capture",
+        "note": "The screenshot was captured by Grok Bot during the desktop test on 2026-11-18. The 30-pixel registration banner at the top was cropped; the listing still discloses the optional sign-up banner."
       }
     },
     "access": {
@@ -7670,25 +7670,25 @@
       "level": "interaction_tested",
       "availability": "available",
       "last_checked_at": "2026-11-18",
-      "note": "Grok Bot 在桌面进入花园，点击人物打开需求和决定面板，切换果园并拖动视角；声音、全部场景与手机未测。 预览图取自作者公开视频缩略图，2026-11-18 收集，原始画面拍摄日期未知。",
-      "note_en": "Grok Bot entered a garden on desktop, opened a person’s needs and decisions panel, switched to the orchard and dragged the view; audio, all scenes and mobile were not tested. The preview is a thumbnail from the creator’s public video, retrieved on 18 November 2026; its original capture date is unknown."
+      "note": "Grok Bot 在桌面进入花园，点击人物打开需求和决定面板，切换果园并拖动视角；声音、全部场景与手机未测。 预览图为 Grok Bot 于 2026-11-18 的桌面实测截图。",
+      "note_en": "Grok Bot entered a garden on desktop, opened a person’s needs and decisions panel, switched to the orchard and dragged the view; audio, all scenes and mobile were not tested. The preview is from Grok Bot’s desktop test on 18 November 2026."
     },
     "media": {
       "poster": {
         "src": "/media/free-will-gardens-960.webp",
         "base": "free-will-gardens",
-        "width": 1200,
-        "height": 675,
+        "width": 1920,
+        "height": 1072,
         "alt": {
-          "zh": "微缩花园中的小人、植物和鸟。",
-          "en": "Tiny people, plants and birds in a miniature garden."
+          "zh": "微缩花园中有许多小人，右侧展开了一个人物的状态面板。",
+          "en": "Tiny people fill a miniature garden beside an open character status panel."
         }
       },
       "provenance": {
-        "source_url": "https://pbs.twimg.com/amplify_video_thumb/2122728485432999936/img/9u4yaietPOCus0V2.jpg",
+        "source_url": "https://gokayfem.github.io/free-will-gardens/",
         "captured_at": "2026-11-18",
-        "method": "creator_published_video_thumbnail_retrieved",
-        "note": "Retrieved from the creator’s public video on 2026-11-18; the original frame capture date is unknown."
+        "method": "grok_bot_desktop_capture",
+        "note": "The screenshot was captured by Grok Bot during the desktop test on 2026-11-18."
       }
     },
     "access": {

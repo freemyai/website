@@ -1807,13 +1807,58 @@
       "work_id": "sky-lab",
       "search": {
         "status": "searched",
-        "checked_at": "2026-11-18",
+        "checked_at": "2026-11-19",
         "notes": {
-          "zh": "检索作者帖子、原站和公开 GitHub，未找到可核验的对应源码仓库或许可。",
-          "en": "The author post, original site and public GitHub were searched; no matching project source or license was verified."
+          "zh": "作者在原帖后续回复中公开了对应仓库；仓库主页指向同一体验，仓库根目录声明 MIT。",
+          "en": "The creator linked the repository in a follow-up post; the repository homepage points to the same experience and the root declares MIT."
         }
       },
-      "sources": [],
+      "sources": [
+        {
+          "id": "sky-lab-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Online13/sky-lab",
+          "repository_url": "https://github.com/Online13/sky-lab",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Online13/sky-lab/blob/84af5579e3723422a3d8ab99f56e01937914b288/LICENSE",
+            "scope_note": {
+              "zh": "仓库源码声明采用 MIT；第三方依赖和素材可能另有许可。",
+              "en": "The repository source declares MIT; third-party dependencies and assets may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_post",
+              "url": "https://x.com/NekenaRayane/status/2121438735732773180",
+              "summary": "The creator linked the repository and described its MIT license."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/Online13/sky-lab/blob/84af5579e3723422a3d8ab99f56e01937914b288/README.md",
+              "summary": "The repository describes Sky Lab, its interactive sky and source structure."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://sky-lab.nekena-rayane.com/",
+              "summary": "The repository homepage identifies the existing Sky Lab experience."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": "84af5579e3723422a3d8ab99f56e01937914b288",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者回复、仓库主页、代码目录和许可；未执行仓库代码。",
+            "en": "The creator’s reply, repository homepage, source directories and license were reviewed; repository code was not executed."
+          }
+        }
+      ],
       "learning_note": {
         "status": "absent",
         "kind": null,

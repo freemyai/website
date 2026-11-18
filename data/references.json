@@ -406,25 +406,25 @@
       "level": "interaction_tested",
       "availability": "available",
       "last_checked_at": "2026-11-18",
-      "note": "Grok Bot 在桌面浏览器拖动后视角变化，点击后出现更多纸船；声音与手机未测。此作品与 Adam Chernick 的同名作品为不同项目。 预览图取自作者公开视频缩略图，2026-11-18 收集，原始画面拍摄日期未知。",
-      "note_en": "Grok Bot changed the desktop view by dragging and launched more paper boats by clicking; audio and mobile were not tested. This is distinct from Adam Chernick’s work of the same name. The preview is a thumbnail from the creator’s public video, retrieved on 18 November 2026; its original capture date is unknown."
+      "note": "Grok Bot 在桌面浏览器拖动后视角变化，点击后出现更多纸船；声音与手机未测。此作品与 Adam Chernick 的同名作品为不同项目。 预览图为 Grok Bot 于 2026-11-18 的桌面实测截图。",
+      "note_en": "Grok Bot changed the desktop view by dragging and launched more paper boats by clicking; audio and mobile were not tested. This is distinct from Adam Chernick’s work of the same name. The preview is from Grok Bot’s desktop test on 18 November 2026."
     },
     "media": {
       "poster": {
         "src": "/media/frank-kelp-960.webp",
         "base": "frank-kelp",
-        "width": 1200,
-        "height": 750,
+        "width": 1920,
+        "height": 1072,
         "alt": {
-          "zh": "锦鲤游过绿色的水面与海藻。",
-          "en": "Koi swim across green water and kelp."
+          "zh": "数只纸船漂浮在绿色的海藻与水面上。",
+          "en": "Paper boats float above green kelp in the water."
         }
       },
       "provenance": {
-        "source_url": "https://pbs.twimg.com/amplify_video_thumb/2122691637402820608/img/GEoomv9J71Zko3G8.jpg",
+        "source_url": "https://dasprinzip.com/codevember2026/17-kelp.html",
         "captured_at": "2026-11-18",
-        "method": "creator_published_video_thumbnail_retrieved",
-        "note": "Retrieved from the creator’s public video on 2026-11-18; the original frame capture date is unknown."
+        "method": "grok_bot_desktop_capture",
+        "note": "The screenshot was captured by Grok Bot during the desktop test on 2026-11-18."
       }
     },
     "access": {
