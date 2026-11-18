@@ -1823,6 +1823,149 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "papertrails",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者仓库与体验地址对应，仓库许可证声明 MIT。",
+          "en": "The creator’s repository matches the live experience and declares an MIT license."
+        }
+      },
+      "sources": [
+        {
+          "id": "papertrails-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/xikhar/papertrails",
+          "repository_url": "https://github.com/xikhar/papertrails",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/xikhar/papertrails/blob/5a284f71164ea3bd54ee788553e21f7f21a1b7b7/LICENSE",
+            "scope_note": {
+              "zh": "仓库源码声明采用 MIT；第三方素材可能另有许可。",
+              "en": "The repository source declares MIT; third-party assets may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/xikhar/papertrails/blob/5a284f71164ea3bd54ee788553e21f7f21a1b7b7/README.md",
+              "summary": "The creator’s repository names Papertrails and links its live experience."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://xikhar.github.io/papertrails/",
+              "summary": "The linked experience matches the repository and creator post."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "5a284f71164ea3bd54ee788553e21f7f21a1b7b7",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者帖子、对应原站和仓库许可；未运行仓库代码。",
+            "en": "The creator post, matching live site and repository license were reviewed; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "human-md",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者帖子、原站与公开 GitHub，未找到可核验的对应作品源码或许可。",
+          "en": "The creator’s post, site and public GitHub were searched; no matching source repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "adam-kelp",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者帖子同时指向体验与仓库的 17-kelp 目录；仓库根目录声明 MIT。",
+          "en": "The creator’s post links the experience and 17-kelp module; the repository root declares MIT."
+        }
+      },
+      "sources": [
+        {
+          "id": "adam-kelp-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/acher249/codevember-2026/tree/main/17-kelp",
+          "repository_url": "https://github.com/acher249/codevember-2026",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/acher249/codevember-2026/blob/581bdff98a3421b092dfba87151cd2241180337a/LICENSE",
+            "scope_note": {
+              "zh": "仓库源码声明采用 MIT；第三方依赖和素材可能另有许可。",
+              "en": "The repository source declares MIT; third-party dependencies and assets may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/acher249/codevember-2026/blob/581bdff98a3421b092dfba87151cd2241180337a/17-kelp/README.md",
+              "summary": "The creator’s repository contains the Kelp module."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://adamwebsite.com/codevember/17-kelp/",
+              "summary": "The creator’s post links both the Kelp experience and this module."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "581bdff98a3421b092dfba87151cd2241180337a",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者帖子、项目目录与仓库许可；未执行仓库代码。",
+            "en": "The creator’s post, project module and repository license were reviewed; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

@@ -10,6 +10,16 @@
     "permanent": true
   },
   {
+    "source": "/adam-kelp",
+    "destination": "/en/works/adam-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/adam-kelp/",
+    "destination": "/en/works/adam-kelp/",
+    "permanent": true
+  },
+  {
     "source": "/afterlight",
     "destination": "/en/works/afterlight/",
     "permanent": true
@@ -400,6 +410,16 @@
     "permanent": true
   },
   {
+    "source": "/human-md",
+    "destination": "/en/works/human-md/",
+    "permanent": true
+  },
+  {
+    "source": "/human-md/",
+    "destination": "/en/works/human-md/",
+    "permanent": true
+  },
+  {
     "source": "/huolong",
     "destination": "/en/works/huolong/",
     "permanent": true
@@ -717,6 +737,16 @@
   {
     "source": "/palette-rider/",
     "destination": "/en/works/palette-rider/",
+    "permanent": true
+  },
+  {
+    "source": "/papertrails",
+    "destination": "/en/works/papertrails/",
+    "permanent": true
+  },
+  {
+    "source": "/papertrails/",
+    "destination": "/en/works/papertrails/",
     "permanent": true
   },
   {
@@ -1097,6 +1127,16 @@
   {
     "source": "/zh/a-space-mining-game/",
     "destination": "/works/a-space-mining-game/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/adam-kelp",
+    "destination": "/works/adam-kelp/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/adam-kelp/",
+    "destination": "/works/adam-kelp/",
     "permanent": true
   },
   {
@@ -1490,6 +1530,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/human-md",
+    "destination": "/works/human-md/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/human-md/",
+    "destination": "/works/human-md/",
+    "permanent": true
+  },
+  {
     "source": "/zh/huolong",
     "destination": "/works/huolong/",
     "permanent": true
@@ -1807,6 +1857,16 @@
   {
     "source": "/zh/palette-rider/",
     "destination": "/works/palette-rider/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/papertrails",
+    "destination": "/works/papertrails/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/papertrails/",
+    "destination": "/works/papertrails/",
     "permanent": true
   },
   {

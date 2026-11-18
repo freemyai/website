@@ -112,7 +112,10 @@
         "description": "Preview browser games, from tree puzzles and neon arcade action to pixel stories and space adventures."
       }
     },
-    "related_collections": ["playful-worlds", "machines-in-motion"],
+    "related_collections": [
+      "playful-worlds",
+      "machines-in-motion"
+    ],
     "works": [
       "tree-appreciator",
       "labyrinthos",
@@ -195,11 +198,17 @@
     "id": "inspiration",
     "zh": {
       "title": "灵感参考",
-      "summary": "值得探索的互动作品；它们的 AI 创作方式尚未确认。"
+      "summary": "值得探索的互动作品；它们的 AI 创作方式尚未确认。",
+      "work_notes": {
+        "adam-kelp": "海藻与鱼群构成的水下场景；AI 参与尚未确认。"
+      }
     },
     "en": {
       "title": "Creative references",
-      "summary": "Interactive works worth exploring, with AI creation status unconfirmed."
+      "summary": "Interactive works worth exploring, with AI creation status unconfirmed.",
+      "work_notes": {
+        "adam-kelp": "An underwater kelp and fish scene; AI involvement has not been verified."
+      }
     },
     "works": [
       "wedulab-voltlab",
@@ -214,7 +223,8 @@
       "sonar-robot",
       "pendulum-lab",
       "bending-light",
-      "robot-arm"
+      "robot-arm",
+      "adam-kelp"
     ],
     "cover": "wave-tank"
   },
@@ -311,7 +321,9 @@
         "description": "Preview a browser accordion, synthesizers, a drum machine and sound-driven visuals, with notes on what was checked."
       }
     },
-    "related_collections": ["creative-studio"],
+    "related_collections": [
+      "creative-studio"
+    ],
     "works": [
       "type-sound",
       "mpump",
@@ -414,7 +426,10 @@
         "description": "Preview engines, robotic arms, hydraulics and spacecraft, with notes on what each work lets you explore."
       }
     },
-    "related_collections": ["make-and-learn", "motion-lab"],
+    "related_collections": [
+      "make-and-learn",
+      "motion-lab"
+    ],
     "works": [
       "v8-engine",
       "form-01",

@@ -654,6 +654,24 @@
       "share_slug": "wrong-physics",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "papertrails",
+      "share_slug": "papertrails",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "adam-kelp",
+      "share_slug": "adam-kelp",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "human-md",
+      "share_slug": "human-md",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

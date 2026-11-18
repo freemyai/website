@@ -276,5 +276,91 @@
       "status": "published"
     },
     "added_at": "2026-11-16"
+  },
+  {
+    "id": "adam-kelp",
+    "slug": "adam-kelp",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-shaders",
+    "title_original": "Kelp",
+    "demo_url": "https://adamwebsite.com/codevember/17-kelp/",
+    "creator": {
+      "name": "Adam Chernick",
+      "profile_url": "https://x.com/ajc_builds"
+    },
+    "locales": {
+      "zh": {
+        "title": "Kelp：海藻林中的光",
+        "summary": "在海底森林中观察摇曳的海藻、鱼群与光线。",
+        "action": "尝试移动指针或点击场景，也可以探索水流滑块和日光控制。",
+        "why": "水下植物、鱼群与不断变化的光共同构成可以探索的海藻林。",
+        "limit": "AI 参与未确认，列为灵感参考。Grok Bot 在无 WebGPU 的环境中通过 WebGL 后备模式看到场景，帧率很低；日光控制、声音及手机未测。"
+      },
+      "en": {
+        "title": "Kelp: Light in a Kelp Forest",
+        "summary": "Observe swaying kelp, fish and light in an underwater forest.",
+        "action": "Try moving the pointer or clicking the scene, and explore the current slider and sun control.",
+        "why": "Underwater plants, fish and changing light form an explorable kelp forest.",
+        "limit": "AI involvement has not been verified, so this is an inspiration reference. In Grok Bot’s environment the WebGL fallback rendered at a very low frame rate; the sun control, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://x.com/ajc_builds/status/2122743391792619586"
+      },
+      {
+        "url": "https://x.com/ajc_builds/status/2122743712677822811"
+      },
+      {
+        "url": "https://github.com/acher249/codevember-2026/tree/main/17-kelp"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "Grok Bot 在桌面浏览器通过 WebGL 后备模式看到海藻、鱼群与水流控件；点击场景后视角变化，帧率约 0–1 fps，日光控制与手机未测。",
+      "note_en": "Grok Bot saw kelp, fish and a current control in a desktop WebGL fallback; clicking changed the view. The frame rate was about 0–1 fps; the sun control and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/adam-kelp-960.webp",
+        "base": "adam-kelp",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "阳光穿过海水照亮海藻和鱼群，旁边有水流控制。",
+          "en": "Sunlight filters through a kelp forest and fish beside a current control."
+        }
+      },
+      "provenance": {
+        "source_url": "https://adamwebsite.com/codevember/17-kelp/",
+        "captured_at": "2026-11-18",
+        "method": "grok_bot_desktop_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.272
+    },
+    "added_at": "2026-11-18"
   }
 ]

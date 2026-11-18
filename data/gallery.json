@@ -7343,5 +7343,186 @@
       "featured_order": 2.254
     },
     "added_at": "2026-11-18"
+  },
+  {
+    "id": "papertrails",
+    "slug": "papertrails",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Papertrails",
+    "demo_url": "https://xikhar.github.io/papertrails/",
+    "creator": {
+      "name": "Shikhar",
+      "profile_url": "https://x.com/xikhar"
+    },
+    "locales": {
+      "zh": {
+        "title": "Papertrails：纸艺世界漫游",
+        "summary": "走进会随着探索展开的纸艺世界，漫游村庄、树林和小径。",
+        "action": "在原站尝试使用 WASD 或点击地面移动，按 Tab 查看地图。",
+        "why": "纸片般的建筑、动物和植物组成一座可自由探索的弹出式绘本世界。",
+        "limit": "本机桌面浏览器已显示场景；移动、地图、声音、昼夜切换及手机操作尚未独立测试。"
+      },
+      "en": {
+        "title": "Papertrails",
+        "summary": "Wander through villages, woods and paths in a papercraft world that unfolds as you explore.",
+        "action": "On the original site, try WASD or click the ground to move; Tab opens the map.",
+        "why": "Paper-like buildings, animals and plants form an explorable pop-up-book world.",
+        "limit": "The scene rendered in a local desktop browser; movement, map, audio, day-night switching and mobile controls have not yet been independently tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Fable 5.2",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/xikhar/status/2122682962647122403",
+      "description": {
+        "zh": "作者称这件作品使用 Fable 5.2 和 Opus 5.5 制作；完整创作分工未独立还原。",
+        "en": "The creator says the work was built with Fable 5.2 and Opus 5.5; the full division of work was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/xikhar/status/2122682962647122403"
+      },
+      {
+        "url": "https://x.com/BeyondTheBoxCN/status/2122721651825443027"
+      },
+      {
+        "url": "https://github.com/xikhar/papertrails"
+      }
+    ],
+    "verification": {
+      "level": "page_loaded",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面浏览器显示纸艺村庄及操作提示；Grok Bot 的图形受限环境未能渲染世界。移动与其他操作尚未独立测试。预览图来自作者公开仓库，2026-11-18 收集，原始截图日期未确认。",
+      "note_en": "A local desktop browser rendered the papercraft village and control hints; Grok Bot’s graphics-limited environment did not render the world. Movement and other controls were not independently tested. The preview image is from the creator’s public repository, retrieved on 18 November 2026; its original capture date is unconfirmed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/papertrails-960.webp",
+        "base": "papertrails",
+        "width": 1600,
+        "height": 900,
+        "alt": {
+          "zh": "暖色纸艺村庄里有小屋、树木、动物和一位旅人。",
+          "en": "A paper village with warm-toned houses, trees, animals and a traveler."
+        }
+      },
+      "provenance": {
+        "source_url": "https://github.com/xikhar/papertrails/blob/5a284f71164ea3bd54ee788553e21f7f21a1b7b7/screenshots/hero.png",
+        "captured_at": "2026-11-18",
+        "method": "creator_published_screenshot_retrieved",
+        "note": "Retrieved from the creator’s repository on 2026-11-18; the original screenshot capture date is not known."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.27
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "human-md",
+    "slug": "human-md",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "HUMAN.md",
+    "demo_url": "https://www.human-md.ai/",
+    "creator": {
+      "name": "Briana (Mazzio) May",
+      "profile_url": "https://x.com/Designer_Bri"
+    },
+    "locales": {
+      "zh": {
+        "title": "HUMAN.md：设计师的滚动宣言",
+        "summary": "跟随滚动动画，探索 AI 时代人类设计者的工作。",
+        "action": "向下滚动，从房间开场进入不同的文字和图像场景。",
+        "why": "分章节的排版、角色和视觉隐喻让一篇设计宣言成为可探索的网页。",
+        "limit": "Grok Bot 测试了桌面滚动及部分画面；视频、完整章节、声音与手机未测试。"
+      },
+      "en": {
+        "title": "HUMAN.md",
+        "summary": "Scroll through animated scenes exploring the human designer’s role in the age of AI.",
+        "action": "Scroll down from the opening room into a series of typographic and visual scenes.",
+        "why": "Chapters, characters and visual metaphors turn a design manifesto into an explorable webpage.",
+        "limit": "Grok Bot tested desktop scrolling and some scenes; video, the full work, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/Designer_Bri/status/2120227605341216957",
+      "description": {
+        "zh": "作者后续介绍制作过程时提到以代码为先并使用 AI 的创作方式；未指明具体模型。",
+        "en": "In a later description of the process, the creator referred to a code-first approach using AI; no specific model was named."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/Designer_Bri/status/2118020969248022848"
+      },
+      {
+        "url": "https://x.com/Designer_Bri/status/2120227605341216957"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "Grok Bot 在桌面浏览器向下滚动后看到了不同排版场景；其余章节、音频和手机未测。",
+      "note_en": "Grok Bot scrolled on desktop and observed different typographic scenes; remaining chapters, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/human-md-960.webp",
+        "base": "human-md",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "蓝色背景上的 HUMAN.md 标题、人物、灯和盆栽。",
+          "en": "The HUMAN.md title, a figure, a lamp and a potted plant against a blue background."
+        }
+      },
+      "provenance": {
+        "source_url": "https://www.human-md.ai/",
+        "captured_at": "2026-11-18",
+        "method": "grok_bot_desktop_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.271
+    },
+    "added_at": "2026-11-18"
   }
 ]
