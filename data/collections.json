@@ -244,7 +244,8 @@
       "inference-lab",
       "argon-junior",
       "magic-english-buddy",
-      "owl-pellet-lab"
+      "owl-pellet-lab",
+      "mxene-in-3d"
     ],
     "cover": "learn-arduino"
   },
@@ -366,7 +367,9 @@
         "roadster-explorer": "从材料到轮组浏览想象中的汽车装配；部分细节为估算。",
         "wind-tide": "选择离岸风场并拖动时间轴，观察场景与读数变化。",
         "spacex-vehicles": "浏览 Starship 等航天器模型，并从下方查看发动机。",
-        "bee-x9": "接管机械蜂导览，观察飞行和模拟仪表。"
+        "bee-x9": "接管机械蜂导览，观察飞行和模拟仪表。",
+        "robot-hand-explainer": "调整肌腱张力，观察简化的机器人手指模型；真实硬件未测。",
+        "roverkit": "浏览小车零件并进入电机装配步骤；模拟驾驶未测。"
       }
     },
     "en": {
@@ -391,7 +394,9 @@
         "roadster-explorer": "Follow an imagined car build from materials to wheels; some details are estimates.",
         "wind-tide": "Choose an offshore wind farm and move the timeline to observe changes in the scene and readings.",
         "spacex-vehicles": "Explore models including Starship and view its engines from below.",
-        "bee-x9": "Take over a robotic bee's tour and observe its flight and simulated readouts."
+        "bee-x9": "Take over a robotic bee's tour and observe its flight and simulated readouts.",
+        "robot-hand-explainer": "Adjust tendon pull in a simplified robot-finger model; real hardware was not tested.",
+        "roverkit": "Browse rover parts and enter the motor assembly step; simulated driving was not tested."
       }
     },
     "seo": {
@@ -416,7 +421,9 @@
       "roadster-explorer",
       "wind-tide",
       "spacex-vehicles",
-      "bee-x9"
+      "bee-x9",
+      "robot-hand-explainer",
+      "roverkit"
     ],
     "cover": "v8-engine"
   },

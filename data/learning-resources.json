@@ -1550,6 +1550,160 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "robot-hand-explainer",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者帖、原站和 GitHub，未找到可核验的完整作品源码仓库；文章所引其他机器人模型不是本页源码。",
+          "en": "The author post, live site and GitHub were searched. No matching complete repository was verified; other robot models cited by the article are not this page’s source."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "roverkit",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "检索作者帖、原站和 GitHub，未找到可核验的完整作品源码仓库或许可。",
+          "en": "The author post, live site and GitHub were searched; no matching complete repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "mxene-in-3d",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者仓库说明本讲解源码采用 MIT；仓库内 atlas 目录另有许可。",
+          "en": "The creator repository identifies this explainer’s code as MIT; its separate atlas directory has different terms."
+        }
+      },
+      "sources": [
+        {
+          "id": "mxene-in-3d-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/SongT-50/mxene-3d/tree/main/src",
+          "repository_url": "https://github.com/SongT-50/mxene-3d",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/SongT-50/mxene-3d/blob/9b468af7a264e879231b6f8e3b06bca0fec12441/LICENSE",
+            "scope_note": {
+              "zh": "本讲解的源码采用 MIT；同仓库 atlas 目录和第三方材料另有许可说明。",
+              "en": "This explainer’s source is MIT licensed; the separate atlas directory and third-party material have different notices."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/SongT-50/mxene-3d/blob/9b468af7a264e879231b6f8e3b06bca0fec12441/README.md",
+              "summary": "The creator README describes the exact work and links its live experience."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "9b468af7a264e879231b6f8e3b06bca0fec12441",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站、作者仓库与公开许可说明；未运行第三方仓库代码。",
+            "en": "The live site, creator repository and public license information were reviewed; third-party repository code was not run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "moolife",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-18",
+        "notes": {
+          "zh": "作者仓库与试玩地址对应，但作者明确声明没有授予开源许可。",
+          "en": "The creator repository matches the live demo, but the creator explicitly states no open-source license is granted."
+        }
+      },
+      "sources": [
+        {
+          "id": "moolife-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/MiaORwang/moolife",
+          "repository_url": "https://github.com/MiaORwang/moolife",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "restricted",
+            "expression": null,
+            "evidence_url": "https://github.com/MiaORwang/moolife/blob/804a1c5939b6f87f21465b9c38bc75e1f11a8f02/README.md",
+            "scope_note": {
+              "zh": "代码可查看；作者声明尚未授予开源许可，不能仅因公开就推定复制、修改或再分发权限。",
+              "en": "The code is visible, but the creator states no open-source license has been granted; public access alone does not grant reuse, modification or redistribution rights."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/MiaORwang/moolife/blob/804a1c5939b6f87f21465b9c38bc75e1f11a8f02/README.md",
+              "summary": "The creator README describes the exact work and links its live experience."
+            }
+          ],
+          "checked_at": "2026-11-18",
+          "revision": "804a1c5939b6f87f21465b9c38bc75e1f11a8f02",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对原站、作者仓库与公开许可说明；未运行第三方仓库代码。",
+            "en": "The live site, creator repository and public license information were reviewed; third-party repository code was not run."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

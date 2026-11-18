@@ -6652,5 +6652,348 @@
       "featured_order": 2.275
     },
     "added_at": "2026-11-17"
+  },
+  {
+    "id": "robot-hand-explainer",
+    "slug": "robot-hand-explainer",
+    "type": "learning",
+    "primary_category": "robotics",
+    "subcategory": "robotics-kinematics",
+    "title_original": "Hands",
+    "demo_url": "https://stormy.ai/hands",
+    "creator": {
+      "name": "Robert Lukoszko",
+      "profile_url": "https://x.com/Karmedge"
+    },
+    "locales": {
+      "zh": {
+        "title": "Hands：机器人手如何工作",
+        "summary": "通过动画与可调示意图，探索机器人手的关节、肌腱和驱动。",
+        "action": "向下找到 One finger, one tendon，拖动 Pull 滑块，观察手指示意图和角度读数。",
+        "why": "从一根肌腱驱动三个关节的小实验，逐步展开复杂的灵巧手设计。",
+        "limit": "图示是简化模拟，页面中的设计与数据来源各有说明；仅测试桌面张力滑块，视频、其他交互和手机未测。"
+      },
+      "en": {
+        "title": "Hands: How a Robot Hand Works",
+        "summary": "Explore the joints, tendons and actuation of a robot hand through animated and adjustable diagrams.",
+        "action": "Scroll to One finger, one tendon and move the Pull slider to see the diagram and angle readouts respond.",
+        "why": "A small experiment with one tendon and three joints opens up the larger design of a dexterous hand.",
+        "limit": "The figures are simplified simulations, and the page identifies separate sources for its designs and data. Only the desktop pull slider was tested; video, other interactions and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/Karmedge/status/2122394153497842080",
+      "description": {
+        "zh": "作者称使用 Fable 5.2 制作该解释作品；完整创作分工未独立还原。",
+        "en": "The creator says the explainer was built using Fable 5.2; the full division of work was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/Karmedge/status/2122394153497842080"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 调整 One finger, one tendon 的 Pull 滑块，读数从 35% 变为 45%，关节示意随之显示对应数值；视频及手机未测。",
+      "note_en": "In local desktop Chrome, the One finger, one tendon Pull slider changed from 35% to 45% and the diagram displayed corresponding joint values. Video and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/robot-hand-explainer-960.webp",
+        "base": "robot-hand-explainer",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "机器人手指示意图中的肌腱张力滑块和关节角度读数。",
+          "en": "A robot-finger diagram with a tendon-pull slider and joint-angle readouts."
+        }
+      },
+      "provenance": {
+        "source_url": "https://stormy.ai/hands",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.261
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "roverkit",
+    "slug": "roverkit",
+    "type": "learning",
+    "primary_category": "robotics",
+    "subcategory": "robotics-systems",
+    "title_original": "RoverKit",
+    "demo_url": "https://roverkit.vercel.app/",
+    "creator": {
+      "name": "Dilum Sanjaya",
+      "profile_url": "https://x.com/DilumSanjaya"
+    },
+    "locales": {
+      "zh": {
+        "title": "RoverKit：机器人小车装配指南",
+        "summary": "通过分步图解查看机器人小车的零件、装配与代码。",
+        "action": "在工作台点击 Next: Motors，从零件清单进入电机和车轮步骤。",
+        "why": "可视化零件与分步说明把一辆小车的组成放在同一处浏览。",
+        "limit": "仅测试桌面从零件进入电机步骤；模拟驾驶、连接真实硬件和手机未测。实物制作需要另行核验电路与器材说明。"
+      },
+      "en": {
+        "title": "RoverKit",
+        "summary": "Explore the parts, assembly and code of a robot car through a step-by-step guide.",
+        "action": "In the workbench, choose Next: Motors to move from the parts list to the motors and wheels step.",
+        "why": "Visual parts and staged instructions put a rover’s components in one browsable workspace.",
+        "limit": "Only the desktop transition from parts to motors was tested; simulated driving, real-hardware connection and mobile were not. Verify circuits and equipment separately before building anything physical."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/DilumSanjaya/status/2121286147393651085",
+      "description": {
+        "zh": "作者称使用 Fable 5.2 制作这款应用；未独立还原全部创作过程。",
+        "en": "The creator says the app was built with Fable 5.2; the full creation process was not independently reconstructed."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/DilumSanjaya/status/2121286147393651085"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 点击 Next: Motors 后，页面从 Step 1 切换至 Step 2 · Motors & wheels；模拟器、真实硬件及手机未测。",
+      "note_en": "In local desktop Chrome, Next: Motors moved the page from step one to step two, Motors & wheels. The simulator, real hardware and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/roverkit-960.webp",
+        "base": "roverkit",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "机器人小车零件铺在工作台上，右侧显示分步清单。",
+          "en": "Robot-car parts laid out on a workbench next to a step-by-step checklist."
+        }
+      },
+      "provenance": {
+        "source_url": "https://roverkit.vercel.app/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.262
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "mxene-in-3d",
+    "slug": "mxene-in-3d",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-chemistry",
+    "title_original": "MXene in 3D",
+    "demo_url": "https://songt-50.github.io/mxene-3d/",
+    "creator": {
+      "name": "Sapjil Coding",
+      "profile_url": "https://github.com/SongT-50"
+    },
+    "locales": {
+      "zh": {
+        "title": "MXene in 3D：探索层状材料",
+        "summary": "通过分步三维模型，观察层状前驱体与 MXene 材料的示意结构。",
+        "action": "点击 Next，从前驱体模型进入铝层为何可被去除的步骤。",
+        "why": "原子示意、步骤说明和参考文献并排呈现，方便沿着结构变化探索。",
+        "limit": "这是理想化教学示意，原子位置和部分数值为近似或示意，并非实验数据；仅测试桌面前两步，手机未测。"
+      },
+      "en": {
+        "title": "MXene in 3D",
+        "summary": "Explore schematic layered precursor and MXene structures through a step-by-step 3D model.",
+        "action": "Choose Next to move from the precursor model to the step about why the aluminium layer can be removed.",
+        "why": "Atomic diagrams, step descriptions and references sit side by side for exploration.",
+        "limit": "This is an idealized teaching model with approximate or illustrative positions and values, not experimental data. Only the first two desktop steps were tested; mobile was not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/SongT-50/mxene-3d/blob/9b468af7a264e879231b6f8e3b06bca0fec12441/README.md",
+      "description": {
+        "zh": "作者说明这个三维讲解在 Claude 的 AI 辅助下制作；模型参数仍是教学近似。",
+        "en": "The creator says the 3D explainer was made with AI assistance from Claude; the model parameters remain teaching approximations."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/SongT-50/mxene-3d/blob/9b468af7a264e879231b6f8e3b06bca0fec12441/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 点击 Next 后从第一步切到第二步，三维高亮与说明发生变化；其余步骤和手机未测。",
+      "note_en": "In local desktop Chrome, Next moved from step one to step two and changed the 3D highlight and explanation. Other steps and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/mxene-in-3d-960.webp",
+        "base": "mxene-in-3d",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "分层原子球模型旁显示材料步骤和参考文献。",
+          "en": "A layered atomic model beside material-process steps and references."
+        }
+      },
+      "provenance": {
+        "source_url": "https://songt-50.github.io/mxene-3d/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.263
+    },
+    "added_at": "2026-11-18"
+  },
+  {
+    "id": "moolife",
+    "slug": "moolife",
+    "type": "games",
+    "primary_category": "nature",
+    "subcategory": "nature-biology",
+    "title_original": "MooLife!",
+    "demo_url": "https://miaorwang.github.io/moolife/",
+    "creator": {
+      "name": "miaorwang",
+      "profile_url": "https://github.com/MiaORwang"
+    },
+    "locales": {
+      "zh": {
+        "title": "MooLife!：奶牛的一天",
+        "summary": "在简化的农场模拟中，以奶牛视角探索一天的活动。",
+        "action": "选择 EN 切换英文，再点击 Start adventure 进入农场。",
+        "why": "用轻松的互动场景呈现进食、休息和日常节奏。",
+        "limit": "作品处于测试阶段；动物行为和数值为游戏化模拟，不是经过验证的动物福利评估。仅测试桌面进入场景，完整一天和手机未测。"
+      },
+      "en": {
+        "title": "MooLife!",
+        "summary": "Explore a day on a farm from a cow’s perspective in a simplified simulation.",
+        "action": "Choose EN for English, then select Start adventure to enter the farm.",
+        "why": "A playful interactive scene introduces feeding, rest and the rhythm of a day.",
+        "limit": "The work is in beta; animal behavior and values are simulated for play, not a validated welfare assessment. Only entering the desktop scene was tested; a full day and mobile were not."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://github.com/MiaORwang/moolife/blob/804a1c5939b6f87f21465b9c38bc75e1f11a8f02/README.md",
+      "description": {
+        "zh": "作者将本作描述为使用 AI 辅助编程并经过迭代修改的科普项目，未指明模型。",
+        "en": "The creator describes this as a science-communication project made with AI-assisted coding and iteration; no model is named."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/MiaORwang/moolife/blob/804a1c5939b6f87f21465b9c38bc75e1f11a8f02/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-18",
+      "note": "本机桌面 Chrome 切换英文并进入农场，显示时间、牛群和模拟需求指标；仅尝试方向键，未核验完整一天或手机。",
+      "note_en": "Local desktop Chrome switched to English and entered the farm, showing time, the herd and simulated needs. An arrow key was attempted; a full day and mobile were not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/moolife-960.webp",
+        "base": "moolife",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "农场模拟界面中有牛群、牧场和右侧需求状态。",
+          "en": "A farm simulation shows a herd, pasture and a panel of simulated needs."
+        }
+      },
+      "provenance": {
+        "source_url": "https://miaorwang.github.io/moolife/",
+        "captured_at": "2026-11-18",
+        "method": "independent_desktop_browser_capture"
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "de",
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.264
+    },
+    "added_at": "2026-11-18"
   }
 ]
