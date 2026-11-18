@@ -5,6 +5,7 @@ import { eligibleForGallery, safeExternalUrl, assertUniqueExperienceUrls } from 
 import { topicNames, urlFor } from './i18n.mjs';
 import { validateLearningRecord, publicLearningPayload, safeLearningUrl } from './learning-resources.mjs';
 import { loadPublishedLearningNote } from './learning-content.mjs';
+import { loadShareManifest, attachShareUrls } from './share-manifest.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data', name), 'utf8'));
@@ -12,6 +13,8 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data', name), '
 export function loadCatalog({readData=read,readLearningText}={}) {
   const taxonomy=readData('taxonomy.json'), oldWorks=readData('works.json'), featured=readData('gallery.json'), references=readData('references.json');
   const translations=readData('legacy-locales.json'), types=readData('types.json'), collections=readData('collections.json');
+  const homeFeaturedCollections=readData('home-featured-collections.json')??[];
+  if(!Array.isArray(homeFeaturedCollections)||new Set(homeFeaturedCollections).size!==homeFeaturedCollections.length||homeFeaturedCollections.some(id=>!collections.some(collection=>collection.id===id)))throw new Error('Invalid featured homepage collections');
   for(const item of [...types,...collections,...taxonomy.categories]) if(!/^[a-z0-9-]+$/.test(item.id)) throw new Error(`Invalid route id: ${item.id}`);
   const imported=[...featured,...references], overrides=new Map(imported.map(w=>[w.id,w]));
   const works=oldWorks.map(w=>{
@@ -85,7 +88,10 @@ export function loadCatalog({readData=read,readLearningText}={}) {
   for(const c of collections){
     if(!c.works.length||c.works.some(id=>!ids.has(id))||!c.zh?.title||!c.en?.title) throw new Error(`Invalid collection: ${c.id}`);
   }
-  return {taxonomy,works,types,collections,gallery:works.filter(eligibleForGallery).sort((a,b)=>(a.editorial.featured_order||999)-(b.editorial.featured_order||999))};
+  const catalog={taxonomy,works,types,collections,homeFeaturedCollections,gallery:works.filter(eligibleForGallery).sort((a,b)=>(a.editorial.featured_order||999)-(b.editorial.featured_order||999))};
+  // Injected catalog fixtures are validated independently; the live catalog always
+  // carries the checked, persistent share registry.
+  return readData===read?attachShareUrls(catalog,loadShareManifest(catalog,root)):catalog;
 }
 
 if(process.argv[1]&&import.meta.url===pathToFileURL(path.resolve(process.argv[1])).href){

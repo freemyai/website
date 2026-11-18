@@ -14,6 +14,11 @@
     "lint": "node scripts/lint.mjs",
     "typecheck": "node src/validate.mjs",
     "learning:audit": "node scripts/check-learning-resources.mjs",
+    "share:sync": "node scripts/sync-share-routes.mjs --write",
+    "share:check": "node scripts/sync-share-routes.mjs --check",
+    "share:export": "node scripts/export-share-index.mjs",
+    "share:audit": "node scripts/check-share-links.mjs",
+    "share:live": "node scripts/check-share-live.mjs",
     "seo:audit": "node scripts/check-seo.mjs --dir dist",
     "seo:live": "node scripts/check-seo-live.mjs"
   },

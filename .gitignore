@@ -1,6 +1,7 @@
 node_modules/
 dist/
 reports/seo/
+reports/share/
 __pycache__/
 *.pyc
 .env*

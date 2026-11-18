@@ -34,7 +34,7 @@ test('source and learning report filters exclude QA and match the chosen entry',
 });
 
 test('new click metrics remain uncollected before their own start date',async()=>{
-  const keys=['FREEMY_INSIGHTS_PASSWORD','FREEMY_VERCEL_TOKEN','FREEMY_EVENTS_STARTED_AT','FREEMY_IMPRESSIONS_STARTED_AT','FREEMY_LEARNING_EVENTS_STARTED_AT'];
+  const keys=['FREEMY_INSIGHTS_PASSWORD','FREEMY_VERCEL_TOKEN','FREEMY_EVENTS_STARTED_AT','FREEMY_IMPRESSIONS_STARTED_AT','FREEMY_LEARNING_EVENTS_STARTED_AT','FREEMY_SHARE_EVENTS_STARTED_AT'];
   const previous=Object.fromEntries(keys.map(key=>[key,process.env[key]])),oldFetch=globalThis.fetch;
   const secret='D8iVEq57FBmhPCmAC18OC7UKcZP6Hx9LYszs2xYCj4A';
   const auth=`Basic ${Buffer.from(`freemy:${secret}`).toString('base64')}`;
@@ -43,7 +43,7 @@ test('new click metrics remain uncollected before their own start date',async()=
   try{
     process.env.FREEMY_INSIGHTS_PASSWORD=secret;process.env.FREEMY_VERCEL_TOKEN='test-only-token';
     process.env.FREEMY_EVENTS_STARTED_AT='2026-11-01T00:00:00Z';
-    delete process.env.FREEMY_IMPRESSIONS_STARTED_AT;delete process.env.FREEMY_LEARNING_EVENTS_STARTED_AT;
+    delete process.env.FREEMY_IMPRESSIONS_STARTED_AT;delete process.env.FREEMY_LEARNING_EVENTS_STARTED_AT;delete process.env.FREEMY_SHARE_EVENTS_STARTED_AT;
     globalThis.fetch=async url=>{
       const parsed=new URL(url);
       if(parsed.pathname.endsWith('/visits/count'))return {ok:true,json:async()=>({data:{pageviews:12,visitors:4}})};
@@ -56,12 +56,12 @@ test('new click metrics remain uncollected before their own start date',async()=
     assert.doesNotMatch(filters.join('\n'),/source_open|learning_open/,'new event queries are skipped before collection is configured');
     const workRow=res.body.match(/<tr>[^]*?<small>hydraulics<\/small>[^]*?<\/tr>/)?.[0];
     assert.ok(workRow,'the real work appears in the report');
-    assert.match(workRow,/<td>未采集<\/td><td>未采集<\/td><td>1<\/td><\/tr>$/,'both new click columns remain uncollected');
+    assert.match(workRow,/(?:<td>未采集<\/td>){7}<td>1<\/td><\/tr>$/,'learning and sharing columns remain uncollected');
     process.env.FREEMY_LEARNING_EVENTS_STARTED_AT='2026-11-15T12:00:00Z';filters.length=0;
     res=response();await handler({method:'GET',url:'/api/insights?from=2026-11-14&to=2026-11-15&lang=zh&page=work&entry=dialog',headers:{authorization:auth}},res);
     assert.equal(res.statusCode,200);
     const activeRow=res.body.match(/<tr>[^]*?<small>hydraulics<\/small>[^]*?<\/tr>/)?.[0];
-    assert.match(activeRow,/<td>2\*<\/td><td>3\*<\/td><td>1<\/td><\/tr>$/,'both metrics are marked as partial for a range preceding their own start');
+    assert.match(activeRow,/<td>2\*<\/td><td>3\*<\/td>(?:<td>未采集<\/td>){5}<td>1<\/td><\/tr>$/,'learning metrics are partial and share metrics remain uncollected');
     assert.equal(filters.filter(f=>/source_open|learning_open/.test(f)).length,2);
     for(const filter of filters.filter(f=>/source_open|learning_open/.test(f))){
       assert.match(filter,/not startswith\(eventData\/placement,'qa:'\)/);

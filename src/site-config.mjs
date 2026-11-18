@@ -1,4 +1,5 @@
 export const SITE_ORIGIN = 'https://freemy.ai';
+export const CONTACT_EMAIL = 'ai@freemy.ai';
 
 // Opt in only after confirming the team's analytics plan supports custom events.
 export const CUSTOM_EVENTS_ENABLED = process.env.VERCEL_ENV === 'production' && process.env.FREEMY_CUSTOM_EVENTS === '1';

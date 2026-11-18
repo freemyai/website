@@ -1,0 +1,212 @@
+[
+  {
+    "id": "R01",
+    "area": "英文标准短链",
+    "action": "GET /hydraulics/",
+    "expected": "308 → /en/works/hydraulics/，最终200",
+    "result": "not_run"
+  },
+  {
+    "id": "R02",
+    "area": "中文标准短链",
+    "action": "GET /zh/hydraulics/",
+    "expected": "308 → /works/hydraulics/，最终200",
+    "result": "not_run"
+  },
+  {
+    "id": "R03",
+    "area": "无斜杠",
+    "action": "GET /hydraulics",
+    "expected": "允许规范化，不能循环；不超过一次必要额外跳转",
+    "result": "not_run"
+  },
+  {
+    "id": "R04",
+    "area": "未知作品",
+    "action": "GET /not-a-real-freemy-work/",
+    "expected": "真实404，不重定向到首页",
+    "result": "not_run"
+  },
+  {
+    "id": "R05",
+    "area": "保留名",
+    "action": "注册 contact/api/assets 为 share_slug",
+    "expected": "构建前拒绝",
+    "result": "not_run"
+  },
+  {
+    "id": "R06",
+    "area": "草稿",
+    "action": "为candidate注册active别名",
+    "expected": "拒绝发布路由",
+    "result": "not_run"
+  },
+  {
+    "id": "R07",
+    "area": "任意跳转参数",
+    "action": "/hydraulics/?url=https://example.invalid",
+    "expected": "目标仍是既定站内详情",
+    "result": "not_run"
+  },
+  {
+    "id": "R08",
+    "area": "历史别名",
+    "action": "作品展示名变化或previous_slugs",
+    "expected": "旧链接仍指向同一作品；不能分配给其他作品",
+    "result": "not_run"
+  },
+  {
+    "id": "R09",
+    "area": "锚点",
+    "action": "/hydraulics/#learning",
+    "expected": "在支持该学习区的页面定位到学习区；无该区时不报错",
+    "result": "not_run"
+  },
+  {
+    "id": "R10",
+    "area": "SEO",
+    "action": "检查全站sitemap/canonical/hreflang",
+    "expected": "只有规范详情，不将短别名列为规范或语言替代页",
+    "result": "not_run"
+  },
+  {
+    "id": "S01",
+    "area": "中文首页卡片复制",
+    "action": "点击某作品复制",
+    "expected": "复制该作品中文短链，不是/zh/首页",
+    "result": "not_run"
+  },
+  {
+    "id": "S02",
+    "area": "复制英文版本",
+    "action": "中文界面选择英文链接",
+    "expected": "复制同一作品英文短链",
+    "result": "not_run"
+  },
+  {
+    "id": "S03",
+    "area": "剪贴板拒绝",
+    "action": "拒绝clipboard-write",
+    "expected": "展示手动复制，不报成功",
+    "result": "not_run"
+  },
+  {
+    "id": "S04",
+    "area": "原生分享取消",
+    "action": "share拒绝AbortError",
+    "expected": "不弹误导错误，不计已发布",
+    "result": "not_run"
+  },
+  {
+    "id": "S05",
+    "area": "预览状态",
+    "action": "依次打开A、B并分享",
+    "expected": "B的链接、标题、二维码正确，没有A残留",
+    "result": "not_run"
+  },
+  {
+    "id": "S06",
+    "area": "点击隔离",
+    "action": "在卡片分享按钮点击",
+    "expected": "不同时打开预览/原站，不双计事件",
+    "result": "not_run"
+  },
+  {
+    "id": "S07",
+    "area": "键盘",
+    "action": "Tab/Enter/Esc操作分享",
+    "expected": "焦点可见，退出后回到触发控件",
+    "result": "not_run"
+  },
+  {
+    "id": "S08",
+    "area": "无JS",
+    "action": "禁用JS访问详情",
+    "expected": "规范详情/原站入口/分享文本仍可用",
+    "result": "not_run"
+  },
+  {
+    "id": "S09",
+    "area": "二维码",
+    "action": "程序解码+真实手机扫",
+    "expected": "对应所选语言短链，原图可读，无第三方服务请求",
+    "result": "not_run"
+  },
+  {
+    "id": "C01",
+    "area": "联系页",
+    "action": "两种语言打开contact",
+    "expected": "正确语言、标题、邮箱、canonical/hreflang",
+    "result": "not_run"
+  },
+  {
+    "id": "C02",
+    "area": "复制邮箱",
+    "action": "复制按钮正常与失败两种",
+    "expected": "成功才提示；失败可手动选择",
+    "result": "not_run"
+  },
+  {
+    "id": "C03",
+    "area": "邮件链接",
+    "action": "合作/纠错/投稿入口",
+    "expected": "收件人固定，无任意cc/bcc；不自动发送",
+    "result": "not_run"
+  },
+  {
+    "id": "C04",
+    "area": "邮箱收发",
+    "action": "站长授权外部测试",
+    "expected": "收到且能回复；未执行明确写未验证",
+    "result": "not_run"
+  },
+  {
+    "id": "A01",
+    "area": "事件关闭",
+    "action": "off/preview环境",
+    "expected": "不污染生产行为数据",
+    "result": "not_run"
+  },
+  {
+    "id": "A02",
+    "area": "事件失败",
+    "action": "阻止统计脚本",
+    "expected": "分享与原站体验不受阻",
+    "result": "not_run"
+  },
+  {
+    "id": "A03",
+    "area": "成功口径",
+    "action": "复制/native/X/mailto不同动作",
+    "expected": "不报告已发布、被访问或已发邮件",
+    "result": "not_run"
+  },
+  {
+    "id": "P01",
+    "area": "资产",
+    "action": "检查所有新增import/icon/OG/QR模块",
+    "expected": "生产可访问，无漏复制",
+    "result": "not_run"
+  },
+  {
+    "id": "P02",
+    "area": "私有API",
+    "action": "修改vercel后检查insights配置",
+    "expected": "路由、权限、headers仍保留",
+    "result": "not_run"
+  },
+  {
+    "id": "P03",
+    "area": "响应式",
+    "action": "1440/768/390，中英文",
+    "expected": "真实作品仍突出，按钮不溢出无遮挡",
+    "result": "not_run"
+  },
+  {
+    "id": "P04",
+    "area": "部署边界",
+    "action": "本地测试与Vercel预览/生产",
+    "expected": "分别记录；不能用本地服务器证明308配置生效",
+    "result": "not_run"
+  }
+]

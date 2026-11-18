@@ -1,0 +1,115 @@
+import { chromium } from 'playwright-core';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const output=process.env.FREEMY_QA_DIR||path.resolve('..','freemy-share-checks');
+fs.mkdirSync(output,{recursive:true});
+const executablePath=process.env.FREEMY_BROWSER_PATH||'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const browser=await chromium.launch({executablePath,headless:true});
+const origin='http://127.0.0.1:4177';
+try{
+  for(const [width,height] of [[1440,900],[768,1024],[390,844]])for(const lang of ['en','zh']){
+    const page=await browser.newPage({viewport:{width,height}}), errors=[];
+    page.on('pageerror',error=>errors.push(error.message));
+    await page.goto(`${origin}${lang==='en'?'/':'/zh/'}`,{waitUntil:'domcontentloaded'});
+    const card=page.locator('.creation-card').first(), toggle=card.locator('[data-share-toggle]');
+    await toggle.waitFor({state:'visible'});await toggle.click();
+    assert.equal(await card.locator('[data-share-panel]').isVisible(),true);
+    const bounds=await page.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth}));
+    assert.ok(bounds.scroll<=bounds.inner,`${lang} ${width}: horizontal overflow`);
+    await page.screenshot({path:path.join(output,`share-card-${lang}-${width}.png`)});
+    assert.deepEqual(errors,[]);await page.close();
+  }
+  const page=await browser.newPage({viewport:{width:1440,height:900}});
+  await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{window.__copied=text;}}}));
+  await page.goto(`${origin}/zh/`,{waitUntil:'domcontentloaded'});
+  const cards=page.locator('.creation-card'), a=cards.nth(0), b=cards.nth(1);
+  const workA=JSON.parse(await a.getAttribute('data-work')),workB=JSON.parse(await b.getAttribute('data-work'));
+  await a.locator('[data-share-toggle]').click();
+  assert.equal(await page.locator('#preview-dialog').evaluate(d=>d.open),false,'sharing card does not open preview');
+  await a.locator('[data-share-copy="zh"]').click();
+  assert.equal(await page.evaluate(()=>window.__copied),workA.shareUrls.zh);
+  await a.locator('[data-share-copy="en"]').click();
+  assert.equal(await page.evaluate(()=>window.__copied),workA.shareUrls.en);
+  await a.locator('[data-share-qr]').click();
+  await a.locator('[data-share-qr-view]').waitFor({state:'visible'});
+  let qrData=await a.locator('canvas[data-share-qr-canvas]').evaluate(canvas=>canvas.toDataURL('image/png'));
+  fs.writeFileSync(path.join(output,'qr-a-zh.png'),Buffer.from(qrData.split(',')[1],'base64'));
+  await a.locator('[data-qr-locale="en"]').click();
+  await a.locator('[data-qr-locale="en"][aria-pressed="true"]').waitFor();
+  qrData=await a.locator('canvas[data-share-qr-canvas]').evaluate(canvas=>canvas.toDataURL('image/png'));
+  fs.writeFileSync(path.join(output,'qr-a-en.png'),Buffer.from(qrData.split(',')[1],'base64'));
+  await page.keyboard.press('Escape');
+  assert.equal(await a.locator('[data-share-panel]').isVisible(),false);
+  assert.equal(await a.locator('[data-share-toggle]').evaluate(el=>document.activeElement===el),true);
+  await a.locator('[data-preview]').click();
+  const dialog=page.locator('#preview-dialog');await dialog.locator('[data-share-toggle]').click();
+  await dialog.locator('[data-share-copy="zh"]').click();
+  assert.equal(await page.evaluate(()=>window.__copied),workA.shareUrls.zh);
+  await dialog.locator('[data-share-qr]').click();await dialog.locator('[data-share-qr-view]').waitFor({state:'visible'});
+  await dialog.locator('.dialog-close').click();
+  await b.locator('[data-preview]').click();await dialog.locator('[data-share-toggle]').click();
+  assert.equal(await dialog.locator('[data-share-qr-view]').isVisible(),false,'preview B clears the old QR');
+  await dialog.locator('[data-share-copy="en"]').click();
+  assert.equal(await page.evaluate(()=>window.__copied),workB.shareUrls.en,'preview B never reuses A');
+  await dialog.locator('[data-share-qr]').click();await dialog.locator('[data-share-qr-view]').waitFor({state:'visible'});
+  qrData=await dialog.locator('canvas[data-share-qr-canvas]').evaluate(canvas=>canvas.toDataURL('image/png'));
+  fs.writeFileSync(path.join(output,'qr-b-zh.png'),Buffer.from(qrData.split(',')[1],'base64'));
+  fs.writeFileSync(path.join(output,'qr-expected.json'),JSON.stringify({aZh:workA.shareUrls.zh,aEn:workA.shareUrls.en,bZh:workB.shareUrls.zh},null,2));
+  const x=new URL(await dialog.locator('[data-share-x]').getAttribute('href'));
+  assert.equal(x.searchParams.get('url'),workB.shareUrls.zh);
+  assert.ok(x.searchParams.get('text').includes(workB.locales.zh.title));
+  await page.screenshot({path:path.join(output,'share-preview-zh-1440.png')});
+  await page.keyboard.press('Escape');assert.equal(await dialog.evaluate(d=>d.open),true,'first Escape closes the inline share panel');
+  await page.keyboard.press('Escape');assert.equal(await dialog.evaluate(d=>d.open),false,'second Escape closes preview');
+  await page.close();
+
+  const denied=await browser.newPage();
+  await denied.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('denied');}}}));
+  await denied.goto(`${origin}/en/works/hydraulics/`,{waitUntil:'domcontentloaded'});
+  const control=denied.locator('[data-share-placement="detail"]');await control.locator('[data-share-toggle]').click();await control.locator('[data-share-copy="en"]').click();
+  assert.equal(await control.locator('[data-share-manual] input').inputValue(),'https://freemy.ai/hydraulics/');
+  assert.doesNotMatch(await control.locator('[data-share-status]').innerText(),/copied/i);
+  await denied.close();
+
+  const nojs=await browser.newPage({javaScriptEnabled:false});
+  await nojs.goto(`${origin}/en/works/hydraulics/`,{waitUntil:'domcontentloaded'});
+  assert.equal(await nojs.locator('noscript a').getAttribute('href'),'https://freemy.ai/hydraulics/');
+  assert.ok(await nojs.locator('noscript a').isVisible());
+  assert.ok(await nojs.locator('.detail-open').isVisible());await nojs.close();
+  for(const lang of ['en','zh']){
+    const contactPage=await browser.newPage({viewport:{width:390,height:844}});
+    await contactPage.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{window.__copied=text;}}}));
+    await contactPage.goto(`${origin}${lang==='en'?'/en/contact/':'/contact/'}`,{waitUntil:'domcontentloaded'});
+    await contactPage.locator('[data-contact-copy]').click();
+    assert.equal(await contactPage.evaluate(()=>window.__copied),'ai@freemy.ai');
+    assert.match(await contactPage.locator('[data-contact-status]').innerText(),lang==='en'?/copied/i:/已复制/);
+    assert.match(await contactPage.locator('.contact-address a').getAttribute('href'),/^mailto:ai@freemy\.ai\?/);
+    const bounds=await contactPage.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth}));
+    assert.ok(bounds.scroll<=bounds.inner,`${lang} contact overflows on mobile`);
+    await contactPage.screenshot({path:path.join(output,`contact-${lang}-390.png`)});await contactPage.close();
+  }
+  const deniedContact=await browser.newPage();
+  await deniedContact.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw new Error('denied');}}}));
+  await deniedContact.goto(`${origin}/en/contact/`,{waitUntil:'domcontentloaded'});
+  await deniedContact.locator('[data-contact-copy]').click();
+  assert.ok(await deniedContact.locator('[data-contact-manual]').isVisible());
+  assert.doesNotMatch(await deniedContact.locator('[data-contact-status]').innerText(),/copied/i);
+  await deniedContact.close();
+
+  const list=await browser.newPage({viewport:{width:390,height:844}});
+  await list.goto(`${origin}/en/explore/`,{waitUntil:'domcontentloaded'});
+  await list.evaluate(()=>history.replaceState({existing:'keep'},'',location.href));
+  await list.locator('#gallery-search').fill('a');await list.locator('#gallery-sort').selectOption('recent');
+  await list.locator('#filter-open-source').check();
+  const filtered=new URL(list.url());assert.equal(filtered.searchParams.get('q'),'a');assert.equal(filtered.searchParams.get('sort'),'recent');assert.equal(filtered.searchParams.get('open_source'),'1');
+  assert.equal(await list.evaluate(()=>history.state.existing),'keep');
+  const item=list.locator('.creation-card:visible').nth(3);await item.scrollIntoViewIfNeeded();
+  const scroll=await list.evaluate(()=>scrollY);assert.ok(scroll>200);
+  await item.locator('h3 a').click();await list.goBack({waitUntil:'domcontentloaded'});
+  await list.waitForFunction(expected=>Math.abs(scrollY-expected)<8,scroll,{timeout:10000});
+  assert.equal(await list.locator('#gallery-search').inputValue(),'a');assert.equal(await list.locator('#gallery-sort').inputValue(),'recent');assert.equal(await list.locator('#filter-open-source').isChecked(),true);
+  await list.close();
+  console.log('Share browser checks passed: bilingual responsive layout, exact copy, A→B, keyboard, denied clipboard, no JS.');
+}finally{await browser.close();}

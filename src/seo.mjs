@@ -32,6 +32,7 @@ function contentFor(page, catalog) {
     return {title:withBrand(name,locale),description:zh?`浏览与${name}相关的互动作品，查看预览、作者及原站入口。`:`Explore interactive creations about ${name}, with previews, creator credits and links to the originals.`};
   }
   if(page.kind==='about') return {title:withBrand(m.about,locale),description:zh?m.aboutText:'Freemy curates interactive AI creations and references, credits their creators, and links directly to the original experiences.'};
+  if(page.kind==='contact') return {title:withBrand(m.contact,locale),description:m.contactIntro};
   if(page.kind==='privacy') return {title:withBrand(m.privacy,locale),description:zh?'了解 Freemy 的访问统计、语言设置及第三方链接。':'Learn about Freemy analytics, language preferences and third-party links.'};
   if(page.kind==='submit') return {title:withBrand(m.submit,locale),description:m.submitText};
   return {title:withBrand('404',locale),description:m.notFound};

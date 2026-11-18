@@ -1,8 +1,12 @@
-const events=new Set(['preview_open','experience_open','related_click','collection_open','work_view','work_impression','source_open','learning_open']);
+const events=new Set(['preview_open','experience_open','related_click','collection_open','work_view','work_impression','source_open','learning_open','share_menu_open','share_copy','share_native_return','share_x_open','share_qr_open','contact_click','contact_copy']);
 const safeToken=(value,fallback='unknown')=>typeof value==='string'&&/^[a-z0-9-]{1,80}$/i.test(value)?value:fallback;
 const learningPages=new Set(['home','explore','type','topic','collection','work']);
 const sourcePlacements=new Set(['github','huggingface','other'].flatMap(provider=>['card','dialog','detail','related'].map(place=>`source-${provider}-${place}`)));
 const learningPlacements=new Set(['note','guide'].flatMap(kind=>['card','dialog','detail','related'].map(place=>`learning-${kind}-${place}`)));
+const shareEvents=new Set(['share_menu_open','share_copy','share_native_return','share_x_open','share_qr_open']);
+const sharePlaces=new Set(['card','dialog','detail','related']);
+const shareLanguagePlaces=new Set([...sharePlaces].flatMap(place=>['zh','en'].map(locale=>`${place}-${locale}`)));
+const sitePages=new Set([...learningPages,'collectionIndex','about','contact','privacy','submit','notFound']);
 
 // Vercel Pro permits two event properties. Context is a bounded, non-sensitive
 // combination of language, page type and placement; raw URLs/searches are excluded.
@@ -16,6 +20,18 @@ export function createTracker({enabled=false,origin='',mode='normal',send=()=>{}
     if(name==='source_open'||name==='learning_open'){
       const allowed=name==='source_open'?sourcePlacements:learningPlacements;
       if(!id||!['zh','en'].includes(fields.locale)||!learningPages.has(page)||!allowed.has(placement))return false;
+    }
+    if(shareEvents.has(name)){
+      const allowed=['share_copy','share_native_return','share_qr_open'].includes(name)?shareLanguagePlaces:sharePlaces;
+      if(!id||!['zh','en'].includes(fields.locale)||!learningPages.has(page)||!allowed.has(placement))return false;
+    }
+    if(name==='contact_click'||name==='contact_copy'){
+      if(!['zh','en'].includes(fields.locale)||!sitePages.has(page))return false;
+      if(name==='contact_copy'&&(id||page!=='contact'||placement!=='contact'))return false;
+      if(name==='contact_click'){
+        const valid=(placement==='footer'&&!id)||(placement==='contact'&&page==='contact'&&!id)||(placement==='submit'&&page==='submit'&&!id)||(placement==='detail'&&page==='work'&&!!id);
+        if(!valid)return false;
+      }
     }
     const data={...(id?{work_id:id}:{}),placement:`${mode==='qa'?'qa:':''}${locale}:${page}:${placement}`};
     try {send('event',{name,data});return true;} catch {return false;}

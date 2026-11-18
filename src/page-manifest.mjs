@@ -33,6 +33,7 @@ export function buildPageManifest(catalog) {
     add('explore',locale,'/explore/',{indexable:catalog.gallery.length > 0});
     add('collectionIndex',locale,'/collections/',{indexable:catalog.collections.some(c=>c.works.some(id=>catalog.works.some(w=>w.id===id&&available(w))))});
     add('about',locale,'/about/');
+    add('contact',locale,'/contact/');
     add('privacy',locale,'/privacy/',{indexable:false});
     add('submit',locale,'/submit/',{indexable:false});
     for (const type of catalog.types) add('type',locale,`/types/${type.id}/`,{entityId:type.id,indexable:catalog.gallery.some(w=>w.type===type.id),contentUpdatedAt:type.seo?.[locale]?.updated_at});

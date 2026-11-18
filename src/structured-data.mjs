@@ -29,6 +29,7 @@ export function breadcrumbsFor(page, catalog) {
   if(page.kind==='topic') return [home,{name:topicNames[page.entityId]?.[lang==='zh'?0:1]||page.entityId,path:page.path}];
   if(page.kind==='explore') return [home,{name:m.explore,path:page.path}];
   if(page.kind==='collectionIndex') return [home,{name:m.collections,path:page.path}];
+  if(page.kind==='contact') return [home,{name:m.contact,path:page.path}];
   return [];
 }
 

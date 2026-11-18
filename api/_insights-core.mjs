@@ -2,8 +2,8 @@ import { createHash, timingSafeEqual } from 'node:crypto';
 
 const projectId='prj_MNdw24GcYvvsiH3eZycYdENagguO';
 const teamId='team_Lp6fF6f7p6clgypmGqHddxK0';
-const names=new Set(['preview_open','experience_open','work_view','work_impression','source_open','learning_open']);
-const pages=new Set(['home','explore','type','topic','collection','work']);
+const names=new Set(['preview_open','experience_open','work_view','work_impression','source_open','learning_open','share_menu_open','share_copy','share_native_return','share_x_open','share_qr_open','contact_click','contact_copy']);
+const pages=new Set(['home','explore','type','topic','collection','collectionIndex','work','about','contact','privacy','submit','notFound']);
 const entries=new Set(['card','related','dialog','detail']);
 
 export function authorize(header,secret){
@@ -21,8 +21,11 @@ export function makeFilter(name,{lang='',page='',entry=''}={}){
   if(lang)parts.push(`startswith(eventData/placement,'${lang}:')`);
   if(page)parts.push(`contains(eventData/placement,':${page}:')`);
   if(entry){
-    const separator=name==='source_open'||name==='learning_open'?'-':':';
-    parts.push(`endswith(eventData/placement,'${separator}${entry}')`);
+    if(['share_copy','share_native_return','share_qr_open'].includes(name))parts.push(`contains(eventData/placement,':${entry}-')`);
+    else{
+      const separator=name==='source_open'||name==='learning_open'?'-':':';
+      parts.push(`endswith(eventData/placement,'${separator}${entry}')`);
+    }
   }
   return parts.join(' and ');
 }
@@ -41,9 +44,10 @@ export function escapeCsv(value){
   return `"${cell.replaceAll('"','""')}"`;
 }
 
-export async function getEventCounts({fetchImpl=fetch,token,name,since,until,filters}){
+export async function getEventCounts({fetchImpl=fetch,token,name,since,until,filters,groupBy='work_id'}){
+  if(!['work_id','placement'].includes(groupBy))throw new Error('Invalid analytics grouping');
   const url=new URL('https://api.vercel.com/v1/query/web-analytics/events/aggregate');
-  for(const [key,value] of Object.entries({projectId,teamId,since,until,by:'eventData/work_id',filter:makeFilter(name,filters),limit:'100'}))url.searchParams.set(key,value);
+  for(const [key,value] of Object.entries({projectId,teamId,since,until,by:`eventData/${groupBy}`,filter:makeFilter(name,filters),limit:'100'}))url.searchParams.set(key,value);
   const response=await fetchImpl(url,{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(12000)});
   if(!response.ok)throw new Error('Analytics provider unavailable');
   const result=await response.json();
@@ -51,7 +55,7 @@ export async function getEventCounts({fetchImpl=fetch,token,name,since,until,fil
   const rows=new Map();
   for(const row of result.data){
     // The live API returns the qualified key; older examples use `eventData`.
-    const id=row['eventData/work_id']??row.eventData;
+    const id=row[`eventData/${groupBy}`]??row.eventData;
     if(id==='Others')throw new Error('Analytics result is incomplete');
     if(typeof id!=='string'||rows.has(id)||!Number.isSafeInteger(row.count)||row.count<0||!Number.isSafeInteger(row.visitors)||row.visitors<0)throw new Error('Invalid analytics row');
     rows.set(id,{count:row.count,visitors:row.visitors});

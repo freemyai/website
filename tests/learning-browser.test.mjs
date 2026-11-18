@@ -18,7 +18,7 @@ test('preview actions are replaced between works and filters match the card flag
     await page.route('https://freemy.ai/**',route=>{
       const url=new URL(route.request().url());
       if(url.pathname==='/')return route.fulfill({status:200,contentType:'text/html',body:html});
-      const file={'/assets/app.mjs':'assets/app.mjs','/assets/analytics.mjs':'assets/analytics.mjs','/assets/catalog.mjs':'src/catalog.mjs'}[url.pathname];
+      const file={'/assets/app.mjs':'assets/app.mjs','/assets/analytics.mjs':'assets/analytics.mjs','/assets/share.mjs':'assets/share.mjs','/assets/navigation-state.mjs':'assets/navigation-state.mjs','/assets/catalog.mjs':'src/catalog.mjs'}[url.pathname];
       if(file)return route.fulfill({status:200,contentType:'text/javascript',body:fs.readFileSync(file)});
       return route.fulfill({status:204,body:''});
     });
@@ -50,7 +50,7 @@ test('source and learning clicks each emit one distinct event without opening pr
       await page.addInitScript(()=>{window.__freemyTestEvents=[];window.va=(kind,event)=>{if(kind==='event')window.__freemyTestEvents.push(event);};});
       await page.route('https://freemy.ai/**',route=>{
         const url=new URL(route.request().url());if(url.pathname==='/')return route.fulfill({status:200,contentType:'text/html',body:html});
-        const file={'/assets/app.mjs':'assets/app.mjs','/assets/analytics.mjs':'assets/analytics.mjs','/assets/catalog.mjs':'src/catalog.mjs'}[url.pathname];
+        const file={'/assets/app.mjs':'assets/app.mjs','/assets/analytics.mjs':'assets/analytics.mjs','/assets/share.mjs':'assets/share.mjs','/assets/navigation-state.mjs':'assets/navigation-state.mjs','/assets/catalog.mjs':'src/catalog.mjs'}[url.pathname];
         return file?route.fulfill({status:200,contentType:'text/javascript',body:fs.readFileSync(file)}):route.fulfill({status:204,body:''});
       });
       await page.goto('https://freemy.ai/',{waitUntil:'networkidle'});

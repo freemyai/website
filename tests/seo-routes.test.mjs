@@ -21,7 +21,7 @@ test('locale switches normalize trailing slashes and preserve queries and fragme
   assert.equal(localizedPath('/collections/sound-lab/', 'en', '?q=music#list'), '/en/collections/sound-lab/?q=music#list');
 });
 
-test('hosting configuration redirects only the English home alias', () => {
+test('hosting configuration preserves the English home alias and secure headers', () => {
   const config = JSON.parse(fs.readFileSync(new URL('../vercel.json', import.meta.url), 'utf8'));
   assert.equal(config.trailingSlash, true);
   const redirects = config.redirects || [];

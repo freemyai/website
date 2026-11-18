@@ -4,14 +4,16 @@ Freemy 是一个双语 AI 创意作品画廊。访客可以先看真实作品画
 
 ## 本地运行与验证
 
-需要 Node.js 20 或更新版本。网站运行时不需要第三方依赖；Playwright Core 用于本地媒体采集和浏览器验收，HTML/XML 解析器用于构建产物审计。
+需要 Node.js 20 或更新版本。二维码生成器作为固定版本的本地素材随网站发布，不请求外部二维码服务；Playwright Core 用于浏览器验收，HTML/XML 解析器用于构建产物审计。
 
 ```sh
 npm ci
 npm run lint
 npm run typecheck
 npm test
+npm run share:check
 npm run build
+npm run share:audit
 npm run seo:audit
 python -m http.server 4177 --directory dist
 npm run test:browser
@@ -39,5 +41,7 @@ Quantum Eraser、Ocean Currents、SVT 3D、BEE-X9 和 The Last Hexagon 的截图
 投稿入口会打开本仓库的公开 GitHub issue，访客可以填写作品资料；网站本身不保存投稿数据。`vercel.json` 将 `dist` 配置为 Vercel 构建输出。
 
 页面接入 Vercel Web Analytics 与 Speed Insights；访问和性能数据由 Vercel 收集，相关说明见网站隐私页。
+
+每个已发布作品的分享别名记录在 `data/share-aliases.json`，不能因标题或原站变化而改名或重复分配。新作品收录后需补充登记，并运行 `npm run share:sync`；构建只检查规则，不会在 Vercel 读取配置后悄悄改写路由。`npm run share:export` 会在仅本地的 `reports/share/` 生成双语分享清单，不放入公开网站。联系邮箱统一由 `src/site-config.mjs` 提供。上线检查与回滚边界见 `docs/share/`。
 
 分享图从已核验预览离线生成：安装 Python 和 Pillow 后运行 `node scripts/generate-og.mjs`。网站构建使用仓库中已有的图片，不依赖 Pillow；新作品暂时没有专属分享图时，会使用该作品自己的预览。语言路由、统计配置及站长平台交接分别见 `docs/seo/`。

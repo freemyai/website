@@ -1,5 +1,7 @@
 import { filterWorks } from './catalog.mjs';
 import { createTracker, createImpressionMonitor } from './analytics.mjs';
+import { createShareController, sharePayloadForWork, xIntentUrl, copyValue } from './share.mjs';
+import { filterUrl, sortFromSearch, saveListScroll, takeListScroll } from './navigation-state.mjs';
 
 const lang=document.body.dataset.lang||'en';
 const pageType=document.body.dataset.pageType||'unknown';
@@ -7,6 +9,85 @@ const analyticsEnabled=document.body.dataset.analyticsEnabled==='true';
 const track=createTracker({enabled:analyticsEnabled,origin:location.origin,mode:window.__freemyAnalyticsMode,send:(...args)=>window.va?.(...args)});
 const dialog=document.querySelector('#preview-dialog');
 const detail=document.querySelector('[data-detail-work]');
+const shareControls=[...document.querySelectorAll('[data-share-control]')];
+function closeShare(control,{focus=false}={}){
+  const panel=control.querySelector('[data-share-panel]'),button=control.querySelector('[data-share-toggle]');
+  panel.hidden=true;button.setAttribute('aria-expanded','false');
+  control.querySelector('[data-share-manual]').hidden=true;control.querySelector('[data-share-status]').textContent='';
+  control.querySelector('[data-share-qr-view]').hidden=true;control._qrRequest=(control._qrRequest||0)+1;
+  if(focus)button.focus();
+}
+async function showShareQr(control,payload,locale,report){
+  const request=control._qrRequest=(control._qrRequest||0)+1;
+  try{
+    const {drawQr}=await import('./share-qr.mjs');
+    if(control.hidden||control.querySelector('[data-share-panel]').hidden||control._qrRequest!==request)return;
+    const view=control.querySelector('[data-share-qr-view]'),canvas=view.querySelector('canvas');
+    drawQr(canvas,locale==='zh'?payload.shareUrlZh:payload.shareUrlEn);
+    view.querySelectorAll('[data-qr-locale]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.qrLocale===locale)));
+    view.hidden=false;report('share_qr_open',{share_locale:locale});
+  }catch{
+    control.querySelector('[data-share-status]').textContent=lang==='zh'?'二维码暂不可用，请复制链接。':'QR code unavailable. Please copy the link.';
+  }
+}
+function setSharePayload(control,payload){
+  closeShare(control);control.dataset.sharePayload=payload?JSON.stringify(payload):'';
+  control.hidden=!payload;
+  if(payload)control.querySelector('[data-share-x]').href=xIntentUrl(payload,lang);
+}
+for(const control of shareControls){
+  const payload=control.dataset.sharePayload;
+  control.hidden=!payload;
+  control.querySelector('[data-share-native]').hidden=typeof navigator.share!=='function';
+}
+document.addEventListener('click',event=>{
+  const control=event.target.closest('[data-share-control]');
+  for(const item of shareControls)if(item!==control&&!item.querySelector('[data-share-panel]').hidden)closeShare(item);
+  if(!control||control.hidden)return;
+  const button=event.target.closest('[data-share-toggle]'),panel=control.querySelector('[data-share-panel]');
+  let payload;try{payload=JSON.parse(control.dataset.sharePayload);}catch{return;}
+  const placement=control.dataset.sharePlacement;
+  const report=(name,fields={})=>track(name,{work_id:payload.workId,locale:lang,page_type:pageType,placement:fields.share_locale?`${placement}-${fields.share_locale}`:placement});
+  if(button){
+    const opening=panel.hidden;panel.hidden=!opening;button.setAttribute('aria-expanded',String(opening));
+    if(opening)report('share_menu_open');else closeShare(control);
+    return;
+  }
+  const copy=event.target.closest('[data-share-copy]'),native=event.target.closest('[data-share-native]'),x=event.target.closest('[data-share-x]'),qr=event.target.closest('[data-share-qr]'),qrLocale=event.target.closest('[data-qr-locale]');
+  if(x){report('share_x_open');return;}
+  if(qr||qrLocale){showShareQr(control,payload,qrLocale?.dataset.qrLocale||lang,report);return;}
+  if(!copy&&!native)return;
+  const controller=createShareController({
+    copyText:typeof navigator.clipboard?.writeText==='function'?navigator.clipboard.writeText.bind(navigator.clipboard):undefined,
+    nativeShare:typeof navigator.share==='function'?navigator.share.bind(navigator):undefined,
+    track:report,
+    notify:(state,url)=>{
+      const status=control.querySelector('[data-share-status]'), manual=control.querySelector('[data-share-manual]');
+      manual.hidden=state!=='manual';
+      status.textContent=state==='copied'?(lang==='zh'?'已复制链接':'Link copied'):state==='native_failed'?(lang==='zh'?'无法打开系统分享，请复制链接。':'Could not open device sharing. Please copy the link.'):(lang==='zh'?'请手动复制链接。':'Please copy the link manually.');
+      if(state==='manual'){const input=manual.querySelector('input');input.value=url;input.focus();input.select();}
+    }
+  });
+  if(copy)controller.copy(payload,copy.dataset.shareCopy);
+  else controller.native(payload,lang);
+});
+document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape')return;
+  const open=shareControls.find(item=>!item.querySelector('[data-share-panel]').hidden);
+  if(open){event.preventDefault();event.stopPropagation();closeShare(open,{focus:true});}
+});
+document.querySelectorAll('[data-contact-copy]').forEach(button=>{
+  button.hidden=false;
+  button.addEventListener('click',async()=>{
+    const copyText=typeof navigator.clipboard?.writeText==='function'?navigator.clipboard.writeText.bind(navigator.clipboard):undefined;
+    const result=await copyValue(button.dataset.contactEmail,{copyText});
+    const area=button.closest('.contact-page'),manual=area.querySelector('[data-contact-manual]'),status=area.querySelector('[data-contact-status]');
+    manual.hidden=result.status!=='manual';
+    status.textContent=result.status==='copied'?(lang==='zh'?'已复制邮箱':'Email copied'):(lang==='zh'?'请手动复制邮箱。':'Please copy the email address manually.');
+    if(result.status==='copied')track('contact_copy',{locale:lang,page_type:pageType,placement:'contact'});
+    else{const input=manual.querySelector('input');input.focus();input.select();}
+  });
+});
 if(pageType==='work'&&detail)track('work_view',{work_id:detail.dataset.detailWork,locale:lang,page_type:pageType,placement:'detail'});
 document.addEventListener('click',event=>{
   const link=event.target.closest('[data-track-event]');
@@ -33,7 +114,7 @@ function update(){
   refreshImpressions();
   if(empty) empty.hidden=visible.length>0;
   if(surprise) surprise.setAttribute('aria-disabled',String(!visible.length));
-  if(form){const next=new URL(location.href);if(q)next.searchParams.set('q',q);else next.searchParams.delete('q');for(const [name,on] of [['open_source',sourceFilter?.checked],['learning_note',noteFilter?.checked]]){if(on)next.searchParams.set(name,'1');else next.searchParams.delete(name);}history.replaceState(null,'',next);}
+  if(form){const next=filterUrl(location.href,{q,openSource:!!sourceFilter?.checked,learningNote:!!noteFilter?.checked,sort:sort?.value});history.replaceState(history.state,'',next);}
 }
 if(form&&grid){
   document.querySelector('.resource-filters')?.removeAttribute('hidden');
@@ -41,12 +122,20 @@ if(form&&grid){
   form.elements.namedItem('q').value=query.get('q')||'';
   if(sourceFilter)sourceFilter.checked=query.get('open_source')==='1';
   if(noteFilter)noteFilter.checked=query.get('learning_note')==='1';
+  if(sort)sort.value=sortFromSearch(location.search);
   form.addEventListener('input',update);
   form.addEventListener('submit',event=>{event.preventDefault();update();});
   sort?.addEventListener('change',update);
   sourceFilter?.addEventListener('change',update);
   noteFilter?.addEventListener('change',update);
   update();
+  window.addEventListener('pagehide',()=>{try{saveListScroll(sessionStorage,location.href,location.origin,scrollY);}catch{}});
+  window.addEventListener('pageshow',event=>{
+    const back=event.persisted||performance.getEntriesByType('navigation')[0]?.type==='back_forward';
+    if(!back)return;
+    let y=null;try{y=takeListScroll(sessionStorage,location.href,location.origin);}catch{}
+    if(y!==null)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,y)));
+  });
 }
 document.querySelectorAll('[data-language-switch]').forEach(link=>link.addEventListener('click',()=>{
   link.search=location.search;
@@ -135,13 +224,14 @@ document.addEventListener('click',event=>{
   dialog.querySelector('#preview-open').href=work.demo_url;
   dialog.querySelector('#preview-open').dataset.trackWork=work.id;
   dialog.querySelector('#preview-details').href=work.detail;
+  setSharePayload(dialog.querySelector('[data-share-control]'),sharePayloadForWork(work));
   updatePreviewLearning(work,text.title);
   dialog.showModal();refreshImpressions();dialog.querySelector('.dialog-close').focus();
   track('preview_open',{work_id:work.id,locale:lang,page_type:pageType,placement:trigger.closest('.related-section')?'related':'card'});
 });
 dialog?.querySelector('.dialog-close')?.addEventListener('click',()=>dialog.close());
 dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
-dialog?.addEventListener('close',()=>{const video=dialog.querySelector('#preview-video');video.pause();video.removeAttribute('src');video.load();video.hidden=true;updatePreviewLearning({learningActions:[]},'');opener?.focus();opener=null;refreshImpressions();});
+dialog?.addEventListener('close',()=>{const video=dialog.querySelector('#preview-video');video.pause();video.removeAttribute('src');video.load();video.hidden=true;updatePreviewLearning({learningActions:[]},'');setSharePayload(dialog.querySelector('[data-share-control]'),null);opener?.focus();opener=null;refreshImpressions();});
 dialog?.querySelector('#preview-play')?.addEventListener('click',()=>{if(!selectedVideo)return;const video=dialog.querySelector('#preview-video');dialog.querySelector('#preview-image').hidden=true;dialog.querySelector('#preview-unavailable').hidden=true;video.hidden=false;video.src=selectedVideo;video.play().catch(()=>{});});
 dialog?.querySelector('#preview-image')?.addEventListener('error',event=>{event.currentTarget.hidden=true;dialog.querySelector('#preview-unavailable').hidden=false;});
 function missingImage(img){
