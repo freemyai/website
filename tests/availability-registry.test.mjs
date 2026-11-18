@@ -3,9 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { loadCatalog } from '../src/validate.mjs';
 
-test('availability records retain evidence and agree with removed works', () => {
-  const registry = JSON.parse(fs.readFileSync(new URL('../data/availability-exceptions.json', import.meta.url), 'utf8'));
-  const catalog = loadCatalog(), seen = new Set();
+function checkAvailabilityRegistry(registry, catalog) {
+  const seen = new Set();
   assert.equal(registry.schema_version, 1);
   assert.ok(Array.isArray(registry.entries));
   for (const entry of registry.entries) {
@@ -27,10 +26,28 @@ test('availability records retain evidence and agree with removed works', () => 
       assert.ok(typeof check.observation === 'string' && check.observation.trim());
     }
     if (['unavailable', 'recovered_pending_review'].includes(entry.status)) {
-      assert.equal(work.editorial.status, 'unavailable', `${entry.work_id}: removed work was republished`);
+      const removed = work.editorial.status === 'unavailable';
+      const temporarilyUnavailable = work.editorial.status === 'published' && work.verification?.availability === 'unavailable';
+      assert.ok(removed || temporarilyUnavailable, `${entry.work_id}: unavailable work was republished`);
+      assert.ok(!catalog.gallery.some(item => item.id === work.id), `${entry.work_id}: unavailable work remains in the gallery`);
     }
   }
-  for (const work of catalog.works.filter(item => item.editorial?.status === 'unavailable')) {
+  for (const work of catalog.works.filter(item => item.editorial?.status === 'unavailable' || (item.editorial?.status === 'published' && item.verification?.availability === 'unavailable'))) {
     assert.ok(seen.has(work.id), `${work.id}: removed work has no availability record`);
   }
+}
+
+test('availability records retain evidence and agree with removed works', () => {
+  const registry = JSON.parse(fs.readFileSync(new URL('../data/availability-exceptions.json', import.meta.url), 'utf8'));
+  checkAvailabilityRegistry(registry, loadCatalog());
+});
+
+test('temporary unavailability retains the work but removes it from discovery', () => {
+  const work={id:'sample',editorial:{status:'published'},verification:{availability:'unavailable'}};
+  const entry={work_id:'sample',original_url:'https://example.org/',previous_editorial_status:'published',status:'unavailable',first_detected_at:'2026-11-18T00:00:00Z',last_checked_at:'2026-11-18T00:00:00Z',reason:'Confirmed unavailable',evidence:[{checked_at:'2026-11-18T00:00:00Z',method:'browser',observation:'Confirmed unavailable'}]};
+  const registry={schema_version:1,entries:[entry]}, catalog={works:[work],gallery:[]};
+  assert.doesNotThrow(()=>checkAvailabilityRegistry(registry,catalog));
+  assert.throws(()=>checkAvailabilityRegistry(registry,{...catalog,gallery:[work]}),/remains in the gallery/);
+  assert.throws(()=>checkAvailabilityRegistry(registry,{...catalog,works:[{...work,verification:{availability:'available'}}]}),/republished/);
+  assert.throws(()=>checkAvailabilityRegistry({...registry,entries:[]},catalog),/no availability record/);
 });

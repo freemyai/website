@@ -30,6 +30,15 @@ test('one stable alias per published work yields bilingual in-domain detail path
   assert.deepEqual(build(catalogue,{version:1,entries:registry().entries.reverse()}),result);
 });
 
+test('temporarily unavailable experiences keep their existing share destinations',()=>{
+  const unavailable={works:catalogue.works.map(w=>w.id==='hydraulics'?{...w,verification:{availability:'unavailable'}}:w)};
+  const links=build(unavailable).filter(item=>item.workId==='hydraulics');
+  assert.deepEqual(links.map(item=>[item.sharePath,item.canonicalPath]),[
+    ['/hydraulics/','/en/works/hydraulics/'],
+    ['/zh/hydraulics/','/works/hydraulics/']
+  ]);
+});
+
 test('rejects duplicate, retired, reserved, invalid and already occupied aliases',()=>{
   for(const invalid of ['contact','api','en','assets','_vercel','A','-bad','a--b','https://bad.example','bad/child','a'.repeat(81)]){
     const r=registry();r.entries[0].share_slug=invalid;
