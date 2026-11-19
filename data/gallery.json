@@ -7985,5 +7985,537 @@
       "featured_order": 2.278
     },
     "added_at": "2026-11-19"
+  },
+  {
+    "id": "the-county",
+    "slug": "the-county",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-strategy",
+    "title_original": "The County",
+    "demo_url": "https://themizeguy.github.io/fable-5.2-potatobench/",
+    "creator": {
+      "name": "TheMizeGuy",
+      "profile_url": "https://github.com/TheMizeGuy"
+    },
+    "locales": {
+      "zh": {
+        "title": "The County：马铃薯农场",
+        "summary": "经营一座马铃薯农场，选择田地并规划一年的工作。",
+        "action": "点击 Play，进入农场后选择一块田地，查看种植选项和土壤状态。",
+        "why": "天气、田地与人员安排让农场经营成为一场策略游戏。",
+        "limit": "本机和 Grok Bot 测试了桌面进入农场及打开田地卡片；种植、完整年份、声音与手机未测。"
+      },
+      "en": {
+        "title": "The County",
+        "summary": "Run a potato farm by choosing fields and planning the year’s work.",
+        "action": "Select Play, enter the farm and choose a field to inspect planting options and soil conditions.",
+        "why": "Weather, fields and a small crew turn farm management into a strategy game.",
+        "limit": "Local desktop and Grok Bot checks opened the farm and a field card; planting, a full year, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2",
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/TheMizeGuy/fable-5.2-potatobench",
+      "description": {
+        "zh": "作者称作品是 PotatoBench 的 Fable 5.2 条目，由模型在 Claude Code 中完成设计和实现。",
+        "en": "The creator describes this as Fable 5.2’s PotatoBench entry, designed and implemented by the model in Claude Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/TheMizeGuy/fable-5.2-potatobench"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机与 Grok Bot 的桌面测试均进入农场并打开 Bottom Field 卡片；未测试种植、完整年份、声音或手机。",
+      "note_en": "Local and Grok Bot desktop checks entered the farm and opened the Bottom Field card; planting, a full year, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/the-county-960.webp",
+        "base": "the-county",
+        "width": 1920,
+        "height": 1070,
+        "alt": {
+          "zh": "俯视农场的田地与树林，右侧打开 Bottom Field 的操作卡片。",
+          "en": "Fields and woods on a farm with the Bottom Field action card open."
+        }
+      },
+      "provenance": {
+        "source_url": "https://themizeguy.github.io/fable-5.2-potatobench/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.279
+    },
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "what-the-water-keeps",
+    "slug": "what-the-water-keeps",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "What the Water Keeps",
+    "demo_url": "https://what-the-water-keeps.vercel.app/",
+    "creator": {
+      "name": "Kevin Ngo",
+      "profile_url": "https://x.com/kevin_t_ngo"
+    },
+    "locales": {
+      "zh": {
+        "title": "What the Water Keeps：提灯慢船",
+        "summary": "乘一艘小船，沿水面穿过灯笼与芦苇。",
+        "action": "点击 Push off 开船，用 WASD 划桨并拖动视角。",
+        "why": "船头、灯光与沿岸景物组成一段安静的第一人称旅程。",
+        "limit": "本机和 Grok Bot 测试了桌面开船与划行；完整旅程、声音和手机未测。"
+      },
+      "en": {
+        "title": "What the Water Keeps",
+        "summary": "Take a small boat past lanterns and reeds.",
+        "action": "Select Push off, paddle with WASD and drag to look around.",
+        "why": "The bow, lights and riverside scenery make a quiet first-person journey.",
+        "limit": "Local desktop and Grok Bot checks launched the boat and paddled; the full journey, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/kevin_t_ngo/status/2119868968307695818",
+      "description": {
+        "zh": "作者称这款浏览器游戏演示由 Claude Fable 5.2 制作，并在跟帖提供体验地址。",
+        "en": "The creator says Claude Fable 5.2 made the browser demo and provides the play link in a follow-up."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/kevin_t_ngo/status/2119868968307695818"
+      },
+      {
+        "url": "https://x.com/kevin_t_ngo/status/2119868970643964177"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机与 Grok Bot 桌面测试点击开船并尝试划行；完整旅程、声音和手机未测试。",
+      "note_en": "Local and Grok Bot desktop checks launched the boat and attempted paddling; the full journey, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/what-the-water-keeps-960.webp",
+        "base": "what-the-water-keeps",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "小船靠近金色芦苇、木码头与鱼篓。",
+          "en": "The boat approaches golden reeds, a wooden dock and fishing baskets."
+        }
+      },
+      "provenance": {
+        "source_url": "https://what-the-water-keeps.vercel.app/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.28
+    },
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "starry-nightrider",
+    "slug": "starry-nightrider",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Starry Nightrider",
+    "demo_url": "https://starrynightrider.com/",
+    "creator": {
+      "name": "Ebby Amir",
+      "profile_url": "https://x.com/ebbyamir"
+    },
+    "locales": {
+      "zh": {
+        "title": "Starry Nightrider：骑进星月夜",
+        "summary": "骑行穿过受梵高《星月夜》启发的三维村庄。",
+        "action": "点击 Step into the painting，然后按 W 骑向村庄。",
+        "why": "油画笔触、星空和村庄街道组成可以探索的空间。",
+        "limit": "本机和 Grok Bot 测试了桌面骑行的一段；排行榜、聊天、VR、声音和手机未测。"
+      },
+      "en": {
+        "title": "Starry Nightrider",
+        "summary": "Ride through a 3D village inspired by Van Gogh’s The Starry Night.",
+        "action": "Select Step into the painting, then press W to ride toward the village.",
+        "why": "Painted brushstrokes, a swirling sky and village streets become an explorable space.",
+        "limit": "Local and Grok Bot desktop checks tested a short ride; leaderboards, chat, VR, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/ebbyamir/status/2120284261089673376",
+      "description": {
+        "zh": "作者称使用 Fable 5.2 制作了这款受《星月夜》启发的游戏。",
+        "en": "The creator says the game inspired by The Starry Night was made with Fable 5.2."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/ebbyamir/status/2120284261089673376"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机和 Grok Bot 桌面测试进入画面并骑行；排行榜、聊天、VR、声音与手机未测。",
+      "note_en": "Local and Grok Bot desktop checks entered the scene and rode; leaderboards, chat, VR, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/starry-nightrider-960.webp",
+        "base": "starry-nightrider",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "旋转的星空下，铺色屋顶与街道延伸到教堂尖塔。",
+          "en": "Painted roofs and streets lead toward a church beneath a swirling night sky."
+        }
+      },
+      "provenance": {
+        "source_url": "https://starrynightrider.com/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.281
+    },
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "hidden-layers",
+    "slug": "hidden-layers",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Hidden Layers",
+    "demo_url": "https://butterfly.kyzo.io/",
+    "creator": {
+      "name": "ky__zo",
+      "profile_url": "https://x.com/ky__zo"
+    },
+    "locales": {
+      "zh": {
+        "title": "Hidden Layers：玻璃后的蝴蝶",
+        "summary": "跟随一只蝴蝶，进入由程序生成的三维世界。",
+        "action": "点击 Enter，再滚动鼠标让镜头向前飞行。",
+        "why": "通透的翅膀、玻璃与分层场景组成一段可交互的视觉叙事。",
+        "limit": "本机和 Grok Bot 测试了桌面第一层的滚动；其他场景、声音和手机未完整测试。"
+      },
+      "en": {
+        "title": "Hidden Layers",
+        "summary": "Follow a butterfly through procedural 3D worlds.",
+        "action": "Select Enter, then scroll to fly forward.",
+        "why": "Transparent wings, glass and layered scenes form an interactive visual story.",
+        "limit": "Local and Grok Bot desktop checks tested scrolling in the first layer; the other scenes, audio and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/ky__zo/status/2122274109795054036",
+      "description": {
+        "zh": "作者称用 Fable 5.2 测试程序化三维场景创作，并公开了提示词与仓库。",
+        "en": "The creator says Fable 5.2 was used to explore procedural 3D scenes and published the prompts and repository."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/ky__zo/status/2122274109795054036"
+      },
+      {
+        "url": "https://x.com/ky__zo/status/2122274300866826557"
+      },
+      {
+        "url": "https://github.com/ky-zo/fable-butterfly"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机与 Grok Bot 桌面测试进入第一层并滚动，字幕及视角发生变化；其他场景、声音和手机未完整测试。",
+      "note_en": "Local and Grok Bot desktop checks entered the first layer and scrolled, changing the caption and view; other scenes, audio and mobile were not fully tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/hidden-layers-960.webp",
+        "base": "hidden-layers",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "一只透明翅膀的蝴蝶停在玻璃旁。",
+          "en": "A glasswing butterfly rests beside a pane of glass."
+        }
+      },
+      "provenance": {
+        "source_url": "https://butterfly.kyzo.io/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.282
+    },
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "breathing-and-respiration",
+    "slug": "breathing-and-respiration",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-anatomy",
+    "title_original": "Breathing and Respiration",
+    "demo_url": "https://iamtechartist.com/breathing-and-respiration/",
+    "creator": {
+      "name": "Techartist",
+      "profile_url": "https://x.com/techartist_"
+    },
+    "locales": {
+      "zh": {
+        "title": "Breathing and Respiration：呼吸与气体交换",
+        "summary": "通过三维人体和互动练习，探索呼吸与气体交换。",
+        "action": "进入课程后，在第一室按住呼吸控件或空格键，观察吸气变化。",
+        "why": "课程将三维模型、动手步骤和自测问题放在一起。",
+        "limit": "本机和 Grok Bot 仅测试了桌面第一室的呼吸互动；后续课程、声音和手机未测。"
+      },
+      "en": {
+        "title": "Breathing and Respiration",
+        "summary": "Explore breathing and gas exchange through a 3D body and interactive exercises.",
+        "action": "Enter the lesson and hold the breathing control or Space in the first room to observe inhalation.",
+        "why": "A 3D model, hands-on steps and self-check questions come together in one lesson.",
+        "limit": "Local and Grok Bot desktop checks tested the first room’s breathing interaction; later rooms, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://x.com/techartist_/status/2115565230772392277",
+      "description": {
+        "zh": "作者称这堂生物课使用 Opus 5.5 和 Three.js 制作。",
+        "en": "The creator says this biology lesson was built with Opus 5.5 and Three.js."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/techartist_/status/2115565230772392277"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机进入第一室并按住空格完成一次深呼吸计数；Grok Bot 按住控件观察到 AIR IN 数值变化。后续课程、声音和手机未测试。",
+      "note_en": "Local desktop testing entered the first room and held Space for a counted deep breath; Grok Bot observed the AIR IN value change while holding the control. Later rooms, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/breathing-and-respiration-960.webp",
+        "base": "breathing-and-respiration",
+        "width": 1920,
+        "height": 1070,
+        "alt": {
+          "zh": "透明胸腔内的气道、肺部和粉色横膈膜，右下方是呼吸控件。",
+          "en": "Airways, lungs and a pink diaphragm inside a transparent torso, with a breathing control."
+        }
+      },
+      "provenance": {
+        "source_url": "https://iamtechartist.com/breathing-and-respiration/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.283
+    },
+    "added_at": "2026-11-19"
+  },
+  {
+    "id": "omage-1",
+    "slug": "omage-1",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "omage-1",
+    "demo_url": "https://www.omage1.xyz/",
+    "creator": {
+      "name": "James Bickerton",
+      "profile_url": "https://x.com/jamesmbickerton"
+    },
+    "locales": {
+      "zh": {
+        "title": "omage-1：浏览器里的合成器",
+        "summary": "探索一台向 OP-1 Field 致敬的浏览器合成器。",
+        "action": "点击琴键，观察屏幕上的波形变化，再尝试旋钮和模式。",
+        "why": "琴键、屏幕与旋钮组成一台可直接操作的虚拟乐器。",
+        "limit": "这是非官方致敬作品，与 Teenage Engineering 无关联。本机和 Grok Bot 测试了桌面按键；声音与手机未核验。"
+      },
+      "en": {
+        "title": "omage-1",
+        "summary": "Explore a browser synthesizer inspired by the OP-1 Field.",
+        "action": "Press a key and watch the waveform, then explore the controls and modes.",
+        "why": "Keys, a screen and knobs form a virtual instrument to explore.",
+        "limit": "This is an unofficial homage, unaffiliated with Teenage Engineering. Local and Grok Bot desktop checks tested a key; audio and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/jamesmbickerton/status/2122688041219133815",
+      "description": {
+        "zh": "作者称使用 Fable 5.2 制作这款非官方浏览器致敬作品。",
+        "en": "The creator says Fable 5.2 was used to make this unofficial browser homage."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/jamesmbickerton/status/2122688041219133815"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机和 Grok Bot 在桌面按琴键；Grok Bot 观察到波形变化。声音和手机未核验。",
+      "note_en": "Local and Grok Bot desktop checks pressed a key; Grok Bot observed the waveform change. Audio and mobile were not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/omage-1-960.webp",
+        "base": "omage-1",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "白色琴键与彩色旋钮组成的浏览器合成器界面。",
+          "en": "A browser synthesizer with white keys and colored knobs."
+        }
+      },
+      "provenance": {
+        "source_url": "https://www.omage1.xyz/",
+        "captured_at": "2026-11-19",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured during Grok Bot’s desktop interaction; browser chrome was cropped when present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.284
+    },
+    "added_at": "2026-11-19"
   }
 ]

@@ -152,6 +152,16 @@
       "permanent": true
     },
     {
+      "source": "/breathing-and-respiration",
+      "destination": "/en/works/breathing-and-respiration/",
+      "permanent": true
+    },
+    {
+      "source": "/breathing-and-respiration/",
+      "destination": "/en/works/breathing-and-respiration/",
+      "permanent": true
+    },
+    {
       "source": "/cd-case",
       "destination": "/en/works/cd-case/",
       "permanent": true
@@ -462,6 +472,16 @@
       "permanent": true
     },
     {
+      "source": "/hidden-layers",
+      "destination": "/en/works/hidden-layers/",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-layers/",
+      "destination": "/en/works/hidden-layers/",
+      "permanent": true
+    },
+    {
       "source": "/huamo",
       "destination": "/en/works/huamo/",
       "permanent": true
@@ -762,6 +782,16 @@
       "permanent": true
     },
     {
+      "source": "/omage-1",
+      "destination": "/en/works/omage-1/",
+      "permanent": true
+    },
+    {
+      "source": "/omage-1/",
+      "destination": "/en/works/omage-1/",
+      "permanent": true
+    },
+    {
       "source": "/orbital",
       "destination": "/en/works/orbital/",
       "permanent": true
@@ -1042,6 +1072,16 @@
       "permanent": true
     },
     {
+      "source": "/starry-nightrider",
+      "destination": "/en/works/starry-nightrider/",
+      "permanent": true
+    },
+    {
+      "source": "/starry-nightrider/",
+      "destination": "/en/works/starry-nightrider/",
+      "permanent": true
+    },
+    {
       "source": "/stars-visualizer",
       "destination": "/en/works/stars-visualizer/",
       "permanent": true
@@ -1089,6 +1129,16 @@
     {
       "source": "/terrain-rover/",
       "destination": "/en/works/terrain-rover/",
+      "permanent": true
+    },
+    {
+      "source": "/the-county",
+      "destination": "/en/works/the-county/",
+      "permanent": true
+    },
+    {
+      "source": "/the-county/",
+      "destination": "/en/works/the-county/",
       "permanent": true
     },
     {
@@ -1169,6 +1219,16 @@
     {
       "source": "/wedulab-voltlab/",
       "destination": "/en/works/wedulab-voltlab/",
+      "permanent": true
+    },
+    {
+      "source": "/what-the-water-keeps",
+      "destination": "/en/works/what-the-water-keeps/",
+      "permanent": true
+    },
+    {
+      "source": "/what-the-water-keeps/",
+      "destination": "/en/works/what-the-water-keeps/",
       "permanent": true
     },
     {
@@ -1329,6 +1389,16 @@
     {
       "source": "/zh/bottle-studio/",
       "destination": "/works/bottle-studio/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/breathing-and-respiration",
+      "destination": "/works/breathing-and-respiration/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/breathing-and-respiration/",
+      "destination": "/works/breathing-and-respiration/",
       "permanent": true
     },
     {
@@ -1642,6 +1712,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/hidden-layers",
+      "destination": "/works/hidden-layers/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/hidden-layers/",
+      "destination": "/works/hidden-layers/",
+      "permanent": true
+    },
+    {
       "source": "/zh/huamo",
       "destination": "/works/huamo/",
       "permanent": true
@@ -1942,6 +2022,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/omage-1",
+      "destination": "/works/omage-1/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/omage-1/",
+      "destination": "/works/omage-1/",
+      "permanent": true
+    },
+    {
       "source": "/zh/orbital",
       "destination": "/works/orbital/",
       "permanent": true
@@ -2222,6 +2312,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/starry-nightrider",
+      "destination": "/works/starry-nightrider/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/starry-nightrider/",
+      "destination": "/works/starry-nightrider/",
+      "permanent": true
+    },
+    {
       "source": "/zh/stars-visualizer",
       "destination": "/works/stars-visualizer/",
       "permanent": true
@@ -2269,6 +2369,16 @@
     {
       "source": "/zh/terrain-rover/",
       "destination": "/works/terrain-rover/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/the-county",
+      "destination": "/works/the-county/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/the-county/",
+      "destination": "/works/the-county/",
       "permanent": true
     },
     {
@@ -2349,6 +2459,16 @@
     {
       "source": "/zh/wedulab-voltlab/",
       "destination": "/works/wedulab-voltlab/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/what-the-water-keeps",
+      "destination": "/works/what-the-water-keeps/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/what-the-water-keeps/",
+      "destination": "/works/what-the-water-keeps/",
       "permanent": true
     },
     {

@@ -708,6 +708,42 @@
       "share_slug": "scenario-agent-fps",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "breathing-and-respiration",
+      "share_slug": "breathing-and-respiration",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "hidden-layers",
+      "share_slug": "hidden-layers",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "omage-1",
+      "share_slug": "omage-1",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "starry-nightrider",
+      "share_slug": "starry-nightrider",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "the-county",
+      "share_slug": "the-county",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "what-the-water-keeps",
+      "share_slug": "what-the-water-keeps",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

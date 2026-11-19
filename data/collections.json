@@ -65,7 +65,8 @@
         "huamo": "在流动的水墨雾气中移动和挥剑；作品需要支持 WebGPU 的桌面浏览器。",
         "a-space-mining-game": "驾驶飞船并打开星图；已测试开局和飞行，采矿与存档尚未核验。",
         "kartboard": "驾驶纸板卡丁车进入桌面赛道；AI 创作方式尚未确认。",
-        "chrono-breach-the-ring-ark": "在科幻空间站切换过去与现在；已测试开局安全区，完整战斗未测。"
+        "chrono-breach-the-ring-ark": "在科幻空间站切换过去与现在；已测试开局安全区，完整战斗未测。",
+        "the-county": "选择田地并规划马铃薯农场的一年。"
       }
     },
     "en": {
@@ -99,7 +100,8 @@
         "huamo": "Move and swing a sword through flowing ink-like fog; a desktop WebGPU browser is needed.",
         "a-space-mining-game": "Pilot a ship and open the star map; the opening and flight were tested, but mining and saves were not.",
         "kartboard": "Race a cardboard kart on a tabletop track; AI involvement is unconfirmed.",
-        "chrono-breach-the-ring-ark": "Shift between past and present on a sci-fi station; the opening safe room was tested, but combat was not."
+        "chrono-breach-the-ring-ark": "Shift between past and present on a sci-fi station; the opening safe room was tested, but combat was not.",
+        "the-county": "Choose fields and plan a year on a potato farm."
       }
     },
     "seo": {
@@ -136,7 +138,8 @@
       "huamo",
       "a-space-mining-game",
       "kartboard",
-      "chrono-breach-the-ring-ark"
+      "chrono-breach-the-ring-ark",
+      "the-county"
     ],
     "cover": "hyperbrick"
   },
@@ -190,7 +193,9 @@
       "palette-rider",
       "huamo",
       "a-space-mining-game",
-      "codevember-mirage"
+      "codevember-mirage",
+      "what-the-water-keeps",
+      "hidden-layers"
     ],
     "cover": "hearthlight"
   },
@@ -260,7 +265,8 @@
       "argon-junior",
       "magic-english-buddy",
       "owl-pellet-lab",
-      "mxene-in-3d"
+      "mxene-in-3d",
+      "breathing-and-respiration"
     ],
     "cover": "learn-arduino"
   },
@@ -287,7 +293,8 @@
         "stave": "把字母排在琴弦上并尝试播放；音频尚未实际听测。",
         "argon-junior": "通过波形、滤波与预设探索合成器；音频尚未听测。",
         "contrib-suite": "把贡献方格变成音乐；播放状态已检查，音频尚未听测。",
-        "stave-room": "点击播放，观察房间里的谱表和播放头；声音未独立核验。"
+        "stave-room": "点击播放，观察房间里的谱表和播放头；声音未独立核验。",
+        "omage-1": "按键探索一台非官方浏览器合成器。"
       }
     },
     "en": {
@@ -311,7 +318,8 @@
         "stave": "Arrange letters across strings and try playback; audio has not been audibly verified.",
         "argon-junior": "Explore waveform, filter and preset controls; audio has not been audibly verified.",
         "contrib-suite": "Turn a contribution grid into music; playback state was checked, but audio has not been audibly verified.",
-        "stave-room": "Start the playhead on a stave in a room; audio was not independently verified."
+        "stave-room": "Start the playhead on a stave in a room; audio was not independently verified.",
+        "omage-1": "Press keys on an unofficial browser synthesizer."
       }
     },
     "seo": {
@@ -337,7 +345,8 @@
       "stave",
       "argon-junior",
       "contrib-suite",
-      "stave-room"
+      "stave-room",
+      "omage-1"
     ],
     "cover": "mpump"
   },
@@ -359,7 +368,8 @@
       "genesis",
       "huolong",
       "palette-rider",
-      "interactive-christmas-cards"
+      "interactive-christmas-cards",
+      "starry-nightrider"
     ],
     "cover": "estheet"
   },

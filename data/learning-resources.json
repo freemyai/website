@@ -2297,6 +2297,246 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "the-county",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "作者仓库提供项目源码并声明 MIT。",
+          "en": "The creator’s repository provides project source and declares MIT."
+        }
+      },
+      "sources": [
+        {
+          "id": "the-county-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/TheMizeGuy/fable-5.2-potatobench",
+          "repository_url": "https://github.com/TheMizeGuy/fable-5.2-potatobench",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/TheMizeGuy/fable-5.2-potatobench/blob/6cf1e0bfcb4259e5f2b1b864a3b7202a5b33647c/LICENSE",
+            "scope_note": {
+              "zh": "作者仓库中的源码声明 MIT；第三方依赖和素材可能另有许可。",
+              "en": "The creator’s repository declares MIT for its source; third-party dependencies and assets may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/TheMizeGuy/fable-5.2-potatobench/blob/6cf1e0bfcb4259e5f2b1b864a3b7202a5b33647c/README.md",
+              "summary": "The creator identifies the game, its AI process and the same live URL."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://themizeguy.github.io/fable-5.2-potatobench/",
+              "summary": "The repository links this playable deployment."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": "6cf1e0bfcb4259e5f2b1b864a3b7202a5b33647c",
+          "publication": "published",
+          "notes": {
+            "zh": "核对作者仓库、原站与 MIT 许可证；未执行仓库代码。",
+            "en": "Reviewed the creator’s repository, live link and MIT license; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "what-the-water-keeps",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "检索作者帖子与公开资料，未找到可核验的作者源码或许可。",
+          "en": "Searched the creator’s posts and public sources; no creator-provided source or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "starry-nightrider",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "检索作者帖子与公开资料，未找到可核验的源码或许可。",
+          "en": "Searched the creator’s posts and public sources; no matching source or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "hidden-layers",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "作者公开代码及提示词；未找到明确代码许可证。",
+          "en": "The creator publishes code and prompts; no explicit code license was found."
+        }
+      },
+      "sources": [
+        {
+          "id": "hidden-layers-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/ky-zo/fable-butterfly",
+          "repository_url": "https://github.com/ky-zo/fable-butterfly",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "作者公开对应代码，但未找到明确许可证；不能视为已验证开源。",
+              "en": "The creator publishes the matching code, but no explicit license was found; it is not verified as open source."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/ky-zo/fable-butterfly/blob/3f717953b78c36c9d0dc61be04ac55267563c152/README.md",
+              "summary": "The repository identifies Hidden Layers and its matching live URL."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/ky__zo/status/2122274300866826557",
+              "summary": "The creator links this repository and the prompts."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": "3f717953b78c36c9d0dc61be04ac55267563c152",
+          "publication": "published",
+          "notes": {
+            "zh": "仓库对应原作；公开代码未发现明确许可证。",
+            "en": "The repository matches the work; no explicit license was found for its public code."
+          }
+        },
+        {
+          "id": "hidden-layers-prompts",
+          "provider": "github",
+          "kind": "author_guide",
+          "url": "https://github.com/ky-zo/fable-butterfly/blob/main/PROMPTS.md",
+          "repository_url": "https://github.com/ky-zo/fable-butterfly",
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "作者公开的提示词记录；不代表已确认源码许可。",
+              "en": "The creator’s prompt record; it does not establish a source-code license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://github.com/ky-zo/fable-butterfly/blob/3f717953b78c36c9d0dc61be04ac55267563c152/PROMPTS.md",
+              "summary": "The creator’s prompts for Hidden Layers."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": "3f717953b78c36c9d0dc61be04ac55267563c152",
+          "publication": "published",
+          "notes": {
+            "zh": "作者帖子与 README 均指向该提示词记录。",
+            "en": "The creator’s post and README point to this prompt record."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "breathing-and-respiration",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "检索作者帖子与原站，未找到可核验的源码或许可。",
+          "en": "Searched the creator’s post and site; no matching source or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "omage-1",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "检索作者帖子与原站，未找到可核验的源码或许可。",
+          "en": "Searched the creator’s post and site; no matching source or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
