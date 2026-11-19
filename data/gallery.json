@@ -7800,5 +7800,98 @@
       "featured_order": 2.276
     },
     "added_at": "2026-11-19"
+  },
+  {
+    "id": "escapement",
+    "slug": "escapement",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Escapement",
+    "demo_url": "https://escapement.openai.chatgpt.site/",
+    "creator": {
+      "name": "Eric Provencher / OpenAI",
+      "profile_url": "https://x.com/pvncher"
+    },
+    "locales": {
+      "zh": {
+        "title": "Escapement：弹珠机械连锁",
+        "summary": "看弹珠沿着轨道运动，推动一座精巧机械装置。",
+        "action": "在支持 WebGPU 的桌面浏览器等待加载，点击“Play with sound”开始观看。",
+        "why": "镜头跟随弹珠穿行于轨道、杠杆与机械结构之间，呈现一场连锁反应。",
+        "limit": "本机桌面 Edge 经较长加载后播放了部分动画；声音、完整流程与手机未测试。需要支持 WebGPU 的环境。"
+      },
+      "en": {
+        "title": "Escapement",
+        "summary": "Watch a marble travel through an intricate mechanical chain reaction.",
+        "action": "On a WebGPU-capable desktop browser, wait for loading and select “Play with sound”.",
+        "why": "A moving camera follows the marble through tracks, levers and mechanical structures.",
+        "limit": "Local desktop Edge played part of the animation after a long load; audio, the complete sequence and mobile were not tested. A WebGPU-capable environment is needed."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "GPT-6.2 Astra"
+      ],
+      "evidence_url": "https://x.com/pvncher/status/2122755434758967623",
+      "description": {
+        "zh": "作者称使用 GPT-6.2 Astra 和图像参考制作该演示。",
+        "en": "The creator says the demo was made with GPT-6.2 Astra and an image reference."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/pvncher/status/2122755434758967623"
+      },
+      {
+        "url": "https://x.com/pvncher/status/2122755437296861300"
+      },
+      {
+        "url": "https://developers.openai.com/showcase/escapement"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机桌面 Edge 使用 WebGPU 软件适配器，点击播放并等待较长加载后，观察到弹珠和镜头运动；声音、完整流程与手机未测。",
+      "note_en": "Local desktop Edge used a software WebGPU adapter; after selecting play and a long load, the marble and camera moved. Audio, the complete sequence and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/escapement-960.webp",
+        "base": "escapement",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "一颗彩色弹珠置于机械轨道与环形结构之间。",
+          "en": "A colorful marble sits among mechanical rails and looping structures."
+        }
+      },
+      "provenance": {
+        "source_url": "https://escapement.openai.chatgpt.site/",
+        "captured_at": "2026-11-19",
+        "method": "local_desktop_browser_capture",
+        "note": "Captured in a desktop Edge session during the running simulation."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.277
+    },
+    "added_at": "2026-11-19"
   }
 ]

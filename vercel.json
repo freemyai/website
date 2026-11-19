@@ -292,6 +292,16 @@
       "permanent": true
     },
     {
+      "source": "/escapement",
+      "destination": "/en/works/escapement/",
+      "permanent": true
+    },
+    {
+      "source": "/escapement/",
+      "destination": "/en/works/escapement/",
+      "permanent": true
+    },
+    {
       "source": "/estheet",
       "destination": "/en/works/estheet/",
       "permanent": true
@@ -1449,6 +1459,16 @@
     {
       "source": "/zh/elon-musk-interview-archive/",
       "destination": "/works/elon-musk-interview-archive/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/escapement",
+      "destination": "/works/escapement/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/escapement/",
+      "destination": "/works/escapement/",
       "permanent": true
     },
     {

@@ -2175,6 +2175,67 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "escapement",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "核对作者帖子与 OpenAI 展示页；未找到可核验的公开源码，提供官方制作过程说明。",
+          "en": "Reviewed the creator’s post and OpenAI showcase; no matching public source was verified. The official build-process guide is included."
+        }
+      },
+      "sources": [
+        {
+          "id": "escapement-build-process",
+          "provider": "other",
+          "kind": "author_guide",
+          "url": "https://developers.openai.com/showcase/escapement",
+          "repository_url": null,
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "OpenAI 展示该作品的制作步骤；这不是源码或代码许可。",
+              "en": "OpenAI presents the build steps for this work; this is not source code or a code license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://developers.openai.com/showcase/escapement",
+              "summary": "OpenAI credits Eric Provencher and describes the build steps for Escapement."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/pvncher/status/2122755434758967623",
+              "summary": "The creator describes the browser demo and its AI-assisted creation."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": null,
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者帖子与 OpenAI 的作品制作说明。",
+            "en": "Reviewed the creator’s post and OpenAI’s build-process description."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
