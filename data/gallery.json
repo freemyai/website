@@ -7893,5 +7893,97 @@
       "featured_order": 2.277
     },
     "added_at": "2026-11-19"
+  },
+  {
+    "id": "scenario-agent-fps",
+    "slug": "scenario-agent-fps",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "AAA In The Browser · Agent-built levels",
+    "demo_url": "https://www.scenario.com/explorations/agent-built-aaa-browser-game/",
+    "creator": {
+      "name": "Scenario",
+      "profile_url": "https://x.com/Scenario_gg"
+    },
+    "locales": {
+      "zh": {
+        "title": "AAA In The Browser：智能体制作的射击游戏",
+        "summary": "进入雨夜工业场景，体验由智能体协助制作的浏览器第一人称射击游戏。",
+        "action": "在原站点击 Start the game，等待下载和图形加载，再选择关卡进入。",
+        "why": "可玩的第一人称关卡与制作过程说明放在同一页面，方便边体验边理解其创作方法。",
+        "limit": "Grok Bot 在桌面软件渲染环境进入并移动了第一关；战斗、其他关卡、音频和手机未完全测试。首次加载较大且可能需要几分钟。"
+      },
+      "en": {
+        "title": "AAA In The Browser: Agent-built Levels",
+        "summary": "Enter a rainy industrial setting in an agent-built browser first-person shooter.",
+        "action": "Select Start the game on the original page, allow time for download and graphics loading, then select a mission.",
+        "why": "The playable first-person levels sit alongside an explanation of how the work was made.",
+        "limit": "Grok Bot entered and moved in the first level with desktop software rendering; combat, other levels, audio and mobile were not fully tested. The first load is large and may take several minutes."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Fable 5.2",
+        "Scenario MCP"
+      ],
+      "evidence_url": "https://x.com/emmanuel_2m/status/2122882128820273426",
+      "description": {
+        "zh": "Scenario 称游戏由智能体通过 Claude Code 和 Scenario MCP 制作，素材使用了多种生成模型。",
+        "en": "Scenario says an agent built the game with Claude Code and Scenario MCP, using multiple generative models for its assets."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/emmanuel_2m/status/2122882128820273426"
+      },
+      {
+        "url": "https://www.scenario.com/explorations/agent-built-aaa-browser-game/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "Grok Bot 在桌面 Chrome 的软件渲染环境进入 Site 01 Blue Hour Yard，捕获鼠标并按 W 短暂移动；战斗、其他关卡与声音未完全测试。预览为本机捕获的游戏标题画面。",
+      "note_en": "Grok Bot entered Site 01 Blue Hour Yard in desktop Chrome with software rendering, captured the mouse and briefly moved with W; combat, other levels and audio were not fully tested. The preview is a locally captured title screen."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/scenario-agent-fps-960.webp",
+        "base": "scenario-agent-fps",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "Blue Hour Yard 游戏标题画面，背景是一处雨中的工业场景。",
+          "en": "The Blue Hour Yard title screen over a rainy industrial scene."
+        }
+      },
+      "provenance": {
+        "source_url": "https://www.scenario.com/explorations/agent-built-aaa-browser-game/game/index.html",
+        "captured_at": "2026-11-19",
+        "method": "local_desktop_browser_capture",
+        "note": "The preview is a title-screen capture from the original embedded game; the separate in-level interaction was tested by Grok Bot."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.278
+    },
+    "added_at": "2026-11-19"
   }
 ]

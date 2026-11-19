@@ -962,6 +962,16 @@
       "permanent": true
     },
     {
+      "source": "/scenario-agent-fps",
+      "destination": "/en/works/scenario-agent-fps/",
+      "permanent": true
+    },
+    {
+      "source": "/scenario-agent-fps/",
+      "destination": "/en/works/scenario-agent-fps/",
+      "permanent": true
+    },
+    {
       "source": "/senbazuru",
       "destination": "/en/works/senbazuru/",
       "permanent": true
@@ -2129,6 +2139,16 @@
     {
       "source": "/zh/sakura-river-valley/",
       "destination": "/works/sakura-river-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/scenario-agent-fps",
+      "destination": "/works/scenario-agent-fps/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/scenario-agent-fps/",
+      "destination": "/works/scenario-agent-fps/",
       "permanent": true
     },
     {
