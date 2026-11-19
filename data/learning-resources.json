@@ -2236,6 +2236,67 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "scenario-agent-fps",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "原站提供制作说明、PDF 与 Agent Skill；未找到可核验的完整游戏源码。Scenario 的通用 skills 仓库不能当作此游戏源码。",
+          "en": "The original page provides making-of notes, a PDF and an agent skill; no matching complete game source was verified. Scenario’s general skills repository is not the game source."
+        }
+      },
+      "sources": [
+        {
+          "id": "scenario-agent-fps-making-of",
+          "provider": "other",
+          "kind": "author_guide",
+          "url": "https://www.scenario.com/explorations/agent-built-aaa-browser-game/",
+          "repository_url": null,
+          "relation": "exact_project",
+          "code_scope": "not_applicable",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "not_applicable",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "原页面提供制作过程、PDF 和可下载的 Agent Skill；这些资料不等于游戏源码。",
+              "en": "The original page provides a making-of, PDF and downloadable agent skill; these are not the game source code."
+            }
+          },
+          "evidence": [
+            {
+              "type": "author_docs",
+              "url": "https://www.scenario.com/explorations/agent-built-aaa-browser-game/",
+              "summary": "Scenario describes the game, the agent workflow and the available making-of materials."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/emmanuel_2m/status/2122882128820273426",
+              "summary": "Scenario co-founder presents the same browser game and its creation process."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": null,
+          "publication": "published",
+          "notes": {
+            "zh": "已核对 Scenario 原页面及发布帖子。",
+            "en": "Reviewed the Scenario page and launch post."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
