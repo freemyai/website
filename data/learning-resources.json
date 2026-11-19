@@ -2114,6 +2114,67 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "ruby-kart",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-19",
+        "notes": {
+          "zh": "已核对作者仓库、README 和许可证；MIT 的范围限于作者有权授权的原创部分。",
+          "en": "Reviewed the creator’s repository, README and license; its MIT scope is limited to original material the author may license."
+        }
+      },
+      "sources": [
+        {
+          "id": "ruby-kart-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/vvvvvvvvvashhh/ruby-kart",
+          "repository_url": "https://github.com/vvvvvvvvvashhh/ruby-kart",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "restricted",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/vvvvvvvvvashhh/ruby-kart/blob/de8cd39227cc1616c8269d1ac3c63ec371fa4479/LICENSE",
+            "scope_note": {
+              "zh": "作者对其有权授权的原创代码和文档声明 MIT；第三方代码、角色、画面、音乐、名称及商标明确排除在外。",
+              "en": "The author applies MIT only to original code and documentation they may license; third-party code, characters, artwork, music, names and marks are explicitly excluded."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/vvvvvvvvvashhh/ruby-kart/blob/de8cd39227cc1616c8269d1ac3c63ec371fa4479/README.md",
+              "summary": "The creator identifies Ruby Tour and the GitHub Pages deployment directory."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://vvvvvvvvvashhh.github.io/ruby-kart/",
+              "summary": "The creator account hosts this playable game on GitHub Pages."
+            }
+          ],
+          "checked_at": "2026-11-19",
+          "revision": "de8cd39227cc1616c8269d1ac3c63ec371fa4479",
+          "publication": "published",
+          "notes": {
+            "zh": "仓库含公开代码与打包的 HTML；MIT 授权只覆盖作者有权授权的原创部分。",
+            "en": "The repository contains public code and packaged HTML; its MIT grant covers only original material the author may license."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

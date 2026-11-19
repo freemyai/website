@@ -690,6 +690,12 @@
       "share_slug": "getting-there",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "ruby-kart",
+      "share_slug": "ruby-kart",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

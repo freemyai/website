@@ -932,6 +932,16 @@
       "permanent": true
     },
     {
+      "source": "/ruby-kart",
+      "destination": "/en/works/ruby-kart/",
+      "permanent": true
+    },
+    {
+      "source": "/ruby-kart/",
+      "destination": "/en/works/ruby-kart/",
+      "permanent": true
+    },
+    {
       "source": "/sakura-river-valley",
       "destination": "/en/works/sakura-river-valley/",
       "permanent": true
@@ -2079,6 +2089,16 @@
     {
       "source": "/zh/roverkit/",
       "destination": "/works/roverkit/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/ruby-kart",
+      "destination": "/works/ruby-kart/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/ruby-kart/",
+      "destination": "/works/ruby-kart/",
       "permanent": true
     },
     {

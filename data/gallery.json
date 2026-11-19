@@ -7707,5 +7707,98 @@
       "featured_order": 2.274
     },
     "added_at": "2026-11-18"
+  },
+  {
+    "id": "ruby-kart",
+    "slug": "ruby-kart",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Mario Kart 8 · Ruby Tour",
+    "demo_url": "https://vvvvvvvvvashhh.github.io/ruby-kart/",
+    "creator": {
+      "name": "N1n3VASthR33H",
+      "profile_url": "https://x.com/N1n3VASthR33H"
+    },
+    "locales": {
+      "zh": {
+        "title": "Ruby Tour：掌机赛车实验",
+        "summary": "在复古掌机外壳中选择赛道，体验非官方卡丁车竞速。",
+        "action": "等待开场加载，选择“开始比赛”；用 W 加速、方向键转向。",
+        "why": "赛道、实时地图与可切换的掌机外壳组成一款由 AI 协助制作的浏览器赛车实验。",
+        "limit": "这是非官方同人作品。桌面检查进入一场比赛并测试加速；其他赛道、声音和手机未测试。游戏画面主要为中文。"
+      },
+      "en": {
+        "title": "Ruby Tour: Handheld Racing Experiment",
+        "summary": "Choose a course and race inside a retro handheld-inspired browser game.",
+        "action": "Wait for the opening to load, select “开始比赛” (start race), and use W to accelerate and the arrow keys to steer.",
+        "why": "A race view, live course map and changeable handheld shells form an AI-assisted browser racing experiment.",
+        "limit": "This is an unofficial fan recreation. A desktop check entered a race and tested acceleration; other courses, audio and mobile were not tested. The game interface is mainly in Chinese."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "GPT-6.2 Astra"
+      ],
+      "evidence_url": "https://x.com/N1n3VASthR33H/status/2122862987245691220",
+      "description": {
+        "zh": "作者称游戏和模型由 Astra 6.2 通过自然语言制作。",
+        "en": "The creator says the game and models were made with Astra 6.2 through natural-language prompting."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/N1n3VASthR33H/status/2122862987245691220"
+      },
+      {
+        "url": "https://x.com/N1n3VASthR33H/status/2117988488041890064"
+      },
+      {
+        "url": "https://github.com/vvvvvvvvvashhh/ruby-kart"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-19",
+      "note": "本机桌面 Edge 在作者的 GitHub Pages 站进入比赛并按 W 加速，画面与赛道状态发生变化；其他赛道、声音和手机未测。作者称为非官方同人作品。",
+      "note_en": "Local desktop Edge entered a race on the creator’s GitHub Pages site and tested W acceleration, with visible changes to the race and track status. Other courses, audio and mobile were not tested. The creator describes it as an unofficial fan recreation."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/ruby-kart-960.webp",
+        "base": "ruby-kart",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "红色掌机外壳上方显示赛车比赛，下方显示赛道地图。",
+          "en": "A race plays on the upper screen of a red handheld shell, with a course map below."
+        }
+      },
+      "provenance": {
+        "source_url": "https://vvvvvvvvvashhh.github.io/ruby-kart/",
+        "captured_at": "2026-11-19",
+        "method": "local_desktop_browser_capture",
+        "note": "Captured in an isolated desktop Edge session while the race was running."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "zh"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.276
+    },
+    "added_at": "2026-11-19"
   }
 ]
