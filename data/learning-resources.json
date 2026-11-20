@@ -3017,8 +3017,156 @@
         "status": "searched",
         "checked_at": "2026-11-21",
         "notes": {
-          "zh": "核验作者原帖与体验地址；未取得作品对应 AI 创作依据、源码仓库或许可证。",
-          "en": "Verified the creator post and experience; no work-specific AI provenance, source repository or license was verified."
+          "zh": "核对匹配仓库与原站 index.html，字节一致；未发现明确许可证，作品 AI 参与仍未证实。",
+          "en": "The matching repository and live index.html were byte-identical; no explicit license or work-specific AI provenance was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "pastel-monsters-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Manasi1703/pastel-monsters",
+          "repository_url": "https://github.com/Manasi1703/pastel-monsters",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "仓库代码可公开阅读；未找到明确许可，不能视为开源。",
+              "en": "The code is publicly readable; no explicit license was verified."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/Manasi1703/pastel-monsters/blob/6dbae1050d2b7d4c161f38330c949337d9343d67/index.html",
+              "summary": "Live HTML and repository HTML were byte-identical when reviewed."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/Manasi1703/pastel-monsters/blob/6dbae1050d2b7d4c161f38330c949337d9343d67/README.md",
+              "summary": "The README documents the same paper-and-pastel monster interaction."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://pastel-monsters.vercel.app/",
+              "summary": "The repository About website matches the creator-post demo."
+            }
+          ],
+          "checked_at": "2026-11-21",
+          "revision": "6dbae1050d2b7d4c161f38330c949337d9343d67",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "the-folded-atlas",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "检索原帖、原站及公开代码线索；未取得匹配源码仓库或明确许可证。",
+          "en": "Reviewed the post, live site and public source leads; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "drift-neon-survival",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "作者仓库 README 指向相同体验；公开代码没有明确许可。",
+          "en": "The creator repository links the same experience; no explicit license was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "drift-neon-survival-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/RichardLaBrecque/drift",
+          "repository_url": "https://github.com/RichardLaBrecque/drift",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "仓库代码可公开阅读；未找到明确许可，不能视为开源。",
+              "en": "The code is publicly readable; no explicit license was verified."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/RichardLaBrecque/drift/blob/5784348c9637a4bdd58e4d0bc47dcb085c2b7b38/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://richardlabrecque.github.io/drift/",
+              "summary": "The original repository links this live experience."
+            }
+          ],
+          "checked_at": "2026-11-21",
+          "revision": "5784348c9637a4bdd58e4d0bc47dcb085c2b7b38",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "drum003",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "检索作者原帖及 Framer 体验；未确认匹配源码仓库与许可。",
+          "en": "Reviewed the creator’s post and Framer experience; no matching source repository or license was verified."
         }
       },
       "sources": [],

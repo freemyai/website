@@ -9668,5 +9668,266 @@
       "featured_order": 2.297
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "the-folded-atlas",
+    "slug": "the-folded-atlas",
+    "type": "experiments",
+    "primary_category": "spatial",
+    "subcategory": "spatial-stories",
+    "title_original": "The Folded Atlas",
+    "demo_url": "https://rosy-wisdom-dw86.here.now/",
+    "creator": {
+      "name": "John Lindquist",
+      "profile_url": "https://x.com/johnlindquist"
+    },
+    "locales": {
+      "zh": {
+        "title": "折叠地图集：纸艺立体故事书",
+        "summary": "翻开一本可以在浏览器中探索的三维纸艺故事书。",
+        "action": "点击右下角的翻页箭头，观察立体场景随章节改变；尝试书中的互动提示。",
+        "why": "纸艺插图、小狐狸角色与可翻动的立体书结合成故事空间。",
+        "limit": "Grok 已实测从第一章翻到第二章；其他章节、谜题、声音与手机未测。"
+      },
+      "en": {
+        "title": "The Folded Atlas",
+        "summary": "Explore a 3D papercraft storybook in your browser.",
+        "action": "Use the bottom-right chapter arrows to turn the page and observe each new scene; try the on-page prompts.",
+        "why": "Papercraft illustrations, a fox character and animated page turns create an explorable story space.",
+        "limit": "Grok tested the first-to-second chapter turn; other chapters, puzzles, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Astra"
+      ],
+      "evidence_url": "https://x.com/johnlindquist/status/2123569842204897753",
+      "description": {
+        "zh": "作者原帖称用 Astra 和 pvncher 的 SVG 与 3D 设计技能制作。",
+        "en": "The creator’s post credits Astra and pvncher’s SVG and 3D design skill."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/johnlindquist/status/2123569842204897753"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面点击下一章，从 The Lantern Gate 进入 The Ribbon Bridge，URL 变为 #bridge，画面切换成立体河流与吊桥。",
+      "note_en": "Grok selected the next chapter and moved from The Lantern Gate to The Ribbon Bridge, with the URL changing to #bridge and a new river scene appearing."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/the-folded-atlas-960.webp",
+        "base": "the-folded-atlas",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "摊开的纸艺故事书上，卡通狐狸、小动物、河流与木桥。",
+          "en": "An open papercraft storybook with a fox, a companion, a river and a wooden bridge."
+        }
+      },
+      "provenance": {
+        "source_url": "https://rosy-wisdom-dw86.here.now/",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction screenshot; surrounding blank margins cropped where appropriate."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.299
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "drift-neon-survival",
+    "slug": "drift-neon-survival",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Drift",
+    "demo_url": "https://richardlabrecque.github.io/drift/",
+    "creator": {
+      "name": "Richard LaBrecque",
+      "profile_url": "https://github.com/RichardLaBrecque"
+    },
+    "locales": {
+      "zh": {
+        "title": "Drift：霓虹生存游戏",
+        "summary": "控制发光的小点，在深色场地收集碎片、躲开危险。",
+        "action": "点击 Play，用鼠标或方向键移动，靠近危险可获得擦边分数。",
+        "why": "发光粒子、逐渐增强的挑战和简洁画面构成快节奏街机体验。",
+        "limit": "Grok 实测约12秒得149分，本机也实测鼠标移动；音频、完整升级和手机未测。"
+      },
+      "en": {
+        "title": "Drift",
+        "summary": "Guide a glowing point through a dark arena, collecting shards and avoiding hazards.",
+        "action": "Choose Play and move with the mouse or arrow keys; grazing hazards can earn bonus points.",
+        "why": "Neon particles, escalating hazards and a minimal arena create a brisk arcade experience.",
+        "limit": "Grok survived 12 seconds with 149 points and a local browser confirmed mouse movement; audio, later upgrades and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/RichardLaBrecque/drift",
+      "description": {
+        "zh": "作者仓库 README 将作品描述为用 Claude Code 完成的 vibe-coding 实验。",
+        "en": "The creator’s README describes this game as a Claude Code vibe-coding experiment."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/RichardLaBrecque/drift"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "本机桌面点击 Play、移动鼠标，发光角色随指针移动，2秒得27分；Grok 另完成一局得149分。",
+      "note_en": "The local desktop clicked Play and moved the mouse; the glowing character followed and reached 27 points after 2 seconds. Grok separately reached 149 points."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/drift-neon-survival-960.webp",
+        "base": "drift-neon-survival",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "霓虹竞技场中发光的蓝色角色、粉色危险和黄色碎片。",
+          "en": "A glowing blue player, pink hazards and yellow shards in a dark neon arena."
+        }
+      },
+      "provenance": {
+        "source_url": "https://richardlabrecque.github.io/drift/",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Captured in a real local desktop browser during gameplay."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.3
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "drum003",
+    "slug": "drum003",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-music",
+    "title_original": "DRUM003",
+    "demo_url": "https://desses.framer.ai/",
+    "creator": {
+      "name": "Oskar Mieta / Desses",
+      "profile_url": "https://x.com/oskarmieta"
+    },
+    "locales": {
+      "zh": {
+        "title": "DRUM003：浏览器鼓机",
+        "summary": "在具有硬件外观的鼓机上编排16步节奏。",
+        "action": "点击网格中的节拍按钮，观察音轨的激活状态；尝试播放与节奏旋钮。",
+        "why": "将音乐编辑界面设计成触感十足的电子乐器。",
+        "limit": "Grok 已测试节拍网格切换；未独立验证声音、MP3导出及手机。"
+      },
+      "en": {
+        "title": "DRUM003",
+        "summary": "Arrange 16-step rhythms on a hardware-inspired browser drum machine.",
+        "action": "Select a grid step and observe its active state; try the play control and tempo dial.",
+        "why": "A tactile electronic-instrument design makes the sequencer itself a creative interaction.",
+        "limit": "Grok tested toggling a sequencer step; audio, MP3 export and mobile were not independently verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://x.com/oskarmieta/status/2123416014092185793",
+      "description": {
+        "zh": "作者原帖介绍在 Framer 中制作鼓机，大部分通过终端里的 Claude Code 完成。",
+        "en": "The creator’s post describes building the drum machine in Framer, mostly using Claude Code from a terminal."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/oskarmieta/status/2123416014092185793"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面点击 TOM 的第一个节拍格，格子由灰变橙，代表状态切换；未验证音频。",
+      "note_en": "Grok selected the first TOM grid step and observed its gray-to-orange state change; audio was not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/drum003-960.webp",
+        "base": "drum003",
+        "width": 800,
+        "height": 960,
+        "alt": {
+          "zh": "灰色硬件风鼓机，顶部有三个旋钮，中间有橙色激活节拍格。",
+          "en": "A gray hardware-style drum machine with three knobs and orange sequencer steps."
+        }
+      },
+      "provenance": {
+        "source_url": "https://desses.framer.ai/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction screenshot; surrounding blank margins cropped where appropriate."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.301
+    },
+    "added_at": "2026-11-21"
   }
 ]

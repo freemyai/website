@@ -270,6 +270,16 @@
     "permanent": true
   },
   {
+    "source": "/drift-neon-survival",
+    "destination": "/en/works/drift-neon-survival/",
+    "permanent": true
+  },
+  {
+    "source": "/drift-neon-survival/",
+    "destination": "/en/works/drift-neon-survival/",
+    "permanent": true
+  },
+  {
     "source": "/drone-lab",
     "destination": "/en/works/drone-lab/",
     "permanent": true
@@ -277,6 +287,16 @@
   {
     "source": "/drone-lab/",
     "destination": "/en/works/drone-lab/",
+    "permanent": true
+  },
+  {
+    "source": "/drum003",
+    "destination": "/en/works/drum003/",
+    "permanent": true
+  },
+  {
+    "source": "/drum003/",
+    "destination": "/en/works/drum003/",
     "permanent": true
   },
   {
@@ -1260,6 +1280,16 @@
     "permanent": true
   },
   {
+    "source": "/the-folded-atlas",
+    "destination": "/en/works/the-folded-atlas/",
+    "permanent": true
+  },
+  {
+    "source": "/the-folded-atlas/",
+    "destination": "/en/works/the-folded-atlas/",
+    "permanent": true
+  },
+  {
     "source": "/tree-appreciator",
     "destination": "/en/works/tree-appreciator/",
     "permanent": true
@@ -1650,6 +1680,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/drift-neon-survival",
+    "destination": "/works/drift-neon-survival/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/drift-neon-survival/",
+    "destination": "/works/drift-neon-survival/",
+    "permanent": true
+  },
+  {
     "source": "/zh/drone-lab",
     "destination": "/works/drone-lab/",
     "permanent": true
@@ -1657,6 +1697,16 @@
   {
     "source": "/zh/drone-lab/",
     "destination": "/works/drone-lab/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/drum003",
+    "destination": "/works/drum003/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/drum003/",
+    "destination": "/works/drum003/",
     "permanent": true
   },
   {
@@ -2637,6 +2687,16 @@
   {
     "source": "/zh/the-county/",
     "destination": "/works/the-county/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/the-folded-atlas",
+    "destination": "/works/the-folded-atlas/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/the-folded-atlas/",
+    "destination": "/works/the-folded-atlas/",
     "permanent": true
   },
   {

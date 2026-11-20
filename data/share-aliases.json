@@ -828,6 +828,24 @@
       "share_slug": "pastel-monsters",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "the-folded-atlas",
+      "share_slug": "the-folded-atlas",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "drift-neon-survival",
+      "share_slug": "drift-neon-survival",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "drum003",
+      "share_slug": "drum003",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }
