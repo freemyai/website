@@ -2701,6 +2701,67 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "pinball-ui",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "作者仓库对应原站并声明 MIT。",
+          "en": "The creator repository matches the live site and declares MIT."
+        }
+      },
+      "sources": [
+        {
+          "id": "pinball-ui-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/finktheartist/pinball-ui",
+          "repository_url": "https://github.com/finktheartist/pinball-ui",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/finktheartist/pinball-ui/blob/4d6f0b4a5e9b4c70d1c526e9885674bd0929ccfc/LICENSE",
+            "scope_note": {
+              "zh": "作者仓库声明 MIT；使用时请核对素材及依赖的具体许可。",
+              "en": "The creator’s repository declares MIT; check the terms of individual assets and dependencies."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/finktheartist/pinball-ui/blob/4d6f0b4a5e9b4c70d1c526e9885674bd0929ccfc/README.md",
+              "summary": "The creator links the same demo and describes the image generation and MIT license."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://pinball-ui.vercel.app/",
+              "summary": "The repository links the matching live demo."
+            }
+          ],
+          "checked_at": "2026-11-20",
+          "revision": "4d6f0b4a5e9b4c70d1c526e9885674bd0929ccfc",
+          "publication": "published",
+          "notes": {
+            "zh": "核对了作者仓库、原站与许可证；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live site and license; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

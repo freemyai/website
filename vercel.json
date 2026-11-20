@@ -882,6 +882,16 @@
       "permanent": true
     },
     {
+      "source": "/pinball-ui",
+      "destination": "/en/works/pinball-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/pinball-ui/",
+      "destination": "/en/works/pinball-ui/",
+      "permanent": true
+    },
+    {
       "source": "/plane-of-focus",
       "destination": "/en/works/plane-of-focus/",
       "permanent": true
@@ -2159,6 +2169,16 @@
     {
       "source": "/zh/pendulum-lab/",
       "destination": "/works/pendulum-lab/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pinball-ui",
+      "destination": "/works/pinball-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pinball-ui/",
+      "destination": "/works/pinball-ui/",
       "permanent": true
     },
     {

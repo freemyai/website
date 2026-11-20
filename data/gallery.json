@@ -8873,5 +8873,96 @@
       "featured_order": 2.288
     },
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "pinball-ui",
+    "slug": "pinball-ui",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Pinball UI",
+    "demo_url": "https://pinball-ui.vercel.app/",
+    "creator": {
+      "name": "FinkTheArtist",
+      "profile_url": "https://x.com/crtvTeknologist"
+    },
+    "locales": {
+      "zh": {
+        "title": "Pinball UI：弹珠机里的界面控件",
+        "summary": "把开关、滑块和按钮变成可以操作的弹珠机零件。",
+        "action": "点击开关，观察钢珠滚动和灯光变化。",
+        "why": "复古机件和球体动画让常见控件变成可玩的微交互。",
+        "limit": "本机桌面测试了开关；其他控件、声音和手机未完整测试。"
+      },
+      "en": {
+        "title": "Pinball UI",
+        "summary": "Explore switches, sliders and buttons built as pinball parts.",
+        "action": "Click the toggle and watch its steel ball move and lamp change.",
+        "why": "Retro machine parts and ball animation turn everyday controls into playful interactions.",
+        "limit": "A local desktop check tested the toggle; other controls, audio and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "assets",
+      "tools": [
+        "GPT Image",
+        "Gemini"
+      ],
+      "evidence_url": "https://github.com/finktheartist/pinball-ui",
+      "description": {
+        "zh": "作者仓库称机件图像使用 GPT Image 和 Gemini 图像工具生成。",
+        "en": "The creator’s repository says the component images were generated using GPT Image and a Gemini image tool."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/crtvTeknologist/status/2123468650002653350"
+      },
+      {
+        "url": "https://github.com/finktheartist/pinball-ui"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "本机桌面点击开关，钢珠从左侧移动到右侧；其他控件、声音与手机未完整测试。",
+      "note_en": "A local desktop check clicked the toggle and the ball moved from left to right; other controls, audio and mobile were not fully tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/pinball-ui-960.webp",
+        "base": "pinball-ui",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "奶油色背景上的弹珠机风格开关、滑块和按钮。",
+          "en": "Pinball-style switches, a slider and buttons on a cream background."
+        }
+      },
+      "provenance": {
+        "source_url": "https://pinball-ui.vercel.app/",
+        "captured_at": "2026-11-20",
+        "method": "desktop_browser_capture",
+        "note": "Captured in a local desktop browser; the screenshot was resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.289
+    },
+    "added_at": "2026-11-20"
   }
 ]
