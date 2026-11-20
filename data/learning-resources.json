@@ -2537,6 +2537,149 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "embervale",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "作者仓库链接对应游戏并声明 MIT。",
+          "en": "The creator’s repository links the game and declares MIT."
+        }
+      },
+      "sources": [
+        {
+          "id": "embervale-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/dafioram/embervale",
+          "repository_url": "https://github.com/dafioram/embervale",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/dafioram/embervale/blob/ecb35818924dc0ed4a40052b0b8a81e697b3900b/LICENSE",
+            "scope_note": {
+              "zh": "仓库源码声明 MIT；第三方依赖和素材可能另有许可。",
+              "en": "The repository declares MIT for its source; third-party dependencies and assets may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/dafioram/embervale/blob/ecb35818924dc0ed4a40052b0b8a81e697b3900b/README.md",
+            "summary": "The repository identifies the game and links the same live URL."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://dafioram.github.io/embervale/",
+              "summary": "The repository links this playable deployment."
+            }
+          ],
+          "checked_at": "2026-11-20",
+          "revision": "ecb35818924dc0ed4a40052b0b8a81e697b3900b",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者仓库、原站和许可证；未执行仓库代码。",
+            "en": "Reviewed the creator’s repository, live URL and license; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "polybop",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "检索作者介绍、原站及公开 GitHub，未找到可核验的对应源码仓库。",
+          "en": "The creator’s post, site and public GitHub were searched; no matching source repository was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "ooze2orbit",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "作者仓库链接对应游戏，README 声明 GPL-3.0-or-later。",
+          "en": "The creator’s repository links the game and its README declares GPL-3.0-or-later."
+        }
+      },
+      "sources": [
+        {
+          "id": "ooze2orbit-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/BAMF69/Ooze2Orbit",
+          "repository_url": "https://github.com/BAMF69/Ooze2Orbit",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "GPL-3.0-or-later",
+            "evidence_url": "https://github.com/BAMF69/Ooze2Orbit/blob/91067f352eca0b4fe11183118f08023a7e87a090/LICENSE",
+            "scope_note": {
+              "zh": "仓库 README 声明 GPL 第 3 版或更新版本；依赖及素材请查看各自许可。",
+              "en": "The repository README declares GPL version 3 or later; check separate terms for dependencies and assets."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/BAMF69/Ooze2Orbit/blob/91067f352eca0b4fe11183118f08023a7e87a090/README.md",
+            "summary": "The repository identifies the game and links the same live URL."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://bamf69.github.io/Ooze2Orbit/",
+              "summary": "The repository links this playable deployment."
+            }
+          ],
+          "checked_at": "2026-11-20",
+          "revision": "91067f352eca0b4fe11183118f08023a7e87a090",
+          "publication": "published",
+          "notes": {
+            "zh": "已核对作者仓库、原站和许可证；未执行仓库代码。",
+            "en": "Reviewed the creator’s repository, live URL and license; repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

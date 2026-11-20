@@ -280,6 +280,16 @@
     "permanent": true
   },
   {
+    "source": "/embervale",
+    "destination": "/en/works/embervale/",
+    "permanent": true
+  },
+  {
+    "source": "/embervale/",
+    "destination": "/en/works/embervale/",
+    "permanent": true
+  },
+  {
     "source": "/escapement",
     "destination": "/en/works/escapement/",
     "permanent": true
@@ -770,6 +780,16 @@
     "permanent": true
   },
   {
+    "source": "/ooze2orbit",
+    "destination": "/en/works/ooze2orbit/",
+    "permanent": true
+  },
+  {
+    "source": "/ooze2orbit/",
+    "destination": "/en/works/ooze2orbit/",
+    "permanent": true
+  },
+  {
     "source": "/orbital",
     "destination": "/en/works/orbital/",
     "permanent": true
@@ -847,6 +867,16 @@
   {
     "source": "/planet-forge/",
     "destination": "/en/works/planet-forge/",
+    "permanent": true
+  },
+  {
+    "source": "/polybop",
+    "destination": "/en/works/polybop/",
+    "permanent": true
+  },
+  {
+    "source": "/polybop/",
+    "destination": "/en/works/polybop/",
     "permanent": true
   },
   {
@@ -1520,6 +1550,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/embervale",
+    "destination": "/works/embervale/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/embervale/",
+    "destination": "/works/embervale/",
+    "permanent": true
+  },
+  {
     "source": "/zh/escapement",
     "destination": "/works/escapement/",
     "permanent": true
@@ -2010,6 +2050,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/ooze2orbit",
+    "destination": "/works/ooze2orbit/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/ooze2orbit/",
+    "destination": "/works/ooze2orbit/",
+    "permanent": true
+  },
+  {
     "source": "/zh/orbital",
     "destination": "/works/orbital/",
     "permanent": true
@@ -2087,6 +2137,16 @@
   {
     "source": "/zh/planet-forge/",
     "destination": "/works/planet-forge/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/polybop",
+    "destination": "/works/polybop/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/polybop/",
+    "destination": "/works/polybop/",
     "permanent": true
   },
   {

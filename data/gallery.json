@@ -8517,5 +8517,273 @@
       "featured_order": 2.284
     },
     "added_at": "2026-11-19"
+  },
+  {
+    "id": "embervale",
+    "slug": "embervale",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Embervale: The Ember Road",
+    "demo_url": "https://dafioram.github.io/embervale/",
+    "creator": {
+      "name": "dafioram / real_person321",
+      "profile_url": "https://github.com/dafioram"
+    },
+    "locales": {
+      "zh": {
+        "title": "Embervale：余烬之路",
+        "summary": "在等距视角的山谷中，带领英雄探索村庄与野外。",
+        "action": "点击 New Game，读完开场后用鼠标右键移动角色。",
+        "why": "村庄、任务和小队技能构成一场可以在浏览器开始的奇幻冒险。",
+        "limit": "本机只测试了桌面开场与村庄移动；战斗、后续任务、声音和手机未测试。"
+      },
+      "en": {
+        "title": "Embervale: The Ember Road",
+        "summary": "Guide a hero through a village and the surrounding isometric valley.",
+        "action": "Select New Game, advance the opening dialogue, then right-click to move.",
+        "why": "A village, quests and party abilities set the stage for a browser fantasy adventure.",
+        "limit": "Local desktop checks covered the opening and movement in the village; combat, later quests, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://www.reddit.com/r/ClaudeCode/comments/1wwsfbj/built_a_full_browser_rpg_with_opus_55_high_in_60/",
+      "description": {
+        "zh": "创作者称使用 Claude 应用中的 Opus 5.5 制作游戏，并由自己试玩和指导。",
+        "en": "The creator says the game was made with Opus 5.5 in the Claude app while they playtested and directed it."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1wwsfbj/built_a_full_browser_rpg_with_opus_55_high_in_60/"
+      },
+      {
+        "url": "https://github.com/dafioram/embervale"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "本机桌面进入 Hollowmere，关闭开场提示后右键移动角色，画面中的村庄位置随之变化；战斗、后续任务、声音和手机未测。",
+      "note_en": "A local desktop check entered Hollowmere and moved the hero with a right-click after the introduction; combat, later quests, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/embervale-960.webp",
+        "base": "embervale",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "等距视角的小村庄里，英雄站在房屋、村民和路边的发光石碑旁。",
+          "en": "A hero stands among villagers, houses and a glowing marker in an isometric village."
+        }
+      },
+      "provenance": {
+        "source_url": "https://dafioram.github.io/embervale/",
+        "captured_at": "2026-11-20",
+        "method": "desktop_browser_capture",
+        "note": "Captured during a local desktop browser interaction; the screenshot was resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.285
+    },
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "polybop",
+    "slug": "polybop",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-strategy",
+    "title_original": "Polybop.io",
+    "demo_url": "https://polyvale.foxbase.dev/",
+    "creator": {
+      "name": "IsThisTheInterwebs",
+      "profile_url": "https://www.reddit.com/user/IsThisTheInterwebs/"
+    },
+    "locales": {
+      "zh": {
+        "title": "Polybop.io：节奏塔防",
+        "summary": "把不同乐器放在路边，让防御塔跟着节奏抵挡敌人。",
+        "action": "点击 Play 和 Meadow Run，选择一座塔放在草地上，再发出第一波敌人。",
+        "why": "防御塔既参与战斗，也组成循环演奏的乐队。",
+        "limit": "作者最初介绍时称其为 Polyvale；原体验地址现在显示 Polybop.io。本机测试了桌面放塔和第一波；声音、后续地图和手机未测。"
+      },
+      "en": {
+        "title": "Polybop.io",
+        "summary": "Place instruments beside a path and defend it to a beat.",
+        "action": "Choose Play and Meadow Run, place a tower on the grass, then send the first wave.",
+        "why": "Each defensive tower also contributes to a looping band.",
+        "limit": "The creator originally introduced it as Polyvale; the same experience URL now displays Polybop.io. Local desktop checks placed a tower and sent the first wave; audio, later maps and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Claude Code"
+      ],
+      "evidence_url": "https://www.reddit.com/r/ClaudeAI/comments/1wt9e6q/i_built_polyvale_a_free_browser_tower_defense/",
+      "description": {
+        "zh": "作者在介绍同一体验地址时称使用 Claude Opus 5.5 和 Claude Code 制作游戏；当时作品名为 Polyvale。",
+        "en": "The creator says they made the game at this same URL with Claude Opus 5.5 and Claude Code, introducing it as Polyvale."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1wt9e6q/i_built_polyvale_a_free_browser_tower_defense/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "本机桌面选择 Meadow Run，在草地放置 Pebble 塔后金币由 120 变为 70；发送第一波后计数变为 1/20。声音、后续地图和手机未测。",
+      "note_en": "A local desktop check placed a Pebble tower on Meadow Run, reducing coins from 120 to 70, then sent wave 1 of 20. Audio, later maps and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/polybop-960.webp",
+        "base": "polybop",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "浅绿色草地上有一座蓝色乐器塔，第一波小怪沿蜿蜒道路前进。",
+          "en": "A blue instrument tower on a pale green map as the first wave follows a winding path."
+        }
+      },
+      "provenance": {
+        "source_url": "https://polyvale.foxbase.dev/",
+        "captured_at": "2026-11-20",
+        "method": "desktop_browser_capture",
+        "note": "Captured during a local desktop browser interaction; the screenshot was resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.286
+    },
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "ooze2orbit",
+    "slug": "ooze2orbit",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Ooze2Orbit",
+    "demo_url": "https://bamf69.github.io/Ooze2Orbit/",
+    "creator": {
+      "name": "BAMF69",
+      "profile_url": "https://github.com/BAMF69"
+    },
+    "locales": {
+      "zh": {
+        "title": "Ooze2Orbit：从细胞开始",
+        "summary": "从微小细胞开始，在水中寻找食物并逐步成长。",
+        "action": "进入游戏后选择 Cell 和一种饮食，再用方向键探索。",
+        "why": "饮食、升级和演化让一个小小的池塘成为冒险起点。",
+        "limit": "本机桌面选择了 Cell 阶段和 Herbivore；后续演化、其他阶段、声音及手机未测。"
+      },
+      "en": {
+        "title": "Ooze2Orbit",
+        "summary": "Begin as a tiny cell and explore a pond in search of food.",
+        "action": "Enter the game, choose Cell and a diet, then explore with the arrow keys.",
+        "why": "Diet, upgrades and evolution turn a small pond into the start of an adventure.",
+        "limit": "Local desktop checks entered the Cell stage and chose Herbivore; later evolution, other stages, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/BAMF69/Ooze2Orbit",
+      "description": {
+        "zh": "作者表示自己设计并试玩游戏，与 Claude Code 一起完成代码，使用 Claude Code Game Kit 作为脚手架。",
+        "en": "The creator says they designed and playtested the game with Claude Code, using the Claude Code Game Kit as a scaffold."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/BAMF69/Ooze2Orbit"
+      },
+      {
+        "url": "https://www.reddit.com/r/ClaudeGameDev/comments/1xr5lt7/i_built_a_browser_evolution_game_with_claude_code/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "本机桌面拒绝可选记录，进入 Cell 阶段并选择 Herbivore，观察到细胞和水中食物；后续演化、其他阶段、声音及手机未测。",
+      "note_en": "A local desktop check declined optional recording, entered the Cell stage and chose Herbivore, revealing the cell and food in the pond; later evolution, other stages, audio and mobile were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/ooze2orbit-960.webp",
+        "base": "ooze2orbit",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "深色池水中央是一只绿色细胞，周围漂浮着细小生物。",
+          "en": "A green cell floats among small organisms in a dark pond."
+        }
+      },
+      "provenance": {
+        "source_url": "https://bamf69.github.io/Ooze2Orbit/",
+        "captured_at": "2026-11-20",
+        "method": "desktop_browser_capture",
+        "note": "Captured during a local desktop browser interaction; the screenshot was resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.287
+    },
+    "added_at": "2026-11-20"
   }
 ]

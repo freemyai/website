@@ -744,6 +744,24 @@
       "share_slug": "what-the-water-keeps",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "embervale",
+      "share_slug": "embervale",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "ooze2orbit",
+      "share_slug": "ooze2orbit",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "polybop",
+      "share_slug": "polybop",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }
