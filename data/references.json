@@ -443,5 +443,86 @@
       "featured_order": 2.275
     },
     "added_at": "2026-11-18"
+  },
+  {
+    "id": "pastel-monsters",
+    "slug": "pastel-monsters",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Action Cures Anxiety",
+    "demo_url": "https://pastel-monsters.vercel.app/",
+    "creator": {
+      "name": "Manasi",
+      "profile_url": "https://x.com/maanuhsea"
+    },
+    "locales": {
+      "zh": {
+        "title": "让涂鸦动起来",
+        "summary": "在油画棒质感的纸面画一个形状，让它长出眼睛和四肢。",
+        "action": "选颜色，在纸面涂鸦，然后点击 Bring it to life!；观察角色走动。",
+        "why": "纸张纹理、自由绘画与手绘角色动画结合成一件小小的互动艺术。",
+        "limit": "仅作趣味创意体验，不是心理治疗；AI 参与情况尚未确认。桌面绘画与动画已实测，移动端未测。"
+      },
+      "en": {
+        "title": "Action Cures Anxiety",
+        "summary": "Sketch a shape on textured paper and watch it grow eyes and limbs.",
+        "action": "Choose a pastel, draw on the paper and select Bring it to life! to watch it move.",
+        "why": "Paper texture, free-form drawing and character animation combine into a playful art experiment.",
+        "limit": "A creative experience, not a mental-health treatment; AI involvement is unconfirmed. Desktop drawing and animation were tested; mobile was not."
+      }
+    },
+    "ai_provenance": {
+      "status": "unknown",
+      "usage": "unknown",
+      "tools": [],
+      "evidence_url": null
+    },
+    "sources": [
+      {
+        "url": "https://x.com/maanuhsea/status/2123566845231804428"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Codex 本机桌面用虚构图形涂鸦并点击 Bring it to life!，角色出现眼睛、四肢并移动。",
+      "note_en": "In a local desktop browser, Codex drew an imaginary shape, selected Bring it to life!, and observed eyes, limbs and movement."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/pastel-monsters-960.webp",
+        "base": "pastel-monsters",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "纸面上有红色油画棒涂鸦角色，底部是一排彩色画棒。",
+          "en": "A red pastel-drawn character on paper, with colorful pastels below."
+        }
+      },
+      "provenance": {
+        "source_url": "https://pastel-monsters.vercel.app/",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Real local desktop browser interaction capture."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.298
+    },
+    "added_at": "2026-11-21"
   }
 ]

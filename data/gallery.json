@@ -9319,5 +9319,354 @@
       "featured_order": 2.293
     },
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "calculus-3d-explorer",
+    "slug": "calculus-3d-explorer",
+    "type": "learning",
+    "primary_category": "mathematics",
+    "subcategory": "mathematics-calculus",
+    "title_original": "Calculus 3D Explorer",
+    "demo_url": "https://pianomanstride.github.io/calculus/",
+    "creator": {
+      "name": "Pianoman Stride",
+      "profile_url": "https://github.com/pianomanstride"
+    },
+    "locales": {
+      "zh": {
+        "title": "微积分三维探索器",
+        "summary": "从割线斜率到切线、积分和梯度的七级互动课程。",
+        "action": "拖动 A、B 两个点，观察割线与斜率；完成斜率目标后进入下一关。",
+        "why": "把公式与三维曲线联动，帮助观察微积分概念。",
+        "limit": "Grok 实测第一关并解锁第二关；未验证其余关卡或手机。"
+      },
+      "en": {
+        "title": "Calculus 3D Explorer",
+        "summary": "Seven interactive lessons from secant slope to tangents, integrals and gradients.",
+        "action": "Adjust points A and B, observe the secant and slope, and meet the target to unlock the next lesson.",
+        "why": "Interactive curves connect geometric intuition with formulas.",
+        "limit": "Grok tested the first lesson and unlocked the second; other levels and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5"
+      ],
+      "evidence_url": "https://github.com/pianomanstride/calculus",
+      "description": {
+        "zh": "作者 README 说明使用 Claude Code 中的 Fable 5 循环自主生成应用。",
+        "en": "The creator’s README describes building the app with Fable 5 in Claude Code loop mode."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/pianomanstride/calculus"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面调整两点，斜率达到 1.20，第二关解锁。",
+      "note_en": "Grok adjusted the points to reach a slope of 1.20 and unlocked level two."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/calculus-3d-explorer-960.webp",
+        "base": "calculus-3d-explorer",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "三维抛物线上有 A、B 两点和割线，第一关显示完成。",
+          "en": "Points A and B on a parabola with a secant; the first mission is complete."
+        }
+      },
+      "provenance": {
+        "source_url": "https://pianomanstride.github.io/calculus/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction capture; cropped where useful."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "de"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.294
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "moon-phases-explorer",
+    "slug": "moon-phases-explorer",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-astronomy",
+    "title_original": "Moon Phases Explorer",
+    "demo_url": "https://arunprakash-a.github.io/apps/moon-phases/",
+    "creator": {
+      "name": "Arun Prakash A",
+      "profile_url": "https://arunprakash-a.github.io/"
+    },
+    "locales": {
+      "zh": {
+        "title": "月相探索器",
+        "summary": "操纵日地月三维示意图，观察月相与照亮比例。",
+        "action": "拖动底部 Moon Position 滑块，观察从新月到满月的变化。",
+        "why": "将相对位置、轨道与观测到的月相联系起来。",
+        "limit": "Grok 实测月相滑块；未验证测验全程、声音及手机。"
+      },
+      "en": {
+        "title": "Moon Phases Explorer",
+        "summary": "Explore how the positions of Sun, Earth and Moon change the phase and illuminated fraction.",
+        "action": "Drag the Moon Position slider and observe the change from new to full moon.",
+        "why": "Connect relative positions and orbits with the observed lunar phase.",
+        "limit": "Grok tested the phase slider; the full quiz, audio and mobile remain untested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://arunprakash-a.github.io/2026/06/15/Interactive-Science-Visualizations.html",
+      "description": {
+        "zh": "作者文章说明，为解释月相使用 Claude 制作互动小程序，列出该作品。",
+        "en": "The creator’s article says Claude helped build the interactive applets and identifies this moon-phase work."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://arunprakash-a.github.io/2026/06/15/Interactive-Science-Visualizations.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面将月球位置从 0° 调到 180°，新月变为满月，页面显示 100% 照亮。",
+      "note_en": "Grok moved Moon Position from 0° to 180°, revealing Full Moon and a displayed 100% illuminated fraction."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/moon-phases-explorer-960.webp",
+        "base": "moon-phases-explorer",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "太阳、地球和月球的轨道示意以及满月标签。",
+          "en": "Orbital visualization of the Sun, Earth and Moon with the Full Moon label."
+        }
+      },
+      "provenance": {
+        "source_url": "https://arunprakash-a.github.io/apps/moon-phases/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction capture; cropped where useful."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.295
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "codequest-survival",
+    "slug": "codequest-survival",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "CodeQuest",
+    "demo_url": "https://stark-52.github.io/codequest/",
+    "creator": {
+      "name": "Andy Garcia",
+      "profile_url": "https://www.andygarcia.pro/"
+    },
+    "locales": {
+      "zh": {
+        "title": "CodeQuest：代码生成的像素生存游戏",
+        "summary": "在像素场地躲避怪物，收集经验宝石升级。",
+        "action": "用方向键或 WASD 移动；角色会自动射击。",
+        "why": "作者用单个 HTML 文件和程序化图像、音乐与音效制作游戏，并公开了原型过程。",
+        "limit": "Grok 实测移动并达到二级；未验证最终首领和声音。"
+      },
+      "en": {
+        "title": "CodeQuest",
+        "summary": "Dodge monsters in a pixel-art arena and collect experience gems to level up.",
+        "action": "Move with arrow keys or WASD; the character attacks automatically.",
+        "why": "The creator uses a single HTML file, procedural graphics and sound, and documents the prototype process.",
+        "limit": "Grok tested movement and reached level two; the final boss and audio were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/Stark-52/codequest",
+      "description": {
+        "zh": "作者 README 说明利用 Claude 结对编程制作游戏。",
+        "en": "The creator’s README credits Claude as a live coding partner."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Stark-52/codequest"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面进入游戏并移动，实测截图显示 LV 2、KILLS 12。",
+      "note_en": "Grok entered and moved in the game; the screenshot shows LV 2 and KILLS 12."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/codequest-survival-960.webp",
+        "base": "codequest-survival",
+        "width": 980,
+        "height": 650,
+        "alt": {
+          "zh": "绿色像素竞技场中，英雄、蝙蝠和史莱姆以及二级状态。",
+          "en": "A green pixel arena with the hero, bats, slimes and a level-two HUD."
+        }
+      },
+      "provenance": {
+        "source_url": "https://stark-52.github.io/codequest/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction capture; cropped where useful."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "fr"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.296
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "candy-claw",
+    "slug": "candy-claw",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Candy Claw",
+    "demo_url": "https://www.bubbbly.com/candy-claw",
+    "creator": {
+      "name": "Ann Nguyen",
+      "profile_url": "https://x.com/ann_nnng"
+    },
+    "locales": {
+      "zh": {
+        "title": "Candy Claw：糖果抓娃娃机",
+        "summary": "操作粉色抓爪，尝试抓起彩色包装糖果。",
+        "action": "用屏幕左右按钮或方向键移动抓爪，点击 Grab 或按 Enter 抓取。",
+        "why": "用 3D 糖果和机械动画把品牌营销变成可操作的小作品。",
+        "limit": "这是 TypingMind 的限时营销互动，并非优惠保证或购买建议；Grok 抓起一颗糖果，优惠、声音及手机未测。"
+      },
+      "en": {
+        "title": "Candy Claw",
+        "summary": "Operate a pink mechanical claw and try to lift colorful wrapped candy.",
+        "action": "Use the left and right controls or arrow keys, then select Grab or press Enter.",
+        "why": "3D candy and mechanical animation turn a brand campaign into a playful interaction.",
+        "limit": "This is a time-limited TypingMind marketing experience, not an offer or purchasing recommendation. Grok lifted a candy; discounts, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "GPT Astra 6.2"
+      ],
+      "evidence_url": "https://x.com/ann_nnng/status/2123056032066990155",
+      "description": {
+        "zh": "作者原帖称让 GPT Astra 6.2 为 TypingMind 黑色星期五营销制作这件互动。",
+        "en": "The creator’s post credits GPT Astra 6.2 for creating this TypingMind Black Friday marketing interaction."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/ann_nnng/status/2123056032066990155"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面按右方向键和 Enter，看到机械抓爪举起紫色包装糖果；未测试奖品。",
+      "note_en": "Grok pressed Right and Enter and observed the claw lift a purple wrapped candy; rewards were not verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/candy-claw-960.webp",
+        "base": "candy-claw",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "粉色抓爪在五彩糖果堆上方抓起一颗紫色糖果。",
+          "en": "A pink claw lifts a purple wrapped candy above a colorful pile."
+        }
+      },
+      "provenance": {
+        "source_url": "https://www.bubbbly.com/candy-claw",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Real Grok Bot desktop browser interaction capture; cropped where useful."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.297
+    },
+    "added_at": "2026-11-21"
   }
 ]

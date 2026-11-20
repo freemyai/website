@@ -798,6 +798,36 @@
       "share_slug": "hivebreaker",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "calculus-3d-explorer",
+      "share_slug": "calculus-3d-explorer",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "moon-phases-explorer",
+      "share_slug": "moon-phases-explorer",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "codequest-survival",
+      "share_slug": "codequest-survival",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "candy-claw",
+      "share_slug": "candy-claw",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "pastel-monsters",
+      "share_slug": "pastel-monsters",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

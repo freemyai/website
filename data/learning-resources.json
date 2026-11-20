@@ -2846,6 +2846,191 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "calculus-3d-explorer",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "作者仓库与原站对应，未发现明确许可证。",
+          "en": "The repository matches the live experience; no explicit license was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "calculus-3d-explorer-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/pianomanstride/calculus",
+          "repository_url": "https://github.com/pianomanstride/calculus",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "仓库代码可公开阅读；未找到明确许可，不能视为开源。",
+              "en": "The code is publicly readable; no explicit license was verified."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/pianomanstride/calculus/blob/53f0d2bcb5b93c4d8369ec97da3a0113c8651d1a/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://pianomanstride.github.io/calculus/",
+              "summary": "The original repository links this live experience."
+            }
+          ],
+          "checked_at": "2026-11-21",
+          "revision": "53f0d2bcb5b93c4d8369ec97da3a0113c8651d1a",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "moon-phases-explorer",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "作者文章链接此应用，但尚未确认具体代码目录和许可证。",
+          "en": "The creator article links this app; a specific code directory and license were not confirmed."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "codequest-survival",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "仓库 README 指向原站，固定版本 LICENSE 为 MIT，另公开开发原型过程。",
+          "en": "The README links this site, the pinned LICENSE is MIT, and the development prototypes are public."
+        }
+      },
+      "sources": [
+        {
+          "id": "codequest-survival-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Stark-52/codequest",
+          "repository_url": "https://github.com/Stark-52/codequest",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Stark-52/codequest/blob/6b559589a83f5718f2b574fce0d0278782f70ef7/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Stark-52/codequest/blob/6b559589a83f5718f2b574fce0d0278782f70ef7/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://stark-52.github.io/codequest/",
+              "summary": "The original repository links this live experience."
+            }
+          ],
+          "checked_at": "2026-11-21",
+          "revision": "6b559589a83f5718f2b574fce0d0278782f70ef7",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "candy-claw",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "检索作品和作者原帖，未找到匹配仓库及明确许可。",
+          "en": "Reviewed the work and creator post; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "pastel-monsters",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "核验作者原帖与体验地址；未取得作品对应 AI 创作依据、源码仓库或许可证。",
+          "en": "Verified the creator post and experience; no work-specific AI provenance, source repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

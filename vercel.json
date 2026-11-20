@@ -162,6 +162,26 @@
       "permanent": true
     },
     {
+      "source": "/calculus-3d-explorer",
+      "destination": "/en/works/calculus-3d-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/calculus-3d-explorer/",
+      "destination": "/en/works/calculus-3d-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/candy-claw",
+      "destination": "/en/works/candy-claw/",
+      "permanent": true
+    },
+    {
+      "source": "/candy-claw/",
+      "destination": "/en/works/candy-claw/",
+      "permanent": true
+    },
+    {
       "source": "/cd-case",
       "destination": "/en/works/cd-case/",
       "permanent": true
@@ -219,6 +239,16 @@
     {
       "source": "/clearwater/",
       "destination": "/en/works/clearwater/",
+      "permanent": true
+    },
+    {
+      "source": "/codequest-survival",
+      "destination": "/en/works/codequest-survival/",
+      "permanent": true
+    },
+    {
+      "source": "/codequest-survival/",
+      "destination": "/en/works/codequest-survival/",
       "permanent": true
     },
     {
@@ -762,6 +792,16 @@
       "permanent": true
     },
     {
+      "source": "/moon-phases-explorer",
+      "destination": "/en/works/moon-phases-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/moon-phases-explorer/",
+      "destination": "/en/works/moon-phases-explorer/",
+      "permanent": true
+    },
+    {
       "source": "/mpump",
       "destination": "/en/works/mpump/",
       "permanent": true
@@ -899,6 +939,16 @@
     {
       "source": "/papertrails/",
       "destination": "/en/works/papertrails/",
+      "permanent": true
+    },
+    {
+      "source": "/pastel-monsters",
+      "destination": "/en/works/pastel-monsters/",
+      "permanent": true
+    },
+    {
+      "source": "/pastel-monsters/",
+      "destination": "/en/works/pastel-monsters/",
       "permanent": true
     },
     {
@@ -1492,6 +1542,26 @@
       "permanent": true
     },
     {
+      "source": "/zh/calculus-3d-explorer",
+      "destination": "/works/calculus-3d-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/calculus-3d-explorer/",
+      "destination": "/works/calculus-3d-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/candy-claw",
+      "destination": "/works/candy-claw/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/candy-claw/",
+      "destination": "/works/candy-claw/",
+      "permanent": true
+    },
+    {
       "source": "/zh/cd-case",
       "destination": "/works/cd-case/",
       "permanent": true
@@ -1549,6 +1619,16 @@
     {
       "source": "/zh/clearwater/",
       "destination": "/works/clearwater/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/codequest-survival",
+      "destination": "/works/codequest-survival/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/codequest-survival/",
+      "destination": "/works/codequest-survival/",
       "permanent": true
     },
     {
@@ -2092,6 +2172,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/moon-phases-explorer",
+      "destination": "/works/moon-phases-explorer/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/moon-phases-explorer/",
+      "destination": "/works/moon-phases-explorer/",
+      "permanent": true
+    },
+    {
       "source": "/zh/mpump",
       "destination": "/works/mpump/",
       "permanent": true
@@ -2229,6 +2319,16 @@
     {
       "source": "/zh/papertrails/",
       "destination": "/works/papertrails/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pastel-monsters",
+      "destination": "/works/pastel-monsters/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pastel-monsters/",
+      "destination": "/works/pastel-monsters/",
       "permanent": true
     },
     {
