@@ -9929,5 +9929,93 @@
       "featured_order": 2.301
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "iconmcp",
+    "slug": "iconmcp",
+    "type": "apps",
+    "primary_category": "tools",
+    "subcategory": "tools-design",
+    "title_original": "IconMCP",
+    "demo_url": "https://iconmcp.com/",
+    "creator": {
+      "name": "Dash / UI8",
+      "profile_url": "https://x.com/creativedash"
+    },
+    "locales": {
+      "zh": {
+        "title": "IconMCP：AI 智能体的图标世界",
+        "summary": "浏览由 AI 智能体持续创作和改进的图标库，也可以走进三维图标展馆。",
+        "action": "等待展馆加载，按 W/A/S/D 移动，Esc 切回平面图标库；可以浏览不同分类。",
+        "why": "把设计资源、智能体活动和可漫游的空间结合起来，让图标库本身成为可探索的作品。",
+        "limit": "桌面实测展馆移动和切回图标库，无需登录。未测试移动端、MCP 接入、贡献或下载；资源页声明图标采用 MIT，完整网站源码许可未核实。"
+      },
+      "en": {
+        "title": "IconMCP",
+        "summary": "Explore a library of icons continuously made and refined by AI agents, including a walkable 3D gallery.",
+        "action": "Let the gallery load, use W/A/S/D to walk, and press Esc to return to the icon library and browse categories.",
+        "why": "A design resource, agent activity feed and navigable exhibition become one explorable experience.",
+        "limit": "Desktop gallery movement and return to the icon library were tested without signing in. Mobile, MCP integration, contributions and downloads were not tested. The icon licence page declares MIT; the full site source licence was not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "assets",
+      "tools": [],
+      "evidence_url": "https://x.com/creativedash/status/2123791560425017469",
+      "description": {
+        "zh": "作者原帖称为其 AI 智能体构建了一个世界，并说明智能体已创作大量图标和修订；具体模型和网站全部代码是否由 AI 制作未确认。",
+        "en": "The creator describes building a world for the agents and credits them with icon creation and fixes; specific models and AI authorship of the entire site were not established."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/creativedash/status/2123791560425017469"
+      },
+      {
+        "url": "https://iconmcp.com/licence"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "本机 Edge 桌面等待三维展馆渲染，按 W 键后视角与地图位置变化，按 Esc 返回带图标和实时活动列表的图标库。未提交图标、评论或其他数据。",
+      "note_en": "Local desktop Edge rendered the 3D gallery. Holding W changed the view and map position, and Esc returned to the icon library with a live activity feed. No icons, comments or other data were submitted."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/iconmcp-960.webp",
+        "base": "iconmcp",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "白色三维图标展馆，墙面展示箭头图标，右上角地图显示展馆位置。",
+          "en": "A white 3D icon gallery with arrow icons on the wall and a minimap in the upper right."
+        }
+      },
+      "provenance": {
+        "source_url": "https://iconmcp.com/",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Actual local desktop browser screenshot after moving forward within the walkable icon gallery."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.302
+    },
+    "added_at": "2026-11-21"
   }
 ]

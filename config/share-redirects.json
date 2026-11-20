@@ -600,6 +600,16 @@
     "permanent": true
   },
   {
+    "source": "/iconmcp",
+    "destination": "/en/works/iconmcp/",
+    "permanent": true
+  },
+  {
+    "source": "/iconmcp/",
+    "destination": "/en/works/iconmcp/",
+    "permanent": true
+  },
+  {
     "source": "/inference-lab",
     "destination": "/en/works/inference-lab/",
     "permanent": true
@@ -2007,6 +2017,16 @@
   {
     "source": "/zh/hyperbrick/",
     "destination": "/works/hyperbrick/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/iconmcp",
+    "destination": "/works/iconmcp/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/iconmcp/",
+    "destination": "/works/iconmcp/",
     "permanent": true
   },
   {

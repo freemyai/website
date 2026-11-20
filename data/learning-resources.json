@@ -3179,6 +3179,27 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "iconmcp",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "原站许可页面声明图标可以按 MIT 使用，少量图标沿用其他库的许可；尚未确认网站或后端的对应完整源码仓库，不标为网站开源。",
+          "en": "The official licence page declares MIT for the icons, with some shapes retaining upstream licences; no matching full website or backend repository was verified, so the site is not labelled open source."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
