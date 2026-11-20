@@ -2762,6 +2762,90 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "nectar-bee-garden",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "查阅作者帖子、体验站点与公开源码线索，未找到匹配仓库或明确许可证。",
+          "en": "Reviewed the creator’s post, experience and public source leads; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "sled-send",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "查阅作者帖子、体验站点与公开源码线索，未找到匹配仓库或明确许可证。",
+          "en": "Reviewed the creator’s post, experience and public source leads; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "fall-line-mtb",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "查阅作者帖子、体验站点与公开源码线索，未找到匹配仓库或明确许可证。",
+          "en": "Reviewed the creator’s post, experience and public source leads; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "hivebreaker",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "查阅作者帖子、体验站点与公开源码线索，未找到匹配仓库或明确许可证。",
+          "en": "Reviewed the creator’s post, experience and public source leads; no matching repository or explicit license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

@@ -347,6 +347,16 @@
       "permanent": true
     },
     {
+      "source": "/fall-line-mtb",
+      "destination": "/en/works/fall-line-mtb/",
+      "permanent": true
+    },
+    {
+      "source": "/fall-line-mtb/",
+      "destination": "/en/works/fall-line-mtb/",
+      "permanent": true
+    },
+    {
       "source": "/fall-line/",
       "destination": "/en/works/fall-line/",
       "permanent": true
@@ -499,6 +509,16 @@
     {
       "source": "/hidden-layers/",
       "destination": "/en/works/hidden-layers/",
+      "permanent": true
+    },
+    {
+      "source": "/hivebreaker",
+      "destination": "/en/works/hivebreaker/",
+      "permanent": true
+    },
+    {
+      "source": "/hivebreaker/",
+      "destination": "/en/works/hivebreaker/",
       "permanent": true
     },
     {
@@ -779,6 +799,16 @@
     {
       "source": "/nakaya-snow-crystals/",
       "destination": "/en/works/nakaya-snow-crystals/",
+      "permanent": true
+    },
+    {
+      "source": "/nectar-bee-garden",
+      "destination": "/en/works/nectar-bee-garden/",
+      "permanent": true
+    },
+    {
+      "source": "/nectar-bee-garden/",
+      "destination": "/en/works/nectar-bee-garden/",
       "permanent": true
     },
     {
@@ -1069,6 +1099,16 @@
     {
       "source": "/sky-lab/",
       "destination": "/en/works/sky-lab/",
+      "permanent": true
+    },
+    {
+      "source": "/sled-send",
+      "destination": "/en/works/sled-send/",
+      "permanent": true
+    },
+    {
+      "source": "/sled-send/",
+      "destination": "/en/works/sled-send/",
       "permanent": true
     },
     {
@@ -1637,6 +1677,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/fall-line-mtb",
+      "destination": "/works/fall-line-mtb/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/fall-line-mtb/",
+      "destination": "/works/fall-line-mtb/",
+      "permanent": true
+    },
+    {
       "source": "/zh/fall-line/",
       "destination": "/works/fall-line/",
       "permanent": true
@@ -1789,6 +1839,16 @@
     {
       "source": "/zh/hidden-layers/",
       "destination": "/works/hidden-layers/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/hivebreaker",
+      "destination": "/works/hivebreaker/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/hivebreaker/",
+      "destination": "/works/hivebreaker/",
       "permanent": true
     },
     {
@@ -2069,6 +2129,16 @@
     {
       "source": "/zh/nakaya-snow-crystals/",
       "destination": "/works/nakaya-snow-crystals/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/nectar-bee-garden",
+      "destination": "/works/nectar-bee-garden/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/nectar-bee-garden/",
+      "destination": "/works/nectar-bee-garden/",
       "permanent": true
     },
     {
@@ -2359,6 +2429,16 @@
     {
       "source": "/zh/sky-lab/",
       "destination": "/works/sky-lab/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/sled-send",
+      "destination": "/works/sled-send/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/sled-send/",
+      "destination": "/works/sled-send/",
       "permanent": true
     },
     {

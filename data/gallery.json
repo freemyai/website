@@ -8964,5 +8964,360 @@
       "featured_order": 2.289
     },
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "nectar-bee-garden",
+    "slug": "nectar-bee-garden",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Nectar — A Bee’s Garden",
+    "demo_url": "https://nectar-bee-garden.vercel.app/",
+    "creator": {
+      "name": "ball-zee / KaladinOG",
+      "profile_url": "https://x.com/KaladinOG"
+    },
+    "locales": {
+      "zh": {
+        "title": "Nectar：蜜蜂的花园",
+        "summary": "化身蜜蜂，在色彩丰富的花园中飞行。",
+        "action": "点击 CLICK TO FLY，使用 W 飞行、E 上升，寻找花朵。",
+        "why": "近距离的花朵和蜜蜂视角构成一段花园探索。",
+        "limit": "Grok 桌面测试进入花园并移动；采蜜、声音与手机未测。"
+      },
+      "en": {
+        "title": "Nectar — A Bee’s Garden",
+        "summary": "Become a bee and fly through a colorful garden.",
+        "action": "Select CLICK TO FLY, use W to fly and E to rise, then look for a blossom.",
+        "why": "A close-up bee perspective turns the garden into a small exploration world.",
+        "limit": "Grok desktop testing entered and moved in the garden; nectar collection, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/KaladinOG/status/2122815191431930197",
+      "description": {
+        "zh": "作者在原帖说明使用 Claude Fable 5.2 创作此作品。",
+        "en": "The creator credits Claude Fable 5.2 in the original post."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/KaladinOG/status/2122815191431930197"
+      },
+      {
+        "url": "https://x.com/KaladinOG/status/2122815192715407621"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "Grok 桌面点击进入后按 W/E，出现花朵提示、蜜蜂与镜头移动；其余未测。",
+      "note_en": "Grok desktop testing entered the garden, pressed W/E and observed movement and a blossom hint. Other features were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/nectar-bee-garden-960.webp",
+        "base": "nectar-bee-garden",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "蜜蜂在明亮的多彩花丛上方飞行。",
+          "en": "A bee flies over colorful flowers."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nectar-bee-garden.vercel.app/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured in Grok Bot’s actual desktop browser interaction; browser chrome was cropped where present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.29
+    },
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "sled-send",
+    "slug": "sled-send",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Sled Send",
+    "demo_url": "https://wavedash.com/games/sled-send",
+    "creator": {
+      "name": "LLAMA 3D Studio",
+      "profile_url": "https://x.com/llama3dstudio"
+    },
+    "locales": {
+      "zh": {
+        "title": "Sled Send：雪地摩托",
+        "summary": "驾驶雪地摩托，从雪山起点向坡下行驶。",
+        "action": "点击 Ride，等待倒计时后按 W 或上方向键加速。",
+        "why": "雪地山坡、计时与速度反馈组成浏览器运动游戏。",
+        "limit": "Grok 桌面进入比赛并加速，软件渲染较慢；完整赛道、多人、声音及手机未测。"
+      },
+      "en": {
+        "title": "Sled Send",
+        "summary": "Ride a snowmobile down a snowy mountain.",
+        "action": "Choose Ride, wait for the countdown, then hold W or Up to accelerate.",
+        "why": "Mountain slopes, timing and speed feedback form a browser sports game.",
+        "limit": "Grok desktop testing started a run and accelerated with slow software rendering; full courses, multiplayer, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/llama3dstudio/status/2122979856770088961",
+      "description": {
+        "zh": "作者在原帖说明使用 Claude Opus 5.5 创作此作品。",
+        "en": "The creator credits Claude Opus 5.5 in the original post."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/llama3dstudio/status/2122979856770088961"
+      },
+      {
+        "url": "https://x.com/llama3dstudio/status/2122979861119820240"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "Grok 桌面无需登录进入赛道，速度从 0 到 13 km/h；软件渲染较慢。",
+      "note_en": "Grok desktop testing started a run without signing in and reached 13 km/h; software rendering was slow."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/sled-send-960.webp",
+        "base": "sled-send",
+        "width": 1345,
+        "height": 756,
+        "alt": {
+          "zh": "雪地摩托从 Firwood Peak 起点下坡。",
+          "en": "A snowmobile heads down from the Firwood Peak start."
+        }
+      },
+      "provenance": {
+        "source_url": "https://wavedash.com/games/sled-send",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured in Grok Bot’s actual desktop browser interaction; browser chrome was cropped where present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.291
+    },
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "fall-line-mtb",
+    "slug": "fall-line-mtb",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Fall Line",
+    "demo_url": "https://fallline-9zo.pages.dev/",
+    "creator": {
+      "name": "BananaOfMercy",
+      "profile_url": "https://x.com/BananaOfMercy"
+    },
+    "locales": {
+      "zh": {
+        "title": "Fall Line：山地自行车",
+        "summary": "沿森林山路骑行，感受转向、速度和重心变化。",
+        "action": "点击 Click to ride，按 W 踩踏、A/D 转向。",
+        "why": "低多边形山路和物理反馈让骑行路线成为挑战。",
+        "limit": "这是另一件同名作品，并非站内滑雪版 Fall Line。Grok 桌面实测短途骑行；其他路线、声音和手机未测。"
+      },
+      "en": {
+        "title": "Fall Line: Mountain Biking",
+        "summary": "Ride along forest trails and explore speed, steering and balance.",
+        "action": "Select Click to ride, use W to pedal and A/D to steer.",
+        "why": "Low-poly trails and physics feedback make choosing a riding line a challenge.",
+        "limit": "This is distinct from the other Fall Line skiing work on Freemy. Grok desktop testing completed a short ride; other routes, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/BananaOfMercy/status/2123037856398733438",
+      "description": {
+        "zh": "作者在原帖说明使用 Claude Fable 5.2 创作此作品。",
+        "en": "The creator credits Claude Fable 5.2 in the original post."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/BananaOfMercy/status/2123037856398733438"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "Grok 桌面进入骑行，计时 14.3 秒后出现摔车提示；测试环境无硬件加速。",
+      "note_en": "Grok desktop testing entered a ride and reached a crash prompt after 14.3 seconds; graphics acceleration was unavailable."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/fall-line-mtb-960.webp",
+        "base": "fall-line-mtb",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "低多边形森林赛道上，一辆红色山地车和骑手。",
+          "en": "A red mountain bike and rider on a low-poly forest trail."
+        }
+      },
+      "provenance": {
+        "source_url": "https://fallline-9zo.pages.dev/",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured in Grok Bot’s actual desktop browser interaction; browser chrome was cropped where present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.292
+    },
+    "added_at": "2026-11-20"
+  },
+  {
+    "id": "hivebreaker",
+    "slug": "hivebreaker",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Hivebreaker",
+    "demo_url": "https://wavedash.com/games/hivebreaker",
+    "creator": {
+      "name": "Ibrahim Boona / boona11",
+      "profile_url": "https://x.com/boona11"
+    },
+    "locales": {
+      "zh": {
+        "title": "Hivebreaker：机甲科幻游戏",
+        "summary": "进入未来殖民地的三维机甲游戏场景。",
+        "action": "在原站等待游戏加载，点击 DEPLOY 进入关卡。",
+        "why": "霓虹城市和第三人称机甲视角构成科幻游戏体验。",
+        "limit": "Grok 桌面无需登录进入关卡；移动、战斗、其他关卡、声音和手机未进一步测试。"
+      },
+      "en": {
+        "title": "Hivebreaker",
+        "summary": "Enter a 3D sci-fi mech game set in a future colony.",
+        "action": "Allow the game to load, then select DEPLOY to enter the level.",
+        "why": "Neon city scenery and a third-person mech perspective form the sci-fi experience.",
+        "limit": "Grok desktop testing entered a level without login; movement, combat, later levels, audio and mobile were not tested further."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/boona11/status/2123098788340400226",
+      "description": {
+        "zh": "作者在原帖说明使用 Claude Fable 5.2 创作此作品。",
+        "en": "The creator credits Claude Fable 5.2 in the original post."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/boona11/status/2123098788340400226"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "Grok 桌面点击 DEPLOY，显示 Meridian Colony 入口及第三人称机甲；仅测试进入。",
+      "note_en": "Grok desktop testing selected DEPLOY and reached the Meridian Colony entrance with the third-person mech visible; only entry was tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/hivebreaker-960.webp",
+        "base": "hivebreaker",
+        "width": 1345,
+        "height": 604,
+        "alt": {
+          "zh": "机甲站在霓虹城市入口的平台上。",
+          "en": "A mech stands on a platform at the entrance to a neon city."
+        }
+      },
+      "provenance": {
+        "source_url": "https://wavedash.com/games/hivebreaker",
+        "captured_at": "2026-11-20",
+        "method": "grok_bot_desktop_capture",
+        "note": "Captured in Grok Bot’s actual desktop browser interaction; browser chrome was cropped where present."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.293
+    },
+    "added_at": "2026-11-20"
   }
 ]
