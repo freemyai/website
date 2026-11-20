@@ -8785,5 +8785,93 @@
       "featured_order": 2.287
     },
     "added_at": "2026-11-20"
+  },
+  {
+    "id": "coralback-ray",
+    "slug": "coralback-ray",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Coralback Ray",
+    "demo_url": "https://coralback-ray.wasmer.app/",
+    "creator": {
+      "name": "The Bugged Dev",
+      "profile_url": "https://x.com/thebuggeddev"
+    },
+    "locales": {
+      "zh": {
+        "title": "Coralback Ray：跟随珊瑚鳐下潜",
+        "summary": "跟随一只想象中的珊瑚鳐，潜入逐渐变暗的海水。",
+        "action": "向下滚动，让珊瑚鳐从海面潜向海底。",
+        "why": "会游动的海洋生物、光线与深度变化组成一段可探索的三维场景。",
+        "limit": "本机桌面测试了滚动下潜；其他动作、声音和手机未完整测试。"
+      },
+      "en": {
+        "title": "Coralback Ray",
+        "summary": "Follow an imagined coralback ray into the darkening sea.",
+        "action": "Scroll down to follow the ray beneath the surface.",
+        "why": "A swimming creature, changing light and depth create an explorable 3D scene.",
+        "limit": "A local desktop check tested the dive by scrolling; other interactions, audio and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2",
+        "Tripo AI"
+      ],
+      "evidence_url": "https://x.com/thebuggeddev/status/2123021723188744248",
+      "description": {
+        "zh": "作者称使用 Tripo AI 生成模型，并用 Claude Fable 5.2 制作场景与动画。",
+        "en": "The creator says the model was generated with Tripo AI and the scene and animation were built with Claude Fable 5.2."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/thebuggeddev/status/2123021723188744248"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-20",
+      "note": "本机桌面浏览器滚动后，深度从 4 米变为 79 米；其他动作、声音和手机未完整测试。",
+      "note_en": "In a local desktop browser, scrolling changed the depth from 4 m to 79 m; other interactions, audio and mobile were not fully tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/coralback-ray-960.webp",
+        "base": "coralback-ray",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "一只色彩斑斓的想象海洋生物在蓝色海水中游动。",
+          "en": "A colorful imagined sea creature swims through blue water."
+        }
+      },
+      "provenance": {
+        "source_url": "https://coralback-ray.wasmer.app/",
+        "captured_at": "2026-11-20",
+        "method": "desktop_browser_capture",
+        "note": "Captured in a local desktop browser; the screenshot was resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.288
+    },
+    "added_at": "2026-11-20"
   }
 ]

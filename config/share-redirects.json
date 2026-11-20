@@ -230,6 +230,16 @@
     "permanent": true
   },
   {
+    "source": "/coralback-ray",
+    "destination": "/en/works/coralback-ray/",
+    "permanent": true
+  },
+  {
+    "source": "/coralback-ray/",
+    "destination": "/en/works/coralback-ray/",
+    "permanent": true
+  },
+  {
     "source": "/drone-lab",
     "destination": "/en/works/drone-lab/",
     "permanent": true
@@ -1497,6 +1507,16 @@
   {
     "source": "/zh/contrib-suite/",
     "destination": "/works/contrib-suite/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/coralback-ray",
+    "destination": "/works/coralback-ray/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/coralback-ray/",
+    "destination": "/works/coralback-ray/",
     "permanent": true
   },
   {

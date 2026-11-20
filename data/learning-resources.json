@@ -2680,6 +2680,27 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "coralback-ray",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-20",
+        "notes": {
+          "zh": "检索作者帖子与公开 GitHub，未找到可核验的对应作品源码或许可。",
+          "en": "Searched the creator’s post and public GitHub; no matching source repository or license was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
