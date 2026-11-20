@@ -10017,5 +10017,277 @@
       "featured_order": 2.302
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "tide-atlas",
+    "slug": "tide-atlas",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-adventure",
+    "title_original": "Tide Atlas",
+    "demo_url": "https://tide-atlas-six.vercel.app/",
+    "creator": {
+      "name": "Vib3Coded",
+      "profile_url": "https://x.com/vib3coded"
+    },
+    "locales": {
+      "zh": {
+        "title": "Tide Atlas：日蚀之海",
+        "summary": "行走于映照日蚀的镜面海上，探索天文观测装置。",
+        "action": "用 WASD 移动，拖动视角，沿着 Armillary 等地标探索。",
+        "why": "水面倒影、天空与天文仪器组成一段奇幻探索。",
+        "limit": "Grok 实测人物移动，未完成望远镜、星座互动或完整流程；手机未测。"
+      },
+      "en": {
+        "title": "Tide Atlas",
+        "summary": "Walk across a mirror sea under an eclipse and explore astronomical structures.",
+        "action": "Move with WASD, drag the view, and follow landmarks such as the Armillary.",
+        "why": "Water reflections, sky and astronomical instruments create a fantastical exploration scene.",
+        "limit": "Grok tested movement; telescope interactions, the complete story and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "GPT Astra 6.2"
+      ],
+      "evidence_url": "https://x.com/vib3coded/status/2123475293575037089",
+      "description": {
+        "zh": "作者原帖说明使用 Astra 6.2 制作单 HTML 的 Three.js 游戏，并在回复中提供体验链接。",
+        "en": "The creator credits Astra 6.2 for this single-HTML Three.js game and links the live experience in a reply."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/vib3coded/status/2123475293575037089"
+      },
+      {
+        "url": "https://x.com/vib3coded/status/2123475476509278222"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面在 Eclipse Sea 使用 WASD 向 Armillary 移动，距离从约37米变为23米。",
+      "note_en": "Grok used WASD in Eclipse Sea and approached the Armillary, reducing the displayed distance from about 37 m to 23 m."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/tide-atlas-960.webp",
+        "base": "tide-atlas",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "斗篷角色置身日蚀倒影的镜面海，前方有石质拱门与天文仪器。",
+          "en": "A cloaked character stands on a reflective eclipse sea facing stone arches and astronomical instruments."
+        }
+      },
+      "provenance": {
+        "source_url": "https://tide-atlas-six.vercel.app/",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Representative screenshot captured in Grok Bot’s actual desktop browser interaction on 2026-11-21."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.303
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "chongqing-browser-tour",
+    "slug": "chongqing-browser-tour",
+    "type": "experiments",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "重庆（试玩版）",
+    "demo_url": "https://lab.ytdeepsea.com/games/chongqing/",
+    "creator": {
+      "name": "Gary曹淦",
+      "profile_url": "https://x.com/GaryAIytb"
+    },
+    "locales": {
+      "zh": {
+        "title": "重庆（试玩版）",
+        "summary": "探索以重庆城市景观为灵感的三维浏览器体验。",
+        "action": "通过底部模式按钮切换观光、驾驶、无人机或轻轨；从李子坝等场景观察城市。",
+        "why": "把山城的地标、江景、交通与昼夜氛围融合在一个可探索的虚拟空间。",
+        "limit": "是艺术化、压缩的城市试玩，不是真实精确地图。Grok 实测观光切换驾驶，未完成驾驶路线或轻轨乘坐；手机未测。"
+      },
+      "en": {
+        "title": "Chongqing (Browser Demo)",
+        "summary": "Explore a 3D browser experience inspired by the city of Chongqing.",
+        "action": "Switch between Tour, Drive, Drone and Monorail using the bottom controls and explore scenes such as Liziba Station.",
+        "why": "Landmarks, river views, transport and time-of-day atmosphere form an explorable virtual city.",
+        "limit": "This is a stylized, compressed city demo, not an accurate map. Grok tested switching from Tour to Drive, not a full drive or monorail ride; mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/GaryAIytb/status/2123331645046714382",
+      "description": {
+        "zh": "作者在原帖介绍使用 Claude Fable 5.2 通过 Python 与 Blender 构建试玩版；部分现成素材及其许可在原站列明。",
+        "en": "The creator credits Claude Fable 5.2 with building the demo using Python and Blender; the official credits identify third-party assets and their licences."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/GaryAIytb/status/2123331645046714382"
+      },
+      {
+        "url": "https://lab.ytdeepsea.com/games/chongqing/credits.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面从洪崖洞夜景 Tour 模式切换到李子坝站 Drive 模式，显示第三人称车辆与新场景；未实测行驶路线。",
+      "note_en": "Grok switched from a Hongyadong Tour view to Drive at Liziba Station, showing a third-person vehicle and a different scene; a driving route was not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/chongqing-browser-tour-960.webp",
+        "base": "chongqing-browser-tour",
+        "width": 1920,
+        "height": 1070,
+        "alt": {
+          "zh": "蓝调时刻的江边街道、黄色出租车、李子坝站与城市灯光。",
+          "en": "A yellow taxi on a riverside street at blue hour beside Liziba Station."
+        }
+      },
+      "provenance": {
+        "source_url": "https://lab.ytdeepsea.com/games/chongqing/",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Representative screenshot captured in Grok Bot’s actual desktop browser interaction on 2026-11-21."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "zh",
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.304
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "gemini-neon-pinball",
+    "slug": "gemini-neon-pinball",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Gemini Neon — Pinball Candidate Showcase",
+    "demo_url": "https://pinball.andrewvoirol.com/",
+    "creator": {
+      "name": "Andrew V",
+      "profile_url": "https://x.com/AI_Andrew"
+    },
+    "locales": {
+      "zh": {
+        "title": "Gemini Neon：霓虹弹珠台",
+        "summary": "进入带有天文台和霓虹主题的三维浏览器弹珠台。",
+        "action": "按提示长按空格发球，使用左右挡板；尝试不同桌台。",
+        "why": "发光轨道、星座图案与细致的桌面场景构成虚拟弹珠机。",
+        "limit": "与站内 Pinball UI 为不同作品。Grok 实测 WebGL2 回退模式启动一球，未完成整局、切换桌台、验证原生 WebGPU 或音频；手机未测。"
+      },
+      "en": {
+        "title": "Gemini Neon — Pinball Candidate Showcase",
+        "summary": "Explore a 3D browser pinball machine with neon and celestial themes.",
+        "action": "Hold Space to launch and use the left and right flippers; try the alternate table.",
+        "why": "Glowing rails, constellation motifs and detailed scene design create a virtual pinball cabinet.",
+        "limit": "This is distinct from Freemy’s Pinball UI. Grok launched a ball in WebGL2 fallback; a full game, alternate table, native WebGPU, audio and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Gemini 4 Neon",
+        "Antigravity Swarm"
+      ],
+      "evidence_url": "https://x.com/AI_Andrew/status/2123472215119106276",
+      "description": {
+        "zh": "作者原帖介绍浏览器弹珠台并署名 Gemini 4 Neon 与 Antigravity Swarm；作者回复提供原站。",
+        "en": "The creator’s post describes the browser pinball build and credits Gemini 4 Neon and Antigravity Swarm; a reply links the live site."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/AI_Andrew/status/2123472215119106276"
+      },
+      {
+        "url": "https://x.com/AI_Andrew/status/2123473012800598233"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面开启 Nocturne Observatory 桌台发球流程，画面显示 Ball in Play、Skill Shot 与 Ball Save Protected；使用 WebGL2 回退约20 FPS。",
+      "note_en": "Grok started a launch on the Nocturne Observatory table; Ball in Play, Skill Shot and Ball Save Protected appeared, with WebGL2 fallback around 20 FPS."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/gemini-neon-pinball-960.webp",
+        "base": "gemini-neon-pinball",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "天文台内蓝紫色发光弹珠台，左侧显示技能球计时。",
+          "en": "A glowing blue-purple pinball table inside an observatory, with a skill-shot timer at left."
+        }
+      },
+      "provenance": {
+        "source_url": "https://pinball.andrewvoirol.com/",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Representative screenshot captured in Grok Bot’s actual desktop browser interaction on 2026-11-21."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.305
+    },
+    "added_at": "2026-11-21"
   }
 ]

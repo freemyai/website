@@ -202,6 +202,16 @@
       "permanent": true
     },
     {
+      "source": "/chongqing-browser-tour",
+      "destination": "/en/works/chongqing-browser-tour/",
+      "permanent": true
+    },
+    {
+      "source": "/chongqing-browser-tour/",
+      "destination": "/en/works/chongqing-browser-tour/",
+      "permanent": true
+    },
+    {
       "source": "/chroma",
       "destination": "/en/works/chroma/",
       "permanent": true
@@ -479,6 +489,16 @@
     {
       "source": "/gears/",
       "destination": "/en/works/gears/",
+      "permanent": true
+    },
+    {
+      "source": "/gemini-neon-pinball",
+      "destination": "/en/works/gemini-neon-pinball/",
+      "permanent": true
+    },
+    {
+      "source": "/gemini-neon-pinball/",
+      "destination": "/en/works/gemini-neon-pinball/",
       "permanent": true
     },
     {
@@ -1322,6 +1342,16 @@
       "permanent": true
     },
     {
+      "source": "/tide-atlas",
+      "destination": "/en/works/tide-atlas/",
+      "permanent": true
+    },
+    {
+      "source": "/tide-atlas/",
+      "destination": "/en/works/tide-atlas/",
+      "permanent": true
+    },
+    {
       "source": "/tree-appreciator",
       "destination": "/en/works/tree-appreciator/",
       "permanent": true
@@ -1622,6 +1652,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/chongqing-browser-tour",
+      "destination": "/works/chongqing-browser-tour/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/chongqing-browser-tour/",
+      "destination": "/works/chongqing-browser-tour/",
+      "permanent": true
+    },
+    {
       "source": "/zh/chroma",
       "destination": "/works/chroma/",
       "permanent": true
@@ -1899,6 +1939,16 @@
     {
       "source": "/zh/gears/",
       "destination": "/works/gears/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/gemini-neon-pinball",
+      "destination": "/works/gemini-neon-pinball/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/gemini-neon-pinball/",
+      "destination": "/works/gemini-neon-pinball/",
       "permanent": true
     },
     {
@@ -2739,6 +2789,16 @@
     {
       "source": "/zh/the-folded-atlas/",
       "destination": "/works/the-folded-atlas/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/tide-atlas",
+      "destination": "/works/tide-atlas/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/tide-atlas/",
+      "destination": "/works/tide-atlas/",
       "permanent": true
     },
     {

@@ -852,6 +852,24 @@
       "share_slug": "iconmcp",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "tide-atlas",
+      "share_slug": "tide-atlas",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "chongqing-browser-tour",
+      "share_slug": "chongqing-browser-tour",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "gemini-neon-pinball",
+      "share_slug": "gemini-neon-pinball",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

@@ -3200,6 +3200,69 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "tide-atlas",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "原帖及原站已核验，单文件网页包含第三方 Three.js 许可，但未找到作品本身明确许可或匹配仓库。",
+          "en": "Reviewed the original post and live site; bundled Three.js licence is not the work’s licence, and no matching repository or explicit licence was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "chongqing-browser-tour",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "已核验原站素材声明，第三方素材许可不等于作品源码许可；未确认对应游戏源码仓库。",
+          "en": "Verified the asset credits; third-party asset licences do not license the game source. No matching game repository was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "gemini-neon-pinball",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "检索作者原帖、原站和公开源码线索，未确认项目对应源码仓库和许可。",
+          "en": "Reviewed original post, live site and public code leads; no matching source repository or licence was verified."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
