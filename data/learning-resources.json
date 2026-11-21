@@ -3675,6 +3675,72 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "aftertouch",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-22",
+        "notes": {
+          "zh": "作者仓库明确署名并指向在线体验，固定版本 docs/index.html 与网站字节一致，MIT LICENSE 已核验。",
+          "en": "The creator repository credits its makers and links the live site; pinned docs/index.html matches the live page byte for byte and the MIT LICENSE was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "aftertouch-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/NickChaps/aftertouch",
+          "repository_url": "https://github.com/NickChaps/aftertouch",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/NickChaps/aftertouch/blob/5a8cd64863a6c895c78fe16d5c8c73d4e0286561/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/NickChaps/aftertouch/blob/5a8cd64863a6c895c78fe16d5c8c73d4e0286561/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://nickchaps.github.io/aftertouch/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/NickChaps/aftertouch/blob/5a8cd64863a6c895c78fe16d5c8c73d4e0286561/docs/index.html",
+              "summary": "The live standalone page and pinned docs/index.html were byte-identical at review."
+            }
+          ],
+          "checked_at": "2026-11-22",
+          "revision": "5a8cd64863a6c895c78fe16d5c8c73d4e0286561",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

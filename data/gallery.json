@@ -10918,5 +10918,95 @@
       "featured_order": 2.312
     },
     "added_at": "2026-11-22"
+  },
+  {
+    "id": "aftertouch",
+    "slug": "aftertouch",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Aftertouch",
+    "demo_url": "https://nickchaps.github.io/aftertouch/",
+    "creator": {
+      "name": "Nicolas Chapuis / Codex",
+      "profile_url": "https://github.com/NickChaps"
+    },
+    "locales": {
+      "zh": {
+        "title": "Aftertouch：留住微小的生命",
+        "summary": "在一座梦幻般的数字小岛上拖动指针，让珊瑚般的花朵生长、光点聚集，再倒转时间。",
+        "action": "按住鼠标在岛上绘画，长按 R 回到较早的状态。",
+        "why": "通过构建和回溯，让生成艺术成为可不断改写的微型世界。",
+        "limit": "桌面实测拖动和倒放；音频实际听感、移动端、完整故事和离线运行未测试。是程序艺术，并非生物学模型。"
+      },
+      "en": {
+        "title": "Aftertouch",
+        "summary": "Draw across a tiny island to grow coral-like blossoms, attract luminous particles, and rewind the world.",
+        "action": "Hold the pointer and draw on the island; hold R to return to an earlier state.",
+        "why": "Growth and rewind turn generative art into a miniature world whose history can change.",
+        "limit": "Drawing and rewind were tested on desktop. Audio playback quality, mobile, the full story and offline use were not tested. This is procedural art, not a biological model."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Codex"
+      ],
+      "evidence_url": "https://github.com/NickChaps/aftertouch/blob/5a8cd64863a6c895c78fe16d5c8c73d4e0286561/README.md",
+      "description": {
+        "zh": "作者 README 明确署名 Codex 构思、设计、编程和生成音效；Nicolas Chapuis 提出创作挑战、反馈并发布。",
+        "en": "The creator’s README credits Codex with concept, design, code and sound, and Nicolas Chapuis with the prompt, feedback and publication."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/NickChaps/aftertouch"
+      },
+      {
+        "url": "https://github.com/NickChaps/aftertouch/blob/5a8cd64863a6c895c78fe16d5c8c73d4e0286561/docs/index.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-22",
+      "note": "本机桌面按住指针在岛上拖动后，出现新的花朵；长按 R 从00:03回到00:01，新增花朵回退，界面显示 TIME RETURNS。",
+      "note_en": "Desktop drawing grew additional blossoms; holding R returned the displayed time from 00:03 to 00:01, reversed the added growth, and displayed TIME RETURNS."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/aftertouch-960.webp",
+        "base": "aftertouch",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "青绿色圆岛上由发光粒子围绕的浅橙色与白色花朵。",
+          "en": "Pale orange and white blossoms on a teal island surrounded by glowing particles."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nickchaps.github.io/aftertouch/",
+        "captured_at": "2026-11-22",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after drawing across the island and growing additional blossoms."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.313
+    },
+    "added_at": "2026-11-22"
   }
 ]

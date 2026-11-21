@@ -30,6 +30,16 @@
     "permanent": true
   },
   {
+    "source": "/aftertouch",
+    "destination": "/en/works/aftertouch/",
+    "permanent": true
+  },
+  {
+    "source": "/aftertouch/",
+    "destination": "/en/works/aftertouch/",
+    "permanent": true
+  },
+  {
     "source": "/airfoil",
     "destination": "/en/works/airfoil/",
     "permanent": true
@@ -1547,6 +1557,16 @@
   {
     "source": "/zh/afterlight/",
     "destination": "/works/afterlight/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/aftertouch",
+    "destination": "/works/aftertouch/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/aftertouch/",
+    "destination": "/works/aftertouch/",
     "permanent": true
   },
   {
