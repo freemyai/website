@@ -1532,6 +1532,16 @@
       "permanent": true
     },
     {
+      "source": "/zen-sand-ui",
+      "destination": "/en/works/zen-sand-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/zen-sand-ui/",
+      "destination": "/en/works/zen-sand-ui/",
+      "permanent": true
+    },
+    {
       "source": "/zh/a-space-mining-game",
       "destination": "/works/a-space-mining-game/",
       "permanent": true
@@ -3039,6 +3049,16 @@
     {
       "source": "/zh/wrong-physics/",
       "destination": "/works/wrong-physics/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/zen-sand-ui",
+      "destination": "/works/zen-sand-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/zen-sand-ui/",
+      "destination": "/works/zen-sand-ui/",
       "permanent": true
     }
   ],

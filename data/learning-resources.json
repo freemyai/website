@@ -3609,6 +3609,72 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "zen-sand-ui",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-22",
+        "notes": {
+          "zh": "作者仓库指向该体验入口，固定版本 gallery/index.html 与在线画廊字节一致，MIT LICENSE 已核验。",
+          "en": "The creator repository links the experience; pinned gallery/index.html matches the live gallery byte for byte and the MIT LICENSE was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "zen-sand-ui-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/finktheartist/zen-sand-ui",
+          "repository_url": "https://github.com/finktheartist/zen-sand-ui",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/finktheartist/zen-sand-ui/blob/8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/finktheartist/zen-sand-ui/blob/8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://zen-sand-ui.vercel.app/gallery/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/finktheartist/zen-sand-ui/blob/8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b/gallery/index.html",
+              "summary": "The live gallery HTML and pinned source HTML were byte-identical at review."
+            }
+          ],
+          "checked_at": "2026-11-22",
+          "revision": "8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

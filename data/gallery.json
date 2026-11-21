@@ -10827,5 +10827,96 @@
       "featured_order": 2.311
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "zen-sand-ui",
+    "slug": "zen-sand-ui",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Zen Sand UI",
+    "demo_url": "https://zen-sand-ui.vercel.app/gallery/",
+    "creator": {
+      "name": "Justin Finkelman / FinkTheArtist",
+      "profile_url": "https://x.com/crtvTeknologist"
+    },
+    "locales": {
+      "zh": {
+        "title": "Zen Sand UI：禅意沙盘控件",
+        "summary": "用四种可以互动的沙盘重新想象滑块、开关、签名板与智能体状态。",
+        "action": "拖动木耙改变滑块数值、点击圆石切换开关；也可在签名板画线。",
+        "why": "沙粒高度场、细小堆积与石头运动把平面控件变成有触感的数字界面。",
+        "limit": "桌面实测滑块与开关，关闭声音测试；签名、思考状态、声音和手机未完整验证。"
+      },
+      "en": {
+        "title": "Zen Sand UI",
+        "summary": "Four interactive sand trays reimagine sliders, toggles, signatures and agent status indicators.",
+        "action": "Drag the rake to change the value, click the stone to toggle, or try drawing in the signature tray.",
+        "why": "A simulated sand surface and gliding stones make ordinary interface controls feel tactile.",
+        "limit": "The slider and toggle were verified on desktop with sound disabled. Signature, thinking states, sound and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "assets",
+      "tools": [
+        "GPT Image",
+        "ElevenLabs"
+      ],
+      "evidence_url": "https://github.com/finktheartist/zen-sand-ui/blob/8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b/README.md",
+      "description": {
+        "zh": "作者 README 声明思考状态的石头及概念图由 GPT Image 生成，音效由 ElevenLabs 生成；不由此推断所有代码使用AI。",
+        "en": "The creator’s README credits GPT Image for the thinking-state rock and concept sheets, and ElevenLabs for generated sounds; this does not establish AI authorship of all code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/finktheartist/zen-sand-ui"
+      },
+      {
+        "url": "https://github.com/finktheartist/zen-sand-ui/blob/8e9b289523e6fdcb19e8be9db5b7ea6a9ccc6c7b/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-22",
+      "note": "本机桌面实测把音量从40%拖到88%，点击石头开关使 Focus mode 从 Off 变为 On。",
+      "note_en": "Local desktop testing moved the volume from 40% to 88% and switched Focus mode from Off to On by clicking the stone."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/zen-sand-ui-960.webp",
+        "base": "zen-sand-ui",
+        "width": 1440,
+        "height": 1050,
+        "alt": {
+          "zh": "四个禅意沙盘控件；耙子、露出图标的圆石、签名板和思考状态。",
+          "en": "Four Zen Sand controls: a rake, a stone revealing an icon, signature tray and thinking state."
+        }
+      },
+      "provenance": {
+        "source_url": "https://zen-sand-ui.vercel.app/gallery/",
+        "captured_at": "2026-11-22",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after changing the rake slider and stone toggle."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.312
+    },
+    "added_at": "2026-11-22"
   }
 ]
