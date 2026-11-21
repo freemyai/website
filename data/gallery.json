@@ -10289,5 +10289,188 @@
       "featured_order": 2.305
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "linear-systems-visualizer",
+    "slug": "linear-systems-visualizer",
+    "type": "learning",
+    "primary_category": "mathematics",
+    "subcategory": "mathematics-linear-algebra",
+    "title_original": "3D Linear Algebra Visualizer",
+    "demo_url": "https://meiqimichelle.github.io/linear-systems-visualizer/",
+    "creator": {
+      "name": "Michelle Hertzfeld",
+      "profile_url": "https://github.com/meiqimichelle"
+    },
+    "locales": {
+      "zh": {
+        "title": "三维线性代数可视化",
+        "summary": "调整三组线性方程的系数，观察三维平面与交点。",
+        "action": "修改左上角方程系数，用鼠标旋转或滚轮缩放；点击 Reset 恢复初始状态。",
+        "why": "把抽象的方程组转化为可操作的几何图形。",
+        "limit": "本机桌面实测改变一组系数和常数及重置；未检验所有奇异矩阵情形或移动端。"
+      },
+      "en": {
+        "title": "3D Linear Algebra Visualizer",
+        "summary": "Adjust the coefficients of three linear equations and observe their planes and intersection.",
+        "action": "Edit values in the equation panel, rotate or zoom the view, and use Reset to restore defaults.",
+        "why": "An explorable geometric representation makes systems of equations more intuitive.",
+        "limit": "Local desktop testing changed coefficients and reset them; singular cases and mobile were not exhaustively verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude",
+        "Amp Code"
+      ],
+      "evidence_url": "https://github.com/meiqimichelle/linear-systems-visualizer",
+      "description": {
+        "zh": "作者 README 说明使用 Claude 原型设计并使用 Amp Code 重构和发布。",
+        "en": "The creator’s README describes prototyping with Claude and refining and shipping with Amp Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/meiqimichelle/linear-systems-visualizer"
+      },
+      {
+        "url": "https://github.com/meiqimichelle/linear-systems-visualizer/blob/01bafe58887866cdc31964a77ea482ed8b3c2e4d/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "本机桌面修改第一平面 b=1、d=2，橙色平面倾斜并改变交点，Reset 将两数还原到0。",
+      "note_en": "A local desktop browser set b=1 and d=2 in plane one, changing its orientation and intersection. Reset restored both to zero."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/linear-systems-visualizer-960.webp",
+        "base": "linear-systems-visualizer",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "三张彩色半透明平面和白色交点，左上方为方程系数面板。",
+          "en": "Three colored translucent planes and an intersection point beside the equation controls."
+        }
+      },
+      "provenance": {
+        "source_url": "https://meiqimichelle.github.io/linear-systems-visualizer/",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Real local desktop browser screenshot after an actual interaction."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.306
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "downhill-riot",
+    "slug": "downhill-riot",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-arcade",
+    "title_original": "Downhill Riot",
+    "demo_url": "https://bunandbolt.com/downhill-riot/",
+    "creator": {
+      "name": "Bun & Bolt",
+      "profile_url": "https://bunandbolt.com/about/"
+    },
+    "locales": {
+      "zh": {
+        "title": "雪道乱斗",
+        "summary": "在山地滑雪赛道选择滑手、双板或单板，与其他虚拟选手竞速。",
+        "action": "选择滑手、装备和赛道后进入单人赛，按 W 加速，A/D 转向。",
+        "why": "雪景、缆车与滑雪动作构成有氛围的三维街机竞速体验。",
+        "limit": "本机实测进入 Park Lane 并滑行；未跑完整赛道或测试双人、手机及其他玩法。"
+      },
+      "en": {
+        "title": "Downhill Riot",
+        "summary": "Choose a rider and skis or a snowboard, then race virtual rivals down a snowy mountain.",
+        "action": "Choose your rider, gear and run, then start a solo race. Use W to accelerate and A/D to steer.",
+        "why": "Snowy scenery, lifts and skiing animation make a lively 3D arcade racing experience.",
+        "limit": "Local desktop testing entered Park Lane and skied; the full route, multiplayer, mobile and other mechanics were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [],
+      "evidence_url": "https://x.com/nateleex/status/2122977181836206402",
+      "description": {
+        "zh": "Nate Lee 原帖自述以 vibe coding 创作并链接同一作品；原站将作品归属于 Bun & Bolt，发布者与工作室的具体关系未独立确认。",
+        "en": "Nate Lee’s post describes vibe coding and links the same work; the site credits Bun & Bolt. The poster’s precise relationship to the studio was not independently established."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://x.com/nateleex/status/2122977181836206402"
+      },
+      {
+        "url": "https://bunandbolt.com/about/"
+      },
+      {
+        "url": "https://bunandbolt.com/zh/downhill-riot/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "本机 Edge 经滑手、双板和 Park Lane 选择进入赛道，跳过片头后移动；按 W 滑行，截图显示约48 km/h、名次12/13和计时。",
+      "note_en": "Local Edge selected a rider, skis and Park Lane, skipped the intro and skied with W; the screenshot shows about 48 km/h, position 12/13 and elapsed time."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/downhill-riot-960.webp",
+        "base": "downhill-riot",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "滑雪者在山间雪道滑行，前方还有其他选手，画面显示名次与速度。",
+          "en": "A skier on a mountain run with other racers ahead, rank and speed on the HUD."
+        }
+      },
+      "provenance": {
+        "source_url": "https://bunandbolt.com/downhill-riot/",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Real local desktop browser screenshot after an actual interaction."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "zh"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.307
+    },
+    "added_at": "2026-11-21"
   }
 ]

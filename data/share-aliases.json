@@ -870,6 +870,18 @@
       "share_slug": "gemini-neon-pinball",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "linear-systems-visualizer",
+      "share_slug": "linear-systems-visualizer",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "downhill-riot",
+      "share_slug": "downhill-riot",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

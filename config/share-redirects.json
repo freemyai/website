@@ -280,6 +280,16 @@
     "permanent": true
   },
   {
+    "source": "/downhill-riot",
+    "destination": "/en/works/downhill-riot/",
+    "permanent": true
+  },
+  {
+    "source": "/downhill-riot/",
+    "destination": "/en/works/downhill-riot/",
+    "permanent": true
+  },
+  {
     "source": "/drift-neon-survival",
     "destination": "/en/works/drift-neon-survival/",
     "permanent": true
@@ -757,6 +767,16 @@
   {
     "source": "/lili-last-door/",
     "destination": "/en/works/lili-last-door/",
+    "permanent": true
+  },
+  {
+    "source": "/linear-systems-visualizer",
+    "destination": "/en/works/linear-systems-visualizer/",
+    "permanent": true
+  },
+  {
+    "source": "/linear-systems-visualizer/",
+    "destination": "/en/works/linear-systems-visualizer/",
     "permanent": true
   },
   {
@@ -1730,6 +1750,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/downhill-riot",
+    "destination": "/works/downhill-riot/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/downhill-riot/",
+    "destination": "/works/downhill-riot/",
+    "permanent": true
+  },
+  {
     "source": "/zh/drift-neon-survival",
     "destination": "/works/drift-neon-survival/",
     "permanent": true
@@ -2207,6 +2237,16 @@
   {
     "source": "/zh/lili-last-door/",
     "destination": "/works/lili-last-door/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/linear-systems-visualizer",
+    "destination": "/works/linear-systems-visualizer/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/linear-systems-visualizer/",
+    "destination": "/works/linear-systems-visualizer/",
     "permanent": true
   },
   {

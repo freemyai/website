@@ -3263,6 +3263,88 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "linear-systems-visualizer",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "作者仓库对应原站；README 声明 MIT，未找到独立 LICENSE，保守标注公开源码。",
+          "en": "The creator repository links the live site; README declares MIT, but there is no separate LICENSE file. Public code is listed conservatively."
+        }
+      },
+      "sources": [
+        {
+          "id": "linear-systems-visualizer-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/meiqimichelle/linear-systems-visualizer",
+          "repository_url": "https://github.com/meiqimichelle/linear-systems-visualizer",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": null,
+            "scope_note": {
+              "zh": "作者 README 明示 MIT，但未找到独立许可证文本。公开代码可阅读，本次保守地不授予已核验开源标识。",
+              "en": "The creator README declares MIT but no separate licence text was found. The code is publicly readable, conservatively not given the verified-open-source badge."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/meiqimichelle/linear-systems-visualizer/blob/01bafe58887866cdc31964a77ea482ed8b3c2e4d/README.md",
+              "summary": "The README describes this work, links its demo and declares MIT; no separate LICENSE file was found."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://meiqimichelle.github.io/linear-systems-visualizer/",
+              "summary": "The original repository links this live experience."
+            }
+          ],
+          "checked_at": "2026-11-21",
+          "revision": "01bafe58887866cdc31964a77ea482ed8b3c2e4d",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "downhill-riot",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-21",
+        "notes": {
+          "zh": "原帖和工作室介绍均已核验；未找到对应游戏源码，工作室 Math 开源许可不覆盖本作。",
+          "en": "Checked the post and studio description; no matching game source was verified, and the studio’s Math licence does not cover this work."
+        }
+      },
+      "sources": [],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
