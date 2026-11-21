@@ -10736,5 +10736,96 @@
       "featured_order": 2.31
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "align-wuhan-scroll",
+    "slug": "align-wuhan-scroll",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "ALIGN: Qingming in Wuhan",
+    "demo_url": "https://wanshuiyin.github.io/ALIGN-Agentic-Loop-Image-GeneratioN/examples/qingming-wuhan/qingming-wuhan-preview.html#p=1",
+    "creator": {
+      "name": "Yang Ruofeng / wanshuiyin",
+      "profile_url": "https://github.com/wanshuiyin"
+    },
+    "locales": {
+      "zh": {
+        "title": "ALIGN：清明上河图 · 武汉",
+        "summary": "探索以 p5.js 代码绘制的武汉长卷，回放从矾绢到题跋的十道工序。",
+        "action": "拖动进度条或聚焦后按 Home / End 查看不同阶段；可拖动画面或缩略图卷动。",
+        "why": "传统手卷的分层绘制过程结合智能体编程与独立视觉评审，让作品的构建过程本身可被体验。",
+        "limit": "桌面实测进度从 100% 回到 0% 再复原，工序标签改变；这是既有作品的浏览与回放，并非在线生成新图。页面为中文；录制、音频和手机未测。"
+      },
+      "en": {
+        "title": "ALIGN: Qingming in Wuhan",
+        "summary": "Explore a programmatically drawn handscroll of Wuhan and replay its ten stages, from silk preparation to the final inscriptions.",
+        "action": "Drag the progress slider or focus it and press Home / End to see distinct stages; drag the image or overview to pan.",
+        "why": "A traditional handscroll becomes an explorable account of agent-coded art and iterative visual critique.",
+        "limit": "Desktop testing moved progress from 100% to 0% and back, changing the stage label. This is a replay of a prebuilt work, not an online generator. The interface is Chinese; recording, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude",
+        "Codex"
+      ],
+      "evidence_url": "https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN",
+      "description": {
+        "zh": "作者 README 记录 Claude 执行 p5.js 绘画、Codex MCP 审阅的 11 版迭代。",
+        "en": "The creator’s README documents an eleven-version p5.js drawing process with Claude as executor and Codex MCP as reviewer."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN"
+      },
+      {
+        "url": "https://github.com/wanshuiyin/ALIGN-Agentic-Loop-Image-GeneratioN/blob/2d40f1b24733309a1d7051a9df62fe7a5ef50bb2/examples/qingming-wuhan/qingming-wuhan-preview.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "桌面浏览器将进度从 1000（复勾·招牌·题跋）回到 0（矾绢），再回到 1000。",
+      "note_en": "Desktop browser testing changed the progress from 1000 (final outlining, signs and colophon) to 0 (silk preparation) and back."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/align-wuhan-scroll-960.webp",
+        "base": "align-wuhan-scroll",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "武汉长卷中的村舍、树木和行人，底部为全卷缩略图。",
+          "en": "Houses, trees and figures in the Wuhan handscroll, with its full-length overview below."
+        }
+      },
+      "provenance": {
+        "source_url": "https://wanshuiyin.github.io/ALIGN-Agentic-Loop-Image-GeneratioN/examples/qingming-wuhan/qingming-wuhan-preview.html#p=1",
+        "captured_at": "2026-11-21",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot of the completed stage after moving the progress slider to its end."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "zh"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.311
+    },
+    "added_at": "2026-11-21"
   }
 ]

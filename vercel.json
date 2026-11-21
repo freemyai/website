@@ -62,6 +62,16 @@
       "permanent": true
     },
     {
+      "source": "/align-wuhan-scroll",
+      "destination": "/en/works/align-wuhan-scroll/",
+      "permanent": true
+    },
+    {
+      "source": "/align-wuhan-scroll/",
+      "destination": "/en/works/align-wuhan-scroll/",
+      "permanent": true
+    },
+    {
       "source": "/aquarelle",
       "destination": "/en/works/aquarelle/",
       "permanent": true
@@ -1559,6 +1569,16 @@
     {
       "source": "/zh/airfoil/",
       "destination": "/works/airfoil/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/align-wuhan-scroll",
+      "destination": "/works/align-wuhan-scroll/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/align-wuhan-scroll/",
+      "destination": "/works/align-wuhan-scroll/",
       "permanent": true
     },
     {
