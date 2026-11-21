@@ -10472,5 +10472,269 @@
       "featured_order": 2.307
     },
     "added_at": "2026-11-21"
+  },
+  {
+    "id": "soft-attention",
+    "slug": "soft-attention",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Soft Attention",
+    "demo_url": "https://adamdesgns.github.io/soft-attention/soft-attention.html",
+    "creator": {
+      "name": "AdamDesigns / Claude",
+      "profile_url": "https://github.com/Adamdesgns"
+    },
+    "locales": {
+      "zh": {
+        "title": "Soft Attention：注意力粒子场",
+        "summary": "在暗色画布移动指针，观察粒子汇聚、发光和散开。",
+        "action": "滑过画布形成新的光晕，点击 Next 切换种子，或尝试左侧参数。",
+        "why": "把抽象的注意力概念转化为柔和而可操作的生成艺术。",
+        "limit": "Grok 实测指针和种子切换；未验证下载及手机。"
+      },
+      "en": {
+        "title": "Soft Attention",
+        "summary": "Move your pointer across a dark canvas and watch particles gather, glow and disperse.",
+        "action": "Move across the canvas, choose Next to change the seed, or try the parameter controls.",
+        "why": "Generative art gives the abstract idea of attention a tactile visual form.",
+        "limit": "Grok tested pointer interaction and seed changes; downloads and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 4.8"
+      ],
+      "evidence_url": "https://github.com/Adamdesgns/soft-attention",
+      "description": {
+        "zh": "仓库说明概念、代码与文字由 Claude 创作，由人类协作者委托和发布。",
+        "en": "The repository credits Claude for the concept, code and text, commissioned and released by a human collaborator."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Adamdesgns/soft-attention"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面移动指针观察暖色光晕，点击 Next 后 seed 12345 变为12346，粒子图案重排。",
+      "note_en": "Grok moved the pointer and observed a warm glow; Next changed the seed from 12345 to 12346 and regenerated the pattern."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/soft-attention-960.webp",
+        "base": "soft-attention",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "深色粒子场中多处暖色流光与左侧参数面板。",
+          "en": "Warm streams of particles in a dark field beside parameter controls."
+        }
+      },
+      "provenance": {
+        "source_url": "https://adamdesgns.github.io/soft-attention/soft-attention.html",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Actual Grok Bot desktop interaction screenshot, original PNG hash verified after transfer."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.308
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "substrate-generative-gallery",
+    "slug": "substrate-generative-gallery",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Substrate",
+    "demo_url": "https://nexus-substrate.pages.dev/",
+    "creator": {
+      "name": "Aria Han",
+      "profile_url": "https://github.com/ariaxhan"
+    },
+    "locales": {
+      "zh": {
+        "title": "Substrate：不断生长的生成艺术画廊",
+        "summary": "穿梭于一个由独立网页组成、持续更新的生成艺术画廊。",
+        "action": "在画布点击或移动指针，并使用左右方向键浏览前后作品。",
+        "why": "每页是一件独立的算法艺术实验，共同组成可翻阅的数字画廊。",
+        "limit": "Grok 实测首件粒子画面及切换相邻作品；未遍历整个动态画廊或测试手机。"
+      },
+      "en": {
+        "title": "Substrate",
+        "summary": "Browse an evolving gallery of standalone generative artwork pages.",
+        "action": "Try clicking or moving across the canvas, then use the arrow keys to browse adjacent pieces.",
+        "why": "Each page is a self-contained algorithmic art experiment in a browsable digital gallery.",
+        "limit": "Grok tested the first particle piece and navigation to an adjacent piece; the full evolving collection and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/ariaxhan/substrate",
+      "description": {
+        "zh": "作者 README 说明每个生成艺术作品是由 Claude 写成的独立 HTML。",
+        "en": "The creator’s README credits Claude for each standalone generative art HTML file."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/ariaxhan/substrate"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 在首件 digest 中点击画面形成带连线的粒子图案，按右方向键切到第2件 pulse 后可返回。",
+      "note_en": "Grok clicked the first digest piece to form a connected particle pattern and used the Right arrow to reach pulse before returning."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/substrate-generative-gallery-960.webp",
+        "base": "substrate-generative-gallery",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "暗色画廊中星点与细线形成几何图案。",
+          "en": "A geometric pattern of dots and fine connecting lines in a dark gallery."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nexus-substrate.pages.dev/",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Actual Grok Bot desktop interaction screenshot, original PNG hash verified after transfer."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.309
+    },
+    "added_at": "2026-11-21"
+  },
+  {
+    "id": "brickwise-relativity",
+    "slug": "brickwise-relativity",
+    "type": "learning",
+    "primary_category": "physics",
+    "subcategory": "physics-mechanics",
+    "title_original": "Brickwise: Theory of Relativity",
+    "demo_url": "https://jcpetrelli.github.io/brickwise/examples/relativity.html",
+    "creator": {
+      "name": "Jacopo Castellano",
+      "profile_url": "https://github.com/JCPetrelli"
+    },
+    "locales": {
+      "zh": {
+        "title": "Brickwise：积木相对论",
+        "summary": "将相对论的几个概念层拆成可点击的三维积木。",
+        "action": "悬停或点击积木读概念说明，使用 Explode 展开各层，再用 Reassemble 复原。",
+        "why": "通过结构关系引导学习者理解基本概念之间的依赖。",
+        "limit": "Grok 实测 GPS clocks 信息块和整层展开；这是一种入门图解，不是严谨教材或完整物理模拟；手机未测。"
+      },
+      "en": {
+        "title": "Brickwise: Theory of Relativity",
+        "summary": "Explore the conceptual layers of relativity as clickable 3D bricks.",
+        "action": "Hover or select a brick to read a short explanation; use Explode to separate layers and Reassemble to put them back.",
+        "why": "The block structure provides a visual introduction to relationships between ideas.",
+        "limit": "Grok tested the GPS clocks information brick and exploded view; this is an introductory illustration rather than a complete physics model or textbook. Mobile was not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/JCPetrelli/brickwise",
+      "description": {
+        "zh": "作者仓库 README 声明项目使用 Claude Code 构建，公开示例文件和原站相对论页内容一致。",
+        "en": "The creator’s repository credits Claude Code, and the published relativity example matches its source HTML."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/JCPetrelli/brickwise"
+      },
+      {
+        "url": "https://github.com/JCPetrelli/brickwise/blob/f8bf1a024976a2c6cd10b7344abd20ac29ea1030/examples/relativity.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-21",
+      "note": "Grok 桌面点击 Evidence 中 GPS clocks 后显示说明，点击 Explode 后积木各层分离、按钮变为 Reassemble。",
+      "note_en": "Grok selected GPS clocks in Evidence to see an explanation, then selected Explode to separate the layers and reveal Reassemble."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/brickwise-relativity-960.webp",
+        "base": "brickwise-relativity",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "彩色三维积木分别展开为公设、时空、狭义相对论、广义相对论和证据层。",
+          "en": "Colored 3D bricks separate into postulates, spacetime, special relativity, general relativity and evidence."
+        }
+      },
+      "provenance": {
+        "source_url": "https://jcpetrelli.github.io/brickwise/examples/relativity.html",
+        "captured_at": "2026-11-21",
+        "method": "grok_bot_desktop_capture",
+        "note": "Actual Grok Bot desktop interaction screenshot, original PNG hash verified after transfer."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.31
+    },
+    "added_at": "2026-11-21"
   }
 ]

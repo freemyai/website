@@ -140,6 +140,16 @@
     "permanent": true
   },
   {
+    "source": "/brickwise-relativity",
+    "destination": "/en/works/brickwise-relativity/",
+    "permanent": true
+  },
+  {
+    "source": "/brickwise-relativity/",
+    "destination": "/en/works/brickwise-relativity/",
+    "permanent": true
+  },
+  {
     "source": "/calculus-3d-explorer",
     "destination": "/en/works/calculus-3d-explorer/",
     "permanent": true
@@ -1210,6 +1220,16 @@
     "permanent": true
   },
   {
+    "source": "/soft-attention",
+    "destination": "/en/works/soft-attention/",
+    "permanent": true
+  },
+  {
+    "source": "/soft-attention/",
+    "destination": "/en/works/soft-attention/",
+    "permanent": true
+  },
+  {
     "source": "/soft-machine",
     "destination": "/en/works/soft-machine/",
     "permanent": true
@@ -1297,6 +1317,16 @@
   {
     "source": "/stave/",
     "destination": "/en/works/stave/",
+    "permanent": true
+  },
+  {
+    "source": "/substrate-generative-gallery",
+    "destination": "/en/works/substrate-generative-gallery/",
+    "permanent": true
+  },
+  {
+    "source": "/substrate-generative-gallery/",
+    "destination": "/en/works/substrate-generative-gallery/",
     "permanent": true
   },
   {
@@ -1607,6 +1637,16 @@
   {
     "source": "/zh/breathing-and-respiration/",
     "destination": "/works/breathing-and-respiration/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/brickwise-relativity",
+    "destination": "/works/brickwise-relativity/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/brickwise-relativity/",
+    "destination": "/works/brickwise-relativity/",
     "permanent": true
   },
   {
@@ -2680,6 +2720,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/soft-attention",
+    "destination": "/works/soft-attention/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/soft-attention/",
+    "destination": "/works/soft-attention/",
+    "permanent": true
+  },
+  {
     "source": "/zh/soft-machine",
     "destination": "/works/soft-machine/",
     "permanent": true
@@ -2767,6 +2817,16 @@
   {
     "source": "/zh/stave/",
     "destination": "/works/stave/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/substrate-generative-gallery",
+    "destination": "/works/substrate-generative-gallery/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/substrate-generative-gallery/",
+    "destination": "/works/substrate-generative-gallery/",
     "permanent": true
   },
   {

@@ -882,6 +882,24 @@
       "share_slug": "downhill-riot",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "soft-attention",
+      "share_slug": "soft-attention",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "substrate-generative-gallery",
+      "share_slug": "substrate-generative-gallery",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "brickwise-relativity",
+      "share_slug": "brickwise-relativity",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }
