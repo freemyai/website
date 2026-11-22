@@ -918,6 +918,12 @@
       "share_slug": "aftertouch",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "karagoz-shadow-theatre",
+      "share_slug": "karagoz-shadow-theatre",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

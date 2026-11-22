@@ -11008,5 +11008,96 @@
       "featured_order": 2.313
     },
     "added_at": "2026-11-22"
+  },
+  {
+    "id": "karagoz-shadow-theatre",
+    "slug": "karagoz-shadow-theatre",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Karagöz: Shadow Theatre",
+    "demo_url": "https://furkiozknn.github.io/karagoz/",
+    "creator": {
+      "name": "FurkiOzkan / Furkiozknn",
+      "profile_url": "https://github.com/Furkiozknn"
+    },
+    "locales": {
+      "zh": {
+        "title": "Karagöz：土耳其皮影戏光影谜题",
+        "summary": "在皮影戏舞台后移动彩色人物，尝试让影子与金色轮廓重合。",
+        "action": "开始游戏，进入第一幕，在场景中拖动 Hacivat 或用左右方向键微调。",
+        "why": "传统的皮影戏成为一个可操作的空间光影谜题。",
+        "limit": "桌面实测进入首关并移动人物，匹配度由0%变为6%，未通关；其他关卡、音频及手机未测。"
+      },
+      "en": {
+        "title": "Karagöz: Shadow Theatre",
+        "summary": "Move colorful puppets behind a shadow-theatre screen to align their silhouettes with gold outlines.",
+        "action": "Choose Play and the first scene, then drag Hacivat or nudge him with the arrow keys.",
+        "why": "A traditional Turkish shadow play becomes an interactive puzzle about light and spatial alignment.",
+        "limit": "The first scene was opened and its match changed from 0% to 6% on desktop; it was not completed. Other levels, audio and mobile were not tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/Furkiozknn/karagoz",
+      "description": {
+        "zh": "作者项目仓库及游戏首页明确说明由 Claude Opus 5.5 构建。",
+        "en": "The creator repository and the game homepage credit Claude Opus 5.5 for building the game."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Furkiozknn/karagoz"
+      },
+      {
+        "url": "https://furkiozknn.itch.io/karagoz"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-22",
+      "note": "本机桌面进入第一幕首关，拖动 Hacivat 后匹配度从0%到6%、移动数从0到1。",
+      "note_en": "Desktop testing entered Act I, scene 1, then dragging Hacivat changed matching from 0% to 6% and moves from 0 to 1."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/karagoz-shadow-theatre-960.webp",
+        "base": "karagoz-shadow-theatre",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "金色幕布前的彩色皮影人物、灯光、目标轮廓与匹配度。",
+          "en": "A colorful shadow puppet, glowing lamp, target outline and match indicator against a golden screen."
+        }
+      },
+      "provenance": {
+        "source_url": "https://furkiozknn.github.io/karagoz/",
+        "captured_at": "2026-11-22",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge gameplay screenshot after dragging the puppet in Act I, scene 1."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "tr"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.314
+    },
+    "added_at": "2026-11-22"
   }
 ]

@@ -742,6 +742,16 @@
       "permanent": true
     },
     {
+      "source": "/karagoz-shadow-theatre",
+      "destination": "/en/works/karagoz-shadow-theatre/",
+      "permanent": true
+    },
+    {
+      "source": "/karagoz-shadow-theatre/",
+      "destination": "/en/works/karagoz-shadow-theatre/",
+      "permanent": true
+    },
+    {
       "source": "/kartboard",
       "destination": "/en/works/kartboard/",
       "permanent": true
@@ -2269,6 +2279,16 @@
     {
       "source": "/zh/kanso/",
       "destination": "/works/kanso/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/karagoz-shadow-theatre",
+      "destination": "/works/karagoz-shadow-theatre/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/karagoz-shadow-theatre/",
+      "destination": "/works/karagoz-shadow-theatre/",
       "permanent": true
     },
     {
