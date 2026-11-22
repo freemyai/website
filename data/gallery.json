@@ -11099,5 +11099,99 @@
       "featured_order": 2.314
     },
     "added_at": "2026-11-22"
+  },
+  {
+    "id": "p5-scrapbox",
+    "slug": "p5-scrapbox",
+    "type": "experiments",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "p5-scrapbox",
+    "demo_url": "https://nekodigi.github.io/p5-scrapbox/",
+    "creator": {
+      "name": "Nekodigi",
+      "profile_url": "https://github.com/Nekodigi"
+    },
+    "locales": {
+      "zh": {
+        "title": "p5-scrapbox：算法艺术实验馆",
+        "summary": "在可搜索的画廊探索分形、几何、生成艺术与互动数学。",
+        "action": "滚动至 Featured Artworks，选择 Fractals 并打开 Mandelbrot Explorer；点击 Color 切换配色。",
+        "why": "将数学图形和创意编程组合为可浏览、可操作的作品集。",
+        "limit": "桌面实测分形筛选、曼德布罗集合渲染与配色切换；其他全部作品、音频、移动端未全面测试。英文导航与日文说明混用；README 与 LICENSE 许可表述不同。"
+      },
+      "en": {
+        "title": "p5-scrapbox",
+        "summary": "Explore fractals, geometry, generative artwork and interactive mathematics in a searchable gallery.",
+        "action": "Scroll to Featured Artworks, select Fractals, open Mandelbrot Explorer and choose Color to change its palette.",
+        "why": "A browsable collection makes mathematical imagery and creative code tangible.",
+        "limit": "Desktop testing covered the fractal filter, Mandelbrot rendering and palette switching, not every sketch, audio or mobile. Navigation is English with Japanese explanations; README and LICENSE differ on the licence."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/Nekodigi/p5-scrapbox",
+      "description": {
+        "zh": "作者公开仓库简介明确标示 Made by Claude Code。",
+        "en": "The creator’s public repository description explicitly credits Claude Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Nekodigi/p5-scrapbox"
+      },
+      {
+        "url": "https://github.com/Nekodigi/p5-scrapbox/blob/270656cc5b7826ac9ea54d8ea472cae9952de385/LICENSE"
+      },
+      {
+        "url": "https://github.com/Nekodigi/p5-scrapbox/blob/270656cc5b7826ac9ea54d8ea472cae9952de385/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-22",
+      "note": "本机桌面将画廊类别由 all 切为 fractals，展示五个分形条目；打开 Mandelbrot Explorer 并点击 Color，图形周围由深蓝切换为黄绿等彩色区域。",
+      "note_en": "Desktop testing changed the gallery from all categories to fractals, showing five entries; Mandelbrot Explorer rendered and its Color button changed the palette from dark blue to bright multicolor."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/p5-scrapbox-960.webp",
+        "base": "p5-scrapbox",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "分形类别下有曼德布罗集合、朱利亚集合和龙曲线的画廊卡片。",
+          "en": "Filtered artwork cards for Mandelbrot Explorer, Julia Set Morphing and Dragon Curve."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nekodigi.github.io/p5-scrapbox/",
+        "captured_at": "2026-11-22",
+        "method": "desktop_browser_capture",
+        "note": "Actual Edge screenshot of filtered gallery; separate local screenshot confirms the selected fractal palette change."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "ja"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.315
+    },
+    "added_at": "2026-11-22"
   }
 ]

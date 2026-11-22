@@ -1010,6 +1010,16 @@
     "permanent": true
   },
   {
+    "source": "/p5-scrapbox",
+    "destination": "/en/works/p5-scrapbox/",
+    "permanent": true
+  },
+  {
+    "source": "/p5-scrapbox/",
+    "destination": "/en/works/p5-scrapbox/",
+    "permanent": true
+  },
+  {
     "source": "/palette-rider",
     "destination": "/en/works/palette-rider/",
     "permanent": true
@@ -2547,6 +2557,16 @@
   {
     "source": "/zh/owl-pellet-lab/",
     "destination": "/works/owl-pellet-lab/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/p5-scrapbox",
+    "destination": "/works/p5-scrapbox/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/p5-scrapbox/",
+    "destination": "/works/p5-scrapbox/",
     "permanent": true
   },
   {

@@ -3807,6 +3807,72 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "p5-scrapbox",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-22",
+        "notes": {
+          "zh": "核实对应仓库、固定 index.html 和在线页面字节一致；LICENSE 为 Unlicense，README 声称 MIT，暂不确认统一开源许可。",
+          "en": "The pinned index.html matches the live page byte for byte. LICENSE is Unlicense and README says MIT, so the licence designation remains unresolved."
+        }
+      },
+      "sources": [
+        {
+          "id": "p5-scrapbox-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Nekodigi/p5-scrapbox",
+          "repository_url": "https://github.com/Nekodigi/p5-scrapbox",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": null,
+            "evidence_url": "https://github.com/Nekodigi/p5-scrapbox/blob/270656cc5b7826ac9ea54d8ea472cae9952de385/LICENSE",
+            "scope_note": {
+              "zh": "仓库 LICENSE 文件为 Unlicense，而 README 声称 MIT；许可表述不一致，保守标为公开代码。",
+              "en": "The repository LICENSE file is the Unlicense, while its README says MIT; conflicting notices mean the source is shown as publicly readable rather than a verified open-source badge."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Nekodigi/p5-scrapbox/blob/270656cc5b7826ac9ea54d8ea472cae9952de385/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://nekodigi.github.io/p5-scrapbox/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Nekodigi/p5-scrapbox/blob/270656cc5b7826ac9ea54d8ea472cae9952de385/index.html",
+              "summary": "Pinned index.html and live homepage were byte-identical at review."
+            }
+          ],
+          "checked_at": "2026-11-22",
+          "revision": "270656cc5b7826ac9ea54d8ea472cae9952de385",
+          "publication": "published",
+          "notes": {
+            "zh": "已确认原站与仓库对应，LICENSE 与 README 表述冲突，未执行下载的代码。",
+            "en": "The repository matches the live site; LICENSE and README differ. No downloaded code was executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
