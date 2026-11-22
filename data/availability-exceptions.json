@@ -7,7 +7,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:44:56.394Z",
-      "last_checked_at": "2026-11-16T10:32:26.148Z",
+      "last_checked_at": "2026-11-22T10:04:21+08:00",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -29,6 +29,11 @@
           "checked_at": "2026-11-16T10:32:26.148Z",
           "method": "windows_chrome_headless",
           "observation": "Chrome 无头浏览器收到 HTTP 200，但多次读取页面和截图超时；同一浏览器的独立 WebGL 探针可创建图形上下文。普通浏览器的实际表现仍待核验。"
+        },
+        {
+          "checked_at": "2026-11-22T10:04:21+08:00",
+          "method": "windows_edge_headless_recheck",
+          "observation": "原站 HTTP 200；独立 Edge 会话等待约14秒后显示 BUILDING ARENA 与键盘控制说明，截图10秒超时，未确认游戏进入可操作场景。不能据此判定原站失效，保留待核验。"
         }
       ],
       "action": "保留上架并继续复查",
@@ -41,7 +46,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:50:14.962Z",
-      "last_checked_at": "2026-11-16T10:32:26.148Z",
+      "last_checked_at": "2026-11-22T10:04:21+08:00",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -68,6 +73,11 @@
           "checked_at": "2026-11-16T10:32:26.148Z",
           "method": "windows_chrome_headless",
           "observation": "Chrome 无头浏览器收到 HTTP 200，但多次读取页面和截图超时；同一浏览器的独立 WebGL 探针可创建图形上下文。普通浏览器的实际表现仍待核验。"
+        },
+        {
+          "checked_at": "2026-11-22T10:04:21+08:00",
+          "method": "windows_edge_headless_recheck",
+          "observation": "原站 HTTP 200；独立 Edge 会话等待约14秒后页面文本显示 Ready、导览和互动控件，截图10秒超时，未确认画面与实际交互。保留待核验。"
         }
       ],
       "action": "保留上架并继续复查",
