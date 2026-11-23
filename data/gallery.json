@@ -11657,5 +11657,95 @@
       "featured_order": 2.321
     },
     "added_at": "2026-11-23"
+  },
+  {
+    "id": "lantern-sums",
+    "slug": "lantern-sums",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Lantern Sums",
+    "demo_url": "https://nmar33.github.io/lantern-sums/",
+    "creator": {
+      "name": "NMar33",
+      "profile_url": "https://github.com/NMar33"
+    },
+    "locales": {
+      "zh": {
+        "title": "Lantern Sums：灯笼数字加法谜题",
+        "summary": "在夜空中漂浮的数字灯笼里，找出加起来等于目标数的组合。",
+        "action": "点击 Start 开始，选择数字灯笼；先尝试凑出目标 10。",
+        "why": "把心算变成轻量的浏览器小游戏，作者还公开了开发任务卡和使用的提示词。",
+        "limit": "本机桌面实测启动及点击选择（灯笼高亮），未验证得分、后续关卡、主题或手机。"
+      },
+      "en": {
+        "title": "Lantern Sums",
+        "summary": "Find combinations of numbered paper lanterns drifting through the night sky that add up to the target.",
+        "action": "Press Start and choose numbered lanterns, beginning with the target of 10.",
+        "why": "A lightweight arithmetic game with the creator’s development cards and prompts available to read.",
+        "limit": "Desktop testing verified starting the game and selecting a highlighted lantern; scoring, later levels, themes and mobile remain unverified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/NMar33/lantern-sums/blob/ec7b8714f21d3696643e9941bde8326c8a61425b/README.md",
+      "description": {
+        "zh": "作者 README 说明从零用 Claude Code 制作，公开两次 Claude Code 会话所用任务卡和提示词。",
+        "en": "The creator’s README documents building from scratch with Claude Code and publishes the task cards and prompts used by the two Claude Code sessions."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/NMar33/lantern-sums"
+      },
+      {
+        "url": "https://github.com/NMar33/lantern-sums/blob/ec7b8714f21d3696643e9941bde8326c8a61425b/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-24",
+      "note": "本机 Edge 点击 Start 后出现漂浮的数字灯笼，点击数字6的灯笼出现明亮选中光圈；未完成凑数得分。",
+      "note_en": "Local Edge testing clicked Start, observed the moving numbered lanterns, then clicked a lantern marked 6 and verified its bright selection ring. A scoring combination was not completed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/lantern-sums-960.webp",
+        "base": "lantern-sums",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "蓝色星空中漂浮的橙色数字灯笼，其中数字6有选中的明亮光圈。",
+          "en": "Orange numbered lanterns floating in a starry blue sky, with the number 6 selected and glowing."
+        }
+      },
+      "provenance": {
+        "source_url": "https://nmar33.github.io/lantern-sums/",
+        "captured_at": "2026-11-24",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot during play after selecting a lantern, sound muted."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.322
+    },
+    "added_at": "2026-11-24"
   }
 ]

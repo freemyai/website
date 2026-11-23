@@ -780,6 +780,16 @@
     "permanent": true
   },
   {
+    "source": "/lantern-sums",
+    "destination": "/en/works/lantern-sums/",
+    "permanent": true
+  },
+  {
+    "source": "/lantern-sums/",
+    "destination": "/en/works/lantern-sums/",
+    "permanent": true
+  },
+  {
     "source": "/last-hexagon",
     "destination": "/en/works/last-hexagon/",
     "permanent": true
@@ -2377,6 +2387,16 @@
   {
     "source": "/zh/labyrinthos/",
     "destination": "/works/labyrinthos/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/lantern-sums",
+    "destination": "/works/lantern-sums/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/lantern-sums/",
+    "destination": "/works/lantern-sums/",
     "permanent": true
   },
   {

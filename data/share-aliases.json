@@ -960,6 +960,12 @@
       "share_slug": "port-of-halvard",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "lantern-sums",
+      "share_slug": "lantern-sums",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }
