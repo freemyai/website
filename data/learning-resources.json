@@ -3873,6 +3873,72 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "soap-film-ui",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-23",
+        "notes": {
+          "zh": "作者仓库指向同一体验，固定版本 gallery/index.html 与在线画廊字节一致，MIT LICENSE 已核验。",
+          "en": "The creator repository links this experience; pinned gallery/index.html exactly matches the live gallery and MIT LICENSE was verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "soap-film-ui-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/finktheartist/soap-film-ui",
+          "repository_url": "https://github.com/finktheartist/soap-film-ui",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://soap-film-ui.vercel.app/gallery/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/gallery/index.html",
+              "summary": "The live gallery HTML and pinned source HTML were byte-identical at review."
+            }
+          ],
+          "checked_at": "2026-11-23",
+          "revision": "c8bd531347dd2bd8eb18544048e5624fdac329af",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

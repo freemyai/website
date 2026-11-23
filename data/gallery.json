@@ -11193,5 +11193,98 @@
       "featured_order": 2.315
     },
     "added_at": "2026-11-22"
+  },
+  {
+    "id": "soap-film-ui",
+    "slug": "soap-film-ui",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Soap Film UI",
+    "demo_url": "https://soap-film-ui.vercel.app/gallery/",
+    "creator": {
+      "name": "Justin Finkelman / FinkTheArtist",
+      "profile_url": "https://x.com/crtvTeknologist"
+    },
+    "locales": {
+      "zh": {
+        "title": "Soap Film UI：虹彩肥皂膜控件",
+        "summary": "八种界面控件将肥皂膜的虹彩、形变、气泡融合与破裂变成互动效果。",
+        "action": "拖动滑块让肥皂膜伸展，再选择泡泡菜单里的不同图标。",
+        "why": "薄膜干涉色与交互流体模拟共同呈现有机、柔软的界面。",
+        "limit": "桌面实测滑块与泡泡菜单选项，关闭声音；其他控件、音频、移动端和读屏未全面验证，需要 WebGL2。"
+      },
+      "en": {
+        "title": "Soap Film UI",
+        "summary": "Eight interface controls turn iridescent soap films, deformation, merging bubbles and pops into playful interactions.",
+        "action": "Drag the slider to stretch the soap film, then choose a different icon in the bubble menu.",
+        "why": "Thin-film colours and an interactive fluid simulation make ordinary controls feel organic and soft.",
+        "limit": "The slider and bubble-menu selection were verified on desktop with sound off; other controls, audio, mobile and screen readers were not fully tested. Requires WebGL2."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Gemini"
+      ],
+      "evidence_url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/README.md",
+      "description": {
+        "zh": "作者 README 说明这套控件使用为 coding agent 编写的创作工作流，四张概念图由 Gemini 图像生成；实际控件由代码绘制，不能据此断言所有代码由 AI 生成。",
+        "en": "The creator’s README documents a coding-agent workflow used to make the controls and four concept sheets generated with Gemini. The components are drawn in code; this does not establish that all code was AI-generated."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/finktheartist/soap-film-ui"
+      },
+      {
+        "url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/README.md"
+      },
+      {
+        "url": "https://github.com/finktheartist/soap-film-ui/blob/c8bd531347dd2bd8eb18544048e5624fdac329af/LICENSE"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-23",
+      "note": "本机桌面拖动滑块使数值40→93，点击泡泡菜单使选项从 Home 变成 Saved；实际画面和数值均已采集，未测试其余控件。",
+      "note_en": "Local desktop testing dragged the slider from 40 to 93 and clicked the bubble menu from Home to Saved; the result and actual rendered gallery were captured. Other controls were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/soap-film-ui-960.webp",
+        "base": "soap-film-ui",
+        "width": 1440,
+        "height": 1440,
+        "alt": {
+          "zh": "白色画廊中的虹彩肥皂膜滑块、长按按钮、列表和泡泡菜单。",
+          "en": "Iridescent soap-film slider, hold button, list and bubble menu in the white gallery."
+        }
+      },
+      "provenance": {
+        "source_url": "https://soap-film-ui.vercel.app/gallery/",
+        "captured_at": "2026-11-23",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after changing slider and menu selection; sound disabled."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.317
+    },
+    "added_at": "2026-11-23"
   }
 ]

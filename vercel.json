@@ -1282,6 +1282,16 @@
       "permanent": true
     },
     {
+      "source": "/soap-film-ui",
+      "destination": "/en/works/soap-film-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/soap-film-ui/",
+      "destination": "/en/works/soap-film-ui/",
+      "permanent": true
+    },
+    {
       "source": "/soft-attention",
       "destination": "/en/works/soft-attention/",
       "permanent": true
@@ -2829,6 +2839,16 @@
     {
       "source": "/zh/sled-send/",
       "destination": "/works/sled-send/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/soap-film-ui",
+      "destination": "/works/soap-film-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/soap-film-ui/",
+      "destination": "/works/soap-film-ui/",
       "permanent": true
     },
     {
