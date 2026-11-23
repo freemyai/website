@@ -966,6 +966,24 @@
       "share_slug": "lantern-sums",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "rubber-hose-ui",
+      "share_slug": "rubber-hose-ui",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "casa-de-gemas",
+      "share_slug": "casa-de-gemas",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "fate-and-the-individual",
+      "share_slug": "fate-and-the-individual",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

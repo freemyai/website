@@ -4289,6 +4289,204 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "rubber-hose-ui",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-24",
+        "notes": {
+          "zh": "原站与固定 gallery/index.html 字节一致，作者 MIT LICENSE 已核验。",
+          "en": "The live gallery and pinned gallery/index.html match byte for byte; MIT LICENSE verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "rubber-hose-ui-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/finktheartist/rubber-hose-ui",
+          "repository_url": "https://github.com/finktheartist/rubber-hose-ui",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/finktheartist/rubber-hose-ui/blob/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/finktheartist/rubber-hose-ui/blob/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://rubber-hose-ui.vercel.app/gallery/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/finktheartist/rubber-hose-ui/blob/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c/gallery/index.html",
+              "summary": "Pinned gallery HTML exactly matches the live gallery."
+            }
+          ],
+          "checked_at": "2026-11-24",
+          "revision": "9608c12ca34057ad5ebfd64d88f9bc0194df6c2c",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "casa-de-gemas",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-24",
+        "notes": {
+          "zh": "对应固定 index.html 和在线页面字节一致，MIT LICENSE 已核验。",
+          "en": "The pinned index.html matches the live page byte for byte; MIT LICENSE verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "casa-de-gemas-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/deepujain/casadegema",
+          "repository_url": "https://github.com/deepujain/casadegema",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/deepujain/casadegema/blob/e1545d21a06a439000eaca890c4959c8003df5f6/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/deepujain/casadegema/blob/e1545d21a06a439000eaca890c4959c8003df5f6/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://deepujain.github.io/casadegema/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/deepujain/casadegema/blob/e1545d21a06a439000eaca890c4959c8003df5f6/index.html",
+              "summary": "Pinned index.html exactly matches the live desktop game."
+            }
+          ],
+          "checked_at": "2026-11-24",
+          "revision": "e1545d21a06a439000eaca890c4959c8003df5f6",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "fate-and-the-individual",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-24",
+        "notes": {
+          "zh": "固定 site/index.html 与在线首页字节一致；作者 MIT 仅覆盖自身代码和站点原创文字，其他引文、录音、字体另有条款。",
+          "en": "Pinned site/index.html exactly matches the live homepage; MIT covers the project code and original site writing, not quoted works, recordings or fonts."
+        }
+      },
+      "sources": [
+        {
+          "id": "fate-and-the-individual-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/emollick/auden-class",
+          "repository_url": "https://github.com/emollick/auden-class",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/emollick/auden-class/blob/f503b5a1d1a14f135db2eb0c06f47606a2121cd7/LICENSE",
+            "scope_note": {
+              "zh": "MIT 仅该站代码及自身文字；其他作品、引文、录音及字体另有许可。",
+              "en": "MIT applies to site code and its own writing, not other quoted works, recordings or fonts."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/emollick/auden-class/blob/f503b5a1d1a14f135db2eb0c06f47606a2121cd7/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://auden-english-135.netlify.app/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/emollick/auden-class/blob/f503b5a1d1a14f135db2eb0c06f47606a2121cd7/site/index.html",
+              "summary": "Pinned site/index.html and live homepage were byte-identical."
+            }
+          ],
+          "checked_at": "2026-11-24",
+          "revision": "f503b5a1d1a14f135db2eb0c06f47606a2121cd7",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

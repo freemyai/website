@@ -11747,5 +11747,284 @@
       "featured_order": 2.322
     },
     "added_at": "2026-11-24"
+  },
+  {
+    "id": "rubber-hose-ui",
+    "slug": "rubber-hose-ui",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Rubber Hose UI",
+    "demo_url": "https://rubber-hose-ui.vercel.app/gallery/",
+    "creator": {
+      "name": "Justin Finkelman / FinkTheArtist",
+      "profile_url": "https://x.com/crtvTeknologist"
+    },
+    "locales": {
+      "zh": {
+        "title": "Rubber Hose UI：会动的复古卡通控件",
+        "summary": "十一种普通界面控件被画成复古卡通角色，带有墨线、纸感与活泼动作。",
+        "action": "点击灯泡开关，再调节长号滑块，观察角色的表情和动作。",
+        "why": "让界面中的常规操作带上手绘动画的性格。",
+        "limit": "桌面实测灯泡开关和滑块；其他控件、手机和读屏未全面测试。作者称为浅色页面设计。"
+      },
+      "en": {
+        "title": "Rubber Hose UI",
+        "summary": "Eleven familiar UI controls become vintage cartoon characters, with ink lines, paper texture and lively animation.",
+        "action": "Click the lightbulb switch and adjust the trombone slider to see the characters respond.",
+        "why": "Everyday inputs acquire the personality of an illustrated animation.",
+        "limit": "Desktop verified the lightbulb switch and slider. Other controls, mobile and screen readers were not fully tested. Designed for light pages."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude Fable 5.2",
+        "GPT Image"
+      ],
+      "evidence_url": "https://github.com/finktheartist/rubber-hose-ui/commit/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c",
+      "description": {
+        "zh": "对应固定提交共同作者注明 Claude Fable 5.2，作者 README 说明涂绘图层和标题图使用 GPT Image 生成。",
+        "en": "The pinned commit credits Claude Fable 5.2 as co-author, and the creator README credits GPT Image for painted layers and the title art."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/finktheartist/rubber-hose-ui"
+      },
+      {
+        "url": "https://github.com/finktheartist/rubber-hose-ui/commit/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c"
+      },
+      {
+        "url": "https://github.com/finktheartist/rubber-hose-ui/blob/9608c12ca34057ad5ebfd64d88f9bc0194df6c2c/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-24",
+      "note": "本机 Edge 点击 Lights 将 Off 切为 On，并通过滑块键盘输入将数值35→100；角色与说明变化已截图。",
+      "note_en": "Local Edge testing switched Lights from Off to On and changed the slider from 35 to 100 using keyboard input; the characters and captions changed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/rubber-hose-ui-960.webp",
+        "base": "rubber-hose-ui",
+        "width": 1440,
+        "height": 1000,
+        "alt": {
+          "zh": "纸感背景上红色卡通按钮、开启的灯泡开关及伸出的长号滑块。",
+          "en": "A cartoon button, glowing lightbulb switch and extended trombone slider on textured paper."
+        }
+      },
+      "provenance": {
+        "source_url": "https://rubber-hose-ui.vercel.app/gallery/",
+        "captured_at": "2026-11-24",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after the two control changes."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.323
+    },
+    "added_at": "2026-11-24"
+  },
+  {
+    "id": "casa-de-gemas",
+    "slug": "casa-de-gemas",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Casa de Gemas",
+    "demo_url": "https://deepujain.github.io/casadegema/",
+    "creator": {
+      "name": "deepujain",
+      "profile_url": "https://github.com/deepujain"
+    },
+    "locales": {
+      "zh": {
+        "title": "Casa de Gemas：藏着宝石的水彩花园",
+        "summary": "一座西班牙风格的水彩小院，在日常物品与花园细节中隐藏春天的秘密。",
+        "action": "拿起浇水壶，在房子右侧的花床浇水，观察树木长出来。",
+        "why": "柔和的水彩画和可操作的小物件组成轻松的探索谜题。",
+        "limit": "桌面实测取水壶与浇水、树干生长；五颗宝石、音乐、其他物件与手机未全面验证。"
+      },
+      "en": {
+        "title": "Casa de Gemas",
+        "summary": "Explore a watercolor Spanish-style courtyard full of gentle springtime secrets hidden among everyday objects.",
+        "action": "Pick up the watering can, water the soil bed to the right and watch the tree grow.",
+        "why": "Gentle watercolor imagery and responsive objects make a calming exploration puzzle.",
+        "limit": "Desktop testing picked up the watering can, watered the bed and saw the trunk grow. The five gems, music, other objects and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Cursor"
+      ],
+      "evidence_url": "https://github.com/deepujain/casadegema/blob/e1545d21a06a439000eaca890c4959c8003df5f6/README.md",
+      "description": {
+        "zh": "作者 README 声明在 Cursor 中通过与 Claude Opus 5.5 对话制作。",
+        "en": "The creator’s README says the game was built through conversation with Claude Opus 5.5 in Cursor."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/deepujain/casadegema"
+      },
+      {
+        "url": "https://github.com/deepujain/casadegema/blob/e1545d21a06a439000eaca890c4959c8003df5f6/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-24",
+      "note": "本机 Edge 点击并移动青色浇水壶至右侧花床，按住浇水后从空花床长出树干；宝石仍0/5。",
+      "note_en": "Local Edge testing picked up the teal watering can and watered the right-hand soil bed; a trunk grew from the previously empty bed. Gems remained 0/5."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/casa-de-gemas-960.webp",
+        "base": "casa-de-gemas",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "白色庭院、猫头鹰、浇水壶和右侧正在生长的小树。",
+          "en": "Watercolor courtyard, owl, watering can and a growing tree at the right."
+        }
+      },
+      "provenance": {
+        "source_url": "https://deepujain.github.io/casadegema/",
+        "captured_at": "2026-11-24",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after watering the garden bed."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.324
+    },
+    "added_at": "2026-11-24"
+  },
+  {
+    "id": "fate-and-the-individual",
+    "slug": "fate-and-the-individual",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-literature",
+    "title_original": "Fate and the Individual",
+    "demo_url": "https://auden-english-135.netlify.app/",
+    "creator": {
+      "name": "Ethan Mollick (supervision and prompting) / Claude",
+      "profile_url": "https://github.com/emollick"
+    },
+    "locales": {
+      "zh": {
+        "title": "Fate and the Individual：互动文学课堂",
+        "summary": "从1941年奥登文学课程出发，浏览经典作品并切换韵律、押韵等阅读注释。",
+        "action": "打开 Ariel’s song 阅读页，选择 Rhyme 查看彩色押韵标记。",
+        "why": "把篇章阅读与图形化文本分析结合，适合探索文学形式。",
+        "limit": "作者明确说明这是AI制作、未经奥登学者审核的项目，解释准确性未独立证实。桌面实测页面切换与 Rhyme 注释；其他作品、录音与手机未全面测试。"
+      },
+      "en": {
+        "title": "Fate and the Individual",
+        "summary": "Explore a reconstruction of Auden’s 1941 literature course, with reading annotations for metre, rhyme and other literary forms.",
+        "action": "Open the Ariel’s song reading and select Rhyme to view colour-coded rhyme markings.",
+        "why": "Textual reading and visual annotation bring literary form into view.",
+        "limit": "The site explicitly says it was made by AI and not checked by an Auden scholar; interpretive accuracy is unverified. Desktop testing covered navigation and Rhyme, not all readings, recordings or mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude",
+        "Claude Code"
+      ],
+      "evidence_url": "https://auden-english-135.netlify.app/#/about",
+      "description": {
+        "zh": "站点关于页明确说明由 Claude 制作、Ethan Mollick 监督和提示，且未由奥登学者审核；固定提交也注明 Claude Code。",
+        "en": "The site’s About page credits Claude with the work under Ethan Mollick’s supervision and prompting, and says no Auden scholar has checked it. The pinned commit also credits Claude Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/emollick/auden-class"
+      },
+      {
+        "url": "https://auden-english-135.netlify.app/#/about"
+      },
+      {
+        "url": "https://github.com/emollick/auden-class/commit/f503b5a1d1a14f135db2eb0c06f47606a2121cd7"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-24",
+      "note": "本机 Edge 打开 Ariel’s song 阅读页，选择 Rhyme 按钮（aria-pressed为true）并核对彩色押韵标记。",
+      "note_en": "Local Edge testing opened the Ariel’s song reader, selected Rhyme (aria-pressed true), and verified coloured rhyme annotations."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/fate-and-the-individual-960.webp",
+        "base": "fate-and-the-individual",
+        "width": 1180,
+        "height": 557,
+        "alt": {
+          "zh": "互动阅读卡片，选中 Rhyme 注释并在莎士比亚诗行上显示彩色标记。",
+          "en": "An interactive reading panel with Rhyme selected and coloured annotations on Shakespeare’s lines."
+        }
+      },
+      "provenance": {
+        "source_url": "https://auden-english-135.netlify.app/#/tempest/song/0",
+        "captured_at": "2026-11-24",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot after selecting Rhyme; cropped to the public-domain Shakespeare annotation panel, excluding surrounding quoted material."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.325
+    },
+    "added_at": "2026-11-24"
   }
 ]

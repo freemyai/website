@@ -212,6 +212,16 @@
       "permanent": true
     },
     {
+      "source": "/casa-de-gemas",
+      "destination": "/en/works/casa-de-gemas/",
+      "permanent": true
+    },
+    {
+      "source": "/casa-de-gemas/",
+      "destination": "/en/works/casa-de-gemas/",
+      "permanent": true
+    },
+    {
       "source": "/cd-case",
       "destination": "/en/works/cd-case/",
       "permanent": true
@@ -469,6 +479,16 @@
     {
       "source": "/fall-line/",
       "destination": "/en/works/fall-line/",
+      "permanent": true
+    },
+    {
+      "source": "/fate-and-the-individual",
+      "destination": "/en/works/fate-and-the-individual/",
+      "permanent": true
+    },
+    {
+      "source": "/fate-and-the-individual/",
+      "destination": "/en/works/fate-and-the-individual/",
       "permanent": true
     },
     {
@@ -1272,6 +1292,16 @@
       "permanent": true
     },
     {
+      "source": "/rubber-hose-ui",
+      "destination": "/en/works/rubber-hose-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/rubber-hose-ui/",
+      "destination": "/en/works/rubber-hose-ui/",
+      "permanent": true
+    },
+    {
       "source": "/ruby-kart",
       "destination": "/en/works/ruby-kart/",
       "permanent": true
@@ -1822,6 +1852,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/casa-de-gemas",
+      "destination": "/works/casa-de-gemas/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/casa-de-gemas/",
+      "destination": "/works/casa-de-gemas/",
+      "permanent": true
+    },
+    {
       "source": "/zh/cd-case",
       "destination": "/works/cd-case/",
       "permanent": true
@@ -2079,6 +2119,16 @@
     {
       "source": "/zh/fall-line/",
       "destination": "/works/fall-line/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/fate-and-the-individual",
+      "destination": "/works/fate-and-the-individual/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/fate-and-the-individual/",
+      "destination": "/works/fate-and-the-individual/",
       "permanent": true
     },
     {
@@ -2879,6 +2929,16 @@
     {
       "source": "/zh/roverkit/",
       "destination": "/works/roverkit/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/rubber-hose-ui",
+      "destination": "/works/rubber-hose-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/rubber-hose-ui/",
+      "destination": "/works/rubber-hose-ui/",
       "permanent": true
     },
     {
