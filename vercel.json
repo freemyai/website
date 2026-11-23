@@ -332,6 +332,16 @@
       "permanent": true
     },
     {
+      "source": "/devre-simulatoru",
+      "destination": "/en/works/devre-simulatoru/",
+      "permanent": true
+    },
+    {
+      "source": "/devre-simulatoru/",
+      "destination": "/en/works/devre-simulatoru/",
+      "permanent": true
+    },
+    {
       "source": "/downhill-riot",
       "destination": "/en/works/downhill-riot/",
       "permanent": true
@@ -872,6 +882,16 @@
       "permanent": true
     },
     {
+      "source": "/math-animals",
+      "destination": "/en/works/math-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/math-animals/",
+      "destination": "/en/works/math-animals/",
+      "permanent": true
+    },
+    {
       "source": "/meander-river",
       "destination": "/en/works/meander-river/",
       "permanent": true
@@ -989,6 +1009,16 @@
     {
       "source": "/omage-1/",
       "destination": "/en/works/omage-1/",
+      "permanent": true
+    },
+    {
+      "source": "/one-heartbeat",
+      "destination": "/en/works/one-heartbeat/",
+      "permanent": true
+    },
+    {
+      "source": "/one-heartbeat/",
+      "destination": "/en/works/one-heartbeat/",
       "permanent": true
     },
     {
@@ -1119,6 +1149,16 @@
     {
       "source": "/polybop/",
       "destination": "/en/works/polybop/",
+      "permanent": true
+    },
+    {
+      "source": "/port-of-halvard",
+      "destination": "/en/works/port-of-halvard/",
+      "permanent": true
+    },
+    {
+      "source": "/port-of-halvard/",
+      "destination": "/en/works/port-of-halvard/",
       "permanent": true
     },
     {
@@ -1892,6 +1932,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/devre-simulatoru",
+      "destination": "/works/devre-simulatoru/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/devre-simulatoru/",
+      "destination": "/works/devre-simulatoru/",
+      "permanent": true
+    },
+    {
       "source": "/zh/downhill-riot",
       "destination": "/works/downhill-riot/",
       "permanent": true
@@ -2432,6 +2482,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/math-animals",
+      "destination": "/works/math-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/math-animals/",
+      "destination": "/works/math-animals/",
+      "permanent": true
+    },
+    {
       "source": "/zh/meander-river",
       "destination": "/works/meander-river/",
       "permanent": true
@@ -2549,6 +2609,16 @@
     {
       "source": "/zh/omage-1/",
       "destination": "/works/omage-1/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/one-heartbeat",
+      "destination": "/works/one-heartbeat/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/one-heartbeat/",
+      "destination": "/works/one-heartbeat/",
       "permanent": true
     },
     {
@@ -2679,6 +2749,16 @@
     {
       "source": "/zh/polybop/",
       "destination": "/works/polybop/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/port-of-halvard",
+      "destination": "/works/port-of-halvard/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/port-of-halvard/",
+      "destination": "/works/port-of-halvard/",
       "permanent": true
     },
     {

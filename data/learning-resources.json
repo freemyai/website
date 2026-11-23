@@ -3939,6 +3939,275 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "devre-simulatoru",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-23",
+        "notes": {
+          "zh": "作者明确链接在线体验；固定提交的 GitHub Pages 部署成功，MIT 代码许可不包含学校标志和讲义。",
+          "en": "The creator links the live site; the pinned GitHub Pages deployment succeeded. The MIT code license excludes school branding and lab handouts."
+        }
+      },
+      "sources": [
+        {
+          "id": "devre-simulatoru-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/yigitkasap/devre-simulatoru",
+          "repository_url": "https://github.com/yigitkasap/devre-simulatoru",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/yigitkasap/devre-simulatoru/blob/d3e095660acad5ee9b86607f4d43531abf4e55b9/LICENSE",
+            "scope_note": {
+              "zh": "MIT 覆盖作者代码；学校标志和实验讲义不是其代码许可的一部分。",
+              "en": "MIT covers the creator’s code; university branding and lab handouts are outside that code license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/yigitkasap/devre-simulatoru/blob/d3e095660acad5ee9b86607f4d43531abf4e55b9/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://yigitkasap.github.io/devre-simulatoru/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/yigitkasap/devre-simulatoru/blob/d3e095660acad5ee9b86607f4d43531abf4e55b9/README.en.md",
+              "summary": "The English README links the same live demo and states the code-license scope."
+            },
+            {
+              "type": "source_card",
+              "url": "https://github.com/yigitkasap/devre-simulatoru/actions/runs/44993328648",
+              "summary": "The GitHub Pages deployment for the pinned revision succeeded."
+            }
+          ],
+          "checked_at": "2026-11-23",
+          "revision": "d3e095660acad5ee9b86607f4d43531abf4e55b9",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "one-heartbeat",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-23",
+        "notes": {
+          "zh": "对应源码与两处在线 HTML 字节一致，MIT LICENSE 已核验。",
+          "en": "The pinned source and both online HTML files match byte for byte, with a verified MIT LICENSE."
+        }
+      },
+      "sources": [
+        {
+          "id": "one-heartbeat-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/clockendbader/one-heartbeat",
+          "repository_url": "https://github.com/clockendbader/one-heartbeat",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/clockendbader/one-heartbeat/blob/cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/clockendbader/one-heartbeat/blob/cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://clockendbader.github.io/fable-builds/heartbeat/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/clockendbader/one-heartbeat/blob/cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b/index.html",
+              "summary": "Pinned index.html is identical to both live Pages routes."
+            }
+          ],
+          "checked_at": "2026-11-23",
+          "revision": "cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "math-animals",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-23",
+        "notes": {
+          "zh": "在线首页与固定源码一致；MIT LICENSE 已核验。",
+          "en": "The live homepage exactly matches pinned source; MIT LICENSE verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "math-animals-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/r3al1tym/math-animals",
+          "repository_url": "https://github.com/r3al1tym/math-animals",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/r3al1tym/math-animals/blob/37ba595b6cfada809e040b549635d9e2526b8f51/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/r3al1tym/math-animals/blob/37ba595b6cfada809e040b549635d9e2526b8f51/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://r3al1tym.github.io/math-animals/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/r3al1tym/math-animals/blob/37ba595b6cfada809e040b549635d9e2526b8f51/index.html",
+              "summary": "Pinned index.html and current live homepage were byte-identical."
+            }
+          ],
+          "checked_at": "2026-11-23",
+          "revision": "37ba595b6cfada809e040b549635d9e2526b8f51",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "port-of-halvard",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-23",
+        "notes": {
+          "zh": "原站和固定版本 index.html 完全一致；MIT LICENSE 及作者 PROMPT.md 已核验。",
+          "en": "Live and pinned index.html are identical; MIT LICENSE and the creator’s PROMPT.md were verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "port-of-halvard-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Moh4696/sea-port",
+          "repository_url": "https://github.com/Moh4696/sea-port",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Moh4696/sea-port/blob/8d83f2d126fbaf415facb770f9e9f9e8f144c8b3/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Moh4696/sea-port/blob/8d83f2d126fbaf415facb770f9e9f9e8f144c8b3/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://moh4696.github.io/sea-port/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Moh4696/sea-port/blob/8d83f2d126fbaf415facb770f9e9f9e8f144c8b3/index.html",
+              "summary": "Live and pinned index.html were byte-identical."
+            }
+          ],
+          "checked_at": "2026-11-23",
+          "revision": "8d83f2d126fbaf415facb770f9e9f9e8f144c8b3",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

@@ -11286,5 +11286,376 @@
       "featured_order": 2.317
     },
     "added_at": "2026-11-23"
+  },
+  {
+    "id": "devre-simulatoru",
+    "slug": "devre-simulatoru",
+    "type": "learning",
+    "primary_category": "electronics",
+    "subcategory": "electronics-basics",
+    "title_original": "Devre Simülatörü",
+    "demo_url": "https://yigitkasap.github.io/devre-simulatoru/",
+    "creator": {
+      "name": "Mehmet Yiğit Kasap",
+      "profile_url": "https://github.com/yigitkasap"
+    },
+    "locales": {
+      "zh": {
+        "title": "Devre Simülatörü：浏览器电路学习实验室",
+        "summary": "在土耳其语的互动实验室里，通过普通电路示例观察元件和实时模拟读数。",
+        "action": "选择欢迎页的 LED 示例并点击 Oynat（播放），观察灯光和读数。",
+        "why": "可运行的画布让抽象电学变得直观。",
+        "limit": "桌面实测基础 LED 示例；其余示例、模拟精度、3D 模式和手机未验证。界面为土耳其语。"
+      },
+      "en": {
+        "title": "Devre Simülatörü: Circuit Simulator",
+        "summary": "A Turkish-language browser lab for exploring ordinary circuit diagrams and live simulated measurements.",
+        "action": "Choose the introductory LED example and press Oynat (Play) to watch it light up and see the simulated reading.",
+        "why": "An interactive diagram makes basic electrical concepts tangible.",
+        "limit": "Desktop testing covered the introductory LED example only; other examples, numerical accuracy, 3D mode and mobile are unverified. The interface is in Turkish."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/yigitkasap/devre-simulatoru/commit/d3e095660acad5ee9b86607f4d43531abf4e55b9",
+      "description": {
+        "zh": "作者固定提交的共同作者注明 Claude Opus 5.5；作者本人文章称使用 Claude Code，由人指导并审阅。",
+        "en": "The pinned commit credits Claude Opus 5.5 as co-author. The creator’s article describes a human-directed and reviewed Claude Code workflow."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/yigitkasap/devre-simulatoru"
+      },
+      {
+        "url": "https://github.com/yigitkasap/devre-simulatoru/commit/d3e095660acad5ee9b86607f4d43531abf4e55b9"
+      },
+      {
+        "url": "https://thejarrus.com/en/news/opus-5-5-projects/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-23",
+      "note": "本机 Edge 选择 LED 示例并播放，LED 点亮、读数出现；其他模块未测。",
+      "note_en": "Local Edge testing opened and ran the introductory LED example; the LED lit and readings appeared. Other modules were not tested."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/devre-simulatoru-960.webp",
+        "base": "devre-simulatoru",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "普通 LED 示例运行时的原理图和实时测量面板。",
+          "en": "A basic LED example with a live schematic and measurement panel."
+        }
+      },
+      "provenance": {
+        "source_url": "https://yigitkasap.github.io/devre-simulatoru/",
+        "captured_at": "2026-11-23",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot of the running introductory example."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "tr"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.318
+    },
+    "added_at": "2026-11-23"
+  },
+  {
+    "id": "one-heartbeat",
+    "slug": "one-heartbeat",
+    "type": "learning",
+    "primary_category": "nature",
+    "subcategory": "nature-anatomy",
+    "title_original": "One heartbeat",
+    "demo_url": "https://clockendbader.github.io/fable-builds/heartbeat/",
+    "creator": {
+      "name": "Bader / clockendbader",
+      "profile_url": "https://github.com/clockendbader"
+    },
+    "locales": {
+      "zh": {
+        "title": "One heartbeat：看见一次心跳",
+        "summary": "将三维心脏、切面与模拟心动周期曲线放在一个可操作的教学模型中。",
+        "action": "选择 Cut open 打开心脏切面，暂停播放并用 Next phase 观察阶段。",
+        "why": "把形状、运动与时间曲线关联起来，方便探索基础解剖与生理概念。",
+        "limit": "仅为简化教学模型，不能用于诊断或治疗。本机验证切面及暂停、阶段按钮；其他模式、音频、阿拉伯语和手机未全面测试。"
+      },
+      "en": {
+        "title": "One heartbeat",
+        "summary": "An interactive teaching model pairs a 3D heart, cutaway views and simulated cardiac-cycle plots.",
+        "action": "Choose Cut open, pause the animation and use Next phase to explore the stages.",
+        "why": "The model connects anatomy, motion and time plots to make basic physiology more approachable.",
+        "limit": "This simplified teaching model is not for diagnosis or treatment. Desktop verified cutaway and pause/phase controls, not all modes, audio, Arabic or mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Fable"
+      ],
+      "evidence_url": "https://github.com/clockendbader/one-heartbeat/blob/cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b/README.md",
+      "description": {
+        "zh": "作者 README 说明在直播中用 Fable 从一条提示构建此作。",
+        "en": "The creator’s README credits Fable and a single prompt used during a live stream."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/clockendbader/one-heartbeat"
+      },
+      {
+        "url": "https://github.com/clockendbader/one-heartbeat/blob/cc2326b44efdb7bd2f97be21fc3b8f0bb383be3b/README.md"
+      },
+      {
+        "url": "https://clockendbader.github.io/one-heartbeat/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-23",
+      "note": "本机 Edge 点击 Cut open 使切面打开，暂停并点击 Next phase；画面确认显示内部腔室及模拟曲线。",
+      "note_en": "Local Edge testing opened the cutaway, paused and clicked Next phase; the rendered view showed internal chambers and simulated plots."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/one-heartbeat-960.webp",
+        "base": "one-heartbeat",
+        "width": 1440,
+        "height": 900,
+        "alt": {
+          "zh": "心脏切面和右侧教学用心动周期曲线；页面底部注明仅用于学习。",
+          "en": "A cutaway heart and teaching plots for the cardiac cycle, with a learning-only disclaimer."
+        }
+      },
+      "provenance": {
+        "source_url": "https://clockendbader.github.io/fable-builds/heartbeat/",
+        "captured_at": "2026-11-23",
+        "method": "desktop_browser_capture",
+        "note": "Actual local Edge screenshot of normal-mode cutaway after pause and next-phase testing."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "ar"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.319
+    },
+    "added_at": "2026-11-23"
+  },
+  {
+    "id": "math-animals",
+    "slug": "math-animals",
+    "type": "learning",
+    "primary_category": "mathematics",
+    "subcategory": "mathematics-geometry",
+    "title_original": "Math-Animals",
+    "demo_url": "https://r3al1tym.github.io/math-animals/",
+    "creator": {
+      "name": "Sanju Sunny",
+      "profile_url": "https://github.com/r3al1tym"
+    },
+    "locales": {
+      "zh": {
+        "title": "Math-Animals：数学中的动物形态",
+        "summary": "以十种动物形态为题的互动数学画册，用参数变化探索几何和自然图案。",
+        "action": "打开 Honeybee comb，移动三角形、四边形和六边形的滑杆，查看模型图案变化。",
+        "why": "将研究中描述的数学形态变成可交互的画板。",
+        "limit": "Grok 桌面 Chrome 实测蜂巢切换三角形，完整生成画板；本机调参成功但画板渲染仍较慢。其他九项与手机未全面验证。"
+      },
+      "en": {
+        "title": "Math-Animals",
+        "summary": "An interactive mathematical atlas of ten animal forms, exploring geometry and natural patterns through changing parameters.",
+        "action": "Open Honeybee comb and move the scale between triangles, squares and hexagons to explore the model.",
+        "why": "Published mathematical descriptions become approachable, adjustable visual plates.",
+        "limit": "Grok’s desktop Chrome test changed the honeycomb to triangles and rendered the plate; local input changed but the plate was still rendering. The nine other plates and mobile were not fully verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Code",
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/r3al1tym/math-animals/blob/37ba595b6cfada809e040b549635d9e2526b8f51/README.md",
+      "description": {
+        "zh": "作者 README 明确由 Claude Code（Opus 5.5）实现各数学模型并由人指导。",
+        "en": "The creator’s README explicitly credits Claude Code (Opus 5.5) for implementing the mathematical models under human direction."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/r3al1tym/math-animals"
+      },
+      {
+        "url": "https://github.com/r3al1tym/math-animals/blob/37ba595b6cfada809e040b549635d9e2526b8f51/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-23",
+      "note": "Grok 云端桌面从 hexagons 调到 triangles，重绘得到 α=60° 的画板；本机也从120°调为60°，中央画板仍在计算。",
+      "note_en": "Grok’s cloud desktop changed hexagons to triangles and rendered a plate at alpha = 60 degrees; local testing also changed 120 to 60 degrees, but the plate was still being computed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/math-animals-960.webp",
+        "base": "math-animals",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "蜂巢几何解释、三角形参数预览和实际生成的蜂巢画板。",
+          "en": "Honeycomb geometry explanation, triangle parameter preview and the generated honeycomb plate."
+        }
+      },
+      "provenance": {
+        "source_url": "https://r3al1tym.github.io/math-animals/#honeybee",
+        "captured_at": "2026-11-23",
+        "method": "grok_bot_desktop_capture",
+        "note": "Grok desktop Chrome interaction capture; browser chrome and operating-system taskbar cropped, otherwise unaltered."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.32
+    },
+    "added_at": "2026-11-23"
+  },
+  {
+    "id": "port-of-halvard",
+    "slug": "port-of-halvard",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Port of Halvard",
+    "demo_url": "https://moh4696.github.io/sea-port/",
+    "creator": {
+      "name": "Moh4696 / m0h",
+      "profile_url": "https://github.com/Moh4696"
+    },
+    "locales": {
+      "zh": {
+        "title": "Port of Halvard：代码生成的海港",
+        "summary": "在虚构的集装箱港口，欣赏海面倒影、拖船和巨大的岸桥。",
+        "action": "切换观察镜头并拖动 Sun 滑杆，比较不同时刻的光线。",
+        "why": "程序化生成的水面、船只和港口场景构成可探索的三维艺术环境。",
+        "limit": "Grok 云端桌面实测港口渲染和太阳滑杆；本机可加载界面并改变滑杆数值，复杂场景截图超时。需要 WebGL；手机未测。"
+      },
+      "en": {
+        "title": "Port of Halvard",
+        "summary": "Explore a fictional container port with water reflections, tugboats and towering cranes.",
+        "action": "Switch viewpoints and drag the Sun slider to compare lighting at different times.",
+        "why": "Procedurally generated water, ships and scenery form an explorable 3D artwork.",
+        "limit": "Grok’s cloud desktop rendered the harbour and tested the sun slider. Local review loaded the interface and changed its value, but the complex scene screenshot timed out. Requires WebGL; mobile untested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5",
+        "Claude Fable 5.2",
+        "Claude Code"
+      ],
+      "evidence_url": "https://github.com/Moh4696/sea-port/blob/8d83f2d126fbaf415facb770f9e9f9e8f144c8b3/PROMPT.md",
+      "description": {
+        "zh": "作者 PROMPT.md 明确记录 Opus 5.5 规划、Fable 5.2 构建，均使用 Claude Code。",
+        "en": "The creator’s PROMPT.md records planning with Opus 5.5 and building with Fable 5.2, both in Claude Code."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Moh4696/sea-port"
+      },
+      {
+        "url": "https://github.com/Moh4696/sea-port/blob/8d83f2d126fbaf415facb770f9e9f9e8f144c8b3/PROMPT.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-23",
+      "note": "Grok 实测港口水面与船只渲染，并移动 Sun 滑杆观察光线变化；本机数值由30变5.5，截图超时，未独立验证完整视觉变化。",
+      "note_en": "Grok rendered the harbour and changed the sun slider to alter light; local testing changed its value from 30 to 5.5 but the screenshot timed out, so the full visual change was not independently verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/port-of-halvard-960.webp",
+        "base": "port-of-halvard",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "虚构的海港、拖船、集装箱船、起重机与水面倒影。",
+          "en": "Fictional harbour, tugboat, container ship, cranes and reflections."
+        }
+      },
+      "provenance": {
+        "source_url": "https://moh4696.github.io/sea-port/",
+        "captured_at": "2026-11-23",
+        "method": "grok_bot_desktop_capture",
+        "note": "Actual Grok desktop Chrome capture of loaded scene; browser chrome and taskbar cropped."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.321
+    },
+    "added_at": "2026-11-23"
   }
 ]

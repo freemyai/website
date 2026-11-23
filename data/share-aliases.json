@@ -936,6 +936,30 @@
       "share_slug": "soap-film-ui",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "devre-simulatoru",
+      "share_slug": "devre-simulatoru",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "one-heartbeat",
+      "share_slug": "one-heartbeat",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "math-animals",
+      "share_slug": "math-animals",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "port-of-halvard",
+      "share_slug": "port-of-halvard",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }
