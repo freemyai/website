@@ -4487,6 +4487,285 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "the-claude-glass",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-25",
+        "notes": {
+          "zh": "固定首页与在线 HTML 字节一致；作者分别授权 MIT 软件及 CC BY 4.0 图版，已注明署名。",
+          "en": "Pinned homepage bytes match the live site; MIT software and CC BY 4.0 artwork licenses were verified with attribution."
+        }
+      },
+      "sources": [
+        {
+          "id": "the-claude-glass-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Chaoqi31/opus-paints",
+          "repository_url": "https://github.com/Chaoqi31/opus-paints",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/LICENSE",
+            "scope_note": {
+              "zh": "软件代码 MIT；图版、集合墙与影片 CC BY 4.0，署名 The Claude Glass, works by Claude (Opus 5.5), https://github.com/Chaoqi31/opus-paints。",
+              "en": "Software source is MIT; plates, the collection wall and film are CC BY 4.0. Credit: The Claude Glass, works by Claude (Opus 5.5), https://github.com/Chaoqi31/opus-paints."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://chaoqi31.github.io/opus-paints/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/plates/LICENSE",
+              "summary": "CC BY 4.0 attribution requirements for plates, wall and film."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/index.html",
+              "summary": "Pinned index.html is byte-identical to the deployed museum homepage."
+            }
+          ],
+          "checked_at": "2026-11-25",
+          "revision": "19434f9079b7adf41071ce0cf951aa41ea200dba",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "whitepoint-neon-alley",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-25",
+        "notes": {
+          "zh": "固定 docs/neon.html 与在线演示字节一致，MIT LICENSE 已核验。",
+          "en": "The pinned docs/neon.html matches the live demo byte for byte; MIT LICENSE verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "whitepoint-neon-alley-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/somejohnbforya/whitepoint",
+          "repository_url": "https://github.com/somejohnbforya/whitepoint",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/somejohnbforya/whitepoint/blob/316a4147881e68c81362b36c5900db135d4ec5a7/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/somejohnbforya/whitepoint/blob/316a4147881e68c81362b36c5900db135d4ec5a7/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://somejohnbforya.github.io/whitepoint/neon.html",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/somejohnbforya/whitepoint/blob/316a4147881e68c81362b36c5900db135d4ec5a7/docs/neon.html",
+              "summary": "Pinned neon.html is byte-identical to the original neon alley demo."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/somejohnbforya/whitepoint/commit/6798a51da7f3f2edc38fcbf48937bc7b89c055ba",
+              "summary": "The associated commit credits Claude as co-author."
+            }
+          ],
+          "checked_at": "2026-11-25",
+          "revision": "316a4147881e68c81362b36c5900db135d4ec5a7",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "norsk-flashcards",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-25",
+        "notes": {
+          "zh": "发现 Grok 原始固定版本后仓库已更新；GitHub Pages 部署与当前固定 index.html 字节一致，当前版本 MIT LICENSE 已核验。",
+          "en": "The repo updated after Grok’s original check. Current GitHub Pages deployment and pinned index.html match byte for byte; current MIT license verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "norsk-flashcards-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/mvclima/norsk-flashcards",
+          "repository_url": "https://github.com/mvclima/norsk-flashcards",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/mvclima/norsk-flashcards/blob/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/mvclima/norsk-flashcards/blob/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://mvclima.github.io/norsk-flashcards/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/mvclima/norsk-flashcards/blob/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789/index.html",
+              "summary": "Latest deployed index.html matches the live app byte for byte."
+            }
+          ],
+          "checked_at": "2026-11-25",
+          "revision": "0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "coloured-pencil",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-25",
+        "notes": {
+          "zh": "在原站 Files 核对当前提交 0400f90，公开代码及 LICENSE、LICENCE-NOTES.md 均与作品对应。",
+          "en": "The matching public Patch file tree at commit 0400f90, LICENSE and per-component notes were verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "coloured-pencil-patch",
+          "provider": "other",
+          "kind": "source_code",
+          "url": "https://patch.gg/blendi/coloured-pencil/files",
+          "repository_url": "https://patch.gg/blendi/coloured-pencil",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://patch.gg/blendi/coloured-pencil/files/LICENSE",
+            "scope_note": {
+              "zh": "Patch 自有场景与渲染代码 MIT，所生成艺术 CC0；Rapier Apache-2.0、three.js MIT，Patch block helper 及其他部件按许可笔记各自条款。",
+              "en": "Patch-authored scene/rendering code MIT, generated art CC0; Rapier Apache-2.0, three.js MIT, and the Patch block helper and other components have individual terms in LICENCE-NOTES.md."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://patch.gg/blendi/coloured-pencil",
+              "summary": "Live demo and project readme describe the pencil-rendered harbor."
+            },
+            {
+              "type": "source_file",
+              "url": "https://patch.gg/blendi/coloured-pencil/files/src",
+              "summary": "The public file tree at commit 0400f90 includes the scene and rendering code."
+            },
+            {
+              "type": "license_file",
+              "url": "https://patch.gg/blendi/coloured-pencil/files/LICENCE-NOTES.md",
+              "summary": "Per-asset and dependency licensing notes clarify MIT code and CC0 art."
+            },
+            {
+              "type": "author_post",
+              "url": "https://x.com/BlendiByl/status/2121130385723789637",
+              "summary": "Blendi credits Fable 5.2 and describes the work as open source."
+            }
+          ],
+          "checked_at": "2026-11-25",
+          "revision": "0400f90d08ca97aae11edb41e3ff3af830acc8c7",
+          "publication": "published",
+          "notes": {
+            "zh": "公开 Patch 项目文件树和对应提交、原帖、MIT/LICENSE 与许可笔记均核验；未本地安装或执行源仓库。",
+            "en": "Public Patch file tree and commit, original post, MIT LICENSE and licensing notes verified. Repository code not installed or executed locally."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

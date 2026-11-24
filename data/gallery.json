@@ -12026,5 +12026,391 @@
       "featured_order": 2.325
     },
     "added_at": "2026-11-24"
+  },
+  {
+    "id": "the-claude-glass",
+    "slug": "the-claude-glass",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-exhibitions",
+    "title_original": "The Claude Glass",
+    "demo_url": "https://chaoqi31.github.io/opus-paints/",
+    "creator": {
+      "name": "Chaoqi / Claude (Opus 5.5)",
+      "profile_url": "https://github.com/Chaoqi31"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Claude Glass：用程序画成的六十幅画",
+        "summary": "漫游一座由 Chaoqi 策划的线上画廊，六十幅作品由 Claude Opus 5.5 使用 Python 代码绘制。",
+        "action": "进入画廊，点开一幅画并选择 Turn over，在作品背面阅读生成它的程序。",
+        "why": "像翻看画布一样，从绘画笔触进入创意编程的制作过程。",
+        "limit": "桌面实测打开 Summer Cloud, Hampstead 并翻到代码背面。影片、其他画作及手机未全面测试。图版署名：The Claude Glass, works by Claude (Opus 5.5), https://github.com/Chaoqi31/opus-paints；CC BY 4.0，预览截图已调整尺寸。"
+      },
+      "en": {
+        "title": "The Claude Glass",
+        "summary": "Visit an online museum founded by Chaoqi: sixty paintings rendered by Python programs written by Claude Opus 5.5.",
+        "action": "Open a painting and choose Turn over to read the program on the back of the canvas.",
+        "why": "A gallery turns viewing a painting into an exploration of creative coding and procedural brushwork.",
+        "limit": "Desktop testing opened Summer Cloud, Hampstead and turned it over to read its program; the film, other paintings, and mobile were not fully tested. Plate credit: The Claude Glass, works by Claude (Opus 5.5), https://github.com/Chaoqi31/opus-paints; CC BY 4.0, preview resized."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/README.md",
+      "description": {
+        "zh": "作者 README 和原站明确注明：作品由 Claude Opus 5.5 创作，Chaoqi 建馆，每幅画由 Python 程序计算。",
+        "en": "The creator README and site credit Claude Opus 5.5 with the paintings and Chaoqi with founding the museum; each painting is rendered by a Python program."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Chaoqi31/opus-paints"
+      },
+      {
+        "url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/README.md"
+      },
+      {
+        "url": "https://github.com/Chaoqi31/opus-paints/blob/19434f9079b7adf41071ce0cf951aa41ea200dba/plates/LICENSE"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-25",
+      "note": "Grok 与 Codex 均在桌面打开 Summer Cloud, Hampstead，点击 Turn over 后看到 500 行 Python 程序及 Turn back 按钮。",
+      "note_en": "Grok and Codex opened Summer Cloud, Hampstead on desktop and used Turn over to reveal the 500-line Python program and Turn back button."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/the-claude-glass-960.webp",
+        "base": "the-claude-glass",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "绿叶与彩色花朵组成的程序画作，旁边是 The Claude Glass 画廊标题。",
+          "en": "A densely painted cottage garden beside the title The Claude Glass."
+        }
+      },
+      "provenance": {
+        "source_url": "https://chaoqi31.github.io/opus-paints/",
+        "captured_at": "2026-11-25",
+        "method": "grok_bot_desktop_capture",
+        "note": "Grok Bot actual desktop capture, independently checked by Codex; image resized for the gallery. Plate credit: The Claude Glass, works by Claude (Opus 5.5), https://github.com/Chaoqi31/opus-paints; CC BY 4.0."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.326
+    },
+    "added_at": "2026-11-25"
+  },
+  {
+    "id": "whitepoint-neon-alley",
+    "slug": "whitepoint-neon-alley",
+    "type": "art",
+    "primary_category": "creative",
+    "subcategory": "creative-shaders",
+    "title_original": "whitepoint — neon alley",
+    "demo_url": "https://somejohnbforya.github.io/whitepoint/neon.html",
+    "creator": {
+      "name": "John Boyer",
+      "profile_url": "https://github.com/somejohnbforya"
+    },
+    "locales": {
+      "zh": {
+        "title": "whitepoint：霓虹雨巷",
+        "summary": "用一条霓虹小巷对比两种色彩处理方式，观察发光招牌、墙面与倒影的变化。",
+        "action": "切换 whitepoint pipeline 和 naive RGB pipeline，观察同一场景中的光晕、亮度与色彩。",
+        "why": "把抽象的色彩空间和光谱计算变成看得见的视觉实验。",
+        "limit": "桌面实测切换色彩管线；显示器色域影响差异，其他参数与手机未全面测试。作者也列出了计算模型的近似范围。"
+      },
+      "en": {
+        "title": "whitepoint — neon alley",
+        "summary": "Compare two color pipelines in a neon-lit rainy alley; see how signs, brick walls and reflections change.",
+        "action": "Flip between the whitepoint and naive RGB pipelines and compare glow, brightness and color in the same scene.",
+        "why": "Explore color spaces and spectral calculations through a visual scene rather than static charts.",
+        "limit": "Desktop pipeline toggle tested. Display gamut affects the visual difference; other parameters and mobile were not fully tested. The author describes the approximations in the model."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5",
+        "Claude Opus 4.8"
+      ],
+      "evidence_url": "https://github.com/somejohnbforya/whitepoint/commit/6798a51da7f3f2edc38fcbf48937bc7b89c055ba",
+      "description": {
+        "zh": "固定提交注明 Claude Fable 5 为共同作者，发布版本提交另注明 Claude Opus 4.8。",
+        "en": "The pinned commit history credits Claude Fable 5 and the published version also credits Claude Opus 4.8."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/somejohnbforya/whitepoint"
+      },
+      {
+        "url": "https://github.com/somejohnbforya/whitepoint/commit/6798a51da7f3f2edc38fcbf48937bc7b89c055ba"
+      },
+      {
+        "url": "https://github.com/somejohnbforya/whitepoint/commit/316a4147881e68c81362b36c5900db135d4ec5a7"
+      },
+      {
+        "url": "https://github.com/somejohnbforya/whitepoint/blob/316a4147881e68c81362b36c5900db135d4ec5a7/docs/neon.html"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-25",
+      "note": "Grok 和 Codex 桌面切换色彩管线开关，切换后的勾选状态、橙色开关和霓虹场景均已确认。",
+      "note_en": "Grok and Codex switched the desktop pipeline control; the checked state, orange switch and rendered neon scene were verified."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/whitepoint-neon-alley-960.webp",
+        "base": "whitepoint-neon-alley",
+        "width": 880,
+        "height": 640,
+        "alt": {
+          "zh": "深色背景、霓虹招牌、湿砖墙和色彩管线切换控件。",
+          "en": "Neon signs, wet brick walls and the color-pipeline switch."
+        }
+      },
+      "provenance": {
+        "source_url": "https://somejohnbforya.github.io/whitepoint/neon.html",
+        "captured_at": "2026-11-25",
+        "method": "grok_bot_desktop_capture",
+        "note": "Grok Bot actual desktop capture, independently checked by Codex; image resized for the gallery and cropped."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.327
+    },
+    "added_at": "2026-11-25"
+  },
+  {
+    "id": "norsk-flashcards",
+    "slug": "norsk-flashcards",
+    "type": "learning",
+    "primary_category": "humanities",
+    "subcategory": "humanities-languages",
+    "title_original": "Norsk Flashcards",
+    "demo_url": "https://mvclima.github.io/norsk-flashcards/",
+    "creator": {
+      "name": "Marcus Lima",
+      "profile_url": "https://github.com/mvclima"
+    },
+    "locales": {
+      "zh": {
+        "title": "Norsk Flashcards：挪威语闪卡",
+        "summary": "用三千多张词汇条目和三十二个主题练习挪威语 Bokmål 与英语之间的词汇转换。",
+        "action": "点击第一个单词翻卡，选 Knew it! 进入下一张卡并查看学习进度。",
+        "why": "无需注册即可按主题练习，按自己的节奏重复记忆。",
+        "limit": "桌面实测翻卡并更新已掌握数量；发音、离线安装、完整词义准确性及手机未全面测试。"
+      },
+      "en": {
+        "title": "Norsk Flashcards",
+        "summary": "Study Norwegian Bokmål vocabulary with English translations across more than 3,300 entries and 32 themes.",
+        "action": "Flip a card and choose Knew it! to advance and update the progress counter.",
+        "why": "Practice vocabulary by theme at your own pace without an account.",
+        "limit": "Desktop card flip and progress were tested; pronunciation, offline installation, comprehensive vocabulary accuracy, and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/mvclima/norsk-flashcards/commit/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789",
+      "description": {
+        "zh": "作者仓库简介说明使用 Claude 制作，当前已上线提交署名 Claude Opus 5.5 为共同作者。",
+        "en": "The creator repository credits Claude, and the currently deployed commit identifies Claude Opus 5.5 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/mvclima/norsk-flashcards"
+      },
+      {
+        "url": "https://github.com/mvclima/norsk-flashcards/commit/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789"
+      },
+      {
+        "url": "https://github.com/mvclima/norsk-flashcards/blob/0f0bf95b32a96b06acb1464d1fa0f5c69e4d3789/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-25",
+      "note": "Grok 与 Codex 桌面实测 hei 翻面，选择 Knew it! 后变为 hallo，显示 Card 2 of 62、Known 1 of 62。",
+      "note_en": "Grok and Codex flipped hei; Knew it! advanced to hallo, Card 2 of 62 and Known 1 of 62."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/norsk-flashcards-960.webp",
+        "base": "norsk-flashcards",
+        "width": 1020,
+        "height": 880,
+        "alt": {
+          "zh": "挪威语卡片 hallo、已掌握按钮和进度计数。",
+          "en": "The Norwegian flashcard hallo, Knew it! button and progress counter."
+        }
+      },
+      "provenance": {
+        "source_url": "https://mvclima.github.io/norsk-flashcards/",
+        "captured_at": "2026-11-25",
+        "method": "grok_bot_desktop_capture",
+        "note": "Grok Bot actual desktop capture, independently checked by Codex; image resized for the gallery and cropped."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en",
+        "no"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.328
+    },
+    "added_at": "2026-11-25"
+  },
+  {
+    "id": "coloured-pencil",
+    "slug": "coloured-pencil",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Coloured Pencil",
+    "demo_url": "https://patch.gg/blendi/coloured-pencil",
+    "creator": {
+      "name": "Blendi / Patch",
+      "profile_url": "https://x.com/BlendiByl"
+    },
+    "locales": {
+      "zh": {
+        "title": "Coloured Pencil：铅笔小港漫游",
+        "summary": "一座像素描簿一样的彩铅港口小镇，沿着木栈桥与彩色房屋间的街道漫游。",
+        "action": "点击演示画面，用 WASD 移动或按空格跳跃，观察水手和景物的变化。",
+        "why": "把程序化线条和纸面纹理变成可以亲身探索的三维场景。",
+        "limit": "本机实测画面加载与水手跳跃，Grok 实测码头移动；未走完全镇。演示无需登录，站点有可选登录入口。手机、手柄未测。"
+      },
+      "en": {
+        "title": "Coloured Pencil",
+        "summary": "Explore a pencil-drawn harbor town: a wooden pier, colorful buildings and a seaside street on a sketchbook page.",
+        "action": "Click the demo and use WASD to move or Space to jump, watching the sailor and scenery respond.",
+        "why": "Procedural hatching and paper texture turn a 3D environment into an explorable illustration.",
+        "limit": "Local testing rendered the scene and jumped; Grok walked along the quay. The full town, mobile and controller play were not tested. The live demo works without an account, though the host offers sign-in."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.2"
+      ],
+      "evidence_url": "https://x.com/BlendiByl/status/2121130385723789637",
+      "description": {
+        "zh": "Blendi 在对应原帖明确说明使用 Fable 5.2 制作彩铅游戏片段，场景着色和城镇是代码；项目授权方为 Patch。",
+        "en": "Blendi credits Fable 5.2 for this colored-pencil game slice in the original post; its scene shading and town are code. The project license credits Patch."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://patch.gg/blendi/coloured-pencil"
+      },
+      {
+        "url": "https://x.com/BlendiByl/status/2121130385723789637"
+      },
+      {
+        "url": "https://patch.gg/blendi/coloured-pencil/files"
+      },
+      {
+        "url": "https://patch.gg/blendi/coloured-pencil/files/LICENSE"
+      },
+      {
+        "url": "https://patch.gg/blendi/coloured-pencil/files/LICENCE-NOTES.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-25",
+      "note": "Grok 实测沿码头行走；Codex 在桌面加载真实画面、聚焦游戏后按空格，截图显示水手跃起。",
+      "note_en": "Grok walked along the quay. Codex independently rendered the live scene, focused the game and pressed Space; the screenshot shows the sailor jumping."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/coloured-pencil-960.webp",
+        "base": "coloured-pencil",
+        "width": 1534,
+        "height": 834,
+        "alt": {
+          "zh": "木栈桥上的水手、色彩丰富的房屋、钟楼与铅笔笔触。",
+          "en": "A sailor on a wooden pier, colorful houses, a clocktower and pencil hatching."
+        }
+      },
+      "provenance": {
+        "source_url": "https://patch.gg/blendi/coloured-pencil",
+        "captured_at": "2026-11-25",
+        "method": "grok_bot_desktop_capture",
+        "note": "Grok Bot actual desktop capture, independently checked by Codex; image resized for the gallery."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.329
+    },
+    "added_at": "2026-11-25"
   }
 ]

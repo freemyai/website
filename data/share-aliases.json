@@ -984,6 +984,30 @@
       "share_slug": "fate-and-the-individual",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "the-claude-glass",
+      "share_slug": "the-claude-glass",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "whitepoint-neon-alley",
+      "share_slug": "whitepoint-neon-alley",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "norsk-flashcards",
+      "share_slug": "norsk-flashcards",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "coloured-pencil",
+      "share_slug": "coloured-pencil",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

@@ -300,6 +300,16 @@
     "permanent": true
   },
   {
+    "source": "/coloured-pencil",
+    "destination": "/en/works/coloured-pencil/",
+    "permanent": true
+  },
+  {
+    "source": "/coloured-pencil/",
+    "destination": "/en/works/coloured-pencil/",
+    "permanent": true
+  },
+  {
     "source": "/contrib-suite",
     "destination": "/en/works/contrib-suite/",
     "permanent": true
@@ -990,6 +1000,16 @@
     "permanent": true
   },
   {
+    "source": "/norsk-flashcards",
+    "destination": "/en/works/norsk-flashcards/",
+    "permanent": true
+  },
+  {
+    "source": "/norsk-flashcards/",
+    "destination": "/en/works/norsk-flashcards/",
+    "permanent": true
+  },
+  {
     "source": "/null-range",
     "destination": "/en/works/null-range/",
     "permanent": true
@@ -1480,6 +1500,16 @@
     "permanent": true
   },
   {
+    "source": "/the-claude-glass",
+    "destination": "/en/works/the-claude-glass/",
+    "permanent": true
+  },
+  {
+    "source": "/the-claude-glass/",
+    "destination": "/en/works/the-claude-glass/",
+    "permanent": true
+  },
+  {
     "source": "/the-county",
     "destination": "/en/works/the-county/",
     "permanent": true
@@ -1597,6 +1627,16 @@
   {
     "source": "/what-the-water-keeps/",
     "destination": "/en/works/what-the-water-keeps/",
+    "permanent": true
+  },
+  {
+    "source": "/whitepoint-neon-alley",
+    "destination": "/en/works/whitepoint-neon-alley/",
+    "permanent": true
+  },
+  {
+    "source": "/whitepoint-neon-alley/",
+    "destination": "/en/works/whitepoint-neon-alley/",
     "permanent": true
   },
   {
@@ -1937,6 +1977,16 @@
   {
     "source": "/zh/codevember-tension/",
     "destination": "/works/codevember-tension/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/coloured-pencil",
+    "destination": "/works/coloured-pencil/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/coloured-pencil/",
+    "destination": "/works/coloured-pencil/",
     "permanent": true
   },
   {
@@ -2630,6 +2680,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/norsk-flashcards",
+    "destination": "/works/norsk-flashcards/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/norsk-flashcards/",
+    "destination": "/works/norsk-flashcards/",
+    "permanent": true
+  },
+  {
     "source": "/zh/null-range",
     "destination": "/works/null-range/",
     "permanent": true
@@ -3120,6 +3180,16 @@
     "permanent": true
   },
   {
+    "source": "/zh/the-claude-glass",
+    "destination": "/works/the-claude-glass/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/the-claude-glass/",
+    "destination": "/works/the-claude-glass/",
+    "permanent": true
+  },
+  {
     "source": "/zh/the-county",
     "destination": "/works/the-county/",
     "permanent": true
@@ -3237,6 +3307,16 @@
   {
     "source": "/zh/what-the-water-keeps/",
     "destination": "/works/what-the-water-keeps/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/whitepoint-neon-alley",
+    "destination": "/works/whitepoint-neon-alley/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/whitepoint-neon-alley/",
+    "destination": "/works/whitepoint-neon-alley/",
     "permanent": true
   },
   {
