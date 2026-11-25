@@ -682,6 +682,16 @@
       "permanent": true
     },
     {
+      "source": "/heightmap-generator",
+      "destination": "/en/works/heightmap-generator/",
+      "permanent": true
+    },
+    {
+      "source": "/heightmap-generator/",
+      "destination": "/en/works/heightmap-generator/",
+      "permanent": true
+    },
+    {
       "source": "/hidden-layers",
       "destination": "/en/works/hidden-layers/",
       "permanent": true
@@ -1502,6 +1512,16 @@
       "permanent": true
     },
     {
+      "source": "/squirm",
+      "destination": "/en/works/squirm/",
+      "permanent": true
+    },
+    {
+      "source": "/squirm/",
+      "destination": "/en/works/squirm/",
+      "permanent": true
+    },
+    {
       "source": "/star-hop",
       "destination": "/en/works/star-hop/",
       "permanent": true
@@ -1679,6 +1699,16 @@
     {
       "source": "/wawa-school-of-magic/",
       "destination": "/en/works/wawa-school-of-magic/",
+      "permanent": true
+    },
+    {
+      "source": "/weave-patterner",
+      "destination": "/en/works/weave-patterner/",
+      "permanent": true
+    },
+    {
+      "source": "/weave-patterner/",
+      "destination": "/en/works/weave-patterner/",
       "permanent": true
     },
     {
@@ -2419,6 +2449,16 @@
     {
       "source": "/zh/hearthlight/",
       "destination": "/works/hearthlight/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/heightmap-generator",
+      "destination": "/works/heightmap-generator/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/heightmap-generator/",
+      "destination": "/works/heightmap-generator/",
       "permanent": true
     },
     {
@@ -3242,6 +3282,16 @@
       "permanent": true
     },
     {
+      "source": "/zh/squirm",
+      "destination": "/works/squirm/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/squirm/",
+      "destination": "/works/squirm/",
+      "permanent": true
+    },
+    {
       "source": "/zh/star-hop",
       "destination": "/works/star-hop/",
       "permanent": true
@@ -3419,6 +3469,16 @@
     {
       "source": "/zh/wawa-school-of-magic/",
       "destination": "/works/wawa-school-of-magic/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/weave-patterner",
+      "destination": "/works/weave-patterner/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/weave-patterner/",
+      "destination": "/works/weave-patterner/",
       "permanent": true
     },
     {

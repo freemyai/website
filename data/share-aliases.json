@@ -1044,6 +1044,24 @@
       "share_slug": "merrow-pocket-plan",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "squirm",
+      "share_slug": "squirm",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "weave-patterner",
+      "share_slug": "weave-patterner",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "heightmap-generator",
+      "share_slug": "heightmap-generator",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

@@ -12997,5 +12997,299 @@
       "featured_order": 2.335
     },
     "added_at": "2026-11-26"
+  },
+  {
+    "id": "squirm",
+    "slug": "squirm",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Squirm",
+    "demo_url": "https://farzinmirzaie.github.io/squirm/",
+    "creator": {
+      "name": "Farzin Mirzaie",
+      "profile_url": "https://github.com/farzinmirzaie"
+    },
+    "locales": {
+      "zh": {
+        "title": "Squirm：花园里的小虫解谜",
+        "summary": "穿过可爱的三维花园格子，帮助小虫找到长度正好合适的洞穴。",
+        "action": "打开第一关 First wiggle，用方向键或滑动移动一格；观察步数和小虫长度。",
+        "why": "将简单的格子路线、长度限制与花园场景结合，形成轻松的回合制益智体验。",
+        "limit": "本机实测进入第一关、关闭教程并移动一步，步数0→1，未完成关卡；随机关卡、联机分享、声音及移动端未全面测试。"
+      },
+      "en": {
+        "title": "Squirm",
+        "summary": "Guide a cheerful little worm across garden tiles and towards a burrow matching its length.",
+        "action": "Open First wiggle, then use the arrow keys or swipe to move a tile; watch the move counter and length.",
+        "why": "Simple grid paths and length constraints become a cozy turn-based puzzle in a bright garden.",
+        "limit": "Local testing entered the first patch, dismissed the tutorial and moved once (0 to 1 move). Level completion, generated patches, race sharing, audio and mobile were not verified."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/farzinmirzaie/squirm/commit/f8438a36568db1678fbd322d844f6b1fcbbc630c",
+      "description": {
+        "zh": "匹配仓库的当前已成功部署提交明确包含 Claude Opus 5.5 共同作者声明。",
+        "en": "The matching repository’s successfully deployed revision explicitly credits Claude Opus 5.5 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/farzinmirzaie/squirm"
+      },
+      {
+        "url": "https://github.com/farzinmirzaie/squirm/commit/f8438a36568db1678fbd322d844f6b1fcbbc630c"
+      },
+      {
+        "url": "https://github.com/farzinmirzaie/squirm/blob/f8438a36568db1678fbd322d844f6b1fcbbc630c/README.md"
+      },
+      {
+        "url": "https://github.com/farzinmirzaie/squirm/blob/f8438a36568db1678fbd322d844f6b1fcbbc630c/LICENSE"
+      },
+      {
+        "url": "https://github.com/farzinmirzaie/squirm/actions/runs/42759804375"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 临时深挖筛选该作；Codex 本机打开第一关 First wiggle，按方向键成功移动，计数从0变为1、Undo启用，实测截图验证。未通关。",
+      "note_en": "Grok shortlisted this work; Codex independently entered First wiggle and used an arrow key to move, verifying the count 0→1 and enabled Undo in the live page. No completed level claimed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/squirm-960.webp",
+        "base": "squirm",
+        "width": 1699,
+        "height": 828,
+        "alt": {
+          "zh": "花朵、蝴蝶与绿色路径之间的粉色小虫，步数显示1。",
+          "en": "A pink worm among green tiles, flowers and butterflies, with the move counter showing one."
+        }
+      },
+      "provenance": {
+        "source_url": "https://farzinmirzaie.github.io/squirm/",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Independent local live browser interaction screenshot, resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.336
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "weave-patterner",
+    "slug": "weave-patterner",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Weave Patterner",
+    "demo_url": "https://weave-patterner.com/",
+    "creator": {
+      "name": "Stephen Skidmore / steves165",
+      "profile_url": "https://github.com/steves165"
+    },
+    "locales": {
+      "zh": {
+        "title": "Weave Patterner：在浏览器设计织物",
+        "summary": "可直接编辑经纬交织图案和色彩，并把图案转化为能够观察正反面的三维织物。",
+        "action": "打开页面中的 3D cloth，再选择 Show back，观察纱线如何交织与反面纹样。",
+        "why": "将纺织设计图与立体可视化连接，帮助理解图案如何由纱线形成。",
+        "limit": "本机实测默认32×32织物的三维预览及正反面切换。未验证导出、真实织机适用性、其他织法和移动端。无需账户即可使用所测功能。"
+      },
+      "en": {
+        "title": "Weave Patterner",
+        "summary": "Design woven patterns and colors in a browser, then inspect the front and reverse of a live 3D cloth preview.",
+        "action": "Open 3D cloth and select Show back to inspect how the threads intertwine and the pattern looks from the other side.",
+        "why": "The connection between a weaving draft and a rendered cloth makes textile structure tangible.",
+        "limit": "Local testing covered the default 32×32 cloth preview and flipping to the reverse side. Export, real loom compatibility, other weave structures and mobile were not tested. No account was required for the tested experience."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/steves165/weave-patterner/commit/e92ae6f596b8d7a42812175e70f13d57a7769e7b",
+      "description": {
+        "zh": "对应作品的成功部署提交明确署名 Claude Opus 5.5 为共同作者。",
+        "en": "The matching successfully deployed repository revision explicitly credits Claude Opus 5.5 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/steves165/weave-patterner"
+      },
+      {
+        "url": "https://github.com/steves165/weave-patterner/commit/e92ae6f596b8d7a42812175e70f13d57a7769e7b"
+      },
+      {
+        "url": "https://github.com/steves165/weave-patterner/blob/e92ae6f596b8d7a42812175e70f13d57a7769e7b/README.md"
+      },
+      {
+        "url": "https://github.com/steves165/weave-patterner/blob/e92ae6f596b8d7a42812175e70f13d57a7769e7b/LICENSE"
+      },
+      {
+        "url": "https://github.com/steves165/weave-patterner/actions/runs/42506658097"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 临时深挖筛选该作；Codex 本机拒绝可选分析cookie、打开默认织物的3D cloth，再选择 Show back，按钮随即变为 Show face，且三维纱线图完整渲染。",
+      "note_en": "Grok shortlisted this work; Codex declined optional analytics, opened the default 3D cloth and selected Show back, verifying the Show face label and rendered interlaced threads."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/weave-patterner-960.webp",
+        "base": "weave-patterner",
+        "width": 1699,
+        "height": 828,
+        "alt": {
+          "zh": "紫红和淡灰交织的三维织物反面，底部有调节控件。",
+          "en": "A rendered reverse-side cloth of burgundy and gray interlaced yarn, with preview controls."
+        }
+      },
+      "provenance": {
+        "source_url": "https://weave-patterner.com/",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Independent local live browser interaction screenshot, resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.337
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "heightmap-generator",
+    "slug": "heightmap-generator",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-generative",
+    "title_original": "Height Map Generator",
+    "demo_url": "https://heightmap-generator.netlify.app/",
+    "creator": {
+      "name": "Gokhan Ergin ERYILDIR / ergin3d",
+      "profile_url": "https://github.com/ergin3d"
+    },
+    "locales": {
+      "zh": {
+        "title": "Height Map Generator：创作虚构风景",
+        "summary": "在浏览器中生成虚构山丘、岛屿和其他景观，双视图同时展示灰度高度图与立体地形。",
+        "action": "选择 Archipelago 群岛预设，观察灰度图如何随三维岛屿的形状而改变。",
+        "why": "即时联动的二维与三维视图让程序化景观创作更易理解。",
+        "limit": "本机实测切换自定义预设至 Archipelago，双视图正确渲染。未验证导入、导出、全部滤镜、手机或现实测绘；仅作虚构景观创作。"
+      },
+      "en": {
+        "title": "Height Map Generator",
+        "summary": "Generate imaginary hills and islands, with a grayscale height map and a live 3D terrain shown side by side.",
+        "action": "Choose the Archipelago preset and see how the grayscale map corresponds to the rendered islands.",
+        "why": "Linked 2D and 3D previews provide an intuitive creative tool for procedural landscapes.",
+        "limit": "Local testing switched from Custom to Archipelago, rendering both views. Import, export, all filters, mobile and real-world mapping were not tested; this is for fictional landscape creativity."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/README.md",
+      "description": {
+        "zh": "作者 README 明确说明用 Claude 进行 AI 辅助编程制作，并链接对应在线工具。",
+        "en": "The creator README explicitly credits Claude-assisted coding and links the matching live tool."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/ergin3d/heightmap-generator"
+      },
+      {
+        "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/README.md"
+      },
+      {
+        "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/index.html"
+      },
+      {
+        "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/LICENSE"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Codex 独立发现并加载，切换 Custom → Archipelago，实际显示灰度高度图和虚构三维群岛。未导入、上传或导出文件。",
+      "note_en": "Codex independently discovered and loaded the tool, selected Custom → Archipelago and observed the grayscale and rendered fictional-island views. No file import, upload or export performed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/heightmap-generator-960.webp",
+        "base": "heightmap-generator",
+        "width": 1699,
+        "height": 828,
+        "alt": {
+          "zh": "二维灰度高度图与蓝色水面上的三维绿色岛屿并列。",
+          "en": "A grayscale map alongside a 3D green archipelago surrounded by blue water."
+        }
+      },
+      "provenance": {
+        "source_url": "https://heightmap-generator.netlify.app/",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Independent local live browser interaction screenshot, resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.338
+    },
+    "added_at": "2026-11-26"
   }
 ]

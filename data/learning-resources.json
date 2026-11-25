@@ -5197,6 +5197,219 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "squirm",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "匹配完整游戏源码及 MIT，固定提交和成功 Pages 部署已核实。",
+          "en": "Matching full game source, MIT, pinned commit and successful Pages deployment verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "squirm-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/farzinmirzaie/squirm",
+          "repository_url": "https://github.com/farzinmirzaie/squirm",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/farzinmirzaie/squirm/blob/f8438a36568db1678fbd322d844f6b1fcbbc630c/LICENSE",
+            "scope_note": {
+              "zh": "作者代码 MIT；three.js 为 MIT，Baloo 2 字体为 SIL OFL 1.1，其他第三方资源遵守各自许可。",
+              "en": "Creator code and three.js use MIT; Baloo 2 is SIL OFL 1.1. Other third-party resources retain their terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/farzinmirzaie/squirm/blob/f8438a36568db1678fbd322d844f6b1fcbbc630c/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://farzinmirzaie.github.io/squirm/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/farzinmirzaie/squirm/commit/f8438a36568db1678fbd322d844f6b1fcbbc630c",
+              "summary": "Successful revision credits Claude Opus 5.5."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/farzinmirzaie/squirm/actions/runs/42759804375",
+              "summary": "Public GitHub Pages deploy run succeeded for the exact pinned revision."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "f8438a36568db1678fbd322d844f6b1fcbbc630c",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "weave-patterner",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "已核对官方 README 所链接原站、对应完整公开代码、MIT 和实际成功的固定提交部署。",
+          "en": "Verified the creator README linking the site, matching full public source, MIT and a successful pinned deployment."
+        }
+      },
+      "sources": [
+        {
+          "id": "weave-patterner-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/steves165/weave-patterner",
+          "repository_url": "https://github.com/steves165/weave-patterner",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/steves165/weave-patterner/blob/e92ae6f596b8d7a42812175e70f13d57a7769e7b/LICENSE",
+            "scope_note": {
+              "zh": "匹配项目仓库根许可证 MIT；第三方包、资源及其他外部数据仍受各自许可。未安装或下载桌面程序。",
+              "en": "Matching project repository root license is MIT; third-party packages, assets and external data retain their terms. No desktop app installed or downloaded."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/steves165/weave-patterner/blob/e92ae6f596b8d7a42812175e70f13d57a7769e7b/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://weave-patterner.com/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/steves165/weave-patterner/commit/e92ae6f596b8d7a42812175e70f13d57a7769e7b",
+              "summary": "Successful revision credits Claude Opus 5.5."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/steves165/weave-patterner/actions/runs/42506658097",
+              "summary": "Public GitHub Pages deployment succeeded for the pinned revision; creator README links this custom domain."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "e92ae6f596b8d7a42812175e70f13d57a7769e7b",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "heightmap-generator",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "已核对作者公开源码、MIT、AI说明和固定首页与在线首页的一致性。",
+          "en": "Checked creator public source, MIT, AI statement and byte-identical pinned and live entry HTML."
+        }
+      },
+      "sources": [
+        {
+          "id": "heightmap-generator-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/ergin3d/heightmap-generator",
+          "repository_url": "https://github.com/ergin3d/heightmap-generator",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://heightmap-generator.netlify.app/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/index.html",
+              "summary": "Pinned index HTML matches the current live site byte for byte."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/ergin3d/heightmap-generator/blob/8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403/README.md",
+              "summary": "Creator explicitly credits Claude-assisted coding."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "8e3c8a8a1ecdc04d7925981f9bf82a4ac979e403",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
