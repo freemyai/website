@@ -1032,6 +1032,18 @@
       "share_slug": "atlantis",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "paradise-os-ui",
+      "share_slug": "paradise-os-ui",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "merrow-pocket-plan",
+      "share_slug": "merrow-pocket-plan",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

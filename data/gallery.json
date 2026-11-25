@@ -12800,5 +12800,202 @@
       "featured_order": 2.333
     },
     "added_at": "2026-11-26"
+  },
+  {
+    "id": "paradise-os-ui",
+    "slug": "paradise-os-ui",
+    "type": "apps",
+    "primary_category": "creative",
+    "subcategory": "creative-creative-coding",
+    "title_original": "Paradise OS UI",
+    "demo_url": "https://paradise-os-ui.vercel.app/gallery/",
+    "creator": {
+      "name": "Justin Finkelman / FinkTheArtist",
+      "profile_url": "https://x.com/crtvTeknologist"
+    },
+    "locales": {
+      "zh": {
+        "title": "Paradise OS UI：复古梦境桌面",
+        "summary": "一套架空九十年代的桌面式互动控件：光盘、陶瓷水池、显示器和梦境开关。",
+        "action": "尝试梦境开关，观察整个控件展厅从彩色梦境变成灰色复古桌面；也可以调节水池滑块。",
+        "why": "把怀旧操作系统、动感材质和真实控件状态整合为可以探索的视觉交互。",
+        "limit": "Grok 实测梦境开关与水池滑块，Codex 独立点击开关并确认 REALITY · OFF 与界面变化。其余控件、音频、移动端与读屏未全面测试。"
+      },
+      "en": {
+        "title": "Paradise OS UI",
+        "summary": "Explore a fictional 1990s desktop full of playful controls: shimmering discs, ceramic pools, floating monitors and a reality switch.",
+        "action": "Toggle the dream switch to see the colorful gallery become a muted retro desktop, or adjust the pool slider.",
+        "why": "Retro interface design, animated materials and functional controls come together in an explorable gallery.",
+        "limit": "Grok tested the reality switch and pool slider. Codex independently toggled the switch and verified REALITY · OFF and the visual change. Other controls, audio, mobile and screen readers were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Gemini (Antigravity)",
+        "Claude",
+        "ElevenLabs Music"
+      ],
+      "evidence_url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/making-of/README.md",
+      "description": {
+        "zh": "作者制作记录明确称 Gemini 在 Antigravity 中主导代码制作，Claude 收尾，由 Justin Finkelman 指导；概念图与物件图使用生成素材，五首音乐由 ElevenLabs Music 制作。",
+        "en": "The creator’s making-of credits Gemini in Antigravity for most coding, Claude for finishing, and Justin Finkelman for direction; concept and object images are generated assets, and five music tracks were made with ElevenLabs Music."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/finktheartist/paradise-os-ui"
+      },
+      {
+        "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/making-of/README.md"
+      },
+      {
+        "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/making-of/prompts.md"
+      },
+      {
+        "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/LICENSE"
+      },
+      {
+        "url": "https://x.com/crtvTeknologist/status/2125230150782685249"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 实测改变梦境开关、调节水池滑块至溢出状态；Codex 2026-11-26 本机从 PARADISE · ON 切换到 REALITY · OFF，独立确认复古灰色界面及开关状态。未试听音频。",
+      "note_en": "Grok toggled reality mode and moved the pool slider to overflow; Codex independently switched PARADISE · ON to REALITY · OFF and verified the muted desktop and switch state. Audio was not listened to."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/paradise-os-ui-960.webp",
+        "base": "paradise-os-ui",
+        "width": 1280,
+        "height": 800,
+        "alt": {
+          "zh": "真实互动截图：光盘、七条水柱和粉色瓷砖水池，水池滑块接近满格。",
+          "en": "Live interaction screenshot showing the glowing disc, seven liquid bars and a pink tiled pool slider near full."
+        }
+      },
+      "provenance": {
+        "source_url": "https://paradise-os-ui.vercel.app/gallery/",
+        "captured_at": "2026-11-26",
+        "method": "grok_bot_desktop_capture",
+        "note": "Verified real browser interaction screenshot, resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.334
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "merrow-pocket-plan",
+    "slug": "merrow-pocket-plan",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Merrow Pocket Plan",
+    "demo_url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/merrow-pocket-plan.html",
+    "creator": {
+      "name": "Greg Dogum",
+      "profile_url": "https://github.com/dogum"
+    },
+    "locales": {
+      "zh": {
+        "title": "Merrow Pocket Plan：折叠虚构城市地图",
+        "summary": "一张怀旧纸质街道地图在三维木桌上展开。利用折痕探索这座虚构河畔城市及它失落的路线。",
+        "action": "点击 Open the map 展开地图，再尝试折叠、翻面与调整光照，寻找藏在纸面中的线索。",
+        "why": "把程序生成的街道、纸张折叠规则、光影和解谜结合成独特的数字纸艺。",
+        "limit": "桌面 WebGL 实测从折叠封面展开为完整地图，本机未验证解谜通关、逐次折叠、声音或手机。加载需要少许等待，依赖网络和 WebGL。"
+      },
+      "en": {
+        "title": "Merrow Pocket Plan",
+        "summary": "Unfold a vintage-looking paper street map of an imaginary riverside city on a 3D wooden desk. Explore its creases to find a forgotten walk.",
+        "action": "Select Open the map to unfold the plan, then try folding, turning it over or changing the lighting as you look for clues.",
+        "why": "Procedural streets, paper-folding rules, light and puzzle design make an unusually tactile digital artifact.",
+        "limit": "Desktop WebGL testing opened the folded cover into the full map. Individual folds, puzzle completion, audio and mobile were not verified. Loading takes a little time and requires network access and WebGL."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude"
+      ],
+      "evidence_url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/",
+      "description": {
+        "zh": "作者作品专页明确说明该作品在与 Claude 的对话中制作；未注明具体 Claude 模型。",
+        "en": "The creator’s individual artifact page expressly credits making the work in conversation with Claude; no specific model is named."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/"
+      },
+      {
+        "url": "https://github.com/dogum/artifact-shelf/tree/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/artifacts/merrow-pocket-plan"
+      },
+      {
+        "url": "https://github.com/dogum/artifact-shelf/blob/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/artifacts/merrow-pocket-plan/index.html"
+      },
+      {
+        "url": "https://github.com/dogum/artifact-shelf/blob/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/LICENSE"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Codex 本机加载折叠地图封面，点击 Open the map 后实际渲染完整三十二格街道图，并以真实截图确认变化；控制台仅 favicon 404 和库版本警告。未通关。",
+      "note_en": "Codex rendered the folded cover, clicked Open the map, and verified the full thirty-two-panel street map with real captures; console messages were favicon 404s and a library deprecation warning. No completed puzzle claimed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/merrow-pocket-plan-960.webp",
+        "base": "merrow-pocket-plan",
+        "width": 1699,
+        "height": 828,
+        "alt": {
+          "zh": "真实展开后的米色纸质地图，蓝色河流穿过街道与公园，底部有折叠工具。",
+          "en": "The unfolded tan paper map, blue river, streets and parks above the folding toolbar."
+        }
+      },
+      "provenance": {
+        "source_url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/merrow-pocket-plan.html",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Verified real browser interaction screenshot, resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.335
+    },
+    "added_at": "2026-11-26"
   }
 ]

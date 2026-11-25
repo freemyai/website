@@ -5050,6 +5050,153 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "paradise-os-ui",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "核验公开仓库固定版本、MIT 与局部独立实测；作者生成音乐的许可另行说明。",
+          "en": "Pinned public repository, MIT and independent interaction verified; generated music has separate terms."
+        }
+      },
+      "sources": [
+        {
+          "id": "paradise-os-ui-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/finktheartist/paradise-os-ui",
+          "repository_url": "https://github.com/finktheartist/paradise-os-ui",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/LICENSE",
+            "scope_note": {
+              "zh": "作者代码 MIT；IBM Plex Mono 与 Plus Jakarta Sans 字体采用 SIL OFL。ElevenLabs 生成音乐可能受单独使用条款约束，并未复制到 Freemy。",
+              "en": "Creator code is MIT; IBM Plex Mono and Plus Jakarta Sans are under SIL OFL. The ElevenLabs-generated audio may have separate usage terms and is not copied to Freemy."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://paradise-os-ui.vercel.app/gallery/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/gallery/index.html",
+              "summary": "Pinned gallery HTML matches the current live gallery byte for byte."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/making-of/README.md",
+              "summary": "Creator documents Gemini/Claude development and generated images and music."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/finktheartist/paradise-os-ui/blob/5aadbba9980dd5f9a69b363255351408e3a4e5c8/making-of/prompts.md",
+              "summary": "Creator publishes prompts for pictures and songs."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "5aadbba9980dd5f9a69b363255351408e3a4e5c8",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "merrow-pocket-plan",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "对应完整单文件作品位于公开仓库模块，固定 HTML 与独立体验字节一致；MIT 默认作品许可已核对。",
+          "en": "Matching complete single-file artifact in public-repository module; pinned HTML matches the live standalone file byte for byte. Default MIT artifact license verified."
+        }
+      },
+      "sources": [
+        {
+          "id": "merrow-pocket-plan-module",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/dogum/artifact-shelf/tree/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/artifacts/merrow-pocket-plan",
+          "repository_url": "https://github.com/dogum/artifact-shelf",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/dogum/artifact-shelf/blob/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/LICENSE",
+            "scope_note": {
+              "zh": "Artifact Shelf 根许可证 MIT，README 指明各作品默认同一许可、另有说明除外；第三方库和字体仍受各自许可。",
+              "en": "Artifact Shelf root code is MIT and the README says artifacts use the same license unless noted otherwise; third-party libraries and fonts remain under their own terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/dogum/artifact-shelf/blob/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/artifacts/merrow-pocket-plan/index.html",
+              "summary": "Pinned artifact index.html matches the live standalone file byte for byte."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/",
+              "summary": "Creator’s published artifact page links the exact interactive map."
+            },
+            {
+              "type": "readme",
+              "url": "https://github.com/dogum/artifact-shelf/blob/b77359ce1e2203c1f2ec784f303bbf9bbb960d56/README.md",
+              "summary": "Root README identifies the artifact and explains default MIT artifact licensing."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://dogum.github.io/artifact-shelf/a/merrow-pocket-plan/",
+              "summary": "Individual project page credits Claude."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "b77359ce1e2203c1f2ec784f303bbf9bbb960d56",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }
