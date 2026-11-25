@@ -5668,10 +5668,10 @@
     ],
     "verification": {
       "level": "interaction_tested",
-      "availability": "available",
-      "last_checked_at": "2026-11-17",
-      "note": "本机桌面 Chrome 切换英文并进入第一课，在交互实验中点击推进请求，界面切至 Tokenize 并高亮相应伪代码；其他课程、AI 助手和手机未测。",
-      "note_en": "Local desktop Chrome switched to English, opened the first lesson and advanced the request to Tokenize, highlighting the corresponding pseudocode. Other lessons, the AI tutor and mobile were not tested."
+      "availability": "unavailable",
+      "last_checked_at": "2026-11-25",
+      "note": "2026-11-17：本机桌面 Chrome 切换英文并进入第一课，在交互实验中点击推进请求，界面切至 Tokenize 并高亮相应伪代码；其他课程、AI 助手和手机未测。2026-11-25：原站重复返回 HTTP 402，桌面浏览器确认部署已暂停，暂无法体验。",
+      "note_en": "2026-11-17: Local desktop Chrome switched to English, opened the first lesson and advanced the request to Tokenize, highlighting the corresponding pseudocode. Other lessons, the AI tutor and mobile were not tested. 2026-11-25: Repeated HTTP 402 responses and a desktop browser confirmed the deployment is paused and temporarily unavailable."
     },
     "media": {
       "poster": {

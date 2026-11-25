@@ -7,7 +7,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:44:56.394Z",
-      "last_checked_at": "2026-11-22T10:04:21+08:00",
+      "last_checked_at": "2026-11-25T09:59:42+08:00",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -34,6 +34,11 @@
           "checked_at": "2026-11-22T10:04:21+08:00",
           "method": "windows_edge_headless_recheck",
           "observation": "原站 HTTP 200；独立 Edge 会话等待约14秒后显示 BUILDING ARENA 与键盘控制说明，截图10秒超时，未确认游戏进入可操作场景。不能据此判定原站失效，保留待核验。"
+        },
+        {
+          "checked_at": "2026-11-25T09:59:42+08:00",
+          "method": "desktop_browser_recheck",
+          "observation": "完整巡检普通 HTTP GET 200；桌面浏览器打开 KNOCKBOTS，导航结束仍显示 Building arena；后续浏览器读取30秒超时。未能验证场景完成或实际互动，不能确定是原站失效，保留待核验。"
         }
       ],
       "action": "保留上架并继续复查",
@@ -46,7 +51,7 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:50:14.962Z",
-      "last_checked_at": "2026-11-22T10:04:21+08:00",
+      "last_checked_at": "2026-11-25T09:58:07+08:00",
       "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
       "evidence": [
         {
@@ -78,11 +83,48 @@
           "checked_at": "2026-11-22T10:04:21+08:00",
           "method": "windows_edge_headless_recheck",
           "observation": "原站 HTTP 200；独立 Edge 会话等待约14秒后页面文本显示 Ready、导览和互动控件，截图10秒超时，未确认画面与实际交互。保留待核验。"
+        },
+        {
+          "checked_at": "2026-11-25T09:58:07+08:00",
+          "method": "desktop_browser_recheck",
+          "observation": "完整巡检普通 HTTP GET 200；桌面浏览器页面标题正常，显示 Filling the pond 与导览、场景控件，截图请求5秒超时，未确认图形加载或互动，因此仍保留待核验。"
         }
       ],
       "action": "保留上架并继续复查",
       "independent_review_request_id": "freemy-availability-20261116-two",
       "independent_review_status": "completed_environment_limited"
+    },
+    {
+      "work_id": "inference-lab",
+      "original_url": "https://sglang-learning.vercel.app/",
+      "previous_editorial_status": "published",
+      "status": "unavailable",
+      "first_detected_at": "2026-11-25T09:58:59+08:00",
+      "last_checked_at": "2026-11-25T10:03:37+08:00",
+      "reason": "原站重复请求返回 HTTP 402，Vercel 明确标记 DEPLOYMENT_DISABLED；真实桌面浏览器也显示 Deployment Paused / This deployment is temporarily paused，未提供课程体验。现阶段确认原站暂停，保留原始资料和双语短链，等待恢复复审；暂停原因未知。",
+      "evidence": [
+        {
+          "checked_at": "2026-11-25T09:58:59+08:00",
+          "method": "full_inventory_http_get",
+          "observation": "原站 HTTP 402，HTML 标题 Deployment Paused，页面说明 This deployment is temporarily paused。"
+        },
+        {
+          "checked_at": "2026-11-25T10:00:40+08:00",
+          "method": "independent_http_recheck",
+          "observation": "再次普通 GET（Cache-Control: no-cache）HTTP 402，服务器 Vercel，响应头 x-vercel-error: DEPLOYMENT_DISABLED，正文 Payment required / DEPLOYMENT_DISABLED。Vercel 官方错误说明 https://vercel.com/docs/errors/deployment_disabled 确认该错误表示部署被禁用；不推断账户或账单具体原因。"
+        },
+        {
+          "checked_at": "2026-11-25T10:01:31+08:00",
+          "method": "desktop_browser_recheck",
+          "observation": "桌面浏览器直接打开同一原站，HTTP 402，页面标题 Deployment Paused，仅显示 This deployment is temporarily paused；截图成功。不是自动检测限流或单次超时。"
+        },
+        {
+          "checked_at": "2026-11-25T10:03:37+08:00",
+          "method": "delayed_http_confirmation",
+          "observation": "再次普通 GET 仍为 HTTP 402，x-vercel-error: DEPLOYMENT_DISABLED；与两次 HTTP 检查及真实浏览器结果一致。"
+        }
+      ],
+      "action": "暂时下架作品推荐、列表和合集，保留原始资料、中英文详情和原分享短链；下轮复查原站，恢复后标为待复审。"
     }
   ]
 }
