@@ -80,6 +80,26 @@
     "permanent": true
   },
   {
+    "source": "/atlantis",
+    "destination": "/en/works/atlantis/",
+    "permanent": true
+  },
+  {
+    "source": "/atlantis/",
+    "destination": "/en/works/atlantis/",
+    "permanent": true
+  },
+  {
+    "source": "/baron",
+    "destination": "/en/works/baron/",
+    "permanent": true
+  },
+  {
+    "source": "/baron/",
+    "destination": "/en/works/baron/",
+    "permanent": true
+  },
+  {
     "source": "/battle-drones",
     "destination": "/en/works/battle-drones/",
     "permanent": true
@@ -587,6 +607,16 @@
   {
     "source": "/glasswood/",
     "destination": "/en/works/glasswood/",
+    "permanent": true
+  },
+  {
+    "source": "/gnomon",
+    "destination": "/en/works/gnomon/",
+    "permanent": true
+  },
+  {
+    "source": "/gnomon/",
+    "destination": "/en/works/gnomon/",
     "permanent": true
   },
   {
@@ -1400,6 +1430,16 @@
     "permanent": true
   },
   {
+    "source": "/sound-laboratory",
+    "destination": "/en/works/sound-laboratory/",
+    "permanent": true
+  },
+  {
+    "source": "/sound-laboratory/",
+    "destination": "/en/works/sound-laboratory/",
+    "permanent": true
+  },
+  {
     "source": "/spacex-vehicles",
     "destination": "/en/works/spacex-vehicles/",
     "permanent": true
@@ -1757,6 +1797,26 @@
   {
     "source": "/zh/argon-junior/",
     "destination": "/works/argon-junior/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/atlantis",
+    "destination": "/works/atlantis/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/atlantis/",
+    "destination": "/works/atlantis/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/baron",
+    "destination": "/works/baron/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/baron/",
+    "destination": "/works/baron/",
     "permanent": true
   },
   {
@@ -2267,6 +2327,16 @@
   {
     "source": "/zh/glasswood/",
     "destination": "/works/glasswood/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/gnomon",
+    "destination": "/works/gnomon/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/gnomon/",
+    "destination": "/works/gnomon/",
     "permanent": true
   },
   {
@@ -3077,6 +3147,16 @@
   {
     "source": "/zh/sonar-robot/",
     "destination": "/works/sonar-robot/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/sound-laboratory",
+    "destination": "/works/sound-laboratory/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/sound-laboratory/",
+    "destination": "/works/sound-laboratory/",
     "permanent": true
   },
   {

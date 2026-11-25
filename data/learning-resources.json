@@ -4766,6 +4766,290 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "gnomon",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "MIT LICENSE 和对应完整游戏仓库已核验；README 说明 Arcadible 提供其 dist 打包产物，非首页字节相同的声明。",
+          "en": "Verified MIT LICENSE and matching full game repository; README states Arcadible serves the built dist, not a byte-for-byte match of the wrapper HTML."
+        }
+      },
+      "sources": [
+        {
+          "id": "gnomon-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/games-by-claude/gnomon",
+          "repository_url": "https://github.com/games-by-claude/gnomon",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/games-by-claude/gnomon/blob/3f913d0fe25874d9d0ca84bae8579aa00b33f25e/LICENSE",
+            "scope_note": {
+              "zh": "仓库采用 MIT 许可证；第三方资源可能另有许可。",
+              "en": "The repository uses MIT; third-party resources may have separate terms."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/games-by-claude/gnomon/blob/3f913d0fe25874d9d0ca84bae8579aa00b33f25e/README.md",
+              "summary": "The creator README describes the exact Gnomon mechanics and states Arcadible serves the built dist game."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://arcadible.com/play/gnomon",
+              "summary": "The official Arcadible listing launches the matching game."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/games-by-claude/gnomon/blob/3f913d0fe25874d9d0ca84bae8579aa00b33f25e/public/index.html",
+              "summary": "Pinned source includes the Gnomon game shell and code."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/games-by-claude/gnomon/commit/5ca22aadc02ebce8b9b5323654f75629738843a2",
+              "summary": "Project commit credits Claude Fable 5.1."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "3f913d0fe25874d9d0ca84bae8579aa00b33f25e",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "baron",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "README 明确指向同一在线地址；已核验对应源码、BSD-2-Clause 许可（非本站快速开源徽章允许表）。",
+          "en": "The README links the exact live address; corresponding source and BSD-2-Clause license verified (not yet in the site’s quick-source badge allowlist)."
+        }
+      },
+      "sources": [
+        {
+          "id": "baron-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/dai-studio/ex-baron",
+          "repository_url": "https://github.com/dai-studio/ex-baron",
+          "relation": "exact_project",
+          "code_scope": "frontend",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": "BSD-2-Clause",
+            "evidence_url": "https://github.com/dai-studio/ex-baron/blob/a919715f02fc296b96f4c8feb3cefb6a5fae3255/LICENSE",
+            "scope_note": {
+              "zh": "对应代码明确采用 BSD-2-Clause，第三方依赖及资源可能另有许可；站点快速开源入口目前未审核收录该 SPDX 表达式，因此此处提供详情公开代码与实际许可证。",
+              "en": "Matching code is licensed BSD-2-Clause; third-party dependencies and assets may have separate terms. This SPDX expression is not yet approved for the quick-source badge, so the detail page shows the public code and actual license."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/dai-studio/ex-baron/blob/a919715f02fc296b96f4c8feb3cefb6a5fae3255/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://baron.by.dai.studio/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/dai-studio/ex-baron/commit/dd614e55ba668036d74e2ba86d76388df9990c6f",
+              "summary": "Repository commit credits Claude Opus 5.5."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/dai-studio/ex-baron/blob/a919715f02fc296b96f4c8feb3cefb6a5fae3255/LICENSE",
+              "summary": "Actual BSD-2-Clause license credits DAI Studio."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "a919715f02fc296b96f4c8feb3cefb6a5fae3255",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "sound-laboratory",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "已核对 Source Library 公开每周镜像对应页面模块、软件许可和AI提交，未声称镜像与生产构建字节一致。",
+          "en": "Matching article module in the weekly public mirror, software license and AI commit verified; no claim of byte-identical production build."
+        }
+      },
+      "sources": [
+        {
+          "id": "sound-laboratory-module",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/src/app/articles/sound-laboratory/page.tsx",
+          "repository_url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2",
+          "relation": "exact_project",
+          "code_scope": "module",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "source_visible",
+            "expression": "AGPL-3.0-or-later",
+            "evidence_url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/LICENSE",
+            "scope_note": {
+              "zh": "公开每周镜像的软件包声明 AGPL-3.0-or-later；源码在对应页模块，镜像可能滞后正式站。历史图书、版画、扫描图各自另有权利。此 SPDX 未进入本站快速开源徽章的现行允许表。",
+              "en": "The public weekly software mirror declares AGPL-3.0-or-later in package.json; this matching page module may lag production. Historical book images, engravings and scans have separate rights. This SPDX expression is not yet in the quick-source badge allowlist."
+            }
+          },
+          "evidence": [
+            {
+              "type": "source_file",
+              "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/src/app/articles/sound-laboratory/page.tsx",
+              "summary": "Pinned article page contains the matching Sound Laboratory station headings and Galilei example."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://sourcelibrary.org/articles/sound-laboratory",
+              "summary": "The public site is the matching article and tested station."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/commit/fd7d8a26f839d6e334aa6e23221ac7ade694a2e2",
+              "summary": "A Sound Laboratory commit credits Claude Fable 5."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/package.json",
+              "summary": "Package declares AGPL-3.0-or-later."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/LICENSE",
+              "summary": "Full AGPL v3 license in public mirror."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "170caee3bb09d8cbd5b47ff3046f072a1b5c1d07",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
+    },
+    {
+      "work_id": "atlantis",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "固定 index.html 与在线页面字节一致，MIT和作者AI说明核验；本机成功独立实测，保留云端硬件限制。",
+          "en": "Pinned index.html and live page match byte for byte; MIT and creator AI statement verified. Independent local interaction succeeded; cloud hardware limitation retained."
+        }
+      },
+      "sources": [
+        {
+          "id": "atlantis-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/Noniv/atlantis",
+          "repository_url": "https://github.com/Noniv/atlantis",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "open_source_verified",
+            "expression": "MIT",
+            "evidence_url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/LICENSE",
+            "scope_note": {
+              "zh": "作者源码 MIT；概念参考图及第三方资源可能另有权利。本站预览为本机实时场景截图，不取用概念图。",
+              "en": "The author’s code is MIT; concept references and third-party assets may have separate rights. Our preview is a live scene capture, not a concept-art file."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/README.md",
+              "summary": "The creator’s README describes this work and links its live demo."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://noniv.github.io/atlantis/",
+              "summary": "The original repository links this live experience."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/index.html",
+              "summary": "Pinned index.html is byte-identical to the live experience."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "db852e84a0f47e7c211d5cd906d8e7288e245aad",
+          "publication": "published",
+          "notes": {
+            "zh": "已复核作者仓库、作品链接及许可状态；未执行仓库代码。",
+            "en": "Reviewed the creator repository, live link and license status; did not execute repository code."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

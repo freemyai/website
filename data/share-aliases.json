@@ -1008,6 +1008,30 @@
       "share_slug": "coloured-pencil",
       "previous_slugs": [],
       "state": "active"
+    },
+    {
+      "work_id": "gnomon",
+      "share_slug": "gnomon",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "baron",
+      "share_slug": "baron",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "sound-laboratory",
+      "share_slug": "sound-laboratory",
+      "previous_slugs": [],
+      "state": "active"
+    },
+    {
+      "work_id": "atlantis",
+      "share_slug": "atlantis",
+      "previous_slugs": [],
+      "state": "active"
     }
   ]
 }

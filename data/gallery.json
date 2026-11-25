@@ -12412,5 +12412,393 @@
       "featured_order": 2.329
     },
     "added_at": "2026-11-25"
+  },
+  {
+    "id": "gnomon",
+    "slug": "gnomon",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-puzzle",
+    "title_original": "Gnomon",
+    "demo_url": "https://play.arcadible.com/gnomon/",
+    "creator": {
+      "name": "Claude / games-by-claude",
+      "profile_url": "https://github.com/games-by-claude"
+    },
+    "locales": {
+      "zh": {
+        "title": "Gnomon：让影子走过日照迷宫",
+        "summary": "一款三维光影解谜。移动太阳，让只会在阴影中行走的小影子接近水井。",
+        "action": "进入第一关，拖动或使用方向键改变太阳的位置，观察方块投下的阴影；可用 Wait 暂停影子的行走。",
+        "why": "日照方向和长短变化成为可探索的谜题机制，而非装饰。",
+        "limit": "Grok 实测移动太阳与影子，Codex 本机加载第一关、切换 Wait/Walk，未独立完成关卡；其余关卡、触摸和声音未全面测试。"
+      },
+      "en": {
+        "title": "Gnomon",
+        "summary": "A 3D shadow puzzle: move the sun so a little shade that walks only in shadow can approach a well.",
+        "action": "Enter the first level and drag or use the arrow keys to change the sun position; use Wait to pause the shade’s walk.",
+        "why": "Changing light direction turns cast shadows into a playable puzzle rather than background decoration.",
+        "limit": "Grok tested moving the sun and shade; Codex independently loaded the first level and toggled Wait/Walk. No completed level, touch or sound test."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5.1"
+      ],
+      "evidence_url": "https://github.com/games-by-claude/gnomon/commit/5ca22aadc02ebce8b9b5323654f75629738843a2",
+      "description": {
+        "zh": "游戏标题页明确说明为 games-by-claude 制作且署名 Claude；对应提交共同作者为 Claude Fable 5.1。",
+        "en": "The title screen credits Claude for games-by-claude, and the project commit names Claude Fable 5.1 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/games-by-claude/gnomon"
+      },
+      {
+        "url": "https://github.com/games-by-claude/gnomon/commit/5ca22aadc02ebce8b9b5323654f75629738843a2"
+      },
+      {
+        "url": "https://arcadible.com/play/gnomon"
+      },
+      {
+        "url": "https://github.com/games-by-claude/gnomon/blob/3f913d0fe25874d9d0ca84bae8579aa00b33f25e/README.md"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 按方向键使太阳移动到另一侧并观察影子前进；Codex 实际加载 Dawn 1 / First Light，并将 Wait 切换为 Walk。两者均未验证通关。",
+      "note_en": "Grok moved the sun with arrow keys and observed the shade move; Codex independently rendered Dawn 1 / First Light and switched Wait to Walk. No completed level claimed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/gnomon-960.webp",
+        "base": "gnomon",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "砂岩方块、转到左侧的太阳、右侧阴影里的小角色和水井。",
+          "en": "A sandstone grid, the sun on the left, a shade character and a well on the right."
+        }
+      },
+      "provenance": {
+        "source_url": "https://play.arcadible.com/gnomon/",
+        "captured_at": "2026-11-26",
+        "method": "grok_bot_desktop_capture",
+        "note": "Hash-verified Grok desktop screenshot; interaction independently checked by Codex; resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.33
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "baron",
+    "slug": "baron",
+    "type": "games",
+    "primary_category": "games",
+    "subcategory": "games-sandbox",
+    "title_original": "Baron",
+    "demo_url": "https://baron.by.dai.studio/",
+    "creator": {
+      "name": "DAI Studio / Ted Patrick",
+      "profile_url": "https://github.com/dai-studio"
+    },
+    "locales": {
+      "zh": {
+        "title": "Baron：卡通飞机与彩色机库",
+        "summary": "在风格化的三维卡通世界中探索飞机和机库，挑选喜欢的机身涂装。",
+        "action": "打开 Hangar，选择 Paint，再试一种颜色，观察双翼机实时更换涂装。",
+        "why": "可视化机库把小小的个性化选择变成完整的三维互动展示。",
+        "limit": "这是娱乐性卡通游戏，不是现实飞行训练。桌面实测换涂装及打开自由探索场景；未验证实际起降、完整任务、手柄或手机。"
+      },
+      "en": {
+        "title": "Baron",
+        "summary": "Explore a stylized cartoon aircraft hangar, customize a colorful biplane and visit the rendered world.",
+        "action": "Open Hangar, choose Paint and select a new color to see the biplane update.",
+        "why": "A playful 3D hangar makes a small customization choice immediately visible.",
+        "limit": "A recreational cartoon game, not real-world flight training. Desktop testing covered paint changes and loading the starting free-exploration scene, not takeoff, landing, full missions, controllers or mobile."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://github.com/dai-studio/ex-baron/commit/dd614e55ba668036d74e2ba86d76388df9990c6f",
+      "description": {
+        "zh": "DAI Studio 对应仓库的提交明确署名 Claude Opus 5.5 为共同作者。",
+        "en": "The matching DAI Studio repository commit explicitly credits Claude Opus 5.5 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/dai-studio/ex-baron"
+      },
+      {
+        "url": "https://github.com/dai-studio/ex-baron/commit/dd614e55ba668036d74e2ba86d76388df9990c6f"
+      },
+      {
+        "url": "https://github.com/dai-studio/ex-baron/blob/a919715f02fc296b96f4c8feb3cefb6a5fae3255/README.md"
+      },
+      {
+        "url": "https://github.com/dai-studio/ex-baron/blob/a919715f02fc296b96f4c8feb3cefb6a5fae3255/LICENSE"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 实测 Sunflower→Scarlet，Codex 本机 Hangar/Paint 将 Sunflower 改为 Plum，并打开自由探索起始画面；未完成飞行任务。",
+      "note_en": "Grok changed Sunflower to Scarlet, Codex independently changed Sunflower to Plum in Hangar/Paint and loaded the free-exploration starting scene; no flight mission completed."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/baron-960.webp",
+        "base": "baron",
+        "width": 1920,
+        "height": 1072,
+        "alt": {
+          "zh": "夕阳下机库中红色卡通双翼机与涂装选择面板。",
+          "en": "A red cartoon biplane inside the hangar beside the paint selection panel."
+        }
+      },
+      "provenance": {
+        "source_url": "https://baron.by.dai.studio/",
+        "captured_at": "2026-11-26",
+        "method": "grok_bot_desktop_capture",
+        "note": "Hash-verified Grok desktop screenshot; interaction independently checked by Codex; resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.331
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "sound-laboratory",
+    "slug": "sound-laboratory",
+    "type": "learning",
+    "primary_category": "physics",
+    "subcategory": "physics-waves",
+    "title_original": "The Sound Laboratory",
+    "demo_url": "https://sourcelibrary.org/articles/sound-laboratory",
+    "creator": {
+      "name": "Source Library / Embassy of the Free Mind",
+      "profile_url": "https://github.com/Embassy-of-the-Free-Mind"
+    },
+    "locales": {
+      "zh": {
+        "title": "The Sound Laboratory：探索谐音与振动",
+        "summary": "从历史音乐理论出发，用浏览器实验对比弦的张力、频率与音程，探索故事和可测量现象。",
+        "action": "在第一站选择 Galilei’s result: 4:1 weight，观察第二根弦的频率与音程读数。",
+        "why": "把历史观点变成可操作、可比较的声学学习体验。",
+        "limit": "桌面实测第一站张力和读数；未实际听测声音、其余九站、手机或所有历史解释。原站页面为英文，不需登录即可尝试。"
+      },
+      "en": {
+        "title": "The Sound Laboratory",
+        "summary": "Explore historical musical theories through browser experiments on string tension, frequency and intervals.",
+        "action": "At the first station, choose Galilei’s result: 4:1 weight and watch the second string frequency and interval readouts.",
+        "why": "Historical claims become interactive comparisons rather than only text to read.",
+        "limit": "Desktop testing covered the first station’s tension and readouts; sound playback, the other nine stations, mobile and all historical interpretations were not fully tested. The article is English and the tested station does not require sign-in."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "coding",
+      "tools": [
+        "Claude Fable 5"
+      ],
+      "evidence_url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/commit/fd7d8a26f839d6e334aa6e23221ac7ade694a2e2",
+      "description": {
+        "zh": "公开仓库中直接涉及 Sound Laboratory 的提交包含 Claude Fable 5 共同作者声明，并由 JDerekLomas 签署；这是对该交互页的具体 AI 依据。",
+        "en": "A commit specifically changing the Sound Laboratory credits Claude Fable 5 and is signed by JDerekLomas; this is work-specific AI evidence."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2"
+      },
+      {
+        "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/commit/fd7d8a26f839d6e334aa6e23221ac7ade694a2e2"
+      },
+      {
+        "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/src/app/articles/sound-laboratory/page.tsx"
+      },
+      {
+        "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/LICENSE"
+      },
+      {
+        "url": "https://github.com/Embassy-of-the-Free-Mind/sourcelibrary-v2/blob/170caee3bb09d8cbd5b47ff3046f072a1b5c1d07/package.json"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 调张力从1到4；Codex 本机点击 4:1 预设，确认第二弦从220.0 Hz变为440.0 Hz、音程1200¢、OCTAVE。未试听声音。",
+      "note_en": "Grok adjusted tension from 1 to 4; Codex independently chose the 4:1 preset and verified 220.0 to 440.0 Hz, 1200 cents and OCTAVE. Audio was not listened to."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/sound-laboratory-960.webp",
+        "base": "sound-laboratory",
+        "width": 928,
+        "height": 377,
+        "alt": {
+          "zh": "第一站张力滑块及频率、音程和八度读数，剪裁去除历史扫描图。",
+          "en": "First station tension control and frequency, interval and octave readouts; historical scan excluded."
+        }
+      },
+      "provenance": {
+        "source_url": "https://sourcelibrary.org/articles/sound-laboratory",
+        "captured_at": "2026-11-26",
+        "method": "grok_bot_desktop_capture",
+        "note": "Hash-verified Grok desktop screenshot; interaction independently checked by Codex; resized and cropped."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.332
+    },
+    "added_at": "2026-11-26"
+  },
+  {
+    "id": "atlantis",
+    "slug": "atlantis",
+    "type": "worlds",
+    "primary_category": "spatial",
+    "subcategory": "spatial-worlds",
+    "title_original": "Atlantis",
+    "demo_url": "https://noniv.github.io/atlantis/",
+    "creator": {
+      "name": "Maksymilian Dendura / Noniv",
+      "profile_url": "https://github.com/Noniv"
+    },
+    "locales": {
+      "zh": {
+        "title": "Atlantis：漫游程序生成的花园之城",
+        "summary": "一座虚构的三维花园城，拥有玻璃穹顶、白色建筑、花木和碧绿水道。",
+        "action": "等待城市加载并点击 Enter，按数字键切换观景点，观察城市不同视角。",
+        "why": "程序化几何与植物、阳光和水面组合成可探索的数字景观。",
+        "limit": "需要支持 WebGPU 的桌面图形设备。本机实测加载及切换到第2观景点，加载需等待；Grok 云端浏览器无可用图形适配器，未能进入。其余视角、自由漫游、声音及手机未全面测试。"
+      },
+      "en": {
+        "title": "Atlantis",
+        "summary": "Explore an imagined 3D garden city of glass domes, white buildings, flowering trees and turquoise canals.",
+        "action": "Wait for the city to load, select Enter, then use a number-key viewpoint to see it from another angle.",
+        "why": "Procedural geometry, greenery, sunlight and water form an explorable digital landscape.",
+        "limit": "Requires a desktop graphics device with WebGPU. Local testing rendered the city and switched to viewpoint 2 after loading; Grok’s cloud browser lacked an available graphics adapter and could not enter. Other viewpoints, free roaming, audio and mobile were not fully tested."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude Code (Fable 5.2)",
+        "ChatGPT"
+      ],
+      "evidence_url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/README.md",
+      "description": {
+        "zh": "作者 README 说明 Claude Code/Fable 5.2 编写全部代码，ChatGPT 生成参考概念图，并提供初始提示词。",
+        "en": "The creator README credits Claude Code/Fable 5.2 with the code and ChatGPT with concept reference images, and shares the starting prompt."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://github.com/Noniv/atlantis"
+      },
+      {
+        "url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/README.md"
+      },
+      {
+        "url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/LICENSE"
+      },
+      {
+        "url": "https://github.com/Noniv/atlantis/blob/db852e84a0f47e7c211d5cd906d8e7288e245aad/prompt.txt"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Codex 本机 WebGPU 浏览器等待城市渲染，点击 Enter 成功进入初始俯瞰画面，按2切换至水道桥与玻璃穹顶近景；真实截图验证。Grok 云端 WebGPU 缺适配器未通过。",
+      "note_en": "Codex rendered the city in a local WebGPU browser, entered the initial overhead view, then pressed 2 to switch to a bridge-and-domes view; verified with real screenshots. Grok’s cloud browser lacked an adapter."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/atlantis-960.webp",
+        "base": "atlantis",
+        "width": 1699,
+        "height": 781,
+        "alt": {
+          "zh": "连接水道两岸的白色桥梁、玻璃穹顶、高塔、花木和远处蓝天。",
+          "en": "A white bridge over turquoise water, glass domes, towers, flowering trees and a blue sky."
+        }
+      },
+      "provenance": {
+        "source_url": "https://noniv.github.io/atlantis/",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Independent local desktop browser screenshot; resized."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.333
+    },
+    "added_at": "2026-11-26"
   }
 ]
