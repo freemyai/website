@@ -5410,6 +5410,87 @@
         "evidence_urls": []
       },
       "technical_tags": []
+    },
+    {
+      "work_id": "emberwake",
+      "search": {
+        "status": "searched",
+        "checked_at": "2026-11-26",
+        "notes": {
+          "zh": "核对作者作品集、固定 Pages 部署及明确 UNLICENSED 的 package.json。公开阅览源码不等于开源许可。",
+          "en": "Verified creator portfolio, pinned Pages deployment, and explicitly UNLICENSED package.json. Public code access is not an open-source license."
+        }
+      },
+      "sources": [
+        {
+          "id": "emberwake-github",
+          "provider": "github",
+          "kind": "source_code",
+          "url": "https://github.com/aleshyp/emberwake",
+          "repository_url": "https://github.com/aleshyp/emberwake",
+          "relation": "exact_project",
+          "code_scope": "full_project",
+          "match_status": "verified",
+          "availability": "available",
+          "license": {
+            "status": "restricted",
+            "expression": "UNLICENSED",
+            "evidence_url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/package.json",
+            "scope_note": {
+              "zh": "作者程序包明确标为 UNLICENSED，仓库可公开阅读但未授予开源再利用许可；不复制源码或原创故事文字。作品底图为作者注明的公有领域多雷版画；其现代互动呈现和其他内容不因此获得开源许可。",
+              "en": "The creator package explicitly declares UNLICENSED. The repository is publicly readable but no open-source reuse permission is granted; no code or original story text is republished. The creator credits the underlying public-domain Doré engravings; this does not license the modern interactive presentation or other content."
+            }
+          },
+          "evidence": [
+            {
+              "type": "readme",
+              "url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/README.md",
+              "summary": "Matching repository explains the interactive illustrated story."
+            },
+            {
+              "type": "demo_link",
+              "url": "https://aleshyp.github.io/emberwake/",
+              "summary": "Verified live original experience."
+            },
+            {
+              "type": "author_docs",
+              "url": "https://ianriley.co/work/emberwake",
+              "summary": "Creator portfolio describes concept and AI work."
+            },
+            {
+              "type": "license_file",
+              "url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/package.json",
+              "summary": "Pinned package explicitly declares UNLICENSED."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/aleshyp/emberwake/actions/runs/42104547123",
+              "summary": "Successful GitHub Pages deployment for pinned revision."
+            },
+            {
+              "type": "source_file",
+              "url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/src/chapters/one.ts",
+              "summary": "Chapter credits Gustave Doré and identifies plate III as Paradiso Canto XXXI; underlying engravings are public domain."
+            }
+          ],
+          "checked_at": "2026-11-26",
+          "revision": "fc3a6d267089cae4fddabe6fc663d46414289d93",
+          "publication": "published",
+          "notes": {
+            "zh": "仅作为对应公开可读代码和作者说明的链接，不提供下载或开源徽章。未执行仓库代码。",
+            "en": "Link only to the matching publicly readable code and creator documentation; no download or open-source badge. Repository code was not executed."
+          }
+        }
+      ],
+      "learning_note": {
+        "status": "absent",
+        "kind": null,
+        "zh_path": null,
+        "en_path": null,
+        "reviewed_at": null,
+        "evidence_urls": []
+      },
+      "technical_tags": []
     }
   ]
 }

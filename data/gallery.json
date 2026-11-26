@@ -13291,5 +13291,107 @@
       "featured_order": 2.338
     },
     "added_at": "2026-11-26"
+  },
+  {
+    "id": "emberwake",
+    "slug": "emberwake",
+    "type": "art",
+    "primary_category": "humanities",
+    "subcategory": "humanities-literature",
+    "title_original": "Emberwake",
+    "demo_url": "https://aleshyp.github.io/emberwake/",
+    "creator": {
+      "name": "Ian Riley",
+      "profile_url": "https://ianriley.co/work/emberwake"
+    },
+    "locales": {
+      "zh": {
+        "title": "Emberwake：让古老版画随阅读苏醒",
+        "summary": "滚动阅读一部奇幻插图故事，古斯塔夫·多雷的公有领域版画通过实时着色与分层场景重新呈现。",
+        "action": "从开场滚动至第三幅 The Ember，或用目录选择该幅，观察画面变化；故事中的部分段落会等待读者完成一个交互。",
+        "why": "用数字着色和阅读节奏连接十九世纪版画与现代浏览器叙事。",
+        "limit": "Grok 实测滚动、按住并点亮第三幅；Codex 本机实测目录从第一幅切换到第三幅并渲染。未完整读完后续章节、试听或测试手机。开场加载需等待；内容有奇幻冲突和暗色插图。项目代码公开可读但明确 UNLICENSED，不是开源项目。"
+      },
+      "en": {
+        "title": "Emberwake",
+        "summary": "A scroll-driven fantasy story reinterprets Gustave Doré’s public-domain engravings with live coloring and layered scenes.",
+        "action": "Scroll to the third plate, The Ember, or select it from Contents and watch the view change; certain passages wait for a reader interaction.",
+        "why": "Digital coloring and the rhythm of reading connect nineteenth-century engravings with interactive browser storytelling.",
+        "limit": "Grok tested scrolling and holding to illuminate the third plate; Codex independently switched from the first to the third plate using Contents. Later chapters, audio and mobile were not fully tested. Initial loading takes time. Includes fantasy conflict and dark illustrations. Publicly readable code is explicitly unlicensed, not open source."
+      }
+    },
+    "ai_provenance": {
+      "status": "author_claimed",
+      "usage": "mixed",
+      "tools": [
+        "Claude Opus 5.5"
+      ],
+      "evidence_url": "https://ianriley.co/work/emberwake",
+      "description": {
+        "zh": "作者作品集明确说明其负责概念、美术指导和交互设计，Claude 编写代码和故事文字；固定部署提交含 Claude Opus 5.5 共作者署名。",
+        "en": "The creator’s portfolio credits Ian Riley for concept, art direction and interaction design and Claude for code and text. The pinned deployed revision credits Claude Opus 5.5 as co-author."
+      }
+    },
+    "sources": [
+      {
+        "url": "https://ianriley.co/work/emberwake"
+      },
+      {
+        "url": "https://github.com/aleshyp/emberwake"
+      },
+      {
+        "url": "https://github.com/aleshyp/emberwake/commit/fc3a6d267089cae4fddabe6fc663d46414289d93"
+      },
+      {
+        "url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/package.json"
+      },
+      {
+        "url": "https://github.com/aleshyp/emberwake/blob/fc3a6d267089cae4fddabe6fc663d46414289d93/src/chapters/one.ts"
+      },
+      {
+        "url": "https://github.com/aleshyp/emberwake/actions/runs/42104547123"
+      }
+    ],
+    "verification": {
+      "level": "interaction_tested",
+      "availability": "available",
+      "last_checked_at": "2026-11-26",
+      "note": "Grok 真实滚动第三幅并按住唤醒余烬；Codex 本机渲染首幅，打开目录并点击 III The Ember，图号 I→III 且画面实际变化。未试听或完成章节。",
+      "note_en": "Grok scrolled and held to illuminate plate III. Codex independently rendered the first plate, opened Contents and selected III The Ember, verifying the counter I→III and changed rendering. No full chapter or audio assessment."
+    },
+    "media": {
+      "poster": {
+        "src": "/media/emberwake-960.webp",
+        "base": "emberwake",
+        "width": 1699,
+        "height": 828,
+        "alt": {
+          "zh": "多雷《神曲·天堂篇》第31歌版画在页面第三幅的实时红白着色，中央光环与顶部图号。",
+          "en": "Live red-and-paper rendering of Doré’s Paradiso Canto XXXI engraving on the third plate, with a central luminous circle and plate number."
+        }
+      },
+      "provenance": {
+        "source_url": "https://aleshyp.github.io/emberwake/",
+        "captured_at": "2026-11-26",
+        "method": "desktop_browser_capture",
+        "note": "Real local browser capture of plate III; underlying public-domain Gustave Doré engraving, Paradiso Canto XXXI, re-inked by Ian Riley’s interactive work. Nothing from the story text or source code is reproduced."
+      }
+    },
+    "access": {
+      "login": "none",
+      "pricing": "free",
+      "language_codes": [
+        "en"
+      ]
+    },
+    "device_support": {
+      "desktop": "tested_supported",
+      "mobile": "unknown"
+    },
+    "editorial": {
+      "status": "published",
+      "featured_order": 2.339
+    },
+    "added_at": "2026-11-26"
   }
 ]

@@ -472,6 +472,16 @@
       "permanent": true
     },
     {
+      "source": "/emberwake",
+      "destination": "/en/works/emberwake/",
+      "permanent": true
+    },
+    {
+      "source": "/emberwake/",
+      "destination": "/en/works/emberwake/",
+      "permanent": true
+    },
+    {
       "source": "/escapement",
       "destination": "/en/works/escapement/",
       "permanent": true
@@ -2239,6 +2249,16 @@
     {
       "source": "/zh/embervale/",
       "destination": "/works/embervale/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/emberwake",
+      "destination": "/works/emberwake/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/emberwake/",
+      "destination": "/works/emberwake/",
       "permanent": true
     },
     {
