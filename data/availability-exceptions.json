@@ -7,8 +7,8 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:44:56.394Z",
-      "last_checked_at": "2026-11-25T09:59:42+08:00",
-      "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
+      "last_checked_at": "2026-11-28T10:09:00+08:00",
+      "reason": "本机自动浏览器先前出现加载或截图超时。11月28日的独立 Chrome 已正常渲染三维菜单并出现界面变化；尚未确认完整体验或本机表现，不判定失效，保留待核验。",
       "evidence": [
         {
           "checked_at": "2026-11-16T09:44:56.394Z",
@@ -39,11 +39,21 @@
           "checked_at": "2026-11-25T09:59:42+08:00",
           "method": "desktop_browser_recheck",
           "observation": "完整巡检普通 HTTP GET 200；桌面浏览器打开 KNOCKBOTS，导航结束仍显示 Building arena；后续浏览器读取30秒超时。未能验证场景完成或实际互动，不能确定是原站失效，保留待核验。"
+        },
+        {
+          "checked_at": "2026-11-28T10:06:27+08:00",
+          "method": "full_inventory_http_get_and_recheck",
+          "observation": "10:05:02 与 10:06:27 原站两次 HTTP 200，标题 KNOCKBOTS；HTTP 正常不等于完整体验正常。"
+        },
+        {
+          "checked_at": "2026-11-28T10:09:00+08:00",
+          "method": "independent_chrome_recheck",
+          "observation": "Grok 独立 Chrome 环境（非本机）10:08–10:09 渲染三维菜单并验证切换界面，HTTP 200；未验证完整体验。报告 freemy-availability-20261128-three，加载与交互后两图文件及 SHA256 核验匹配。"
         }
       ],
       "action": "保留上架并继续复查",
-      "independent_review_request_id": "freemy-availability-20261116-two",
-      "independent_review_status": "completed_environment_limited"
+      "independent_review_request_id": "freemy-availability-20261128-three",
+      "independent_review_status": "completed_partial_interaction_verified"
     },
     {
       "work_id": "koi-pond",
@@ -51,8 +61,8 @@
       "previous_editorial_status": "published",
       "status": "pending_verification",
       "first_detected_at": "2026-11-16T09:50:14.962Z",
-      "last_checked_at": "2026-11-25T09:58:07+08:00",
-      "reason": "本机自动浏览器出现加载或截图超时；Grok 的独立浏览器可打开页面，但其 WebGL 被禁用，无法完成互动。尚不能判定原站失效，需在支持 WebGL 的真实浏览器继续复核。",
+      "last_checked_at": "2026-11-28T10:12:00+08:00",
+      "reason": "11月28日独立 Chrome 可用 WebGL，原站页面及依赖 HTTP 200，但池塘长时间停在 Ready，未渲染或交互。疑似应用问题，仍不能排除设备渲染停滞；本机浏览连接故障，待另一正常浏览环境确认，不直接判为失效。",
       "evidence": [
         {
           "checked_at": "2026-11-16T09:50:14.962Z",
@@ -88,11 +98,21 @@
           "checked_at": "2026-11-25T09:58:07+08:00",
           "method": "desktop_browser_recheck",
           "observation": "完整巡检普通 HTTP GET 200；桌面浏览器页面标题正常，显示 Filling the pond 与导览、场景控件，截图请求5秒超时，未确认图形加载或互动，因此仍保留待核验。"
+        },
+        {
+          "checked_at": "2026-11-28T10:06:29+08:00",
+          "method": "full_inventory_http_get_and_recheck",
+          "observation": "10:05:10 与 10:06:29 原站分别 HTTP 200，标题和导览文本正常；不能证明图形渲染或交互已经可用。"
+        },
+        {
+          "checked_at": "2026-11-28T10:12:00+08:00",
+          "method": "independent_chrome_recheck",
+          "observation": "Grok 独立 Chrome 环境 WebGL 可用，主页面及依赖 HTTP 200；10:10–10:12 由 Compiling shaders 进入 Ready，持续超过一分钟仍无池塘场景，无法完成互动。报告 freemy-availability-20261128-three，两张实拍图及 SHA256 已核验；无明确控制台错误，仍留环境限制不确定性。"
         }
       ],
       "action": "保留上架并继续复查",
-      "independent_review_request_id": "freemy-availability-20261116-two",
-      "independent_review_status": "completed_environment_limited"
+      "independent_review_request_id": "freemy-availability-20261128-three",
+      "independent_review_status": "completed_unresolved_rendering"
     },
     {
       "work_id": "inference-lab",
@@ -100,7 +120,7 @@
       "previous_editorial_status": "published",
       "status": "unavailable",
       "first_detected_at": "2026-11-25T09:58:59+08:00",
-      "last_checked_at": "2026-11-25T10:03:37+08:00",
+      "last_checked_at": "2026-11-28T10:12:00+08:00",
       "reason": "原站重复请求返回 HTTP 402，Vercel 明确标记 DEPLOYMENT_DISABLED；真实桌面浏览器也显示 Deployment Paused / This deployment is temporarily paused，未提供课程体验。现阶段确认原站暂停，保留原始资料和双语短链，等待恢复复审；暂停原因未知。",
       "evidence": [
         {
@@ -122,6 +142,16 @@
           "checked_at": "2026-11-25T10:03:37+08:00",
           "method": "delayed_http_confirmation",
           "observation": "再次普通 GET 仍为 HTTP 402，x-vercel-error: DEPLOYMENT_DISABLED；与两次 HTTP 检查及真实浏览器结果一致。"
+        },
+        {
+          "checked_at": "2026-11-28T10:06:25+08:00",
+          "method": "full_inventory_http_get_and_recheck",
+          "observation": "10:05:20 与 10:06:25 原站两次普通 GET 均 HTTP 402，x-vercel-error: DEPLOYMENT_DISABLED，首次标题 Deployment Paused；继续保持不可用。"
+        },
+        {
+          "checked_at": "2026-11-28T10:12:00+08:00",
+          "method": "independent_chrome_recheck",
+          "observation": "Grok 独立 Chrome 在原站仍见官方暂停页，独立 HTTP 402 / DEPLOYMENT_DISABLED，页面说明 This deployment is temporarily paused。报告 freemy-availability-20261128-three，实拍图文件和 SHA256 已核验，未见恢复。"
         }
       ],
       "action": "暂时下架作品推荐、列表和合集，保留原始资料、中英文详情和原分享短链；下轮复查原站，恢复后标为待复审。"
